@@ -359,6 +359,9 @@ function initComments(root) {
     initWorkerMode(root);
     return;
   }
+  if (mode === 'giscus') {
+    return;
+  }
   initDisabled(root);
 }
 

@@ -417,7 +417,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
   <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=9f53817eb89f"></script>
+  <script type="module" src="assets/wiki-comments.js?v=8818046d68ab"></script>
   <script type="module" src="assets/wiki-reports.js?v=eadca1919286"></script>
 </head>
 <body>
@@ -1045,27 +1045,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A0%84%EB%9E%B5%ED%88%AC%EC%9E%90%EB%B6%80&amp;page_slug=strategic-investment-department">수정 요청</a></div>
 </details>
 
-<section class="comments-section" data-comments-root data-comments-mode="local_mock" data-page-slug="strategic-investment-department" data-max-depth="2" data-max-chars="1200" data-worker-base-url="" data-supabase-project-url="" data-supabase-anon-key="" data-turnstile-site-key="">
+<section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="strategic-investment-department">
   <h2>댓글</h2>
-  <p class="subtle" data-comments-status>댓글을 불러오는 중입니다.</p>
-  <div class="comments-toolbar" data-comments-auth hidden>
-    <button type="button" data-comments-login>Google로 로그인</button>
-    <button type="button" data-comments-logout hidden>로그아웃</button>
-    <span class="subtle" data-comments-user></span>
-  </div>
-  <form data-comments-form hidden>
-    <label>
-      <span class="sr-only">표시 이름</span>
-      <input data-comments-name maxlength="40" autocomplete="nickname" placeholder="표시 이름 (선택)">
-    </label>
-    <label>
-      <span class="sr-only">댓글 내용</span>
-      <textarea data-comments-text maxlength="1200" placeholder="텍스트 댓글만 입력"></textarea>
-    </label>
-    <div data-turnstile-container></div>
-    <button type="submit">등록</button>
-  </form>
-  <div class="comments-list" data-comments-list></div>
+  <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
+  <div class="giscus" data-giscus-container></div>
+  <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
+  <script src="https://giscus.app/client.js"
+    data-repo="fjuhy/hsr-wiki-issues"
+    data-repo-id="R_kgDOTGod_A"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOTGod_M4C__rq"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="ko"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
 </section>
 </div>
   </article>
