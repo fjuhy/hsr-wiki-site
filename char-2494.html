@@ -1,0 +1,1143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>반디 · HSR 설정 위키</title>
+  <meta name="description" content="반디는 스텔라론 헌터의 일원이며, 기갑 「샘」을 착용하고 전투하는 인물이다. 공식 기본 정보에서 전투 속성은 화염, 운명의 길은 파멸로 분류된다. 그는 곤충 떼를 물리치기 위해 만들어진 병기였고, 성장 속도는 평범한 사람보다 빠르지만 수명이 매우 짧은 존재로 태어났다. 그래서 반디의 이야기는 강한 전투 병기의 활약담이면서 동시에, 정해진 죽음 앞에서 “삶”을 다시 요구하는 생존자의 이야기다.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="HSR 설정 위키">
+  <meta property="og:title" content="반디 · HSR 설정 위키">
+  <meta property="og:description" content="반디는 스텔라론 헌터의 일원이며, 기갑 「샘」을 착용하고 전투하는 인물이다. 공식 기본 정보에서 전투 속성은 화염, 운명의 길은 파멸로 분류된다. 그는 곤충 떼를 물리치기 위해 만들어진 병기였고, 성장 속도는 평범한 사람보다 빠르지만 수명이 매우 짧은 존재로 태어났다. 그래서 반디의 이야기는 강한 전투 병기의 활약담이면서 동시에, 정해진 죽음 앞에서 “삶”을 다시 요구하는 생존자의 이야기다.">
+  <meta property="og:url" content="https://fjuhy.github.io/hsr-wiki-site/char-2494.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://fjuhy.github.io/hsr-wiki-site/char-2494.html">
+  <link rel="icon" href="data:,">
+  <style>:root {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #111418;
+    --paper: #191e22;
+    --surface: #20272a;
+    --ink: #edf2f0;
+    --muted: #aab6b2;
+    --line: #34403d;
+    --accent: #7fc9bd;
+    --accent-ink: #dff8f3;
+    --accent-soft: #213c3a;
+    --warn: #e1ad7d;
+    --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111418;
+  --paper: #191e22;
+  --surface: #20272a;
+  --ink: #edf2f0;
+  --muted: #aab6b2;
+  --line: #34403d;
+  --accent: #7fc9bd;
+  --accent-ink: #dff8f3;
+  --accent-soft: #213c3a;
+  --warn: #e1ad7d;
+  --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { background: var(--accent-soft); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 2px;
+}
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.site-header-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
+.brand:hover { background: transparent; color: var(--accent-ink); }
+.brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.top-links a, .theme-toggle {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.theme-toggle { cursor: pointer; min-width: 38px; }
+.top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.layout {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 24px;
+}
+.sidebar {
+  align-self: start;
+  position: sticky;
+  top: 74px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  padding: 12px;
+}
+.sidebar h2 { font-size: 12px; margin: 0 0 10px; color: var(--muted); letter-spacing: .04em; }
+.queue-list { display: grid; gap: 3px; max-height: 74vh; overflow: auto; }
+.queue-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 7px;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.queue-list a:hover, .queue-list a[aria-current="page"] { background: var(--accent-soft); }
+.article-shell {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.article-top {
+  padding: 28px 42px 18px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; color: var(--muted); font-size: 13px; }
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs span::before { content: "/"; margin-right: 6px; color: var(--muted); }
+.article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
+.article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-mini-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.article-mini-actions a { color: var(--muted); text-decoration: none; }
+.article-mini-actions a:hover { color: var(--accent-ink); background: transparent; text-decoration: underline; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: color-mix(in srgb, var(--paper) 72%, var(--accent-soft));
+  color: var(--accent-ink);
+  font-size: 12px;
+  font-weight: 760;
+}
+.article-body { padding: 26px 42px 44px; max-width: 900px; }
+.article-body h2 {
+  margin: 34px 0 12px;
+  padding-top: 12px;
+  font-size: 24px;
+  line-height: 1.32;
+  border-top: 1px solid var(--line);
+}
+.article-body h2:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.article-body h3 { margin: 22px 0 8px; font-size: 18px; line-height: 1.35; }
+.article-body p { margin: 0 0 16px; }
+.article-body ul { margin: 0 0 18px; padding-left: 20px; }
+.article-body li { margin: 6px 0; }
+.wiki-link { font-weight: 730; text-decoration-style: solid; }
+.cite-ref { font-size: .72em; vertical-align: super; margin-left: 2px; }
+.cite-ref a {
+  border-radius: 999px;
+  padding: 1px 4px;
+  background: var(--accent-soft);
+  text-decoration: none;
+  font-weight: 800;
+}
+.references, .article-tools, .comments-section, .ad-slot, .donation-panel, .report-panel {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.references { font-size: 12px; line-height: 1.5; }
+.references h2, .article-tools h2, .comments-section h2, .donation-panel h2, .report-panel h2 { border-top: 0; margin: 0 0 12px; padding-top: 0; font-size: 17px; }
+.references ol { padding-left: 18px; }
+.references li { margin: 6px 0 10px; }
+.ref-title { font-weight: 800; }
+.ref-source, .subtle { color: var(--muted); font-size: 12px; }
+.ref-quote { color: var(--muted); margin-top: 3px; font-size: 11px; }
+.article-tools {
+  margin-top: 28px;
+  font-size: 13px;
+}
+.article-tools summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.article-tools summary:hover { color: var(--accent-ink); }
+.info-grid, .category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.info-item, .category-card, .home-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 11px 12px;
+}
+.category-card, .home-card {
+  color: var(--ink);
+  text-decoration: none;
+}
+.category-card:hover, .home-card:hover { background: var(--accent-soft); }
+.info-item strong, .category-card strong, .home-card strong { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.history-list { margin: 12px 0 0; padding-left: 18px; }
+.history-list li { margin: 7px 0; }
+.log-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+.log-list li {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+}
+.action-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+.button-link:hover { background: var(--accent-soft); }
+.comments-section input, .comments-section textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.comments-section textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+.comments-section button {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 760;
+}
+.comments-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0 0; }
+.comments-toolbar button, .comment-card button, .report-panel button, .donation-copy {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+}
+.comments-section button[type="submit"], .report-panel button[type="submit"] {
+  background: var(--accent);
+  color: var(--paper);
+}
+.comments-list { display: grid; gap: 10px; margin-top: 14px; }
+.comment-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 10px 12px;
+}
+.comment-card p { margin: 5px 0 0; }
+.comment-card.is-held { border-style: dashed; }
+.comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+.ad-slot { color: var(--muted); font-size: 12px; }
+.stub { padding: 38px 42px; max-width: 900px; }
+.stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
+.stub p { max-width: 760px; }
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .86fr);
+  gap: 24px;
+  align-items: center;
+  padding: 38px 42px 28px;
+}
+.home-hero h2 { font-size: clamp(28px, 4vw, 44px); line-height: 1.1; margin: 0 0 12px; }
+.home-visual {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 42px rgba(12, 16, 24, .14);
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+}
+.home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
+.home-section h2 { margin: 0 0 12px; font-size: 21px; }
+.recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list a { font-weight: 800; text-decoration: none; }
+.policy-links { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; }
+.donation-row {
+  display: grid;
+  grid-template-columns: minmax(86px, .5fr) minmax(0, 1.5fr) auto;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 9px 10px;
+  margin-top: 8px;
+}
+.donation-row code { overflow-wrap: anywhere; font-size: 12px; }
+.report-panel form { display: grid; gap: 10px; }
+.report-panel label { display: grid; gap: 4px; font-weight: 760; }
+.report-panel input, .report-panel textarea, .report-panel select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 9px 10px;
+  font: inherit;
+}
+.report-panel textarea { min-height: 130px; resize: vertical; }
+@media (max-width: 900px) {
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
+}
+@media (max-width: 820px) {
+  body { font-size: 16px; line-height: 1.74; }
+  .layout { grid-template-columns: 1fr; padding: 14px; }
+  .article-shell { order: 1; }
+  .sidebar { order: 2; position: static; }
+  .queue-list { max-height: 34vh; }
+  .article-top, .article-body, .stub, .home-hero, .home-section { padding-left: 20px; padding-right: 20px; }
+  .home-hero { grid-template-columns: 1fr; gap: 16px; }
+  .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
+  .donation-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
+  .brand small { display: none; }
+  .top-links a { padding: 7px 8px; }
+  .article-body { padding-bottom: 32px; }
+}</style>
+  <link rel="stylesheet" href="assets/wiki-search.css?v=103e0b690649">
+  <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
+  <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
+  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
+  <script type="module" src="assets/wiki-comments.js?v=9f53817eb89f"></script>
+  <script type="module" src="assets/wiki-reports.js?v=eadca1919286"></script>
+</head>
+<body>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">HSR 설정 위키 <small>설정 문서</small></a><search class="search-shell" data-wiki-search data-pagefind-ignore>
+  <form class="search-form" data-search-form role="search">
+    <label class="search-input-wrap">
+      <span class="sr-only">위키 검색</span>
+      <input class="search-input" data-search-input type="search" placeholder="문서·고유명사 검색 /" autocomplete="off" spellcheck="false">
+      <span class="search-kbd">/</span>
+    </label>
+  </form>
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-panel-inner">
+      <section class="search-column">
+        <h2 class="search-heading">자동완성</h2>
+        <div data-search-suggestions></div>
+        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
+      </section>
+      <section class="search-column">
+        <h2 class="search-heading">문서 본문 검색</h2>
+        <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
+      </section>
+    </div>
+  </div>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">분류</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+<main class="layout">
+  <aside class="sidebar"><h2>둘러보기</h2><nav class="queue-list"><a href="categories.html"><span>전체 분류</span></a><a href="category-people.html"><span>인물</span></a>
+<a href="category-factions.html"><span>파벌</span></a>
+<a href="category-paths.html"><span>운명의 길</span></a>
+<a href="category-aeons.html"><span>에이언즈</span></a>
+<a href="category-places.html"><span>장소</span></a>
+<a href="category-events.html"><span>사건</span></a>
+<a href="category-concepts.html"><span>개념</span></a>
+<a href="category-terms.html"><span>아이템/용어</span></a>
+<a href="category-other.html"><span>기타</span></a></nav><h2 style="margin-top:16px">문서 목록</h2><nav class="queue-list"><a href="trailblaze.html"><span>개척</span></a>
+<a href="nihility.html"><span>공허</span></a>
+<a href="preservation.html"><span>보존</span></a>
+<a href="interastral-peace-corporation.html"><span>스타피스 컴퍼니</span></a>
+<a href="stellaron.html"><span>스텔라론</span></a>
+<a href="stellaron-hunters.html"><span>스텔라론 헌터</span></a>
+<a href="aeons.html"><span>에이언즈</span></a>
+<a href="path.html"><span>운명의 길</span></a>
+<a href="destruction.html"><span>파멸</span></a>
+<a href="factions.html"><span>파벌</span></a>
+<a href="ten-stonehearts.html"><span>10인의 스톤하트</span></a>
+<a href="market-development-department.html"><span>시장개척부</span></a>
+<a href="aether-editing.html"><span>에테르 편집</span></a>
+<a href="silver-wolf.html"><span>은랑</span></a>
+<a href="strategic-investment-department.html"><span>전략투자부</span></a>
+<a href="intelligentsia-guild.html"><span>지식학회</span></a>
+<a href="punklorde.html"><span>펑크 로드</span></a>
+<a href="number-zero.html"><span>0호</span></a>
+<a href="faction-2402.html"><span>10인의 스톤하트 - 보존</span></a>
+<a href="char-1639.html"><span>Dr. 레이시오</span></a>
+<a href="npc-2015.html"><span>Dr. 에드워드</span></a>
+<a href="entry-3930.html"><span>Fate/stay night</span></a>
+<a href="entry-2943.html"><span>Lady Jade 보나제이드 수첩</span></a>
+<a href="char-7.html"><span>Mar. 7th</span></a>
+<a href="char-2657.html"><span>Mar. 7th·수렵</span></a>
+<a href="entry-2510.html"><span>≪시계 소년: 좋은꿈의 과거≫</span></a>
+<a href="akivili.html"><span>⌈ 개척 ⌋ 아키비리</span></a>
+<a href="aeon-888.html"><span>⌈ 기억 ⌋ 후리</span></a>
+<a href="tayzzyronth.html"><span>⌈ 번식 ⌋ 타이츠론스</span></a>
+<a href="qlipoth.html"><span>⌈ 보존 ⌋ 클리포트</span></a>
+<a href="nous.html"><span>⌈ 지식 ⌋ 누스</span></a>
+<a href="aeon-1222.html"><span>⌈ 질서 ⌋ 에나</span></a>
+<a href="yaoshi.html"><span>⌈ 풍요 ⌋ 약사</span></a>
+<a href="aeon-894.html"><span>⌈ 화합 ⌋ 시페</span></a>
+<a href="entry-2277.html"><span>■■■■에 오신 걸 환영합니다</span></a>
+<a href="entry-1125.html"><span>「『미식』의 길」 웹 이벤트</span></a>
+<a href="npc-3297.html"><span>「닥쳐」</span></a>
+<a href="npc-827.html"><span>「부관」</span></a>
+<a href="rupert.html"><span>「제왕」루버트</span></a>
+<a href="npc-1502.html"><span>「회장」</span></a>
+<a href="npc-2547.html"><span>가르시아</span></a>
+<a href="npc-1184.html"><span>가리</span></a>
+<a href="faction-970.html"><span>가면의 우인 - 환락</span></a>
+<a href="npc-3207.html"><span>가바나</span></a>
+<a href="entry-1824.html"><span>가상세계 후각 탐험</span></a>
+<a href="faction-957.html"><span>가족 - 화합</span></a>
+<a href="npc-2017.html"><span>가족 상인</span></a>
+<a href="npc-2676.html"><span>간식 가게 사장</span></a>
+<a href="entry-991.html"><span>개척력</span></a>
+<a href="trailblazer.html"><span>개척자</span></a>
+<a href="char-23.html"><span>개척자 · 보존</span></a>
+<a href="char-6.html"><span>개척자 · 파멸</span></a>
+<a href="char-2511.html"><span>개척자 · 화합</span></a>
+<a href="char-5006.html"><span>개척자 · 환락</span></a>
+<a href="entry-3703.html"><span>개척하는 그대에게</span></a>
+<a href="char-1924.html"><span>갤러거</span></a>
+<a href="faction-978.html"><span>갤럭시 레인저 - 수렵</span></a>
+<a href="entry-3572.html"><span>거룩한 도시 보물 감정</span></a>
+<a href="faction-976.html"><span>거울의 주인 - 미</span></a>
+<a href="npc-1049.html"><span>거티</span></a>
+<a href="entry-1812.html"><span>건축자재물류부</span></a>
+<a href="char-17.html"><span>게파드</span></a>
+<a href="entry-966.html"><span>겨울 성 박물관 진귀품 목록</span></a>
+<a href="char-1387.html"><span>경류</span></a>
+<a href="npc-1175.html"><span>경방</span></a>
+<a href="char-26.html"><span>경원</span></a>
+<a href="npc-2249.html"><span>경장</span></a>
+<a href="npc-1189.html"><span>경청</span></a>
+<a href="char-1392.html"><span>계네빈</span></a>
+<a href="entry-3695.html"><span>계몽의 별빛</span></a>
+<a href="npc-1988.html"><span>고-레이</span></a>
+<a href="npc-1181.html"><span>고당</span></a>
+<a href="npc-2033.html"><span>고지식</span></a>
+<a href="entry-1437.html"><span>곤강군</span></a>
+<a href="faction-969.html"><span>곤충 떼 - 번식</span></a>
+<a href="npc-2044.html"><span>골드 도련님</span></a>
+<a href="npc-1168.html"><span>공수 사부</span></a>
+<a href="npc-1445.html"><span>공청</span></a>
+<a href="npc-1546.html"><span>곽세찌</span></a>
+<a href="char-1533.html"><span>곽향</span></a>
+<a href="npc-743.html"><span>광야의 폭탄 머리</span></a>
+<a href="npc-1042.html"><span>광차 작업공 견습생</span></a>
+<a href="npc-1178.html"><span>광태</span></a>
+<a href="entry-5379.html"><span>교육부의 어려운 문제</span></a>
+<a href="npc-1008.html"><span>교활한 꼬맹이</span></a>
+<a href="npc-3006.html"><span>구등</span></a>
+<a href="entry-1328.html"><span>구름 위 5전사</span></a>
+<a href="npc-2364.html"><span>궁우</span></a>
+<a href="path-2361.html"><span>균형</span></a>
+<a href="npc-3038.html"><span>그레이센</span></a>
+<a href="npc-1179.html"><span>그레일라</span></a>
+<a href="npc-2041.html"><span>그린 매니저</span></a>
+<a href="entry-1762.html"><span>그림자를 찾는 별의 여정</span></a>
+<a href="npc-2052.html"><span>금사빠</span></a>
+<a href="npc-1173.html"><span>금여</span></a>
+<a href="entry-2383.html"><span>기묘한 영역 300%</span></a>
+<a href="entry-1813.html"><span>기술개발부</span></a>
+<a href="path-2359.html"><span>기억</span></a>
+<a href="faction-973.html"><span>기억의 정원 - 기억</span></a>
+<a href="char-5338.html"><span>길가메시</span></a>
+<a href="npc-851.html"><span>길버트</span></a>
+<a href="char-711.html"><span>나찰</span></a>
+<a href="char-18.html"><span>나타샤</span></a>
+<a href="npc-1162.html"><span>난길</span></a>
+<a href="npc-1316.html"><span>난난</span></a>
+<a href="npc-2555.html"><span>낸시</span></a>
+<a href="npc-1041.html"><span>노련한 광차 작업공</span></a>
+<a href="npc-3221.html"><span>노바디</span></a>
+<a href="npc-1140.html"><span>노버트</span></a>
+<a href="npc-1169.html"><span>노혜</span></a>
+<a href="entry-3874.html"><span>누리망, 멈춰 줘서 고마워</span></a>
+<a href="npc-858.html"><span>늙은 괴테</span></a>
+<a href="npc-859.html"><span>니카</span></a>
+<a href="npc-1865.html"><span>다급이</span></a>
+<a href="npc-3549.html"><span>다미오니스</span></a>
+<a href="npc-2674.html"><span>다프</span></a>
+<a href="npc-1155.html"><span>단단</span></a>
+<a href="faction-3149.html"><span>단륜사- 균형</span></a>
+<a href="npc-1191.html"><span>단우</span></a>
+<a href="char-8.html"><span>단항</span></a>
+<a href="char-3957.html"><span>단항 · 등황</span></a>
+<a href="char-1226.html"><span>단항·음월</span></a>
+<a href="char-4060.html"><span>달리아</span></a>
+<a href="npc-1192.html"><span>대호</span></a>
+<a href="npc-2013.html"><span>댄시</span></a>
+<a href="char-3285.html"><span>더 헤르타</span></a>
+<a href="npc-1450.html"><span>덕위</span></a>
+<a href="npc-2022.html"><span>데니스</span></a>
+<a href="npc-3551.html"><span>데미트리아</span></a>
+<a href="npc-2960.html"><span>데보라</span></a>
+<a href="npc-842.html"><span>도미닉</span></a>
+<a href="npc-2003.html"><span>돈최고</span></a>
+<a href="npc-1188.html"><span>동식</span></a>
+<a href="npc-1499.html"><span>두 사장</span></a>
+<a href="npc-1214.html"><span>똑소리</span></a>
+<a href="npc-1996.html"><span>라로즈</span></a>
+<a href="npc-737.html"><span>라미나</span></a>
+<a href="npc-837.html"><span>라본느</span></a>
+<a href="npc-1225.html"><span>라이언</span></a>
+<a href="char-3057.html"><span>라파</span></a>
+<a href="npc-3054.html"><span>란돌프</span></a>
+<a href="npc-857.html"><span>레긴</span></a>
+<a href="npc-3928.html"><span>레나</span></a>
+<a href="npc-881.html"><span>레나드</span></a>
+<a href="npc-1007.html"><span>레비니</span></a>
+<a href="npc-2963.html"><span>레스터</span></a>
+<a href="npc-2345.html"><span>레슬리·딘</span></a>
+<a href="npc-2424.html"><span>레오</span></a>
+<a href="npc-1321.html"><span>레이리</span></a>
+<a href="entry-3164.html"><span>레인저의 그림자</span></a>
+<a href="npc-1037.html"><span>로더</span></a>
+<a href="npc-2533.html"><span>로란</span></a>
+<a href="char-2366.html"><span>로빈</span></a>
+<a href="npc-855.html"><span>로시</span></a>
+<a href="npc-733.html"><span>록키</span></a>
+<a href="npc-2011.html"><span>루이스</span></a>
+<a href="char-801.html"><span>루카</span></a>
+<a href="npc-736.html"><span>루카치</span></a>
+<a href="faction-980.html"><span>리들러 - 신비</span></a>
+<a href="npc-836.html"><span>리라</span></a>
+<a href="npc-2488.html"><span>리산더</span></a>
+<a href="npc-3219.html"><span>리지아</span></a>
+<a href="npc-2733.html"><span>리차드</span></a>
+<a href="npc-720.html"><span>리처드</span></a>
+<a href="char-1228.html"><span>링스</span></a>
+<a href="npc-835.html"><span>마냐</span></a>
+<a href="npc-735.html"><span>마레</span></a>
+<a href="npc-1446.html"><span>마리얌</span></a>
+<a href="npc-1054.html"><span>마이너 램프 발라웨이</span></a>
+<a href="char-3324.html"><span>마이데이</span></a>
+<a href="npc-2404.html"><span>마지</span></a>
+<a href="npc-1494.html"><span>마지마</span></a>
+<a href="npc-1047.html"><span>막심</span></a>
+<a href="npc-1158.html"><span>만물</span></a>
+<a href="char-3151.html"><span>망귀인</span></a>
+<a href="npc-2027.html"><span>맥스</span></a>
+<a href="char-2949.html"><span>맥택</span></a>
+<a href="npc-2255.html"><span>멀리치</span></a>
+<a href="npc-861.html"><span>메신저</span></a>
+<a href="npc-2536.html"><span>멜론</span></a>
+<a href="entry-2665.html"><span>명부의 인형</span></a>
+<a href="entry-952.html"><span>명사</span></a>
+<a href="npc-1313.html"><span>명월</span></a>
+<a href="npc-2234.html"><span>명탐정</span></a>
+<a href="npc-1490.html"><span>명희</span></a>
+<a href="npc-2030.html"><span>모리스</span></a>
+<a href="npc-1448.html"><span>모정</span></a>
+<a href="npc-1163.html"><span>목향</span></a>
+<a href="npc-860.html"><span>몰리</span></a>
+<a href="npc-1165.html"><span>몽명</span></a>
+<a href="faction-962.html"><span>무명객 - 개척</span></a>
+<a href="npc-1646.html"><span>무코가오카</span></a>
+<a href="npc-1153.html"><span>무혁</span></a>
+<a href="npc-1312.html"><span>문문</span></a>
+<a href="entry-3326.html"><span>미미의 선물</span></a>
+<a href="char-1808.html"><span>미샤</span></a>
+<a href="faction-975.html"><span>미의 기사단 - 미</span></a>
+<a href="npc-2529.html"><span>미카</span></a>
+<a href="npc-850.html"><span>바네사</span></a>
+<a href="npc-1197.html"><span>바두타</span></a>
+<a href="npc-1642.html"><span>바알</span></a>
+<a href="npc-1006.html"><span>박물관 검표원</span></a>
+<a href="char-2494.html" aria-current="page"><span>반디</span></a>
+<a href="npc-2675.html"><span>반려금물</span></a>
+<a href="faction-956.html"><span>반물질 군단 - 파멸</span></a>
+<a href="entry-2652.html"><span>반짝이는 스타라이트</span></a>
+<a href="npc-1199.html"><span>반하</span></a>
+<a href="npc-826.html"><span>방위과 연구원</span></a>
+<a href="npc-1617.html"><span>배리</span></a>
+<a href="char-29.html"><span>백로</span></a>
+<a href="npc-1500.html"><span>백양</span></a>
+<a href="npc-742.html"><span>버나드</span></a>
+<a href="npc-2042.html"><span>버밀리온 여사</span></a>
+<a href="npc-1276.html"><span>베나</span></a>
+<a href="npc-1992.html"><span>베니</span></a>
+<a href="npc-853.html"><span>베스카</span></a>
+<a href="npc-2550.html"><span>베이더</span></a>
+<a href="npc-2964.html"><span>벨라</span></a>
+<a href="npc-1800.html"><span>벨라이트</span></a>
+<a href="npc-1198.html"><span>변덕 우산</span></a>
+<a href="entry-3705.html"><span>별들의 동행자</span></a>
+<a href="entry-882.html"><span>별사냥 게임</span></a>
+<a href="entry-1394.html"><span>별의 선물</span></a>
+<a href="entry-1277.html"><span>별이 돌아오는 길</span></a>
+<a href="npc-1005.html"><span>보리스</span></a>
+<a href="npc-1891.html"><span>보모 로봇</span></a>
+<a href="entry-4713.html"><span>보물을 찾아서</span></a>
+<a href="npc-1139.html"><span>보바</span></a>
+<a href="npc-2043.html"><span>보스 레드</span></a>
+<a href="npc-2346.html"><span>보키</span></a>
+<a href="npc-3099.html"><span>복림</span></a>
+<a href="npc-739.html"><span>볶음밥 천재 123호</span></a>
+<a href="entry-1763.html"><span>볼더 타운 격투 기술 시범 경기</span></a>
+<a href="npc-3220.html"><span>부귀</span></a>
+<a href="npc-1672.html"><span>부연</span></a>
+<a href="char-2367.html"><span>부트힐</span></a>
+<a href="entry-2509.html"><span>부트힐에 관한 모든 것...</span></a>
+<a href="char-804.html"><span>부현</span></a>
+<a href="npc-3098.html"><span>북개</span></a>
+<a href="npc-2012.html"><span>브로나</span></a>
+<a href="char-14.html"><span>브로냐</span></a>
+<a href="npc-2426.html"><span>브리나</span></a>
+<a href="char-1806.html"><span>블랙 스완</span></a>
+<a href="blade.html"><span>블레이드</span></a>
+<a href="npc-2040.html"><span>블루 나이트</span></a>
+<a href="entry-3061.html"><span>비성의 선물</span></a>
+<a href="char-2947.html"><span>비소</span></a>
+<a href="npc-2029.html"><span>비스타</span></a>
+<a href="faction-971.html"><span>비애의 연극인 - 환락</span></a>
+<a href="npc-2062.html"><span>비탈리</span></a>
+<a href="entry-1542.html"><span>빛의 선물</span></a>
+<a href="emanator.html"><span>사도</span></a>
+<a href="npc-2944.html"><span>사만다</span></a>
+<a href="npc-2028.html"><span>사브리나</span></a>
+<a href="entry-1814.html"><span>사업통합부</span></a>
+<a href="char-3691.html"><span>사이퍼</span></a>
+<a href="char-21.html"><span>삼포</span></a>
+<a href="entry-3332.html"><span>새벽과 황혼의 두루마리</span></a>
+<a href="sam.html"><span>샘</span></a>
+<a href="npc-3206.html"><span>샬레카</span></a>
+<a href="npc-2257.html"><span>샬롯</span></a>
+<a href="char-16.html"><span>서벌</span></a>
+<a href="npc-1164.html"><span>서연 선생</span></a>
+<a href="npc-1152.html"><span>서유</span></a>
+<a href="entry-4715.html"><span>석양의 잔본</span></a>
+<a href="npc-1379.html"><span>석운</span></a>
+<a href="char-3150.html"><span>선데이</span></a>
+<a href="xianzhou-luofu.html"><span>선주 「나부」</span></a>
+<a href="faction-963.html"><span>선주 연맹 - 수렵</span></a>
+<a href="entry-1234.html"><span>선주를 날다</span></a>
+<a href="char-1640.html"><span>설의</span></a>
+<a href="npc-1196.html"><span>성결</span></a>
+<a href="entry-3066.html"><span>성천 연무 의식</span></a>
+<a href="char-3767.html"><span>세이버</span></a>
+<a href="npc-1327.html"><span>센센</span></a>
+<a href="npc-845.html"><span>셀린느</span></a>
+<a href="npc-1702.html"><span>소 씨 아저씨</span></a>
+<a href="faction-972.html"><span>소각공 - 기억</span></a>
+<a href="faction-977.html"><span>소멸파 - 파멸</span></a>
+<a href="char-27.html"><span>소상</span></a>
+<a href="npc-1898.html"><span>소형 로봇</span></a>
+<a href="npc-2635.html"><span>솔글래드 공급업체 직원</span></a>
+<a href="npc-3105.html"><span>솔메르</span></a>
+<a href="npc-1156.html"><span>송연</span></a>
+<a href="path-81.html"><span>수렵</span></a>
+<a href="npc-745.html"><span>수리 엔지니어</span></a>
+<a href="npc-1157.html"><span>수미</span></a>
+<a href="npc-1670.html"><span>수영</span></a>
+<a href="npc-2248.html"><span>순경</span></a>
+<a href="npc-803.html"><span>스바로그</span></a>
+<a href="npc-1033.html"><span>스웨타</span></a>
+<a href="npc-3058.html"><span>스코트</span></a>
+<a href="npc-1038.html"><span>스콧</span></a>
+<a href="screwllum.html"><span>스크루룸</span></a>
+<a href="entry-3694.html"><span>스타레일☆WORLD</span></a>
+<a href="faction-968.html"><span>스타피스 컴퍼니 - 보존</span></a>
+<a href="npc-2965.html"><span>스테파노</span></a>
+<a href="char-4737.html"><span>스파키</span></a>
+<a href="npc-2016.html"><span>시계 소년</span></a>
+<a href="entry-1405.html"><span>시끌벅적 금 조각상 옛 거리</span></a>
+<a href="entry-493.html"><span>시릴</span></a>
+<a href="npc-1997.html"><span>시에로</span></a>
+<a href="npc-2441.html"><span>시오반</span></a>
+<a href="path-2362.html"><span>신비</span></a>
+<a href="npc-726.html"><span>실라</span></a>
+<a href="npc-1999.html"><span>싱글러</span></a>
+<a href="npc-1447.html"><span>싱클레어</span></a>
+<a href="npc-848.html"><span>아그네스</span></a>
+<a href="char-3286.html"><span>아글라이아</span></a>
+<a href="char-3561.html"><span>아낙사</span></a>
+<a href="npc-724.html"><span>아들러</span></a>
+<a href="npc-3003.html"><span>아르마</span></a>
+<a href="char-11.html"><span>아를란</span></a>
+<a href="npc-2961.html"><span>아메셀라</span></a>
+<a href="npc-846.html"><span>아모</span></a>
+<a href="npc-744.html"><span>아브라함</span></a>
+<a href="npc-1994.html"><span>아시카</span></a>
+<a href="entry-3573.html"><span>아옹아옹 사무소</span></a>
+<a href="char-1535.html"><span>아젠티</span></a>
+<a href="char-1919.html"><span>아케론</span></a>
+<a href="npc-3410.html"><span>아크모니데스</span></a>
+<a href="npc-3756.html"><span>아포피스</span></a>
+<a href="npc-1385.html"><span>악사이</span></a>
+<a href="npc-1134.html"><span>안기쁨</span></a>
+<a href="npc-1044.html"><span>안토니아</span></a>
+<a href="npc-1148.html"><span>암명</span></a>
+<a href="npc-2673.html"><span>애가</span></a>
+<a href="char-4781.html"><span>애쉬베일</span></a>
+<a href="npc-2025.html"><span>앤더슨</span></a>
+<a href="npc-2021.html"><span>앨리</span></a>
+<a href="npc-1043.html"><span>앨리나</span></a>
+<a href="entry-992.html"><span>앰버기원</span></a>
+<a href="jarilo-vi.html"><span>야릴로-Ⅵ</span></a>
+<a href="npc-1451.html"><span>약연</span></a>
+<a href="npc-2974.html"><span>약월</span></a>
+<a href="faction-960.html"><span>약을 구하는 자 - 풍요</span></a>
+<a href="npc-1171.html"><span>양목</span></a>
+<a href="char-712.html"><span>어공</span></a>
+<a href="aventurine.html"><span>어벤츄린</span></a>
+<a href="npc-2966.html"><span>에리카</span></a>
+<a href="npc-1052.html"><span>에릭</span></a>
+<a href="npc-2611.html"><span>에밀</span></a>
+<a href="npc-725.html"><span>에밀리</span></a>
+<a href="char-5005.html"><span>에바네시아</span></a>
+<a href="char-3956.html"><span>에버나이트</span></a>
+<a href="npc-727.html"><span>에스더</span></a>
+<a href="person-989.html"><span>에이든</span></a>
+<a href="npc-2636.html"><span>에이딘</span></a>
+<a href="npc-788.html"><span>에이쿠라 슈</span></a>
+<a href="entry-1586.html"><span>에테르 배틀</span></a>
+<a href="npc-2420.html"><span>엘비라</span></a>
+<a href="npc-2000.html"><span>엠리히</span></a>
+<a href="npc-1144.html"><span>여진</span></a>
+<a href="char-28.html"><span>연경</span></a>
+<a href="npc-1170.html"><span>연연</span></a>
+<a href="npc-2007.html"><span>연이</span></a>
+<a href="npc-1149.html"><span>연희</span></a>
+<a href="fragmentum.html"><span>열계</span></a>
+<a href="entry-4884.html"><span>영물보호법</span></a>
+<a href="char-2948.html"><span>영사</span></a>
+<a href="npc-1145.html"><span>영연</span></a>
+<a href="npc-1454.html"><span>영인</span></a>
+<a href="npc-1146.html"><span>영해</span></a>
+<a href="npc-3039.html"><span>오슬롯</span></a>
+<a href="npc-1284.html"><span>옥란</span></a>
+<a href="npc-1182.html"><span>옥부</span></a>
+<a href="npc-2418.html"><span>옥사나</span></a>
+<a href="npc-731.html"><span>온명덕</span></a>
+<a href="npc-722.html"><span>온부서</span></a>
+<a href="npc-730.html"><span>온세영</span></a>
+<a href="npc-729.html"><span>온세자</span></a>
+<a href="npc-1889.html"><span>온정</span></a>
+<a href="npc-723.html"><span>온천옹</span></a>
+<a href="npc-1882.html"><span>온평</span></a>
+<a href="npc-1039.html"><span>올레그</span></a>
+<a href="npc-2545.html"><span>올마</span></a>
+<a href="npc-1200.html"><span>와리</span></a>
+<a href="npc-1587.html"><span>와일더</span></a>
+<a href="ruan-mei.html"><span>완·매</span></a>
+<a href="npc-732.html"><span>왓슨</span></a>
+<a href="npc-1858.html"><span>왕짜증</span></a>
+<a href="entry-1386.html"><span>요약분제</span></a>
+<a href="npc-2004.html"><span>우마</span></a>
+<a href="entry-3291.html"><span>우주 인테리어 가이드</span></a>
+<a href="char-2642.html"><span>운리</span></a>
+<a href="npc-1143.html"><span>운신</span></a>
+<a href="npc-1009.html"><span>울단</span></a>
+<a href="npc-834.html"><span>울보 유령</span></a>
+<a href="npc-2063.html"><span>울시</span></a>
+<a href="entry-4008.html"><span>웃음 참기 챌린지</span></a>
+<a href="faction-3184.html"><span>원구의 숲 - 지식</span></a>
+<a href="npc-1993.html"><span>원씨</span></a>
+<a href="npc-2422.html"><span>월넛</span></a>
+<a href="npc-852.html"><span>월리스</span></a>
+<a href="npc-2493.html"><span>월프</span></a>
+<a href="char-10.html"><span>웰트</span></a>
+<a href="npc-2967.html"><span>위스퍼</span></a>
+<a href="npc-2019.html"><span>위즐리</span></a>
+<a href="npc-1050.html"><span>유니스</span></a>
+<a href="npc-1827.html"><span>유사</span></a>
+<a href="npc-1142.html"><span>유철</span></a>
+<a href="npc-1150.html"><span>유하</span></a>
+<a href="term-70447ff24d.html"><span>율법</span></a>
+<a href="char-4997.html"><span>은랑 LV.999</span></a>
+<a href="npc-1147.html"><span>은서</span></a>
+<a href="entry-2508.html"><span>은하 방망이 협객 전설</span></a>
+<a href="entry-3773.html"><span>은하 방망이 협객 전설: 마왕편</span></a>
+<a href="faction-965.html"><span>은하열차 - 개척</span></a>
+<a href="term-405b5ea197.html"><span>은하인법첩</span></a>
+<a href="entry-3166.html"><span>음률 사냥 인법첩</span></a>
+<a href="npc-1011.html"><span>이리스</span></a>
+<a href="npc-1995.html"><span>이브</span></a>
+<a href="npc-3374.html"><span>이아손</span></a>
+<a href="entry-1810.html"><span>인재격려부</span></a>
+<a href="npc-1051.html"><span>일레인</span></a>
+<a href="faction-2428.html"><span>자멸자 - 공허</span></a>
+<a href="faction-1209.html"><span>장례식 안내원 - 종말</span></a>
+<a href="npc-1141.html"><span>재교</span></a>
+<a href="entry-1809.html"><span>전통프로젝트부</span></a>
+<a href="npc-1161.html"><span>점장 한전</span></a>
+<a href="npc-1174.html"><span>정연</span></a>
+<a href="char-25.html"><span>정운</span></a>
+<a href="npc-1314.html"><span>정채</span></a>
+<a href="faction-958.html"><span>제Ⅸ 기관 - 공허</span></a>
+<a href="char-15.html"><span>제레</span></a>
+<a href="npc-2537.html"><span>제시</span></a>
+<a href="npc-2002.html"><span>제이</span></a>
+<a href="char-2495.html"><span>제이드</span></a>
+<a href="npc-2962.html"><span>제이콥</span></a>
+<a href="npc-1870.html"><span>조셉</span></a>
+<a href="npc-1040.html"><span>조슈아</span></a>
+<a href="npc-738.html"><span>조앤</span></a>
+<a href="npc-2544.html"><span>조지</span></a>
+<a href="path-2360.html"><span>종말</span></a>
+<a href="npc-1318.html"><span>종산</span></a>
+<a href="entry-2653.html"><span>종이새 팡팡</span></a>
+<a href="npc-1829.html"><span>좌나</span></a>
+<a href="npc-870.html"><span>줄리안</span></a>
+<a href="faction-979.html"><span>중재관 - 균형</span></a>
+<a href="genius-society.html"><span>지니어스 클럽</span></a>
+<a href="faction-955.html"><span>지니어스 클럽 - 지식</span></a>
+<a href="npc-2620.html"><span>지드</span></a>
+<a href="path-80.html"><span>지식</span></a>
+<a href="faction-954.html"><span>지식학회 - 지식</span></a>
+<a href="npc-2174.html"><span>지오반나</span></a>
+<a href="npc-1616.html"><span>지오반니</span></a>
+<a href="path-2358.html"><span>질서</span></a>
+<a href="npc-844.html"><span>차베스</span></a>
+<a href="npc-2010.html"><span>차브로</span></a>
+<a href="npc-3222.html"><span>채드</span></a>
+<a href="npc-2232.html"><span>채드윅</span></a>
+<a href="char-5217.html"><span>천야 · 블레이드</span></a>
+<a href="faction-1232.html"><span>천외 합창단 - 질서</span></a>
+<a href="npc-1501.html"><span>천이</span></a>
+<a href="npc-1285.html"><span>청예</span></a>
+<a href="npc-1160.html"><span>청월</span></a>
+<a href="char-24.html"><span>청작</span></a>
+<a href="npc-1159.html"><span>청주</span></a>
+<a href="char-2643.html"><span>초구</span></a>
+<a href="entry-2953.html"><span>초화습검록</span></a>
+<a href="npc-1193.html"><span>총명</span></a>
+<a href="faction-953.html"><span>축성가(築城家) - 보존</span></a>
+<a href="npc-1194.html"><span>춘분</span></a>
+<a href="npc-3140.html"><span>카멜라</span></a>
+<a href="char-3560.html"><span>카스토리스</span></a>
+<a href="npc-741.html"><span>카포티</span></a>
+<a href="kafka.html"><span>카프카</span></a>
+<a href="npc-3417.html"><span>칼토너스</span></a>
+<a href="npc-2532.html"><span>커크</span></a>
+<a href="char-3886.html"><span>케리드라</span></a>
+<a href="npc-2538.html"><span>케이미</span></a>
+<a href="npc-2427.html"><span>코나</span></a>
+<a href="npc-2018.html"><span>코코나</span></a>
+<a href="npc-2023.html"><span>코티</span></a>
+<a href="npc-1991.html"><span>콜린</span></a>
+<a href="npc-740.html"><span>크리스</span></a>
+<a href="npc-3408.html"><span>크테시포나</span></a>
+<a href="char-20.html"><span>클라라</span></a>
+<a href="npc-1990.html"><span>클라우디아</span></a>
+<a href="npc-2551.html"><span>클로다</span></a>
+<a href="npc-1048.html"><span>클루저</span></a>
+<a href="npc-2973.html"><span>클리오</span></a>
+<a href="npc-1491.html"><span>키 작은 이모</span></a>
+<a href="npc-1489.html"><span>키 큰 이모</span></a>
+<a href="npc-1998.html"><span>키넌</span></a>
+<a href="char-4003.html"><span>키레네</span></a>
+<a href="npc-3402.html"><span>키로스</span></a>
+<a href="npc-1495.html"><span>키류</span></a>
+<a href="npc-1056.html"><span>타냐</span></a>
+<a href="npc-854.html"><span>타밀라</span></a>
+<a href="npc-3398.html"><span>테오도로스</span></a>
+<a href="npc-1317.html"><span>토냐</span></a>
+<a href="npc-1154.html"><span>토드</span></a>
+<a href="npc-2721.html"><span>토마스</span></a>
+<a href="npc-1055.html"><span>토비</span></a>
+<a href="npc-2634.html"><span>토스카니</span></a>
+<a href="char-5339.html"><span>토오사카 린</span></a>
+<a href="topaz.html"><span>토파즈</span></a>
+<a href="char-1389.html"><span>토파즈&amp;복순이</span></a>
+<a href="npc-1862.html"><span>통찰자</span></a>
+<a href="char-3322.html"><span>트리비</span></a>
+<a href="npc-2253.html"><span>티조크 2세</span></a>
+<a href="entry-3696.html"><span>팅팅탱탱 물범 대격돌</span></a>
+<a href="npc-721.html"><span>파멜라</span></a>
+<a href="npc-1046.html"><span>파스칼</span></a>
+<a href="char-3769.html"><span>파이논</span></a>
+<a href="npc-840.html"><span>파인디</span></a>
+<a href="npc-1874.html"><span>팥앙금떡</span></a>
+<a href="npc-2001.html"><span>퍼디난드</span></a>
+<a href="npc-838.html"><span>퍼르도</span></a>
+<a href="npc-1035.html"><span>퍼스맨</span></a>
+<a href="npc-2530.html"><span>퍼시</span></a>
+<a href="npc-1034.html"><span>퍼킨스</span></a>
+<a href="loc-1804.html"><span>페나코니</span></a>
+<a href="npc-1641.html"><span>페도라</span></a>
+<a href="char-19.html"><span>페라</span></a>
+<a href="npc-734.html"><span>페피</span></a>
+<a href="npc-2251.html"><span>포도대장</span></a>
+<a href="npc-2014.html"><span>포를라</span></a>
+<a href="npc-1186.html"><span>포장마차 주인</span></a>
+<a href="npc-2252.html"><span>포졸</span></a>
+<a href="npc-581.html"><span>폼폼</span></a>
+<a href="path-84.html"><span>풍요</span></a>
+<a href="faction-959.html"><span>풍요의 백성 - 풍요</span></a>
+<a href="npc-866.html"><span>프란츠</span></a>
+<a href="npc-3216.html"><span>프레마</span></a>
+<a href="npc-1036.html"><span>피도라</span></a>
+<a href="npc-2633.html"><span>피스</span></a>
+<a href="npc-839.html"><span>피즈</span></a>
+<a href="npc-1045.html"><span>피크</span></a>
+<a href="npc-3217.html"><span>하루</span></a>
+<a href="npc-1215.html"><span>하워드</span></a>
+<a href="char-1537.html"><span>한아</span></a>
+<a href="npc-1453.html"><span>함명</span></a>
+<a href="npc-3218.html"><span>해리슨</span></a>
+<a href="entry-5422.html"><span>해변 표류병</span></a>
+<a href="npc-1151.html"><span>행설</span></a>
+<a href="faction-974.html"><span>허구 역사학자 - 신비</span></a>
+<a href="person-994.html"><span>헤르타</span></a>
+<a href="loc-951.html"><span>헤르타</span></a>
+<a href="npc-2425.html"><span>헨드릭</span></a>
+<a href="npc-1177.html"><span>혜성</span></a>
+<a href="entry-1658.html"><span>호재지이</span></a>
+<a href="faction-964.html"><span>혼돈의 의사 - 공허</span></a>
+<a href="path-83.html"><span>화합</span></a>
+<a href="entry-3952.html"><span>황금 미궁 레스토랑</span></a>
+<a href="char-4736.html"><span>효광</span></a>
+<a href="char-22.html"><span>후크</span></a>
+<a href="npc-1989.html"><span>휘태커 경</span></a>
+<a href="npc-2556.html"><span>히드라</span></a>
+<a href="char-9.html"><span>히메코</span></a>
+<a href="char-5335.html"><span>히메코 · 노바</span></a>
+<a href="npc-1315.html"><span>히스만</span></a>
+<a href="char-3885.html"><span>히실렌스</span></a>
+<a href="char-3688.html"><span>히아킨</span></a>
+<a href="npc-746.html"><span>힌켈</span></a></nav></aside>
+  <article class="article-shell" data-pagefind-body>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">문서 목록</a><a href="category-people.html">인물</a><span>반디</span></nav><p class="article-summary">반디는 스텔라론 헌터의 일원이며, 기갑 「샘」을 착용하고 전투하는 인물이다. 공식 기본 정보에서 전투 속성은 화염, 운명의 길은 파멸로 분류된다. 그는 곤충 떼를 물리치기 위해 만들어진 병기였고, 성장 속도는 평범한 사람보다 빠르지만 수명이 매우 짧은 존재로 태어났다. 그래서 반디의 이야기는 강한 전투 병기의 활약담이면서 동시에, 정해진 죽음 앞에서 “삶”을 다시 요구하는 생존자의 이야기다.</p><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B0%98%EB%94%94&amp;page_slug=char-2494">수정 요청</a><a href="categories.html">분류 보기</a></div><h1>반디</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">인물</span><span class="badge">게임 4.3</span></div></header>
+    <div class="article-body"><h2 id="개요">개요</h2>
+<p>반디는 <a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>의 일원이며, 기갑 「<a class="wiki-link" href="sam.html" title="샘">샘</a>」을 착용하고 전투하는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 공식 기본 정보에서 전투 속성은 화염, <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>은 <a class="wiki-link" href="destruction.html" title="파멸">파멸</a>로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그는 곤충 떼를 물리치기 위해 만들어진 병기였고, 성장 속도는 평범한 사람보다 빠르지만 수명이 매우 짧은 존재로 태어났다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그래서 반디의 이야기는 강한 전투 병기의 활약담이면서 동시에, 정해진 죽음 앞에서 “삶”을 다시 요구하는 생존자의 이야기다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>반디는 임무에 충실하고 강인한 성격을 지닌 <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a> 헌터로 움직이지만, 자신을 단지 「샘」이라는 무기나 사명으로만 남기고 싶어 하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그는 “반디”라는 신분으로 세계를 알아가고 싶다고 말하며, 기갑 「샘」이 자신의 생명의 요람이자 한때 존재의 의미였음을 인정하면서도 그것이 전부가 아니기를 바란다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 이 균열 때문에 반디는 스텔라론 헌터 안에서도 단순한 집행자가 아니라, 각본과 운명 사이에서 자기 선택의 몫을 끝까지 확인하려는 인물로 자리 잡는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•카프카"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<h2 id="작중-역할">작중 역할</h2>
+<p>반디의 출발점은 그라모스의 병기 생산 체계다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 그는 투명한 배양 캡슐 안에서 흰 알에 싸인 채 깨어났고, 태어나자마자 “전사”로 불리며 여황을 위한 영광과 운명을 받아들이라는 명령 속으로 들어갔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 탄생 장면은 반디가 먼저 한 사람으로 인정받은 뒤 병사가 된 것이 아니라, 처음부터 목적을 가진 무기로 만들어졌다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>전장에 익숙해진 뒤의 반디는 동포들이 쓰러지는 모습을 보면서도 앞으로 나아갔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그는 언젠가 자신도 전장에서 쓰러지고, 뒤따라오는 이들이 자신의 시체를 넘어 전진하<a class="wiki-link" href="npc-836.html" title="리라">리라</a>는 사실을 알고 있었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 이때 반디에게 휴식은 전투의 공백이 아니라, 자신이 아직 살아 있다는 감각을 붙잡는 짧은 시간이었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유•소원"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 별하늘을 바라보며 갑옷을 벗고 세계의 결말을 보고 싶어 하는 마음은, 그가 병기로 만들어졌어도 세계를 느끼고 싶어 하는 개인이라는 점을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미•소풍"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
+<p>그라모스 공화국이 멸망한 뒤에도 반디의 몸에는 만들어진 병기의 결함이 남았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 철기들은 공화국 최강의 무기를 통제하기 위해 유전자 편집된 아이들이었고, 삶의 어느 순간 노화와 죽음이 가속되는 선천적 결함을 지녔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 반디가 스텔라론 헌터에 합류한 이유는 이 정해진 결말을 받아들이기 위해서가 아니라, 삶의 기회를 찾고 운명을 거스를 방법을 찾기 위해서다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그에게 스텔라론 헌터는 범죄 조직이나 임무 집단으로만 기능하지 않고, 짧은 수명이라는 한계를 상대로 다시 판을 벌일 수 있는 거의 유일한 길이다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>스텔라론 헌터가 된 뒤의 반디는 「각본」을 의식하며 움직인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•카프카"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그는 일부러 신분을 숨긴 것은 아니라고 말하면서도, 각본에 따라 반드시 「샘」의 사명을 완수해야 했다고 밝힌다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 하지만 동시에 그는 “각본대로 가지 않고 다시 한번 시도해 보고 싶다”고 <a class="wiki-link" href="kafka.html" title="카프카">카프카</a>에게 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•카프카"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 이 태도는 반디가 엘리오의 미래와 스텔라론 헌터의 임무를 부정하지는 않지만, 그 안에서 자신이 무엇을 할 수 있는지 알고 싶어 한다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p><a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>와 관련된 반디의 역할은 꿈을 꾸지 못하는 사람이 꿈의 나라에 들어가려는 시도에서 선명해진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민•수면"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 그는 필요한 수면 시간이 평범한 사람보다 훨씬 짧고, 꿈을 꾸는 기능이 없다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민•수면"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 그런데도 그는 자신의 꿈이 페나코니에 있을지도 모른다고 생각하고, 공감각 꿈세계에 들어가기 위해 “죽음”과 맞먹는 대가를 감수하려 한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 반디에게 페나코니는 휴양지나 환상이 아니라, 꿈을 갖지 못한 몸이 자기 꿈을 확인하러 가는 위험한 장소다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p>작중에서 반디는 페나코니 현지 신분을 내세우기도 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 그는 사냥개 가문에게 밀입국자로 몰렸지만 자신은 현지인이자 붓꽃 가문의 엔터테이너 “반디”라고 주장하며, 엑스트라일 뿐이라고 덧붙인다.<sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 다른 장면에서도 그는 자신을 전 붓꽃 가문의 엔터테이너 반디라고 소개한다.<sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 이 신분은 「샘」으로 움직여야 하는 임무의 얼굴과 “반디”로 세계를 알고 싶어 하는 개인의 얼굴을 동시에 드러내며, 페나코니에서 그가 숨김과 고백 사이에 놓여 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<h2 id="작중-위상">작중 위상</h2>
+<p>반디의 전투 위상은 「샘」과 분리해서 볼 수 없다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 「샘」은 창공 전선의 철기이자 반딧불이 Type-IV 전략 강습 기갑으로 불리며, 다른 사람들이 보기에는 곤충 떼에 대항하는 무기 자체가 곧 반디다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 반디는 「샘」이 자기 생명의 요람이었고 한때 자신의 존재 의미였다고 말하지만, 그것이 자신의 전부가 아니기를 바란다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 따라서 「샘」은 반디의 힘을 가능하게 하는 장치인 동시에, 반디가 벗어나고 싶어 하는 정체성의 껍질이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>전투 중 반디의 언어는 병기다운 명령 체계와 개인의 의지가 겹쳐 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•약점 격파"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•발동"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 평상시 전투 대사는 “소탕 시작”, “목표 출현”, “샘, 준비 완료”, “전장에 합류한다”처럼 작전 수행자의 말투를 띤다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•약점 격파"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•1"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•2"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 그러나 「완전연소」 상태에서는 “난 나를 위해 승리를 거둘 거야”, “싸우기 위해 살고, 살기 위해 싸운다”, “난 나를 위해 싸울 거야”처럼 임무보다 자기 삶을 앞세우는 말이 나온다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•발동"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 반디의 전투는 명령 수행에서 시작하지만, 가장 뜨겁게 타오를 때는 자신을 위해 싸우는 선언으로 바뀐다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•발동"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
+<p>게임 내 성혼과 전투 설명은 「완전연소」 상태의 샘이 방어 무시, 추가 행동, 효과 저항, 화염 저항 관통, 약점 격파 효율 증가 같은 방향으로 강화된다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> 강화된 전투 스킬은 목표의 방어력을 일부 무시하고 전투 스킬 포인트를 소모하지 않으며, 적 처치나 약점 격파를 계기로 보너스 턴을 얻을 수 있다.<sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 「완전연소」 상태에서는 효과 저항이 증가하고, 화염 속성 저항 관통과 약점 격파 효율도 오른다.<sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> 설정적으로 보면 이 강화는 단순한 화력 상승이 아니라, 짧은 생명을 더 밝게 태워 전장을 돌파하는 반디의 핵심 이미지와 맞물린다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•활성화"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
+<p>반디는 승리를 쉽게 얻은 적이 없다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 승리"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 그는 전투 불능 상태를 “임무 중지”로 받아들이고, 복귀하면 다시 전장으로 돌아간다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup> 「완전연소」 상태에서도 전투 불능 대사는 “임무 중지”이며, 복귀 대사는 앞으로 나아가는 것 외에 퇴로가 없다는 말로 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup> 반디의 강함은 압도적인 승리만으로 표현되지 않고, 이미 죽음에 익숙한 존재가 전장으로 계속 돌아오는 지속성으로 표현된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
+<p>반디의 한계도 힘만큼 중요하다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 그는 성장 속도가 빠르지만 수명이 짧고, 선천적 결함 때문에 노화와 죽음이 가속되는 운명을 지닌다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 그는 꿈을 꾸는 기능이 없고, 공감각 꿈세계에 들어가려면 의식이 <a class="wiki-link" href="path-2359.html" title="기억">기억</a> 물질의 무게에 짓눌려 산산이 부서진 뒤 특수한 방법으로 재구성되어야 한다고 이해한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민•수면"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 그래서 반디의 위상은 “강한 병기”에서 끝나지 않고, 강함으로도 지울 수 없는 신체적 결말을 안고 싸우는 인물이라는 데서 완성된다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
+<p>스텔라론 헌터 안에서 반디는 카프카, <a class="wiki-link" href="blade.html" title="블레이드">블레이드</a>, <a class="wiki-link" href="silver-wolf.html" title="은랑">은랑</a>과 함께 떠올려지는 인물이다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 한 장면에서는 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>가 카프카, 블레이드, 은랑, 반디를 떠올리고 연락을 취하자 수화기 너머로 총성과 폭발음이 이어진다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 이 묶음은 반디가 스텔라론 헌터의 주변 인물이 아니라, 현장 행동과 위험한 임무에 함께 걸리는 핵심 멤버임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
+<p>은랑과의 관계는 전투 방식과 일상 감각의 차이로 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 은랑에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•은랑"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 반디는 은랑이 자신에게 전략 없이 게임을 한다고 툴툴댄다며, 자신은 “탕탕탕, 펑펑” 식으로 끝낸다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 은랑에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup> 은랑은 게임 난이도가 평소 샘을 컨트롤하는 것보다 쉬울 것이라 말하고, 반디에게 계정을 만들어주려 한다.<sup class="cite-ref" title="게임 본편 · 은랑의 언급"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup> 또 은랑은 전략, 액션, 캐주얼, 시뮬레이션 등 추천할 만한 게임을 다 권했지만 반디의 반응이 시큰둥했다고 말한다.<sup class="cite-ref" title="게임 본편 · 은랑의 언급"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> 두 사람의 관계는 전투를 게임처럼 다루는 은랑과, 전투를 게임이 아니라고 선을 긋는 반디의 차이를 통해 살아난다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•은랑"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
+<p>카프카와의 관계는 친밀함과 거리감이 동시에 걸려 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카프카에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•카프카"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 반디는 카프카가 늘 먼저 다가오지만, 자신이 다가가려 하면 오히려 둘 사이가 멀어지는 듯하다고 느낀다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카프카에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 카프카는 친구 사이에는 적당한 거리를 둬야 오래 관계를 유지할 수 있다고 말했지만, 반디는 카프카가 정말 그렇게 생각하는 것 같지는 않다고 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카프카에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 반디가 카프카에게 각본대로 가지 않고 다시 시도해 보고 싶다고 말하는 장면은, 카프카가 단순한 동료가 아니라 반디가 자기 선택을 꺼내 보이는 상대임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•카프카"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>블레이드와 반디는 서로 반대 방향에서 같은 결말을 바라본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•블레이드"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 반디는 블레이드가 죽음의 결말을 찾고 자신은 삶의 기회를 찾는다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그러나 그는 둘이 서로 다른 길을 걷는 것 같아도 같은 종착지에 닿을 것이며, 블레이드 역시 운명의 노예가 되지 않을 것이라고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 함께 편성될 때 반디는 전투 속에서 둘이 원하는 답을 찾게 될 것이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•블레이드"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 이 관계는 죽고 싶은 자와 살고 싶은 자의 단순한 대비가 아니라, 정해진 결말을 거부하는 두 방식의 대칭으로 읽힌다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•블레이드"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup></p>
+<p><a class="wiki-link" href="trailblaze.html" title="개척">개척</a>자와의 관계에서 반디는 경계보다 동행의 말을 먼저 건넨다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•개척자"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> 그는 개척자에게 어디 가고 싶은지 묻고 함께 가자고 말하며, 파티 편성 시에는 긴장할 필요 없이 전처럼 같이 힘을 합쳐보자고 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•개척자"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> 작중에서는 “반디에게도 선택의 여지가 없었다”는 언급이 있어, 그의 행동이 단순한 배신이나 기만으로만 정리되지 않는 사정이 있음을 남긴다.<sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup> 반디는 자신이 진짜 반디라고 외치는 장면에서도 위험한 폭탄을 경고하며 상대를 물러서게 하려 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup> 이 관계는 신분 은폐와 신뢰 회복이 얽힌 관계이며, 반디가 임무 수행자이면서도 타인을 위험에서 떼어놓으려는 인물임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup></p>
+<p><a class="wiki-link" href="char-1919.html" title="아케론">아케론</a>, <a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>, <a class="wiki-link" href="char-1924.html" title="갤러거">갤러거</a>, <a class="wiki-link" href="char-2366.html" title="로빈">로빈</a>에 대한 반디의 말은 페나코니 인물들을 바라보는 그의 감각을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아케론에 대해"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블랙 스완에 대해"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 갤러거에 대해"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 로빈에 대해"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup> 반디는 아케론에게서 빗속을 걷고 전투 속에서 불타오르며 차가운 재를 들어 올린 과거를 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아케론에 대해"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup> 블랙 스완에 대해서는 생명이 한순간이어도 기억은 영원할 수 있으며, 그가 자신을 기억하는 한 세상에 남은 흔적이 사라지지 않을 것이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블랙 스완에 대해"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup> 갤러거를 두고는 허구의 등장인물 때문에 기뻐하고 슬퍼하게 되는 소<a class="wiki-link" href="char-1640.html" title="설의">설의</a> 감각을 떠올리고, <a class="wiki-link" href="npc-2404.html" title="마지">마지</a>막에는 작가와 독자와 등장인물의 구분마저 흐려질 수 있다고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 갤러거에 대해"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup> 로빈에 대해서는 겉모습보다 용기와 순수함이 더 인상 깊었다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 로빈에 대해"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup> 이 평가들은 반디가 타인을 전투력이나 임무 가치로만 보지 않고, 기억과 이야기와 용기의 형태로 읽는 인물임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블랙 스완에 대해"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 로빈에 대해"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup></p>
+<p><a class="wiki-link" href="char-2495.html" title="제이드">제이드</a>에 대한 반디의 말은 생존 욕망의 경계를 분명히 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 제이드에 대해"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•제이드"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup> 그는 옥석을 담보로 쓸 수는 있겠지만 모든 물건을 교환할 수 있는 것은 아니며, 살아가는 것 외에도 포기하고 싶지 않은 더 가치 있는 것들이 있다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 제이드에 대해"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup> <a class="wiki-link" href="npc-2002.html" title="제이">제이</a>드와 함께 편성될 때는 언젠가 자신의 의지를 이해하게 될 것이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•제이드"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup> 반디는 삶을 찾지만, 삶만 얻기 위해 모든 것을 거래하려 하지는 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 제이드에 대해"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•제이드"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup></p>
+<h2 id="반딧불이와-샘-사이의-자기-선택">반딧불이와 샘 사이의 자기 선택</h2>
+<p>반디의 핵심 이미지는 반딧불이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유•소원"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•반딧불이"><a href="#ref-56" data-cite-popover data-ref-target="ref-56" aria-label="각주 56 내용 보기" aria-expanded="false">56</a></sup> 그는 전장에 발을 들인 날부터 불타는 날개가 언젠가 꺼진다는 것을 알았고, 대지로 돌아가기 전에 하늘에서 가장 밝은 빛을 보고 싶어 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유•소원"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 또 반딧불이는 불을 향해 날아들고 갑자기 노화하기도 하지만, 그렇게 될 때까지 매일 밤 별보다 눈부신 빛을 뿜어낸다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•반딧불이"><a href="#ref-56" data-cite-popover data-ref-target="ref-56" aria-label="각주 56 내용 보기" aria-expanded="false">56</a></sup> 이 비유는 반디가 짧은 생명을 부정하지 않으면서도, 그 짧음 때문에 더 밝게 살려는 인물임을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•반딧불이"><a href="#ref-56" data-cite-popover data-ref-target="ref-56" aria-label="각주 56 내용 보기" aria-expanded="false">56</a></sup></p>
+<p>반디는 자연과 생명력에 강하게 끌린다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민•벌레"><a href="#ref-57" data-cite-popover data-ref-target="ref-57" aria-label="각주 57 내용 보기" aria-expanded="false">57</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미•소풍"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 반딧불이와 나비가 그에게 날아오지만 거미와 바퀴벌레도 따라오기에 추운 곳을 좋아한다고 말하고, 기온이 내려가면 자신도 움직이고 싶지 않아진다는 곤란함을 덧붙인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민•벌레"><a href="#ref-57" data-cite-popover data-ref-target="ref-57" aria-label="각주 57 내용 보기" aria-expanded="false">57</a></sup> 그는 들풀, 열매, 산들바람, 나비가 있는 교외에서 생명력이 가득한 세계를 두 손으로 느끼는 일을 좋아한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미•소풍"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 병기로 태어난 인물이 생명력 있는 장소를 직접 만지고 싶어 한다는 점은, 반디의 소원이 추상적인 생존이 아니라 몸으로 세계를 경험하는 삶이라는 사실을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미•소풍"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-58" data-cite-popover data-ref-target="ref-58" aria-label="각주 58 내용 보기" aria-expanded="false">58</a></sup></p>
+<p>반디는 “이 몸으로 조금만 더 있게 해줘”라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-58" data-cite-popover data-ref-target="ref-58" aria-label="각주 58 내용 보기" aria-expanded="false">58</a></sup> 이 말은 「샘」의 강력한 전투 장비보다, 제한된 몸으로 세계에 머무는 시간이 그에게 얼마나 절실한지를 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-58" data-cite-popover data-ref-target="ref-58" aria-label="각주 58 내용 보기" aria-expanded="false">58</a></sup> 최고 레벨 대사에서도 그는 마지막에는 자신만의 꿈을 가질 수 있을지도 모른다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 반디가 찾는 것은 단순한 수명 연장이 아니라, 병기로 태어난 자신에게도 꿈과 미래를 가질 권리가 있는지 확인하는 일이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>엘리오는 자신의 미래를 볼 수 있고, 반디 역시 자기 미래를 볼 수 있다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 엘리오가 운명은 하나뿐이라고 했지만, 반디는 그 운명에 도달하기 전에 자신이 무엇을 할 수 있을지 알고 싶어 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그는 그럴 권리가 있다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이 문장은 반디를 가장 잘 설명하는 축이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 반디는 죽음을 모르는 영웅이 아니라 죽음에 익숙한 병기이고, 그렇기 때문에 정해진 끝까지 가는 과정에서 자기 의지가 남을 수 있는지를 묻는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>반디의 이름과 「샘」의 이름은 서로를 지우지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-59" data-cite-popover data-ref-target="ref-59" aria-label="각주 59 내용 보기" aria-expanded="false">59</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그는 첫 만남에서 평소처럼 자신을 “반디”라고 불러 달라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-59" data-cite-popover data-ref-target="ref-59" aria-label="각주 59 내용 보기" aria-expanded="false">59</a></sup> 그러나 전투에 들어가면 “샘, 지시 대기 중”, “반딧불이 Type-IV, 준비 완료” 같은 말이 나온다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-60" data-cite-popover data-ref-target="ref-60" aria-label="각주 60 내용 보기" aria-expanded="false">60</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 대기"><a href="#ref-61" data-cite-popover data-ref-target="ref-61" aria-label="각주 61 내용 보기" aria-expanded="false">61</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-62" data-cite-popover data-ref-target="ref-62" aria-label="각주 62 내용 보기" aria-expanded="false">62</a></sup> 결국 반디의 이야기는 샘을 벗어던지는 이야기가 아니라, 샘으로 살아남은 사람이 반디라는 이름을 끝까지 되찾는 이야기다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-59" data-cite-popover data-ref-target="ref-59" aria-label="각주 59 내용 보기" aria-expanded="false">59</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p><section class="references"><h2>문서 출처</h2><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">반디</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">스텔라론 헌터</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">전투 속성</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">화염</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">파멸</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">블레이드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">그는 「죽음」의 결말을 찾고, 난 「삶」의 기회를 찾아. 우린 서로 다른 길을 걷고 있는 것 같지만, 같은 종착지에 다다를 거야. 그 역시… 운명의 노예가 되지 않을 거고</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">자신에 대해•신분</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">미안해, 일부러 숨긴 건 아니야…. 「각본」에 따라 난 반드시 「샘」의 사명을 완수해야 해. 그 외엔 내 사심 때문이려나? 난 「반디」의 신분으로 이 세상을 알아가고 싶어</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">자신에 대해•샘</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">「샘」——창공 전선의 철기, 반딧불이 Type-IV 전략 강습 기갑… 다른 사람이 볼 땐 곤충 떼에 대항하는 그 무기가 바로 「나」야…. 「샘」이 내 생명의 요람이라는 건 알고 있어. 한때는 내 존재의 의미였지. 하지만 난… 그게 내 전부가 아니었으면 좋겠어</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">파티 편성•카프카</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">「각본」대로 가지 않고 다시 한번 시도해 보고 싶어…. 그래도 될까, 카프카?</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">자신에 대해•미래</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">엘리오께선 자신의 미래를 보실 수 있고, 나도 내 미래를 「볼」 수 있어. 그는 운명은 하나뿐이라고 했지만, 난 그 운명에 도달하기 전에 내가 무엇을 할 수 있을지 알고 싶어…. 내겐 그럴 권리가 있잖아</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 투명한 배양 캡슐에서 그녀는 차가운 인공 양수에 잠긴 채 흰 알에 싸여 있었다. 캡슐 용기가 흔들리자, 부유하던 그녀는 본능적으로 차갑고 부드러운 가장자리로 이동해 벽에 달라붙어 몸을 웅크렸다. 마치 이렇게 하면 몸이 온기를 더 느낄 수 있는 듯 말이다. 그녀는 거대한 물체가 떨어지는 소리, 금속이 부딪치는 소리를 들었다. 다급한 발소리가 간간이 울려 퍼지고, 배양 캡슐이 흔들리기 시작했다…. 「전사들이여, 일어날 시간이다……」...</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 혼수상태에서 깨어나 보니 낯선 은하계였다. 은하에서 부유하는 빛을 내는 생물들이 그녀에게 이끌려 주변에서 춤을 추듯 날았다. 그녀는 멀리 날아가는 부유 생물들을 바라봤지만, 자신의 끝은 어디인지 알 수 없었다. 「무엇을 위해 죽는 것일까?」 「무엇을 위해 사는 것일까?」 꿈은 여전히 그녀에게 너무 멀다. 그녀는 끝없는 어둠을 멍하니 바라봤지만, 답을 찾을 수 없었다. …… 「그렇게 그라모스 공화국은 멸망하고, 철기 군단에 대한...</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 어느새 그녀는 전장에 익숙해졌다. 그녀는 동포들이 눈앞에서 쓰러지는 것을 지켜보면서도 의연하게 전진했다. 그녀는 언젠가 자신도 전장에서 쓰러질 것이고, 뒤따라오는 자들이 자신의 시체를 넘어 전진하리라는 것을 알고 있었다. 그렇기에 휴식 시간은 언제나 소중했다. 그녀는 고개를 들어 머리 위로 펼쳐진 은빛 바다에서 쏟아지는 별빛을 바라봤다. 별하늘 아래 모든 것이 고요했다. 엔트로피 손실의 위협에도 그녀는 갑옷을 벗고 세계의 결말을...</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">공유•소원</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">전장에 발을 들인 그날부터 난 불타는 날개는 언젠가 꺼진다는 걸 깨달았어. 난 그저, 대지로 돌아가기 전에… 하늘에서 가장 밝은 빛을 보고 싶어</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">취미•소풍</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">들풀, 열매, 산들바람, 나비… 난 가끔 바람 쐴 때 식물이 무성한 교외로 가서 생명력이 가득한 세계를 내 두 손으로 느끼는 걸 좋아해</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 또 다른 어느 조용한 밤, 그녀는 늘 그랬던 것처럼 높은 곳에 앉아서 새벽이 올 때까지 등불이 꺼졌다가 켜지고, 배들이 공중 부두를 드나드는 모습을 지켜봤다. 은랑이 하품을 하며 곁으로 걸어왔다. 「잠이 안 와?」그녀는 몸을 움직이며 자리를 내주었다. 「이상한 꿈을 꿨어. 펑크 로드에 전자 악마가 침입해서 내가 뛰어다니며 풍선껌으로 바이러스를 붙이다가 깼어」 「꿈이라……」 「페나코니로 떠나는 거야?」 「응. 내 꿈이… 거기 있을...</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">고민•수면</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">난 꿈을 꾸는 기능이 없어. 필요한 수면 시간도 평범한 사람보다 훨씬 짧고. 매일 밤 난 옥상에서 별바다를 조용히 바라보며, 불빛이 켜지고 꺼지고 배들이 항구를 오가는 경치를 감상해… 날이 밝을 때까지 쭉</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">캐릭터 최고 레벨</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">어쩌면 마지막엔 나도 나만의 꿈을 가질 수 있을지도 몰라……</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">사냥개 가문에게 밀입국자로 몰렸지만, 사실 난 현지인이자——붓꽃 가문의 엔터테이너 「반디」야! 엑스트라일 뿐이지만……</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">…전 붓꽃 가문의 엔터테이너, 반디라고 해요</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">전투 시작•약점 격파</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">소탕 시작</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">필살기•발동</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">난 나를 위해 싸울 거야. 모든 게… 불타버릴 때까지!</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">전투 시작•위험 경보</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">목표 출현, 모두 경계하도록</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">턴 시작•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">샘, 준비 완료</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">턴 시작•2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">전장에 합류한다</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">음성</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">난 나를 위해 승리를 거둘 거야</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">음성</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">싸우기 위해 살고, 살기 위해 싸운다!</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">성혼</span> <span class="ref-source">공식 HoYoWiki — 성혼 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">강화된 전투 스킬 발동 시 목표의 방어력 15%를 무시하고, 강화된 전투 스킬은 전투 스킬 포인트를 소모하지 않는다</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">성혼</span> <span class="ref-source">공식 HoYoWiki — 성혼 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">「완전연소」 상태에서 강화된 일반 공격, 강화된 전투 스킬을 발동해 적을 처치하거나 적을 약점 격파 상태에 빠트릴 시 기갑 「샘」이 즉시 보너스 턴을 1개를 획득한다. 해당 효과는 1턴 후 다시 발동할 수 있다 강화: 「완전연소」 상태에서 강화된 일반 공격, 강화된 전투 스킬을 발동해 적을 처치하거나 적을 약점 격파 상태에 빠트릴 시 기갑 「샘」이 즉시 보너스 턴을 1개를 획득한다. 해당 효과는 턴당 1회 발동할 수 있으며, 기갑 「샘」 의 턴 시작 시 발...</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">성혼</span> <span class="ref-source">공식 HoYoWiki — 성혼 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">「완전연소」 상태일 때 기갑 「샘」의 효과 저항이 50% 증가한다</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">성혼</span> <span class="ref-source">공식 HoYoWiki — 성혼 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">「완전연소」 상태에서 기갑 「샘」의 화염 속성 저항 관통이 20% 증가한다. 강화된 일반 공격, 강화된 전투 스킬 발동 시 약점 격파 효율이 50% 증가한다</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">성혼 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">매미 날개처럼 부서지기 쉬운 생명도 찬란하게 타오를 수 있어</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">필살기•활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">반딧불이는 생명을 불태워 빛을 내지</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">전투 승리</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">쉽게 얻은 승리는 단 하나도 없어</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">전투 불능</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">임무… 중지……</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">전투 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">전장으로 복귀한다</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">음성</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">앞으로 나아가는 것 외에 퇴로는 없어</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">음성</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">임무… 중지……</div></li>
+<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">당신은 카프카와 블레이드, 은랑, 반디를 떠올리고 바로 연락을 취한다…. 수화기 너머로 총성과 폭발음이 연달아 들려온다</div></li>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">은랑에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">은랑은 항상 내가 전략 없이 게임을 한다고 툴툴대곤 해. 나는 항상 「탕탕탕, 펑펑——펑!」만 하고 끝낸다나. 근데 난 은랑의 그 기술을 못 따라 하겠어. 「땡땡이」였나? 아님 내가 너무 바보인가?</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">파티 편성•은랑</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">전투는 게임이 아니지…. 걱정 마, 알고 있어</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">은랑의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">괜찮아. 게임 난이도는 네가 평소에 샘을 컨트롤하는 것보다 쉬울 거야. 가자, {NICKNAME}. 일단 오락기부터 찾고 반디한테 계정을 만들어주자</div></li>
+<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">은랑의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">…내가 지금까지 반디랑 같이 게임하려고 얼마나 많은 시도를 했는지 알아? 전략, 액션, 캐주얼, 시뮬레이션… 추천할 만한 게임은 다 추천했는데 항상 시큰둥한 반응만 보였었어</div></li>
+<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">카프카에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">카프카는 늘 나한테 먼저 다가오는데, 내가 다가가려고 하면 오히려 우리 사이가 점점 멀어지는 것 같은 기분이 들어…. 「친구 사이엔 적당히 거리를 둬야 오랫동안 관계를 유지할 수 있어」——카프카가 이렇게 말하긴 했지만, 정말 그렇게 생각하는 것 같진 않아</div></li>
+<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">파티 편성•블레이드</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">전투 속에서 우린 분명 원하는 답을 찾게 될 거야</div></li>
+<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">인사</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">개척자, 오늘은 어디 가고 싶어? 같이 가보자</div></li>
+<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">파티 편성•개척자</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">개척자, 긴장할 필요 없어…. 전처럼 같이 힘을 합쳐보자</div></li>
+<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">반디에게도 선택의 여지가 없었어요…</div></li>
+<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">다가오지 마! 이 폭탄은 위험해! 그리고… 난 진짜 반디야!</div></li>
+<li id="ref-50" data-reference-item data-ref-number="50"><span class="ref-title">아케론에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">난 보여…. 그녀 역시 한때 빗속을 걸었고, 전투 속에서 불타올랐으며, 두 손으로 차가운 재를 들어 올렸지——나와는 전혀 다른 방식으로 말이야</div></li>
+<li id="ref-51" data-reference-item data-ref-number="51"><span class="ref-title">블랙 스완에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">생명은 한순간이어도 기억은 영원할 수 있어——아마 오랜 시간이 지나도, 블랙 스완 씨가 날 기억하는 한, 이 세상에 있는 내 흔적은 사라지지 않을 거야</div></li>
+<li id="ref-52" data-reference-item data-ref-number="52"><span class="ref-title">갤러거에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">그가 겪은 모든 것을 이해하는 건 마치 멋진 소설을 읽는 것과 같아. 등장인물이 모두 허구라는 걸 알아도, 그들 때문에 기뻐하고 슬퍼하게 되지——어쩌면 마지막엔 누가 작가고 누가 독자인지, 또 누가 등장인물인지조차 구분할 수 없을지도 몰라</div></li>
+<li id="ref-53" data-reference-item data-ref-number="53"><span class="ref-title">로빈에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">화려한 의상, 아름다운 목소리, 온화한 행동 때문에… 많은 사람이 그녀를 얕봤을지도 몰라. 하지만 난 빛나는 겉모습보다 그녀의 용기와 순수함이 더 인상 깊었어</div></li>
+<li id="ref-54" data-reference-item data-ref-number="54"><span class="ref-title">제이드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">옥석은 담보로 쓸 수 있겠지만, 모든 물건을 교환할 수 있는 건 아냐——「살아가는 것」 외에도 내겐 포기하고 싶지 않은, 더 가치 있는 것들이 있어</div></li>
+<li id="ref-55" data-reference-item data-ref-number="55"><span class="ref-title">파티 편성•제이드</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">당신도 언젠간 제 의지를 이해하게 될 거예요</div></li>
+<li id="ref-56" data-reference-item data-ref-number="56"><span class="ref-title">잡담•반딧불이</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">반딧불이는 참 신기한 생물이지? 불을 향해 날아들고, 갑자기 노화하기도 해. 하지만 그렇게 될 때까지 그들은 매일 밤 별보다 눈부신 빛을 뿜어내</div></li>
+<li id="ref-57" data-reference-item data-ref-number="57"><span class="ref-title">고민•벌레</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">반딧불이와 나비가 종종 내게 날아오는데, 거미와 바퀴벌레도 따라오곤 해…. 그래서 난 추운 곳이 더 좋아. 문제는 기온이 내려가면, 나도 움직이고 싶지 않아진다는 거야. 정말 어렵네……</div></li>
+<li id="ref-58" data-reference-item data-ref-number="58"><span class="ref-title">도시로 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">이 몸으로 조금만 더 있게 해줘……</div></li>
+<li id="ref-59" data-reference-item data-ref-number="59"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">안녕, 또 만났네…. 내 말은, 만나서 반갑다고. 평소처럼 날 「반디」라고 불러줘</div></li>
+<li id="ref-60" data-reference-item data-ref-number="60"><span class="ref-title">음성</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">반딧불이 Type-IV, 준비 완료</div></li>
+<li id="ref-61" data-reference-item data-ref-number="61"><span class="ref-title">턴 대기</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">샘, 지시 대기 중</div></li>
+<li id="ref-62" data-reference-item data-ref-number="62"><span class="ref-title">음성</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2494?lang=ko-kr">원문</a></span><div class="ref-quote">반딧불이 Type-IV, 지시 대기 중</div></li></ol></section>
+<details class="article-tools" data-page-dates data-public-launch-surface>
+  <summary>문서 정보와 변경 로그</summary>
+  <h2>문서 정보</h2>
+  <div class="info-grid"><div class="info-item"><strong>분류</strong><span>인물</span></div>
+<div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div>
+<div class="info-item"><strong>검증 기준</strong><span>게임 4.3</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 성혼, 공식 HoYoWiki — 음성</p>
+  <h3>최근 변경</h3>
+  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=3d40732e9252</li></ol>
+  <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B0%98%EB%94%94&amp;page_slug=char-2494">수정 요청</a></div>
+</details>
+
+<section class="comments-section" data-comments-root data-comments-mode="local_mock" data-page-slug="char-2494" data-max-depth="2" data-max-chars="1200" data-worker-base-url="" data-supabase-project-url="" data-supabase-anon-key="" data-turnstile-site-key="">
+  <h2>댓글</h2>
+  <p class="subtle" data-comments-status>댓글을 불러오는 중입니다.</p>
+  <div class="comments-toolbar" data-comments-auth hidden>
+    <button type="button" data-comments-login>Google로 로그인</button>
+    <button type="button" data-comments-logout hidden>로그아웃</button>
+    <span class="subtle" data-comments-user></span>
+  </div>
+  <form data-comments-form hidden>
+    <label>
+      <span class="sr-only">표시 이름</span>
+      <input data-comments-name maxlength="40" autocomplete="nickname" placeholder="표시 이름 (선택)">
+    </label>
+    <label>
+      <span class="sr-only">댓글 내용</span>
+      <textarea data-comments-text maxlength="1200" placeholder="텍스트 댓글만 입력"></textarea>
+    </label>
+    <div data-turnstile-container></div>
+    <button type="submit">등록</button>
+  </form>
+  <div class="comments-list" data-comments-list></div>
+</section>
+</div>
+  </article>
+</main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.cite-ref a[data-cite-popover] {
+  cursor: pointer;
+}
+.cite-ref a[data-cite-popover][aria-expanded="true"] {
+  background: var(--accent);
+  color: #fff;
+}
+.citation-popover {
+  position: fixed;
+  z-index: 40;
+  width: min(420px, calc(100vw - 24px));
+  max-height: min(50vh, 360px);
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  padding: 14px 15px 15px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.citation-popover[hidden] { display: none; }
+.citation-popover::before {
+  content: "";
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background: var(--paper);
+  border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  left: calc(var(--arrow-x, 50%) - 6px);
+  display: none;
+}
+.citation-popover-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.citation-popover-close:hover,
+.citation-popover-close:focus {
+  background: var(--accent-soft);
+  color: var(--accent);
+  outline: 0;
+}
+.citation-popover-number {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  margin-bottom: 4px;
+}
+.citation-popover strong {
+  display: block;
+  padding-right: 32px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+.citation-popover-source {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 4px;
+}
+.citation-popover blockquote {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+.citation-popover-empty {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+@media (max-width: 720px) {
+  .citation-popover {
+    left: 12px !important;
+    right: 12px;
+    width: auto;
+    max-height: 45vh;
+  }
+}

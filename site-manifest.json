@@ -1,0 +1,54 @@
+{
+  "schema": "hsr-wiki-static-site-manifest-v1",
+  "generated_at": "2026-06-27T17:41:49+09:00",
+  "site_base_url_configured": true,
+  "page_count": 556,
+  "html_count": 575,
+  "file_count": 718,
+  "total_bytes": 53741773,
+  "critical_assets": {
+    "assets/wiki-search.js": {
+      "exists": true,
+      "bytes": 13450
+    },
+    "assets/wiki-search.css": {
+      "exists": true,
+      "bytes": 3294
+    },
+    "assets/wiki-citations.js": {
+      "exists": true,
+      "bytes": 4533
+    },
+    "assets/wiki-citations.css": {
+      "exists": true,
+      "bytes": 1956
+    },
+    "assets/wiki-theme.js": {
+      "exists": true,
+      "bytes": 1053
+    },
+    "assets/wiki-comments.js": {
+      "exists": true,
+      "bytes": 12542
+    },
+    "assets/wiki-reports.js": {
+      "exists": true,
+      "bytes": 5836
+    },
+    "assets/astral-wiki-hero.jpg": {
+      "exists": true,
+      "bytes": 729401
+    }
+  },
+  "features": {
+    "theme_toggle": true,
+    "system_theme": true,
+    "category_pages": true,
+    "article_dates": true,
+    "bounded_update_history": true,
+    "static_search": true,
+    "comments_scaffold": true,
+    "reports_scaffold": true,
+    "ads_config": false
+  }
+}

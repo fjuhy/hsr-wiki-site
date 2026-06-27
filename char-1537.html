@@ -1,0 +1,1144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>한아 · HSR 설정 위키</title>
+  <meta name="description" content="한아는 선주 「나부」 시왕사의 판관으로, 시왕의 명을 받아 명참천필을 관장하고 죄업을 판독해 업보를 판결하는 인물이다. 시왕사의 네 부문인 체포, 구금, 처벌, 심문 가운데 한아가 맡은 일은 마지막 부문인 「심문」이며, 범죄자의 인과와 죄를 읽어 명참천필로 판결을 적는다.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="HSR 설정 위키">
+  <meta property="og:title" content="한아 · HSR 설정 위키">
+  <meta property="og:description" content="한아는 선주 「나부」 시왕사의 판관으로, 시왕의 명을 받아 명참천필을 관장하고 죄업을 판독해 업보를 판결하는 인물이다. 시왕사의 네 부문인 체포, 구금, 처벌, 심문 가운데 한아가 맡은 일은 마지막 부문인 「심문」이며, 범죄자의 인과와 죄를 읽어 명참천필로 판결을 적는다.">
+  <meta property="og:url" content="https://fjuhy.github.io/hsr-wiki-site/char-1537.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://fjuhy.github.io/hsr-wiki-site/char-1537.html">
+  <link rel="icon" href="data:,">
+  <style>:root {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #111418;
+    --paper: #191e22;
+    --surface: #20272a;
+    --ink: #edf2f0;
+    --muted: #aab6b2;
+    --line: #34403d;
+    --accent: #7fc9bd;
+    --accent-ink: #dff8f3;
+    --accent-soft: #213c3a;
+    --warn: #e1ad7d;
+    --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111418;
+  --paper: #191e22;
+  --surface: #20272a;
+  --ink: #edf2f0;
+  --muted: #aab6b2;
+  --line: #34403d;
+  --accent: #7fc9bd;
+  --accent-ink: #dff8f3;
+  --accent-soft: #213c3a;
+  --warn: #e1ad7d;
+  --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { background: var(--accent-soft); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 2px;
+}
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.site-header-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
+.brand:hover { background: transparent; color: var(--accent-ink); }
+.brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.top-links a, .theme-toggle {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.theme-toggle { cursor: pointer; min-width: 38px; }
+.top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.layout {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 24px;
+}
+.sidebar {
+  align-self: start;
+  position: sticky;
+  top: 74px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  padding: 12px;
+}
+.sidebar h2 { font-size: 12px; margin: 0 0 10px; color: var(--muted); letter-spacing: .04em; }
+.queue-list { display: grid; gap: 3px; max-height: 74vh; overflow: auto; }
+.queue-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 7px;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.queue-list a:hover, .queue-list a[aria-current="page"] { background: var(--accent-soft); }
+.article-shell {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.article-top {
+  padding: 28px 42px 18px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; color: var(--muted); font-size: 13px; }
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs span::before { content: "/"; margin-right: 6px; color: var(--muted); }
+.article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
+.article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-mini-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.article-mini-actions a { color: var(--muted); text-decoration: none; }
+.article-mini-actions a:hover { color: var(--accent-ink); background: transparent; text-decoration: underline; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: color-mix(in srgb, var(--paper) 72%, var(--accent-soft));
+  color: var(--accent-ink);
+  font-size: 12px;
+  font-weight: 760;
+}
+.article-body { padding: 26px 42px 44px; max-width: 900px; }
+.article-body h2 {
+  margin: 34px 0 12px;
+  padding-top: 12px;
+  font-size: 24px;
+  line-height: 1.32;
+  border-top: 1px solid var(--line);
+}
+.article-body h2:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.article-body h3 { margin: 22px 0 8px; font-size: 18px; line-height: 1.35; }
+.article-body p { margin: 0 0 16px; }
+.article-body ul { margin: 0 0 18px; padding-left: 20px; }
+.article-body li { margin: 6px 0; }
+.wiki-link { font-weight: 730; text-decoration-style: solid; }
+.cite-ref { font-size: .72em; vertical-align: super; margin-left: 2px; }
+.cite-ref a {
+  border-radius: 999px;
+  padding: 1px 4px;
+  background: var(--accent-soft);
+  text-decoration: none;
+  font-weight: 800;
+}
+.references, .article-tools, .comments-section, .ad-slot, .donation-panel, .report-panel {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.references { font-size: 12px; line-height: 1.5; }
+.references h2, .article-tools h2, .comments-section h2, .donation-panel h2, .report-panel h2 { border-top: 0; margin: 0 0 12px; padding-top: 0; font-size: 17px; }
+.references ol { padding-left: 18px; }
+.references li { margin: 6px 0 10px; }
+.ref-title { font-weight: 800; }
+.ref-source, .subtle { color: var(--muted); font-size: 12px; }
+.ref-quote { color: var(--muted); margin-top: 3px; font-size: 11px; }
+.article-tools {
+  margin-top: 28px;
+  font-size: 13px;
+}
+.article-tools summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.article-tools summary:hover { color: var(--accent-ink); }
+.info-grid, .category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.info-item, .category-card, .home-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 11px 12px;
+}
+.category-card, .home-card {
+  color: var(--ink);
+  text-decoration: none;
+}
+.category-card:hover, .home-card:hover { background: var(--accent-soft); }
+.info-item strong, .category-card strong, .home-card strong { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.history-list { margin: 12px 0 0; padding-left: 18px; }
+.history-list li { margin: 7px 0; }
+.log-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+.log-list li {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+}
+.action-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+.button-link:hover { background: var(--accent-soft); }
+.comments-section input, .comments-section textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.comments-section textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+.comments-section button {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 760;
+}
+.comments-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0 0; }
+.comments-toolbar button, .comment-card button, .report-panel button, .donation-copy {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+}
+.comments-section button[type="submit"], .report-panel button[type="submit"] {
+  background: var(--accent);
+  color: var(--paper);
+}
+.comments-list { display: grid; gap: 10px; margin-top: 14px; }
+.comment-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 10px 12px;
+}
+.comment-card p { margin: 5px 0 0; }
+.comment-card.is-held { border-style: dashed; }
+.comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+.ad-slot { color: var(--muted); font-size: 12px; }
+.stub { padding: 38px 42px; max-width: 900px; }
+.stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
+.stub p { max-width: 760px; }
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .86fr);
+  gap: 24px;
+  align-items: center;
+  padding: 38px 42px 28px;
+}
+.home-hero h2 { font-size: clamp(28px, 4vw, 44px); line-height: 1.1; margin: 0 0 12px; }
+.home-visual {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 42px rgba(12, 16, 24, .14);
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+}
+.home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
+.home-section h2 { margin: 0 0 12px; font-size: 21px; }
+.recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list a { font-weight: 800; text-decoration: none; }
+.policy-links { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; }
+.donation-row {
+  display: grid;
+  grid-template-columns: minmax(86px, .5fr) minmax(0, 1.5fr) auto;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 9px 10px;
+  margin-top: 8px;
+}
+.donation-row code { overflow-wrap: anywhere; font-size: 12px; }
+.report-panel form { display: grid; gap: 10px; }
+.report-panel label { display: grid; gap: 4px; font-weight: 760; }
+.report-panel input, .report-panel textarea, .report-panel select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 9px 10px;
+  font: inherit;
+}
+.report-panel textarea { min-height: 130px; resize: vertical; }
+@media (max-width: 900px) {
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
+}
+@media (max-width: 820px) {
+  body { font-size: 16px; line-height: 1.74; }
+  .layout { grid-template-columns: 1fr; padding: 14px; }
+  .article-shell { order: 1; }
+  .sidebar { order: 2; position: static; }
+  .queue-list { max-height: 34vh; }
+  .article-top, .article-body, .stub, .home-hero, .home-section { padding-left: 20px; padding-right: 20px; }
+  .home-hero { grid-template-columns: 1fr; gap: 16px; }
+  .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
+  .donation-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
+  .brand small { display: none; }
+  .top-links a { padding: 7px 8px; }
+  .article-body { padding-bottom: 32px; }
+}</style>
+  <link rel="stylesheet" href="assets/wiki-search.css?v=103e0b690649">
+  <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
+  <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
+  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
+  <script type="module" src="assets/wiki-comments.js?v=9f53817eb89f"></script>
+  <script type="module" src="assets/wiki-reports.js?v=eadca1919286"></script>
+</head>
+<body>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">HSR 설정 위키 <small>설정 문서</small></a><search class="search-shell" data-wiki-search data-pagefind-ignore>
+  <form class="search-form" data-search-form role="search">
+    <label class="search-input-wrap">
+      <span class="sr-only">위키 검색</span>
+      <input class="search-input" data-search-input type="search" placeholder="문서·고유명사 검색 /" autocomplete="off" spellcheck="false">
+      <span class="search-kbd">/</span>
+    </label>
+  </form>
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-panel-inner">
+      <section class="search-column">
+        <h2 class="search-heading">자동완성</h2>
+        <div data-search-suggestions></div>
+        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
+      </section>
+      <section class="search-column">
+        <h2 class="search-heading">문서 본문 검색</h2>
+        <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
+      </section>
+    </div>
+  </div>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">분류</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+<main class="layout">
+  <aside class="sidebar"><h2>둘러보기</h2><nav class="queue-list"><a href="categories.html"><span>전체 분류</span></a><a href="category-people.html"><span>인물</span></a>
+<a href="category-factions.html"><span>파벌</span></a>
+<a href="category-paths.html"><span>운명의 길</span></a>
+<a href="category-aeons.html"><span>에이언즈</span></a>
+<a href="category-places.html"><span>장소</span></a>
+<a href="category-events.html"><span>사건</span></a>
+<a href="category-concepts.html"><span>개념</span></a>
+<a href="category-terms.html"><span>아이템/용어</span></a>
+<a href="category-other.html"><span>기타</span></a></nav><h2 style="margin-top:16px">문서 목록</h2><nav class="queue-list"><a href="trailblaze.html"><span>개척</span></a>
+<a href="nihility.html"><span>공허</span></a>
+<a href="preservation.html"><span>보존</span></a>
+<a href="interastral-peace-corporation.html"><span>스타피스 컴퍼니</span></a>
+<a href="stellaron.html"><span>스텔라론</span></a>
+<a href="stellaron-hunters.html"><span>스텔라론 헌터</span></a>
+<a href="aeons.html"><span>에이언즈</span></a>
+<a href="path.html"><span>운명의 길</span></a>
+<a href="destruction.html"><span>파멸</span></a>
+<a href="factions.html"><span>파벌</span></a>
+<a href="ten-stonehearts.html"><span>10인의 스톤하트</span></a>
+<a href="market-development-department.html"><span>시장개척부</span></a>
+<a href="aether-editing.html"><span>에테르 편집</span></a>
+<a href="silver-wolf.html"><span>은랑</span></a>
+<a href="strategic-investment-department.html"><span>전략투자부</span></a>
+<a href="intelligentsia-guild.html"><span>지식학회</span></a>
+<a href="punklorde.html"><span>펑크 로드</span></a>
+<a href="number-zero.html"><span>0호</span></a>
+<a href="faction-2402.html"><span>10인의 스톤하트 - 보존</span></a>
+<a href="char-1639.html"><span>Dr. 레이시오</span></a>
+<a href="npc-2015.html"><span>Dr. 에드워드</span></a>
+<a href="entry-3930.html"><span>Fate/stay night</span></a>
+<a href="entry-2943.html"><span>Lady Jade 보나제이드 수첩</span></a>
+<a href="char-7.html"><span>Mar. 7th</span></a>
+<a href="char-2657.html"><span>Mar. 7th·수렵</span></a>
+<a href="entry-2510.html"><span>≪시계 소년: 좋은꿈의 과거≫</span></a>
+<a href="akivili.html"><span>⌈ 개척 ⌋ 아키비리</span></a>
+<a href="aeon-888.html"><span>⌈ 기억 ⌋ 후리</span></a>
+<a href="tayzzyronth.html"><span>⌈ 번식 ⌋ 타이츠론스</span></a>
+<a href="qlipoth.html"><span>⌈ 보존 ⌋ 클리포트</span></a>
+<a href="nous.html"><span>⌈ 지식 ⌋ 누스</span></a>
+<a href="aeon-1222.html"><span>⌈ 질서 ⌋ 에나</span></a>
+<a href="yaoshi.html"><span>⌈ 풍요 ⌋ 약사</span></a>
+<a href="aeon-894.html"><span>⌈ 화합 ⌋ 시페</span></a>
+<a href="entry-2277.html"><span>■■■■에 오신 걸 환영합니다</span></a>
+<a href="entry-1125.html"><span>「『미식』의 길」 웹 이벤트</span></a>
+<a href="npc-3297.html"><span>「닥쳐」</span></a>
+<a href="npc-827.html"><span>「부관」</span></a>
+<a href="rupert.html"><span>「제왕」루버트</span></a>
+<a href="npc-1502.html"><span>「회장」</span></a>
+<a href="npc-2547.html"><span>가르시아</span></a>
+<a href="npc-1184.html"><span>가리</span></a>
+<a href="faction-970.html"><span>가면의 우인 - 환락</span></a>
+<a href="npc-3207.html"><span>가바나</span></a>
+<a href="entry-1824.html"><span>가상세계 후각 탐험</span></a>
+<a href="faction-957.html"><span>가족 - 화합</span></a>
+<a href="npc-2017.html"><span>가족 상인</span></a>
+<a href="npc-2676.html"><span>간식 가게 사장</span></a>
+<a href="entry-991.html"><span>개척력</span></a>
+<a href="trailblazer.html"><span>개척자</span></a>
+<a href="char-23.html"><span>개척자 · 보존</span></a>
+<a href="char-6.html"><span>개척자 · 파멸</span></a>
+<a href="char-2511.html"><span>개척자 · 화합</span></a>
+<a href="char-5006.html"><span>개척자 · 환락</span></a>
+<a href="entry-3703.html"><span>개척하는 그대에게</span></a>
+<a href="char-1924.html"><span>갤러거</span></a>
+<a href="faction-978.html"><span>갤럭시 레인저 - 수렵</span></a>
+<a href="entry-3572.html"><span>거룩한 도시 보물 감정</span></a>
+<a href="faction-976.html"><span>거울의 주인 - 미</span></a>
+<a href="npc-1049.html"><span>거티</span></a>
+<a href="entry-1812.html"><span>건축자재물류부</span></a>
+<a href="char-17.html"><span>게파드</span></a>
+<a href="entry-966.html"><span>겨울 성 박물관 진귀품 목록</span></a>
+<a href="char-1387.html"><span>경류</span></a>
+<a href="npc-1175.html"><span>경방</span></a>
+<a href="char-26.html"><span>경원</span></a>
+<a href="npc-2249.html"><span>경장</span></a>
+<a href="npc-1189.html"><span>경청</span></a>
+<a href="char-1392.html"><span>계네빈</span></a>
+<a href="entry-3695.html"><span>계몽의 별빛</span></a>
+<a href="npc-1988.html"><span>고-레이</span></a>
+<a href="npc-1181.html"><span>고당</span></a>
+<a href="npc-2033.html"><span>고지식</span></a>
+<a href="entry-1437.html"><span>곤강군</span></a>
+<a href="faction-969.html"><span>곤충 떼 - 번식</span></a>
+<a href="npc-2044.html"><span>골드 도련님</span></a>
+<a href="npc-1168.html"><span>공수 사부</span></a>
+<a href="npc-1445.html"><span>공청</span></a>
+<a href="npc-1546.html"><span>곽세찌</span></a>
+<a href="char-1533.html"><span>곽향</span></a>
+<a href="npc-743.html"><span>광야의 폭탄 머리</span></a>
+<a href="npc-1042.html"><span>광차 작업공 견습생</span></a>
+<a href="npc-1178.html"><span>광태</span></a>
+<a href="entry-5379.html"><span>교육부의 어려운 문제</span></a>
+<a href="npc-1008.html"><span>교활한 꼬맹이</span></a>
+<a href="npc-3006.html"><span>구등</span></a>
+<a href="entry-1328.html"><span>구름 위 5전사</span></a>
+<a href="npc-2364.html"><span>궁우</span></a>
+<a href="path-2361.html"><span>균형</span></a>
+<a href="npc-3038.html"><span>그레이센</span></a>
+<a href="npc-1179.html"><span>그레일라</span></a>
+<a href="npc-2041.html"><span>그린 매니저</span></a>
+<a href="entry-1762.html"><span>그림자를 찾는 별의 여정</span></a>
+<a href="npc-2052.html"><span>금사빠</span></a>
+<a href="npc-1173.html"><span>금여</span></a>
+<a href="entry-2383.html"><span>기묘한 영역 300%</span></a>
+<a href="entry-1813.html"><span>기술개발부</span></a>
+<a href="path-2359.html"><span>기억</span></a>
+<a href="faction-973.html"><span>기억의 정원 - 기억</span></a>
+<a href="char-5338.html"><span>길가메시</span></a>
+<a href="npc-851.html"><span>길버트</span></a>
+<a href="char-711.html"><span>나찰</span></a>
+<a href="char-18.html"><span>나타샤</span></a>
+<a href="npc-1162.html"><span>난길</span></a>
+<a href="npc-1316.html"><span>난난</span></a>
+<a href="npc-2555.html"><span>낸시</span></a>
+<a href="npc-1041.html"><span>노련한 광차 작업공</span></a>
+<a href="npc-3221.html"><span>노바디</span></a>
+<a href="npc-1140.html"><span>노버트</span></a>
+<a href="npc-1169.html"><span>노혜</span></a>
+<a href="entry-3874.html"><span>누리망, 멈춰 줘서 고마워</span></a>
+<a href="npc-858.html"><span>늙은 괴테</span></a>
+<a href="npc-859.html"><span>니카</span></a>
+<a href="npc-1865.html"><span>다급이</span></a>
+<a href="npc-3549.html"><span>다미오니스</span></a>
+<a href="npc-2674.html"><span>다프</span></a>
+<a href="npc-1155.html"><span>단단</span></a>
+<a href="faction-3149.html"><span>단륜사- 균형</span></a>
+<a href="npc-1191.html"><span>단우</span></a>
+<a href="char-8.html"><span>단항</span></a>
+<a href="char-3957.html"><span>단항 · 등황</span></a>
+<a href="char-1226.html"><span>단항·음월</span></a>
+<a href="char-4060.html"><span>달리아</span></a>
+<a href="npc-1192.html"><span>대호</span></a>
+<a href="npc-2013.html"><span>댄시</span></a>
+<a href="char-3285.html"><span>더 헤르타</span></a>
+<a href="npc-1450.html"><span>덕위</span></a>
+<a href="npc-2022.html"><span>데니스</span></a>
+<a href="npc-3551.html"><span>데미트리아</span></a>
+<a href="npc-2960.html"><span>데보라</span></a>
+<a href="npc-842.html"><span>도미닉</span></a>
+<a href="npc-2003.html"><span>돈최고</span></a>
+<a href="npc-1188.html"><span>동식</span></a>
+<a href="npc-1499.html"><span>두 사장</span></a>
+<a href="npc-1214.html"><span>똑소리</span></a>
+<a href="npc-1996.html"><span>라로즈</span></a>
+<a href="npc-737.html"><span>라미나</span></a>
+<a href="npc-837.html"><span>라본느</span></a>
+<a href="npc-1225.html"><span>라이언</span></a>
+<a href="char-3057.html"><span>라파</span></a>
+<a href="npc-3054.html"><span>란돌프</span></a>
+<a href="npc-857.html"><span>레긴</span></a>
+<a href="npc-3928.html"><span>레나</span></a>
+<a href="npc-881.html"><span>레나드</span></a>
+<a href="npc-1007.html"><span>레비니</span></a>
+<a href="npc-2963.html"><span>레스터</span></a>
+<a href="npc-2345.html"><span>레슬리·딘</span></a>
+<a href="npc-2424.html"><span>레오</span></a>
+<a href="npc-1321.html"><span>레이리</span></a>
+<a href="entry-3164.html"><span>레인저의 그림자</span></a>
+<a href="npc-1037.html"><span>로더</span></a>
+<a href="npc-2533.html"><span>로란</span></a>
+<a href="char-2366.html"><span>로빈</span></a>
+<a href="npc-855.html"><span>로시</span></a>
+<a href="npc-733.html"><span>록키</span></a>
+<a href="npc-2011.html"><span>루이스</span></a>
+<a href="char-801.html"><span>루카</span></a>
+<a href="npc-736.html"><span>루카치</span></a>
+<a href="faction-980.html"><span>리들러 - 신비</span></a>
+<a href="npc-836.html"><span>리라</span></a>
+<a href="npc-2488.html"><span>리산더</span></a>
+<a href="npc-3219.html"><span>리지아</span></a>
+<a href="npc-2733.html"><span>리차드</span></a>
+<a href="npc-720.html"><span>리처드</span></a>
+<a href="char-1228.html"><span>링스</span></a>
+<a href="npc-835.html"><span>마냐</span></a>
+<a href="npc-735.html"><span>마레</span></a>
+<a href="npc-1446.html"><span>마리얌</span></a>
+<a href="npc-1054.html"><span>마이너 램프 발라웨이</span></a>
+<a href="char-3324.html"><span>마이데이</span></a>
+<a href="npc-2404.html"><span>마지</span></a>
+<a href="npc-1494.html"><span>마지마</span></a>
+<a href="npc-1047.html"><span>막심</span></a>
+<a href="npc-1158.html"><span>만물</span></a>
+<a href="char-3151.html"><span>망귀인</span></a>
+<a href="npc-2027.html"><span>맥스</span></a>
+<a href="char-2949.html"><span>맥택</span></a>
+<a href="npc-2255.html"><span>멀리치</span></a>
+<a href="npc-861.html"><span>메신저</span></a>
+<a href="npc-2536.html"><span>멜론</span></a>
+<a href="entry-2665.html"><span>명부의 인형</span></a>
+<a href="entry-952.html"><span>명사</span></a>
+<a href="npc-1313.html"><span>명월</span></a>
+<a href="npc-2234.html"><span>명탐정</span></a>
+<a href="npc-1490.html"><span>명희</span></a>
+<a href="npc-2030.html"><span>모리스</span></a>
+<a href="npc-1448.html"><span>모정</span></a>
+<a href="npc-1163.html"><span>목향</span></a>
+<a href="npc-860.html"><span>몰리</span></a>
+<a href="npc-1165.html"><span>몽명</span></a>
+<a href="faction-962.html"><span>무명객 - 개척</span></a>
+<a href="npc-1646.html"><span>무코가오카</span></a>
+<a href="npc-1153.html"><span>무혁</span></a>
+<a href="npc-1312.html"><span>문문</span></a>
+<a href="entry-3326.html"><span>미미의 선물</span></a>
+<a href="char-1808.html"><span>미샤</span></a>
+<a href="faction-975.html"><span>미의 기사단 - 미</span></a>
+<a href="npc-2529.html"><span>미카</span></a>
+<a href="npc-850.html"><span>바네사</span></a>
+<a href="npc-1197.html"><span>바두타</span></a>
+<a href="npc-1642.html"><span>바알</span></a>
+<a href="npc-1006.html"><span>박물관 검표원</span></a>
+<a href="char-2494.html"><span>반디</span></a>
+<a href="npc-2675.html"><span>반려금물</span></a>
+<a href="faction-956.html"><span>반물질 군단 - 파멸</span></a>
+<a href="entry-2652.html"><span>반짝이는 스타라이트</span></a>
+<a href="npc-1199.html"><span>반하</span></a>
+<a href="npc-826.html"><span>방위과 연구원</span></a>
+<a href="npc-1617.html"><span>배리</span></a>
+<a href="char-29.html"><span>백로</span></a>
+<a href="npc-1500.html"><span>백양</span></a>
+<a href="npc-742.html"><span>버나드</span></a>
+<a href="npc-2042.html"><span>버밀리온 여사</span></a>
+<a href="npc-1276.html"><span>베나</span></a>
+<a href="npc-1992.html"><span>베니</span></a>
+<a href="npc-853.html"><span>베스카</span></a>
+<a href="npc-2550.html"><span>베이더</span></a>
+<a href="npc-2964.html"><span>벨라</span></a>
+<a href="npc-1800.html"><span>벨라이트</span></a>
+<a href="npc-1198.html"><span>변덕 우산</span></a>
+<a href="entry-3705.html"><span>별들의 동행자</span></a>
+<a href="entry-882.html"><span>별사냥 게임</span></a>
+<a href="entry-1394.html"><span>별의 선물</span></a>
+<a href="entry-1277.html"><span>별이 돌아오는 길</span></a>
+<a href="npc-1005.html"><span>보리스</span></a>
+<a href="npc-1891.html"><span>보모 로봇</span></a>
+<a href="entry-4713.html"><span>보물을 찾아서</span></a>
+<a href="npc-1139.html"><span>보바</span></a>
+<a href="npc-2043.html"><span>보스 레드</span></a>
+<a href="npc-2346.html"><span>보키</span></a>
+<a href="npc-3099.html"><span>복림</span></a>
+<a href="npc-739.html"><span>볶음밥 천재 123호</span></a>
+<a href="entry-1763.html"><span>볼더 타운 격투 기술 시범 경기</span></a>
+<a href="npc-3220.html"><span>부귀</span></a>
+<a href="npc-1672.html"><span>부연</span></a>
+<a href="char-2367.html"><span>부트힐</span></a>
+<a href="entry-2509.html"><span>부트힐에 관한 모든 것...</span></a>
+<a href="char-804.html"><span>부현</span></a>
+<a href="npc-3098.html"><span>북개</span></a>
+<a href="npc-2012.html"><span>브로나</span></a>
+<a href="char-14.html"><span>브로냐</span></a>
+<a href="npc-2426.html"><span>브리나</span></a>
+<a href="char-1806.html"><span>블랙 스완</span></a>
+<a href="blade.html"><span>블레이드</span></a>
+<a href="npc-2040.html"><span>블루 나이트</span></a>
+<a href="entry-3061.html"><span>비성의 선물</span></a>
+<a href="char-2947.html"><span>비소</span></a>
+<a href="npc-2029.html"><span>비스타</span></a>
+<a href="faction-971.html"><span>비애의 연극인 - 환락</span></a>
+<a href="npc-2062.html"><span>비탈리</span></a>
+<a href="entry-1542.html"><span>빛의 선물</span></a>
+<a href="emanator.html"><span>사도</span></a>
+<a href="npc-2944.html"><span>사만다</span></a>
+<a href="npc-2028.html"><span>사브리나</span></a>
+<a href="entry-1814.html"><span>사업통합부</span></a>
+<a href="char-3691.html"><span>사이퍼</span></a>
+<a href="char-21.html"><span>삼포</span></a>
+<a href="entry-3332.html"><span>새벽과 황혼의 두루마리</span></a>
+<a href="sam.html"><span>샘</span></a>
+<a href="npc-3206.html"><span>샬레카</span></a>
+<a href="npc-2257.html"><span>샬롯</span></a>
+<a href="char-16.html"><span>서벌</span></a>
+<a href="npc-1164.html"><span>서연 선생</span></a>
+<a href="npc-1152.html"><span>서유</span></a>
+<a href="entry-4715.html"><span>석양의 잔본</span></a>
+<a href="npc-1379.html"><span>석운</span></a>
+<a href="char-3150.html"><span>선데이</span></a>
+<a href="xianzhou-luofu.html"><span>선주 「나부」</span></a>
+<a href="faction-963.html"><span>선주 연맹 - 수렵</span></a>
+<a href="entry-1234.html"><span>선주를 날다</span></a>
+<a href="char-1640.html"><span>설의</span></a>
+<a href="npc-1196.html"><span>성결</span></a>
+<a href="entry-3066.html"><span>성천 연무 의식</span></a>
+<a href="char-3767.html"><span>세이버</span></a>
+<a href="npc-1327.html"><span>센센</span></a>
+<a href="npc-845.html"><span>셀린느</span></a>
+<a href="npc-1702.html"><span>소 씨 아저씨</span></a>
+<a href="faction-972.html"><span>소각공 - 기억</span></a>
+<a href="faction-977.html"><span>소멸파 - 파멸</span></a>
+<a href="char-27.html"><span>소상</span></a>
+<a href="npc-1898.html"><span>소형 로봇</span></a>
+<a href="npc-2635.html"><span>솔글래드 공급업체 직원</span></a>
+<a href="npc-3105.html"><span>솔메르</span></a>
+<a href="npc-1156.html"><span>송연</span></a>
+<a href="path-81.html"><span>수렵</span></a>
+<a href="npc-745.html"><span>수리 엔지니어</span></a>
+<a href="npc-1157.html"><span>수미</span></a>
+<a href="npc-1670.html"><span>수영</span></a>
+<a href="npc-2248.html"><span>순경</span></a>
+<a href="npc-803.html"><span>스바로그</span></a>
+<a href="npc-1033.html"><span>스웨타</span></a>
+<a href="npc-3058.html"><span>스코트</span></a>
+<a href="npc-1038.html"><span>스콧</span></a>
+<a href="screwllum.html"><span>스크루룸</span></a>
+<a href="entry-3694.html"><span>스타레일☆WORLD</span></a>
+<a href="faction-968.html"><span>스타피스 컴퍼니 - 보존</span></a>
+<a href="npc-2965.html"><span>스테파노</span></a>
+<a href="char-4737.html"><span>스파키</span></a>
+<a href="npc-2016.html"><span>시계 소년</span></a>
+<a href="entry-1405.html"><span>시끌벅적 금 조각상 옛 거리</span></a>
+<a href="entry-493.html"><span>시릴</span></a>
+<a href="npc-1997.html"><span>시에로</span></a>
+<a href="npc-2441.html"><span>시오반</span></a>
+<a href="path-2362.html"><span>신비</span></a>
+<a href="npc-726.html"><span>실라</span></a>
+<a href="npc-1999.html"><span>싱글러</span></a>
+<a href="npc-1447.html"><span>싱클레어</span></a>
+<a href="npc-848.html"><span>아그네스</span></a>
+<a href="char-3286.html"><span>아글라이아</span></a>
+<a href="char-3561.html"><span>아낙사</span></a>
+<a href="npc-724.html"><span>아들러</span></a>
+<a href="npc-3003.html"><span>아르마</span></a>
+<a href="char-11.html"><span>아를란</span></a>
+<a href="npc-2961.html"><span>아메셀라</span></a>
+<a href="npc-846.html"><span>아모</span></a>
+<a href="npc-744.html"><span>아브라함</span></a>
+<a href="npc-1994.html"><span>아시카</span></a>
+<a href="entry-3573.html"><span>아옹아옹 사무소</span></a>
+<a href="char-1535.html"><span>아젠티</span></a>
+<a href="char-1919.html"><span>아케론</span></a>
+<a href="npc-3410.html"><span>아크모니데스</span></a>
+<a href="npc-3756.html"><span>아포피스</span></a>
+<a href="npc-1385.html"><span>악사이</span></a>
+<a href="npc-1134.html"><span>안기쁨</span></a>
+<a href="npc-1044.html"><span>안토니아</span></a>
+<a href="npc-1148.html"><span>암명</span></a>
+<a href="npc-2673.html"><span>애가</span></a>
+<a href="char-4781.html"><span>애쉬베일</span></a>
+<a href="npc-2025.html"><span>앤더슨</span></a>
+<a href="npc-2021.html"><span>앨리</span></a>
+<a href="npc-1043.html"><span>앨리나</span></a>
+<a href="entry-992.html"><span>앰버기원</span></a>
+<a href="jarilo-vi.html"><span>야릴로-Ⅵ</span></a>
+<a href="npc-1451.html"><span>약연</span></a>
+<a href="npc-2974.html"><span>약월</span></a>
+<a href="faction-960.html"><span>약을 구하는 자 - 풍요</span></a>
+<a href="npc-1171.html"><span>양목</span></a>
+<a href="char-712.html"><span>어공</span></a>
+<a href="aventurine.html"><span>어벤츄린</span></a>
+<a href="npc-2966.html"><span>에리카</span></a>
+<a href="npc-1052.html"><span>에릭</span></a>
+<a href="npc-2611.html"><span>에밀</span></a>
+<a href="npc-725.html"><span>에밀리</span></a>
+<a href="char-5005.html"><span>에바네시아</span></a>
+<a href="char-3956.html"><span>에버나이트</span></a>
+<a href="npc-727.html"><span>에스더</span></a>
+<a href="person-989.html"><span>에이든</span></a>
+<a href="npc-2636.html"><span>에이딘</span></a>
+<a href="npc-788.html"><span>에이쿠라 슈</span></a>
+<a href="entry-1586.html"><span>에테르 배틀</span></a>
+<a href="npc-2420.html"><span>엘비라</span></a>
+<a href="npc-2000.html"><span>엠리히</span></a>
+<a href="npc-1144.html"><span>여진</span></a>
+<a href="char-28.html"><span>연경</span></a>
+<a href="npc-1170.html"><span>연연</span></a>
+<a href="npc-2007.html"><span>연이</span></a>
+<a href="npc-1149.html"><span>연희</span></a>
+<a href="fragmentum.html"><span>열계</span></a>
+<a href="entry-4884.html"><span>영물보호법</span></a>
+<a href="char-2948.html"><span>영사</span></a>
+<a href="npc-1145.html"><span>영연</span></a>
+<a href="npc-1454.html"><span>영인</span></a>
+<a href="npc-1146.html"><span>영해</span></a>
+<a href="npc-3039.html"><span>오슬롯</span></a>
+<a href="npc-1284.html"><span>옥란</span></a>
+<a href="npc-1182.html"><span>옥부</span></a>
+<a href="npc-2418.html"><span>옥사나</span></a>
+<a href="npc-731.html"><span>온명덕</span></a>
+<a href="npc-722.html"><span>온부서</span></a>
+<a href="npc-730.html"><span>온세영</span></a>
+<a href="npc-729.html"><span>온세자</span></a>
+<a href="npc-1889.html"><span>온정</span></a>
+<a href="npc-723.html"><span>온천옹</span></a>
+<a href="npc-1882.html"><span>온평</span></a>
+<a href="npc-1039.html"><span>올레그</span></a>
+<a href="npc-2545.html"><span>올마</span></a>
+<a href="npc-1200.html"><span>와리</span></a>
+<a href="npc-1587.html"><span>와일더</span></a>
+<a href="ruan-mei.html"><span>완·매</span></a>
+<a href="npc-732.html"><span>왓슨</span></a>
+<a href="npc-1858.html"><span>왕짜증</span></a>
+<a href="entry-1386.html"><span>요약분제</span></a>
+<a href="npc-2004.html"><span>우마</span></a>
+<a href="entry-3291.html"><span>우주 인테리어 가이드</span></a>
+<a href="char-2642.html"><span>운리</span></a>
+<a href="npc-1143.html"><span>운신</span></a>
+<a href="npc-1009.html"><span>울단</span></a>
+<a href="npc-834.html"><span>울보 유령</span></a>
+<a href="npc-2063.html"><span>울시</span></a>
+<a href="entry-4008.html"><span>웃음 참기 챌린지</span></a>
+<a href="faction-3184.html"><span>원구의 숲 - 지식</span></a>
+<a href="npc-1993.html"><span>원씨</span></a>
+<a href="npc-2422.html"><span>월넛</span></a>
+<a href="npc-852.html"><span>월리스</span></a>
+<a href="npc-2493.html"><span>월프</span></a>
+<a href="char-10.html"><span>웰트</span></a>
+<a href="npc-2967.html"><span>위스퍼</span></a>
+<a href="npc-2019.html"><span>위즐리</span></a>
+<a href="npc-1050.html"><span>유니스</span></a>
+<a href="npc-1827.html"><span>유사</span></a>
+<a href="npc-1142.html"><span>유철</span></a>
+<a href="npc-1150.html"><span>유하</span></a>
+<a href="term-70447ff24d.html"><span>율법</span></a>
+<a href="char-4997.html"><span>은랑 LV.999</span></a>
+<a href="npc-1147.html"><span>은서</span></a>
+<a href="entry-2508.html"><span>은하 방망이 협객 전설</span></a>
+<a href="entry-3773.html"><span>은하 방망이 협객 전설: 마왕편</span></a>
+<a href="faction-965.html"><span>은하열차 - 개척</span></a>
+<a href="term-405b5ea197.html"><span>은하인법첩</span></a>
+<a href="entry-3166.html"><span>음률 사냥 인법첩</span></a>
+<a href="npc-1011.html"><span>이리스</span></a>
+<a href="npc-1995.html"><span>이브</span></a>
+<a href="npc-3374.html"><span>이아손</span></a>
+<a href="entry-1810.html"><span>인재격려부</span></a>
+<a href="npc-1051.html"><span>일레인</span></a>
+<a href="faction-2428.html"><span>자멸자 - 공허</span></a>
+<a href="faction-1209.html"><span>장례식 안내원 - 종말</span></a>
+<a href="npc-1141.html"><span>재교</span></a>
+<a href="entry-1809.html"><span>전통프로젝트부</span></a>
+<a href="npc-1161.html"><span>점장 한전</span></a>
+<a href="npc-1174.html"><span>정연</span></a>
+<a href="char-25.html"><span>정운</span></a>
+<a href="npc-1314.html"><span>정채</span></a>
+<a href="faction-958.html"><span>제Ⅸ 기관 - 공허</span></a>
+<a href="char-15.html"><span>제레</span></a>
+<a href="npc-2537.html"><span>제시</span></a>
+<a href="npc-2002.html"><span>제이</span></a>
+<a href="char-2495.html"><span>제이드</span></a>
+<a href="npc-2962.html"><span>제이콥</span></a>
+<a href="npc-1870.html"><span>조셉</span></a>
+<a href="npc-1040.html"><span>조슈아</span></a>
+<a href="npc-738.html"><span>조앤</span></a>
+<a href="npc-2544.html"><span>조지</span></a>
+<a href="path-2360.html"><span>종말</span></a>
+<a href="npc-1318.html"><span>종산</span></a>
+<a href="entry-2653.html"><span>종이새 팡팡</span></a>
+<a href="npc-1829.html"><span>좌나</span></a>
+<a href="npc-870.html"><span>줄리안</span></a>
+<a href="faction-979.html"><span>중재관 - 균형</span></a>
+<a href="genius-society.html"><span>지니어스 클럽</span></a>
+<a href="faction-955.html"><span>지니어스 클럽 - 지식</span></a>
+<a href="npc-2620.html"><span>지드</span></a>
+<a href="path-80.html"><span>지식</span></a>
+<a href="faction-954.html"><span>지식학회 - 지식</span></a>
+<a href="npc-2174.html"><span>지오반나</span></a>
+<a href="npc-1616.html"><span>지오반니</span></a>
+<a href="path-2358.html"><span>질서</span></a>
+<a href="npc-844.html"><span>차베스</span></a>
+<a href="npc-2010.html"><span>차브로</span></a>
+<a href="npc-3222.html"><span>채드</span></a>
+<a href="npc-2232.html"><span>채드윅</span></a>
+<a href="char-5217.html"><span>천야 · 블레이드</span></a>
+<a href="faction-1232.html"><span>천외 합창단 - 질서</span></a>
+<a href="npc-1501.html"><span>천이</span></a>
+<a href="npc-1285.html"><span>청예</span></a>
+<a href="npc-1160.html"><span>청월</span></a>
+<a href="char-24.html"><span>청작</span></a>
+<a href="npc-1159.html"><span>청주</span></a>
+<a href="char-2643.html"><span>초구</span></a>
+<a href="entry-2953.html"><span>초화습검록</span></a>
+<a href="npc-1193.html"><span>총명</span></a>
+<a href="faction-953.html"><span>축성가(築城家) - 보존</span></a>
+<a href="npc-1194.html"><span>춘분</span></a>
+<a href="npc-3140.html"><span>카멜라</span></a>
+<a href="char-3560.html"><span>카스토리스</span></a>
+<a href="npc-741.html"><span>카포티</span></a>
+<a href="kafka.html"><span>카프카</span></a>
+<a href="npc-3417.html"><span>칼토너스</span></a>
+<a href="npc-2532.html"><span>커크</span></a>
+<a href="char-3886.html"><span>케리드라</span></a>
+<a href="npc-2538.html"><span>케이미</span></a>
+<a href="npc-2427.html"><span>코나</span></a>
+<a href="npc-2018.html"><span>코코나</span></a>
+<a href="npc-2023.html"><span>코티</span></a>
+<a href="npc-1991.html"><span>콜린</span></a>
+<a href="npc-740.html"><span>크리스</span></a>
+<a href="npc-3408.html"><span>크테시포나</span></a>
+<a href="char-20.html"><span>클라라</span></a>
+<a href="npc-1990.html"><span>클라우디아</span></a>
+<a href="npc-2551.html"><span>클로다</span></a>
+<a href="npc-1048.html"><span>클루저</span></a>
+<a href="npc-2973.html"><span>클리오</span></a>
+<a href="npc-1491.html"><span>키 작은 이모</span></a>
+<a href="npc-1489.html"><span>키 큰 이모</span></a>
+<a href="npc-1998.html"><span>키넌</span></a>
+<a href="char-4003.html"><span>키레네</span></a>
+<a href="npc-3402.html"><span>키로스</span></a>
+<a href="npc-1495.html"><span>키류</span></a>
+<a href="npc-1056.html"><span>타냐</span></a>
+<a href="npc-854.html"><span>타밀라</span></a>
+<a href="npc-3398.html"><span>테오도로스</span></a>
+<a href="npc-1317.html"><span>토냐</span></a>
+<a href="npc-1154.html"><span>토드</span></a>
+<a href="npc-2721.html"><span>토마스</span></a>
+<a href="npc-1055.html"><span>토비</span></a>
+<a href="npc-2634.html"><span>토스카니</span></a>
+<a href="char-5339.html"><span>토오사카 린</span></a>
+<a href="topaz.html"><span>토파즈</span></a>
+<a href="char-1389.html"><span>토파즈&amp;복순이</span></a>
+<a href="npc-1862.html"><span>통찰자</span></a>
+<a href="char-3322.html"><span>트리비</span></a>
+<a href="npc-2253.html"><span>티조크 2세</span></a>
+<a href="entry-3696.html"><span>팅팅탱탱 물범 대격돌</span></a>
+<a href="npc-721.html"><span>파멜라</span></a>
+<a href="npc-1046.html"><span>파스칼</span></a>
+<a href="char-3769.html"><span>파이논</span></a>
+<a href="npc-840.html"><span>파인디</span></a>
+<a href="npc-1874.html"><span>팥앙금떡</span></a>
+<a href="npc-2001.html"><span>퍼디난드</span></a>
+<a href="npc-838.html"><span>퍼르도</span></a>
+<a href="npc-1035.html"><span>퍼스맨</span></a>
+<a href="npc-2530.html"><span>퍼시</span></a>
+<a href="npc-1034.html"><span>퍼킨스</span></a>
+<a href="loc-1804.html"><span>페나코니</span></a>
+<a href="npc-1641.html"><span>페도라</span></a>
+<a href="char-19.html"><span>페라</span></a>
+<a href="npc-734.html"><span>페피</span></a>
+<a href="npc-2251.html"><span>포도대장</span></a>
+<a href="npc-2014.html"><span>포를라</span></a>
+<a href="npc-1186.html"><span>포장마차 주인</span></a>
+<a href="npc-2252.html"><span>포졸</span></a>
+<a href="npc-581.html"><span>폼폼</span></a>
+<a href="path-84.html"><span>풍요</span></a>
+<a href="faction-959.html"><span>풍요의 백성 - 풍요</span></a>
+<a href="npc-866.html"><span>프란츠</span></a>
+<a href="npc-3216.html"><span>프레마</span></a>
+<a href="npc-1036.html"><span>피도라</span></a>
+<a href="npc-2633.html"><span>피스</span></a>
+<a href="npc-839.html"><span>피즈</span></a>
+<a href="npc-1045.html"><span>피크</span></a>
+<a href="npc-3217.html"><span>하루</span></a>
+<a href="npc-1215.html"><span>하워드</span></a>
+<a href="char-1537.html" aria-current="page"><span>한아</span></a>
+<a href="npc-1453.html"><span>함명</span></a>
+<a href="npc-3218.html"><span>해리슨</span></a>
+<a href="entry-5422.html"><span>해변 표류병</span></a>
+<a href="npc-1151.html"><span>행설</span></a>
+<a href="faction-974.html"><span>허구 역사학자 - 신비</span></a>
+<a href="person-994.html"><span>헤르타</span></a>
+<a href="loc-951.html"><span>헤르타</span></a>
+<a href="npc-2425.html"><span>헨드릭</span></a>
+<a href="npc-1177.html"><span>혜성</span></a>
+<a href="entry-1658.html"><span>호재지이</span></a>
+<a href="faction-964.html"><span>혼돈의 의사 - 공허</span></a>
+<a href="path-83.html"><span>화합</span></a>
+<a href="entry-3952.html"><span>황금 미궁 레스토랑</span></a>
+<a href="char-4736.html"><span>효광</span></a>
+<a href="char-22.html"><span>후크</span></a>
+<a href="npc-1989.html"><span>휘태커 경</span></a>
+<a href="npc-2556.html"><span>히드라</span></a>
+<a href="char-9.html"><span>히메코</span></a>
+<a href="char-5335.html"><span>히메코 · 노바</span></a>
+<a href="npc-1315.html"><span>히스만</span></a>
+<a href="char-3885.html"><span>히실렌스</span></a>
+<a href="char-3688.html"><span>히아킨</span></a>
+<a href="npc-746.html"><span>힌켈</span></a></nav></aside>
+  <article class="article-shell" data-pagefind-body>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">문서 목록</a><a href="category-people.html">인물</a><span>한아</span></nav><p class="article-summary">한아는 선주 「나부」 시왕사의 판관으로, 시왕의 명을 받아 명참천필을 관장하고 죄업을 판독해 업보를 판결하는 인물이다. 시왕사의 네 부문인 체포, 구금, 처벌, 심문 가운데 한아가 맡은 일은 마지막 부문인 「심문」이며, 범죄자의 인과와 죄를 읽어 명참천필로 판결을 적는다.</p><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%95%9C%EC%95%84&amp;page_slug=char-1537">수정 요청</a><a href="categories.html">분류 보기</a></div><h1>한아</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">인물</span><span class="badge">게임 4.3</span></div></header>
+    <div class="article-body"><h2 id="개요">개요</h2>
+<p>한아는 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 시왕사의 판관으로, 시왕의 명을 받아 명참천필을 관장하고 죄업을 판독해 업보를 판결하는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki · 한아"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 시왕사의 네 부문인 체포, 구금, 처벌, 심문 가운데 한아가 맡은 일은 <a class="wiki-link" href="npc-2404.html" title="마지">마지</a>막 부문인 「심문」이며, 범죄자의 인과와 죄를 읽어 명참천필로 판결을 적는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>그녀의 소속은 선주 「나부」이고, 전투 속성은 물리, <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>은 <a class="wiki-link" href="path-83.html" title="화합">화합</a>으로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 한국어 음성은 윤<a class="wiki-link" href="npc-1147.html" title="은서">은서</a>가 맡았으며, 중국어는 张雨曦, 영어는 Suzie Yeung, 일본어는 鈴代紗弓이 담당한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 中文 CV"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · English CV"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 日本語 CV"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 한국어 CV"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>한아의 핵심은 죄를 읽는 능력보다 그 일을 계속하기 위해 자기 감각을 닳게 만든 삶에 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•업무"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 그녀는 온종일 꿈점을 사용해 마각의 몸이 남긴 인과 정보를 짊어지고, 그 탓에 세상만사에 감흥을 잃었으며, 같은 판관인 언니 <a class="wiki-link" href="char-1640.html" title="설의">설의</a>와 함께 있을 때만 진심을 조금 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 설의에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<h2 id="작중-역할">작중 역할</h2>
+<p>한아는 시왕사의 심문 담당자로서 사건 현장보다 사건 이후의 죄업과 인과를 정리하는 자리에 선다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그녀는 스스로를 “소녀 시왕의 칙사”라고 소개하고, 체포와 구금과 처벌 뒤에 남은 마지막 단계에서 죄를 기록하고 처벌할 권한을 행사한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이 위치 때문에 한아는 단순한 수사관이 아니라, 선주 사회가 장수와 마각, 죄업을 어떤 방식으로 관리하는지 보여 주는 행정적 얼굴이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•시왕사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>한아가 사용하는 이름도 개인의 이름이라기보다 시왕에게 속한 표식에 가깝다.<sup class="cite-ref" title="게임 본편 · 한아의 언급"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•자매"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 그녀는 「설의」와 「한아」가 장기판의 흰 패와 검은 패에서 온 별칭이며, 자신들이 시왕의 사람이고 시왕의 명령을 따라야 한다는 사실을 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>하기 위해 그런 이름을 쓴다고 말한다.<sup class="cite-ref" title="게임 본편 · 한아의 언급"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 또한 한아는 자신과 설의가 시왕의 칙사로서 사용하는 이름이라고 설명하며, 옛 이름은 과거일 뿐이라고 선을 긋는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•자매"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 이 이름은 한아가 개인으로 살기보다 판관으로 계속 기능하도록 묶는 장치이자, 그녀가 잃어버린 과거와 현재의 공무 사이에 놓인 경계다.<sup class="cite-ref" title="게임 본편 · 한아의 언급"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•자매"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
+<p>「여우의 꿈」 계열 사건에서 한아는 요괴 퇴치팀의 움직임을 배정하고 통제하는 쪽에 가깝다.<sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <a class="wiki-link" href="char-1533.html" title="곽향">곽향</a>은 한아가 「강시」 사건을 보내 왔다고 말하고, 자신에게 임무가 맡겨진 것을 의외로 여긴다.<sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 한아는 요괴 퇴치팀의 일을 전해 준 뒤 다시 유원의 업무를 처리하러 돌아가며, 현장에서 한 사건만 따라가는 인물이 아니라 여러 위험을 배분하고 후속 조치를 굴리는 관리자에 가깝게 움직인다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
+<p>한아는 세양 포획 과정에서 <a class="wiki-link" href="char-1392.html" title="계네빈">계네빈</a>의 홍보 방식도 제한적으로 허락한다.<sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 계네빈은 세양을 잡는 과정을 업로드해 팔로워를 늘리고, 그 팔로워를 이용해 더 많은 세양을 잡는 선순환을 만들겠다고 했더니 한아가 동의했다고 말한다.<sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 이 장면에서 한아는 시왕사의 규율만 반복하는 관료가 아니라, 세양 퇴치라는 목적에 도움이 된다면 외부인의 방식도 도구로 받아들이는 실무형 판관으로 보인다.<sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 소상의 언급"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
+<p>동시에 한아는 위험한 존재를 다루는 선을 놓치지 않는다.<sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 명관의 신호의 언급"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 계네빈은 한아의 말에 따르면 어떤 존재가 진법에 봉인된 채 판관들과 기싸움까지 벌인다고 전하고, 곽향은 한아의 분부대로 잡은 세양을 유원으로 데려가 「속형각사진」의 진요탑에 봉인해야 한다고 말한다.<sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 이후 명관의 신호가 유원에서 봉인된 세양이 이상한 움직임을 보인다고 보고하는 장면은, 한아가 맡는 업무가 단순한 문서 처리보다 훨씬 넓은 봉인과 감시의 영역에 걸쳐 있음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 명관의 신호의 언급"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
+<p>곽향의 사건에서도 한아는 차갑게 거리를 두는 판관처럼 보이지만, 실제로는 곽향의 상태를 직접 확인하고 시왕사의 방법을 통해 살릴 방도를 꺼내는 인물로 움직인다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 한아가 곽향의 활력 징후를 자세히 검사하자 계네빈은 이것이 팀원을 살리는 일이라고 호소하고, 시왕사의 방법이 무엇인지 묻는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 한아가 소매에서 장월박을 꺼내는 장면은, 그녀가 죄업을 읽는 판관이면서도 필요할 때는 시왕사의 어두운 수단을 현장에 꺼내는 집행자임을 드러낸다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
+<h2 id="작중-위상">작중 위상</h2>
+<p>한아의 위상은 전투력의 과시보다 죄업을 읽고 판결하는 권한에서 나온다.<sup class="cite-ref" title="공식 HoYoWiki · 한아"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그녀는 “시왕을 대신해 심판한다”고 말하고, “시왕의 칙령은 이곳에 쓰이<a class="wiki-link" href="npc-836.html" title="리라">리라</a>”는 식으로 전투 중에도 자신의 힘을 시왕의 명령과 연결한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 스킬•1"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•발동"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 그래서 한아의 강함은 적을 쓰러뜨리는 묘사만으로 평가되기보다, 죄업을 확인하고 기록하고 처벌하는 제도적 권위와 맞물려 이해된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
+<p>전투 대사에서 한아는 상대를 적이기 전에 죄업의 주체로 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•2"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 적 발견"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 그녀는 위험한 상대를 보고 죄업의 기운이 강하다고 판단하고, 턴이 시작되면 상대에게 죄가 명백하다고 말하며, 악업에 찌든 존재를 지나칠 수 없다고 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•2"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 적 발견"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 이 말투는 한아가 싸움을 감정싸움이 아니라 판결 절차의 연장으로 인식한다는 점을 분명히 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 스킬•1"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 스킬•2"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
+<p>게임 시스템상 한아는 물리 속성의 화합 캐릭터이며, 전투에서 아군을 보조하는 방향으로 설계되어 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 성혼 효과는 필살기 효과를 받은 아군이 적을 처치하면 한아의 행동 게이지가 증가하고, 전투 스킬 뒤 속도가 증가하며, 필살기의 지속 시간이 늘어나는 식으로 행동 순서와 지원 효과의 유지에 초점을 둔다.<sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 설정 문맥에서도 이는 한아가 앞에서 혼자 모든 것을 베어 넘기는 인물이라기보다, 판결과 명령을 통해 전장을 정돈하는 역할과 잘 맞는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•활성화"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
+<p>한아는 다른 선주 인물의 죄업과 정신 상태를 읽는 기준점처럼 기능한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> <a class="wiki-link" href="char-26.html" title="경원">경원</a>에 대해서는 웬만한 선주 사람이라면 그가 겪은 일 하나만으로도 정신상태가 무너졌을 것이라고 말하고, <a class="wiki-link" href="blade.html" title="블레이드">블레이드</a>에 대해서는 자신의 기억으로 『선주율』을 필사한 듯하며 많은 죄업을 짊어지고도 제정신을 유지하는 장수종은 드물다고 평가한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> <a class="wiki-link" href="char-29.html" title="백로">백로</a>에 대해서도 아주 오래전부터 이어진 무거운 짐이 있다고 말하는데, 이는 한아가 타인의 현재 모습보다 그 몸에 남은 기억과 죄업의 무게를 먼저 읽는 인물임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup></p>
+<p>다만 한아의 능력은 그녀 자신을 갉아먹는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•업무"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 꿈점으로 마각의 몸이 지은 죄업을 분석하는 일은 가시덤불을 만지는 것과 같고, 자주 만질수록 고통이 무뎌진다고 그녀는 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•업무"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 최고 레벨 대사에서 한아는 너무 많은 정보를 감당할 수 없다고 토로하고, 평소에도 공무에 매진하는 것은 당연하지만 피곤하다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 승급"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup> 한아의 위상은 강력한 권한과 감각의 마모가 동시에 붙어 있는 자리이며, 그녀가 냉담해 보이는 이유도 무정함보다 과부하에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•업무"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
+<p>설의는 한아의 가장 중요한 관계이며, 한아가 아직 자기 자신으로 돌아올 수 있는 거의 유일한 통로다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 설의에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•자매"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 한아는 속세를 유폐옥에 비<a class="wiki-link" href="npc-1150.html" title="유하">유하</a>고, 설의를 그 어둠 속에서 곁을 밝혀 주는 등불이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 설의에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 또 한아는 자신에게 가족이라곤 언제나 언니 하나뿐이었고, 다시는 언니가 떠나지 못하게 하겠다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•자매"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 설의가 용맹하게 싸우다 희생되었다는 말을 <a class="wiki-link" href="char-8.html" title="단항">단항</a>에게 듣는 장면은, 한아의 공적 임무가 가장 사적인 상실과 직접 부딪히는 순간이다.<sup class="cite-ref" title="게임 본편 · 단항의 언급"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup></p>
+<p>곽향은 한아가 평가하고 맡기는 후배 판관에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 곽향에 대해"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 한아는 곽향이 조금 소심하지만 능력은 괜찮고, 우습게 보면 큰코다칠 것이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 곽향에 대해"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup> 곽향은 꼬리가 사라진 뒤 시왕사에서 쫓겨날 줄 알았는데도 한아가 임무를 맡긴 것을 의외로 여기며, 이는 한아가 곽향을 단순히 결함 있는 판관으로 보지 않고 실제 임무를 맡길 만한 인물로 판단했음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> <a class="wiki-link" href="char-27.html" title="소상">소상</a>도 한아가 곽향의 시왕사 도구 정비 실력을 높게 평가했다고 전하며, 한아의 인정은 곽향의 전문성을 작중에서 확인해 주는 기능을 한다.<sup class="cite-ref" title="게임 본편 · 소상의 언급"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup></p>
+<p>계네빈과 소상은 한아의 임무를 바깥 세계와 연결하는 인물들이다.<sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 소상의 언급"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 계네빈은 세양 포획을 방송과 팔로워 확보로 연결하려 하고, 한아는 그 계획이 세양 포획에 도움이 된다는 조건에서 허락한다.<sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 소상은 한아가 시민들에게 세양 예방 <a class="wiki-link" href="path-80.html" title="지식">지식</a>을 설명하라는 임무를 내렸다고 말한다.<sup class="cite-ref" title="게임 본편 · 소상의 언급"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 이 관계는 시왕사의 폐쇄적인 업무가 사건 대응을 위해 민간 홍보와 현장 지원까지 끌어들이는 방식을 보여 준다.<sup class="cite-ref" title="게임 본편 · 계네빈의 언급"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 소상의 언급"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
+<p>경원, 블레이드, 백로, <a class="wiki-link" href="char-712.html" title="어공">어공</a>, <a class="wiki-link" href="char-711.html" title="나찰">나찰</a>에 대한 한아의 평가는 그녀가 선주 세계를 죄업과 죽음의 감각으로 읽는다는 점을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어공에 대해"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 나찰에 대해"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup> 경원은 긴 세월의 부담을 견딘 장군으로, 블레이드는 많은 죄업을 짊어진 장수종으로, 백로는 오래된 짐을 떠안은 용녀로 한아의 시야에 들어온다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 어공을 두고 한아는 죽음에 대한 감각을 잊으면 생명이 무의미해진다고 말하고, 나찰이 관을 메는 모습을 보며 시왕사 판관도 선주 사람에게 삶의 존엄성을 주기 위해 사지에 발을 들인다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어공에 대해"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 나찰에 대해"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup> 한아에게 죽음은 끝이 아니라 장수종 사회가 잃어버린 삶의 무게를 되돌려 놓는 기준이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어공에 대해"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 나찰에 대해"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup></p>
+<p>유원, 진요탑, 속형각사진은 한아의 판관 업무가 죄업 판독을 넘어 봉인과 통제의 현장으로 이어지는 장소와 장치다.<sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 경원의 언급"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup><sup class="cite-ref" title="게임 본편 · 명관의 신호의 언급"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 곽향은 잡은 세양을 유원의 속형각사진에 있는 진요탑에 봉인해야 한다고 말하고, 경원은 한아가 진요탑에서 일행을 기다리고 있다고 알린다.<sup class="cite-ref" title="게임 본편 · 곽향의 언급"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 경원의 언급"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup> 봉인된 세양의 이상 움직임이 보고되는 장면은, 한아가 다루는 죄와 악업이 문서 속 기록이 아니라 언제든 감옥과 도시를 흔들 수 있는 실제 위험임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 명관의 신호의 언급"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
+<p>유폐옥 사건에서 한아는 단항과 함께 통제 불능의 상황을 파악하는 위치에 놓인다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup><sup class="cite-ref" title="게임 본편 · 단항의 언급"><a href="#ref-56" data-cite-popover data-ref-target="ref-56" aria-label="각주 56 내용 보기" aria-expanded="false">56</a></sup> 한아는 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>의 행선지를 결정하는 중요한 임무를 맡고 앞을 가로막으며, 이후 <a class="wiki-link" href="trailblaze.html" title="개척">개척</a>자와 단항, 한아는 유폐옥이 통제 불능에 빠졌다는 사실을 깨닫는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup> 단항은 시간이 없으며 더 지체하면 보리인이 감옥을 빠져나갈 것이라고 경고하는데, 이 장면에서 한아의 판단은 감옥의 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>와 외부 피해를 가르는 실무적 결정을 요구받는다.<sup class="cite-ref" title="게임 본편 · 단항의 언급"><a href="#ref-56" data-cite-popover data-ref-target="ref-56" aria-label="각주 56 내용 보기" aria-expanded="false">56</a></sup></p>
+<h2 id="명참천필을-든-피로한-판관">명참천필을 든 피로한 판관</h2>
+<p>한아의 이야기에서 가장 두드러지는 이미지는 관 속에서 타인의 분노, 갈망, 증오, 공포, 피로를 자기 몸으로 받아들이는 의식의 바다다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-57" data-cite-popover data-ref-target="ref-57" aria-label="각주 57 내용 보기" aria-expanded="false">57</a></sup> 그 기억의 흐름 속에서 그녀는 지형사의 집사관이었던 삶, 천결이 있는 아이를 별뗏목 배양액으로 가득 찬 선창에 넣는 사람의 슬픔, 운기군이었던 이가 짓밟히는 고통 같은 타인의 인과를 통과한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-57" data-cite-popover data-ref-target="ref-57" aria-label="각주 57 내용 보기" aria-expanded="false">57</a></sup> 이 장면은 한아의 심문이 질문과 답변만으로 이루어지지 않고, 죄와 고통의 흔적을 몸으로 읽는 일에 가깝다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-57" data-cite-popover data-ref-target="ref-57" aria-label="각주 57 내용 보기" aria-expanded="false">57</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•업무"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>한아가 마시는 술은 잊고 싶은 기억을 다시 떠올리게 한 뒤 희미하게 만드는 장치처럼 그려진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-58" data-cite-popover data-ref-target="ref-58" aria-label="각주 58 내용 보기" aria-expanded="false">58</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-59" data-cite-popover data-ref-target="ref-59" aria-label="각주 59 내용 보기" aria-expanded="false">59</a></sup> 설의는 관에서 깨어난 한아에게 술을 가져오고, 한아는 야백이 아니라 언니가 직접 온 이유를 묻다가 야백이 약왕의 비전의 요괴를 추격하다 큰 부상을 입고 시왕에게 죽음을 허락받았다는 사실을 듣는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-58" data-cite-popover data-ref-target="ref-58" aria-label="각주 58 내용 보기" aria-expanded="false">58</a></sup> 이후 한아가 마신 술은 수은처럼 온몸으로 퍼지고, 그녀는 수천 수백 년 전 인간이었던 시절의 기억과 나후, 창성 선주, 요청의 여우족, 보리인 수함, 거대한 나무의 전장 같은 거대한 재난의 이미지를 본다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-59" data-cite-popover data-ref-target="ref-59" aria-label="각주 59 내용 보기" aria-expanded="false">59</a></sup> 한아의 피로는 개인의 우울만이 아니라, 선주 역사와 <a class="wiki-link" href="path-84.html" title="풍요">풍요</a>의 재앙과 마각의 죄업이 한 몸에 밀려드는 결과다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-59" data-cite-popover data-ref-target="ref-59" aria-label="각주 59 내용 보기" aria-expanded="false">59</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•업무"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>설의의 시점은 한아가 왜 시왕사에 필요한지 더 냉정하게 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-60" data-cite-popover data-ref-target="ref-60" aria-label="각주 60 내용 보기" aria-expanded="false">60</a></sup> 설의는 판결을 추론하고 생사를 결정하는 일은 세상과 떨어져 있으면서도 인간의 육신과 마음을 가진, 죄를 기록하는 판관이 맡아야 한다고 생각한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-60" data-cite-popover data-ref-target="ref-60" aria-label="각주 60 내용 보기" aria-expanded="false">60</a></sup> 금속은 결국 금속일 뿐이고, 설의의 금속 의식은 인간의 목소리와 근육의 미세한 떨림을 포착할 수 있어도 감정을 공유할 수 없다고 서술된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-60" data-cite-popover data-ref-target="ref-60" aria-label="각주 60 내용 보기" aria-expanded="false">60</a></sup> 그래서 한아가 시왕사를 위해 할 수 있는 일은 설의가 대신할 수 없는 인간적 감응을 판결의 재료로 바치는 일이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-60" data-cite-popover data-ref-target="ref-60" aria-label="각주 60 내용 보기" aria-expanded="false">60</a></sup></p>
+<p>이 지점에서 한아는 시왕사의 어둠을 고발하는 인물이면서 동시에 그 어둠을 유지하는 인물이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•시왕사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 그녀는 시왕사가 인재를 선발하는 기준을 아무도 모르고, 많은 사람이 자신이 어떻게 들어왔는지나 예전에 무엇을 했는지도 기억하지 못한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•시왕사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그러나 한아는 이 사실을 폭로하고 떠나는 대신, 세상 사람들도 그들을 다시 볼 필요가 없으니 서로에게 좋은 일 같다고 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•시왕사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 한아의 체념은 제도에 대한 무지에서 나온 것이 아니라, 죄 없는 육신은 없다는 결론을 너무 오래 바라본 사람의 결론에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
+<p>그럼에도 한아는 완전히 비어 버린 인물이 아니다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-61" data-cite-popover data-ref-target="ref-61" aria-label="각주 61 내용 보기" aria-expanded="false">61</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-62" data-cite-popover data-ref-target="ref-62" aria-label="각주 62 내용 보기" aria-expanded="false">62</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-63" data-cite-popover data-ref-target="ref-63" aria-label="각주 63 내용 보기" aria-expanded="false">63</a></sup> 그녀는 동천의 하늘이 거짓된 광경이라는 것을 알면서도 며칠 밤을 새워 꿈점을 보다가, 인과의 전당을 빠져나와 반짝이는 빛을 바라보면 마음이 편안해진다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-61" data-cite-popover data-ref-target="ref-61" aria-label="각주 61 내용 보기" aria-expanded="false">61</a></sup> 가끔 공책에 평소의 견문을 적는 이유도 언니를 만났을 때 그 모든 것을 들려주기 위해서다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-62" data-cite-popover data-ref-target="ref-62" aria-label="각주 62 내용 보기" aria-expanded="false">62</a></sup> 시왕사가 설의가 범인을 잡아 올 때마다 반나절을 환생시켜 주기로 약속했고, 한아는 그 시간이 세상에서 가장 아름다운 시간이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-63" data-cite-popover data-ref-target="ref-63" aria-label="각주 63 내용 보기" aria-expanded="false">63</a></sup> 한아에게 삶은 거대한 구원이 아니라, 다음 공무 전에 언니에게 들려줄 빛과 기록과 반나절의 시간으로 겨우 유지된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-61" data-cite-popover data-ref-target="ref-61" aria-label="각주 61 내용 보기" aria-expanded="false">61</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-62" data-cite-popover data-ref-target="ref-62" aria-label="각주 62 내용 보기" aria-expanded="false">62</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-63" data-cite-popover data-ref-target="ref-63" aria-label="각주 63 내용 보기" aria-expanded="false">63</a></sup></p><section class="references"><h2>문서 출처</h2><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">한아</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">선주 「나부」 시왕사의 판관. 시왕의 명을 받아 명참천필을 관장하고 여러 가지 죄업을 판독하며 업보를 판결한다</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">선주 「나부」의 시왕사 판관 중 하나로 체포, 구금, 처벌, 심문, 4부문 중 「심문」을 담당한다. 범죄자의 인과 범죄를 읽고 「명참천필(冥讖天筆)」로 업보 판결을 작성한다. 온종일 꿈점을 사용하면서 일하고 마각의 몸의 인과 정보를 대량 짊어지고 있어 세상만사에 감흥을 느끼지 못한다. 같은 판관인 언니 설의와 함께 행동할 때만 진심을 살짝 드러낸다.</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">소녀 시왕의 칙사 「한아」로 체포, 구금, 처벌, 심문, 4부문 중 마지막을 담당하는 판관입니다. 시왕의 인정을 받아 천필을 관장하며 죄를 기록하고 처벌할 수 있죠</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">전투 속성</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">물리</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">화합</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">선주 「나부」</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">中文 CV</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">张雨曦</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">English CV</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">Suzie Yeung</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">日本語 CV</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">Suzushiro Sayumi</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">한국어 CV</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">윤은서</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">잡담•업무</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">꿈점으로 마각의 몸이 지은 죄업을 분석하는 건, 가시덤불을 만지는 것과 같아서 자주 만지면 오히려 고통이 무뎌지죠. 어쩌면… 아픔을 걱정해 되레 무감각해진 걸 수도 있고요……</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">설의에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">유폐옥에 가봤나요? 사방이 온통 칠흑 같은 어둠인데, 명관 곁에만 등불이 있어 희미한 빛을 밝혀주죠. 제겐 이 속세가 유폐옥이고 언니는 그 등불이에요</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">잡담•시왕사</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">시왕사가 인재를 선발하는 기준이 뭔지는 아무도 몰라요. 많은 사람들은 자신이 어떻게 들어왔는지, 심지어 자신이 예전에 뭘 했었는지조차 기억하지 못하죠. 하지만 세상 사람들도 그들을 다시 볼 필요가 없으니, 서로에게 좋은 일 같아요</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">한아의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">「설의」와 「한아」는 장기판의 흰 패와 검은 패의 별칭이에요. &quot;난 시왕의 사람이다, 그분의 명령을 따라야 한다&quot;라는 사실을 기억하기 위해 이런 이름을 사용하게 되었죠</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">자신에 대해•자매</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">「한아」와 「설의」는 시왕의 칙사로서 우리가 사용하는 이름이에요. 옛날 이름은… 과거일 뿐이죠. 하지만 언제나 제게 가족이라곤 언니 하나밖에 없었어요. 다시는 언니가 떠나지 못하게 할 거예요</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">곽향의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">…아! 방금 한아 님이 「강시」 사건을 보내셨어요. 쉬는 시간은 끝났네요. Mar. 7th 님, 또 만나요!</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">곽향의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아 님께서 이번 임무를 제게 맡기실 줄 저도 몰랐어요</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아는 요괴 퇴치팀의 일을 전해주고, 다시 유원의 업무를 처리하러 돌아갔다</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">곽향의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">꼬리님도 사라지고… 시왕사에서 쫓겨날 줄 알았는데 한아 님은 왜 저한테 이번 임무를 맡기신 건지…. 저도 굉장히 의외예요</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">곽향의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">아직 끝이 아니에요. 한아 님의 분부대로 잡은 세양을 유원으로 데려가 「속형각사진」에 있는 진요탑에 봉인해야 해요</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">계네빈의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아 님이 동의했어요. 세양을 잡는 과정을 업로드해서 팔로워를 늘리고 그 팔로워를 이용해 더 많은 세양을 잡는 선순환을 만들 생각이라고 하니까 그러라고 하던걸요?</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">계네빈의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아 님이 동의했어요. 세양을 잡는 과정을 업로드해서 팔로워를 늘리고 그 팔로워를 이용해 더 많은 세양을 잡는 선순환을 만들 생각이라고 하니까 그러라고 하던걸요?</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">소상의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">헤헤, 사실 한아 님께서 저희에게 시민 여러분께 세양 예방에 대한 지식을 설명하라는 임무를 내리셨거든요</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">계네빈의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아 님 말론 그 자식 진법에 봉인된 주제에 판관들과 기싸움까지 벌인다던데. 우리한테 협조해줄까요?</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">명관의 신호의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아 님! 유원에 관한 속보입니다! 봉인되었던 세양이… 이상한 움직임을 보이고 있어요!</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아가 곽향의 활력 징후를 자세히 검사한다</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">계네빈의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">하지만 한아 님, 이건 저희 팀원을 살리는 일이잖아요!</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">계네빈의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아 님, 솔직하게 말씀해 주세요. 시왕사의 방법이라는 게 도대체 뭐죠?</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아가 소매에서 장월박을 꺼낸다</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">계네빈의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">야, 이 화염 덩어리야! 이게 도대체 무슨 일이야. 한아 님, 설마 처음부터 알고 계셨어요?</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">전투 스킬•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">시왕을 대신해 심판한다</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">필살기•발동</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">시왕의 칙령은 이곳에 쓰이리라</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">행적 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">판관의 글 한 줄에 수많은 업보가 달렸으니, 신중해야죠……</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">판관을 하면 할수록 한 가지 사실은 명확해지는 것 같아요——이 세상 사람들 중에 죄 없는 육신은 없다는 사실 말이에요</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">전투 시작•위험 경보</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">죄업의 기운이 강하군…</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">턴 시작•2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">아직도 발뺌이야? 네 죄는 명백해</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">적 발견</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">악업에 찌든 건 지나칠 수 없지</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">전투 스킬•2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">네 죄업을 잘 생각해</div></li>
+<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">성혼</span> <span class="ref-source">공식 HoYoWiki — 성혼 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">필살기 효과를 보유한 아군이 적 처치 시, 한아의 행동 게이지가 15% 증가한다. 해당 효과는 턴마다 1회만 발동한다</div></li>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">성혼</span> <span class="ref-source">공식 HoYoWiki — 성혼 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">전투 스킬 발동 후 속도가 20% 증가한다. 지속 시간: 1턴</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">성혼</span> <span class="ref-source">공식 HoYoWiki — 성혼 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">필살기 지속 시간이 추가로 1턴 증가한다</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">필살기•활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">명부의 심판에 따라 명하니……</div></li>
+<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">경원에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">장군은 산전수전 다 겪었어요. 웬만한 선주 사람이라면 그가 겪은 일 중 하나만 겪어도 정신상태가 무너졌겠죠…. 그래도 장군의 상태가 괜찮아 보이는 건 아마 자신만의 방법이 있어서일 거예요</div></li>
+<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">블레이드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">이 사람은 마치 자신의 기억으로 ≪선주율≫을 필사한 것만 같아요. 장수종이 이렇게 많은 죄업을 짊어지고도 제정신을 유지한다는 건 드문 일이죠…. 언니가 그를 잡아 오면 꼭 그의 죄업을 자세히 읽어보려고요</div></li>
+<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">백로에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">비디아다라의 육신은 윤회하면서 떠나기 전 기억과 죄업을 고해에 바칠 수 있다던데, 정말 부러워요. 용녀는 좀 다른 것 같던데…. 백로에겐 아주 오래전부터 전해져 내려오는 무거운 짐이 있죠. 보는 것만으로도 숨이 턱턱 막힌다니까요</div></li>
+<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">캐릭터 최고 레벨</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">잠깐, 잠깐만요… 그렇게 많은 정보는 감당이 안 돼요……</div></li>
+<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">캐릭터 승급</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">공무에 매진하는 건 당연한 일이죠. 다만, 피곤하긴 피곤하네요……</div></li>
+<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">단항의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">설의 씨는 용맹하게 싸우다 희생되었어…. 유감이야, 한아</div></li>
+<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">곽향에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">시왕사의 판관들은 모두 산전수전 다 겪은 사람들이고, 그 아이도 예외는 아니죠. 곽향이 조금 소심하긴 해도 능력은 괜찮아요. 우습게 봤다간 큰코다칠걸요?</div></li>
+<li id="ref-50" data-reference-item data-ref-number="50"><span class="ref-title">소상의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아 님이 그러셨는데, 곽향 님은 시왕사의 도구 정비를 정말 잘하신다고 했어요. 역시 전문가답네요</div></li>
+<li id="ref-51" data-reference-item data-ref-number="51"><span class="ref-title">어공에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">여우족의 수명은 300여 년밖에 안 되지만, 천 살 가까이 먹으면서 아무것도 이루는 게 없는 선주 사람들보다 낫죠…. 죽음에 대한 감각을 잊으면 생명이 무의미하거든요. 역병 재앙신이 생명에 가져온 재앙은 바로 이거예요</div></li>
+<li id="ref-52" data-reference-item data-ref-number="52"><span class="ref-title">나찰에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">관을 메고 있는 건 죽음에 쫓기고 있음을 항상 일깨워 주기 위한 걸까요? 그 점은 시왕사 판관과 비슷하네요. 우리가 사지에 발을 들이는 건 선주 사람에게 삶의 존엄성을 주기 위해서거든요</div></li>
+<li id="ref-53" data-reference-item data-ref-number="53"><span class="ref-title">경원의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">그래. 한아가 진요탑에서 너희들을 기다리고 있어</div></li>
+<li id="ref-54" data-reference-item data-ref-number="54"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아가 당신 앞을 가로막는다. 그녀는 당신의 행선지를 결정하는 중요한 임무를 맡고 있다</div></li>
+<li id="ref-55" data-reference-item data-ref-number="55"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한편, {NICKNAME}, 단항, 한아는 유폐옥이 통제 불능의 상황에 빠졌다는 것을 깨달았다……</div></li>
+<li id="ref-56" data-reference-item data-ref-number="56"><span class="ref-title">단항의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">한아, 시간이 없어. 조금만 더 지체하면 보리인이 감옥을 빠져나갈 거야</div></li>
+<li id="ref-57" data-reference-item data-ref-number="57"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 거대한 관은 폭풍 속에 흔들리는 외로운 배처럼 출렁이는 의식의 바다에서 흔들린다. 그녀는 사람들의 분노, 갈망, 증오, 공포, 피로가 자신의 몸을 씻어내리도록 내버려 두었다. 무색의 파도가 그녀를 급류에서 다른 파도 끝으로 던지는 것처럼. 물에 빠져 죽은 자처럼, 그녀는 마침내 보잘것없는 자아를 버리고 혼돈의 바다에 녹아들었다—— 과거의 어느 순간, 그녀는 온종일 분주하게 일하는 지형사(地衡司)의 집사관이었다. 산더미처럼 쌓인...</div></li>
+<li id="ref-58" data-reference-item data-ref-number="58"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 관의 반대편에는 백의의 판관 하나가 눈도 깜빡이지 않고 그녀를 뚫어지게 쳐다보고 있다. 그 낯익은 얼굴은 웃음기가 하나도 없어서 낯설게만 보인다. 판관은 손을 뻗어 들고 있던 금잔을 건넸다. 술잔에는 비취처럼 푸른 술이 담겨 있었는데, 그 술은 어두운 인과의 전당에서 푸른 눈동자처럼 그녀를 물끄러미 바라보고 있었다. 「또 술을 마실 시간인가? 잊을 뻔했네」 그녀는 관에서 일어났다. 「왜 야백이 아니라 언니가 직접 술을 가지고 온...</div></li>
+<li id="ref-59" data-reference-item data-ref-number="59"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 그녀가 마신 술은 묵직한 수은이 되어 온몸으로 퍼져나갔다. 기억하고 싶지 않은 비밀들, 수천 수백 년 전 인간이었던 시절의 모든 것들이 되살아났다가 곧이어 점점 희미해졌다. 그녀는 「나후」라고 불리는 붉은 별이 창성(蒼城) 선주의 구름 꼭대기에 떠서 심장처럼 박동하는 것을 보았다. 이어서 바위, 근육, 가지와 덩굴로 이루어진 별의 껍데기가 천천히 갈라지더니 수많은 자손을 삼키고 내뱉었다. 그 모습은 영원히 배부르지 않은 짐승이...</div></li>
+<li id="ref-60" data-reference-item data-ref-number="60"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 관 한쪽에서 백의의 판관은 잠시도 눈을 돌리지 않고 닫힌 영구(靈柩)를 뚫어져라 바라보았다. 여동생이 잠드는 걸 지켜보는 것은 인간일 때의 습관이었다. 그녀는 아픔을 느끼지 못하고 더이상 후회하지도 않는다. 머릿속에 봉인된 의식이 &#x27;여동생이 잠드는 걸 지켜보는 것은 중요한 사명이며, 자신을 위한 일&#x27;이라고 말했다. 판결을 추론하고 생사를 결정하는 건 중요한 일이다. 이런 일은 세상과 떨어져 있지만 인간의 육신과 마음을 가진, 죄...</div></li>
+<li id="ref-61" data-reference-item data-ref-number="61"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">동천의 하늘이 어떻게 변하는지 관찰해 본 적 있나요? 거짓된 광경이라는 걸 알면서도 며칠 밤을 새워가며 꿈점을 보죠. 인과의 전당을 빠져나와서 반짝이는 빛을 바라보면 마음이 한결 편안해져요</div></li>
+<li id="ref-62" data-reference-item data-ref-number="62"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">가끔 공책에 평소의 견문을 기록해요…. 그럼 언니를 만났을 때 이 모든 걸 들려줄 수 있잖아요</div></li>
+<li id="ref-63" data-reference-item data-ref-number="63"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1537?lang=ko-kr">원문</a></span><div class="ref-quote">시왕사는 언니가 범인을 잡아 올 때마다 반나절을 환생시켜 주기로 약속했고, 그 시간은 세상에서 가장 아름다운 시간이에요. 하지만 아름다운 시간은 항상 손에 쥔 물처럼 빨리 흘러가죠. 손을 꽉 쥘수록 물은 더 빨리 빠져나가 버리고요……</div></li></ol></section>
+<details class="article-tools" data-page-dates data-public-launch-surface>
+  <summary>문서 정보와 변경 로그</summary>
+  <h2>문서 정보</h2>
+  <div class="info-grid"><div class="info-item"><strong>분류</strong><span>인물</span></div>
+<div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div>
+<div class="info-item"><strong>검증 기준</strong><span>게임 4.3</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 성혼, 공식 HoYoWiki — 음성</p>
+  <h3>최근 변경</h3>
+  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=a0885f477fd8</li></ol>
+  <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%95%9C%EC%95%84&amp;page_slug=char-1537">수정 요청</a></div>
+</details>
+
+<section class="comments-section" data-comments-root data-comments-mode="local_mock" data-page-slug="char-1537" data-max-depth="2" data-max-chars="1200" data-worker-base-url="" data-supabase-project-url="" data-supabase-anon-key="" data-turnstile-site-key="">
+  <h2>댓글</h2>
+  <p class="subtle" data-comments-status>댓글을 불러오는 중입니다.</p>
+  <div class="comments-toolbar" data-comments-auth hidden>
+    <button type="button" data-comments-login>Google로 로그인</button>
+    <button type="button" data-comments-logout hidden>로그아웃</button>
+    <span class="subtle" data-comments-user></span>
+  </div>
+  <form data-comments-form hidden>
+    <label>
+      <span class="sr-only">표시 이름</span>
+      <input data-comments-name maxlength="40" autocomplete="nickname" placeholder="표시 이름 (선택)">
+    </label>
+    <label>
+      <span class="sr-only">댓글 내용</span>
+      <textarea data-comments-text maxlength="1200" placeholder="텍스트 댓글만 입력"></textarea>
+    </label>
+    <div data-turnstile-container></div>
+    <button type="submit">등록</button>
+  </form>
+  <div class="comments-list" data-comments-list></div>
+</section>
+</div>
+  </article>
+</main>
+</body>
+</html>
