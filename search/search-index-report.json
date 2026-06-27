@@ -1,13 +1,13 @@
 {
   "schema": "hsr-wiki-search-index-report-v1",
-  "generated_at": "2026-06-27T22:51:58+09:00",
+  "generated_at": "2026-06-27T23:24:19+09:00",
   "page_count": 515,
   "registered_term_count": 571,
   "suggestion_count": 1098,
   "term_count": 102557,
   "shard_count": 128,
   "largest_shard_bytes": 60894,
-  "total_index_bytes": 6685599,
+  "total_index_bytes": 6685576,
   "notes": [
     "Autocomplete covers rendered pages plus queued/needs_review non-held proper nouns.",
     "Full-text search loads only shards required for query terms.",
