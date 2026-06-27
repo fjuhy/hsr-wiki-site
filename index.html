@@ -251,6 +251,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   text-decoration: none;
 }
 .category-card:hover, .home-card:hover { background: var(--accent-soft); }
+.category-section { margin-bottom: 18px; }
+.category-subsection { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 12px; }
+.category-subsection h3 { margin-bottom: 4px; }
 .info-item strong, .category-card strong, .home-card strong { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
 .history-list { margin: 12px 0 0; padding-left: 18px; }
 .history-list li { margin: 7px 0; }
@@ -442,17 +445,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">분류</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
-  <aside class="sidebar"><h2>둘러보기</h2><nav class="queue-list"><a href="categories.html"><span>전체 분류</span></a><a href="category-people.html"><span>인물</span></a>
-<a href="category-factions.html"><span>파벌</span></a>
+  <aside class="sidebar"><h2>둘러보기</h2><nav class="queue-list"><a href="categories.html"><span>전체 카테고리</span></a><a href="category-people.html"><span>인물</span></a>
+<a href="category-factions.html"><span>세력·조직</span></a>
 <a href="category-paths.html"><span>운명의 길</span></a>
 <a href="category-aeons.html"><span>에이언즈</span></a>
-<a href="category-places.html"><span>장소</span></a>
-<a href="category-events.html"><span>사건</span></a>
-<a href="category-concepts.html"><span>개념</span></a>
-<a href="category-terms.html"><span>아이템/용어</span></a>
-<a href="category-other.html"><span>기타</span></a></nav><h2 style="margin-top:16px">문서 목록</h2><nav class="queue-list"><a href="trailblaze.html"><span>개척</span></a>
+<a href="category-places.html"><span>세계·장소</span></a>
+<a href="category-concepts.html"><span>개념·기록</span></a></nav><h2 style="margin-top:16px">문서 목록</h2><nav class="queue-list"><a href="trailblaze.html"><span>개척</span></a>
 <a href="nihility.html"><span>공허</span></a>
 <a href="preservation.html"><span>보존</span></a>
 <a href="interastral-peace-corporation.html"><span>스타피스 컴퍼니</span></a>
@@ -973,9 +973,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="home-hero">
   <div>
     <h2>처음 읽는 별바다 설정 지도</h2>
-    <p>붕괴: 스타레일의 인물, 파벌, 운명의 길, 에이언즈, 사건을 공식 자료와 게임 본편 근거 중심으로 정리한 한국어 비공식 팬 위키입니다.</p>
+    <p>붕괴: 스타레일의 인물, 세력, 운명의 길, 에이언즈, 장소와 핵심 개념을 공식 자료와 게임 본편 근거 중심으로 정리한 한국어 비공식 팬 위키입니다.</p>
     <div class="action-links">
-      <a class="button-link" href="categories.html">분류 보기</a>
+      <a class="button-link" href="categories.html">카테고리 보기</a>
       <a class="button-link" href="reports.html">제보 접수</a>
     </div>
   </div>
@@ -983,11 +983,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 </section>
 <section class="home-section">
   <h2>주요 카테고리</h2>
-  <div class="home-grid"><a class="home-card" href="category-people.html"><strong>인물</strong><span>419개 문서</span><p class="subtle">플레이어블 캐릭터와 주요 인물을 모은 문서입니다.</p></a><a class="home-card" href="category-factions.html"><strong>파벌</strong><span>38개 문서</span><p class="subtle">조직, 세력, 하위 부서를 묶어 봅니다.</p></a><a class="home-card" href="category-paths.html"><strong>운명의 길</strong><span>13개 문서</span><p class="subtle">세계관의 운명의 길과 그 성격을 다룹니다.</p></a><a class="home-card" href="category-aeons.html"><strong>에이언즈</strong><span>9개 문서</span><p class="subtle">에이언즈와 우주론 핵심 항목을 모았습니다.</p></a><a class="home-card" href="category-places.html"><strong>장소</strong><span>4개 문서</span><p class="subtle">행성, 지역, 거점처럼 배경이 되는 장소입니다.</p></a><a class="home-card" href="category-concepts.html"><strong>개념</strong><span>25개 문서</span><p class="subtle">설정 이해에 필요한 추상 개념과 제도입니다.</p></a></div>
+  <div class="home-grid"><a class="home-card" href="category-people.html"><strong>인물</strong><span>424개 문서</span><p class="subtle">주요 인물과 NPC를 소속·활동권별로 나눠 둘러봅니다.</p></a><a class="home-card" href="category-factions.html"><strong>세력·조직</strong><span>38개 문서</span><p class="subtle">파벌, 기관, 부서, 결사처럼 집단 단위로 읽는 문서입니다.</p></a><a class="home-card" href="category-paths.html"><strong>운명의 길</strong><span>13개 문서</span><p class="subtle">세계관의 운명의 길과 그 성격을 다룹니다.</p></a><a class="home-card" href="category-aeons.html"><strong>에이언즈</strong><span>10개 문서</span><p class="subtle">에이언즈와 우주론 핵심 항목을 모았습니다.</p></a><a class="home-card" href="category-places.html"><strong>세계·장소</strong><span>4개 문서</span><p class="subtle">행성, 선주, 정거장, 도시처럼 배경이 되는 장소입니다.</p></a><a class="home-card" href="category-concepts.html"><strong>개념·기록</strong><span>26개 문서</span><p class="subtle">설정 이해에 필요한 제도, 기술, 역법, 기록, 고유 용어입니다.</p></a></div>
 </section>
 <section class="home-section">
   <h2>최근 변경 문서</h2>
-  <ol class="recent-list"><li><a href="preservation.html">보존</a><span class="subtle">운명의 길 · 2026-06-27</span></li><li><a href="interastral-peace-corporation.html">스타피스 컴퍼니</a><span class="subtle">파벌 · 2026-06-27</span></li><li><a href="factions.html">파벌</a><span class="subtle">개념 · 2026-06-27</span></li><li><a href="silver-wolf.html">은랑</a><span class="subtle">인물 · 2026-06-27</span></li><li><a href="blade.html">블레이드</a><span class="subtle">인물 · 2026-06-27</span></li><li><a href="aventurine.html">어벤츄린</a><span class="subtle">인물 · 2026-06-27</span></li><li><a href="topaz.html">토파즈</a><span class="subtle">인물 · 2026-06-27</span></li><li><a href="char-1639.html">Dr. 레이시오</a><span class="subtle">인물 · 2026-06-27</span></li></ol>
+  <ol class="recent-list"><li><a href="preservation.html">보존</a><span class="subtle">운명의 길 · 2026-06-27</span></li><li><a href="interastral-peace-corporation.html">스타피스 컴퍼니</a><span class="subtle">세력·조직 · 2026-06-27</span></li><li><a href="factions.html">파벌</a><span class="subtle">개념·기록 · 2026-06-27</span></li><li><a href="silver-wolf.html">은랑</a><span class="subtle">인물 · 2026-06-27</span></li><li><a href="blade.html">블레이드</a><span class="subtle">인물 · 2026-06-27</span></li><li><a href="aventurine.html">어벤츄린</a><span class="subtle">인물 · 2026-06-27</span></li><li><a href="topaz.html">토파즈</a><span class="subtle">인물 · 2026-06-27</span></li><li><a href="char-1639.html">Dr. 레이시오</a><span class="subtle">인물 · 2026-06-27</span></li></ol>
 </section>
 <section class="home-section">
   <h2>운영 안내</h2>
