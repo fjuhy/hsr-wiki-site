@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-systems.html">제도·조직 원리</a><span>기술개발부</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%EB%B6%80&amp;page_slug=entry-1813">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>기술개발부</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">제도·조직 원리</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -482,7 +538,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>기술개발부는 컴퍼니 안에서 대규모 자원과 고위층의 결정을 끌어낼 수 있는 부서다.<sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 「영구 운동 프로젝트」는 기술개발부의 최고 등급 프로젝트이며, 위성 크기의 초나노 거대 돛을 제작하고 셉터가 부여한 기술을 조합해 우주에 흐르는 허수 에너지를 포집하려는 계획이다. 이후 컴퍼니 고위층이 두 번째 거대 돛 건조를 결정했다는 기술개발부의 통지가 이어지면서, 이 프로젝트가 일회성 실험이 아니라 계속 확장되는 사업임이 드러난다.<sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
 <p>이 에너지 사업은 단순한 연구 경쟁을 넘어 우주 규모의 자원 전쟁과 맞닿아 있다. 기술개발부의 배지는 허수의 강물을 들이켜 무한한 황금을 만들려는 욕망, 그리고 우주 에너지 전쟁이 아직 끝나지 않았다는 인식과 함께 등장한다.</p>
 <p>그렇다고 기술개발부의 능력이 작중에서 일방적으로 높게 평가되지는 않는다.<sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · Dr. 레이시오의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 더들리의 언급 · 더들리의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> <a class="wiki-link" href="char-1639.html" title="Dr. 레이시오">Dr. 레이시오</a>는 야불리를 유능한 사람으로 인정하면서도, 그의 부하들을 야심과 열정만 있고 머리에 든 것이 없는 문외한으로 혹평한다. 반대로 더들리는 기술개발부가 채드윅 같은 지니어스의 두뇌는 없지만 「선견지명」은 있다고 말한다. 두 평가는 기술개발부의 강점과 약점을 함께 보여준다. 이 부서는 천재의 순수한 통찰보다 조직의 자본, 정보, 선점 능력으로 미래 기술을 붙잡는다.<sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · Dr. 레이시오의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 더들리의 언급 · 더들리의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>채드윅 박사와 관련된 사건은 기술개발부의 위상을 가장 어둡게 만든다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 채드윅의 언급 · 채드윅의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 채드윅의 언급 · 채드윅의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 스크루룸의 언급 · 스크루룸의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 누군가는 채드윅에게 기술개발부와 그의 팀이 은하의 미래를 만들어갈 것이라고 말하고, 채드윅은 더들리에게서 자신들의 무기가 「<a class="wiki-link" href="destruction.html" title="파멸">파멸</a>」의 세력을 무찌르는 데 도움이 될 것이라는 말을 듣는다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 채드윅의 언급 · 채드윅의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그러나 이후 「허수 중력붕괴 펄스」 사용을 명령한 기술개발부 고위층은 내부 검토를 받게 되었고, 그 뒤 연락이 끊긴 것으로 전해진다. <a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>은 컴퍼니가 채드윅을 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>로 보내 꿈세계에 연결하고 기억 물질의 활성화를 유지하려 했으며, 기술개발부가 가족과 모종의 협의를 했을 것이라고 추측한다. 이 흐름에서 기술개발부는 미래를 만든다는 명분으로 위험한 기술을 추진하고, 문제가 생긴 뒤에는 책임과 기억까지 관리하려는 조직으로 보인다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 채드윅의 언급 · 채드윅의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 스크루룸의 언급 · 스크루룸의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>채드윅 박사와 관련된 사건은 기술개발부의 위상을 가장 어둡게 만든다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 채드윅의 언급 · 채드윅의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 채드윅의 언급 · 채드윅의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 스크루룸의 언급 · 스크루룸의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 누군가는 채드윅에게 기술개발부와 그의 팀이 은하의 미래를 만들어갈 것이라고 말하고, 채드윅은 더들리에게서 자신들의 무기가 「<a class="wiki-link" href="destruction.html" title="파멸">파멸</a>」의 세력을 무찌르는 데 도움이 될 것이라는 말을 듣는다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 채드윅의 언급 · 채드윅의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그러나 이후 「허수 중력붕괴 펄스」 사용을 명령한 기술개발부 고위층은 내부 검토를 받게 되었고, 그 뒤 연락이 끊긴 것으로 전해진다. <a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>은 컴퍼니가 채드윅을 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>로 보내 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>에 연결하고 기억 물질의 활성화를 유지하려 했으며, 기술개발부가 가족과 모종의 협의를 했을 것이라고 추측한다. 이 흐름에서 기술개발부는 미래를 만든다는 명분으로 위험한 기술을 추진하고, 문제가 생긴 뒤에는 책임과 기억까지 관리하려는 조직으로 보인다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 채드윅의 언급 · 채드윅의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 스크루룸의 언급 · 스크루룸의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>스타피스 컴퍼니와 「보존」은 기술개발부의 제도적 기반이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 파벌"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 기술개발부는 컴퍼니의 7개 부서 중 하나로 배치되며, 이는 기술개발이 시장 <a class="wiki-link" href="trailblaze.html" title="개척">개척</a>, 사업 통합, 투자, 물류, 인재 관리와 함께 움직이는 컴퍼니의 통치 방식 안에 있다는 뜻이다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>야불리는 기술개발부의 권한을 대표하는 인물이다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · Dr. 레이시오의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 그는 부장이자 지식학회의 실세이며, 어떤 인물의 유물을 인계한 담당자로도 나온다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 펄조차 그 기록을 열람할 권한이 없다고 말하기 때문에, 야불리와 기술개발부가 다루는 사안은 컴퍼니 내부에서도 제한적으로 관리되는 영역에 속한다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
@@ -529,7 +585,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=59b4c7d50e3b</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%EB%B6%80&amp;page_slug=entry-1813">수정 요청</a></div>
 </details>
 

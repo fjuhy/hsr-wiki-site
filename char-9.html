@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-astral-express.html">은하열차·무명객</a><span>히메코</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%9E%88%EB%A9%94%EC%BD%94&amp;page_slug=char-9">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>히메코</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">은하열차·무명객</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -489,7 +545,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>단항에 대한 히메코의 시선은 정확한 관찰과 조용한 지원에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해•2"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> 그녀는 단항이 무척 신중하고, 혼자 지낸 시간이 길어 남을 귀찮게 하거나 폐를 끼치는 일을 싫어한다고 본다. 그래서 단항에게 경호와 아카이브 관리를 맡겼고, 할 일이 없었다면 그가 열차에 오르지 않았을 것이라고 판단한다. 이후 히메코는 단항이 Mar. 7th와 개척자 덕분에 다른 사람에게 의지해도 괜찮다는 사실을 깨달은 것 같다고 말한다. 단항에게 “하고 싶은 대로 하라”고 지원을 약속하는 대사는, 히메코가 동료를 자기 방식으로 묶어 두기보다 스스로 움직이게 밀어 주는 인물임을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•단항"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•단항•음월"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
 <p>웰트와 히메코는 열차팀의 경험 많은 축으로 함께 언급된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「위령제, 맑고 먼 하늘길」"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 인간 세상의 서사시와 작별하라」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 히메코는 웰트와 그의 금발 동료가 열차의 처음 두 손님이었다는 사실을 기억하고, 웰트가 젊은이들에게 뒤처질까 걱정하는 것 같지만 마음은 젊다고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 웰트에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 본편에서 히메코와 웰트는 함께 여행을 논의하고, 개척자 일행이 둘을 함께 찾거나 부르는 장면이 이어진다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「위령제, 맑고 먼 하늘길」"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 인간 세상의 서사시와 작별하라」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 인간 세상의 서사시와 작별하라」"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 두 사람은 열차팀 안에서 앞에 나서는 젊은 동료들을 보조하면서도, 큰 방향을 의논할 수 있는 안정된 기준점으로 배치된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 웰트에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•웰트"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「위령제, 맑고 먼 하늘길」"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
 <p>우주정거장 「<a class="wiki-link" href="loc-951.html" title="헤르타">헤르타</a>」와 개척자의 만남은 히메코의 기억 속에서 열차팀의 중요한 전환점으로 남아 있다. 히메코는 열차팀이 우주정거장 「헤르타」에 도착했고, 그곳에서 개척자를 만나 다시 새로운 여정을 떠난 일을 기억한다. 헤르타도 히메코와 일행들이 개척자를 더 걱정하고 있다고 말하며, 외부 인물의 입을 통해 히메코가 개척자를 신경 쓰는 위치에 있음을 확인시킨다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「흐르는 세월이여, 수천 년을 건너게 해다오」"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
-<p>꿈세계 관련 언급은 히메코가 열차 안에만 머무는 정비 담당자가 아니라 직접 조사에 관여하는 인물임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> <a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>은 「죽음」이 떠돌고 있으니 히메코와 Mar. 7th가 무사한지 직접 확인하고 상황을 알려야겠다고 말한다. Mar. 7th는 히메코가 꿈세계를 조사하다가 누군가를 만나게 됐다고 전한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 이 언급들은 히메코가 위험을 뒤에서만 분석하는 사람이 아니라, 필요하면 현장 조사와 연락망의 중심에도 서는 인물임을 보강한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
+<p><a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a> 관련 언급은 히메코가 열차 안에만 머무는 정비 담당자가 아니라 직접 조사에 관여하는 인물임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> <a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>은 「죽음」이 떠돌고 있으니 히메코와 Mar. 7th가 무사한지 직접 확인하고 상황을 알려야겠다고 말한다. Mar. 7th는 히메코가 꿈세계를 조사하다가 누군가를 만나게 됐다고 전한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 이 언급들은 히메코가 위험을 뒤에서만 분석하는 사람이 아니라, 필요하면 현장 조사와 연락망의 중심에도 서는 인물임을 보강한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「자정에 잠에서 깨면」"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
 <p>고향과 집에 대한 언급은 히메코의 과거가 완전히 닫힌 배경이 아니라 현재 사건과 다시 연결될 수 있음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「환월은 자비로운 여왕」"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「누구나 15 분 동안 유명해질 수 있다」"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「누구나 15 분 동안 유명해질 수 있다」"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「누구나 15 분 동안 유명해질 수 있다」"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> 본편에서는 “히메코 씨의 고향”, “히메코 씨의 집”, “히메코 씨가 자란 곳”을 묻는 선택지가 등장하고, 도브브룩 구역과 관련해 히메코의 집인지 확인하는 대화도 나온다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「환월은 자비로운 여왕」"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「누구나 15 분 동안 유명해질 수 있다」"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「누구나 15 분 동안 유명해질 수 있다」"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「누구나 15 분 동안 유명해질 수 있다」"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> 이는 히메코가 열차의 현재를 대표하는 인물이면서도, 고향과 성장의 흔적을 통해 별하늘 밖으로 떠난 이유를 다시 비추는 캐릭터라는 점을 남긴다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「누구나 15 분 동안 유명해질 수 있다」"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「누구나 15 분 동안 유명해질 수 있다」"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
 <h2 id="별을-향한-탐구와-열차의-집">별을 향한 탐구와 열차의 집</h2>
 <p>히메코의 중심에는 탐구심이 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 그녀는 인류의 탐구심은 끝이 없다고 말하고, 앞에 수많은 장관이 펼쳐질 텐데 어떻게 멈출 수 있겠느냐고 묻는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 승급"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 그녀의 여정은 악운이 아니라 탐구욕과 호기심이 이끈 길이라는 말과 함께 해석되며, 같은 곳에 서 있어도 각자가 보는 것과 생각하는 것은 다르다는 대화로 확장된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
@@ -549,7 +605,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=f244b7e6761d</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%9E%88%EB%A9%94%EC%BD%94&amp;page_slug=char-9">수정 요청</a></div>
 </details>
 

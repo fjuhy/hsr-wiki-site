@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,11 +521,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-amphoreus.html">앰포리어스</a><span>트리비</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%8A%B8%EB%A6%AC%EB%B9%84&amp;page_slug=char-3322">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>트리비</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">앰포리어스</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>트리비는 앰포리어스에 속한 양자 속성, <a class="wiki-link" href="path-83.html" title="화합">화합</a> <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a> 캐릭터이며, 야누소폴리스의 성녀 트리스비오스의 한 모습이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>트리비는 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a>에 속한 양자 속성, <a class="wiki-link" href="path-83.html" title="화합">화합</a> <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a> 캐릭터이며, 야누소폴리스의 성녀 트리스비오스의 한 모습이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>트리스비오스는 예언의 「전달자」 트리비, 백계를 누비는 「문 장인」 트리앤, 신탁을 경청하는 「사제」 트리논으로 자신을 드러내며, 셋은 함께 「야누소폴리스의 성녀」라고 말한다. 이 셋은 따로 말하고 따로 움직이는 듯 보이지만, 수수께끼·바람·신 사과 같은 작은 감각까지 서로 앞질러 반응할 만큼 깊게 이어져 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 감응"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>트리비의 핵심 임무는 사람들을 위해 구세의 소식을 대지에 전하고, 황금 피가 흐르는 사람의 아이를 찾아 세상의 어둠을 뚫고 별과 달이 가득한 내일로 나아가게 하는 것이다.<sup class="cite-ref" title="공식 HoYoWiki · 트리비"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그는 신탁을 전하는 인물이지만, 신탁만으로 세계가 구원된다고 믿지 않고 수많은 영웅과 사람들의 노력이 있어야 신탁도 실현된다고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
@@ -555,7 +611,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 성혼, 공식 HoYoWiki — 음성</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=a90e3278294c</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%8A%B8%EB%A6%AC%EB%B9%84&amp;page_slug=char-3322">수정 요청</a></div>
 </details>
 

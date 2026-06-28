@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-paths.html">운명의 길</a><span>종말</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A2%85%EB%A7%90&amp;page_slug=path-2360">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>종말</h1><div class="meta-row"><span class="badge">운명의 길</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -479,7 +535,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="작중-위상">작중 위상</h2>
 <p>종말은 여러 문명과 인물의 운명을 압박하는 거대한 결말로 취급된다.<sup class="cite-ref" title="게임 본편 · 카프카의 언급 · 카프카의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 놀더스의 언급 · 놀더스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <a class="wiki-link" href="kafka.html" title="카프카">카프카</a>는 주인공이 은하의 소원을 위해 여정을 시작했으며, 그 이야기 속에서 우주가 「종말」의 운명을 피할 수 있을 것이라고 말한다.<sup class="cite-ref" title="게임 본편 · 카프카의 언급 · 카프카의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 반대로 <a class="wiki-link" href="char-4060.html" title="달리아">달리아</a>와 <a class="wiki-link" href="char-2494.html" title="반디">반디</a>의 언급에서는 주인공이 「종말」을 가져올 운명을 지닌 사람으로 불리며, 서로 다른 종말을 향해 간다는 말까지 나온다.<sup class="cite-ref" title="게임 본편 · 달리아의 언급 · 달리아의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
 <p>이 양면성 때문에 종말은 피해야 할 파국이면서도, 어떤 인물에게는 이미 정해진 길처럼 작동한다.<sup class="cite-ref" title="게임 본편 · 달리아의 언급 · 달리아의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 아케론의 언급 · 아케론의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 달리아는 한 인물이 「<a class="wiki-link" href="trailblaze.html" title="개척">개척</a>」의 길을 걷는 동안 다른 한 인물이 「종말」의 길을 걸었다고 말하고, <a class="wiki-link" href="char-1919.html" title="아케론">아케론</a>은 그 헌터가 운명에 맞서기 위해 자신의 소원을 버릴 수밖에 없었다고 말한다.<sup class="cite-ref" title="게임 본편 · 달리아의 언급 · 달리아의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 아케론의 언급 · 아케론의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 종말의 길은 단순히 끝을 받아들이는 태도가 아니라, 끝을 향해 가면서도 그 운명과 싸우는 모순을 품는다.<sup class="cite-ref" title="게임 본편 · 제이드의 언급 · 제이드의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 아케론의 언급 · 아케론의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
-<p>앰포리어스 관련 언급에서는 종말이 문명 전체의 붕괴로 구체화된다.<sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> <a class="wiki-link" href="char-3769.html" title="파이논">파이논</a>은 <a class="wiki-link" href="npc-859.html" title="니카">니카</a>도르의 광기가 앰포리어스를 종말로 몰아넣고 있다고 말하고, <a class="wiki-link" href="char-3560.html" title="카스토리스">카스토리스</a>는 동료와 터전이 파멸로 향하는 미래를 막기 위해 왔다고 말한다.<sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 여기서 종말은 예언이나 관념에 머물지 않고, 광기와 복제, 문명 말살의 시도로 이어지는 실제 위기다.<sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 제전의 소리의 언급 · 제전의 소리의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
+<p><a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a> 관련 언급에서는 종말이 문명 전체의 붕괴로 구체화된다.<sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> <a class="wiki-link" href="char-3769.html" title="파이논">파이논</a>은 <a class="wiki-link" href="npc-859.html" title="니카">니카</a>도르의 광기가 앰포리어스를 종말로 몰아넣고 있다고 말하고, <a class="wiki-link" href="char-3560.html" title="카스토리스">카스토리스</a>는 동료와 터전이 파멸로 향하는 미래를 막기 위해 왔다고 말한다.<sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 여기서 종말은 예언이나 관념에 머물지 않고, 광기와 복제, 문명 말살의 시도로 이어지는 실제 위기다.<sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 제전의 소리의 언급 · 제전의 소리의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>테르미누스는 종말의 에이언즈로 불리며, 종말이라는 운명의 길을 설명할 때 가장 직접적인 이름이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 웰트는 테르미누스를 나누크와 약사처럼 우주적 규모의 에이언즈와 나란히 놓지만, 이해하기 어려운 존재로 남긴다.<sup class="cite-ref" title="게임 본편 · 웰트의 언급 · 웰트의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <a class="wiki-link" href="char-4736.html" title="효광">효광</a>의 말처럼 테르미누스를 보았다는 경험조차 한 개인의 삶이 곧바로 끝났다는 뜻은 아니어서, 테르미누스는 직접 목격과 운명의 결말 사이에 불확실성을 남긴다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「누구나 15 분 동안 유명해질 수 있다」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>종말 괴수는 종말을 병기와 전장으로 끌어내리는 대표적 존재다.<sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a> 일행은 <a class="wiki-link" href="loc-951.html" title="헤르타">헤르타</a> 우주정거장에서 종말 괴수와 맞닥뜨렸고, 단항은 그 괴수를 반물질 군단이 천체에 대항하기 위한 병기라고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시뮬라크르와 시뮬라시옹, 혹은 정의를 향한 추구」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 이후 인물들은 종말 괴수를 쓰러뜨린 일을 성장의 기억이나 무용담처럼 되짚지만, 그 장면은 동시에 반물질 군단의 침공이 더 큰 적으로 이어질 수 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 메투나의 언급 · 메투나의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
@@ -531,7 +587,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=f23bef1d5673</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A2%85%EB%A7%90&amp;page_slug=path-2360">수정 요청</a></div>
 </details>
 

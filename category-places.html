@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,12 +521,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><h1>장소</h1><div class="meta-row"><span class="badge">장소</span></div></header>
-    <div class="article-body"><nav class="breadcrumbs" aria-label="문서 위치"><a href="categories.html">카테고리</a><span>장소</span></nav><section class="stub"><h2>장소</h2><p>행성, 선주, 정거장, 도시처럼 배경이 되는 장소입니다.</p><p class="subtle">4개 문서</p><section class="category-subsection"><h3><a href="category-places-worlds.html">행성·세계</a> <span class="ref-source">1개</span></h3><p class="subtle">행성과 독립 세계 단위의 장소입니다.</p><ul><li><a href="loc-1804.html">페나코니</a> <span class="ref-source">장소 · 행성·세계</span><p class="subtle">페나코니는 아스다나 은하계에 있는 「축제의 별」이자 「꿈의 땅」으로, 어두운 별하늘에 떠 있는 호화로운 호텔과 그 안에서 이어지는 꿈세계가 하나의 거대한 무대처럼 결합한 장소다. 사람들은 이곳을 은하 유명 인사들이 파티를 즐기고 각국의 부호들이 휴양을 누리는 사치의 별로 기억하지만, 페나코니의 핵심은 호텔의 드림풀을 통해</p></li></ul></section>
-<section class="category-subsection"><h3><a href="category-places-ships-stations.html">선주·정거장·거점</a> <span class="ref-source">3개</span></h3><p class="subtle">거대 함선, 정거장, 핵심 거점입니다.</p><ul><li><a href="xianzhou-luofu.html">선주 「나부」</a> <span class="ref-source">장소 · 선주·정거장·거점</span><p class="subtle">선주 「나부」는 선주 연맹의 6대 기함 중 하나로, 끝없이 펼쳐진 은하를 항해하는 거대한 선주다. 이곳은 「수렵」 란의 길과 「풍요」 약사의 그림자가 함께 남아 있는 장소이며, 나부의 현재 질서는 풍요가 남긴 재앙을 경계하고 수렵의 이름으로 그 재발을 막으려는 태도 위에 서 있다.</p></li>
-<li><a href="jarilo-vi.html">야릴로-Ⅵ</a> <span class="ref-source">장소 · 선주·정거장·거점</span><p class="subtle">야릴로-Ⅵ는 은하열차의 초기 「개척」 여정에서 방문하는 얼음 행성으로, 스텔라론의 영향과 오랜 한파 때문에 문명 전체가 고립과 생존의 문제에 묶여 있던 세계다. 현재 행성의 중심 정치 질서는 「보존」의 에이언즈 클리포트와 축성가의 전통에 기대며, 수호자의 계승은 쿠쿠리아 랜드에서 브로냐 랜드로 넘어간다.</p></li>
+    <div class="article-body"><nav class="breadcrumbs" aria-label="문서 위치"><a href="categories.html">카테고리</a><span>장소</span></nav><section class="stub"><h2>장소</h2><p>행성, 선주, 정거장, 도시처럼 배경이 되는 장소입니다.</p><p class="subtle">6개 문서</p><section class="category-subsection"><h3><a href="category-places-worlds.html">행성·세계</a> <span class="ref-source">4개</span></h3><p class="subtle">행성과 독립 세계 단위의 장소입니다.</p><ul><li><a href="amphoreus.html">앰포리어스</a> <span class="ref-source">항목 · 행성·세계</span><p class="subtle">앰포리어스는 은하열차가 블랙 스완의 제안을 받아 향하는 「영원의 땅」이며, 공식 음성에서는 「천외 앰포리어스」라는 소속명으로도 확인된다. 아키비리조차 가보지 못한 세계라는 언급이 있어, 일반적인 개척 노선 바깥에 놓인 장소로 다뤄진다.</p></li>
+<li><a href="punklorde.html">펑크 로드</a> <span class="ref-source">항목 · 행성·세계</span><p class="subtle">펑크 로드는 은랑의 출신지로 언급되는 개방적인 사이버 행성이며, 해커 문화와 가상현실 개발, 에테르 계열 기술의 출처로 작중에서 기능한다. 공식 이야기와 게임 본문은 이곳을 팀 단위 생존, 현실을 데이터처럼 다루는 사고방식, 0호와 선현 같은 전설이 축적된 기술 문화권으로 보여 준다.</p></li>
+<li><a href="jarilo-vi.html">야릴로-Ⅵ</a> <span class="ref-source">장소 · 행성·세계</span><p class="subtle">야릴로-Ⅵ는 은하열차의 초기 「개척」 여정에서 방문하는 얼음 행성으로, 스텔라론의 영향과 오랜 한파 때문에 문명 전체가 고립과 생존의 문제에 묶여 있던 세계다. 현재 행성의 중심 정치 질서는 「보존」의 에이언즈 클리포트와 축성가의 전통에 기대며, 수호자의 계승은 쿠쿠리아 랜드에서 브로냐 랜드로 넘어간다.</p></li>
+<li><a href="loc-1804.html">페나코니</a> <span class="ref-source">장소 · 행성·세계</span><p class="subtle">페나코니는 아스다나 은하계에 있는 「축제의 별」이자 「꿈의 땅」으로, 어두운 별하늘에 떠 있는 호화로운 호텔과 그 안에서 이어지는 꿈세계가 하나의 거대한 무대처럼 결합한 장소다. 사람들은 이곳을 은하 유명 인사들이 파티를 즐기고 각국의 부호들이 휴양을 누리는 사치의 별로 기억하지만, 페나코니의 핵심은 호텔의 드림풀을 통해</p></li></ul></section>
+<section class="category-subsection"><h3><a href="category-places-ships-stations.html">선주·정거장·거점</a> <span class="ref-source">2개</span></h3><p class="subtle">거대 함선, 정거장, 핵심 거점입니다.</p><ul><li><a href="xianzhou-luofu.html">선주 「나부」</a> <span class="ref-source">장소 · 선주·정거장·거점</span><p class="subtle">선주 「나부」는 선주 연맹의 6대 기함 중 하나로, 끝없이 펼쳐진 은하를 항해하는 거대한 선주다. 이곳은 「수렵」 란의 길과 「풍요」 약사의 그림자가 함께 남아 있는 장소이며, 나부의 현재 질서는 풍요가 남긴 재앙을 경계하고 수렵의 이름으로 그 재발을 막으려는 태도 위에 서 있다.</p></li>
 <li><a href="loc-951.html">헤르타</a> <span class="ref-source">장소 · 선주·정거장·거점</span><p class="subtle">우주정거장 「헤르타」는 지니어스 클럽의 헤르타가 별의 궤도에 올린 박물관형 우주 함선으로, 은하 곳곳의 괴이한 존재와 기물을 모아 관측하고 연구하는 장소다.</p></li></ul></section></section></div>
   </article>
 </main>

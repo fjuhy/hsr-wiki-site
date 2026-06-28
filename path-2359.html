@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,12 +521,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-paths.html">운명의 길</a><span>기억</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B8%B0%EC%96%B5&amp;page_slug=path-2359">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>기억</h1><div class="meta-row"><span class="badge">운명의 길</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>기억은 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a> 「후리」가 관장하는 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>이며, 공식 분류에서 기억의 정원과 소각공이 그 추종 세력으로 묶인다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 공식 기본 설명에서는 특수 능력을 지닌 기억 정령을 불러내 함께 싸우는 길로 제시되지만, 세계관에서 기억은 훨씬 넓게 작동한다.<sup class="cite-ref" title="공식 HoYoWiki · 기억"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「꿈을 좇는 젊은이들」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 히메코"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>작중의 기억은 개인의 과거를 떠올리는 일에 그치지 않는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「1시 45 분의 노크 소리」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「꿈을 좇는 젊은이들」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「중심에 멈춘 소용돌이」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 기억 물질은 꿈세계와 현실의 경계를 이루고, 기억하는 자는 그 물질과 기억의 영역 안에서 비범한 능력을 발휘하며, 기억의 정원은 죽은 세계의 기억을 회수해 재현과 소생의 불씨를 남기려 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「1시 45 분의 노크 소리」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「꿈을 좇는 젊은이들」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 여자 목소리"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 남자 목소리"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>작중의 기억은 개인의 과거를 떠올리는 일에 그치지 않는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「1시 45 분의 노크 소리」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「꿈을 좇는 젊은이들」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「중심에 멈춘 소용돌이」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 기억 물질은 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>와 현실의 경계를 이루고, 기억하는 자는 그 물질과 기억의 영역 안에서 비범한 능력을 발휘하며, 기억의 정원은 죽은 세계의 기억을 회수해 재현과 소생의 불씨를 남기려 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「1시 45 분의 노크 소리」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「꿈을 좇는 젊은이들」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 여자 목소리"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 남자 목소리"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>기억은 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>와 꿈세계의 핵심 질료로 쓰인다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「1시 45 분의 노크 소리」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「꿈을 좇는 젊은이들」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「공공의 적」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 꿈세계는 현실과 기억의 영역의 경계로 설명되며, 기억 물질은 세계를 이루는 재료이자 조작하기 어려운 힘으로 다루어진다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「1시 45 분의 노크 소리」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「꿈을 좇는 젊은이들」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「꿈을 좇는 젊은이들」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 기억의 정원의 기억하는 자가 아닌 평범한 사람에게 기억 물질을 자유자재로 제어하는 일은 어렵다고 말하고, <a class="wiki-link" href="path-83.html" title="화합">화합</a>의 조율이 있어야 현실의 물리 법칙으로 꿈세계를 이해할 수 있다고 설명한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「꿈을 좇는 젊은이들」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>기억 물질은 페나코니의 공간과 사건을 실제로 바꾸는 힘이기도 하다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「그리고, 여덟째 날에…」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「그리고, 여덟째 날에…」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「공공의 적」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <a class="wiki-link" href="char-1919.html" title="아케론">아케론</a>은 「<a class="wiki-link" href="path-2358.html" title="질서">질서</a>」의 목적이 모두를 깊은 잠에 빠뜨리는 데 그치지 않고, <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a>을 촉매로 삼아 아스다나의 기억 물질이 세계에 스며들게 하며 꿈세계와 현실을 어우러지게 하려는 것이라고 본다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「그리고, 여덟째 날에…」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「그리고, 여덟째 날에…」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <a class="wiki-link" href="char-1924.html" title="갤러거">갤러거</a>는 좋은꿈이 아무 까닭 없이 생긴 것이 아니며, 기억의 영역을 바다에 비유하면 꿈의 땅을 세우는 일은 거친 바다를 메워 육지를 만드는 일과 같다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「공공의 적」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
@@ -544,7 +600,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 더 알아보기</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=1c31b4e9d109</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B8%B0%EC%96%B5&amp;page_slug=path-2359">수정 요청</a></div>
 </details>
 

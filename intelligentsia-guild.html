@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-knowledge.html">지식 세력</a><span>지식학회</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A7%80%EC%8B%9D%ED%95%99%ED%9A%8C&amp;page_slug=intelligentsia-guild">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>지식학회</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">지식 세력</span><span class="badge">세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -489,7 +545,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>이 파벌의 힘은 군사력보다 지식의 소유와 유통을 장악하는 데서 나온다. 지식학회가 어떤 기술의 저작권을 갖고, 어떤 프로젝트의 연구개발을 담당하고, 어떤 세계의 언어·오염·기계 문제를 해결할 수 있다면, 그들은 직접 통치하지 않아도 세계의 조건을 바꿀 수 있다. 그래서 지식학회는 “착한 학술 단체”로만 보기도 어렵고, “컴퍼니의 하청 조직”으로만 보기도 부족하다. 지식학회는 지식을 개방한다고 말하면서도, 그 개방이 어떤 가격과 계약, 권리관계 속에서 이루어지는지를 계속 묻게 만드는 파벌이다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 복잡한 프로젝트라서 컴퍼니 안팎의 많은 리소스가 동 · 제이드의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타: ——하지만 엘리야 살라스가 발명을 공표한 적은 없으 · 헤르타의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>지식학회는 누스, 지식의 운명의 길, 지니어스 클럽, 스타피스 컴퍼니, <a class="wiki-link" href="entry-1813.html" title="기술개발부">기술개발부</a>, Dr. 레이시오와 함께 읽어야 한다. 공식 항목의 관련 항목은 누스와 스타피스 컴퍼니를 함께 제시하며, 스타피스 컴퍼니 쪽에서는 기술개발부가 지식학회의 연구 성과를 상업 프로젝트로 전환하는 관계가 제시된다. 이 관계 때문에 지식학회는 우주 학술계와 기업 경제권을 잇는 중요한 접점이 된다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>게임 본문에서는 지식학회의 베리타스•레이시오 교수가 앰포리어스와 잔다르 회귀 원리를 설명하는 방송에 등장하고, 지식학회의 현인이 선주를 도와 동력 갑옷과 격투술을 만든 기록도 언급된다. <a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>은 지식학회가 중요한 사료를 허구 역사학자가 조작하도록 두지 않을 것이라고 말한다. 이런 대사들은 지식학회가 특정 행성이나 컴퍼니 프로젝트에만 묶인 집단이 아니라, 우주 곳곳의 역사·기술·학술 권위와 연결된 파벌임을 보여준다. <sup class="cite-ref" title="게임 본편 — 대사 · 남자 목소리: 지식학회의 베리타스•레이시오 교수는 「잔다르 회귀 · 남자 목소리의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 삭금: 그럼 누군가 선주 고대 무술이 대체 스타피스 컴퍼니 · 연경의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 삭금: 당시 지식학회의 현인이 선주 금 조각상을 본떠 13 · Unknown의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스크루룸: 로직: 지식학회는 늘 「신비」를 감추고 있으니, 특 · 스크루룸의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
+<p>게임 본문에서는 지식학회의 베리타스•레이시오 교수가 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a>와 잔다르 회귀 원리를 설명하는 방송에 등장하고, 지식학회의 현인이 선주를 도와 동력 갑옷과 격투술을 만든 기록도 언급된다. <a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>은 지식학회가 중요한 사료를 허구 역사학자가 조작하도록 두지 않을 것이라고 말한다. 이런 대사들은 지식학회가 특정 행성이나 컴퍼니 프로젝트에만 묶인 집단이 아니라, 우주 곳곳의 역사·기술·학술 권위와 연결된 파벌임을 보여준다. <sup class="cite-ref" title="게임 본편 — 대사 · 남자 목소리: 지식학회의 베리타스•레이시오 교수는 「잔다르 회귀 · 남자 목소리의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 삭금: 그럼 누군가 선주 고대 무술이 대체 스타피스 컴퍼니 · 연경의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 삭금: 당시 지식학회의 현인이 선주 금 조각상을 본떠 13 · Unknown의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스크루룸: 로직: 지식학회는 늘 「신비」를 감추고 있으니, 특 · 스크루룸의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
 <h2 id="해석과-맥락">해석과 맥락</h2>
 <p>지식학회는 “천재가 아닌 자들의 지식 파벌”이라는 점에서 스타레일 세계관에서 꽤 중요한 위치를 차지한다. 지니어스 클럽이 누스가 직접 바라본 특별한 개인들의 목록이라면, 지식학회는 그 바깥에서 지식을 제도화하고 유통시키는 거대한 장치다. 그래서 지식학회 문서는 스타피스 컴퍼니의 하위 문서로만 두면 좁다. 컴퍼니와 협력하지만, 그보다 넓게 지식의 운명의 길과 우주 학술 네트워크를 설명하는 독립 파벌 문서로 다루는 편이 맞다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 여자 목소리: 지난 10기원 동안 스타피스 컴퍼니는 세계를 다시 · Unknown의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
 <p>이 파벌의 재미는 “지식을 모두에게 열어 준다”는 말이 순수한 이상으로만 끝나지 않는다는 데 있다. 지식학회는 지식을 퍼뜨리고 문제를 해결하지만, 동시에 저작권과 계약, 연구비와 화물, 금기된 기술까지 함께 끌고 온다. 그래서 지식학회는 선한 학교도, 단순한 기업 연구소도 아니다. 스타레일 우주에서 지식이 사람을 구할 수도 있고, 누군가의 소유권과 사업 모델이 될 수도 있다는 긴장을 보여 주는 파벌이다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스코트: 지식재산권의 비밀 유지뿐만 아니라 지식학회에서 만든 · 스코트의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타: ——하지만 엘리야 살라스가 발명을 공표한 적은 없으 · 헤르타의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/954?lang=ko-kr">원문</a></span><div class="ref-quote">지식학회</div></li>
@@ -532,7 +588,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div></div>
   <p class="subtle">주요 근거: 게임 본편 — 대사, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-24 | metadata/sources refresh | actor=editor | commit=25d52809ae | sources=+31/-0</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-24 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A7%80%EC%8B%9D%ED%95%99%ED%9A%8C&amp;page_slug=intelligentsia-guild">수정 요청</a></div>
 </details>
 

@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-amphoreus.html">앰포리어스</a><span>히아킨</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%9E%88%EC%95%84%ED%82%A8&amp;page_slug=char-3688">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>히아킨</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">앰포리어스</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -474,7 +530,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>히아킨티아는 「하늘」 혹은 「천공」의 불씨를 수호하는 황금의 후예이며, 선조의 의지를 이어 갈라진 조석의 틈을 다시 메워야 하는 인물로 자리한다.<sup class="cite-ref" title="공식 HoYoWiki · 히아킨"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 구름 속 도시 국가는 세월 속에 흩어지고 분열되었지만, 놀빛 정원은 다시 문을 열어 영원한 밤에 희미한 빛을 가져다준다.<sup class="cite-ref" title="공식 HoYoWiki · 히아킨"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 히아킨의 사명은 단순한 치료 행위에 머물지 않고, 무너진 세계에서 원한을 녹이고 여명을 되돌리는 일과 이어진다.<sup class="cite-ref" title="공식 HoYoWiki · 히아킨"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>히아킨의 곁에는 페가수스 이카가 있다.<sup class="cite-ref" title="공식 HoYoWiki · 히아킨"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 히아킨은 이카를 훌륭한 조수이자 동료로 소개하고, 하늘의 백성은 모두 날개 환수의 축복을 받는다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 날개 환수"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이카는 작고 자주 졸지만, 무지갯빛을 비추어 도시 전체를 구한 적이 있으며 그 일 이후 말을 할 수 없게 되었다. 이카는 귀여운 동반자에 그치지 않고, 히아킨의 하늘 혈통과 도시 구원, 상실의 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>을 함께 짊어진 존재다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 날개 환수"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
-<p>히아킨은 무너져 가는 앰포리어스에서 몸의 상처와 마음의 절망을 함께 돌보는 의사다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 모든 사람을 치유할 수 있기를 바랐고, 검은 물결이 도시 국가를 집어삼키고 역병이 중상자를 감쌀 때 역병을 몰아낼 수 있었다. 그러나 히아킨은 절망이 퍼지는 것까지 막을 수는 없었다. 이 한계 때문에 그는 약초와 처치만으로는 좋은 의사가 될 수 없다고 깨닫고, 환자가 마지막 순간에도 색과 온기를 느끼도록 공간과 마음을 돌보는 쪽으로 의술을 넓힌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>히아킨은 무너져 가는 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a>에서 몸의 상처와 마음의 절망을 함께 돌보는 의사다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 모든 사람을 치유할 수 있기를 바랐고, 검은 물결이 도시 국가를 집어삼키고 역병이 중상자를 감쌀 때 역병을 몰아낼 수 있었다. 그러나 히아킨은 절망이 퍼지는 것까지 막을 수는 없었다. 이 한계 때문에 그는 약초와 처치만으로는 좋은 의사가 될 수 없다고 깨닫고, 환자가 마지막 순간에도 색과 온기를 느끼도록 공간과 마음을 돌보는 쪽으로 의술을 넓힌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>히아킨의 치료는 환자의 몸을 안정시키는 일에서 끝나지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 「대화」 치료"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그는 상대의 몸짓과 미세한 표정에서 고민을 읽고, 정원의 푹신한 의자와 책, 다과와 햇살, 말동무가 되어 주는 자신을 통해 환자를 쉬게 한다. 붕대를 감거나 주사를 놓거나 검진할 때 환자가 긴장하면 대화로 긴장을 풀려 하고, 때로는 그 말이 길어져 환자를 피곤하게 만들기도 한다. 히아킨에게 말은 장식이 아니라 치료의 일부이며, 그의 다정함은 감정에만 머무르지 않고 실제 의료 현장으로 들어간다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 「대화」 치료"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>놀빛 정원은 히아킨이 세계를 대하는 방식을 가장 잘 보여 주는 장소다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 오크마가 영웅들이 모이는 곳이자 <a class="wiki-link" href="path-2360.html" title="종말">종말</a>의 마지막 희망으로 불릴 때, 히아킨은 「불을 쫓는 여정」, 「불씨」, 「티탄」 같은 거대한 말에 익숙해져 있으면서도 영웅이라 불릴 때마다 자신은 그저 의사일 뿐이라고 손사래를 친다. 그는 놀빛 정원에 오는 모든 사람에게 자신을 의사로 내세우고, 이 태도는 사명을 낮추는 겸손이 아니라 종말 속에서 그가 선택한 싸움의 방식이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>히아킨은 개인의 치료를 넘어 공동체의 갈등도 다룬다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그는 차가운 방직공과 오만한 학자 사이의 불화를 알고, 새로 마련한 중재실에 방직공이 좋아하는 오트밀죽과 학자가 논문을 첨삭할 때 필요한 탄산 고추냉이 식초를 준비하며, 가장 연륜 있는 반신까지 초대한다. 오지 않으면 이카를 보내 매일 귓가에 두두두거리게 하겠다는 농담은 그의 부드러운 방식 속에도 관계를 움직이게 만드는 집요함이 있음을 보여 준다. 히아킨은 상처를 봉합하는 의사이면서, 서로 다른 도시와 인물이 다시 같은 방에 앉도록 만드는 중재자이기도 하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
@@ -568,8 +624,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 게임 본편 - 벤치마크 보강, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=325e8be8c7d6</li>
-<li>2026-06-28 | benchmark_rotation_sample_update | actor=editor | sources=+12/-0</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li>
+<li>2026-06-28 · Added Fandom/NamuWiki parity repair for the Aquila, Sky Coreflame, Eye of Twilight, and sky-healing axes found in rotating round 7.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%9E%88%EC%95%84%ED%82%A8&amp;page_slug=char-3688">수정 요청</a></div>
 </details>
 

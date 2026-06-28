@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,11 +521,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>콜린</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%BD%9C%EB%A6%B0&amp;page_slug=npc-1991">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>콜린</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>콜린은 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에 소속된 NPC이며, 공식적으로는 우주 행상인으로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki · 콜린"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그녀는 원래 직업이 우주선을 몰고 여러 곳을 돌아다니는 우주 행상이라고 말하며, 자신을 “콜린 선장”이라고 부르길 원한다. 페나코니에서는 꿈 건축가계의 “아이디어 왕”을 자처하고, 머릿속의 페나코니 소재만으로 꿈세계를 겹치지 않게 채울 수 있다고 자신한다.<sup class="cite-ref" title="게임 본편 · 콜린의 언급 · 콜린의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>콜린은 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에 소속된 NPC이며, 공식적으로는 우주 행상인으로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki · 콜린"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그녀는 원래 직업이 우주선을 몰고 여러 곳을 돌아다니는 우주 행상이라고 말하며, 자신을 “콜린 선장”이라고 부르길 원한다. 페나코니에서는 꿈 건축가계의 “아이디어 왕”을 자처하고, 머릿속의 페나코니 소재만으로 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>를 겹치지 않게 채울 수 있다고 자신한다.<sup class="cite-ref" title="게임 본편 · 콜린의 언급 · 콜린의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>콜린은 페나코니에서 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>에게 자신의 우주 이야기와 정보를 건네는 인물이다.<sup class="cite-ref" title="게임 본편 · 콜린의 언급 · 콜린의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그녀는 “콜린 선장의 이야기는 끝없을 정도로 많다”고 말하며, 상대에게 어떤 이야기를 좋아하느냐고 묻는다.<sup class="cite-ref" title="게임 본편 · 콜린의 언급 · 콜린의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 콜린의 언급 · 콜린의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이 말투는 콜린이 자신을 단순한 행상이 아니라 모험담을 가진 선장으로 세우는 방식이다.<sup class="cite-ref" title="게임 본편 · 콜린의 언급 · 콜린의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 콜린의 언급 · 콜린의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>콜린은 페나코니에 오기 전부터 가족과 친분이 두터운 정보원에게 연락해 내부 자료를 구해 두었다. 그녀는 이 자료가 수수께끼를 푸는 데 도움이 될 수 있다고 판단하며, 낯선 장소에 들어오기 전에 정보부터 확보하는 습관을 보인다. 갑작스러운 습격에는 놀라지만, 자신은 지금까지 남에게 신세를 져 본 적이 없다고 말한다.<sup class="cite-ref" title="게임 본편 · 콜린의 언급 · 콜린의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
@@ -517,7 +573,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 게임 본편 - 업적, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-27 | initial_generation | actor=editor | sha=ef81b7a7612d</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%BD%9C%EB%A6%B0&amp;page_slug=npc-1991">수정 요청</a></div>
 </details>
 

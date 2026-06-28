@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,10 +521,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><h1>아이템/용어</h1><div class="meta-row"><span class="badge">아이템/용어</span></div></header>
-    <div class="article-body"><nav class="breadcrumbs" aria-label="문서 위치"><a href="categories.html">카테고리</a><span>아이템/용어</span></nav><section class="stub"><h2>아이템/용어</h2><p>작중 기록, 물건, 명칭, 고유 용어를 모았습니다.</p><p class="subtle">2개 문서</p><section class="category-subsection"><h3><a href="category-terms-other.html">기타 용어</a> <span class="ref-source">2개</span></h3><p class="subtle">위 묶음에 바로 들어가지 않는 명칭과 용어입니다.</p><ul><li><a href="term-70447ff24d.html">율법</a> <span class="ref-source">개념 · 기타 용어</span><p class="subtle">율법은 앰포리어스의 만물을 얽매는 규칙이며, 법전이나 관습보다 더 깊은 층위에서 세계의 운행과 불을 쫓는 여정을 묶는다. 키레네는 첫 번째 불을 쫓는 여정에서 그 불씨가 시작하자마자 반환됐다고 말하는데, 이 장면은 율법이 여정의 진행 조건과 직접 맞물려 있음을 보여준다.</p></li>
+    <div class="article-body"><nav class="breadcrumbs" aria-label="문서 위치"><a href="categories.html">카테고리</a><span>아이템/용어</span></nav><section class="stub"><h2>아이템/용어</h2><p>작중 기록, 물건, 명칭, 고유 용어를 모았습니다.</p><p class="subtle">3개 문서</p><section class="category-subsection"><h3><a href="category-terms-records.html">기록·문헌</a> <span class="ref-source">1개</span></h3><p class="subtle">작중 기록, 문헌, 메시지, 전승형 항목입니다.</p><ul><li><a href="dream-bubble.html">꿈방울</a> <span class="ref-source">기록·용어 · 기록·문헌</span><p class="subtle">꿈방울은 페나코니의 꿈과 기억을 감상 가능한 형태로 다루는 물건이다. Dr. 에드워드의 관련 서적으로 『꿈방울 수기』가 묶이고, 작중에서는 손님에게 조건에 맞는 꿈방울을 골라 주는 장면이 있다.</p></li></ul></section>
+<section class="category-subsection"><h3><a href="category-terms-other.html">기타 용어</a> <span class="ref-source">2개</span></h3><p class="subtle">위 묶음에 바로 들어가지 않는 명칭과 용어입니다.</p><ul><li><a href="term-70447ff24d.html">율법</a> <span class="ref-source">개념 · 기타 용어</span><p class="subtle">율법은 앰포리어스의 만물을 얽매는 규칙이며, 법전이나 관습보다 더 깊은 층위에서 세계의 운행과 불을 쫓는 여정을 묶는다. 키레네는 첫 번째 불을 쫓는 여정에서 그 불씨가 시작하자마자 반환됐다고 말하는데, 이 장면은 율법이 여정의 진행 조건과 직접 맞물려 있음을 보여준다.</p></li>
 <li><a href="term-405b5ea197.html">은하인법첩</a> <span class="ref-source">개념 · 기타 용어</span><p class="subtle">≪은하인법첩≫은 Mr. 레카의 신작으로 유행한 작품이며, 작중 인물들은 이 작품을 영화관에서 보거나 그 안의 대사와 장면을 밈처럼 말한다. 몬타나는 요즘 가장 인기 있는 밈이 이 작품에서 나왔다고 말하고, 부귀는 이전 유행이 끝난 뒤 새 유행이 ≪은하인법첩≫으로 넘어갔다고 말한다. 리지아의 말처럼 사람들은 원숭이에 빠져 </p></li></ul></section></section></div>
   </article>
 </main>

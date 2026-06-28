@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-cosmic-factions.html">우주 유랑 세력</a><span>블랙 스완</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B8%94%EB%9E%99+%EC%8A%A4%EC%99%84&amp;page_slug=char-1806">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>블랙 스완</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주 유랑 세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -491,7 +547,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p><a class="wiki-link" href="aventurine.html" title="어벤츄린">어벤츄린</a>과 블랙 스완의 관계는 협력과 경계가 동시에 작동한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어벤츄린에 대해"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 어벤츄린"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 그는 어벤츄린을 기회를 찾는 도박꾼으로 보고, 그런 사람은 요구를 거절하지 않겠지만 충분히 방비해야 한다고 판단한다. 파티 편성에서는 서로 협력해 각자 필요한 것을 얻자고 말하므로, 두 사람의 협력은 신뢰보다 이해관계의 계산 위에 놓인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 어벤츄린"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
 <p>스파클은 블랙 스완에게 혼란한 내면과 강한 직감을 함께 가진 인물로 읽힌다. 블랙 스완은 스파클이 말하지 않아도 남들에게 “보여지고” 싶어 하는 것 같다고 보고, 그의 속마음이 자신이 본 것 중 가장 혼란한 곳이었다고 말한다. 함께 출전할 때 “이번엔 적당히 해”라고 말하는 태도는, 블랙 스완이 스파클의 위험성을 장난으로만 넘기지 않는다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 스파클"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스파클에 대해"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
 <p>Mar. 7th는 과거를 잃은 인물이라는 점에서 블랙 스완의 관심을 끈다. 블랙 스완은 Mar. 7th가 과거를 잊었고 미래가 막막했더라도, 그 경험 역시 유일무이한 기억 물질이 될 수 있다고 본다. 함께할 때 “이번 경험이 너에게 어떤 의미가 될까”라고 묻는 말은, 블랙 스완이 Mar. 7th의 현재 경험까지 장차 바쳐질 기억으로 바라본다는 뜻이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • Mar. 7th"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · Mar. 7th에 대해"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
-<p><a class="wiki-link" href="char-1808.html" title="미샤">미샤</a>와 로빈은 페나코니의 꿈과 현실을 각각 다른 방향에서 비춘다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 미샤에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 로빈에 대해"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 블랙 스완은 미샤의 존재가 수많은 선택 기회가 있어도 늘 같은 길을 걷는 사람이 있음을 보여 준다고 보고, 함께 출전할 때는 그가 아주 오래전부터 자기 여정을 시작했다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 미샤에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 미샤"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 로빈에 대해서는 꿈세계의 아름다움을 알면서도 사람은 현실 속에서 살아야 한다는 사실을 안다고 평가하며, 이는 블랙 스완이 꿈의 아름다움과 현실의 무게를 함께 재는 인물임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 로빈에 대해"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 로빈"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
+<p><a class="wiki-link" href="char-1808.html" title="미샤">미샤</a>와 로빈은 페나코니의 꿈과 현실을 각각 다른 방향에서 비춘다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 미샤에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 로빈에 대해"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 블랙 스완은 미샤의 존재가 수많은 선택 기회가 있어도 늘 같은 길을 걷는 사람이 있음을 보여 준다고 보고, 함께 출전할 때는 그가 아주 오래전부터 자기 여정을 시작했다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 미샤에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 미샤"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 로빈에 대해서는 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>의 아름다움을 알면서도 사람은 현실 속에서 살아야 한다는 사실을 안다고 평가하며, 이는 블랙 스완이 꿈의 아름다움과 현실의 무게를 함께 재는 인물임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 로빈에 대해"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 로빈"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
 <p><a class="wiki-link" href="char-2367.html" title="부트힐">부트힐</a>은 기억을 위해 육신을 버린 또 다른 사례로 언급된다. 블랙 스완은 그가 분노와 슬픔의 기억을 더 깊이 새기려고 원래의 육신을 버렸다고 말한다. 블랙 스완 자신도 육신에서 벗어난 존재이므로, 부트힐에 대한 언급은 기억을 보존하려는 선택이 때로 신체 포기와 결합된다는 점을 넓혀 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유 • 밈"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부트힐에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
 <p>Mr. 레카와 컴퍼니 관련 언급은 블랙 스완이 예술적·상업적 이해관계와도 얽혀 있음을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 광추"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · Mr. 레카에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 부트힐"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> 그는 Mr. 레카를 좋은 협력 파트너라고 인정하면서도 각자의 미학 때문에 공존하기 힘든 부분이 있다고 말한다. 또한 기억의 정원이 힘 있는 기억을 보관하려 만들어졌지만, 그 기억에 가격을 매기려는 컴퍼니의 손길을 피하지 못했다고 말하고, 부트힐과 함께할 때는 자신도 컴퍼니와 일한 적이 있다고 밝힌다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 광추"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 부트힐"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
 <p><a class="wiki-link" href="char-3956.html" title="에버나이트">에버나이트</a>와 <a class="wiki-link" href="char-4003.html" title="키레네">키레네</a>는 블랙 스완이 기억을 바다와 영원의 이미지로 읽는 방식을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 에버나이트에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 그는 에버나이트를 기억이라는 고요하고 깊은 바다에서 빛을 가릴 수 있을 만큼 큰 존재로 보고, 함께할 때 위험한 기억이 더 매력적이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 에버나이트에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 에버나이트"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup> 키레네에 대해서는 순간을 영원에 엮어 기억의 무덤에서 생명을 기르는 인물로 말하며, 뜨겁고 사랑으로 가득한 눈빛이 기억 속에서 영원히 새로울 것이라고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 키레네"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup></p>
@@ -560,7 +616,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
   <p class="subtle">주요 근거: 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=1141ab7e889b</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B8%94%EB%9E%99+%EC%8A%A4%EC%99%84&amp;page_slug=char-1806">수정 요청</a></div>
 </details>
 

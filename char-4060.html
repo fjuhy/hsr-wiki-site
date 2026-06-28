@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-other.html">기타 인물</a><span>달리아</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8B%AC%EB%A6%AC%EC%95%84&amp;page_slug=char-4060">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>달리아</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">기타 인물</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -482,7 +538,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>달리아는 타인의 기억 속에서 실제로 존재하지 않는 “이모”를 연기하는 취미를 말하며, 사람들은 최후의 순간에도 자신이 배반당했다는 눈빛으로 그녀를 바라본다고 한다. 이 말은 그녀가 타인의 기억에 끼어드는 방식이 단순한 관찰이나 조작이 아니라, 신뢰받는 가족 역할까지 훔쳐 상대의 삶을 안쪽에서 무너뜨리는 행위임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>달리아의 위상은 “평범한 기억하는 자”라는 자기소개와 주변 인물들의 경계 사이에서 드러난다.<sup class="cite-ref" title="게임 본편 · 달리아의 언급 · 달리아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 블랙 스완의 언급 · 블랙 스완의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>은 단 하나의 기억만으로 기억의 영역에서 특정한 역사를 건져낼 수 있는 기억하는 자가 있을 수는 있겠지만, 그런 존재는 절대 평범한 운명의 길을 걷는 자가 아닐 것이라고 경고한다. 이 경고는 달리아가 기억을 다루는 전문가를 넘어, 기억의 영역에서 역사 자체를 끌어올릴 수 있는 예외적 위험으로 취급된다는 뜻이다.<sup class="cite-ref" title="게임 본편 · 블랙 스완의 언급 · 블랙 스완의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p><a class="wiki-link" href="char-9.html" title="히메코">히메코</a>는 열차에서 기억에 관한 문제를 가장 잘 아는 인물로 달리아를 지목하고, <a class="wiki-link" href="char-10.html" title="웰트">웰트</a>는 시간이 없으니 달리아에게 부탁하자고 말한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 웰트의 언급 · 웰트의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <a class="wiki-link" href="char-8.html" title="단항">단항</a>은 달리아가 앰포리어스 여정에 함께했다면 많은 일이 더 쉽게 처리됐을 것이라고 평가한다. 이 언급들은 달리아가 의심스러운 인물인 동시에, 기억과 관련된 난제 앞에서는 실무적으로 의존할 수밖에 없는 전문가라는 위치를 만든다.<sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 웰트의 언급 · 웰트의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p><a class="wiki-link" href="char-9.html" title="히메코">히메코</a>는 열차에서 기억에 관한 문제를 가장 잘 아는 인물로 달리아를 지목하고, <a class="wiki-link" href="char-10.html" title="웰트">웰트</a>는 시간이 없으니 달리아에게 부탁하자고 말한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 웰트의 언급 · 웰트의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <a class="wiki-link" href="char-8.html" title="단항">단항</a>은 달리아가 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a> 여정에 함께했다면 많은 일이 더 쉽게 처리됐을 것이라고 평가한다. 이 언급들은 달리아가 의심스러운 인물인 동시에, 기억과 관련된 난제 앞에서는 실무적으로 의존할 수밖에 없는 전문가라는 위치를 만든다.<sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 웰트의 언급 · 웰트의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
 <p>웰트는 달리아가 지금껏 함께 개척해 왔으며, 가장 야망 있고 뛰어난 무명객이라고 말한다. 히메코도 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>가 열차 일행 누구보다 달리아와 많이 다녔다고 말한다. 이 언급만 놓고 보면 달리아는 열차와 긴밀하게 동행한 인물처럼 자리하지만, 그녀의 배반 성향과 기억 조작 능력은 그 친밀함 자체를 불안한 증거로 바꾼다.<sup class="cite-ref" title="게임 본편 · 웰트의 언급 · 웰트의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 배반"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>달리아의 위험성은 단순한 전투력보다 가능성의 규모에서 더 크게 제시된다. 각본의 메모는 그녀가 <a class="wiki-link" href="path-2360.html" title="종말">종말</a>의 연극에 출연한다면 여러 방식으로 배반할 것이며, <a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>의 비밀을 들여다볼 경우 파멸의 주시를 받게 될 것이라고 적는다. 또 다른 가능성에서는 그녀가 예페메라라는 이름으로 기억을 파멸시키는 대군으로 승격해 종말의 도래를 재촉하고, 은하의 모든 이가 그 승격을 잊게 만들 수 있다고 한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
 <p>그 가능성은 선견천을 뒤덮는 불꽃과 우주의 과거의 모사본을 불태우는 장면으로까지 확장된다. 각본은 이런 가능성을 차단하기 위해 달리아의 <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a> 헌터 합류 요청을 거부했다고 정리한다. 이 때문에 달리아는 합류하지 못한 실패자가 아니라, 받아들이는 순간 조직의 각본과 우주의 기억을 동시에 위험하게 만들 수 있는 변수로 남는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
@@ -540,7 +596,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 게임 본편 - 업적, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=713dd39a001c</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8B%AC%EB%A6%AC%EC%95%84&amp;page_slug=char-4060">수정 요청</a></div>
 </details>
 

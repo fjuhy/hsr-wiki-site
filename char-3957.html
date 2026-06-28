@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,11 +521,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-amphoreus.html">앰포리어스</a><span>단항 · 등황</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8B%A8%ED%95%AD+%C2%B7+%EB%93%B1%ED%99%A9&amp;page_slug=char-3957">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>단항 · 등황</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">앰포리어스</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p><a class="wiki-link" href="char-8.html" title="단항">단항</a> · 등황은 은하열차의 경호원이자 무명객 단항이 「불멸」의 힘으로 변화한 모습이며, 스스로도 이 변화를 설명하기 전에 자신이 여전히 동료 단항이라는 점을 먼저 밝힌다.<sup class="cite-ref" title="공식 HoYoWiki · 단항 • 등황"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 이 모습의 단항은 물리 속성과 <a class="wiki-link" href="preservation.html" title="보존">보존</a>의 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>을 지니며, 소속은 천외 앰포리어스로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p><a class="wiki-link" href="char-8.html" title="단항">단항</a> · 등황은 은하열차의 경호원이자 무명객 단항이 「불멸」의 힘으로 변화한 모습이며, 스스로도 이 변화를 설명하기 전에 자신이 여전히 동료 단항이라는 점을 먼저 밝힌다.<sup class="cite-ref" title="공식 HoYoWiki · 단항 • 등황"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 이 모습의 단항은 물리 속성과 <a class="wiki-link" href="preservation.html" title="보존">보존</a>의 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>을 지니며, 소속은 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">천외 앰포리어스</a>로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>등황의 핵심은 단항이 단순히 더 강한 형태가 되는 데 있지 않고, 앰포리어스의 「대지」와 그곳의 생명들을 짊어지는 수호자로 바뀌는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「등황」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그는 「대지」의 불씨를 받아들인 뒤 자기 안의 「불멸」의 힘이 앰포리어스 모든 영혼의 가호가 되어 먼 별바다로 나아간다고 말하며, 이 변화가 개인의 각성이 아니라 세계를 옮겨 싣는 책임과 연결되어 있음을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「등황」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <p>공식 서술은 그를 “황금의 후예”이자 「대지」의 불씨를 수호하는 존재로 부르며, 기울어가는 팔황을 바로잡고 지상의 생령들을 먼 천지로 인도하라는 사명을 부여한다.<sup class="cite-ref" title="공식 HoYoWiki · 단항 • 등황"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 때문에 단항 · 등황은 앰포리어스 장에서 관찰자나 기록자에 머무르지 않고, 무너지는 세계가 다음 항로로 이어질 수 있도록 몸을 내미는 인물로 자리 잡는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「등황」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
@@ -551,7 +607,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
   <p class="subtle">주요 근거: 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=7e67e4c3f51a</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8B%A8%ED%95%AD+%C2%B7+%EB%93%B1%ED%99%A9&amp;page_slug=char-3957">수정 요청</a></div>
 </details>
 

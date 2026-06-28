@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-astral-express.html">은하열차·무명객</a><span>개척자</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B0%9C%EC%B2%99%EC%9E%90&amp;page_slug=trailblazer">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>개척자</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">은하열차·무명객</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -480,7 +536,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p><a class="wiki-link" href="loc-951.html" title="헤르타">헤르타</a> 우주정거장 이후 개척자는 열차에 오르며 자기 삶의 방향을 정한다. 회상 음성에서 개척자는 열차에 오르지 않았다면 어떤 삶을 살았을지 떠올리지만, 곧 “만약은 없다”는 식으로 현재의 선택을 받아들인다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 회상•열차"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
 <p>야릴로-VI의 벨로보그에서 개척자는 외부인으로 의심받지만, 끝내 도시가 스스로 버티는 힘을 다시 보게 만든다. 공식 이야기는 눈보라와 균열 속에서 사람들이 개척자 곁으로 오고, 개척자가 화염 덩어리처럼 어둠을 밝히는 장면으로 이 변화를 설명한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 너의 「이야기」ㆍ2"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
 <p><a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에서는 개척자가 단순한 방문객이 아니라 죽은 자의 꿈과 미완의 길을 이어받는 인물로 그려진다. 공식 이야기는 개척자가 비밀을 밝힐 권리를 얻고, 다른 이들이 가지 못한 길을 이어간다고 설명한다. <a class="wiki-link" href="char-2366.html" title="로빈">로빈</a>이 조화의 축제에 은하열차의 도움이 있었다고 말하는 점도 이 사건이 개인 모험을 넘어 지역의 결말에 닿았음을 보여 준다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 너의 「이야기」ㆍ3"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 로빈 · 임무 「새벽에 울리는 천 개의 방울」"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>앰포리어스 이후의 공식 설명은 개척자를 새로운 동료와 함께 여행 견문을 써 내려가는 인물로 둔다. 여기서 여행은 사건을 끝내는 절차가 아니라, 세계의 이야기를 기록하고 다음 장면으로 이어 주는 방식이 된다. <sup class="cite-ref" title="공식 HoYoWiki · 개척자 • 기억"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p><a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a> 이후의 공식 설명은 개척자를 새로운 동료와 함께 여행 견문을 써 내려가는 인물로 둔다. 여기서 여행은 사건을 끝내는 절차가 아니라, 세계의 이야기를 기록하고 다음 장면으로 이어 주는 방식이 된다. <sup class="cite-ref" title="공식 HoYoWiki · 개척자 • 기억"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
 <h2 id="여정과-선택">여정과 선택</h2>
 <p>개척자의 서사는 기억 상실에서 시작하지만, 기억이 없다는 사실만으로 정체성이 비어 있지는 않다. 공식 이야기는 흐릿한 목소리, 보살핌, 충고, 안내가 이어지고, 개척자가 더 이상 과거에 버려지지 않는다고 말한다. 즉 개척자의 정체성은 잃어버린 과거를 즉시 복원하는 데서가 아니라, 함께 가는 사람들과 새 선택을 쌓는 데서 만들어진다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 너의 「이야기」•1"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>파멸의 힘은 개척자의 안쪽에 남은 스텔라론과도 연결되어 의심된다. 개척자 자신도 파멸의 의지가 어디서 왔는지, 정말 체내의 스텔라론 때문인지 묻는다. 이 질문은 개척자가 자기 능력을 단순한 축복으로 받아들이지 않고, 위험과 원인을 함께 의식한다는 점을 보여 준다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 회상•「파멸」"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
@@ -551,8 +607,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 게임 본편 — 대사, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | public article created | actor=editor | commit=uncommitte | sources=+28/-0</li>
-<li>2026-06-28 | Merged Trailblazer Path-form articles into the canonical person page and added form aliases for public search/navigation. | actor=editor | commit=uncommitte | sources=+10/-0</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li>
+<li>2026-06-28 · Merged Trailblazer Path-form articles into the canonical person page and added form aliases for public search/navigation.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B0%9C%EC%B2%99%EC%9E%90&amp;page_slug=trailblazer">수정 요청</a></div>
 </details>
 

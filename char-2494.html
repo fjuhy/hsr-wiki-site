@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-stellaron-hunters.html">스텔라론 헌터</a><span>반디</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B0%98%EB%94%94&amp;page_slug=char-2494">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>반디</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">스텔라론 헌터</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -476,7 +532,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>전장에 익숙해진 뒤의 반디는 동포들이 쓰러지는 모습을 보면서도 앞으로 나아갔다. 그는 언젠가 자신도 전장에서 쓰러지고, 뒤따라오는 이들이 자신의 시체를 넘어 전진하리라는 사실을 알고 있었다. 이때 반디에게 휴식은 전투의 공백이 아니라, 자신이 아직 살아 있다는 감각을 붙잡는 짧은 시간이었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유•소원"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 별하늘을 바라보며 갑옷을 벗고 세계의 결말을 보고 싶어 하는 마음은, 그가 병기로 만들어졌어도 세계를 느끼고 싶어 하는 개인이라는 점을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미•소풍"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
 <p>그라모스 공화국이 멸망한 뒤에도 반디의 몸에는 만들어진 병기의 결함이 남았다. 철기들은 공화국 최강의 무기를 통제하기 위해 유전자 편집된 아이들이었고, 삶의 어느 순간 노화와 죽음이 가속되는 선천적 결함을 지녔다. 반디가 스텔라론 헌터에 합류한 이유는 이 정해진 결말을 받아들이기 위해서가 아니라, 삶의 기회를 찾고 운명을 거스를 방법을 찾기 위해서다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 그에게 스텔라론 헌터는 범죄 조직이나 임무 집단으로만 기능하지 않고, 짧은 수명이라는 한계를 상대로 다시 판을 벌일 수 있는 거의 유일한 길이다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>스텔라론 헌터가 된 뒤의 반디는 「각본」을 의식하며 움직인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•카프카"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 일부러 신분을 숨긴 것은 아니라고 말하면서도, 각본에 따라 반드시 「샘」의 사명을 완수해야 했다고 밝힌다. 하지만 동시에 그는 “각본대로 가지 않고 다시 한번 시도해 보고 싶다”고 <a class="wiki-link" href="kafka.html" title="카프카">카프카</a>에게 말한다. 이 태도는 반디가 엘리오의 미래와 스텔라론 헌터의 임무를 부정하지는 않지만, 그 안에서 자신이 무엇을 할 수 있는지 알고 싶어 한다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•미래"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p><a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>와 관련된 반디의 역할은 꿈을 꾸지 못하는 사람이 꿈의 나라에 들어가려는 시도에서 선명해진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민•수면"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그는 필요한 수면 시간이 평범한 사람보다 훨씬 짧고, 꿈을 꾸는 기능이 없다고 말한다. 그런데도 그는 자신의 꿈이 페나코니에 있을지도 모른다고 생각하고, 공감각 꿈세계에 들어가기 위해 “죽음”과 맞먹는 대가를 감수하려 한다. 반디에게 페나코니는 휴양지나 환상이 아니라, 꿈을 갖지 못한 몸이 자기 꿈을 확인하러 가는 위험한 장소다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p><a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>와 관련된 반디의 역할은 꿈을 꾸지 못하는 사람이 꿈의 나라에 들어가려는 시도에서 선명해진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민•수면"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그는 필요한 수면 시간이 평범한 사람보다 훨씬 짧고, 꿈을 꾸는 기능이 없다고 말한다. 그런데도 그는 자신의 꿈이 페나코니에 있을지도 모른다고 생각하고, 공감각 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>에 들어가기 위해 “죽음”과 맞먹는 대가를 감수하려 한다. 반디에게 페나코니는 휴양지나 환상이 아니라, 꿈을 갖지 못한 몸이 자기 꿈을 확인하러 가는 위험한 장소다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
 <p>작중에서 반디는 페나코니 현지 신분을 내세우기도 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「잠 못 이루는 밤」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「황금시대의 이야기」"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 그는 사냥개 가문에게 밀입국자로 몰렸지만 자신은 현지인이자 붓꽃 가문의 엔터테이너 “반디”라고 주장하며, 엑스트라일 뿐이라고 덧붙인다. 다른 장면에서도 그는 자신을 전 붓꽃 가문의 엔터테이너 반디라고 소개한다. 이 신분은 「샘」으로 움직여야 하는 임무의 얼굴과 “반디”로 세계를 알고 싶어 하는 개인의 얼굴을 동시에 드러내며, 페나코니에서 그가 숨김과 고백 사이에 놓여 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「잠 못 이루는 밤」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>반디의 전투 위상은 「샘」과 분리해서 볼 수 없다.<sup class="cite-ref" title="공식 HoYoWiki · 반디"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 「샘」은 창공 전선의 철기이자 반딧불이 Type-IV 전략 강습 기갑으로 불리며, 다른 사람들이 보기에는 곤충 떼에 대항하는 무기 자체가 곧 반디다. 반디는 「샘」이 자기 생명의 요람이었고 한때 자신의 존재 의미였다고 말하지만, 그것이 자신의 전부가 아니기를 바란다. 따라서 「샘」은 반디의 힘을 가능하게 하는 장치인 동시에, 반디가 벗어나고 싶어 하는 정체성의 껍질이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•샘"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
@@ -557,7 +613,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=3d40732e9252</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B0%98%EB%94%94&amp;page_slug=char-2494">수정 요청</a></div>
 </details>
 

@@ -372,6 +372,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 12px;
   margin: 16px 0 0;
 }
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.route-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px 14px 12px;
+}
+.route-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.route-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.route-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.route-steps li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+}
+.route-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.route-steps a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 760;
+  text-decoration: none;
+}
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -466,7 +521,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-places.html">장소</a><a href="category-places-ships-stations.html">선주·정거장·거점</a><span>헤르타</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%97%A4%EB%A5%B4%ED%83%80&amp;page_slug=loc-951">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>헤르타</h1><div class="meta-row"><span class="badge">장소</span><span class="badge">선주·정거장·거점</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
@@ -515,7 +571,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>아를란의 대사는 정거장의 실무자가 헤르타의 명성을 지키면서도 헤르타가 만든 위험을 수습해야 하는 위치에 있음을 드러낸다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
 <p>스크루룸은 헤르타의 연구적 관심과 외부 협력망을 잇는 인물이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
 <p>스크루룸은 헤르타가 개척자를 자주 언급했다고 말하고, 헤르타의 부탁대로 무명객을 만나러 왔다고 설명한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<p>또한 스크루룸은 헤르타와 함께 앰포리어스를 위해 왔다고 말하며, 헤르타의 관심사가 정거장 내부 연구를 넘어 다른 세계와 사건으로 확장됨을 보여준다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
+<p>또한 스크루룸은 헤르타와 함께 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a>를 위해 왔다고 말하며, 헤르타의 관심사가 정거장 내부 연구를 넘어 다른 세계와 사건으로 확장됨을 보여준다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
 <p>개척자는 우주정거장 「헤르타」에서 위험한 모험을 겪은 뒤 은하열차에 오르고, 이후에도 헤르타와 시뮬레이션 우주 테스트, 스텔라론 연구, 심부름과 질문으로 계속 연결된다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <p>이 관계에서 정거장은 개척자의 출발점이자 관찰실이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <p>헤르타는 개척자를 도와주는 조력자이면서도, 개척자의 특이성을 연구 대상으로 바라보는 지니어스 클럽의 연구자다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
@@ -595,7 +651,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 갤러리, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-25 | initial_generation | actor=editor | sha=73f07edf5f8d</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%97%A4%EB%A5%B4%ED%83%80&amp;page_slug=loc-951">수정 요청</a></div>
 </details>
 
