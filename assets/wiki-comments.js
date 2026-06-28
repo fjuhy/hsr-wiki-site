@@ -157,9 +157,9 @@ function readAuth() {
   return payload;
 }
 
-async function fetchSupabaseUser(root, auth) {
-  const projectUrl = root.dataset.supabaseProjectUrl || '';
-  const anonKey = root.dataset.supabaseAnonKey || '';
+async function fetchCommentUser(root, auth) {
+  const projectUrl = root.dataset.authBaseUrl || '';
+  const anonKey = root.dataset.authPublicKey || '';
   if (!projectUrl || !anonKey || !auth?.access_token) return null;
   const response = await fetch(`${projectUrl.replace(/\/$/, '')}/auth/v1/user`, {
     headers: {
@@ -171,11 +171,11 @@ async function fetchSupabaseUser(root, auth) {
   return response.json();
 }
 
-function loginWithGoogle(root) {
-  const projectUrl = root.dataset.supabaseProjectUrl || '';
-  const anonKey = root.dataset.supabaseAnonKey || '';
+function loginWithCommentProvider(root) {
+  const projectUrl = root.dataset.authBaseUrl || '';
+  const anonKey = root.dataset.authPublicKey || '';
   if (!projectUrl || !anonKey) {
-    setStatus(root, 'Google 로그인을 쓰려면 Supabase URL과 anon key를 공개 설정에 입력해야 합니다.');
+    setStatus(root, '댓글 로그인이 아직 설정되지 않았습니다.');
     return;
   }
   const redirect = location.href.split('#')[0];
@@ -199,7 +199,7 @@ function workerUrl(root, path) {
 
 async function workerJson(root, path, options = {}) {
   const url = workerUrl(root, path);
-  if (!url) throw new Error('댓글 Worker URL이 설정되지 않았습니다.');
+  if (!url) throw new Error('댓글 기능이 아직 설정되지 않았습니다.');
   const auth = readAuth();
   const headers = {
     'content-type': 'application/json',
@@ -265,7 +265,7 @@ function resetTurnstile(root) {
 async function initWorkerMode(root) {
   const slug = root.dataset.pageSlug || 'unknown';
   if (!root.dataset.workerBaseUrl) {
-    setStatus(root, '댓글 Worker URL이 설정되지 않았습니다.');
+    setStatus(root, '댓글 기능이 아직 설정되지 않았습니다.');
     return;
   }
   const form = root.querySelector('[data-comments-form]');
@@ -276,15 +276,15 @@ async function initWorkerMode(root) {
   const logoutButton = root.querySelector('[data-comments-logout]');
   const userLabel = root.querySelector('[data-comments-user]');
   if (authBox) authBox.hidden = false;
-  if (login) login.addEventListener('click', () => loginWithGoogle(root));
+  if (login) login.addEventListener('click', () => loginWithCommentProvider(root));
   if (logoutButton) logoutButton.addEventListener('click', () => logout(root));
 
   const auth = readAuth();
-  const user = auth ? await fetchSupabaseUser(root, auth).catch(() => null) : null;
+  const user = auth ? await fetchCommentUser(root, auth).catch(() => null) : null;
   if (user) {
     if (login) login.hidden = true;
     if (logoutButton) logoutButton.hidden = false;
-    if (userLabel) userLabel.textContent = 'Google 로그인됨';
+    if (userLabel) userLabel.textContent = '로그인됨';
     if (nameInput && !nameInput.value) {
       nameInput.value = profileDisplayName(user);
     }
@@ -318,7 +318,7 @@ async function initWorkerMode(root) {
 
   await refresh().catch(error => setStatus(root, `댓글을 불러오지 못했습니다: ${error.message}`));
   if (!user) {
-    setStatus(root, '댓글 작성은 Google 로그인 후 가능합니다.');
+    setStatus(root, '댓글 작성은 로그인 후 가능합니다.');
     return;
   }
   setStatus(root, '댓글을 작성할 수 있습니다.');

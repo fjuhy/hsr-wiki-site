@@ -91,7 +91,7 @@ function githubIssueUrl(root, payload) {
 
 async function submitWorkerReport(root, payload) {
   const base = root.dataset.reportWorkerBaseUrl || '';
-  if (!base) throw new Error('제보 Worker URL이 없습니다.');
+  if (!base) throw new Error('제보 기능이 아직 설정되지 않았습니다.');
   const response = await fetch(`${base.replace(/\/$/, '')}/page-reports`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
