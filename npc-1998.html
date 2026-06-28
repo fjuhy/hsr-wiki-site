@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>키넌</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%82%A4%EB%84%8C&amp;page_slug=npc-1998">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>키넌</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>키넌</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%82%A4%EB%84%8C&amp;page_slug=npc-1998">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>키넌</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/22/47456257/a91456366cc71b9f403e3f049b444d92_3053405137223021591.png" alt="키넌 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>키넌은 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a> 소속 NPC이며, 직함은 재무 고문이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 키넌"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>그는 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>를 만나면 자신을 알팔파 은행의 키넌이라고 소개하고, 이전 만남을 기억하는지 묻는다. <sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
@@ -539,12 +559,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>알팔파 은행은 키넌이 자기 정체성을 설명할 때 가장 먼저 붙이는 기관이다. 그는 개척자에게 자신을 “알팔파 은행의 키넌”이라고 말하며, 이름과 은행 소속을 한 덩어리로 제시한다. <sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>페나코니는 키넌의 공식 소속이다. 재무 고문이라는 직함과 알팔파 은행이라는 자기소개를 함께 보면, 키넌은 페나코니의 금융적 배경을 주변 인물의 형태로 드러내는 NPC다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 키넌"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>개척자는 키넌이 반복해서 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>을 확인하는 상대다. 키넌은 자신을 다시 소개하면서도 “오랜만”과 “또 만났다”는 표현을 사용해, 두 사람 사이에 이전 접촉이 있었음을 전제로 삼는다. <sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>개척자는 키넌이 반복해서 기억을 확인하는 상대다. 키넌은 자신을 다시 소개하면서도 “오랜만”과 “또 만났다”는 표현을 사용해, 두 사람 사이에 이전 접촉이 있었음을 전제로 삼는다. <sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>정신이 무너진 장면은 키넌의 인상을 바꾼다. 그는 갑자기 미친 듯이 웃기 시작하고, 알록달록한 종이가 그의 발 옆으로 떨어진다. 이 장면은 은행 직원처럼 자신을 소개하던 인물을 불안정한 상태의 인물로 다시 보게 만든다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="알팔파-은행의-이름-뒤에-남는-균열">알팔파 은행의 이름 뒤에 남는 균열</h2>
 <p>키넌은 자신을 설명할 때 이름과 기관을 함께 내세운다. 그는 페나코니 소속이고, 재무 고문이며, 알팔파 은행의 인물로 자신을 소개한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 키넌"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>하지만 키넌의 행적은 그 직함만으로 끝나지 않는다. 정신이 무너진 뒤 웃기 시작하는 장면은, 안정적인 금융 직무를 가진 인물에게도 페나코니 안의 불안정한 사건이 닿을 수 있음을 보여 준다. <sup class="cite-ref" title="공식 HoYoWiki · 키넌"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>그래서 키넌은 거대한 권력을 가진 인물이라기보다, 페나코니의 <a class="wiki-link" href="path-2358.html" title="질서">질서</a> 안에서 한 개인이 기관의 이름으로 기억되고 또 흔들리는 모습을 보여 주는 인물이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1998?lang=ko-kr">원문</a></span><div class="ref-quote">키넌</div></li>
+<p>그래서 키넌은 거대한 권력을 가진 인물이라기보다, 페나코니의 질서 안에서 한 개인이 기관의 이름으로 기억되고 또 흔들리는 모습을 보여 주는 인물이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 키넌의 언급 · 키넌의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1998?lang=ko-kr">원문</a></span><div class="ref-quote">키넌</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1998?lang=ko-kr">원문</a></span><div class="ref-quote">페나코니</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">키넌</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1998?lang=ko-kr">원문</a></span><div class="ref-quote">재무 고문</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">키넌의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">키넌의 인게임 대사</span></span><div class="ref-quote">아, 오랜만이에요! {F#누나}{M#형}, 저를 기억하시나요? 저는 알팔파 은행의 키넌이에요!</div></li>

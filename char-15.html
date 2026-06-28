@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>제레</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A0%9C%EB%A0%88&amp;page_slug=char-15">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>제레</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>제레</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A0%9C%EB%A0%88&amp;page_slug=char-15">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>제레</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyowiki/2023/02/21/5060d2a342075d081928230f28d6c68b_5889631051507738416.png" alt="제레 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>제레는 벨로보그 하층 구역의 지하 저항 조직 「와일드 파이어」에서 움직이는 핵심 인물이며, 별칭은 「나비」다.</p>
 <p>그녀는 솔직하고 거침없는 사람으로 보이지만, 그 안쪽에는 섬세함과 예리함을 함께 품고 있다. 하층 구역에서 자란 제레에게 세계는 오랫동안 보호하는 쪽과 보호받는 쪽, 억압하는 쪽과 억압받는 쪽으로 나뉘어 보였고, 그 단순한 구분은 「그 소녀」를 만나기 전까지 그녀의 사고방식을 지배했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
@@ -532,10 +552,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="작중-역할">작중 역할</h2>
 <p>제레는 하층 구역의 혼란 속에서 직접 움직이는 현장형 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그녀는 순찰을 시작하자고 말하고, 상대가 지쳐 보이면 자신이 남아 있으니 쉬라고 보내며, 도시로 돌아온 뒤에도 먼저 보초를 서겠다고 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>그녀의 과거는 하층 구역의 결핍이 한 사람의 성격을 어떻게 깎아 만드는지를 보여준다. 어린 제레는 갈증과 배고픔을 해결하기 위해 보육원의 물을 마시고 고물을 주워 과자로 바꾸며 살았고, 리벳 타운의 어두운 골목 사람들은 고집 세고 괴팍한 그녀를 피했다. 물을 차지하기 위해 노숙자와 몸싸움을 벌인 뒤, 사흘 후 그 노숙자가 진료소 병상에서 죽어가다시피 누워 있는 장면은 제레에게 생존 경쟁이 곧 타인의 붕괴가 될 수 있음을 남긴 사건이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p><a class="wiki-link" href="npc-1039.html" title="올레그">올레그</a>는 제레에게 하층 구역 바깥의 세계를 실제로 보여준 인물이다. 그는 하층 구역의 치안을 맡던 실버메인 철위대 대장이었고, 어린 제레를 보급 주머니 속에 숨겨 케이블카로 상층 구역에 데려갔다. 그 여행에서 제레는 벨로보그의 명소와 음식, 옷을 경험했지만, 거친 광부 사투리 때문에 상층 구역 아이들이 겁먹고 도망치는 모습도 함께 겪었다. 이 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>은 제레가 상층 구역을 단순한 적대 공간으로만 보지 않게 만드는 동시에, 두 구역 사이의 생활 격차를 몸으로 알게 한 경험이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p><a class="wiki-link" href="npc-1039.html" title="올레그">올레그</a>는 제레에게 하층 구역 바깥의 세계를 실제로 보여준 인물이다. 그는 하층 구역의 치안을 맡던 실버메인 철위대 대장이었고, 어린 제레를 보급 주머니 속에 숨겨 케이블카로 상층 구역에 데려갔다. 그 여행에서 제레는 벨로보그의 명소와 음식, 옷을 경험했지만, 거친 광부 사투리 때문에 상층 구역 아이들이 겁먹고 도망치는 모습도 함께 겪었다. 이 기억은 제레가 상층 구역을 단순한 적대 공간으로만 보지 않게 만드는 동시에, 두 구역 사이의 생활 격차를 몸으로 알게 한 경험이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>와일드 파이어가 된 뒤에도 제레는 상처를 흔한 일처럼 받아들이며 전장에 선다. 그녀는 고통에 대한 인내력이 강해 웬만한 상처를 무시하고 더 용맹하게 싸울 수 있었지만, 구조된 사람들이 다시 팍팍한 일상으로 돌아가는 모습을 보며 자신들의 노력이 헛수고가 아닌지 의심했다. <a class="wiki-link" href="char-18.html" title="나타샤">나타샤</a>가 제레에게 기적 자체보다 중요한 것은 사람들이 기적을 기대하는 마음을 지키는 일이라고 말한 장면은, 제레의 싸움이 눈앞의 적을 베는 일에서 공동체의 기대를 붙드는 일로 넓어지는 지점이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>본편에서 제레는 광산구역 소동 이후 나타샤와 함께 부상자를 돌본다. 이 장면은 제레가 전투원으로만 기능하지 않고, 사태가 끝난 뒤 남은 피해를 수습하는 역할까지 맡는 인물임을 보여준다. 그녀는 위험 앞에서 먼저 움직이지만, 싸움이 끝난 뒤에도 공동체 안에 남아 몸을 쓰는 사람이다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「해질녘의 만남」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>상층 구역과 하층 구역의 관계가 바뀐 뒤에도 제레는 공적인 자리의 중심에만 서지 않는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 연설 때 그녀가 보이지 않는다는 말이 나오지만, <a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 제레가 현장에 있었고 단지 시선이 닿지 않는 곳에 있었을 뿐이라고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 위치는 제레의 성격과 잘 맞는다. 그녀는 무대 위의 상징보다 군중 속의 감시자에 가깝고, <a class="wiki-link" href="path-2358.html" title="질서">질서</a>가 흔들리는 곳에서 바로 손을 뻗는 사람이다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<p>상층 구역과 하층 구역의 관계가 바뀐 뒤에도 제레는 공적인 자리의 중심에만 서지 않는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 연설 때 그녀가 보이지 않는다는 말이 나오지만, <a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 제레가 현장에 있었고 단지 시선이 닿지 않는 곳에 있었을 뿐이라고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 위치는 제레의 성격과 잘 맞는다. 그녀는 무대 위의 상징보다 군중 속의 감시자에 가깝고, 질서가 흔들리는 곳에서 바로 손을 뻗는 사람이다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「시간은 기다려주지 않아, 친구」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
 <p>그 성격은 행정구역 광장에서 소매치기를 붙잡는 이야기에서도 드러난다. 사람 많은 곳을 싫어하면서도 군중의 얼굴을 하나하나 확인하던 제레는, 소매치기가 가방에 손을 뻗는 순간 손목을 붙잡고 입까지 막아 조용히 제압한다. 여기서 제레는 혁명 이후에도 사라지지 않는 도시의 작은 범죄와 불안을 감시하는 인물이며, 큰 전투가 끝난 뒤의 평범한 질서까지 자기 몫으로 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>제레는 고통을 잘 견디는 인물로 그려지지만, 무적의 전사로 쓰이지는 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 그녀는 상처를 무시하며 싸울 수 있을 만큼 인내력이 강하지만, 병상에 누워 자신의 삶과 와일드 파이어의 노력을 돌아보는 장면도 갖는다. 전투 불능 음성에서 “난…… 아직이야……”라고 버티는 말은 그녀의 한계가 사라졌다는 뜻이 아니라, 쓰러져도 끝났다고 인정하지 않는 성격을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -527,13 +547,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-systems.html">제도·조직 원리</a><span>개척력</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B0%9C%EC%B2%99%EB%A0%A5&amp;page_slug=entry-991">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>개척력</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">제도·조직 원리</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>개척력은 공식적으로 「개척력(역법)」이라는 이름을 가진 연표 항목이며, 은하열차가 사용하는 역법이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>이 역법은 「<a class="wiki-link" href="trailblaze.html" title="개척">개척</a>」의 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a> <a class="wiki-link" href="akivili.html" title="⌈ 개척 ⌋ 아키비리">아키비리</a>의 고향인 고독한 세계 「페가나」의 역법을 그대로 계승한 것으로 전해진다. 은하열차가 개척력을 사용한다는 사실은 열차의 현재 여정이 아키비리와 페가나의 시간 체계를 이어받고 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>이 역법은 「개척」의 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a> <a class="wiki-link" href="akivili.html" title="⌈ 개척 ⌋ 아키비리">아키비리</a>의 고향인 고독한 세계 「페가나」의 역법을 그대로 계승한 것으로 전해진다. 은하열차가 개척력을 사용한다는 사실은 열차의 현재 여정이 아키비리와 페가나의 시간 체계를 이어받고 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>개척력의 한 해는 12개월로 나뉘며, 한 달의 길이는 각각 다르다. 따라서 개척력은 단순히 “몇 월 며칠”을 세는 도구가 아니라, 은하열차가 자신들의 시간을 어떤 기원에 맞추는지 드러내는 기준이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>아키비리가 다녀간 행성들 중 상당수는 아직도 이 역법을 사용한다고 전해진다. 이 점에서 개척력은 은하열차 내부의 달력에 그치지 않고, 아키비리의 방문이 여러 세계의 시간 감각과 기록 방식에 남긴 흔적이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>개척력은 은하열차의 여정을 아키비리의 유산과 연결한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 열차는 여러 세계를 오가지만, 그 여정의 기준 시간은 페가나에서 온 역법을 따른다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>이 역법은 개척이 단순한 이동이 아니라 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>의 계승이라는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 은하열차가 개척력을 사용하고, 아키비리가 지나간 행성들에도 이 역법이 남아 있다는 사실은 개척의 영향이 항로와 사건을 넘어 생활 시간의 단위까지 남을 수 있음을 뜻한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>개척력은 세계마다 다른 시간 감각을 비교하는 기준으로도 쓰인다. 어떤 꽃은 개화 기간이 하루뿐이지만, 그 원산지의 <a class="wiki-link" href="npc-3217.html" title="하루">하루</a>는 개척력의 10년에 해당한다. 이 언급은 개척력이 서로 다른 세계의 시간을 서로 다른 세계의 시간을 비교하게 해 주는 기준으로 쓰인다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>이 역법은 개척이 단순한 이동이 아니라 기억의 계승이라는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 은하열차가 개척력을 사용하고, 아키비리가 지나간 행성들에도 이 역법이 남아 있다는 사실은 개척의 영향이 항로와 사건을 넘어 생활 시간의 단위까지 남을 수 있음을 뜻한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>개척력은 세계마다 다른 시간 감각을 비교하는 기준으로도 쓰인다. 어떤 꽃은 개화 기간이 하루뿐이지만, 그 원산지의 하루는 개척력의 10년에 해당한다. 이 언급은 개척력이 서로 다른 세계의 시간을 서로 다른 세계의 시간을 비교하게 해 주는 기준으로 쓰인다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>게임 본편에서는 같은 이름이 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>가 늘 가지고 있는 자원처럼 나타난다. “늘 가지고 있지만 어디에 쓰면 좋을지 잘 모른다”는 표현은 개척력이 개척자에게 기본적으로 주어진 무언가이면서도, 처음부터 쓰임이 분명한 힘은 아니라는 인상을 만든다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p><a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>는 어떤 장치를 사용할 때 많은 정신력이 소모되므로, 개척력의 일부를 저장해 몰입할 때 쓰면 된다고 말한다. 이 장면에서 개척력은 역법이 아니라 정신력, 저장, 몰입과 연결된 자원으로 다루어진다.<sup class="cite-ref" title="게임 본편 · 헤르타의 언급 · 헤르타의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
@@ -542,7 +562,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>은하열차와 아키비리는 개척력의 가장 직접적인 배경이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 은하열차는 개척력을 사용하고, 개척력은 「개척」의 에이언즈 아키비리의 고향 페가나에서 온 역법으로 전해진다. 이 관계는 열차가 아키비리의 길만 따르는 것이 아니라 아키비리의 시간까지 이어받고 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>페가나는 개척력의 기원으로 남아 있는 세계다. 고독한 세계 페가나의 역법이 은하열차와 여러 행성에 남았다는 점은, 고립된 기원이 은하적 여정 속에서 넓게 퍼진 시간 기준이 되었음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p><a class="wiki-link" href="loc-951.html" title="헤르타">헤르타</a>의 언급은 개척력을 몰입과 정신력 소모에 연결한다. 헤르타는 개척력 일부를 저장해 몰입할 때 쓰라고 말하며, 이는 개척력이 특정 활동의 비용으로 전환될 수 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 헤르타의 언급 · 헤르타의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>헤르타의 언급은 개척력을 몰입과 정신력 소모에 연결한다. 헤르타는 개척력 일부를 저장해 몰입할 때 쓰라고 말하며, 이는 개척력이 특정 활동의 비용으로 전환될 수 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 헤르타의 언급 · 헤르타의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <p>개척자에게 개척력은 늘 가지고 있지만 쓰임을 알아가야 하는 자원처럼 묘사된다. “개척력 가동”이나 “백만 마력의 개척력” 같은 과장된 표현은 이 말이 진지한 역법과 자원 명칭을 넘어, 개척자의 행동을 장난스럽게 부풀리는 문맥에서도 쓰인다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <p>「꽃 피는 정원」과 「꽃 피는 정원 300%」는 모조 꽃받침 보상과 개척력 소모를 묶는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 「기묘한 영역」과 「기묘한 영역 300%」는 침식된 터널 보상과 개척력 소모를 묶는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 「차원 분열」과 「차원 분열 300%」는 시뮬레이션 우주 또는 차분화 우주의 몰입기 혹은 개척력 소모를 보상 증폭과 연결한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
 <p>여기서 개척력은 직접 보상뿐 아니라 다른 교환 수단을 만들어 내는 출발점이 된다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
@@ -574,7 +594,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 제도·조직 원리</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>개념</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>

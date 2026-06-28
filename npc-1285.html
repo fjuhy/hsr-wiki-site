@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>청예</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%B2%AD%EC%98%88&amp;page_slug=npc-1285">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>청예</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>청예</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%B2%AD%EC%98%88&amp;page_slug=npc-1285">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>청예</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/01/11771384/4235bc5895f71fd24dad4303d74fb135_7083195506073398582.png" alt="청예 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>청예는 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 소속 NPC이며, <a class="wiki-link" href="char-712.html" title="어공">어공</a>의 딸이다. <sup class="cite-ref" title="공식 HoYoWiki · 청예"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 캐릭터"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>청예의 핵심 이야기는 어공의 동행 임무 「난 하늘을 느껴버렸거든」에서 전개된다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
@@ -565,13 +585,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>어공은 채이에게 청예가 아직 기다리고 있다며 버티라고 외치지만, 채이의 죽음 이후 그 부탁을 청예의 미래를 막는 맹세로 안고 산다. <sup class="cite-ref" title="게임 본편 · 어공의 언급 · 어공의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 채이의 언급 · 채이의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 어공의 언급 · 어공의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
 <p>청예의 꿈은 개인의 진로 선택이면서도, 죽은 어머니의 마지막 부탁과 살아남은 어머니의 공포가 충돌하는 자리다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 어공의 언급 · 어공의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 채이의 언급 · 채이의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
 <h3 id="시왕사와-이상-현상">시왕사와 이상 현상</h3>
-<p>청예는 다른 사건에서도 조사 대상이 되며, <a class="wiki-link" href="char-1533.html" title="곽향">곽향</a>은 청예가 그곳을 조사하러 왔는지 묻는다. <sup class="cite-ref" title="게임 본편 · 곽향의 언급 · 곽향의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
+<p>청예는 다른 사건에서도 조사 대상이 되며, 곽향은 청예가 그곳을 조사하러 왔는지 묻는다. <sup class="cite-ref" title="게임 본편 · 곽향의 언급 · 곽향의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
 <p>개척자 일행은 세양과 요괴 퇴치팀에 대해 청예에게 말해 주고, 곽향은 시왕사의 판관으로서 청예를 돕겠다고 한다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급 · 곽향의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급 · 곽향의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
-<p><a class="wiki-link" href="char-1392.html" title="계네빈">계네빈</a>은 가까운 사람조차 청예의 성격 변화를 알아차렸다면 이상한 일 때문일 수 있다고 보고, 청예가 빙의되었을 가능성을 제기한다. <sup class="cite-ref" title="게임 본편 · 계네빈의 언급 · 계네빈의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="게임 본편 · 계네빈의 언급 · 계네빈의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
+<p>계네빈은 가까운 사람조차 청예의 성격 변화를 알아차렸다면 이상한 일 때문일 수 있다고 보고, 청예가 빙의되었을 가능성을 제기한다. <sup class="cite-ref" title="게임 본편 · 계네빈의 언급 · 계네빈의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="게임 본편 · 계네빈의 언급 · 계네빈의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
 <p>곽향은 청예와 닮은 환영과 청예의 그림자를 목격하며, 이 사건이 청예의 모습과 이름을 직접 끌어들인다고 말한다. <sup class="cite-ref" title="게임 본편 · 곽향의 언급 · 곽향의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="게임 본편 · 곽향의 언급 · 곽향의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
 <h2 id="하늘을-향한-꿈과-막힌-미래">하늘을 향한 꿈과 막힌 미래</h2>
 <p>청예는 하늘을 향한 열망을 가진 인물이지만, 그 꿈은 어공에게 자부심보다 상실을 먼저 떠올리게 한다. <sup class="cite-ref" title="게임 본편 · 어공의 언급 · 어공의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 웰트의 언급 · 웰트의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>청예가 군함 비행사가 되려는 마음은 어공의 과거를 동경하는 마음과 맞닿아 있지만, 어공에게 그 길은 채이와 광연을 잃은 전장의 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>으로 남아 있다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 어공의 언급 · 어공의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
+<p>청예가 군함 비행사가 되려는 마음은 어공의 과거를 동경하는 마음과 맞닿아 있지만, 어공에게 그 길은 채이와 광연을 잃은 전장의 기억으로 남아 있다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 어공의 언급 · 어공의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
 <p>청예는 어공이 숨긴 과거를 알고 싶어 하고, 어공은 청예를 지키기 위해 그 과거를 숨긴다. <sup class="cite-ref" title="게임 본편 · 웰트의 언급 · 웰트의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 어공의 언급 · 어공의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
 <p>이 충돌은 청예가 누구의 딸인지보다, 청예가 누구의 상처 위에서 자신의 미래를 선택해야 하는지를 보여준다. <sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 채이의 언급 · 채이의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">청예</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1285?lang=ko-kr">원문</a></span><div class="ref-quote">어공의 딸</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1285?lang=ko-kr">원문</a></span><div class="ref-quote">선주 「나부」</div></li>

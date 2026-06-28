@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,13 +544,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>코코나</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%BD%94%EC%BD%94%EB%82%98&amp;page_slug=npc-2018">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>코코나</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>코코나</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%BD%94%EC%BD%94%EB%82%98&amp;page_slug=npc-2018">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>코코나</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/22/47456257/6c28db5e67d24e34a29da0454f716e02_7844069793811897062.png" alt="코코나 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>코코나는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에 소속된 NPC로, 옷가게 점원이자 명품 가게의 점장으로 등장한다.<sup class="cite-ref" title="공식 HoYoWiki · 코코나"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 지오반나의 언급 · 지오반나의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 손님 앞에서는 자신을 점장이라고 소개하며 정중하게 응대하지만, 혼자 있을 때는 근무 시간이라는 말로 스스로를 붙잡고 심호흡을 되풀이한다.<sup class="cite-ref" title="게임 본편 · 코코나의 언급 · 코코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 코코나의 언급 · 코코나의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 코코나의 언급 · 코코나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>코코나의 이야기는 평범한 상점 NPC의 일상이 아니라, 잃어버린 감정과 오래된 꿈이 한꺼번에 무너져 내리는 사건으로 이어진다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 시계 소년의 언급 · 시계 소년의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> HoYoWiki의 관련 항목에는 「마음을 위로하는 스페셜 블렌드」와 「미래의 장미를 상상하며」가 연결되어 있으며, 본편에서도 그녀의 상태를 위해 특별한 스페셜 블렌드가 전달된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 지오반나의 언급 · 지오반나의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 지오반나의 언급 · 지오반나의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>코코나는 처음에는 매장을 지키는 점장으로 플레이어를 맞이한다.<sup class="cite-ref" title="게임 본편 · 코코나의 언급 · 코코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 코코나의 언급 · 코코나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그러나 그녀는 “깨어나면 괜찮을 것”이라고 스스로를 달래고, 많은 사람들의 기대를 짊어지고 있다는 생각 속에서 근무 태도를 유지하려 한다.<sup class="cite-ref" title="게임 본편 · 코코나의 언급 · 코코나의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 코코나의 언급 · 코코나의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>그녀의 불안은 곧 감정과 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>의 붕괴로 나타난다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 슬픔이 코코나의 마음에 밀려들자 난잡한 기억과 과거가 그녀를 집어삼키고, 코코나는 옷을 꽉 쥔 채 떨기 시작한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 코코나의 상태가 너무 좋지 않다고 판단하고, <a class="wiki-link" href="npc-2016.html" title="시계 소년">시계 소년</a>은 그녀를 혼자 남겨 두면 안 좋은 일이 생길 것 같다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 시계 소년의 언급 · 시계 소년의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 시계 소년의 언급 · 시계 소년의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
+<p>그녀의 불안은 곧 감정과 기억의 붕괴로 나타난다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 슬픔이 코코나의 마음에 밀려들자 난잡한 기억과 과거가 그녀를 집어삼키고, 코코나는 옷을 꽉 쥔 채 떨기 시작한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 코코나의 상태가 너무 좋지 않다고 판단하고, <a class="wiki-link" href="npc-2016.html" title="시계 소년">시계 소년</a>은 그녀를 혼자 남겨 두면 안 좋은 일이 생길 것 같다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 시계 소년의 언급 · 시계 소년의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 시계 소년의 언급 · 시계 소년의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
 <p><a class="wiki-link" href="npc-2174.html" title="지오반나">지오반나</a>는 코코나의 근황을 듣고 스페셜 블렌드를 보내며, 그것을 코코나 같은 사람을 위해 준비한 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a> 전체에서 하나뿐인 특별한 음료라고 설명한다.<sup class="cite-ref" title="게임 본편 · 지오반나의 언급 · 지오반나의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 지오반나의 언급 · 지오반나의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 지오반나의 언급 · 지오반나의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 코코나가 여전히 웃고 있지만 이마에 땀이 배어 나오고 주변 손님들이 이상함을 느끼는 장면은, 그녀가 점장의 역할을 유지하는 동안에도 이미 한계에 가까워졌음을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>코코나는 원래 매장에서 능력과 성실함을 인정받은 인물이다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 그녀는 금세 가게의 스타 판매원이 되었고, 까다롭고 냉정하다고 알려진 게르윈 부인과 릴케 씨를 상대했다는 말까지 듣는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 동료의 언급 · 동료의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 현재의 불안정한 모습은 무능의 결과가 아니라, 능력 있는 사람이 일터의 압력 속에서 자기 기준을 잃어 가는 과정과 연결된다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 상사의 언급 · 상사의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 상사의 언급 · 상사의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>

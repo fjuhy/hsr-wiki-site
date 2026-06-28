@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,10 +544,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-herta-space-station.html">우주정거장 「헤르타」</a><span>마레</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A7%88%EB%A0%88&amp;page_slug=npc-735">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>마레</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주정거장 「헤르타」</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-herta-space-station.html">우주정거장 「헤르타」</a><span>마레</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A7%88%EB%A0%88&amp;page_slug=npc-735">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>마레</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주정거장 「헤르타」</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/12/11771384/efef1f3a94e8d9df2ceb37f600a0171a_5154233168649853538.png" alt="마레 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>마레는 우주정거장 「<a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>」 소속의 신비주의과 원로다. <sup class="cite-ref" title="공식 HoYoWiki · 마레"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>그는 <a class="wiki-link" href="trailblaze.html" title="개척">개척</a> 임무 「오늘은 어제의 내일 - 찰나의 우주 평화」, 모험 임무 「인간은 감정의 동물」, 모험 임무 「밖에선 친구에게 의지해야 해」와 연결되는 NPC다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>마레는 우주정거장 「<a class="wiki-link" href="loc-951.html" title="헤르타">헤르타</a>」 소속의 신비주의과 원로다. <sup class="cite-ref" title="공식 HoYoWiki · 마레"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>그는 개척 임무 「오늘은 어제의 내일 - 찰나의 우주 평화」, 모험 임무 「인간은 감정의 동물」, 모험 임무 「밖에선 친구에게 의지해야 해」와 연결되는 NPC다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>마레는 우주정거장 내부 사건에서 신비주의과의 용의자로 지목된다. <sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>아스타는 세 명의 용의자를 설명하며 신비주의과의 마레, 지정학과의 <a class="wiki-link" href="npc-740.html" title="크리스">크리스</a>, 의료과 연구원 <a class="wiki-link" href="npc-738.html" title="조앤">조앤</a>을 함께 거론한다. <sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
@@ -539,7 +559,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="작중-위상">작중 위상</h2>
 <p>마레는 신비주의과의 원로이며, 같은 부서 연구원에게 “선배”로 불린다. <sup class="cite-ref" title="공식 HoYoWiki · 마레"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 · 신비주의과 연구원의 언급 · 신비주의과 연구원의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
 <p>신비주의과 연구원은 마레의 안색이 좋아진 것을 보고, 전에 말했던 방법이 효과가 있었는지 묻는다. <sup class="cite-ref" title="게임 본편 · 신비주의과 연구원의 언급 · 신비주의과 연구원의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>마레는 AI <a class="wiki-link" href="loc-951.html" title="헤르타">헤르타</a>의 데이터베이스에 있는 「인지 불가 영역」과 관련된 문구에서도 신비주의과 원로로 등장한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<p>마레는 AI 헤르타의 데이터베이스에 있는 「인지 불가 영역」과 관련된 문구에서도 신비주의과 원로로 등장한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
 <p>그 문구에 따르면 「인지 불가 영역」은 무언가가 의도적으로 숨겨지거나 삭제된 듯한 영역이며, AI 헤르타의 기준에 맞는 지적 능력을 갖춘 사람만 특정 내용을 해제할 권한을 받을 수 있다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
 <p>마레는 이 조건을 두고 “우리 부서 전체가 기준에 못 미친다고?”라고 반응한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
 <p>이 장면에서 마레는 신비주의과의 권위를 등에 업은 원로이면서도, 헤르타의 기준 앞에서는 부서 전체와 함께 평가받는 인물로 놓인다. <sup class="cite-ref" title="공식 HoYoWiki · 마레"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
@@ -557,7 +577,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>마레의 에피소드는 용의자 조사처럼 시작하지만, 결말은 생활감 있는 오해의 해소에 가깝다. <sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <p>그의 수상한 반응은 감염의 증거가 아니라 불면증과 고양이 골골이 소리 영상 때문에 생긴 단서였고, 이 반전은 마레를 사건의 위협이 아니라 피곤한 연구자로 보이게 만든다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <p>마레는 신비주의과 원로라는 직함과 고양이 영상으로 잠을 청하는 일상성을 함께 가진 인물이다. <sup class="cite-ref" title="공식 HoYoWiki · 마레"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>이 대비 때문에 마레는 우주정거장 「헤르타」의 연구자들이 고도의 <a class="wiki-link" href="path-80.html" title="지식">지식</a> 체계 안에 있으면서도, 실제로는 수면 부족과 근무 중 딴짓 같은 평범한 문제를 안고 살아간다는 점을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">마레</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/735?lang=ko-kr">원문</a></span><div class="ref-quote">신비주의과 원로</div></li>
+<p>이 대비 때문에 마레는 우주정거장 「헤르타」의 연구자들이 고도의 지식 체계 안에 있으면서도, 실제로는 수면 부족과 근무 중 딴짓 같은 평범한 문제를 안고 살아간다는 점을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">마레</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/735?lang=ko-kr">원문</a></span><div class="ref-quote">신비주의과 원로</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/735?lang=ko-kr">원문</a></span><div class="ref-quote">마레</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/735?lang=ko-kr">원문</a></span><div class="ref-quote">우주정거장 「헤르타」</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">관련 임무</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/735?lang=ko-kr">원문</a></span><div class="ref-quote">개척 임무 「오늘은 어제의 내일 - 찰나의 우주 평화」 모험 임무 「인간은 감정의 동물」 모험 임무 「밖에선 친구에게 의지해야 해」</div></li>

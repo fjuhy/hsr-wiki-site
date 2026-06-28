@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,13 +544,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-ipc.html">스타피스 컴퍼니</a><span>시장개척부</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%8B%9C%EC%9E%A5%EA%B0%9C%EC%B2%99%EB%B6%80&amp;page_slug=market-development-department">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>시장개척부</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">스타피스 컴퍼니</span><span class="badge">조직</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-ipc.html">스타피스 컴퍼니</a><span>시장개척부</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%8B%9C%EC%9E%A5%EA%B0%9C%EC%B2%99%EB%B6%80&amp;page_slug=market-development-department">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>시장개척부</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">스타피스 컴퍼니</span><span class="badge">조직</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/13/190340964/3493c89391a947c478bbd6aa20164b64_3035874738578834412.png" alt="시장개척부 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>시장개척부는 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>의 7대 부서 중 하나로, <a class="wiki-link" href="qlipoth.html" title="⌈ 보존 ⌋ 클리포트">클리포트</a>의 사명을 더 많은 은하계에 알리고 새로운 세계를 우주 상업 시스템으로 끌어들이는 역할을 맡는다. 공식 설명만 놓고 봐도 이 부서는 영업 조직과 선교 조직의 성격을 동시에 가진다. 시장을 넓히는 일이 곧 <a class="wiki-link" href="preservation.html" title="보존">보존</a>의 사명을 퍼뜨리는 일로 연결되기 때문이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 부서"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>이 부서의 핵심 인물은 오스왈도 슈나이더다. 그는 과거 무명객이었고, 컴퍼니에 들어간 뒤에도 강렬한 <a class="wiki-link" href="trailblaze.html" title="개척">개척</a>의 의지를 품은 인물로 소개된다. 그래서 시장개척부는 스타피스 컴퍼니 안에서도 “개척”이라는 말을 가장 노골적으로 회사의 확장 논리로 바꾸는 부서처럼 보인다. 은하열차의 개척이 길을 잇는 행위라면, 시장개척부의 개척은 새 세계를 컴퍼니의 상업 제도 안으로 데려오는 행위에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>시장개척부는 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>의 7대 부서 중 하나로, <a class="wiki-link" href="qlipoth.html" title="⌈ 보존 ⌋ 클리포트">클리포트</a>의 사명을 더 많은 은하계에 알리고 새로운 세계를 우주 상업 시스템으로 끌어들이는 역할을 맡는다. 공식 설명만 놓고 봐도 이 부서는 영업 조직과 선교 조직의 성격을 동시에 가진다. 시장을 넓히는 일이 곧 보존의 사명을 퍼뜨리는 일로 연결되기 때문이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 부서"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>이 부서의 핵심 인물은 오스왈도 슈나이더다. 그는 과거 무명객이었고, 컴퍼니에 들어간 뒤에도 강렬한 개척의 의지를 품은 인물로 소개된다. 그래서 시장개척부는 스타피스 컴퍼니 안에서도 “개척”이라는 말을 가장 노골적으로 회사의 확장 논리로 바꾸는 부서처럼 보인다. 은하열차의 개척이 길을 잇는 행위라면, 시장개척부의 개척은 새 세계를 컴퍼니의 상업 제도 안으로 데려오는 행위에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>게임 본문에서는 시장개척부가 외교, 방송, 지역 사업의 형태로 드러난다. <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>와의 협의 체결 현장에는 스타피스 컴퍼니 시장개척부 대변인이 등장하고, 우주 안보의 형세가 자유 시장에 끼치는 영향이 논의된다. 이 장면은 시장개척부가 단순한 영업 부서가 아니라, 우주 정치와 무역 규칙을 함께 다루는 부서임을 보여 준다. <sup class="cite-ref" title="게임 본편 — 방송/대사 · 나부 협의와 시장개척부 대변인 · 남자 목소리의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>츠가냐-Ⅳ 관련 스타피스 방송은 시장개척부의 작동 방식을 더 직접적으로 보여 준다. 방송은 츠가냐-Ⅳ가 시장개척부의 지도 아래 《스타피스 헌장》에 따라 연합 수장국을 세웠고, 스타피스 회의에서 합법적인 의석을 얻었다고 전한다. 이 장면에서 시장개척부는 군사 점령자가 아니라 제도 설계자처럼 움직인다. 행성의 정치 형태, 회의 의석, 합법성의 언어를 한꺼번에 제공하면서 그 세계가 컴퍼니의 국제 <a class="wiki-link" href="path-2358.html" title="질서">질서</a> 안에서 말할 수 있는 방식을 정리한다. <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐-Ⅳ와 스타피스 헌장 · 스타피스 방송의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>츠가냐-Ⅳ 관련 스타피스 방송은 시장개척부의 작동 방식을 더 직접적으로 보여 준다. 방송은 츠가냐-Ⅳ가 시장개척부의 지도 아래 《스타피스 헌장》에 따라 연합 수장국을 세웠고, 스타피스 회의에서 합법적인 의석을 얻었다고 전한다. 이 장면에서 시장개척부는 군사 점령자가 아니라 제도 설계자처럼 움직인다. 행성의 정치 형태, 회의 의석, 합법성의 언어를 한꺼번에 제공하면서 그 세계가 컴퍼니의 국제 질서 안에서 말할 수 있는 방식을 정리한다. <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐-Ⅳ와 스타피스 헌장 · 스타피스 방송의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>하지만 같은 흐름에서 현지 카티카 씨족의 반란과 시장개척부 지역 사업에 대한 불만도 나온다. 시장개척부의 “개척”이 현지에는 편입과 압박으로 받아들여질 수 있음을 보여 주는 대목이다. 스타피스 방송은 반란을 이미 진압된 사건처럼 말하지만, 그 표현 자체가 시장개척부의 시야를 드러낸다. 현지의 저항은 정치적 주장이라기보다 지역 사업에 부정적 영향을 주는 변수로 처리된다. <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐의 반란 진압 보도 · 스타피스 방송의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 카티카 씨족과 시장개척부 지역 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>이때 츠가냐-Ⅳ 사례는 시장개척부가 한 세계의 “주권”을 없애는 방식보다, 주권을 컴퍼니가 알아들을 수 있는 형식으로 다시 세우는 방식을 보여 준다. 연합 수장국, 스타피스 회의 의석, 지역 사업, 자유 시장은 모두 제도적이고 합법적인 말이다. 그러나 그 제도가 시장개척부의 지도 아래 만들어졌다면, 현지의 정치 질서는 이미 컴퍼니가 설계한 무대 위에서 움직이게 된다. 그래서 이 부서는 무력을 쓰지 않아도 세계의 말과 절차를 바꾸는 힘을 가진다. <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐-Ⅳ와 스타피스 헌장 · 스타피스 방송의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 카티카 씨족과 시장개척부 지역 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="스타피스-헌장과-자유-시장-편입">스타피스 헌장과 자유 시장 편입</h2>

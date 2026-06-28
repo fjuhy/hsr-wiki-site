@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -538,7 +558,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>은랑의 언급은 0호를 펑크 로드 해커 문화의 최고점이자 공포의 대상으로 세운다.<sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 동시에 0호의 기술이 ≪에테르 배틀≫ 제작에 도용되었다고 말해, 그의 이름을 명성만이 아니라 기술 유출과 상업적 이용의 문제로 연결한다.<sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>펄의 언급은 0호를 소문과 진실 사이에 둔다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 0호에 대한 정보가 반은 진실이고 반은 거짓이라는 말은 그의 행적이 명확히 정리된 이력보다 과장과 은폐가 섞인 전설에 가깝다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그러나 컴퍼니의 죄수가 되었다는 사실만은 확실하다고 못박히기 때문에, 0호의 이야기는 소문에서 끝나지 않고 거대 세력의 통제 문제로 이어진다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p><a class="wiki-link" href="npc-1318.html" title="종산">종산</a>의 언급은 “0호 환자”라는 표현을 통해 0호라는 이름을 감염과 격리의 맥락으로 끌어온다.<sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 밈 바이러스를 제거하려면 0호 환자가 현실을 직시해야 한다는 말은, 문제 해결의 핵심이 단순 제거가 아니라 현실 인식의 회복에 있음을 드러낸다.<sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 또한 “<a class="wiki-link" href="char-4737.html" title="스파키">스파키</a> 축제”의 0호 환자가 아직 이상방어부에 수용되지 않았다는 말은, 0호라는 표현이 전설적 해커뿐 아니라 감염원과 수용 대상의 문제에도 쓰인다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>시뮬레이션 우주의 언급은 0호의 유산을 아직 열리지 않은 가능성으로 남긴다.<sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 0호가 떠나기 전에 세계를 바꿀 수 있는 코드를 바다 깊은 곳에 남겼다는 전승은 그의 영향력이 현재 사건 너머로 이어질 수 있음을 암시한다.<sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그러나 아무도 그 흔적을 찾지 못했다는 조건 때문에, 이 유산은 확정된 힘이 아니라 발견되는 순간 세계의 <a class="wiki-link" href="path-2361.html" title="균형">균형</a>을 바꿀 수 있는 미발견 위험으로 남는다.<sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>시뮬레이션 우주의 언급은 0호의 유산을 아직 열리지 않은 가능성으로 남긴다.<sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 0호가 떠나기 전에 세계를 바꿀 수 있는 코드를 바다 깊은 곳에 남겼다는 전승은 그의 영향력이 현재 사건 너머로 이어질 수 있음을 암시한다.<sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그러나 아무도 그 흔적을 찾지 못했다는 조건 때문에, 이 유산은 확정된 힘이 아니라 발견되는 순간 세계의 균형을 바꿀 수 있는 미발견 위험으로 남는다.<sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="세계를-바꾸는-코드와-수감된-전설">세계를 바꾸는 코드와 수감된 전설</h2>
 <p>0호는 세계를 바꿀 수 있는 코드를 남긴 전설이지만, 동시에 큰 실수 끝에 컴퍼니의 죄수가 된 인물이다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 시뮬레이션 우주의 언급 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 공식 영상에서도 최고 등급 통제 목표 “0호”의 수감동에서 이상 신호 파동이 발생한다고 말해, 0호가 단순한 수감자가 아니라 높은 통제 등급으로 관리되는 위험 대상임을 보여준다.<sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 즉흥 순회공연 PV: 「초보자 가이드」|〈붕괴: 스타레일〉"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>“0호 방정식”이라는 명칭도 그의 이름이 기술적 개념으로 남아 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 구체적인 내용은 확인되지 않지만, 0호라는 이름이 방정식 형태로 불린다는 점은 그의 존재가 개인의 이력만이 아니라 계산, 규칙, 시스템의 영역으로 확장되어 있음을 시사한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">은랑의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">참, 혹시 펑크 로드에서 가장 위대한 해커이자, 가장 무서운 플레이어 「0호」에 대해 들어본 적 있어?</div></li>

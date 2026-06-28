@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>단단</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8B%A8%EB%8B%A8&amp;page_slug=npc-1155">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>단단</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>단단</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8B%A8%EB%8B%A8&amp;page_slug=npc-1155">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>단단</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/05/11771384/6252a2956be707d85433e2037818ae1a_2077210942756271652.png" alt="단단 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>단단은 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 소속 NPC이며, 천박사의 항속 측량원이다. <sup class="cite-ref" title="공식 HoYoWiki · 단단"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>공개 정보에서 확인되는 단단의 핵심 설정은 이름, 소속, 직책, 관련 임무다. 이름은 단단이고, 소속은 선주 「나부」이며, 관련 임무는 모험 임무 「해고」다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
@@ -541,8 +561,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>천박사는 단단의 직책을 통해 연결되는 기관이다. 단단이 항속 측량원이라는 점은 나부의 항행과 측량 업무가 단순한 배경 설정이 아니라 NPC 직무로도 드러난다는 점을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki · 단단"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <p>모험 임무 「해고」는 단단을 특정 임무와 이어 주는 접점이다. 이 연결 덕분에 단단은 이름만 있는 배경 인물보다 임무 진행 맥락 안에서 확인되는 NPC에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <h2 id="이름-표기와-검색-주의점">이름 표기와 검색 주의점</h2>
-<p>“단단”이라는 표기는 인명인 동시에 한국어 문장 안에서 “단단히”, “단단한”, “단단하고”처럼 일반 표현으로도 자주 쓰인다. <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>가 준비를 “단단히” 하라고 말하는 대사나, <a class="wiki-link" href="npc-2016.html" title="시계 소년">시계 소년</a>이 마음을 “단단히” 먹으라고 하는 대사는 인물 단단이 아니라 일반 표현의 사례다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「하늘 여정, 원치 않은 초청」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 시계 소년의 언급 · 시계 소년의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>전투나 물성 묘사에서도 같은 표기가 반복된다. 지오매로우 표면이 “단단하고 차디차다”는 묘사, 근육과 주먹이 “단단하다”는 표현, 방패와 팔뚝의 단단함을 비교하는 <a class="wiki-link" href="char-801.html" title="루카">루카</a>의 말은 NPC 단단의 행적이 아니라 단어 사용의 겹침이다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>“단단”이라는 표기는 인명인 동시에 한국어 문장 안에서 “단단히”, “단단한”, “단단하고”처럼 일반 표현으로도 자주 쓰인다. 히메코가 준비를 “단단히” 하라고 말하는 대사나, 시계 소년이 마음을 “단단히” 먹으라고 하는 대사는 인물 단단이 아니라 일반 표현의 사례다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「하늘 여정, 원치 않은 초청」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 시계 소년의 언급 · 시계 소년의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>전투나 물성 묘사에서도 같은 표기가 반복된다. 지오매로우 표면이 “단단하고 차디차다”는 묘사, 근육과 주먹이 “단단하다”는 표현, 방패와 팔뚝의 단단함을 비교하는 루카의 말은 NPC 단단의 행적이 아니라 단어 사용의 겹침이다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <p>공식 영상 자막에서도 “단단히”와 “단단하다”는 준비, 각오, 물성, 감정의 결속을 나타내는 일반 표현으로 쓰인다. 그래서 단단이라는 이름을 찾을 때는 NPC명과 일반 어휘를 구분해야 한다. <sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 황금의 서사시 PV: 「안녕, 키레네」 | 〈붕괴: 스타레일〉"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 〈붕괴: 스타레일〉 은하탐구생활——「루카: 의수로 하는 복싱은 정정당당한 승부인가?」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 〈붕괴: 스타레일〉 아젠티 캐릭터 PV——「기사 문학」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 은하탐구생활——「에바네시아: 달콤하고 폭신한 덤프트럭!」|〈붕괴: 스타레일〉"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
 <h2 id="천박사의-항속-측량원">천박사의 항속 측량원</h2>
 <p>단단의 설정상 중심은 짧은 직함에 있다. “천박사 항속 측량원”이라는 설명은 단단이 나부의 항행 관련 실무를 맡는 인물임을 가장 직접적으로 알려준다. <sup class="cite-ref" title="공식 HoYoWiki · 단단"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>

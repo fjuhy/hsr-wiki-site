@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,13 +544,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>게파드</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B2%8C%ED%8C%8C%EB%93%9C&amp;page_slug=char-17">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>게파드</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>게파드</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B2%8C%ED%8C%8C%EB%93%9C&amp;page_slug=char-17">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>게파드</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyowiki/2023/02/21/7136facc376707041eb292719d828603_4994838077000889508.png" alt="게파드 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>게파드는 벨로보그 실버메인 철위대의 방위관이며, 벨로보그 최고의 전사 중 한 명으로 꼽히는 인물이다. 그는 고결하고 정직한 랜도 가문 출신 장교로, 광풍과 폭설 속에서도 벨로보그 시민들의 일상이 유지되도록 전선을 지키는 방패에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>그의 정체성은 “명령을 수행하는 군인”보다 “시민이 신뢰할 수 있는 방패”에 더 가깝다. 게파드는 맹세를 두려움 때문에 지키는 것이 아니라, 맹세는 어겨서는 안 된다고 믿기 때문에 지킨다고 말한다. 이 태도는 그를 벨로보그의 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>에 묶어 두지만, 동시에 수호자의 명령과 시민 보호가 충돌할 때 그의 가장 큰 시험이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>그의 정체성은 “명령을 수행하는 군인”보다 “시민이 신뢰할 수 있는 방패”에 더 가깝다. 게파드는 맹세를 두려움 때문에 지키는 것이 아니라, 맹세는 어겨서는 안 된다고 믿기 때문에 지킨다고 말한다. 이 태도는 그를 벨로보그의 질서에 묶어 두지만, 동시에 수호자의 명령과 시민 보호가 충돌할 때 그의 가장 큰 시험이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>게파드는 벨로보그의 북방 성곽과 <a class="wiki-link" href="fragmentum.html" title="열계">열계</a>의 위협 앞에서 시민들의 생활권을 지키는 군사 책임자다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 자신이 보잘것없는 병사였을 때부터 벨로보그의 가장 든든한 방패가 되고 전우들과 함께 죽겠다고 맹세했으며, 방위관이 된 뒤에도 그 맹세를 버리지 않았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>그의 일상은 낭만적인 영웅담보다 보초, 순찰, 보고, 방어, 자원 배분 같은 도시 유지의 업무에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•2"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 진귀한 전리품 오픈"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그래서 게파드는 벨로보그가 설원에 숨은 도시가 아니라 “이 행성의 마지막 보루”로서 광풍과 폭설을 막아내고 있다고 말한다. 그의 시선에서 벨로보그는 지켜야 할 고향이자, 시민이 잠시라도 평범한 <a class="wiki-link" href="npc-3217.html" title="하루">하루</a>를 이어가기 위해 필요한 최후의 방어선이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•벨로보그"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>그의 일상은 낭만적인 영웅담보다 보초, 순찰, 보고, 방어, 자원 배분 같은 도시 유지의 업무에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•2"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 진귀한 전리품 오픈"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그래서 게파드는 벨로보그가 설원에 숨은 도시가 아니라 “이 행성의 마지막 보루”로서 광풍과 폭설을 막아내고 있다고 말한다. 그의 시선에서 벨로보그는 지켜야 할 고향이자, 시민이 잠시라도 평범한 하루를 이어가기 위해 필요한 최후의 방어선이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•벨로보그"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>게파드의 충성은 수호자와 도시 질서에 깊게 묶여 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그는 수호자가 누구보다 벨로보그를 잘 알고 사랑한다고 믿으며, 랜도 가문이 대대로 수호자를 위해 일해 온 것을 영광이자 책임으로 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이 믿음은 그를 흔들리지 않는 장교로 만들지만, 수호자의 판단 자체를 의심하지 못하게 만드는 약점이기도 하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
 <p>캐릭터 스토리에서 게파드는 수호자의 명령 때문에 자신이 맹세를 지켜야 할 전장에 있지 못하는 상황을 겪는다. 그는 왜 그런 결정이 내려졌는지 이해하지 못하면서도, “의심은 오만을 낳고 의심은 사념을 낳는다”는 말을 되새기며 전장에 집중하려 한다. 게파드의 비극은 무능함이 아니라, 너무 성실한 충성이 더 큰 진실을 보는 속도를 늦춘다는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
 <p>전투 뒤에는 살아남은 철위대가 벨로보그로 돌아오고, 수호자는 승리를 축하하는 축제를 열며 게파드에게 지오매로우로 만든 비갑을 수여한다. 게파드는 평범한 사람이 평생 보기 어려운 보물을 받으면서도, 그 명예에 도달하기까지 얼마나 많은 전우가 희생되었는지를 떠올리지 않으려 애쓴다. 그가 받는 훈장은 승리의 증거이지만, 동시에 벨로보그의 평화가 누군가의 희생 위에 간신히 유지되고 있다는 표시다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>브리나</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B8%8C%EB%A6%AC%EB%82%98&amp;page_slug=npc-2426">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>브리나</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>브리나</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B8%8C%EB%A6%AC%EB%82%98&amp;page_slug=npc-2426">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>브리나</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/12/11771384/bc98a52533b933f6258a3fab215d8221_6486077772630231636.png" alt="브리나 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>브리나는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에 소속된 안내원 NPC다. <sup class="cite-ref" title="공식 HoYoWiki · 브리나"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>공식 자료에는 브리나의 NPC 사진과 위치 이미지가 함께 실려 있어, 페나코니 안에서 만날 수 있는 현장형 인물로 다루어진다. <sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 사진"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
@@ -543,7 +563,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p><a class="wiki-link" href="npc-2028.html" title="사브리나">사브리나</a>는 브리나와 이름이 비슷하지만, 자신을 야릴로 8호에서 온 공주이자 사브리나 피곳이라고 소개하는 별개의 인물이다. <sup class="cite-ref" title="게임 본편 · 사브리나의 언급 · 사브리나의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 사브리나의 언급 · 사브리나의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <p>이 대비는 브리나가 페나코니의 안내원으로 자리 잡은 인물인 반면, 사브리나는 야릴로 8호와 피곳 가문이라는 다른 정체성을 내세우는 인물임을 구분하게 한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 사브리나의 언급 · 사브리나의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 사브리나의 언급 · 사브리나의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <h2 id="수다와-안내-사이의-브리나">수다와 안내 사이의 브리나</h2>
-<p>브리나는 안내원이라는 안정적인 직책을 갖고 있지만, 가장 두드러지는 모습은 정보를 <a class="wiki-link" href="path-2358.html" title="질서">질서</a> 있게 정리하는 태도보다 이야기를 계속 이어 가는 수다스러움이다. <sup class="cite-ref" title="공식 HoYoWiki · 브리나"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>브리나는 안내원이라는 안정적인 직책을 갖고 있지만, 가장 두드러지는 모습은 정보를 질서 있게 정리하는 태도보다 이야기를 계속 이어 가는 수다스러움이다. <sup class="cite-ref" title="공식 HoYoWiki · 브리나"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>그녀가 말하는 비밀 통로, 숨겨진 작은 문, 유령 이야기는 모두 공관을 평범한 건물이 아니라 아직 발견되지 않은 길과 소문이 남아 있는 장소로 바꾼다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>브리나는 큰 사건의 중심에 선 인물이라기보다, 플레이어가 페나코니의 내부를 돌아다닐 때 그곳의 잡음과 호기심을 들려주는 인물이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">브리나</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2426?lang=ko-kr">원문</a></span><div class="ref-quote">안내원</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2426?lang=ko-kr">원문</a></span><div class="ref-quote">브리나</div></li>

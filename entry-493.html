@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -543,7 +563,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>그 힘은 “시도를 멈추라”는 경고처럼 나타나며, 시릴을 붙잡은 열계의 현상이 단순한 환영보다 더 강한 저항을 가진 사건임을 드러낸다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
 <p>시릴은 한 번만 더 반복하면 이곳에서 나갈 수 있을지도 모른다고 말하고, 나중에는 정말 자신을 데리고 나갈 수 있느냐고 묻는다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
 <p>반복과 구출의 말이 함께 놓이면서, 시릴은 자기 힘으로 빠져나오지 못하는 존재이자 외부의 개입을 기다리는 존재로 그려진다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>그러나 시릴은 끝내 자신이라는 이름을 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>에서 지워 달라고 부탁하고, 자신과 만난 적이 없다고 생각해 달라고 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
+<p>그러나 시릴은 끝내 자신이라는 이름을 기억에서 지워 달라고 부탁하고, 자신과 만난 적이 없다고 생각해 달라고 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
 <p>개척자는 시릴이 모든 것을 잊고 자신이 피해받는 것을 원하지 않는다고 받아들이며, 시릴의 마지막 태도는 탈출을 바라는 마음과 타인을 끌어들이지 않으려는 마음이 함께 있었음을 보여 준다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
 <h2 id="시릴라와-스테판">시릴라와 스테판</h2>
 <p>시릴이 반복해서 말하는 “언니”는 시릴라다. 오래된 편지는 시릴라를 시릴의 언니라고 부르며, 그녀의 행방을 10년 넘게 찾지 못했다고 적는다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>

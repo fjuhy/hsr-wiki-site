@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,12 +544,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>춘분</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%B6%98%EB%B6%84&amp;page_slug=npc-1194">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>춘분</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>춘분</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%B6%98%EB%B6%84&amp;page_slug=npc-1194">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>춘분</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/29/11771384/a8f8eb63faf26904b7764ab2ccfedcce_6780104671790545440.png" alt="춘분 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>춘분은 선주 「<a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>」에 속한 비디아다라 꼬마 아이다.<sup class="cite-ref" title="공식 HoYoWiki · 춘분"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 공식 명칭은 춘분이며, NPC 사진과 위치 정보가 따로 마련되어 있어 게임 안에서 외형과 배치 지점을 가진 인물로 취급된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 사진"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>춘분은 선주 「나부」에 속한 비디아다라 꼬마 아이다.<sup class="cite-ref" title="공식 HoYoWiki · 춘분"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 공식 명칭은 춘분이며, NPC 사진과 위치 정보가 따로 마련되어 있어 게임 안에서 외형과 배치 지점을 가진 인물로 취급된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 사진"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>춘분의 현재 설정에서 가장 뚜렷한 말은 능혜와 자신을 구분하는 대사다.<sup class="cite-ref" title="게임 본편 · 춘분의 언급 · 춘분의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 춘분은 능혜와 춘분이 서로 다른 두 사람이라고 직접 말하며, “능혜는 능혜고, 춘분은 춘분”이라고 자기 이름을 분명히 세운다.<sup class="cite-ref" title="게임 본편 · 춘분의 언급 · 춘분의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
-<p>춘분은 큰 직책이나 사건 수행자로 확인되는 인물이라기보다, 나부에 배치된 비디아다라 NPC로 먼저 읽힌다.<sup class="cite-ref" title="공식 HoYoWiki · 춘분"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 현재 확인되는 역할 정보는 “비디아다라 꼬마 아이”와 “선주 「나부」 소속”에 머무르며, 전투·행정·조직 내 지위는 드러나지 않는다.<sup class="cite-ref" title="공식 HoYoWiki · 춘분"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>춘분은 큰 직책이나 사건 수행자로 확인되는 인물이라기보다, 나부에 배치된 비디아다라 NPC로 먼저 읽힌다.<sup class="cite-ref" title="공식 HoYoWiki · 춘분"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 현재 확인되는 역할 정보는 “비디아다라 꼬마 아이”와 “<a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 소속”에 머무르며, 전투·행정·조직 내 지위는 드러나지 않는다.<sup class="cite-ref" title="공식 HoYoWiki · 춘분"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>그 대신 춘분의 대사는 신원 구분을 중심에 둔다.<sup class="cite-ref" title="게임 본편 · 춘분의 언급 · 춘분의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 능혜와 춘분을 같은 사람처럼 보는 시선을 막고, 두 이름이 가리키는 대상이 다르다는 점을 짧게 못박는다.<sup class="cite-ref" title="게임 본편 · 춘분의 언급 · 춘분의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>춘분의 작중 위상은 힘이나 권력보다 이름과 정체성의 구분에 가깝다.<sup class="cite-ref" title="게임 본편 · 춘분의 언급 · 춘분의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 춘분은 자신을 능혜와 다른 사람으로 말하며, 이 발화가 현재 확인되는 대사 안에서 가장 선명한 성격 정보가 된다.<sup class="cite-ref" title="게임 본편 · 춘분의 언급 · 춘분의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
@@ -552,7 +572,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 갤러리, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>동식</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8F%99%EC%8B%9D&amp;page_slug=npc-1188">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>동식</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>동식</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8F%99%EC%8B%9D&amp;page_slug=npc-1188">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>동식</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/06/190340964/6ef917cef4e5971fedff521f12160b0e_7841909905708977154.png" alt="동식 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>동식은 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 소속 NPC로, “약을 구하는 소년”이다.<sup class="cite-ref" title="공식 HoYoWiki · 동식"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그는 별뗏목의 바다 심장부에 있으며, 자신을 “선녀 누나를 따라온 동식”이라고 소개한다.<sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>동식의 현재 목표는 선녀 누나를 찾는 일이다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그는 선녀 누나를 따라왔지만 어디에서도 그녀를 찾지 못했다고 말하며, 이 짧은 대사는 동식이 단순한 행인이 아니라 사라진 인물을 찾는 사연을 가진 소년임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
@@ -533,7 +553,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>이 이야기에서 동식은 사건을 직접 해결하는 인물이라기보다, 선녀 누나와 선약, 황제와 태자의 위기를 한데 묶어 기억하는 증언자에 가깝다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> “약을 구하는 소년”이라는 설명은 그의 현재 처지를 짧게 말하지만, 실제 대사는 그가 찾는 사람과 과거의 구명 사건이 서로 이어져 있음을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki · 동식"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>동식은 전투력이나 권력으로 존재감을 드러내는 인물이 아니다.<sup class="cite-ref" title="공식 HoYoWiki · 동식"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그의 위상은 선주 「나부」의 거리에서 선약과 황실의 구명 사건을 말로 이어 주는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>동식의 이름은 개인 호칭을 넘어 사건의 시간표처럼 작동한다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그는 황제가 태자를 구하려던 겨울에 태어났다고 설명하며, 이름의 유래를 황실의 절박함과 선약을 찾던 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>에 묶어 둔다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그래서 동식은 큰 사건의 중심에서 명령을 내리는 인물은 아니지만, 이미 지나간 사건을 현재의 대화 속으로 끌어오는 작은 연결점이 된다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>동식의 이름은 개인 호칭을 넘어 사건의 시간표처럼 작동한다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그는 황제가 태자를 구하려던 겨울에 태어났다고 설명하며, 이름의 유래를 황실의 절박함과 선약을 찾던 기억에 묶어 둔다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그래서 동식은 큰 사건의 중심에서 명령을 내리는 인물은 아니지만, 이미 지나간 사건을 현재의 대화 속으로 끌어오는 작은 연결점이 된다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>선녀 누나는 동식의 현재 행동과 과거 설명을 모두 움직이는 인물이다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 동식은 그녀를 따라왔고 지금은 찾지 못하고 있으며, 과거 이야기에서도 선녀 누나는 현관에게 명령을 내리고 황제가 선약을 구하러 찾아온 대상으로 남아 있다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>황제와 태자는 동식의 이름을 황실의 위기와 연결한다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 황제는 태자를 구하기 위해 선녀 누나를 찾아와 선약을 구했고, 동식은 그 겨울에 태어난 일을 자기 이름의 배경으로 삼는다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 관계는 동식의 사연이 개인적인 실종 찾기에만 머물지 않고, 선약을 둘러싼 더 큰 사건의 잔향을 품고 있음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 동식의 언급 · 동식의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>

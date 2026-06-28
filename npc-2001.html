@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,13 +544,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>퍼디난드</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%8D%BC%EB%94%94%EB%82%9C%EB%93%9C&amp;page_slug=npc-2001">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>퍼디난드</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>퍼디난드</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%8D%BC%EB%94%94%EB%82%9C%EB%93%9C&amp;page_slug=npc-2001">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>퍼디난드</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/07/f59a76cdb86fda0d6387826825c37391_6931211789679889329.png" alt="퍼디난드 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>퍼디난드는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에 속한 NPC이며, 공식 소개에서는 수집광으로 정리된다.<sup class="cite-ref" title="공식 HoYoWiki · 퍼디난드"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>그는 황금의 순간에 있는 폐 부속품 상인이다.<sup class="cite-ref" title="게임 본편 · 오로의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 돈이 부족한 사람은 물건을 들고 그를 찾아갈 수 있고, 오로는 퍼디난드가 그 물건에 좋은 가격을 쳐줄 것이라고 말한다.<sup class="cite-ref" title="게임 본편 · 오로의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>퍼디난드는 폐 부속품의 가치를 매기는 거래 상대다.<sup class="cite-ref" title="게임 본편 · 오로의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 오로가 돈이 부족하면 그를 찾아가라고 권하는 장면은, 퍼디난드가 황금의 순간 안에서 물건을 현금화해 주는 상인으로 통한다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 오로의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>그의 주변에는 버려진 부속품이 있고, 그중에는 보는 사람이 익숙하다고 느끼는 물건도 섞여 있다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 퍼디난드의 물건 더미는 단순한 잡동사니가 아니라, 누군가의 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>이나 사건을 건드릴 수 있는 폐품의 집합으로 남는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>그의 주변에는 버려진 부속품이 있고, 그중에는 보는 사람이 익숙하다고 느끼는 물건도 섞여 있다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 퍼디난드의 물건 더미는 단순한 잡동사니가 아니라, 누군가의 기억이나 사건을 건드릴 수 있는 폐품의 집합으로 남는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>퍼디난드의 위상은 권력자나 전투원이 아니라, 페나코니의 황금의 순간에서 폐 부속품을 사고파는 생활형 상인에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 오로의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 제공된 근거만으로 그의 전투력이나 정치적 영향력을 판단할 수는 없지만, 폐 부속품에 값을 매기는 능력은 돈이 필요한 인물에게 실제적인 도움으로 작동한다.<sup class="cite-ref" title="게임 본편 · 오로의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>수집광이라는 소개는 그의 상인 역할과 맞물린다.<sup class="cite-ref" title="공식 HoYoWiki · 퍼디난드"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 오로의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 퍼디난드에게 부속품은 버려진 물건이면서도 값을 받을 수 있는 물건이고, 때로는 익숙함을 불러일으키는 흔적이 된다.<sup class="cite-ref" title="게임 본편 · 오로의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>

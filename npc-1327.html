@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,9 +544,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>센센</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%84%BC%EC%84%BC&amp;page_slug=npc-1327">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>센센</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>센센</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%84%BC%EC%84%BC&amp;page_slug=npc-1327">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>센센</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/27/190340964/db245fb5dbece56fa87dbc10eaf5faff_2280268893876559031.png" alt="센센 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>센센은 선주 「<a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>」에 속한 NPC로, 겉보기에는 장인으로 보이는 소녀다.<sup class="cite-ref" title="공식 HoYoWiki · 센센"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 공식 정보에서는 <a class="wiki-link" href="npc-1321.html" title="레이리">레이리</a>가 센센의 관련 NPC로 함께 묶이며, 게임 안에서도 센센은 자신과 레이리를 함께 소개한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 NPC"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 장인으로 보이는 소녀의 언급 · 장인으로 보이는 소녀의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>센센은 선주 「나부」에 속한 NPC로, 겉보기에는 장인으로 보이는 소녀다.<sup class="cite-ref" title="공식 HoYoWiki · 센센"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 공식 정보에서는 <a class="wiki-link" href="npc-1321.html" title="레이리">레이리</a>가 센센의 관련 NPC로 함께 묶이며, 게임 안에서도 센센은 자신과 레이리를 함께 소개한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 NPC"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 장인으로 보이는 소녀의 언급 · 장인으로 보이는 소녀의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>센센의 등장은 “<a class="wiki-link" href="npc-1159.html" title="청주">청주</a> 님이 보낸 금 조각상 시험 대상”을 확인하는 질문에서 시작된다.<sup class="cite-ref" title="게임 본편 · 장인으로 보이는 소녀의 언급 · 장인으로 보이는 소녀의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그는 단순히 길에 서 있는 배경 인물이 아니라, 시험 대상자를 맞이하고 그 절차를 몸에 직접 적용하는 쪽에 선 인물이다.<sup class="cite-ref" title="게임 본편 · 장인으로 보이는 소녀의 언급 · 장인으로 보이는 소녀의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>센센은 플레이어를 보자마자 금 조각상 시험 대상자인지 확인한다.<sup class="cite-ref" title="게임 본편 · 장인으로 보이는 소녀의 언급 · 장인으로 보이는 소녀의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 질문은 센센이 청주, 시험, 플레이어를 현장에서 이어 주는 담당자처럼 움직인다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 장인으로 보이는 소녀의 언급 · 장인으로 보이는 소녀의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
@@ -534,7 +554,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>이 장면에서 센센은 안내자보다 실행자에 가깝다.<sup class="cite-ref" title="게임 본편 · 장인으로 보이는 소녀의 언급 · 장인으로 보이는 소녀의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> “장인으로 보이는 소녀”라는 인상도 부적을 직접 다루는 행동과 맞물려, 센센을 손으로 시험을 작동시키는 인물로 보이게 한다.<sup class="cite-ref" title="공식 HoYoWiki · 센센"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>센센의 위상은 전투력보다 시험 절차를 실행하는 능력에서 드러난다.<sup class="cite-ref" title="공식 HoYoWiki · 센센"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 확인되는 행동은 플레이어와 레이리의 관절에 부적을 붙이는 일이며, 그 부적은 두 사람의 몸에서 같은 속도로 반응한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>센센이 선주 「나부」 소속이라는 점은 확인되지만, 공식 직책이나 전투 능력은 확인되지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 센센"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 따라서 센센은 강자나 전투 NPC라기보다, 나부의 특정 시험 현장에서 부적을 다루는 소녀로 보는 편이 근거에 맞다.<sup class="cite-ref" title="공식 HoYoWiki · 센센"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>센센이 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 소속이라는 점은 확인되지만, 공식 직책이나 전투 능력은 확인되지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 센센"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 따라서 센센은 강자나 전투 NPC라기보다, 나부의 특정 시험 현장에서 부적을 다루는 소녀로 보는 편이 근거에 맞다.<sup class="cite-ref" title="공식 HoYoWiki · 센센"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>센센의 영향력은 부적이 붙은 뒤의 감각 변화에서 더 분명해진다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 플레이어 안에는 낯선 풍경이 떠오르고, 시선은 시도 때도 없이 센센을 향하며, 센센을 볼 때마다 심장박동이 빨라진다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>청주는 센센의 대사 안에서 금 조각상 시험을 보낸 인물로 연결된다.<sup class="cite-ref" title="게임 본편 · 장인으로 보이는 소녀의 언급 · 장인으로 보이는 소녀의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 관계에서 청주는 시험의 발신자이고, 센센은 그 시험을 현장에서 대상자에게 적용하는 인물로 읽힌다.<sup class="cite-ref" title="게임 본편 · 장인으로 보이는 소녀의 언급 · 장인으로 보이는 소녀의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>

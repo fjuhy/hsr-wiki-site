@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,9 +544,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>난난</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%82%9C%EB%82%9C&amp;page_slug=npc-1316">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>난난</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>난난</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%82%9C%EB%82%9C&amp;page_slug=npc-1316">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>난난</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/27/190340964/b69fe22be7de52421deac3456297d2dd_9078743941685306011.png" alt="난난 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>난난은 선주 「<a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>」에 속한 NPC이며, 방생파의 일원이다.<sup class="cite-ref" title="공식 HoYoWiki · 난난"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그는 모험 임무 「동물은 사나워」와 「동물은 사나워 • 종막」에 관련된 인물로, <a class="wiki-link" href="npc-1318.html" title="종산">종산</a>·<a class="wiki-link" href="npc-1317.html" title="토냐">토냐</a>·<a class="wiki-link" href="npc-1276.html" title="베나">베나</a>·<a class="wiki-link" href="npc-1315.html" title="히스만">히스만</a>과 같은 인물 관계 안에서 다뤄진다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 NPC"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>난난은 선주 「나부」에 속한 NPC이며, 방생파의 일원이다.<sup class="cite-ref" title="공식 HoYoWiki · 난난"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그는 모험 임무 「동물은 사나워」와 「동물은 사나워 • 종막」에 관련된 인물로, <a class="wiki-link" href="npc-1318.html" title="종산">종산</a>·<a class="wiki-link" href="npc-1317.html" title="토냐">토냐</a>·<a class="wiki-link" href="npc-1276.html" title="베나">베나</a>·<a class="wiki-link" href="npc-1315.html" title="히스만">히스만</a>과 같은 인물 관계 안에서 다뤄진다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 NPC"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>난난의 특징은 방생파의 신념을 매우 좁고 특이한 방식으로 실천했다는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki · 난난"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 종산에 따르면 난난은 생수 안에 있는 미생물을 방생하는 데 힘썼고, 이 행동은 다른 세 사람에게 장난처럼 받아들여졌다.<sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>난난은 방생파의 활동이 단순한 선행이나 동물 보호의 말로만 머물지 않고, 어디까지를 “방생”으로 볼 것인가라는 우스꽝스럽고도 날카로운 문제로 번지는 지점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki · 난난"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 생수 속 미생물을 방생하려는 난난의 행동은 방생파 내부에서도 쉽게 받아들여지지 않았고, 그 결과 그는 「장난조」라는 오명을 얻었다.<sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
@@ -540,7 +560,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>종산은 난난의 이름, 행동, 평판 변화를 이어 주는 핵심 인물이다.<sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 종산의 설명을 통해 난난은 단순한 방생파 구성원이 아니라, 생수 속 미생물 방생이라는 특이한 행동 때문에 「장난조」의 낙인을 받고 「4대 선인」에서 밀려난 인물로 정리된다.<sup class="cite-ref" title="공식 HoYoWiki · 난난"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>토냐, 베나, 히스만은 난난과 함께 관련 NPC로 묶인다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 NPC"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 묶음은 난난의 이야기가 개인의 기묘한 행동만이 아니라 「동물은 사나워」와 「동물은 사나워 • 종막」의 인물 관계 속에서 읽혀야 한다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 NPC"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>「종산의 편지」는 난난과 연결된 관련 항목이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이 연결은 난난의 행적이 임무 대화 속 일회성 농담으로 끝나지 않고, 종산을 중심으로 한 사건 정리와도 맞물린다는 점을 보강한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>방황하는 통은 “난난난”이라고 중얼거리며 자신이 어디에 있는지, 왜 아무것도 기억하지 못하는지 혼란스러워한다.<sup class="cite-ref" title="게임 본편 · 방황하는 통의 언급 · 방황하는 통의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 대사는 난난의 이름이 직접적인 설명이 아니라 소리의 반복과 <a class="wiki-link" href="path-2359.html" title="기억">기억</a> 상실의 혼란 속에서도 튀어나온다는 점에서, 임무 분위기의 불안정함을 남긴다.<sup class="cite-ref" title="게임 본편 · 방황하는 통의 언급 · 방황하는 통의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>방황하는 통은 “난난난”이라고 중얼거리며 자신이 어디에 있는지, 왜 아무것도 기억하지 못하는지 혼란스러워한다.<sup class="cite-ref" title="게임 본편 · 방황하는 통의 언급 · 방황하는 통의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 대사는 난난의 이름이 직접적인 설명이 아니라 소리의 반복과 기억 상실의 혼란 속에서도 튀어나온다는 점에서, 임무 분위기의 불안정함을 남긴다.<sup class="cite-ref" title="게임 본편 · 방황하는 통의 언급 · 방황하는 통의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
 <p>또 다른 대사는 누군가가 난난에게 인사도 없이 떠났는지 묻는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 이 말은 난난이 사건 후에도 다른 인물의 이동이나 작별을 확인하는 기준점으로 남아 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
 <h2 id="미생물-방생과-장난조-의-낙인">미생물 방생과 「장난조」의 낙인</h2>
 <p>난난의 핵심은 방생의 대상을 생수 속 미생물까지 밀고 나갔다는 데 있다.<sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 방생파 일원이라는 소속만 보면 그는 같은 신념을 공유하는 인물처럼 보이지만, 실제 작중 평가는 그의 실천 방식이 얼마나 어긋나 보였는지에 집중된다.<sup class="cite-ref" title="공식 HoYoWiki · 난난"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 종산의 언급 · 종산의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>

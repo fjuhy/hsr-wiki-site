@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -526,7 +546,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-stellaron-hunters.html">스텔라론 헌터</a><span>샘</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%83%98&amp;page_slug=sam">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>샘</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">스텔라론 헌터</span><span class="badge">항목</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>샘은 <a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>의 이름으로 먼저 등장하는 장갑 전사이며, 이후 <a class="wiki-link" href="char-2494.html" title="반디">반디</a>가 착용하는 기갑 「샘」과 연결되어 이해되는 정체성이다. 공식 적 도감은 샘을 무거운 장갑을 장착한 신비한 전사로 소개하고, 화염을 내뿜는 철갑으로 전장을 불태우는 존재라고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki · 「스텔라론 헌터」 샘 공식 설명"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 게임 본편에서도 샘은 직접 자신을 <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a> 헌터라고 밝히며, 처음 만나는 독자와 인물에게는 독립된 헌터 멤버처럼 보인다. <sup class="cite-ref" title="게임 본편 — 대사 · 샘의 자기소개 · Unknown의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>샘은 <a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>의 이름으로 먼저 등장하는 장갑 전사이며, 이후 <a class="wiki-link" href="char-2494.html" title="반디">반디</a>가 착용하는 기갑 「샘」과 연결되어 이해되는 정체성이다. 공식 적 도감은 샘을 무거운 장갑을 장착한 신비한 전사로 소개하고, 화염을 내뿜는 철갑으로 전장을 불태우는 존재라고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki · 「스텔라론 헌터」 샘 공식 설명"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 게임 본편에서도 샘은 직접 자신을 스텔라론 헌터라고 밝히며, 처음 만나는 독자와 인물에게는 독립된 헌터 멤버처럼 보인다. <sup class="cite-ref" title="게임 본편 — 대사 · 샘의 자기소개 · Unknown의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>하지만 샘은 단순한 별개의 가면 이름으로 끝나지 않는다. 공식 반디 항목은 반디가 스텔라론 헌터의 멤버이며 기갑 「샘」을 입고 전투를 벌인다고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki · 반디 공식 설명"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 따라서 샘이라는 표제어는 한 인물의 별명만 가리키기보다, 반디가 임무를 수행할 때 드러나는 장갑, 전투 방식, 외부에 알려진 헌터 신분이 겹쳐진 이름으로 보아야 한다.</p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>샘의 첫 역할은 스텔라론 헌터의 위협을 눈앞에 세우는 것이다. 적 도감의 공식 명칭도 「스텔라론 헌터」 샘이며, 본편 대사에서도 샘은 자신을 같은 이름으로 소개한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 샘의 자기소개 · Unknown의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 이 단계에서 샘은 설명보다 먼저 압박으로 작동한다. 무거운 갑주와 화염은 대화를 길게 이어 가기 전에 상대가 위험을 체감하게 만들고, 스텔라론 헌터가 엘리오의 각본만 말하는 조직이 아니라 실제로 현장에 강한 실행자를 보낸다는 점을 보여 준다.</p>

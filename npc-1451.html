@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>약연</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%BD%EC%97%B0&amp;page_slug=npc-1451">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>약연</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>약연</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%BD%EC%97%B0&amp;page_slug=npc-1451">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>약연</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/04/30/11771384/816095e66d6be9e7267ccac922381bb9_1350718352000706775.png" alt="약연 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>약연은 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 소속 NPC이며, 진주 지킴이로 활동한다.<sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>작중에서 약연은 단정사에 있는 비디아다라족 인물로도 다뤄지며, 무명객이 그녀를 도운 일이 있었다.<sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
@@ -566,7 +586,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>약연은 직접 자리에 나타나지 않는 순간에도 메시지와 답장을 통해 사건의 후속 흐름에 걸려 있다.<sup class="cite-ref" title="게임 본편 · 조수의 언급 · 조수의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
 <h2 id="해변을-맡은-진주-지킴이">해변을 맡은 진주 지킴이</h2>
 <p>약연은 큰 서사를 직접 끌고 가는 인물이라기보다, 나부의 한 구역이 누군가의 관리 아래 돌아가고 있다는 감각을 만드는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>방생파를 쫓아내고 방생된 것을 처리하라는 지시는 해변의 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>가 배경 설정에 머물지 않고, 개척자가 실제로 수행해야 하는 현장 업무가 되게 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>방생파를 쫓아내고 방생된 것을 처리하라는 지시는 해변의 질서가 배경 설정에 머물지 않고, 개척자가 실제로 수행해야 하는 현장 업무가 되게 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
 <p>약연이 개척자에게 순찰 중 생긴 일을 알아서 처리하라고 한 점은 그녀의 관리 방식도 드러낸다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
 <p>그녀는 모든 일을 직접 붙잡기보다, 진주 지킴이들이 인정한 능력을 근거로 개척자에게 판단을 넘긴다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
 <p>그래서 약연은 연락되지 않거나 답장이 늦어지는 동안에도 관할과 지시를 통해 계속 작중에 남아 있으며, 개척자의 행동은 그 틀 안에서 이어진다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">약연</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1451?lang=ko-kr">원문</a></span><div class="ref-quote">진주 지킴이</div></li>

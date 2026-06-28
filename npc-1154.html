@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,11 +544,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-knowledge.html">지식 세력</a><span>토드</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%86%A0%EB%93%9C&amp;page_slug=npc-1154">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>토드</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">지식 세력</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-knowledge.html">지식 세력</a><span>토드</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%86%A0%EB%93%9C&amp;page_slug=npc-1154">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>토드</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">지식 세력</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/08/190340964/3ba45a64ec7409e4a4bdd8b7d041811c_5823214103363938023.png" alt="토드 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>토드는 <a class="wiki-link" href="intelligentsia-guild.html" title="지식학회">지식학회</a> 소속 학자로, 선주의 역사와 비디아다라족의 흔적을 조사하기 위해 등장하는 NPC다.<sup class="cite-ref" title="공식 HoYoWiki · 토드"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>그는 자신을 “지식학회의 토드”라고 소개하며, 선주 역사에 관심이 있다면 토론을 환영한다고 말한다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>공식 정보에서 토드의 관련 임무는 「토드•리오단의 학술 연구: 새내기 <a class="wiki-link" href="yaoshi.html" title="⌈ 풍요 ⌋ 약사">약사</a>의 주머니 엿보기」로 연결된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>공식 정보에서 토드의 관련 임무는 「토드•리오단의 학술 연구: 새내기 약사의 주머니 엿보기」로 연결된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>토드는 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>에게 선주 역사 연구 협력을 제안하며, 월급, 보험, 2배의 초과 근무 수당을 내걸어 자신을 고용주처럼 세운다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>그는 협력을 단순한 심부름이 아니라 학회 교재에 이름이 실릴 기회로 포장하고, 개척자가 토드•리오단의 파트너로 은하의 역사학 강사들에게 거론될 수 있다고 설득한다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
@@ -537,7 +557,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>그러나 탁본을 살피던 토드가 갑자기 격한 기침을 하고, 주위를 두리번거리며 목소리를 낮추는 장면은 그의 연구가 평범한 현장 조사를 넘어 위험한 단계로 들어섰음을 드러낸다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
 <p>개척자는 토드의 일이 이렇게 간단하지 않고, 그와의 관계도 쉽게 끊어서는 안 될 것 같은 예감을 느낀다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
-<p>토드는 전투로 위상을 드러내는 인물이 아니라, <a class="wiki-link" href="path-80.html" title="지식">지식</a>과 현장 조사를 통해 선주의 민감한 영역에 접근하는 외부 학자다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
+<p>토드는 전투로 위상을 드러내는 인물이 아니라, 지식과 현장 조사를 통해 선주의 민감한 영역에 접근하는 외부 학자다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <p>그는 늙고 병든 모습으로 약을 삼키며 버티다가, 이후 앳된 얼굴과 부드러운 손을 가진 모습으로 나타나 연구가 실제 신체 변화로 이어졌음을 드러낸다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
 <p>개척자는 토드의 연구가 성공할 줄 몰랐다고 말하며, 그를 “겁도 없다”고 평가한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
 <p>토드의 성공은 학문적 성과로만 남지 않고 선주의 법적 처벌 가능성으로 이어진다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 대호의 언급 · 대호의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
@@ -547,7 +567,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>클리오와 토드의 관계는 사제 관계로 시작하지만, 토드가 보낸 편지 이후 연락이 끊기면서 그의 연구가 제자에게도 설명되지 않는 사건이 된다.<sup class="cite-ref" title="게임 본편 · 클리오의 언급 · 클리오의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="게임 본편 · 클리오의 언급 · 클리오의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
 <p><a class="wiki-link" href="char-29.html" title="백로">백로</a>는 변화한 토드를 보고 “토드 씨…?”라고 반응하고, 개척자는 토드와 함께 백로에게 인사한다.<sup class="cite-ref" title="게임 본편 · 백로의 언급 · 백로의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
 <p>백로와의 장면은 토드가 연구 결과를 완전히 숨긴 채 사라지는 인물이 아니라, 선주 내부 인물 앞에서도 정체가 흔들리는 상태가 되었음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 백로의 언급 · 백로의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p>대호와 지형사는 토드 사건의 처벌 가능성을 드러내며, 토드를 신고하는 선택은 그의 연구가 단순한 학술 조사를 넘어 선주의 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>와 충돌하는 사건임을 분명히 한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 대호의 언급 · 대호의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
+<p>대호와 지형사는 토드 사건의 처벌 가능성을 드러내며, 토드를 신고하는 선택은 그의 연구가 단순한 학술 조사를 넘어 선주의 질서와 충돌하는 사건임을 분명히 한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 대호의 언급 · 대호의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
 <h2 id="선주-지식에-손댄-외부-학자">선주 지식에 손댄 외부 학자</h2>
 <p>토드는 토론과 기록을 앞세우는 학자지만, 실제 행동은 선주의 오래된 흔적을 모으고 그 결과를 자기 몸의 변화로 끌고 가는 쪽에 가깝다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
 <p>그는 개척자에게 보수와 명예를 제시해 연구 협력자로 끌어들이지만, 연구의 위험과 결과를 끝까지 투명하게 공유하지는 않는다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>

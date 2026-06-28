@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -528,7 +548,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>**누리망, 멈춰 줘서 고마워**는 전서의 석판에 적혀 있던 메시지이자, 서적으로 분류되는 항목이다.<sup class="cite-ref" title="공식 HoYoWiki · 누리망, 멈춰 줘서 고마워"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 공식 명칭은 “누리망, 멈춰 줘서 고마워”이며, 해당 메시지는 동기가 불순해 보인다는 설명과 함께 작성자가 이미 삭제된 상태로 남아 있다.<sup class="cite-ref" title="공식 HoYoWiki · 누리망, 멈춰 줘서 고마워"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>누리망, 멈춰 줘서 고마워의 중심에는 오크마에서 쓰이는 지역 통신망인 누리망이 있다.<sup class="cite-ref" title="게임 본편 · 입담 좋은 시민의 언급 · 블레이드의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 오크마 시민은 석판을 통해 누리망 접속 방법을 안내받을 수 있고, 메시지 전송 실패 알림은 누리망이 오크마 구역 안에서만 작동한다는 한계를 드러낸다.<sup class="cite-ref" title="게임 본편 · 입담 좋은 시민의 언급 · 블레이드의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>제목은 농담처럼 보이지만, 작중 누리망은 멈추거나 느려졌을 때 도시의 판단, 연락, 전선 운영까지 흔드는 기반 시설이다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 누리망은 경기 중계, 구독, 인기, <a class="wiki-link" href="path-80.html" title="지식">지식</a> 탐색, 정보 전달을 한데 묶으며, 오크마 사람들이 서로를 보고 듣고 평가하는 일상의 무대가 된다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>제목은 농담처럼 보이지만, 작중 누리망은 멈추거나 느려졌을 때 도시의 판단, 연락, 전선 운영까지 흔드는 기반 시설이다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 누리망은 경기 중계, 구독, 인기, 지식 탐색, 정보 전달을 한데 묶으며, 오크마 사람들이 서로를 보고 듣고 평가하는 일상의 무대가 된다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>누리망은 오크마의 방송망으로 작동한다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 티모스는 자신의 라이브 방송에 시청자를 맞이하며, 이번 경기가 누리망에서 라이브로 진행된다고 알린다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 이 장면에서 누리망은 사적인 연락 수단을 넘어 공개 경기와 관객을 이어 주는 매체로 자리 잡는다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>누리망은 유명세와 구독 문화도 만든다.<sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <a class="wiki-link" href="char-3688.html" title="히아킨">히아킨</a>은 회색둥이가 누리망에서 인기가 많다고 말하며 자신도 구독해 달라고 요청하고, <a class="wiki-link" href="char-3322.html" title="트리비">트리비</a>는 카이가 누리망에서 사실 엄청난 인기를 얻고 있다고 귀띔한다.<sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 누리망 안에서 인물의 평판은 소문으로 끝나지 않고, 구독과 팬 반응처럼 반복되는 공개 관심으로 굳어진다.<sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
@@ -542,7 +562,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="작중-위상">작중 위상</h2>
 <p>누리망은 오크마의 일상과 군사 운영을 동시에 받치는 정보 기반 시설이다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 라테나는 오크마의 누리망이 느려져 진실을 분별하기 어려워졌고, 곳곳이 싸움처럼 혼란스러우며 절벽 위에는 이상한 허영이 나타난다고 말한다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 누리망 장애는 단순한 통신 지연이 아니라, 시민이 무엇을 사실로 받아들일지 판단하는 능력까지 흔든다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>전선에서도 누리망의 붕괴는 큰 손실로 이어진다.<sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 크라테로스는 “금실을 짜는 자”가 세상을 떠나고 누리망이 붕괴하면서 전선 간 정보 전달이 상당히 지체되고, 그것이 전투에 큰 문제를 일으키고 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 누리망은 전투력 자체를 뜻하지는 않지만, 전투 현장이 서로의 상황을 늦게 알게 만들 만큼 중요한 군사적 연결망이다.<sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>누리망의 성능 저하는 특정 직책의 상실과도 연결된다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <a class="wiki-link" href="char-3691.html" title="사이퍼">사이퍼</a>는 재봉녀의 신의 직책이 사라진 뒤 누리망 속도가 5S에서 2S로 떨어졌다고 말한다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 이 언급은 누리망의 품질이 신의 직책이나 금실을 다루는 존재와 무관하지 않으며, 오크마의 통신망이 종교적·기술적 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>의 변동에 영향을 받는다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>누리망의 성능 저하는 특정 직책의 상실과도 연결된다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <a class="wiki-link" href="char-3691.html" title="사이퍼">사이퍼</a>는 재봉녀의 신의 직책이 사라진 뒤 누리망 속도가 5S에서 2S로 떨어졌다고 말한다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 이 언급은 누리망의 품질이 신의 직책이나 금실을 다루는 존재와 무관하지 않으며, 오크마의 통신망이 종교적·기술적 질서의 변동에 영향을 받는다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>카이사르와 아글라이아는 누리망의 설치와 유지 쪽에서 연결된다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 카이사르의 부탁은 미궁에 금실을 설치하는 계기가 되고, 아글라이아는 이후 누리망을 계속 보수해야 한다고 말한다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 이 관계는 누리망이 도시 전체가 쓰는 공공망처럼 보이면서도, 실제 작동에는 구체적인 부탁과 기술자의 손길이 필요하다는 점을 드러낸다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
 <p>재봉녀의 신의 직책과 “금실을 짜는 자”는 누리망의 안정성을 흔드는 핵심 축이다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 재봉녀의 신의 직책이 사라진 뒤 속도 저하가 일어나고, 금실을 짜는 자의 죽음 뒤에는 누리망 붕괴와 전선 정보 지체가 따라온다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 누리망은 편리한 통신 서비스처럼 쓰이지만, 그 바닥에는 금실을 짜고 유지하는 존재들의 부재가 곧장 드러나는 취약한 구조가 있다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
@@ -577,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 우주론·법칙</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>개념</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>

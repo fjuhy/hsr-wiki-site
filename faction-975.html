@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -526,7 +546,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-penacony.html">페나코니 세력</a><span>미의 기사단 - 미</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%AF%B8%EC%9D%98+%EA%B8%B0%EC%82%AC%EB%8B%A8+-+%EB%AF%B8&amp;page_slug=faction-975">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>미의 기사단 - 미</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">페나코니 세력</span><span class="badge">세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>미의 기사단은 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a> 「미(美)」에 속한 <a class="wiki-link" href="factions.html" title="파벌">파벌</a>이며, 「미(美)」 이드릴라를 중심으로 움직이는 기사 집단이다. 이들은 이드릴라의 수많은 추종자 가운데서도 고전미를 가장 숭상하는 이들이 모여 결성했다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>미의 기사단은 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a> 「미(美)」에 속한 파벌이며, 「미(美)」 이드릴라를 중심으로 움직이는 기사 집단이다. 이들은 이드릴라의 수많은 추종자 가운데서도 고전미를 가장 숭상하는 이들이 모여 결성했다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>미의 기사단에게 아름다움은 취향이 아니라 충성과 수련의 기준이다. 미의 기사는 완벽하고 흠잡을 데 없는 육체와 지혜와 정신을 단련해야 이드릴라의 숭배자라 자처할 수 있다고 믿는다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>이드릴라가 사라진 뒤에도 이 기사단의 설정은 끝나지 않는다. <a class="wiki-link" href="kafka.html" title="카프카">카프카</a>는 미의 이드릴라를 지금은 사라지고 주인 없는 운명의 길만 남긴 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a> 중 하나로 언급하지만, 미의 기사단은 이드릴라의 추락을 믿지 않고 여전히 우주를 누빈다. 그래서 미의 기사단은 “신이 현존해서 명령하는 군단”이라기보다, 사라진 아름다움을 각자의 기사도와 결투와 구원 행위로 계속 증명하려는 사람들에 가깝다. <sup class="cite-ref" title="게임 본편 — 카프카 대사 · 사라진 에이언즈 이드릴라"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
@@ -535,7 +555,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>아젠티는 작중에서 미의 기사단을 현재형으로 움직이는 대표 사례다. 그는 자신을 미의 기사단에서 왔으며 세상의 추악한 것들을 없애고자 은하를 누비는 기사라고 소개하고, 번식으로 오염된 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>에서도 미의 이름을 관철하며 앞길을 정화하겠다고 말한다. 이 대사는 미의 기사단이 단순한 배경 파벌이 아니라, 오염과 추악함을 만났을 때 직접 개입하는 유랑 기사 집단임을 보여 준다. <sup class="cite-ref" title="게임 본편 — 페나코니 대사 · 페나코니 꿈세계에 나타난 미의 기사 아젠티"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>미의 기사단은 뛰어난 실력을 가진 전사들로 여겨진다. 그러나 은하계의 여러 파벌은 이들을 중요한 세력으로 인정하지 않고 깔본다. 그들은 미의 기사들을 오직 숭배만 하고 신앙은 없는 전사, 곧 우주의 산병에 가까운 존재로 본다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>이 평가는 미의 기사단의 강점과 한계를 함께 드러낸다. 개인의 기량과 엄격한 자기 단련은 인정받지만, 은하의 다른 파벌들이 중시하는 조직적 영향력이나 정치적 무게는 충분히 확보하지 못한 집단으로 취급된다. 그래서 미의 기사단은 강한 전사들의 기사단이면서도, 은하 <a class="wiki-link" href="path-2358.html" title="질서">질서</a> 안에서는 주변부로 밀려나는 이상주의 집단에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>이 평가는 미의 기사단의 강점과 한계를 함께 드러낸다. 개인의 기량과 엄격한 자기 단련은 인정받지만, 은하의 다른 파벌들이 중시하는 조직적 영향력이나 정치적 무게는 충분히 확보하지 못한 집단으로 취급된다. 그래서 미의 기사단은 강한 전사들의 기사단이면서도, 은하 질서 안에서는 주변부로 밀려나는 이상주의 집단에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>아젠티의 대사는 기사단의 위상이 단순 전투력보다 가치 판단에 있음을 보여 준다. 그는 결투 대리인으로 싸울 때 이드릴라 앞에서 기사도 정신에 따라 싸우겠다고 선서하고, <a class="wiki-link" href="char-801.html" title="루카">루카</a>가 자신은 참패했으니 아름답지 않았다고 말하자 이드릴라의 가르침에는 승자가 패자보다 아름답다는 말이 없다고 답한다. 미의 기사단에게 아름다움은 승패표가 아니라, 어떤 태도로 싸우고 어떤 의지를 지키는가에 가까운 기준이다. <sup class="cite-ref" title="게임 본편 — 선주 연무 의식 대사 · 아젠티의 결투 대리와 기사도 선서"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 연무 의식 대사 · 승패보다 아름다움을 인정하는 아젠티"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>이드릴라는 미의 기사단의 신앙과 활동을 묶는 중심이다. 미의 기사단은 이드릴라의 추종자들 가운데 고전미를 숭상하는 이들이 결성했으며, 우주를 누비며 이드릴라의 이름을 칭송한다. 아젠티에게 이드릴라는 단순한 옛 이름이 아니라 자신들의 신앙이자 운명의 길의 갈망이며, 이성이 부정하더라도 그 행적이 앞길로 이어지기를 바라는 대상이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 아젠티 임무 대사 · 이드릴라를 신앙이자 운명의 길의 갈망으로 보는 아젠티"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>란돌프</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%9E%80%EB%8F%8C%ED%94%84&amp;page_slug=npc-3054">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>란돌프</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>란돌프</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%9E%80%EB%8F%8C%ED%94%84&amp;page_slug=npc-3054">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>란돌프</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/15/11771384/31e0e2be6f8f5487664bda5d92c525d1_503638318872755668.png" alt="란돌프 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>란돌프는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에서 온 견습 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a> 치료사이며, <a class="wiki-link" href="npc-2015.html" title="Dr. 에드워드">Dr. 에드워드</a> 밑에서 가르침을 받고 있다. 공식 정보에서도 이름은 란돌프, 설명은 견습 치료사로 정리된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 란돌프"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>소속은 선주 「<a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>」로 잡혀 있지만, 본인은 페나코니에서 왔고 꿈세계 치료사 수련을 받고 있다고 소개한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 란돌프의 언급 · 란돌프의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그래서 란돌프는 페나코니의 꿈세계 치료와 선주 「나부」의 사건을 잇는 견습 실무자에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 란돌프의 언급 · 란돌프의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
@@ -537,7 +557,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>Dr. 에드워드는 란돌프의 수련 배경을 규정하는 인물이다. 란돌프가 Dr. 에드워드 밑에서 배우고 있다는 점은, 그가 아직 독립한 치료사가 아니라 스승의 체계 안에서 성장하는 견습자임을 보여준다.<sup class="cite-ref" title="게임 본편 · 란돌프의 언급 · 란돌프의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>페나코니는 란돌프가 온 곳이자 꿈세계 치료사라는 정체성을 설명하는 배경이다. 선주 「나부」는 그의 공식 소속 정보로 연결되며, 이 조합은 란돌프가 페나코니의 직업적 배경을 가지고 선주 「나부」의 사건에 관여하는 인물임을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 란돌프의 언급 · 란돌프의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>「일회용 <a class="wiki-link" href="path-2359.html" title="기억">기억</a> 물질 촬영 계획」은 란돌프를 기록과 관찰의 사건 속에 놓는다. 휴대폰 사진과 영상, 그리고 평범한 거리 풍경 속에서 발견되는 위화감은 란돌프가 제공하는 단서의 성격을 압축한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>「일회용 기억 물질 촬영 계획」은 란돌프를 기록과 관찰의 사건 속에 놓는다. 휴대폰 사진과 영상, 그리고 평범한 거리 풍경 속에서 발견되는 위화감은 란돌프가 제공하는 단서의 성격을 압축한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="견습-치료사의-기록과-관찰">견습 치료사의 기록과 관찰</h2>
 <p>란돌프의 핵심은 아직 미숙하지만 사건을 보는 방식이 전문 영역에 닿아 있다는 점이다.<sup class="cite-ref" title="공식 HoYoWiki · 란돌프"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 란돌프의 언급 · 란돌프의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그는 자기소개에서 이름, 출신, 스승, 현재 목표를 밝히며, 견습이라는 상태를 숨기기보다 벗어나야 할 단계로 받아들인다.<sup class="cite-ref" title="게임 본편 · 란돌프의 언급 · 란돌프의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>그가 보여주는 사진과 영상은 평범한 현실의 표면을 다시 의심하게 만든다. 거리 풍경과 인파는 처음에는 특별하지 않지만, 그 안에서 익숙하면서도 어긋난 물체가 발견되면서 장면의 의미가 바뀐다. 란돌프는 결론을 대신 내려주는 해결자라기보다, 기록 속에 남은 작은 어긋남을 통해 사건의 방향을 바꾸는 견습 치료사다.<sup class="cite-ref" title="게임 본편 · 란돌프의 언급 · 란돌프의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3054?lang=ko-kr">원문</a></span><div class="ref-quote">란돌프</div></li>

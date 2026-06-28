@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -530,7 +550,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>카프카를 이해할 때 중요한 점은 그녀가 단순한 추적 대상이나 전투원이 아니라는 것이다. <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>의 수배 파일은 그녀에 대해 이름과 코트 수집 취미 정도밖에 알지 못한다고 하면서도, 엘리오가 가장 신뢰하는 멤버 중 하나라고 적는다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그래서 카프카의 등장은 대개 개인의 취향과 여유로운 말투 뒤에, 엘리오가 계산한 큰 사건이 움직이고 있음을 알리는 신호처럼 작동한다.</p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>카프카의 첫 역할은 개척자의 출발점과 직접 연결된다. 공식 설명은 그녀가 언령술을 사용해 개척자가 스텔라론을 받아들이도록 일을 꾸몄다고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki · 카프카 공식 설명"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 이 설정 때문에 카프카는 개척자에게 단순한 적도, 단순한 조력자도 아니다. 그녀는 개척자의 탄생과 여정의 방향에 손을 댄 인물이며, 이후에도 중요한 장면마다 “왜 이런 일이 지금 일어나는가”라는 질문을 엘리오의 각본 쪽으로 돌려놓는다.</p>
-<p>수배 기록 속 카프카는 여러 지역과 사건을 가로지른다. 기록은 그녀를 프테루게스-V 뉴바빌론 출신의 인간 여성, 스텔라론 헌터의 핵심 멤버, 운명의 노예의 조수로 적고, 피어포인트 침입과 절도, 여러 스텔라론 사건, 해킹 공격, 예페라 반란 사건 등을 혐의로 열거한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 1"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 긴 목록은 카프카가 한 행성의 사건에 묶인 인물이 아니라, 스텔라론 헌터의 목적에 따라 은하 곳곳의 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>를 흔드는 실행자라는 점을 보여 준다.</p>
+<p>수배 기록 속 카프카는 여러 지역과 사건을 가로지른다. 기록은 그녀를 프테루게스-V 뉴바빌론 출신의 인간 여성, 스텔라론 헌터의 핵심 멤버, 운명의 노예의 조수로 적고, 피어포인트 침입과 절도, 여러 스텔라론 사건, 해킹 공격, 예페라 반란 사건 등을 혐의로 열거한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 1"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 긴 목록은 카프카가 한 행성의 사건에 묶인 인물이 아니라, 스텔라론 헌터의 목적에 따라 은하 곳곳의 질서를 흔드는 실행자라는 점을 보여 준다.</p>
 <p><a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 나부</a>에서도 카프카는 사건의 배후 인물로 직접 추적된다. 공식 이야기는 나부의 고발 기록이 그녀를 여러 비자연적 재난의 연루자로 보고 도주 중인 용의자로 기록한다고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 2"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 게임 본편에서 <a class="wiki-link" href="char-804.html" title="부현">부현</a>은 궁관진에서 카프카가 엘리오에게서 예언을 받는 모습을 봤고, 엘리오가 나부의 가능성들을 예견했다고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 부현: 궁관진에서 본 예언 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 나부 편에서 카프카의 역할은 “도망치는 범죄자”로만 끝나지 않는다. 그녀는 체포와 심문까지 포함한 사건의 흐름을 엘리오의 예언과 연결해, 나부가 다른 위협을 마주하도록 판을 옮기는 인물이다.</p>
 <h2 id="언령술과-각본">언령술과 각본</h2>
 <p>카프카의 대표 능력은 언령술이다. 공식 이야기는 뉴바빌론의 기록을 통해, 카프카가 언령술로 상대에게 최면을 걸 수 있다고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <a class="wiki-link" href="char-2494.html" title="반디">반디</a>도 카프카의 언령술이 있는 한 자신의 인식이 조작될 리 없다고 생각한다. <sup class="cite-ref" title="게임 본편 — 대사 · 반디: 언령술과 인식 조작 · 임무 「부드러움이라는 이름의 밤」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 두 기록을 함께 보면 언령술은 분위기 연출용 말투가 아니라, 인물의 판단과 몸 상태에 실제로 개입하는 능력으로 취급된다.</p>
@@ -574,7 +594,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 스텔라론 헌터</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 게임 본편 — 대사, 게임 본편 — 임무 설명, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 스텔라론 헌터</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>

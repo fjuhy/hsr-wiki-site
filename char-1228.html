@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>링스</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A7%81%EC%8A%A4&amp;page_slug=char-1228">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>링스</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>링스</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A7%81%EC%8A%A4&amp;page_slug=char-1228">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>링스</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/18/23901508/d87ac9fe7112cd292c2c7711551cce97_5283391527475890147.png" alt="링스 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>링스는 벨로보그의 설원 조사대원이자 랜도 가문의 막내딸로, 홀로 설원 깊은 곳을 탐험하는 극지 탐험가다.<sup class="cite-ref" title="공식 HoYoWiki · 링스"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 나른하고 담담해 보이지만 실제로는 한 번 정한 일을 밀어붙이는 추진력이 강하며, 불필요한 사교를 피하려는 태도 때문에 쉽게 다가가기 어려운 분위기를 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>그녀가 설원으로 나가는 이유는 거창한 사명보다 단순한 호기심에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 어린 시절 링스는 한파 전 세계의 풍경, 오로라, 설원 깊은 곳에 남은 답을 교실에서 듣기만 했고, 직접 보러 가면 의문이 풀린다고 생각했다. 이 태도는 랜도 가문의 “하고 싶으면 해라”라는 생활 방식과 맞물려, 링스를 도시 안의 설명에 만족하지 않는 인물로 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
@@ -532,7 +552,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>링스는 벨로보그 바깥의 설원을 실제로 오가며 도시가 잃어버린 과거와 현재를 이어 주는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 눈보라는 벨로보그 밖의 세계와 구세계의 역사를 묻었지만, 링스는 설원에 가면 그 역사를 다시 드러낼 수 있다고 여긴다. 그래서 그녀의 탐험은 단순한 취미가 아니라, 성벽 안에서는 알 수 없는 지리와 유적, 표본과 기록을 도시 안으로 가져오는 행동이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <p>한파가 사라진 뒤 링스는 고대 도시 마스레니차 유적지를 계속 조사했고, 그곳에서 공동묘지와 떨어진 묘지를 발견했다. <a class="wiki-link" href="char-801.html" title="루카">루카</a>는 링스가 그 묘지를 이고르의 의관을 묻은 무덤으로 본다고 알고 있으며, 링스는 보석 펜던트를 통해 이고르가 야릴로-Ⅵ에 돌아오기 전 겪은 일을 알아보려 했다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 사건에서 링스는 유물을 발견하는 사람에 그치지 않고, 유물의 주인과 남겨진 사람 사이의 의미를 정리해 주는 조사자 역할을 맡는다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
 <p><a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 나부</a>에서의 일도 링스의 역할을 잘 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 링스는 귀한 골동품을 가져와 복구 가능성을 묻고, 일부 자료가 복구된 뒤에도 옥조의 주인이 루카의 롤 모델이라는 이유로 루카에게 가장 먼저 보여주려 했다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그녀는 자료의 가치만 따지는 인물이 아니라, 발견한 기록이 누구에게 먼저 닿아야 하는지를 생각하는 인물이다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p><a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 젊은 세대가 더 넓은 세상을 체험하기를 바라며 링스와 <a class="wiki-link" href="char-22.html" title="후크">후크</a>도 여행에 동행할 수 있게 했고, 은하 문명과 소통한 경험이 없다는 점 때문에 <a class="wiki-link" href="npc-803.html" title="스바로그">스바로그</a>도 <a class="wiki-link" href="path-80.html" title="지식">지식</a> 멘토로 함께했다. 이 배치는 링스를 벨로보그 내부 인물에서 은하 문명과 접촉하는 세대의 일원으로 옮긴다. 링스는 성벽 밖의 설원뿐 아니라 벨로보그 바깥의 더 큰 세계를 배우는 위치에 서며, 그녀의 탐사 욕구는 행성 내부의 유적 조사에서 은하적 경험으로 확장된다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p><a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 젊은 세대가 더 넓은 세상을 체험하기를 바라며 링스와 <a class="wiki-link" href="char-22.html" title="후크">후크</a>도 여행에 동행할 수 있게 했고, 은하 문명과 소통한 경험이 없다는 점 때문에 <a class="wiki-link" href="npc-803.html" title="스바로그">스바로그</a>도 지식 멘토로 함께했다. 이 배치는 링스를 벨로보그 내부 인물에서 은하 문명과 접촉하는 세대의 일원으로 옮긴다. 링스는 성벽 밖의 설원뿐 아니라 벨로보그 바깥의 더 큰 세계를 배우는 위치에 서며, 그녀의 탐사 욕구는 행성 내부의 유적 조사에서 은하적 경험으로 확장된다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>벨로보그에서 링스의 위상은 “랜도 가문의 막내”와 “최고의 극지 탐험가”라는 두 축으로 세워진다.<sup class="cite-ref" title="공식 HoYoWiki · 링스"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 가족 안에서는 보호받는 막내이지만, 설원에서는 준비되지 않은 사람이 오히려 걱정해야 할 대상이라고 말할 만큼 자기 능력을 신뢰한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•단독 모험"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> <a class="wiki-link" href="char-17.html" title="게파드">게파드</a>는 설원의 추위와 괴물을 걱정하지만, 링스는 옷과 난로를 챙겼고 순찰대를 따라 설원에 간 경험도 있다고 답한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
 <p><a class="wiki-link" href="char-16.html" title="서벌">서벌</a>은 링스가 혼자 탐험할 때 조심하라고 하면서도, 아이스바일과 스노보드, 물병과 어깨 밴드 같은 장비를 챙겨 준다. 이 장면은 랜도 가문의 걱정이 링스를 막는 방식이 아니라 장비와 준비를 보태는 방식으로 작동한다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 링스에게 위험은 포기의 이유가 아니라 방한 준비와 생존 훈련으로 줄여야 할 문제다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>

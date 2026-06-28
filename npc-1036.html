@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,10 +544,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>피도라</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%94%BC%EB%8F%84%EB%9D%BC&amp;page_slug=npc-1036">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>피도라</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>피도라</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%94%BC%EB%8F%84%EB%9D%BC&amp;page_slug=npc-1036">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>피도라</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/22/11771384/134fd7ed656f320b2d5224cd1d74cc82_8960757725831523762.png" alt="피도라 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>피도라는 벨로보그에 소속된 아마추어 엔지니어 NPC다.<sup class="cite-ref" title="공식 HoYoWiki · 피도라"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <a class="wiki-link" href="trailblaze.html" title="개척">개척</a> 임무 「동트는 태양 아래 - 시간은 기다려주지 않아, 친구」와 일일 임무 「두더지 행동」에 관련된 인물로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>피도라는 자신을 전 벨로보그 역사문화박물관의 자원봉사 안내원이라고 소개하며, 기계와 관련된 <a class="wiki-link" href="path-80.html" title="지식">지식</a>이 필요하면 언제든 자신에게 물어보라고 말한다. 이 소개는 피도라가 기계를 만드는 사람인 동시에, 기계 지식을 다른 사람에게 설명하고 안내하는 쪽에도 가까운 인물임을 보여준다.<sup class="cite-ref" title="게임 본편 · 피도라의 언급 · 피도라의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>피도라는 벨로보그에 소속된 아마추어 엔지니어 NPC다.<sup class="cite-ref" title="공식 HoYoWiki · 피도라"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 개척 임무 「동트는 태양 아래 - 시간은 기다려주지 않아, 친구」와 일일 임무 「두더지 행동」에 관련된 인물로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>피도라는 자신을 전 벨로보그 역사문화박물관의 자원봉사 안내원이라고 소개하며, 기계와 관련된 지식이 필요하면 언제든 자신에게 물어보라고 말한다. 이 소개는 피도라가 기계를 만드는 사람인 동시에, 기계 지식을 다른 사람에게 설명하고 안내하는 쪽에도 가까운 인물임을 보여준다.<sup class="cite-ref" title="게임 본편 · 피도라의 언급 · 피도라의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>피도라의 핵심은 거대한 병기나 권력보다 생활형 기계 제작에 있다.<sup class="cite-ref" title="공식 HoYoWiki · 피도라"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 피도라의 로봇의 언급 · 피도라의 로봇의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 경매장 직원의 언급 · 경매장 직원의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 피도라가 만든 로봇은 자신을 피도라의 「교감」 로봇이라고 소개하고, 사람과 대화하며 상황에 맞는 반응을 배우려 한다.<sup class="cite-ref" title="게임 본편 · 피도라의 로봇의 언급 · 피도라의 로봇의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 피도라의 로봇의 언급 · 피도라의 로봇의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>피도라는 벨로보그의 일상권 안에서 기계 지식을 다루는 민간 기술자에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki · 피도라"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 피도라의 언급 · 피도라의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 박물관 자원봉사 안내원 이력과 기계 지식 상담 제안은, 피도라의 기술이 개인 작업대에만 머물지 않고 사람들에게 설명되는 지식으로도 쓰였음을 보여준다.<sup class="cite-ref" title="게임 본편 · 피도라의 언급 · 피도라의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -526,8 +546,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-path.html">운명의 길 파벌</a><span>장례식 안내원 - 종말</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%9E%A5%EB%A1%80%EC%8B%9D+%EC%95%88%EB%82%B4%EC%9B%90+-+%EC%A2%85%EB%A7%90&amp;page_slug=faction-1209">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>장례식 안내원 - 종말</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">운명의 길 파벌</span><span class="badge">세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>장례식 안내원은 「<a class="wiki-link" href="path-2360.html" title="종말">종말</a>」의 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>에 속한 <a class="wiki-link" href="factions.html" title="파벌">파벌</a>이며, 기본 명칭은 “장례식장 안내원”이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이들은 우주 곳곳에 흩어져 있는 테르미누스의 신도들로, 많은 이들이 외면하는 우주의 종결을 삶의 전제로 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>장례식 안내원에게 종말은 단순한 공포가 아니라 남은 시간을 의식하게 만드는 기준이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <a class="wiki-link" href="npc-2673.html" title="애가">애가</a>의 인사말도 “마지막”을 완전한 단절로만 보지 않고, 우주의 보이지 않는 종점에서 <a class="wiki-link" href="npc-1158.html" title="만물">만물</a>이 다시 만난다는 믿음으로 잇는다.<sup class="cite-ref" title="공식 HoYoWiki · 장례식 안내원 - 종말"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>장례식 안내원은 「종말」의 운명의 길에 속한 파벌이며, 기본 명칭은 “장례식장 안내원”이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이들은 우주 곳곳에 흩어져 있는 테르미누스의 신도들로, 많은 이들이 외면하는 우주의 종결을 삶의 전제로 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>장례식 안내원에게 종말은 단순한 공포가 아니라 남은 시간을 의식하게 만드는 기준이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <a class="wiki-link" href="npc-2673.html" title="애가">애가</a>의 인사말도 “마지막”을 완전한 단절로만 보지 않고, 우주의 보이지 않는 종점에서 만물이 다시 만난다는 믿음으로 잇는다.<sup class="cite-ref" title="공식 HoYoWiki · 장례식 안내원 - 종말"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>장례식 안내원은 사람들이 입 밖에 내기조차 꺼리는 「종말」을 계속 바라보는 집단이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 사람들은 테르미누스와 그가 상징하는 우주의 종결에서 눈을 돌리지만, 장례식 안내원은 그 침묵을 따르지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>이들은 종말의 날로부터 달아나는 이들과 반대로 역행한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그 움직임은 종말을 피하는 길이 아니라, 종말을 향해 걸어가며 그 광경을 직접 보려는 신앙의 표현이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그래서 장례식 안내원은 우주를 구하는 조직이라기보다, 우주가 끝난다는 사실을 현재의 삶 한가운데로 끌어오는 증언자에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -526,7 +546,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-path.html">운명의 길 파벌</a><span>무명객 - 개척</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%AC%B4%EB%AA%85%EA%B0%9D+-+%EA%B0%9C%EC%B2%99&amp;page_slug=faction-962">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>무명객 - 개척</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">운명의 길 파벌</span><span class="badge">세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>무명객은 「<a class="wiki-link" href="trailblaze.html" title="개척">개척</a>」의 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>에 속한 <a class="wiki-link" href="factions.html" title="파벌">파벌</a>이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이들은 한 세계에 정착한 조직이라기보다, 여러 세계에 발을 들였다가 다시 떠나는 신비한 여행자들로 기억된다.<sup class="cite-ref" title="공식 HoYoWiki · 무명객 - 개척"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>무명객은 「개척」의 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>에 속한 파벌이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이들은 한 세계에 정착한 조직이라기보다, 여러 세계에 발을 들였다가 다시 떠나는 신비한 여행자들로 기억된다.<sup class="cite-ref" title="공식 HoYoWiki · 무명객 - 개척"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>무명객의 정체성은 이름을 남기는 데 있지 않고 길을 따라 움직이는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki · 무명객 - 개척"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그들은 <a class="wiki-link" href="akivili.html" title="⌈ 개척 ⌋ 아키비리">아키비리</a>가 만든 열차에 올라 은빛 궤도로 이어진 별들을 누비며, 미지의 세계를 향한 탐사를 계속하는 집단이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>무명객의 기원은 천 년 전 아키비리가 별바다에 은빛 궤도를 놓아 세계들을 연결한 일에서 시작된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 아키비리는 각계를 활보하며 우주와 탐사에 관한 전설을 남겼고, 그 전설은 용감하고 호기심 많은 사람들을 은하 탐사의 길로 이끌었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>

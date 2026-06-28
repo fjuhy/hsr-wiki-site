@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>수미</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%88%98%EB%AF%B8&amp;page_slug=npc-1157">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>수미</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>수미</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%88%98%EB%AF%B8&amp;page_slug=npc-1157">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>수미</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/05/11771384/e663a5de26a0d8cac76376f616270c04_7810689692649717783.png" alt="수미 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진 1</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>수미는 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 소속 NPC로, 장낙천 맹호 격투장의 코치이자 사범으로 소개된다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 수미"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>맹호 격투장은 화외지민에게 개방된 격투장이고, 수미는 그곳의 사범들이 나부의 일류 실력자이며 긴 수명과 풍부한 경력을 지녔다고 설명한다. <sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그는 학생들이 백 년의 수명을 가지게 되는 등 효과를 보였다고 말하며, 격투장을 단순한 수련장이 아니라 나부식 장수와 무예의 권위를 함께 내세우는 장소로 소개한다. <sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
@@ -537,7 +557,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>맹호 격투장은 수미를 이해하는 핵심 배경이다. <sup class="cite-ref" title="공식 HoYoWiki · 수미"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 수미는 이 장소를 화외지민에게 열린 수련 공간으로 소개하고, 나부 출신 사범들의 긴 수명과 경력을 신뢰의 근거로 삼는다. <sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>「맹호 격투장 모집 광고」는 수미가 격투장의 모집·홍보 흐름과 이어져 있음을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 서적"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 수미의 대사와 이 관련 서적을 함께 보면, 맹호 격투장은 외부인에게 나부식 수련의 효과를 약속하는 장소이고 수미는 그 약속을 말로 전달하는 인물이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 서적"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p><a class="wiki-link" href="char-16.html" title="서벌">서벌</a>, <a class="wiki-link" href="char-3885.html" title="히실렌스">히실렌스</a>, <a class="wiki-link" href="char-4003.html" title="키레네">키레네</a> 관련 공식 영상 자막에는 “수미상관”이라는 표현이 등장한다. <sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 히실렌스의 언급 · 히실렌스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 은하탐구생활——「키레네: 미래를 위해 남겨둔 빈 시편」|〈붕괴: 스타레일〉"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 은하탐구생활——「키레네: 미래를 위해 남겨둔 빈 시편」|〈붕괴: 스타레일〉"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 이 언급들은 수미라는 인물의 관계망이나 행적을 넓히는 자료라기보다, 같은 음절을 포함한 표현이 별개의 맥락에서 쓰인 사례로 다루는 편이 안전하다. <sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 히실렌스의 언급 · 히실렌스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 은하탐구생활——「키레네: 미래를 위해 남겨둔 빈 시편」|〈붕괴: 스타레일〉"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 은하탐구생활——「키레네: 미래를 위해 남겨둔 빈 시편」|〈붕괴: 스타레일〉"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>서벌, 히실렌스, 키레네 관련 공식 영상 자막에는 “수미상관”이라는 표현이 등장한다. <sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 히실렌스의 언급 · 히실렌스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 은하탐구생활——「키레네: 미래를 위해 남겨둔 빈 시편」|〈붕괴: 스타레일〉"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 은하탐구생활——「키레네: 미래를 위해 남겨둔 빈 시편」|〈붕괴: 스타레일〉"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 이 언급들은 수미라는 인물의 관계망이나 행적을 넓히는 자료라기보다, 같은 음절을 포함한 표현이 별개의 맥락에서 쓰인 사례로 다루는 편이 안전하다. <sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 히실렌스의 언급 · 히실렌스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 은하탐구생활——「키레네: 미래를 위해 남겨둔 빈 시편」|〈붕괴: 스타레일〉"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 은하탐구생활——「키레네: 미래를 위해 남겨둔 빈 시편」|〈붕괴: 스타레일〉"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <h2 id="맹호-격투장의-얼굴">맹호 격투장의 얼굴</h2>
 <p>수미는 큰 사건을 직접 움직이는 인물이라기보다, 맹호 격투장이 내세우는 약속을 작중에 보여 주는 인물이다. <sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그는 나부 일류 사범, 긴 수명, 풍부한 경력, 화외지민 대상 개방, 학생에게 나타난 효과를 한꺼번에 말하며 격투장의 매력을 정리한다. <sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>그의 말에서 맹호 격투장은 단순한 힘겨루기의 공간으로 끝나지 않는다. <sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 수미가 소개하는 격투장은 외부인이 나부의 장수와 무예 권위에 접근하는 통로처럼 보이며, 수미는 그 입구에서 신뢰와 기대를 만들어내는 코치다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 수미의 언급 · 수미의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1157?lang=ko-kr">원문</a></span><div class="ref-quote">수미</div></li>
@@ -555,7 +575,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,10 +544,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-ipc.html">스타피스 컴퍼니</a><span>10인의 스톤하트</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+10%EC%9D%B8%EC%9D%98+%EC%8A%A4%ED%86%A4%ED%95%98%ED%8A%B8&amp;page_slug=ten-stonehearts">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>10인의 스톤하트</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">스타피스 컴퍼니</span><span class="badge">하위 조직</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-ipc.html">스타피스 컴퍼니</a><span>10인의 스톤하트</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+10%EC%9D%B8%EC%9D%98+%EC%8A%A4%ED%86%A4%ED%95%98%ED%8A%B8&amp;page_slug=ten-stonehearts">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>10인의 스톤하트</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">스타피스 컴퍼니</span><span class="badge">하위 조직</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/13/190340964/3493c89391a947c478bbd6aa20164b64_3035874738578834412.png" alt="10인의 스톤하트 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>10인의 스톤하트는 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a> <a class="wiki-link" href="strategic-investment-department.html" title="전략투자부">전략투자부</a>에 속한 엘리트 팀이다. 공식 설명에서는 이들을 「불량 자산 청산 전문가」라고 부르며, <a class="wiki-link" href="path-2362.html" title="신비">신비</a>로운 부장 다이아몬드가 통솔한다고 설명한다. 이들은 우주를 누비며 만계의 암으로 인한 악성 부채를 적극적으로 청산한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>이 명칭이 중요한 이유는 전투 조직을 금융 언어로 부르기 때문이다. “스톤하트”라는 이름은 <a class="wiki-link" href="preservation.html" title="보존">보존</a>과 초석을 떠올리게 하고, “불량 자산 청산 전문가”라는 직함은 세계의 위기와 채무를 같은 장부 안에 넣는다. 이 팀은 스타피스 컴퍼니가 전투와 회계, 신앙과 투자를 어떻게 한데 묶는지 보여 준다. 그래서 10인의 스톤하트는 캐릭터 묶음이기 전에, 전략투자부가 은하의 재난을 회사 업무로 바꿔 현장에 투입하는 방식 그 자체에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>10인의 스톤하트는 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a> <a class="wiki-link" href="strategic-investment-department.html" title="전략투자부">전략투자부</a>에 속한 엘리트 팀이다. 공식 설명에서는 이들을 「불량 자산 청산 전문가」라고 부르며, 신비로운 부장 다이아몬드가 통솔한다고 설명한다. 이들은 우주를 누비며 만계의 암으로 인한 악성 부채를 적극적으로 청산한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<p>이 명칭이 중요한 이유는 전투 조직을 금융 언어로 부르기 때문이다. “스톤하트”라는 이름은 보존과 초석을 떠올리게 하고, “불량 자산 청산 전문가”라는 직함은 세계의 위기와 채무를 같은 장부 안에 넣는다. 이 팀은 스타피스 컴퍼니가 전투와 회계, 신앙과 투자를 어떻게 한데 묶는지 보여 준다. 그래서 10인의 스톤하트는 캐릭터 묶음이기 전에, 전략투자부가 은하의 재난을 회사 업무로 바꿔 현장에 투입하는 방식 그 자체에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>게임 본문에서는 10인의 스톤하트가 초석과 함께 언급된다. <a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 초석이 전략투자부의 중요 자산이며, 그 안에 보존 <a class="wiki-link" href="emanator.html" title="사도">사도</a>의 권한이 봉인되어 있고 각 청산 전문가가 하나씩 소지한다고 말한다. 이 대사는 10인의 스톤하트가 단순한 간부진이 아니라, 보존의 힘과 연결된 특수 자산을 지닌 집단임을 보여 준다. <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p><a class="wiki-link" href="char-1639.html" title="Dr. 레이시오">Dr. 레이시오</a>는 10인의 스톤하트의 단결력을 과대평가했다고 말하며, 초석은 그들의 목숨보다 중요한 물건이라고 설명한다. <a class="wiki-link" href="aventurine.html" title="어벤츄린">어벤츄린</a>은 다이아몬드와 오스왈도의 불화가 모두가 아는 사실이라고 말한다. 즉 이 집단은 강력하지만, 내부 정치와 부서 간 긴장에서도 자유롭지 않다. <sup class="cite-ref" title="게임 본편 — 대사 · Dr. 레이시오: 10인의 스톤하트와 초석 · 단항의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 어벤츄린: 다이아몬드와 오스왈도의 불화 · 어벤츄린의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
@@ -548,7 +568,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>10인의 스톤하트는 스타피스 컴퍼니의 “캐릭터 팀”으로만 보면 좁다. 이들은 컴퍼니가 세계의 재난과 채무를 어떻게 같은 문제로 다루는지 보여 주는 얼굴들이다. 한쪽에는 보존의 권한이 봉인된 초석이 있고, 다른 한쪽에는 불량 자산을 청산한다는 회계식 임무가 있다. 이 조합 때문에 스톤하트는 전투 조직, 투자 조직, 신앙 조직의 경계에 서 있는 팀처럼 보인다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>따라서 조직 설명에서는 개별 구성원의 매력보다 “왜 이런 팀이 컴퍼니 안에 필요한가”를 중심에 두는 편이 좋다. 스타피스 컴퍼니는 은하의 문제를 시장과 계약, 채무와 자산의 언어로 다룬다. 10인의 스톤하트는 그 판단이 실제 인물과 무기, 권한을 얻어 현장에 도착했을 때의 모습이다. 그래서 이 팀은 전략투자부의 성격을 가장 극적으로 보여 주는 하위 조직이다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>이 관점에서 보면 10인의 스톤하트의 위험성은 단순히 “강한 적이 많다”가 아니다. 그들은 컴퍼니가 한 세계를 부실 자산으로 판단했을 때, 그 판단을 실행 가능한 인물과 권한으로 바꾸는 장치다. 초석은 그 실행력의 상징이고, 단결력에 대한 의심은 그 장치가 완벽한 영웅 팀이 아니라 이해관계와 자산 관리 위에 서 있다는 점을 드러낸다. <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · Dr. 레이시오: 10인의 스톤하트와 초석 · 단항의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>그렇기 때문에 스톤하트 문서의 중심은 멤버 명단보다 구조여야 한다. 누가 소속되어 있는지는 중요하지만, 더 중요한 것은 왜 스타피스 컴퍼니가 이런 팀을 필요로 하는가다. 보존의 권한을 초석에 봉인하고, 그 초석을 청산 전문가에게 나누며, 그들을 악성 부채와 장기 프로젝트의 현장에 보내는 구조가 스톤하트의 핵심이다. 이 구조를 잡아야 토파즈, 어벤츄린, 제이드 같은 개별 인물의 선택도 단순한 캐릭터 행보가 아니라 컴퍼니 <a class="wiki-link" href="path-2358.html" title="질서">질서</a> 안에서 읽힌다. 그래서 스톤하트는 인물 문서들의 교차점이면서, 전략투자부의 작동 원리를 압축한 조직 문서이기도 하다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 화폐 전쟁 프로젝트 · 제이드의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">지금의 스타피스 컴퍼니는 7대 부서로 나뉜다. 어쩌면 「부서」 라는 문자적인 의미만으로 더 이상 이 범은하 기업의 놀라운 규모를 설명할 수 없을 지도 모른다. 현실의 모든 컴퍼니 부서는 수십에서 수백 개의 문명 세계를 장악하고 있으며, 그 직원은 대대로 억만 단위에 달한다. 그들의 무역 활동에 영향을 받는 사람의 수는 더 말할 것도 없다. 7대 부서는 다음과 같다: 「시장개척부」 시장개척부는 클리포트의 사명을 더 많은 은하계에 알리기 위해 힘쓰며, 새로운...</div></li>
+<p>그렇기 때문에 스톤하트 문서의 중심은 멤버 명단보다 구조여야 한다. 누가 소속되어 있는지는 중요하지만, 더 중요한 것은 왜 스타피스 컴퍼니가 이런 팀을 필요로 하는가다. 보존의 권한을 초석에 봉인하고, 그 초석을 청산 전문가에게 나누며, 그들을 악성 부채와 장기 프로젝트의 현장에 보내는 구조가 스톤하트의 핵심이다. 이 구조를 잡아야 토파즈, 어벤츄린, 제이드 같은 개별 인물의 선택도 단순한 캐릭터 행보가 아니라 컴퍼니 질서 안에서 읽힌다. 그래서 스톤하트는 인물 문서들의 교차점이면서, 전략투자부의 작동 원리를 압축한 조직 문서이기도 하다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 화폐 전쟁 프로젝트 · 제이드의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">지금의 스타피스 컴퍼니는 7대 부서로 나뉜다. 어쩌면 「부서」 라는 문자적인 의미만으로 더 이상 이 범은하 기업의 놀라운 규모를 설명할 수 없을 지도 모른다. 현실의 모든 컴퍼니 부서는 수십에서 수백 개의 문명 세계를 장악하고 있으며, 그 직원은 대대로 억만 단위에 달한다. 그들의 무역 활동에 영향을 받는 사람의 수는 더 말할 것도 없다. 7대 부서는 다음과 같다: 「시장개척부」 시장개척부는 클리포트의 사명을 더 많은 은하계에 알리기 위해 힘쓰며, 새로운...</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">선데이: 초석과 보존 사도 권한</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">「초석」은 전략투자부의 중요 자산으로 「보존」 사도의 권한이 봉인되어 있으며, 각 청산 전문가가 하나씩 소지하고 있다고 들었습니다</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">Dr. 레이시오: 10인의 스톤하트와 초석</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">단항의 인게임 대사</span></span><div class="ref-quote">설마 다른 사람의 초석을 내놓았다고 생각하는 거야? 10인의 스톤하트 단결력을 과대평가한 모양이군. 그건 그들의 목숨보다 중요한 물건이라고</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">어벤츄린: 다이아몬드와 오스왈도의 불화</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">어벤츄린의 인게임 대사</span></span><div class="ref-quote">「다이아몬드」와 오스왈도의 불화는 모두가 알고 있는 사실이죠. 그래도 여태까지는 어느 정도 대치 상태를 유지해 왔지만……</div></li>

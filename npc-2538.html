@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,12 +544,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>케이미</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%BC%80%EC%9D%B4%EB%AF%B8&amp;page_slug=npc-2538">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>케이미</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>케이미</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%BC%80%EC%9D%B4%EB%AF%B8&amp;page_slug=npc-2538">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>케이미</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/10/11771384/87c1a753af97b96320ecdc6413ea829d_9014000159418431416.png" alt="케이미 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>케이미는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a> 소속의 NPC이며, 공식 직업은 측량 전문가다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 케이미"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>그는 자신을 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a> 측량사라고 밝히고, 전공은 <a class="wiki-link" href="path-2359.html" title="기억">기억</a> 물질 역학이라고 말한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 평생의 과제를 연구하던 중이었다는 말까지 덧붙이기 때문에, 케이미는 꿈세계와 기억 물질을 현장에서 계산하고 해석하려는 연구자에 가깝다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>그는 자신을 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a> 측량사라고 밝히고, 전공은 기억 물질 역학이라고 말한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 평생의 과제를 연구하던 중이었다는 말까지 덧붙이기 때문에, 케이미는 꿈세계와 기억 물질을 현장에서 계산하고 해석하려는 연구자에 가깝다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
-<p>케이미는 페나코니의 꿈세계와 기억의 영역을 수치와 이론으로 이해하려는 인물이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <a class="wiki-link" href="char-1808.html" title="미샤">미샤</a>는 <a class="wiki-link" href="char-10.html" title="웰트">웰트</a>가 기억 물질 역학을 잘 안다는 사실에 반응하며, 웰트라면 케이미와 말이 잘 통할 것이라고 말한다. <sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 언급은 케이미의 전문 <a class="wiki-link" href="path-80.html" title="지식">지식</a>이 페나코니의 거대한 공간과 꿈세계 구조를 설명하는 데 연결되어 있음을 보여준다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>케이미는 페나코니의 꿈세계와 기억의 영역을 수치와 이론으로 이해하려는 인물이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <a class="wiki-link" href="char-1808.html" title="미샤">미샤</a>는 <a class="wiki-link" href="char-10.html" title="웰트">웰트</a>가 기억 물질 역학을 잘 안다는 사실에 반응하며, 웰트라면 케이미와 말이 잘 통할 것이라고 말한다. <sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 언급은 케이미의 전문 지식이 페나코니의 거대한 공간과 꿈세계 구조를 설명하는 데 연결되어 있음을 보여준다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>다만 케이미의 전문성은 안정적인 해답만 주는 방식으로 그려지지 않는다. <sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 미샤는 케이미가 착한 사람이지만 다른 세계에 빠져 있으며, 곧 계산이 잘못됐다는 걸 깨달을 것이라고 말한다. <sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 케이미는 꿈세계의 원리를 다루는 지식인이지만, 그 지식에 몰입한 만큼 오판의 가능성도 함께 지닌다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>케이미는 무력이나 권력으로 페나코니의 사건을 움직이는 인물이 아니라, 꿈세계와 기억 물질을 측량하고 계산하는 쪽에 놓인 인물이다. <sup class="cite-ref" title="공식 HoYoWiki · 케이미"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그의 위상은 페나코니라는 장소가 감정과 환상만으로 이루어진 공간이 아니라, 기억 물질 역학 같은 전문 지식의 대상으로도 다뤄진다는 점을 보여주는 데 있다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「와인즈버그 오하이오」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -526,15 +546,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-path.html">운명의 길 파벌</a><span>허구 역사학자 - 신비</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%97%88%EA%B5%AC+%EC%97%AD%EC%82%AC%ED%95%99%EC%9E%90+-+%EC%8B%A0%EB%B9%84&amp;page_slug=faction-974">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>허구 역사학자 - 신비</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">운명의 길 파벌</span><span class="badge">세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>허구 역사학자는 「<a class="wiki-link" href="path-2362.html" title="신비">신비</a>」의 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>에 속하는 <a class="wiki-link" href="factions.html" title="파벌">파벌</a>이며, 관련 항목으로는 「신비」 미토스가 연결된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>허구 역사학자는 「신비」의 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>에 속하는 파벌이며, 관련 항목으로는 「신비」 미토스가 연결된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>이들은 역사를 보존하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 허구 역사학자는 과거가 미래를 정한다고 믿고, 정해진 역사 때문에 세계와 문명과 국가의 가능성이 사라진다고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그래서 이들의 활동은 기록을 정리하는 일이 아니라, 현지 역사를 날조하고 혼란에 빠뜨리고 파괴하며 말살하는 일로 나타난다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>허구 역사학자 루도칸은 역사가 진실이 아니며 객관성도 지워질 수 있다고 말하고, 과거는 현재의 머릿속에서 멋대로 꾸며진다고 본다.<sup class="cite-ref" title="공식 HoYoWiki · 허구 역사학자 - 신비"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 말은 허구 역사학자가 왜 사실의 <a class="wiki-link" href="preservation.html" title="보존">보존</a>보다 사실의 붕괴를 택하는지를 보여준다.<sup class="cite-ref" title="공식 HoYoWiki · 허구 역사학자 - 신비"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>허구 역사학자 루도칸은 역사가 진실이 아니며 객관성도 지워질 수 있다고 말하고, 과거는 현재의 머릿속에서 멋대로 꾸며진다고 본다.<sup class="cite-ref" title="공식 HoYoWiki · 허구 역사학자 - 신비"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 말은 허구 역사학자가 왜 사실의 보존보다 사실의 붕괴를 택하는지를 보여준다.<sup class="cite-ref" title="공식 HoYoWiki · 허구 역사학자 - 신비"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>허구 역사학자는 혈혈단신으로 별바다에 몸을 던져 여러 행성으로 향하고, 각지의 역사를 날조·혼란·파괴·말살하는 사명을 수행한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이들은 한 우주, 한 행성, 한 문명, 한 나라의 역사가 정해져 있다면 미래도 이미 정해지고 모든 가능성은 사라진다고 믿는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>따라서 허구 역사학자에게 역사 파괴는 단순한 훼방이 아니라, 정해진 몰락에서 세계를 지키려는 방식이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이들은 「신비」를 유일한 소명으로 여기고 우주를 안갯속에 감싸려 하며, 스스로는 남들이 이해할 수 없는 숭고하고 이타적인 목적을 품고 있다고 여긴다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>허구 역사학자는 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a>의 계시를 받은 사도라는 증거가 있는 집단으로 다루어진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 점 때문에 허구 역사학자는 단순한 역사 왜곡 세력이 아니라, 「신비」와 직접 맞닿은 우주적 파벌로 읽힌다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>그러나 이들의 이론은 대중에게 이해받지 못하고, 객관적 사실을 노골적으로 증오하는 태도는 극단적인 것으로 여겨진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 여러 세계는 무형문화재가 「신비」의 손에 되돌릴 수 없을 만큼 파괴되었다는 사실을 깨닫기 시작했으며, 은하계에서 허구 역사학자의 평판은 반물질 군단보다도 나쁘다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 물질을 파괴하는 적보다 우주 자체를 파괴하는 집단으로 받아들여진다는 점에서, 이들의 위협은 전투력보다 <a class="wiki-link" href="path-2359.html" title="기억">기억</a>과 역사와 세계 이해를 무너뜨리는 영향력에 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>그러나 이들의 이론은 대중에게 이해받지 못하고, 객관적 사실을 노골적으로 증오하는 태도는 극단적인 것으로 여겨진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 여러 세계는 무형문화재가 「신비」의 손에 되돌릴 수 없을 만큼 파괴되었다는 사실을 깨닫기 시작했으며, 은하계에서 허구 역사학자의 평판은 반물질 군단보다도 나쁘다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 물질을 파괴하는 적보다 우주 자체를 파괴하는 집단으로 받아들여진다는 점에서, 이들의 위협은 전투력보다 기억과 역사와 세계 이해를 무너뜨리는 영향력에 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>「신비」 미토스는 허구 역사학자가 따르는 운명의 길과 연결되는 핵심 항목이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 허구 역사학자는 세계를 안갯속에 감싸기 위해 「신비」를 소명으로 삼기 때문에, 이 파벌의 행동은 신비가 역사와 객관성의 영역에서 어떻게 드러나는지를 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>루도칸의 말은 허구 역사학자의 사상을 압축한다.<sup class="cite-ref" title="공식 HoYoWiki · 허구 역사학자 - 신비"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그는 과거를 고정된 진실로 보지 않고 현재의 머릿속에서 다시 꾸며지는 것으로 보며, 이 관점은 허구 역사학자가 역사 보존이 아니라 역사 훼손을 택하는 이유와 이어진다.<sup class="cite-ref" title="공식 HoYoWiki · 허구 역사학자 - 신비"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>

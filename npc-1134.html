@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,14 +544,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-herta-space-station.html">우주정거장 「헤르타」</a><span>안기쁨</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%88%EA%B8%B0%EC%81%A8&amp;page_slug=npc-1134">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>안기쁨</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주정거장 「헤르타」</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-herta-space-station.html">우주정거장 「헤르타」</a><span>안기쁨</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%88%EA%B8%B0%EC%81%A8&amp;page_slug=npc-1134">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>안기쁨</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주정거장 「헤르타」</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/190340964/c93a37c32d71813b467575d82e5a4b77_2008747025160633985.png" alt="안기쁨 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>안기쁨은 우주정거장 「<a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>」 소속 NPC이며, 자신을 관리과의 I급 연구원이라고 소개한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 · 안기쁨의 언급 · 안기쁨의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>안기쁨은 우주정거장 「헤르타」 소속 NPC이며, 자신을 관리과의 I급 연구원이라고 소개한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 · 안기쁨의 언급 · 안기쁨의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>그녀는 「스타라이트 전쟁의 서막」과 「반짝이는 스타라이트」에 관련된 인물로, 두 사건에서 신비한 테스트와 도전 스테이지를 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>에게 연결하는 연구원이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 이벤트"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · 연경의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · 연경의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>안기쁨은 우주정거장에서 테스트를 주관하고 개척자에게 도움을 요청하는 연구원이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · 연경의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 「반짝이는 스타라이트」에서는 새로운 동료와 함께 신비한 테스트를 진행하며, 개척자를 찾아와 도움을 부탁한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · 연경의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>그녀가 여는 테스트는 매일 새 도전 스테이지가 열리고, 각 스테이지가 「왜성」과 「초거성」 난이도로 나뉘며, 스테이지마다 캐릭터에게 버프 효과를 제공하는 고정 메커니즘을 가진다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 연경의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 구조 때문에 안기쁨은 직접 싸우는 전투원이라기보다, 전투 조건을 만들고 개척자를 그 조건 안으로 초대하는 실험 담당자에 가깝다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 연경의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>「스타라이트 전쟁의 서막」에서는 안기쁨이 급하게 개척자를 찾고, 그 일이 극비 실험과 관련되어 있으며 <a class="wiki-link" href="loc-951.html" title="헤르타">헤르타</a>와도 연관된 것으로 드러난다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이어지는 테스트는 헤르타가 직접 보증한 프로젝트이고, 헤르타가 개척자를 지명했다는 점에서 안기쁨의 일은 개인 연구가 아니라 우주정거장 핵심 인물의 승인 아래 진행되는 실험으로 보인다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 연경의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>「스타라이트 전쟁의 서막」에서는 안기쁨이 급하게 개척자를 찾고, 그 일이 극비 실험과 관련되어 있으며 헤르타와도 연관된 것으로 드러난다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이어지는 테스트는 헤르타가 직접 보증한 프로젝트이고, 헤르타가 개척자를 지명했다는 점에서 안기쁨의 일은 개인 연구가 아니라 우주정거장 핵심 인물의 승인 아래 진행되는 실험으로 보인다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 연경의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>안기쁨의 위치는 직함과 프로젝트 권한에서 드러난다. <sup class="cite-ref" title="게임 본편 · 안기쁨의 언급 · 안기쁨의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그녀는 관리과의 I급 연구원이며, 극비 실험과 헤르타가 보증한 프로젝트에 관여한다. <sup class="cite-ref" title="게임 본편 · 안기쁨의 언급 · 안기쁨의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · 연경의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>메투나는 프로젝트를 진행하는 사람이 안기쁨 선배이고, 자신은 옆에서 배우며 돕는 입장이라고 말한다. <sup class="cite-ref" title="게임 본편 · 메투나의 언급 · 메투나의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 이 관계는 안기쁨이 단순 안내자가 아니라 후배 연구원이 따르는 실무 책임자라는 점을 보여준다. <sup class="cite-ref" title="게임 본편 · 메투나의 언급 · 메투나의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>

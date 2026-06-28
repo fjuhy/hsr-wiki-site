@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,14 +544,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>코나</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%BD%94%EB%82%98&amp;page_slug=npc-2427">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>코나</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>코나</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%BD%94%EB%82%98&amp;page_slug=npc-2427">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>코나</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/12/11771384/b17cd383a585b9e1151347e750739e28_7341768784526942767.png" alt="코나 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>코나는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a> 소속 NPC이며, 공식 명칭은 코나다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 직함은 고해사로, 본편에서도 스스로를 “아침 이슬 공관 고해사 코나”라고 소개한다.<sup class="cite-ref" title="공식 HoYoWiki · 코나"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 코나의 언급 · 코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>코나는 방문자를 “꿈을 좇는 여행객님”이라고 부르며 맞이한다.<sup class="cite-ref" title="게임 본편 · 코나의 언급 · 코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 인사는 코나가 아침 이슬 공관에서 손님을 맞이하는 인물이며, 페나코니의 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>가 가진 격식 있는 접객 분위기를 직접 보여주는 NPC임을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 코나의 언급 · 코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>공식 항목에는 코나의 NPC 사진과 위치 정보도 등록되어 있다.<sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 사진"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 따라서 코나는 이름만 지나가는 언급이 아니라, 페나코니 안에서 특정 장소와 시각적 배치가 붙은 인물로 다뤄진다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>코나의 역할은 아침 이슬 공관의 고해사다.<sup class="cite-ref" title="공식 HoYoWiki · 코나"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 코나의 언급 · 코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그녀는 손님을 맞이할 때 장소, 직함, 이름을 함께 밝히며, 공관 방문을 단순한 안내가 아니라 의례적인 접객 장면처럼 만든다.<sup class="cite-ref" title="게임 본편 · 코나의 언급 · 코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p><a class="wiki-link" href="char-1639.html" title="Dr. 레이시오">Dr. 레이시오</a>는 코나라는 직원이 옆방에 가서 무언가를 확인한 뒤 조각상을 제 위치로 움직였다고 말한다.<sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · 운리의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이 언급은 코나가 공관 내부의 상태를 확인하고 배치를 바로잡는 직원이며, 아침 이슬 공관의 공간 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>에 실제로 관여한다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · 운리의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p><a class="wiki-link" href="char-1639.html" title="Dr. 레이시오">Dr. 레이시오</a>는 코나라는 직원이 옆방에 가서 무언가를 확인한 뒤 조각상을 제 위치로 움직였다고 말한다.<sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · 운리의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이 언급은 코나가 공관 내부의 상태를 확인하고 배치를 바로잡는 직원이며, 아침 이슬 공관의 공간 질서에 실제로 관여한다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · 운리의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <p>코나의 작중 행동은 큰 사건을 일으키는 쪽보다 장소를 유지하는 쪽에 가깝다.<sup class="cite-ref" title="게임 본편 · 코나의 언급 · 코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · 운리의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그녀는 손님을 맞이하고, 공관 내부의 어긋난 배치를 확인하며, 페나코니의 무대가 직원들의 세부 관리 위에서 유지된다는 사실을 작은 장면으로 드러낸다.<sup class="cite-ref" title="게임 본편 · 코나의 언급 · 코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · 운리의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>코나에게 확인되는 위상은 전투력이나 대결 성과가 아니라 직무와 장소성에 놓여 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 코나의 언급 · 코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 제공된 장면에서 코나가 싸우거나 능력을 겨루는 내용은 확인되지 않고, 확인되는 행동은 방문자 응대와 조각상 위치 조정이다.<sup class="cite-ref" title="게임 본편 · 코나의 언급 · 코나의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · Dr. 레이시오의 언급 · 운리의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>

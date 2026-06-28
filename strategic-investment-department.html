@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,18 +544,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-ipc.html">스타피스 컴퍼니</a><span>전략투자부</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A0%84%EB%9E%B5%ED%88%AC%EC%9E%90%EB%B6%80&amp;page_slug=strategic-investment-department">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>전략투자부</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">스타피스 컴퍼니</span><span class="badge">조직</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-ipc.html">스타피스 컴퍼니</a><span>전략투자부</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A0%84%EB%9E%B5%ED%88%AC%EC%9E%90%EB%B6%80&amp;page_slug=strategic-investment-department">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>전략투자부</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">스타피스 컴퍼니</span><span class="badge">조직</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/13/190340964/3493c89391a947c478bbd6aa20164b64_3035874738578834412.png" alt="전략투자부 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>전략투자부는 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>의 7대 부서 중 하나로, 장기 투자와 불량 자산 청산을 담당한다. 공식 설명은 이 부서가 절대 단기 수익을 위해 투자하지 않는다고 말한다. 즉 전략투자부는 오늘의 이익보다 먼 미래의 지배력과 수익 구조를 보는 부서다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 부서"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>전략투자부 안에는 엘리트 팀 「불량 자산 청산 전문가」, 즉 <a class="wiki-link" href="ten-stonehearts.html" title="10인의 스톤하트">10인의 스톤하트</a>가 있다. 이들은 <a class="wiki-link" href="path-2362.html" title="신비">신비</a>로운 부장 다이아몬드가 통솔하고, 만계의 암으로 인해 생긴 악성 부채를 청산하는 집단이다. 재난과 채무를 같은 문장 안에 놓는 이 표현은 전략투자부의 차가운 성격을 잘 보여 준다. 어떤 세계의 위기가 누군가에게는 구호와 복구의 문제가 되지만, 전략투자부의 장부 안에서는 투자, 회수, 청산의 문제로 다시 적힌다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>전략투자부 안에는 엘리트 팀 「불량 자산 청산 전문가」, 즉 <a class="wiki-link" href="ten-stonehearts.html" title="10인의 스톤하트">10인의 스톤하트</a>가 있다. 이들은 신비로운 부장 다이아몬드가 통솔하고, 만계의 암으로 인해 생긴 악성 부채를 청산하는 집단이다. 재난과 채무를 같은 문장 안에 놓는 이 표현은 전략투자부의 차가운 성격을 잘 보여 준다. 어떤 세계의 위기가 누군가에게는 구호와 복구의 문제가 되지만, 전략투자부의 장부 안에서는 투자, 회수, 청산의 문제로 다시 적힌다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
-<p>게임 본문은 전략투자부를 초석과 10인의 스톤하트의 배경으로 보여 준다. <a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 초석이 전략투자부의 중요 자산이며, 그 안에 <a class="wiki-link" href="preservation.html" title="보존">보존</a> <a class="wiki-link" href="emanator.html" title="사도">사도</a>의 권한이 봉인되어 있고 각 청산 전문가가 하나씩 소지한다고 말한다. 또 전략투자부의 10대 엘리트들이 컴퍼니의 이익을 위해 단합한다는 언급도 나온다. <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 전략투자부의 10대 엘리트 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>게임 본문은 전략투자부를 초석과 10인의 스톤하트의 배경으로 보여 준다. <a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 초석이 전략투자부의 중요 자산이며, 그 안에 보존 <a class="wiki-link" href="emanator.html" title="사도">사도</a>의 권한이 봉인되어 있고 각 청산 전문가가 하나씩 소지한다고 말한다. 또 전략투자부의 10대 엘리트들이 컴퍼니의 이익을 위해 단합한다는 언급도 나온다. <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 전략투자부의 10대 엘리트 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>전략투자부는 연구와 화폐 프로젝트에도 연결된다. <a class="wiki-link" href="char-2495.html" title="제이드">제이드</a>는 「화폐 전쟁」 프로젝트를 개발 중이며, <a class="wiki-link" href="topaz.html" title="토파즈">토파즈</a>와 <a class="wiki-link" href="aventurine.html" title="어벤츄린">어벤츄린</a>이 프로젝트 멤버라고 말한다. 또한 이 프로젝트는 전략투자부가 주도하고, 주요 연구개발은 <a class="wiki-link" href="intelligentsia-guild.html" title="지식학회">지식학회</a>가 담당한다고 설명한다. 이 장면은 전략투자부가 투자, 화폐, 연구 협업을 한꺼번에 움직이는 부서임을 보여 준다. <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 화폐 전쟁 프로젝트 · 제이드의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 전략투자부와 지식학회 · 제이드의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="초석과-장기-투자의-현장-권한">초석과 장기 투자의 현장 권한</h2>
 <p>전략투자부의 장기 투자는 서류와 숫자만으로 끝나지 않는다. 선데이는 초석이 전략투자부의 중요 자산이며, 그 안에 보존 사도의 권한이 봉인되어 있고 각 청산 전문가가 하나씩 소지한다고 말한다. 초석은 단순한 상징물이 아니라 현장에 배치되는 자산이고, 전략투자부가 보존의 힘까지 회사의 자산 체계 안에 넣어 다룬다는 증거다. <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>이 구조 때문에 전략투자부의 “투자”는 다른 부서의 투자와 결이 다르다. <a class="wiki-link" href="market-development-department.html" title="시장개척부">시장개척부</a>가 새 세계를 시장 안으로 끌어들이는 입구라면, 전략투자부는 이미 장부에 오른 위험과 가능성을 현장에서 처리한다. 그때 움직이는 사람들은 단순한 회계 담당자가 아니라 초석을 지닌 청산 전문가들이다. 즉 전략투자부는 돈을 오래 묻어 두는 부서가 아니라, 장기 수익과 권한, 무력과 신앙적 상징을 한꺼번에 배치하는 부서다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 전략투자부의 10대 엘리트 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>화폐 전쟁 프로젝트는 같은 성격을 연구와 금융 쪽에서 보여 준다. 제이드는 자신이 프로젝트 담당자이고 토파즈와 어벤츄린이 멤버라고 말하며, 주요 연구개발은 지식학회가 맡고 주도권은 전략투자부에 있다고 정리한다. 이 말은 전략투자부가 전투 현장에만 강한 부서가 아니라, 화폐 체계와 연구 자원까지 장기 계획의 일부로 묶는 부서임을 드러낸다. <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 화폐 전쟁 프로젝트 · 제이드의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 전략투자부와 지식학회 · 제이드의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>특히 “화폐 전쟁”이라는 이름은 전략투자부의 시야를 잘 보여 준다. 전쟁은 보통 함대와 무기의 충돌로 떠올리지만, 이 프로젝트에서는 화폐가 전장이다. 어떤 통화가 쓰이고, 누가 발행과 유통을 통제하며, 어떤 연구가 그 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>를 뒷받침하는지가 곧 힘의 문제가 된다. 지식학회가 연구개발을 맡고 전략투자부가 주도한다는 구조는 컴퍼니가 <a class="wiki-link" href="path-80.html" title="지식">지식</a>과 금융을 분리하지 않고, 장기 지배력의 한 묶음으로 다룬다는 점을 드러낸다. <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 화폐 전쟁 프로젝트 · 제이드의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 전략투자부와 지식학회 · 제이드의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>특히 “화폐 전쟁”이라는 이름은 전략투자부의 시야를 잘 보여 준다. 전쟁은 보통 함대와 무기의 충돌로 떠올리지만, 이 프로젝트에서는 화폐가 전장이다. 어떤 통화가 쓰이고, 누가 발행과 유통을 통제하며, 어떤 연구가 그 질서를 뒷받침하는지가 곧 힘의 문제가 된다. 지식학회가 연구개발을 맡고 전략투자부가 주도한다는 구조는 컴퍼니가 지식과 금융을 분리하지 않고, 장기 지배력의 한 묶음으로 다룬다는 점을 드러낸다. <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 화폐 전쟁 프로젝트 · 제이드의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 전략투자부와 지식학회 · 제이드의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>전략투자부가 위험한 이유는 위기를 먼저 “투자 대상”과 “청산 대상”으로 본다는 데 있다. 이 부서는 단기 수익을 좇지 않는다고 설명되지만, 그 말은 착한 장기 후원자가 아니라 더 긴 시간표로 수익과 지배력을 계산한다는 뜻에 가깝다. 어떤 세계가 만계의 암이나 악성 부채와 연결되면, 전략투자부는 그 문제를 구호나 외교가 아니라 회수와 청산의 대상으로 다룰 수 있다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>이 점에서 전략투자부는 시장개척부와 다른 방식으로 무섭다. 시장개척부가 새 세계를 협상과 제도 안으로 끌어들이는 쪽이라면, 전략투자부는 이미 컴퍼니의 장부와 프로젝트 안에 들어온 문제를 어떻게 처리할지 판단한다. 투자할지, 회수할지, 청산할지, 누구를 현장에 보낼지를 정하는 부서인 셈이다. 그 판단이 내려지면 10인의 스톤하트 같은 팀이 움직이고, 초석 같은 중요 자산도 현장에 투입된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>

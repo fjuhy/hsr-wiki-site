@@ -57,6 +57,11 @@ function termsForText(value, forQuery = false) {
     if (hasCjkish(joined)) for (const g of ngrams(joined)) out.add(g);
   }
   let arr = Array.from(out);
+  if (forQuery && hasCjkish(joined)) {
+    const joinedLength = Array.from(joined).length;
+    if (joinedLength > 0 && joinedLength <= 3) arr = arr.filter(term => Array.from(term).length >= joinedLength);
+    else arr = arr.filter(term => Array.from(term).length >= 3);
+  }
   if (forQuery && arr.length > MAX_QUERY_TERMS) {
     arr = arr.sort((a, b) => Array.from(b).length - Array.from(a).length || a.localeCompare(b)).slice(0, MAX_QUERY_TERMS);
   }
@@ -73,7 +78,7 @@ function fnv1a32(value) {
 }
 function shardForTerm(term) { const count = state.manifest?.shard_count || DEFAULT_SHARD_COUNT; return String(fnv1a32(term) % count).padStart(2, '0') + '.json'; }
 async function fetchJson(path) {
-  const response = await fetch(path, { cache: 'force-cache' });
+  const response = await fetch(path, { cache: 'no-cache' });
   if (!response.ok) throw new Error(`${path} ${response.status}`);
   return response.json();
 }
@@ -116,19 +121,29 @@ function scoreSuggestion(query, item) {
   else if (key.startsWith(q) || keyc.startsWith(qc)) score = 50000;
   else if (key.includes(q) || keyc.includes(qc)) score = 12000;
   else {
+    const minFuzzyLength = hasCjkish(qc) ? 3 : 2;
     for (const term of termsForText(q, true)) {
+      if (Array.from(term).length < minFuzzyLength) continue;
       if (keyc.includes(term)) { score = Math.max(score, 2000 + Array.from(term).length * 100); }
     }
   }
   return score ? score + (item.rank || 0) : 0;
 }
 function findSuggestions(query, suggestions, limit = 8) {
-  return suggestions
+  const rows = suggestions
     .map(item => ({ item, score: scoreSuggestion(query, item) }))
     .filter(row => row.score > 0)
-    .sort((a, b) => b.score - a.score || a.item.label.localeCompare(b.item.label, 'ko'))
-    .slice(0, limit)
-    .map(row => row.item);
+    .sort((a, b) => b.score - a.score || a.item.label.localeCompare(b.item.label, 'ko'));
+  const out = [];
+  const seen = new Set();
+  for (const row of rows) {
+    const target = row.item.slug || row.item.href || row.item.label;
+    if (seen.has(target)) continue;
+    seen.add(target);
+    out.push(row.item);
+    if (out.length >= limit) break;
+  }
+  return out;
 }
 function exactPageMatch(query, suggestions) {
   const q = normalizeText(query);
@@ -238,7 +253,7 @@ function renderResults(root, query, payload) {
     return;
   }
   if (Array.from(compact(query)).length < 2 && !payload.results.length) {
-    box.innerHTML = '<p class="search-empty">두 글자 이상 입력하면 문서 본문 검색이 시작됩니다.</p>';
+    box.innerHTML = '<p class="search-empty">두 글자 이상 입력하면 문서 검색이 시작됩니다.</p>';
     return;
   }
   if (!payload.results.length) {

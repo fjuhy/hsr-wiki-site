@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>구등</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B5%AC%EB%93%B1&amp;page_slug=npc-3006">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>구등</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>구등</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B5%AC%EB%93%B1&amp;page_slug=npc-3006">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>구등</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/05/11771384/cbf5dfc71ff16dcca6cfed15ca8619ef_6418210490296704388.png" alt="구등 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>구등은 선주 「<a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>」에 속한 NPC이며, “붙잡힌 「제자」”라는 짧은 설명으로 정리되는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki · 구등"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>이 설명에서 중요한 것은 구등의 활동보다 현재 처지다.<sup class="cite-ref" title="공식 HoYoWiki · 구등"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 그는 자유롭게 움직이는 조력자나 상인이 아니라, 나부 안에서 붙잡힌 상태의 “제자”로 먼저 읽힌다.<sup class="cite-ref" title="공식 HoYoWiki · 구등"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
@@ -536,7 +556,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>다만 현재 근거만으로는 구등이 특정 전투, 임무, 대화 흐름에서 어떤 결정을 내리는지까지 말할 수 없다.<sup class="cite-ref" title="공식 HoYoWiki · 구등"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · NPC 위치"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>철창표 약왕 구복액과 시왕환명산은 구등의 관련 항목으로 묶인다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 두 명칭은 구등의 주변 설정이 약물이나 처방처럼 보이는 요소와 이어져 있음을 보여 주지만, 제공된 근거만으로 두 물품이 구등에게 어떻게 쓰였는지는 확정할 수 없다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p><a class="wiki-link" href="npc-3003.html" title="아르마">아르마</a> 철창 그룹 채용 공고는 구등의 관련 서적으로 연결된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 서적"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이 연결은 구등을 개인 신상만으로 닫힌 NPC가 아니라, 철창이라는 이름이 반복되는 물품과 문서의 주변 맥락 안에 놓인 인물로 보게 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 서적"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>아르마 철창 그룹 채용 공고는 구등의 관련 서적으로 연결된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 서적"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이 연결은 구등을 개인 신상만으로 닫힌 NPC가 아니라, 철창이라는 이름이 반복되는 물품과 문서의 주변 맥락 안에 놓인 인물로 보게 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 서적"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <h2 id="붙잡힌-제자라는-단서">붙잡힌 제자라는 단서</h2>
 <p>구등에서 가장 단단한 단서는 “붙잡힌 「제자」”라는 한 줄이다.<sup class="cite-ref" title="공식 HoYoWiki · 구등"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 이 표현은 구등의 정체보다 현재 상태를 앞세우며, 그가 나부 안에서 감시나 통제의 대상이 되었음을 암시한다.<sup class="cite-ref" title="공식 HoYoWiki · 구등"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>하지만 구등의 죄목, 소속 세력, 붙잡힌 뒤의 처분, 관련 항목들이 실제 사건에서 맡은 역할은 현재 근거만으로 확정할 수 없다.<sup class="cite-ref" title="공식 HoYoWiki · 구등"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 서적"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">구등</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3006?lang=ko-kr">원문</a></span><div class="ref-quote">붙잡힌 「제자」</div></li>
@@ -552,7 +572,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 공식 HoYoWiki, 공식 HoYoWiki — 갤러리, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>

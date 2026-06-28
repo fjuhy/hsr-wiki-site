@@ -30,11 +30,10 @@
 .search-result { display: block; padding: 10px; border-radius: 12px; text-decoration: none; color: var(--ink); }
 .search-result:hover { background: var(--accent-soft); }
 .search-result strong { display: block; font-size: 15px; line-height: 1.3; }
-.search-result span, .search-meta, .search-empty, .search-future { color: var(--muted); font-size: 12px; }
+.search-result span, .search-meta, .search-empty { color: var(--muted); font-size: 12px; }
 .search-result p { margin: 4px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .search-meta { margin: 0 0 6px; }
-.search-empty, .search-future { margin: 6px 0 0; }
-.search-future { border-top: 1px dashed var(--line); padding-top: 10px; }
+.search-empty { margin: 6px 0 0; }
 mark { background: color-mix(in srgb, var(--warn) 24%, transparent); color: inherit; border-radius: 4px; padding: 0 2px; }
 @media (max-width: 900px) {
   .site-header-inner { align-items: stretch; flex-wrap: wrap; }

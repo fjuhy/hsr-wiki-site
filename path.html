@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,13 +544,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-systems.html">제도·조직 원리</a><span>운명의 길</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%9A%B4%EB%AA%85%EC%9D%98+%EA%B8%B8&amp;page_slug=path">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>운명의 길</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">제도·조직 원리</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-systems.html">제도·조직 원리</a><span>운명의 길</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%9A%B4%EB%AA%85%EC%9D%98+%EA%B8%B8&amp;page_slug=path">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>운명의 길</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">제도·조직 원리</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/13/190340964/3493c89391a947c478bbd6aa20164b64_3035874738578834412.png" alt="운명의 길 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>운명의 길은 스타레일 세계관에서 인물과 집단이 어떤 가치, 이념, 행동 원리를 따라 살아가는지를 설명하는 거대한 노선 체계다. <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a>는 인간에게 보이지 않는 운명의 길을 거닐며 특정 이념의 형태로 헤아리기 어려운 힘을 행사하는 존재로 묘사되고, 지적 생명은 인식의 한계 때문에 그 작용을 어렴풋이 짐작할 뿐이다. 이 때문에 운명의 길은 단순한 신앙 명칭이나 성격 분류가 아니라, 우주적 규모의 철학과 필멸자의 삶이 접촉하는 방식에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki · 에이언즈"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>각 운명의 길은 추상적인 표어가 아니라 특정한 행위와 감정의 방향으로 드러난다. <a class="wiki-link" href="destruction.html" title="파멸">파멸</a>은 나누크가 관장하며 충동, 분노, 파괴의 행위로 나타나고, <a class="wiki-link" href="preservation.html" title="보존">보존</a>은 <a class="wiki-link" href="qlipoth.html" title="⌈ 보존 ⌋ 클리포트">클리포트</a>가 관장하며 기다림, 희생, 보호의 행위로 굳어진다. <a class="wiki-link" href="nihility.html" title="공허">공허</a>는 IX가 관장하며 나태, 피곤, 무의미한 행위와 결부된다. 이처럼 운명의 길은 세계를 바라보는 관점이면서 동시에 그 관점이 행동으로 굳어지는 기준이다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>각 운명의 길은 추상적인 표어가 아니라 특정한 행위와 감정의 방향으로 드러난다. 파멸은 나누크가 관장하며 충동, 분노, 파괴의 행위로 나타나고, 보존은 <a class="wiki-link" href="qlipoth.html" title="⌈ 보존 ⌋ 클리포트">클리포트</a>가 관장하며 기다림, 희생, 보호의 행위로 굳어진다. 공허는 IX가 관장하며 나태, 피곤, 무의미한 행위와 결부된다. 이처럼 운명의 길은 세계를 바라보는 관점이면서 동시에 그 관점이 행동으로 굳어지는 기준이다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
-<p>작중에서 운명의 길은 우주론, <a class="wiki-link" href="factions.html" title="파벌">파벌</a> 정치, 인물의 판단을 한데 묶는 언어로 기능한다. 평범한 종족이 에이언즈의 의도를 정확히 아는 것은 불가능에 가깝지만, 같은 방식으로 신을 오해하거나 해석한 이들이 모이면 그 해석은 신조가 되고, 신조는 집단을 낳는다. 파벌은 자기 신조로 에이언즈의 의도를 해석하고 때로는 신의 대리인을 자처하므로, 운명의 길은 초월자의 의지가 그대로 내려오는 통로라기보다 필멸자 사회가 신적 개념을 받아들이고 제도화하는 틀로 작용한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>이 기능 때문에 운명의 길은 대화 속에서도 사건의 방향을 설명하는 축약어처럼 쓰인다. <a class="wiki-link" href="aventurine.html" title="어벤츄린">어벤츄린</a>은 <a class="wiki-link" href="path-81.html" title="수렵">수렵</a>, 파멸, <a class="wiki-link" href="path-2360.html" title="종말">종말</a>처럼 서로 다른 이름을 거론하면서도 그런 길들이 하나의 결말을 가리킨다고 말하고, <a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>은 <a class="wiki-link" href="trailblaze.html" title="개척">개척</a>의 길이 하나만 있는 것이 아니라며 상황에 따라 생존과 퇴각도 길의 일부가 될 수 있음을 암시한다. 운명의 길은 고정된 표지판이면서도, 등장인물이 자기 처지에서 결말과 선택지를 해석하는 말이기도 하다. <sup class="cite-ref" title="게임 본편 — 대사 · 어벤츄린: 운명의 길은 하나의 결말을 가리킨다 · 임무 「누가 죽였는가…」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 개척의 길은 하나만 있는 것이 아니다 · 임무 「벨벳의 악마」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>작중에서 운명의 길은 우주론, 파벌 정치, 인물의 판단을 한데 묶는 언어로 기능한다. 평범한 종족이 에이언즈의 의도를 정확히 아는 것은 불가능에 가깝지만, 같은 방식으로 신을 오해하거나 해석한 이들이 모이면 그 해석은 신조가 되고, 신조는 집단을 낳는다. 파벌은 자기 신조로 에이언즈의 의도를 해석하고 때로는 신의 대리인을 자처하므로, 운명의 길은 초월자의 의지가 그대로 내려오는 통로라기보다 필멸자 사회가 신적 개념을 받아들이고 제도화하는 틀로 작용한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>이 기능 때문에 운명의 길은 대화 속에서도 사건의 방향을 설명하는 축약어처럼 쓰인다. <a class="wiki-link" href="aventurine.html" title="어벤츄린">어벤츄린</a>은 수렵, 파멸, 종말처럼 서로 다른 이름을 거론하면서도 그런 길들이 하나의 결말을 가리킨다고 말하고, <a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>은 개척의 길이 하나만 있는 것이 아니라며 상황에 따라 생존과 퇴각도 길의 일부가 될 수 있음을 암시한다. 운명의 길은 고정된 표지판이면서도, 등장인물이 자기 처지에서 결말과 선택지를 해석하는 말이기도 하다. <sup class="cite-ref" title="게임 본편 — 대사 · 어벤츄린: 운명의 길은 하나의 결말을 가리킨다 · 임무 「누가 죽였는가…」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 개척의 길은 하나만 있는 것이 아니다 · 임무 「벨벳의 악마」"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <h2 id="에이언즈와-운명의-길">에이언즈와 운명의 길</h2>
 <p>운명의 길은 에이언즈와 분리해서 설명하기 어렵다. 공식적으로 파멸은 나누크, 보존은 클리포트, 공허는 IX와 연결되어 있으며, 각 항목은 해당 에이언즈를 그 길의 관장자로 제시한다. 다만 에이언즈는 단순한 후원자나 교단의 우두머리가 아니라, 신화 속에서 고도로 응집된 철학적 개념의 화신으로 이해되는 존재다. 따라서 운명의 길을 따른다는 말은 특정 인물을 숭배한다는 뜻을 넘어, 그 에이언즈가 구현하는 철학적 방향과 접촉한다는 의미를 지닌다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 에이언즈"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <p>개척도 같은 구조를 따른다. <a class="wiki-link" href="akivili.html" title="⌈ 개척 ⌋ 아키비리">아키비리</a>는 고독하고 단절된 세계 페가나를 떠나 미지의 경계를 개척하고 존재의 나무의 종점을 찾은 에이언즈다. <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>가 아키비리의 발자취와 세계의 끝에 닿는 일을 함께 말하는 장면은, 개척이 단순한 이동이 아니라 닫힌 세계를 넘어서는 행동 원리임을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 아키비리와 개척의 의미 · 임무 「깨어난 모든 사람들」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
@@ -538,7 +558,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>이 접촉에도 위계가 있다. 운명의 길을 걷는 자는 평범한 사람을 넘어서는 힘을 얻지만, 에이언즈와 비교하면 드넓은 바다의 물 한 방울에 지나지 않는다. <a class="wiki-link" href="emanator.html" title="사도">사도</a>는 그보다 특별한 위치에 선다. 사도는 에이언즈의 허락과 축복을 받아 운명의 길 에너지를 더 거대한 규모로 끌어올릴 수 있는 존재이며, 세상 사람들은 이들을 에이언즈의 뜻을 대변하는 존재로 여긴다. 다만 사도라고 해서 에이언즈의 명령에 완전히 복종하는 꼭두각시는 아니고, 에이언즈마다 사도를 대하는 태도와 나누어 주는 힘도 다르다. <sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
 <h2 id="파벌과-행동-기준">파벌과 행동 기준</h2>
 <p>파벌은 운명의 길이 사회적 형태로 굳어진 대표적인 사례다. 반물질 군단과 소멸파는 파멸을 따르는 세력으로 제시되며, 축성가와 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>는 보존의 추종 세력으로 묶인다. 제IX 기관, 혼돈의 의사, 자멸자는 공허와 연결된다. 같은 운명의 길 아래 여러 집단이 함께 놓인다는 사실은, 운명의 길이 하나의 가치 방향을 제공하더라도 그 실천 방식과 조직 형태는 집단마다 달라질 수 있음을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>파멸의 경우 핵심 행위가 충동, 분노, 파괴로 정리되므로 그 길은 세계를 부수는 힘과 직접적으로 맞닿아 있다. 반물질 군단과 소멸파가 모두 파멸의 추종 세력으로 언급되는 것은, 파멸이 단순한 개인 감정이 아니라 우주적 세력 형성의 원리로도 작동한다는 점을 드러낸다. 이때 파멸을 따른다는 것은 난폭함이라는 성격 묘사만으로 끝나지 않고, 존재와 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>를 대하는 근본 태도를 가리킨다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
+<p>파멸의 경우 핵심 행위가 충동, 분노, 파괴로 정리되므로 그 길은 세계를 부수는 힘과 직접적으로 맞닿아 있다. 반물질 군단과 소멸파가 모두 파멸의 추종 세력으로 언급되는 것은, 파멸이 단순한 개인 감정이 아니라 우주적 세력 형성의 원리로도 작동한다는 점을 드러낸다. 이때 파멸을 따른다는 것은 난폭함이라는 성격 묘사만으로 끝나지 않고, 존재와 질서를 대하는 근본 태도를 가리킨다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
 <p>보존은 기다림, 희생, 보호라는 행위를 특징으로 삼지만, 그 추종 세력에는 축성가와 스타피스 컴퍼니가 함께 포함된다. 보존의 이름은 방어와 보호를 떠올리게 하지만, 실제 세계관에서는 개인적 선의나 작은 공동체의 방어만이 아니라 거대한 조직과 질서 유지의 언어로도 확장된다. 그래서 보존은 무엇을 지킬 것인지, 어떤 희생을 요구할 것인지, 보호의 범위를 어디까지 넓힐 것인지에 따라 서로 다른 정치적 모습을 띨 수 있다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
 <p>공허는 무의미와 피로, 나태의 행위로 정의되지만, 그 주변에도 제IX 기관, 혼돈의 의사, 자멸자 같은 이름을 가진 집단들이 존재한다. 이는 공허가 단순히 아무것도 하지 않는 상태만을 뜻하지 않고, 의미의 붕괴를 인식한 이들이 서로 다른 방식으로 모이고 행동하는 축이 될 수 있음을 시사한다. 공허는 다른 길보다 더 역설적이다. 부정과 무의미를 향하면서도, 그 부정 자체가 파벌과 인물의 선택을 조직하는 기준이 되기 때문이다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
 <h2 id="운명의-길의-갈래성">운명의 길의 갈래성</h2>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,16 +544,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-paths.html">운명의 길</a><span>파멸</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%8C%8C%EB%A9%B8&amp;page_slug=destruction">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>파멸</h1><div class="meta-row"><span class="badge">운명의 길</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-paths.html">운명의 길</a><span>파멸</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%8C%8C%EB%A9%B8&amp;page_slug=destruction">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>파멸</h1><div class="meta-row"><span class="badge">운명의 길</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/13/190340964/3493c89391a947c478bbd6aa20164b64_3035874738578834412.png" alt="파멸 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>파멸은 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a> 나누크가 관장하는 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>이다. 공식 설명에서 이 길의 특징은 충동, 분노, 파괴의 행위로 제시되며, 따라서 파멸은 단순한 전투 성향이나 폭력의 취향이 아니라 세계를 끝장으로 몰고 가는 의지와 행동 양식을 포괄하는 우주론적 원리로 이해된다. 운명의 길이 특정 에이언즈의 시선과 추종 세력을 통해 현실에 영향을 미치는 체계라면, 파멸은 그중에서도 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>와 생존, 축적과 <a class="wiki-link" href="preservation.html" title="보존">보존</a>을 직접 부정하는 방향으로 드러난다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>파멸은 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a> 나누크가 관장하는 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>이다. 공식 설명에서 이 길의 특징은 충동, 분노, 파괴의 행위로 제시되며, 따라서 파멸은 단순한 전투 성향이나 폭력의 취향이 아니라 세계를 끝장으로 몰고 가는 의지와 행동 양식을 포괄하는 우주론적 원리로 이해된다. 운명의 길이 특정 에이언즈의 시선과 추종 세력을 통해 현실에 영향을 미치는 체계라면, 파멸은 그중에서도 질서와 생존, 축적과 보존을 직접 부정하는 방향으로 드러난다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>나누크의 파멸은 우주가 잘못 태어났다는 인식에서 출발한다. 나누크에 대한 공식 서술은 우주의 탄생을 착오로, 문명을 광대한 별들 사이에서 일어난 암으로, 분쟁을 지혜를 가진 생물의 공통어로 묘사한다. 또한 나누크가 우주의 오점을 지우기 위해 엔트로피의 화신이 되었다고 설명하므로, 파멸의 길은 단순한 혼란이 아니라 존재 자체를 오류로 간주하고 그것을 소거하려는 냉혹한 결론에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 파멸 ⌋ 나누크"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
-<p>작중에서 파멸은 운명의 길 체계 안에서 나누크의 영역을 가리키는 이름이자, 그 이름을 따르는 세력과 사건을 묶는 기준으로 기능한다. 공식 기본 정보는 파멸의 에이언즈를 나누크로 명시하고, 관련 추종 세력으로 반물질 군단과 소멸파를 함께 제시한다. 이 구조 때문에 파멸은 한 인물의 신념이나 한 조직의 폭력성만을 뜻하지 않고, 에이언즈, <a class="wiki-link" href="factions.html" title="파벌">파벌</a>, 재난, 오염된 세계의 문제를 한 축으로 엮는 설정상의 중심 개념이 된다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>작중에서 파멸은 운명의 길 체계 안에서 나누크의 영역을 가리키는 이름이자, 그 이름을 따르는 세력과 사건을 묶는 기준으로 기능한다. 공식 기본 정보는 파멸의 에이언즈를 나누크로 명시하고, 관련 추종 세력으로 반물질 군단과 소멸파를 함께 제시한다. 이 구조 때문에 파멸은 한 인물의 신념이나 한 조직의 폭력성만을 뜻하지 않고, 에이언즈, 파벌, 재난, 오염된 세계의 문제를 한 축으로 엮는 설정상의 중심 개념이 된다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>파멸은 게임 내 분류명으로도 쓰이지만, 설정상 핵심은 나누크가 관장하는 운명의 길로서의 의미다. 공식 항목 설명은 파멸을 엄청난 공격 및 생존 능력으로 여러 전투 환경에 적응할 수 있는 길로 소개한다. 이 설명은 전투 시스템의 언어로 표현되어 있으나, 설정적으로는 파괴 행위에만 매몰되지 않고 스스로를 유지하며 계속 전장을 확대하는 성질을 암시하는 표지로 읽을 수 있다. <sup class="cite-ref" title="공식 HoYoWiki · 파멸"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <h2 id="나누크의-사상과-파멸의-논리">나누크의 사상과 파멸의 논리</h2>
 <p>나누크의 사상에서 파멸은 우주의 끝을 기다리는 태도가 아니라 끝을 향해 몸을 던지는 선택으로 나타난다. 나누크 항목에 실린 문장은 엔트로피 증가와 열죽음을 물질세계의 피할 수 없는 운명으로 놓고, 새로운 생을 맞이하려면 먼저 끝을 향해야 한다는 발상을 드러낸다. 이때 연소, 융합, 인멸은 변화의 과정이 아니라 존재를 소멸로 밀어붙이는 단계처럼 제시되며, 파멸은 창조의 전제라기보다 창조 이전에 모든 것을 지워야 한다는 과격한 세계관으로 정리된다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 파멸 ⌋ 나누크"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>이 논리는 보존이나 <a class="wiki-link" href="trailblaze.html" title="개척">개척</a>처럼 세계를 유지하거나 길을 넓히는 관점과 정면으로 충돌한다. 파멸은 문명과 생명의 지속을 우주의 병증으로 보고, 분쟁을 문명의 실패가 아니라 지성체가 공유하는 본성처럼 취급한다. 그러므로 파멸의 위협은 한 행성의 침략이나 한 도시의 붕괴에 그치지 않고, 문명 일반을 정정해야 할 오류로 보는 시선에서 비롯된다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 파멸 ⌋ 나누크"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>이 논리는 보존이나 개척처럼 세계를 유지하거나 길을 넓히는 관점과 정면으로 충돌한다. 파멸은 문명과 생명의 지속을 우주의 병증으로 보고, 분쟁을 문명의 실패가 아니라 지성체가 공유하는 본성처럼 취급한다. 그러므로 파멸의 위협은 한 행성의 침략이나 한 도시의 붕괴에 그치지 않고, 문명 일반을 정정해야 할 오류로 보는 시선에서 비롯된다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 파멸 ⌋ 나누크"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <h2 id="추종-세력-반물질-군단과-소멸파">추종 세력: 반물질 군단과 소멸파</h2>
 <p>공식 정보에서 파멸의 추종 세력으로 확인되는 집단은 반물질 군단과 소멸파다. 두 세력은 모두 파멸과 연결되어 있지만, 문서상 확인되는 공통점은 나누크가 관장하는 운명의 길을 따르는 파벌로 분류된다는 점이다. 이들은 파멸이 추상적 원리로만 머물지 않고, 우주 곳곳에서 실제 세력과 행동으로 구현된다는 사실을 보여 준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>반물질 군단과 소멸파의 존재는 파멸이 개인의 감정적 폭발만으로 설명될 수 없음을 드러낸다. 파멸의 특징이 충동, 분노, 파괴의 행위로 요약되더라도, 추종 세력이 이름과 조직성을 갖는 순간 그 행위는 반복 가능한 침공과 재난의 형태를 띤다. 다시 말해 파멸은 순간적인 파괴 욕구와 우주적 규모의 세력 활동을 함께 품는 운명의 길이다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
@@ -546,7 +566,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>또한 <a class="wiki-link" href="char-26.html" title="경원">경원</a>은 파멸의 <a class="wiki-link" href="emanator.html" title="사도">사도</a>가 쉽게 파멸되지 않는다고 말한다. 이 대사는 파멸에 속한 강력한 존재가 단순한 파괴자에 그치지 않고, 오히려 스스로를 쉽게 소멸시키지 않는 끈질긴 위협으로 인식된다는 점을 보여 준다. 파멸이 공격성과 생존 능력을 함께 갖는 길로 설명되는 공식 항목과 나란히 보면, 작중의 파멸은 무모한 자멸이 아니라 타자를 소모시키면서도 계속 남는 재난의 성격을 가진다. <sup class="cite-ref" title="게임 본편 — 대사 · 경원: 파멸의 사도 · 임무 「불멸의 종말, 끝맺은 대겁」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 파멸"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>파멸을 이해하려면 에이언즈와 운명의 길의 기본 구조를 함께 보아야 한다. 나누크는 파멸의 에이언즈로 명시되어 있으며, 파멸은 그가 관장하는 길로 제시된다. 따라서 파멸을 다룰 때는 나누크 개인의 서술, 반물질 군단과 소멸파 같은 파벌, 스텔라론으로 오염된 세계의 반복적 사례가 서로 떨어진 설정이 아니라 같은 축 위에 놓인 단서로 읽힌다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 단항: 스텔라론으로 오염된 세계와 파멸 · 임무 「분쟁이여, 길을 막는 두려움을 토벌하라」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>작중에서 파멸은 직접 이름이 언급될 때마다 사건의 규모를 키우는 기능을 한다. 스텔라론 오염 세계와의 관련성, 나누크의 주시, 파멸의 사도에 대한 언급은 모두 파멸이 배경 설정의 추상 <a class="wiki-link" href="entry-952.html" title="명사">명사</a>가 아니라 현재 진행형의 위협으로 작동한다는 점을 보여 준다. 이런 언급들은 개척의 여정에서 만나는 지역적 문제들이 더 큰 우주적 대립과 맞닿아 있음을 설명하는 장치가 된다. <sup class="cite-ref" title="게임 본편 — 대사 · 경원: 파멸의 사도 · 임무 「불멸의 종말, 끝맺은 대겁」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 단항: 스텔라론으로 오염된 세계와 파멸 · 임무 「분쟁이여, 길을 막는 두려움을 토벌하라」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타: 파멸과 나누크의 시선 · 임무 「흐르는 세월이여, 수천 년을 건너게 해다오」"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>작중에서 파멸은 직접 이름이 언급될 때마다 사건의 규모를 키우는 기능을 한다. 스텔라론 오염 세계와의 관련성, 나누크의 주시, 파멸의 사도에 대한 언급은 모두 파멸이 배경 설정의 추상 명사가 아니라 현재 진행형의 위협으로 작동한다는 점을 보여 준다. 이런 언급들은 개척의 여정에서 만나는 지역적 문제들이 더 큰 우주적 대립과 맞닿아 있음을 설명하는 장치가 된다. <sup class="cite-ref" title="게임 본편 — 대사 · 경원: 파멸의 사도 · 임무 「불멸의 종말, 끝맺은 대겁」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 단항: 스텔라론으로 오염된 세계와 파멸 · 임무 「분쟁이여, 길을 막는 두려움을 토벌하라」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타: 파멸과 나누크의 시선 · 임무 「흐르는 세월이여, 수천 년을 건너게 해다오」"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
 <h2 id="해석과-맥락">해석과 맥락</h2>
 <p>파멸을 해석할 때는 폭력성만을 강조해 나누크의 길을 단순한 악의 충동으로 축소하지 않는 편이 적절하다. 공식 설명이 충동, 분노, 파괴의 행위를 특징으로 들기는 하지만, 나누크의 서술은 우주의 탄생과 문명 자체를 오류로 보는 더 큰 사상적 틀을 제시한다. 즉 파멸은 감정의 폭발이면서 동시에 우주를 잘못된 것으로 판단하고 그것을 지우려는 형이상학적 결론이다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 파멸 ⌋ 나누크"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>반대로 파멸을 변화나 재생의 은유로만 미화하는 것도 주의해야 한다. 나누크의 문장은 새로운 생을 말하지만, 그 논리의 앞자리에는 연소, 융합, 인멸과 우주의 오점 제거가 놓여 있다. 작중에서 파멸이 스텔라론 오염 세계, 나누크의 주시, 쉽게 쓰러지지 않는 사도와 함께 언급되는 점을 고려하면, 파멸은 창조적 전환의 낭만보다 문명과 세계를 위협하는 소거의 원리로 읽는 것이 본편의 용례에 더 가깝다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 파멸 ⌋ 나누크"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 경원: 파멸의 사도 · 임무 「불멸의 종말, 끝맺은 대겁」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 단항: 스텔라론으로 오염된 세계와 파멸 · 임무 「분쟁이여, 길을 막는 두려움을 토벌하라」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타: 파멸과 나누크의 시선 · 임무 「흐르는 세월이여, 수천 년을 건너게 해다오」"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">더 알아보기</span> <span class="ref-source">공식 HoYoWiki — 더 알아보기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/79?lang=ko-kr">원문</a></span><div class="ref-quote">에이언즈 「나누크」가 관장하는 운명의 길. 충동, 분노, 파괴의 행위는 운명의 길 「파멸」의 특징이다.</div></li>
@@ -567,7 +587,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>운명의 길</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>운명의 길</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-24</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
   <p class="subtle">주요 근거: 게임 본편 — 대사, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 더 알아보기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-24 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>

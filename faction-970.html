@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -526,11 +546,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-path.html">운명의 길 파벌</a><span>가면의 우인 - 환락</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B0%80%EB%A9%B4%EC%9D%98+%EC%9A%B0%EC%9D%B8+-+%ED%99%98%EB%9D%BD&amp;page_slug=faction-970">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>가면의 우인 - 환락</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">운명의 길 파벌</span><span class="badge">세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>가면의 우인은 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a> 「환락」을 따르는 <a class="wiki-link" href="factions.html" title="파벌">파벌</a>이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이들은 「환락」 아하와 연결되며, 자신들이 추종하는 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a>를 장난스러운 어조로도 진지하게 찬양한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 가면의 우인 - 환락"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>이 파벌의 핵심 믿음은 웃음을 우주의 답으로 삼는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 가면의 우인은 세계의 진실을 웃음거리로 보고, <a class="wiki-link" href="npc-1158.html" title="만물">만물</a>의 궁극적 의미가 순수한 웃음에 남아 있다고 믿는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그들에게 웃음은 단순한 감정이 아니라 고통과 슬픔을 씻어내고, <a class="wiki-link" href="nihility.html" title="공허">공허</a>에 저항하며, 상처를 치유하는 힘이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>가면의 우인은 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a> 「환락」을 따르는 파벌이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이들은 「환락」 아하와 연결되며, 자신들이 추종하는 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a>를 장난스러운 어조로도 진지하게 찬양한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 가면의 우인 - 환락"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>이 파벌의 핵심 믿음은 웃음을 우주의 답으로 삼는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 가면의 우인은 세계의 진실을 웃음거리로 보고, 만물의 궁극적 의미가 순수한 웃음에 남아 있다고 믿는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그들에게 웃음은 단순한 감정이 아니라 고통과 슬픔을 씻어내고, 공허에 저항하며, 상처를 치유하는 힘이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>가면의 우인은 환락을 조용한 위로나 개인의 취향으로 남겨두지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이들은 쾌락을 위해 어떤 대가도 마다하지 않고, 가는 곳을 엉망으로 만들며, 정체된 생명에 격동과 변화를 일으키려 한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그래서 이 파벌은 슬픔을 웃음으로 덮는 집단이라기보다, 웃음을 이유로 세계를 일부러 흔드는 집단에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>그들이 비웃는 대상은 독선적인 영웅, 권력에 취한 왕, 연인의 갈등, 현인의 계략처럼 권위와 감정과 지혜를 대표하는 자리들이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 가면의 우인은 이런 자리를 고정된 의미로 존중하지 않고 조롱의 재료로 삼으며, 그 조롱에서 변화의 재미를 찾는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 점에서 가면의 우인은 특정한 적 하나를 상대하는 파벌이 아니라, 굳어 있는 <a class="wiki-link" href="path-2358.html" title="질서">질서</a>와 의미 자체를 웃음거리로 만드는 세력이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>그들이 비웃는 대상은 독선적인 영웅, 권력에 취한 왕, 연인의 갈등, 현인의 계략처럼 권위와 감정과 지혜를 대표하는 자리들이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 가면의 우인은 이런 자리를 고정된 의미로 존중하지 않고 조롱의 재료로 삼으며, 그 조롱에서 변화의 재미를 찾는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 점에서 가면의 우인은 특정한 적 하나를 상대하는 파벌이 아니라, 굳어 있는 질서와 의미 자체를 웃음거리로 만드는 세력이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>가면의 우인은 환락의 신도들 가운데서도 이념이 유독 급진적인 집단이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 제공된 근거만으로 다른 환락 신도들과 세부적으로 비교할 수는 없지만, 가면의 우인이 대가를 가리지 않는 쾌락과 혼란을 통해 환락을 밀어붙인다는 점은 분명하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>이들의 위험성은 전투력보다 행동 원리에 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 가면의 우인은 우주가 무정하다는 인식에서 출발하지만, 그 결론을 체념이 아니라 웃음과 소동으로 낸다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 따라서 이 파벌은 상처를 치유하려는 얼굴과 타인의 질서를 망가뜨리는 얼굴을 동시에 가진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>

@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -543,7 +563,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <h3 id="벨로보그-행정과-노엘-대신의-집안">벨로보그 행정과 노엘 대신의 집안</h3>
 <p>노버트는 벨로보그 행정 내부와 연결된 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그는 교통부 대신 노엘의 조카이며, 시정 부서에서 운송 조정 업무를 맡고 있는 사람으로 알려져 있다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>이 배경은 노버트의 범행을 외부 침입자의 범죄가 아니라 내부 신분을 가진 사람의 일탈로 만든다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 브로냐가 그의 신분과 직업을 떠올리는 장면은 노버트가 도시 <a class="wiki-link" href="path-2358.html" title="질서">질서</a> 밖의 무명 인물이 아니라 관리 가능한 체계 안에 있던 인물임을 보여준다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>이 배경은 노버트의 범행을 외부 침입자의 범죄가 아니라 내부 신분을 가진 사람의 일탈로 만든다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 브로냐가 그의 신분과 직업을 떠올리는 장면은 노버트가 도시 질서 밖의 무명 인물이 아니라 관리 가능한 체계 안에 있던 인물임을 보여준다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h3 id="괴테-호텔의-사교권">괴테 호텔의 사교권</h3>
 <p>월리스가 기억하는 노버트는 괴테 호텔 로비에서 상류층 인사들과 티타임을 즐기던 인물이다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그가 어느 날부터 모임에 나오지 않은 변화는 행방 추적과 저택 조사로 이어지고, 평범한 사교 모임의 결석은 문화재 절도 사건의 첫 단서가 된다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
 <h3 id="브로냐와-페라의-수사">브로냐와 페라의 수사</h3>

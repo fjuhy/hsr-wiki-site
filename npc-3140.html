@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,7 +544,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>카멜라</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%B9%B4%EB%A9%9C%EB%9D%BC&amp;page_slug=npc-3140">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>카멜라</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>카멜라</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%B9%B4%EB%A9%9C%EB%9D%BC&amp;page_slug=npc-3140">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>카멜라</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/28/11771384/e878e0d22349093219524a3ffc9e317b_2032140353638896991.png" alt="카멜라 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · NPC 사진</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>카멜라는 선주 「<a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>」에 등장하는 NPC이며, 스타피스 엔터테인먼트의 인턴 기자로 <a class="wiki-link" href="char-801.html" title="루카">루카</a>와 {NICKNAME} 코치의 경기 현장을 취재한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>그녀는 루카가 이겼을 때도, 아쉬운 결과를 냈을 때도 코치에게 말을 걸어 경기 후 인터뷰를 이어간다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 부활전 승리와 방어전 진출처럼 경기의 단계가 바뀔 때마다 카멜라의 질문은 루카의 여정을 현장 기록으로 남기는 장면이 된다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
@@ -532,7 +552,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h2 id="작중-역할">작중 역할</h2>
 <p>그녀의 질문은 승패를 확인하는 절차에 그치지 않는다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 카멜라는 경기 뒤에 남는 말과 반응을 끌어내고, 루카와 코치가 다음 국면으로 넘어가기 전에 잠시 숨을 고르는 자리를 만든다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>카멜라는 루카가 흔들릴 때도 가까이 있다. 루카가 서 있기 힘들 정도로 온몸을 떨 때 카멜라와 함께 그를 휴게실로 데려가며, 이 장면은 그녀가 취재자이면서도 현장 상황에 직접 개입하는 인물임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>그녀는 위험을 먼저 계산하는 쪽에 선다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 루카가 <a class="wiki-link" href="sam.html" title="샘">샘</a>이 누구이기에 갑자기 기권하라는 것이냐고 묻는 장면은 카멜라가 경기 상대나 주변 상황을 보고 루카에게 물러서라고 판단했음을 드러낸다. 루카는 자신이 그런 비겁한 술수에 쉽게 무너질 사람이 아니라고 답하지만, 이 반응은 카멜라의 조언이 루카의 승부욕과 정면으로 부딪히는 순간이기도 하다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<p>그녀는 위험을 먼저 계산하는 쪽에 선다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 루카가 샘이 누구이기에 갑자기 기권하라는 것이냐고 묻는 장면은 카멜라가 경기 상대나 주변 상황을 보고 루카에게 물러서라고 판단했음을 드러낸다. 루카는 자신이 그런 비겁한 술수에 쉽게 무너질 사람이 아니라고 답하지만, 이 반응은 카멜라의 조언이 루카의 승부욕과 정면으로 부딪히는 순간이기도 하다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>카멜라는 자신을 스타피스 엔터테인먼트 인턴 기자라고 소개하지만, 루카에게 컴퍼니 계열의 이름은 가볍지 않다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 카메라 기자의 언급 · 카메라 기자의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 루카는 컴퍼니 때문에 자신의 고향이 하마터면 팔릴 뻔했다며 컴퍼니를 싫어한다고 말한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
 <p>이 긴장 때문에 카멜라는 친절한 취재자이면서 동시에 루카가 경계하는 거대 조직의 그림자를 함께 들여오는 인물이 된다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 루카는 카멜라 앞에서 <a class="wiki-link" href="char-2367.html" title="부트힐">부트힐</a>에 대한 생각을 솔직히 말하지 못하고, 나중에 “컴퍼니 지명 수배범”이라는 이유만으로 꼭 나쁜 사람이라고 판단할 수는 없다고 생각한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>

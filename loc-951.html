@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -524,10 +544,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-places.html">장소</a><a href="category-places-ships-stations.html">선주·정거장·거점</a><span>헤르타</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%97%A4%EB%A5%B4%ED%83%80&amp;page_slug=loc-951">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>헤르타</h1><div class="meta-row"><span class="badge">장소</span><span class="badge">선주·정거장·거점</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-places.html">장소</a><a href="category-places-ships-stations.html">선주·정거장·거점</a><span>헤르타</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%97%A4%EB%A5%B4%ED%83%80&amp;page_slug=loc-951">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>헤르타</h1><div class="meta-row"><span class="badge">장소</span><span class="badge">선주·정거장·거점</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/12/03/190340964/ecfe11fb0fadbef1351365a8d2dec344_1321489927743943083.png" alt="헤르타 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption>공식 HoYoWiki — 갤러리 · 헤르타의 사무실</figcaption></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>우주정거장 「<a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>」는 <a class="wiki-link" href="genius-society.html" title="지니어스 클럽">지니어스 클럽</a>의 헤르타가 별의 궤도에 올린 박물관형 우주 함선으로, 은하 곳곳의 괴이한 존재와 기물을 모아 관측하고 연구하는 장소다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>이 정거장의 주인은 헤르타이며, 소속 <a class="wiki-link" href="factions.html" title="파벌">파벌</a>은 지니어스 클럽과 「<a class="wiki-link" href="path-80.html" title="지식">지식</a>」으로 묶인다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주인"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 파벌"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>이 정거장의 주인은 헤르타이며, 소속 파벌은 지니어스 클럽과 「지식」으로 묶인다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주인"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 파벌"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>헤르타가 이 함선을 만든 이유는 평범한 세계의 법칙만으로는 채워지지 않는 호기심 때문이며, 정거장은 「별하늘에 괴이한 모든 것을 봉인」하려는 연구에서 출발했다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <p>오늘날 우주정거장 「헤르타」는 수많은 기물과 유물을 「소장품」으로 보유한 별하늘의 박물관이자, 연구원들이 은하 곳곳의 물건을 수집하고 형태와 기능을 기록하는 연구 시설이다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <p>정거장에는 관리과, 은하 지정학과, 지형학과, 생태과, 신비주의과, 방위과, 의료과, 정비과, 서비스과가 있으며, 이 부서 구성은 정거장이 단순 전시장이 아니라 행정·탐사·방위·생활 기능을 함께 굴리는 대형 연구 거점임을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 연구 부서"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
@@ -571,7 +591,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>아를란의 대사는 정거장의 실무자가 헤르타의 명성을 지키면서도 헤르타가 만든 위험을 수습해야 하는 위치에 있음을 드러낸다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
 <p>스크루룸은 헤르타의 연구적 관심과 외부 협력망을 잇는 인물이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
 <p>스크루룸은 헤르타가 개척자를 자주 언급했다고 말하고, 헤르타의 부탁대로 무명객을 만나러 왔다고 설명한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<p>또한 스크루룸은 헤르타와 함께 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a>를 위해 왔다고 말하며, 헤르타의 관심사가 정거장 내부 연구를 넘어 다른 세계와 사건으로 확장됨을 보여준다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
+<p>또한 스크루룸은 헤르타와 함께 앰포리어스를 위해 왔다고 말하며, 헤르타의 관심사가 정거장 내부 연구를 넘어 다른 세계와 사건으로 확장됨을 보여준다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
 <p>개척자는 우주정거장 「헤르타」에서 위험한 모험을 겪은 뒤 은하열차에 오르고, 이후에도 헤르타와 시뮬레이션 우주 테스트, 스텔라론 연구, 심부름과 질문으로 계속 연결된다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <p>이 관계에서 정거장은 개척자의 출발점이자 관찰실이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <p>헤르타는 개척자를 도와주는 조력자이면서도, 개척자의 특이성을 연구 대상으로 바라보는 지니어스 클럽의 연구자다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>

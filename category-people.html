@@ -173,6 +173,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
 .article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-hero-image figcaption {
+  border-top: 1px solid var(--line);
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
 .article-mini-actions {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +486,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .top-links a { padding: 7px 8px; }
   .article-body { padding-bottom: 32px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=2e74aeb9d587">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=623bbc591a27"></script>
-  <script type="module" src="assets/wiki-search.js?v=450d06a036b1"></script>
+  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -487,10 +508,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <section class="search-column">
         <h2 class="search-heading">자동완성</h2>
         <div data-search-suggestions></div>
-        <p class="search-future">게임 본문 대사 검색은 별도 인덱스로 추가 예정</p>
       </section>
       <section class="search-column">
-        <h2 class="search-heading">문서 본문 검색</h2>
+        <h2 class="search-heading">문서 검색</h2>
         <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
       </section>
     </div>
@@ -525,13 +545,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><h1>인물</h1><div class="meta-row"><span class="badge">인물</span></div></header>
-    <div class="article-body"><nav class="breadcrumbs" aria-label="문서 위치"><a href="categories.html">카테고리</a><span>인물</span></nav><section class="stub"><h2>인물</h2><p>주요 인물과 NPC를 소속·활동권별로 나눠 둘러봅니다.</p><p class="subtle">417개 문서</p><section class="category-subsection"><h3><a href="category-people-astral-express.html">은하열차·무명객</a> <span class="ref-source">7개</span></h3><p class="subtle">은하열차와 개척 여정에 직접 속한 인물입니다.</p><ul><li><a href="char-7.html">Mar. 7th</a> <span class="ref-source">인물 · 은하열차·무명객</span><p class="subtle">Mar. 7th는 은하열차 소속의 승객이자 개척자의 동료로, 얼음 속에 잠든 채 우주를 표류하다가 열차에서 깨어난 기억상실의 소녀다. 그녀는 자신의 출생과 과거를 알지 못한 채 깨어났고, 자신이 다시 태어난 날짜를 그대로 이름으로 삼아 “Mar. 7th”가 되었다.</p></li>
+    <div class="article-body"><nav class="breadcrumbs" aria-label="문서 위치"><a href="categories.html">카테고리</a><span>인물</span></nav><section class="stub"><h2>인물</h2><p>주요 인물과 NPC를 소속·활동권별로 나눠 둘러봅니다.</p><p class="subtle">416개 문서</p><section class="category-subsection"><h3><a href="category-people-astral-express.html">은하열차·무명객</a> <span class="ref-source">6개</span></h3><p class="subtle">은하열차와 개척 여정에 직접 속한 인물입니다.</p><ul><li><a href="char-7.html">Mar. 7th</a> <span class="ref-source">인물 · 은하열차·무명객</span><p class="subtle">Mar. 7th는 은하열차 소속의 승객이자 개척자의 동료로, 얼음 속에 잠든 채 우주를 표류하다가 열차에서 깨어난 기억상실의 소녀다. 그녀는 자신의 출생과 과거를 알지 못한 채 깨어났고, 자신이 다시 태어난 날짜를 그대로 이름으로 삼아 “Mar. 7th”가 되었다.</p></li>
 <li><a href="char-2657.html">Mar. 7th·수렵</a> <span class="ref-source">인물 · 은하열차·무명객</span><p class="subtle">Mar. 7th·수렵은 선주 의상을 입고 검을 든 Mar. 7th의 모습이다. 은하열차 소속의 Mar.</p></li>
 <li><a href="npc-3297.html">「닥쳐」</a> <span class="ref-source">인물 · 은하열차·무명객</span><p class="subtle">「닥쳐」는 은하열차에 소속된 바텐더 로봇이다. 파티 칸에서 무명객을 맞이하고, 먹을거리와 음료를 권하며, 여정 중 있었던 일을 이야기하자고 먼저 말을 거는 접객 담당으로 등장한다. 관련 항목도 「열차 스페셜 블렌드: 땔감, 쌀 그리고 소금」, 「렌치 믹스 샐러드」, 「적어도 이 순간은 함께」처럼 열차 안의 음료와 식사, </p></li>
 <li><a href="trailblazer.html">개척자</a> <span class="ref-source">인물 · 은하열차·무명객</span><p class="subtle">개척자는 스텔라론을 품은 채 은하열차와 동행하며 각 세계의 위기에 관여하는 중심 인물이다. 파멸·보존·화합·기억·환락 형태는 별도 인물이 아니라 같은 개척자의 여정과 선택이 남긴 형태로 다룬다.</p></li>
 <li><a href="char-10.html">웰트</a> <span class="ref-source">인물 · 은하열차·무명객</span><p class="subtle">웰트는 은하열차에 소속된 허수 속성, 공허 운명의 길 캐릭터이며, 열차팀 안에서는 의젓하고 진중한 선배로 자리한다. 그는 젊은 동료들이 막히는 지점에서 조언을 주고, 위기 앞에서는 침착하게 판단하며, 필요할 때는 자신이 앞에 서는 인물이다. 동시에 그는 오랜만에 돌아온 모험을 진심으로 즐기며, 여정의 기억을 공책에 스케치</p></li>
-<li><a href="char-9.html">히메코</a> <span class="ref-source">인물 · 은하열차·무명객</span><p class="subtle">히메코는 은하열차를 복원한 과학자이자 은하열차 소속 항법사로, 좌초된 열차를 고쳐 별하늘로 나아간 인물이다. 그녀는 어린 시절 고향 세계에서 좌초된 은하열차와 마주쳤고, 몇 년 뒤 열차를 수리한 뒤에야 그 일이 여정의 시작에 불과했다는 사실을 깨달았다. 히메코에게 은하열차는 이동 수단만이 아니라 과거의 항로로 돌아가게 해</p></li>
-<li><a href="char-5335.html">히메코 · 노바</a> <span class="ref-source">인물 · 은하열차·무명객</span><p class="subtle">히메코 · 노바는 은하열차의 항법사 히메코를 중심에 둔 캐릭터다. 그녀는 “같은 풍경을 바라볼 가족”이라고 자신을 규정하며, 복잡한 과거와 먼 미래를 지나도 관계는 변하지 않는다고 말한다.</p></li></ul></section>
+<li><a href="char-9.html">히메코</a> <span class="ref-source">인물 · 은하열차·무명객</span><p class="subtle">히메코는 은하열차를 복원한 과학자이자 은하열차 소속 항법사로, 좌초된 열차를 고쳐 별하늘로 나아간 인물이다. 그녀는 어린 시절 고향 세계에서 좌초된 은하열차와 마주쳤고, 몇 년 뒤 열차를 수리한 뒤에야 그 일이 여정의 시작에 불과했다는 사실을 깨달았다. 히메코에게 은하열차는 이동 수단만이 아니라 과거의 항로로 돌아가게 해</p></li></ul></section>
 <section class="category-subsection"><h3><a href="category-people-stellaron-hunters.html">스텔라론 헌터</a> <span class="ref-source">5개</span></h3><p class="subtle">스텔라론 헌터와 그 작전에 연결된 인물입니다.</p><ul><li><a href="silver-wolf.html">은랑</a> <span class="ref-source">인물 · 스텔라론 헌터</span><p class="subtle">은랑은 스텔라론 헌터 소속의 프로 해커로, 우주를 대형 시뮬레이션 게임처럼 받아들이고 현실 데이터를 수정하는 에테르 편집을 마스터한 인물이다. LV.999와 환락의 카트리지는 별도 인물이 아니라, 은랑이 만렙 이후에도 게임을 끝내지 않고 새 규칙과 새 판을 만들려는 플레이어라는 점을 확장하는 설정 축이다.</p></li>
 <li><a href="char-2494.html">반디</a> <span class="ref-source">인물 · 스텔라론 헌터</span><p class="subtle">반디는 임무에 충실하고 강인한 성격을 지닌 스텔라론 헌터로 움직이지만, 자신을 단지 「샘」이라는 무기나 사명으로만 남기고 싶어 하지 않는다. 그는 “반디”라는 신분으로 세계를 알아가고 싶다고 말하며, 기갑 「샘」이 자신의 생명의 요람이자 한때 존재의 의미였음을 인정하면서도 그것이 전부가 아니기를 바란다. 이 균열 때문에 </p></li>
 <li><a href="blade.html">블레이드</a> <span class="ref-source">인물 · 스텔라론 헌터</span><p class="subtle">스텔라론 헌터 블레이드의 불사, 마각, 응성으로서의 과거, 단항·선주와의 악연, 천야 형태에서 드러나는 장인성과 결말 지향을 한 인물 문서로 정리한다.</p></li>
