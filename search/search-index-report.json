@@ -1,15 +1,15 @@
 {
   "schema": "hsr-wiki-search-index-report-v1",
-  "generated_at": "2026-06-29T09:47:10+09:00",
+  "generated_at": "2026-06-29T10:14:05+09:00",
   "page_count": 509,
   "registered_term_count": 575,
-  "suggestion_count": 715,
+  "suggestion_count": 639,
   "term_count": 103121,
   "shard_count": 128,
   "largest_shard_bytes": 61554,
-  "total_index_bytes": 6656761,
+  "total_index_bytes": 6637881,
   "notes": [
-    "Autocomplete covers rendered pages plus queued/needs_review non-held proper nouns.",
+    "Autocomplete covers rendered/queued page titles and aliases only; search_terms stay in full-text ranking.",
     "Full-text search loads only shards required for query terms.",
     "Korean/CJK search uses 2/3-gram terms to handle no-space proper-noun matching."
   ]
