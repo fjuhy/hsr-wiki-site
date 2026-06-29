@@ -1,12 +1,12 @@
 {
   "schema": "hsr-wiki-static-site-manifest-v1",
-  "generated_at": "2026-06-29T12:51:30+09:00",
+  "generated_at": "2026-06-29T13:11:02+09:00",
   "site_base_url_configured": true,
   "page_count": 500,
   "registered_term_count": 575,
-  "html_count": 552,
-  "file_count": 695,
-  "total_bytes": 36997203,
+  "html_count": 553,
+  "file_count": 696,
+  "total_bytes": 37112969,
   "critical_assets": {
     "assets/wiki-search.js": {
       "exists": true,
@@ -43,6 +43,7 @@
     "category_pages": true,
     "all_documents_page": true,
     "document_status_page": true,
+    "document_request_page": true,
     "article_dates": true,
     "bounded_update_history": true,
     "static_search": true,
