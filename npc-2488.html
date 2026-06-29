@@ -143,8 +143,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .queue-list { display: grid; gap: 3px; max-height: 74vh; overflow: auto; }
 .category-nav-group { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
 .category-nav-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-special + .category-nav-group { border-top: 0; padding-top: 0; margin-top: 0; }
 .category-nav-parent { font-weight: 850; }
 .category-nav-child { padding-left: 18px !important; font-size: 13px; color: var(--muted) !important; }
+.category-nav-special { font-weight: 850; border-bottom: 1px solid var(--line); padding-bottom: 8px; margin-bottom: 8px; }
 .queue-list a {
   display: flex;
   justify-content: space-between;
@@ -280,6 +282,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .category-subsection { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 12px; }
 .category-subsection h3 { margin-bottom: 4px; }
 .info-item strong, .category-card strong, .home-card strong { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.document-tree { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.document-tree ul { list-style: none; margin: 8px 0 0; padding-left: 18px; border-left: 1px solid var(--line); display: grid; gap: 6px; }
+.document-tree li { margin: 0; }
+.document-tree a { font-weight: 780; text-decoration: none; }
+.document-tree-category > div, .document-tree-subcategory > div, .document-tree-page { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.document-tree-category > div > a { color: var(--ink); font-size: 18px; }
+.document-tree-subcategory > div > a { color: var(--accent); }
 .history-list { margin: 12px 0 0; padding-left: 18px; }
 .history-list li { margin: 7px 0; }
 .log-list {
@@ -366,20 +375,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
 .stub p { max-width: 760px; }
-.home-hero {
-  display: block;
-  padding: 38px 42px 28px;
-}
-.home-hero h2 { font-size: clamp(28px, 4vw, 44px); line-height: 1.1; margin: 0; }
-.home-visual {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  box-shadow: 0 18px 42px rgba(12, 16, 24, .14);
-}
 .home-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -391,7 +386,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
-.policy-links { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -414,8 +408,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .article-shell { order: 1; }
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
-  .article-top, .article-body, .stub, .home-hero, .home-section { padding-left: 20px; padding-right: 20px; }
-  .home-hero { grid-template-columns: 1fr; gap: 16px; }
+  .article-top, .article-body, .stub, .home-section { padding-left: 20px; padding-right: 20px; }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
@@ -455,7 +448,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
-  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
+  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
 <a class="category-nav-child" href="category-people-stellaron-hunters.html"><span>스텔라론 헌터</span></a>
 <a class="category-nav-child" href="category-people-herta-space-station.html" aria-current="page"><span>우주정거장 「헤르타」</span></a>
 <a class="category-nav-child" href="category-people-knowledge.html"><span>지식 세력</span></a>
