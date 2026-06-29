@@ -150,6 +150,11 @@ function exactPageMatch(query, suggestions) {
   const qc = q.replace(/\s+/g, '');
   return suggestions.find(item => item.kind === 'page' && (item.key === q || item.keyCompact === qc));
 }
+function exactStatusMatch(query, suggestions) {
+  const q = normalizeText(query);
+  const qc = q.replace(/\s+/g, '');
+  return suggestions.find(item => item.kind !== 'page' && item.statusHref && (item.key === q || item.keyCompact === qc));
+}
 function escapeHtml(value) {
   return (value || '').replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
 }
@@ -157,7 +162,7 @@ function typeLabel(type) {
   return ({ cosmology:'우주관', path:'운명의 길', faction:'파벌', 'faction-subgroup':'파벌 하위 조직', organization:'조직', concept:'개념', character:'인물', place:'장소', topic:'항목' })[type] || '항목';
 }
 function statusLabel(status) {
-  return ({ rendered:'문서', queued:'등록 용어', needs_review:'검토 용어' })[status] || status;
+  return ({ rendered:'문서화됨', queued:'문서화 작업 예정', needs_review:'문서화 검토 중' })[status] || '문서화 현황';
 }
 function highlight(text, query) {
   let safe = escapeHtml(text || '');
@@ -213,9 +218,10 @@ function renderSuggestions(root, query, suggestions) {
   }
   box.innerHTML = suggestions.map((item, index) => {
     const href = item.href ? ` data-href="${escapeHtml(item.href)}"` : '';
+    const statusHref = item.statusHref ? ` data-status-href="${escapeHtml(item.statusHref)}"` : '';
     const icon = item.kind === 'page' ? '↵' : '＋';
-    const sub = item.kind === 'page' ? `${typeLabel(item.type)} · 바로 이동` : `${statusLabel(item.status)} · 아직 문서 없음`;
-    return `<button type="button" class="search-suggestion" data-suggestion-index="${index}" aria-selected="false"${href}>
+    const sub = item.kind === 'page' ? `${typeLabel(item.type)} · 바로 이동` : `${statusLabel(item.status)} · 현황 보기`;
+    return `<button type="button" class="search-suggestion" data-suggestion-index="${index}" aria-selected="false"${href}${statusHref}>
       <span><strong>${highlight(item.label, query)}</strong> <small>${escapeHtml(item.alias ? item.title : sub)}</small></span>
       <em>${icon}</em>
     </button>`;
@@ -238,6 +244,7 @@ function chooseSuggestion(root, index) {
   const item = state.currentSuggestions[index];
   if (!item) return false;
   if (item.href) { window.location.href = item.href; return true; }
+  if (item.statusHref) { window.location.href = item.statusHref; return true; }
   const input = root.querySelector('[data-search-input]');
   if (input) {
     input.value = item.label;
@@ -301,6 +308,8 @@ async function submitSearch(root) {
   const suggestions = await ensureSuggestions();
   const exact = exactPageMatch(query, suggestions);
   if (exact?.href) { window.location.href = exact.href; return; }
+  const exactStatus = exactStatusMatch(query, suggestions);
+  if (exactStatus?.statusHref) { window.location.href = exactStatus.statusHref; return; }
   setPanelOpen(root, true);
   renderSuggestions(root, query, findSuggestions(query, suggestions));
   renderResults(root, query, await searchPages(query));
@@ -328,6 +337,8 @@ function initSearch(root) {
   root.addEventListener('click', event => {
     const target = event.target.closest('[data-href]');
     if (target) window.location.href = target.dataset.href;
+    const statusTarget = event.target.closest('[data-status-href]');
+    if (statusTarget) window.location.href = statusTarget.dataset.statusHref;
   });
   document.addEventListener('keydown', event => {
     if (event.key === '/' && !/input|textarea|select/i.test(document.activeElement.tagName)) {

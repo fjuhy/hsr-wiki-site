@@ -289,6 +289,46 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .document-tree-category > div, .document-tree-subcategory > div, .document-tree-page { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
 .document-tree-category > div > a { color: var(--ink); font-size: 18px; }
 .document-tree-subcategory > div > a { color: var(--accent); }
+.status-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+.status-filter input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.status-group { margin-top: 22px; }
+.status-group h3 { margin-bottom: 4px; }
+.status-list { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.status-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 9px;
+}
+.status-row a { font-weight: 800; text-decoration: none; }
+.status-row p { grid-column: 1 / -1; margin: 0; }
+.status-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  background: var(--surface);
+  color: var(--ink);
+}
+.status-pill.is-documented { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); color: var(--accent-ink); }
+.status-pill.is-thin, .status-pill.is-out_of_scope { border-color: color-mix(in srgb, var(--warn) 46%, var(--line)); color: var(--warn); }
 .history-list { margin: 12px 0 0; padding-left: 18px; }
 .history-list li { margin: 7px 0; }
 .log-list {
@@ -420,7 +460,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
+  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -446,9 +486,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
-  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
+  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a><a href="document-status.html"><span>문서화 현황</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
 <a class="category-nav-child" href="category-people-stellaron-hunters.html"><span>스텔라론 헌터</span></a>
 <a class="category-nav-child" href="category-people-herta-space-station.html" aria-current="page"><span>우주정거장 「헤르타」</span></a>
@@ -498,8 +538,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>완•매와의 관계는 온평의 출신을 규정한다. 온평이 완•매의 창조물이라는 사실은 온정, 왕짜증 같은 존재들과의 관계를 같은 창조 배경을 공유한 존재들 사이의 관계로 읽게 한다. <sup class="cite-ref" title="공식 HoYoWiki · 온평"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 왕짜증의 언급 · 왕짜증의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
 <p>우주정거장 「헤르타」는 온평의 소속이자, 온정이 온평과 함께 가 보고 싶어 하는 머리 위의 장소다. 온정은 온평에게서 우주정거장 이야기를 듣고 그곳의 생활을 궁금해하지만, 아직 그곳으로 올라가는 길은 찾지 못했다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
 <h2 id="이름과-연구원-흉내">이름과 연구원 흉내</h2>
-<p>온평이 온정에게 준 이름은 장난처럼 보이지만, 온정에게는 자신이 무엇이 되고 싶은지를 담는 표식이 된다. 온정은 연구원이 모두 똑똑하다는 온평의 말을 믿고, 자신도 연구원처럼 똑똑해지고 싶었기 때문에 두 사람의 이름이 「정식 연구원」처럼 바뀌었다고 말한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>이 이름 짓기는 온평이 우주정거장 바깥의 창조물들에게 우주정거장 내부의 질서를 흉내 내게 만드는 장면으로 읽힌다. 온정은 연구원의 성씨와 똑똑함을 하나의 의식처럼 받아들이고, 온평의 설명을 통해 자신도 그 세계에 가까워질 수 있다고 상상한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>온평의 이름 짓기는 우주정거장 바깥의 창조물들이 정거장 내부의 질서를 흉내 내는 작은 장면이다. 온정은 연구원의 성씨와 똑똑함을 하나의 의식처럼 받아들이고, 온평의 설명을 통해 자신도 그 세계에 가까워질 수 있다고 상상한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>온평과 온정은 아직 우주정거장으로 올라가지 못했다. 그래서 온평이 만든 이름과 이야기는 실제 신분의 증명이라기보다, 머리 위 세계를 바라보는 창조물들이 자기 자리를 넓혀 보려는 소망에 가깝다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">온평</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1882?lang=ko-kr">원문</a></span><div class="ref-quote">완•매의 창조물</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1882?lang=ko-kr">원문</a></span><div class="ref-quote">온평</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1882?lang=ko-kr">원문</a></span><div class="ref-quote">우주정거장 「헤르타」</div></li>
@@ -521,7 +560,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 우주정거장 「헤르타」</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>

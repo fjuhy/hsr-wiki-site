@@ -289,6 +289,46 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .document-tree-category > div, .document-tree-subcategory > div, .document-tree-page { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
 .document-tree-category > div > a { color: var(--ink); font-size: 18px; }
 .document-tree-subcategory > div > a { color: var(--accent); }
+.status-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+.status-filter input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.status-group { margin-top: 22px; }
+.status-group h3 { margin-bottom: 4px; }
+.status-list { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.status-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 9px;
+}
+.status-row a { font-weight: 800; text-decoration: none; }
+.status-row p { grid-column: 1 / -1; margin: 0; }
+.status-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  background: var(--surface);
+  color: var(--ink);
+}
+.status-pill.is-documented { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); color: var(--accent-ink); }
+.status-pill.is-thin, .status-pill.is-out_of_scope { border-color: color-mix(in srgb, var(--warn) 46%, var(--line)); color: var(--warn); }
 .history-list { margin: 12px 0 0; padding-left: 18px; }
 .history-list li { margin: 7px 0; }
 .log-list {
@@ -420,7 +460,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=531e1fd13ac3"></script>
+  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
   <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
@@ -446,9 +486,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
-  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
+  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a><a href="document-status.html"><span>문서화 현황</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
 <a class="category-nav-child" href="category-people-stellaron-hunters.html"><span>스텔라론 헌터</span></a>
 <a class="category-nav-child" href="category-people-herta-space-station.html"><span>우주정거장 「헤르타」</span></a>
@@ -567,7 +607,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
