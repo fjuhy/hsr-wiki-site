@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>전통프로젝트부 · 호요호요 설정 위키</title>
+  <title>전통프로젝트부 · hoyohoyo.wiki</title>
   <meta name="description" content="전통프로젝트부는 스타피스 컴퍼니에 속한 부서이며, 공식 분류상 「보존」 클리포트와 연결된 파벌 항목으로 다뤄진다.">
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="호요호요 설정 위키">
-  <meta property="og:title" content="전통프로젝트부 · 호요호요 설정 위키">
+  <meta property="og:site_name" content="hoyohoyo.wiki">
+  <meta property="og:title" content="전통프로젝트부 · hoyohoyo.wiki">
   <meta property="og:description" content="전통프로젝트부는 스타피스 컴퍼니에 속한 부서이며, 공식 분류상 「보존」 클리포트와 연결된 파벌 항목으로 다뤄진다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/entry-1809.html">
   <meta name="twitter:card" content="summary">
@@ -15,6 +15,7 @@
   <link rel="icon" href="data:,">
   <style>:root {
   color-scheme: light;
+  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -104,7 +105,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
+.brand {
+  color: var(--ink);
+  font-family: var(--brand-font);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-decoration: none;
+  white-space: nowrap;
+}
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
 .top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
@@ -447,21 +456,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
 }
 .home-hero-kicker {
+  font-family: var(--brand-font);
   margin: 0 0 10px;
   color: rgba(255, 255, 255, .76);
   font-size: 13px;
   font-weight: 760;
+  letter-spacing: 0;
 }
 .home-hero h1 {
+  font-family: var(--brand-font);
   margin: 0 0 10px;
-  font-size: clamp(36px, 6vw, 68px);
+  font-size: 64px;
+  font-weight: 820;
+  letter-spacing: 0;
   line-height: 1.05;
+  white-space: nowrap;
 }
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
   color: rgba(255, 255, 255, .88);
-  font-size: clamp(17px, 2vw, 22px);
+  font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
 }
@@ -499,12 +514,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
+  .home-hero h1 { font-size: 38px; }
+  .home-hero-subtitle { font-size: 18px; }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
   .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
   .top-links a { padding: 7px 8px; }
+  .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
 }</style>
   <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
@@ -516,7 +534,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
-<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">호요호요 설정 위키<small>붕괴 스타레일</small></a><search class="search-shell" data-wiki-search data-pagefind-ignore>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">hoyohoyo.wiki</a><search class="search-shell" data-wiki-search data-pagefind-ignore>
   <form class="search-form" data-search-form role="search">
     <label class="search-input-wrap">
       <span class="sr-only">위키 검색</span>
