@@ -505,7 +505,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
   .site-header-inner { align-items: stretch; flex-wrap: wrap; }
-  .top-links { margin-left: auto; }
+  .top-links {
+    flex: 0 1 100%;
+    justify-content: flex-start;
+    margin-left: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .top-links::-webkit-scrollbar { display: none; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
