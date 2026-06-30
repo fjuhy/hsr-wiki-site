@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>스콧 · 붕괴: 스타레일 설정 위키</title>
+  <title>스콧 · 호요호요 설정 위키</title>
   <meta name="description" content="스콧은 벨로보그 소속의 「격투 클럽」 지배인 겸 사장이다. 그는 격투를 순수한 승부보다 입장권, 상금, 선수 관리, 홍보가 얽힌 사업으로 다루며, 자신과 몇 마디 나눈 사람에게도 공짜 입장은 허락하지 않는다고 말한다. 스스로는 약속한 상금을 지키는 사람이라고 내세우지만, 그 말은 곧 “서로의 이익”을 위한 다음 사업 제안으로 이어진다.">
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="붕괴: 스타레일 설정 위키">
-  <meta property="og:title" content="스콧 · 붕괴: 스타레일 설정 위키">
+  <meta property="og:site_name" content="호요호요 설정 위키">
+  <meta property="og:title" content="스콧 · 호요호요 설정 위키">
   <meta property="og:description" content="스콧은 벨로보그 소속의 「격투 클럽」 지배인 겸 사장이다. 그는 격투를 순수한 승부보다 입장권, 상금, 선수 관리, 홍보가 얽힌 사업으로 다루며, 자신과 몇 마디 나눈 사람에게도 공짜 입장은 허락하지 않는다고 말한다. 스스로는 약속한 상금을 지키는 사람이라고 내세우지만, 그 말은 곧 “서로의 이익”을 위한 다음 사업 제안으로 이어진다.">
-  <meta property="og:url" content="https://fjuhy.github.io/hsr-wiki-site/npc-1038.html">
+  <meta property="og:url" content="https://hoyohoyo.wiki/npc-1038.html">
   <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="https://fjuhy.github.io/hsr-wiki-site/npc-1038.html">
+  <link rel="canonical" href="https://hoyohoyo.wiki/npc-1038.html">
   <link rel="icon" href="data:,">
   <style>:root {
   color-scheme: light;
@@ -415,6 +415,56 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
 .stub p { max-width: 760px; }
+.home-hero {
+  position: relative;
+  min-height: clamp(320px, 40vw, 520px);
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+  overflow: hidden;
+}
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
+    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+}
+.home-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-hero-copy {
+  width: min(760px, 100%);
+  padding: clamp(34px, 6vw, 72px) 42px 38px;
+  color: #fff;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+}
+.home-hero-kicker {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, .76);
+  font-size: 13px;
+  font-weight: 760;
+}
+.home-hero h1 {
+  margin: 0 0 10px;
+  font-size: clamp(36px, 6vw, 68px);
+  line-height: 1.05;
+}
+.home-hero-subtitle {
+  margin: 0;
+  max-width: 560px;
+  color: rgba(255, 255, 255, .88);
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.55;
+  font-weight: 650;
+}
 .home-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -448,7 +498,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .article-shell { order: 1; }
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
-  .article-top, .article-body, .stub, .home-section { padding-left: 20px; padding-right: 20px; }
+  .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
@@ -466,7 +516,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
-<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">붕괴: 스타레일 설정 위키</a><search class="search-shell" data-wiki-search data-pagefind-ignore>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">호요호요 설정 위키<small>붕괴 스타레일</small></a><search class="search-shell" data-wiki-search data-pagefind-ignore>
   <form class="search-form" data-search-form role="search">
     <label class="search-input-wrap">
       <span class="sr-only">위키 검색</span>
