@@ -543,96 +543,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   line-height: 1.55;
   font-weight: 650;
 }
-.home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
-.home-section h2 { margin: 0 0 12px; font-size: 21px; }
-.home-category-hub {
-  position: relative;
+.home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 12px;
   margin: 16px 0 0;
 }
-.home-category-hub::before {
-  content: "";
-  position: absolute;
-  inset: 24px 18px auto;
-  height: 1px;
-  background: color-mix(in srgb, var(--accent) 28%, var(--line));
-}
-.home-category-node {
-  position: relative;
-  z-index: 1;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--paper) 92%, var(--accent-soft)) 0%, var(--surface) 100%);
-  padding: 12px;
-}
-.home-category-main {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto auto;
-  gap: 10px;
-  align-items: center;
-  color: var(--ink);
-  text-decoration: none;
-}
-.home-category-main:hover { background: transparent; color: var(--accent-ink); }
-.home-category-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--line));
-  border-radius: 999px;
-  background: var(--paper);
-  color: var(--accent-ink);
-}
-.home-category-icon svg {
-  display: block;
-  width: 21px;
-  height: 21px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.home-category-title {
-  display: block;
-  font-size: 16px;
-  font-weight: 860;
-  line-height: 1.25;
-}
-.home-category-count {
-  border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
-  border-radius: 999px;
-  padding: 3px 8px;
-  background: var(--paper);
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 760;
-  white-space: nowrap;
-}
-.home-category-arrow { color: var(--muted); font-size: 18px; line-height: 1; }
-.home-category-examples {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 11px 0 0 52px;
-  padding-top: 10px;
-  border-top: 1px solid color-mix(in srgb, var(--line) 78%, transparent);
-}
-.home-category-examples a {
-  border-radius: 999px;
-  padding: 3px 8px;
-  background: color-mix(in srgb, var(--paper) 70%, transparent);
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.35;
-  text-decoration: none;
-}
-.home-category-examples a:hover { background: var(--accent-soft); color: var(--accent-ink); }
+.home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
+.home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
@@ -668,47 +586,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .home-hero h1 { font-size: 38px; }
   .home-hero-subtitle { font-size: 18px; }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
-}
-@media (max-width: 620px) {
-  .home-category-hub {
-    display: block;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: var(--surface);
-    overflow: hidden;
-  }
-  .home-category-hub::before { display: none; }
-  .home-category-node {
-    border: 0;
-    border-bottom: 1px solid var(--line);
-    border-radius: 0;
-    background: transparent;
-    padding: 0;
-  }
-  .home-category-node:last-child { border-bottom: 0; }
-  .home-category-main { padding: 8px 12px 4px; grid-template-columns: auto minmax(0, 1fr) auto auto; }
-  .home-category-icon { width: 30px; height: 30px; }
-  .home-category-icon svg { width: 17px; height: 17px; }
-  .home-category-title { font-size: 15px; }
-  .home-category-count { border: 0; background: transparent; padding: 0; }
-  .home-category-examples {
-    display: block;
-    margin: -4px 12px 8px 54px;
-    padding: 0;
-    border-top: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.3;
-  }
-  .home-category-examples a {
-    display: inline;
-    padding: 0;
-    background: transparent;
-    color: var(--muted);
-  }
-  .home-category-examples a + a::before { content: " · "; color: var(--muted); }
-  .home-category-examples a:hover { background: transparent; text-decoration: underline; }
 }
 @media (max-width: 520px) {
   .site-header-inner { padding: 9px 12px; gap: 8px; }
@@ -806,7 +683,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 <section class="home-section">
   <h2>주요 카테고리</h2>
-  <div class="home-category-hub"><article class="home-category-node"><a class="home-category-main" href="category-people.html" aria-label="인물 카테고리 보기"><span class="home-category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span><span class="home-category-title">인물</span><span class="home-category-count">407개</span><span class="home-category-arrow" aria-hidden="true">&rsaquo;</span></a><div class="home-category-examples"><a href="trailblazer.html">개척자</a><a href="kafka.html">카프카</a><a href="aventurine.html">어벤츄린</a></div></article><article class="home-category-node"><a class="home-category-main" href="category-factions.html" aria-label="파벌 카테고리 보기"><span class="home-category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7z"></path><path d="M12 3v18"></path><path d="m4 7 8 4 8-4"></path></svg></span><span class="home-category-title">파벌</span><span class="home-category-count">38개</span><span class="home-category-arrow" aria-hidden="true">&rsaquo;</span></a><div class="home-category-examples"><a href="stellaron-hunters.html">스텔라론 헌터</a><a href="interastral-peace-corporation.html">스타피스 컴퍼니</a><a href="genius-society.html">지니어스 클럽</a></div></article><article class="home-category-node"><a class="home-category-main" href="category-paths.html" aria-label="운명의 길 카테고리 보기"><span class="home-category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19c4-8 12-6 16-14"></path><path d="M6 13h6"></path><path d="M12 13v6"></path></svg></span><span class="home-category-title">운명의 길</span><span class="home-category-count">13개</span><span class="home-category-arrow" aria-hidden="true">&rsaquo;</span></a><div class="home-category-examples"><a href="trailblaze.html">개척</a><a href="nihility.html">공허</a><a href="preservation.html">보존</a></div></article><article class="home-category-node"><a class="home-category-main" href="category-aeons.html" aria-label="에이언즈 카테고리 보기"><span class="home-category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3"></path><path d="M12 19v3"></path><path d="M2 12h3"></path><path d="M19 12h3"></path><path d="m4.9 4.9 2.1 2.1"></path><path d="m17 17 2.1 2.1"></path><path d="m19.1 4.9-2.1 2.1"></path><path d="m7 17-2.1 2.1"></path></svg></span><span class="home-category-title">에이언즈</span><span class="home-category-count">10개</span><span class="home-category-arrow" aria-hidden="true">&rsaquo;</span></a><div class="home-category-examples"><a href="nanook.html">⌈ 파멸 ⌋ 나누크</a><a href="qlipoth.html">⌈ 보존 ⌋ 클리포트</a><a href="nous.html">⌈ 지식 ⌋ 누스</a></div></article><article class="home-category-node"><a class="home-category-main" href="category-places.html" aria-label="장소 카테고리 보기"><span class="home-category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11z"></path><circle cx="12" cy="10" r="2"></circle></svg></span><span class="home-category-title">장소</span><span class="home-category-count">6개</span><span class="home-category-arrow" aria-hidden="true">&rsaquo;</span></a><div class="home-category-examples"><a href="xianzhou-luofu.html">선주 「나부」</a><a href="jarilo-vi.html">야릴로-Ⅵ</a><a href="amphoreus.html">앰포리어스</a></div></article><article class="home-category-node"><a class="home-category-main" href="category-concepts.html" aria-label="개념 카테고리 보기"><span class="home-category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 0-4 12v3h8v-3a7 7 0 0 0-4-12z"></path><path d="M9 21h6"></path><path d="M10 12h4"></path></svg></span><span class="home-category-title">개념</span><span class="home-category-count">23개</span><span class="home-category-arrow" aria-hidden="true">&rsaquo;</span></a><div class="home-category-examples"><a href="stellaron.html">스텔라론</a><a href="dreamscape.html">꿈세계</a><a href="aether-editing.html">에테르 편집</a></div></article><article class="home-category-node"><a class="home-category-main" href="category-terms.html" aria-label="아이템/용어 카테고리 보기"><span class="home-category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"></path><path d="M14 3v4h4"></path><path d="M9 12h6"></path><path d="M9 16h4"></path></svg></span><span class="home-category-title">아이템/용어</span><span class="home-category-count">3개</span><span class="home-category-arrow" aria-hidden="true">&rsaquo;</span></a><div class="home-category-examples"><a href="dream-bubble.html">꿈방울</a><a href="term-70447ff24d.html">율법</a><a href="term-405b5ea197.html">은하인법첩</a></div></article></div>
+  <div class="home-grid"><a class="home-card" href="category-people.html"><strong>인물</strong><span>407개 문서</span></a><a class="home-card" href="category-factions.html"><strong>파벌</strong><span>38개 문서</span></a><a class="home-card" href="category-paths.html"><strong>운명의 길</strong><span>13개 문서</span></a><a class="home-card" href="category-aeons.html"><strong>에이언즈</strong><span>10개 문서</span></a><a class="home-card" href="category-places.html"><strong>장소</strong><span>6개 문서</span></a><a class="home-card" href="category-concepts.html"><strong>개념</strong><span>23개 문서</span></a><a class="home-card" href="category-terms.html"><strong>아이템/용어</strong><span>3개 문서</span></a></div>
 </section>
 <section class="home-section">
   <h2>최근 변경 문서</h2>
