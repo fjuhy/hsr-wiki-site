@@ -420,6 +420,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+.comments-giscus-loading { margin: 8px 0 0; }
+.comments-giscus-fallback {
+  display: none;
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 12px;
+}
+.comments-giscus-fallback p { margin: 0 0 10px; }
+.comments-section-giscus:not(.is-giscus-ready) .giscus {
+  max-height: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
+.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
+.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
+.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -537,7 +558,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
   <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
+  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -625,6 +646,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="npc-3099">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
+  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
+  
+  <div class="comments-giscus-fallback" data-giscus-fallback>
+    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
+    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EB%B3%B5%EB%A6%BC&amp;body=%EB%B3%B5%EB%A6%BC+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnpc-3099.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
+  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

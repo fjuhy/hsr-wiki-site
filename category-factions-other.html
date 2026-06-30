@@ -420,6 +420,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+.comments-giscus-loading { margin: 8px 0 0; }
+.comments-giscus-fallback {
+  display: none;
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 12px;
+}
+.comments-giscus-fallback p { margin: 0 0 10px; }
+.comments-section-giscus:not(.is-giscus-ready) .giscus {
+  max-height: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
+.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
+.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
+.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -537,7 +558,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
   <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
+  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
