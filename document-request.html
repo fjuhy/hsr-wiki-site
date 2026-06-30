@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>새 문서 작성 요청 · hoyohoyo.wiki</title>
-  <meta name="description" content="새 문서 요청은 GitHub Issues로 받습니다. 요청이 들어오면 자동 검토 하네스가 먼저 기존 문서와 문서화 현황을 확인하고, 공식/게임 본편 근거가 충분한지와 이 위키의 범위에 맞는지를 판정합니다.">
+  <meta name="description" content="새 문서 요청은 GitHub Issues로 받습니다. 요청이 들어오면 먼저 기존 문서와 문서화 현황을 확인하고, 공식/게임 본편 근거가 충분한지와 이 위키의 범위에 맞는지를 살펴봅니다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="새 문서 작성 요청 · hoyohoyo.wiki">
-  <meta property="og:description" content="새 문서 요청은 GitHub Issues로 받습니다. 요청이 들어오면 자동 검토 하네스가 먼저 기존 문서와 문서화 현황을 확인하고, 공식/게임 본편 근거가 충분한지와 이 위키의 범위에 맞는지를 판정합니다.">
+  <meta property="og:description" content="새 문서 요청은 GitHub Issues로 받습니다. 요청이 들어오면 먼저 기존 문서와 문서화 현황을 확인하고, 공식/게임 본편 근거가 충분한지와 이 위키의 범위에 맞는지를 살펴봅니다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/document-request.html">
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://hoyohoyo.wiki/document-request.html">
@@ -239,6 +239,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
+}
+.article-hero-caption {
+  border-top: 1px solid var(--line);
+  padding: 7px 10px 8px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -671,7 +678,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><span>정책</span></nav><h1>새 문서 작성 요청</h1><div class="meta-row"><span class="badge">운영 정책</span></div></header>
-    <div class="article-body"><p>새 문서 요청은 GitHub Issues로 받습니다. 요청이 들어오면 자동 검토 하네스가 먼저 기존 문서와 문서화 현황을 확인하고, 공식/게임 본편 근거가 충분한지와 이 위키의 범위에 맞는지를 판정합니다.</p>
+    <div class="article-body"><p>새 문서 요청은 GitHub Issues로 받습니다. 요청이 들어오면 먼저 기존 문서와 문서화 현황을 확인하고, 공식/게임 본편 근거가 충분한지와 이 위키의 범위에 맞는지를 살펴봅니다.</p>
 <p><a href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=document-request.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%9A%94%EC%B2%AD%5D+">새 문서 요청하기</a></p>
 <p>요청 글에는 다음 항목을 꼭 적어 주세요.</p>
 <ul>
@@ -681,14 +688,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <li>공식 근거</li>
 <li>참고 사이트/자료</li>
 </ul>
-<p>자동 검토는 네 가지 결과 중 하나를 남깁니다.</p>
+<p>검토 결과는 보통 네 가지 중 하나로 정리됩니다.</p>
 <ul>
 <li>이미 문서화됨: 같은 표제어나 별칭이 기존 문서에 있습니다.</li>
 <li>문서화 작업 예정 또는 검토중: 이미 등록된 항목이며 근거 보강 또는 작성 순서를 기다립니다.</li>
 <li>분량 부족 또는 범위 밖: 독립 문서로 만들면 억지 분량이 생기거나, 이벤트 일정·보상·빌드·전투 성능처럼 이 위키의 설정 범위가 아닙니다.</li>
-<li>작성 하네스 접수: benchmark 하네스와 LLM page factory가 공식/게임 본편 근거만으로 검증 가능한 초안을 만듭니다.</li>
+<li>작성 후보 접수: 공식/게임 본편 근거만으로 설명할 수 있는 항목이면 문서 작성 후보로 등록합니다.</li>
 </ul>
-<p>요청할 때는 표제어, 다른 표기, 문서 유형, 공식 근거를 함께 적어 주세요. 근거는 HoYoWiki, 게임 본편 위치, 게임 내 자료실, 공식 한국어 영상처럼 확인 가능한 자료가 우선입니다. 참고 사이트나 비공식 정리 글은 자동 검토의 비교 자료로만 쓰이며, 공개 문서의 근거는 공식/게임 본편 자료로 다시 확인합니다.</p>
+<p>요청할 때는 표제어, 다른 표기, 문서 유형, 공식 근거를 함께 적어 주세요. 근거는 HoYoWiki, 게임 본편 위치, 게임 내 자료실, 공식 한국어 영상처럼 확인 가능한 자료가 우선입니다. 참고 사이트나 비공식 정리 글은 빠진 관점을 확인하는 보조 자료로만 보며, 공개 문서의 근거는 공식/게임 본편 자료로 다시 확인합니다.</p>
 <p>문서가 짧아도 괜찮지만, 독립 문서가 되려면 이름만이 아니라 인물 관계, 사건 참여, 세력·장소·개념과의 구체적 연결처럼 읽을 만한 설정 축이 있어야 합니다.</p>
 <p><a href="document-status.html">문서화 현황 보기</a></p></div>
   </article>
