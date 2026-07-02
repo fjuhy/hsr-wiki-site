@@ -517,8 +517,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -527,17 +527,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -554,10 +556,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -599,8 +625,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 58% center; }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
@@ -689,7 +717,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     
     <div class="article-body">
 <section class="home-hero" aria-labelledby="home-title">
-  <img class="home-hero-image" src="assets/astral-wiki-hero.jpg" alt="" loading="eager" decoding="async">
+  <img class="home-hero-image home-hero-image-light" src="assets/astral-wiki-hero-light.jpg" alt="" loading="eager" decoding="async">
+  <img class="home-hero-image home-hero-image-dark" src="assets/astral-wiki-hero-dark.jpg" alt="" loading="eager" decoding="async">
   <div class="home-hero-copy">
     
     <h1 id="home-title">hoyohoyo.wiki</h1>
