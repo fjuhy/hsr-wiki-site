@@ -24,7 +24,6 @@
 }
 :root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -114,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -145,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -248,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -478,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -517,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -527,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -554,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -583,14 +530,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -599,40 +540,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 58% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
   <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -656,7 +593,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -686,7 +623,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-other.html">기타 인물</a><span>아젠티</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EC%A0%A0%ED%8B%B0&amp;page_slug=char-1535">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>아젠티</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">기타 인물</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/12/05/190340964/4b3f28e0e7770d2516ae5df8f97976c6_6971812594975082400.png" alt="아젠티 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-other.html">기타 인물</a><span>아젠티</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EC%A0%A0%ED%8B%B0&amp;page_slug=char-1535">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>아젠티</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">기타 인물</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/12/05/190340964/4b3f28e0e7770d2516ae5df8f97976c6_6971812594975082400.png" alt="아젠티 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>아젠티는 「미(美)의 기사단」에 속한 고전적인 기사로, 실종된 「미」의 에이언즈 이드릴라를 경건하게 흠모하며 우주를 떠돈다. 그는 정직하고 당당한 태도로 「미」의 길을 걷고, 은하 곳곳에서 이드릴라의 명성을 알리는 일을 자신의 직책으로 삼는다.<sup class="cite-ref" title="공식 HoYoWiki · 아젠티"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>그의 기사도는 단순한 예절이 아니라 행동의 기준이다. 아젠티는 창을 들 때 경건해야 하며, 창을 내릴 때에는 상대를 진심으로 승복시켜야 한다고 여긴다. 그래서 그는 대화, 결투, 심사, 호송 임무를 모두 「미」의 이름으로 처리하는 인물이며, 상대를 쓰러뜨리는 것보다 상대 안의 「미」를 확인하고 인정하는 데 더 큰 의미를 둔다.<sup class="cite-ref" title="게임 본편 · 아젠티의 언급 · 아젠티의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
@@ -702,7 +639,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>이 심사는 루카에게 단순한 합격 판정 이상으로 작용한다. 루카는 게파드, 아젠티, 부트힐, 스바로그, 꼬리님이 모두 같은 것을 알려주려 했다는 사실을 뒤늦게 깨닫는다. 아젠티는 이 관계에서 훈계자가 아니라, 루카가 자신의 용기와 싸움의 의미를 확인하게 만드는 기준점으로 선다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>아젠티의 위상은 “괴짜 기사”와 “고결한 기사”가 함께 놓이는 데서 나온다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 미의 기사단은 이드릴라의 실체를 찾는다는 공통 목표를 지녔지만, 각자의 방식은 일생의 신념, 가설과 절망, 전장, 자기혐오처럼 크게 갈라진다. 사람들은 미의 기사들을 괴짜라고 부르고, 이드릴라의 죽음에 관한 소문은 그들의 경건함과 의문을 동시에 키운다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>그럼에도 아젠티는 기사 정신을 어기는 사람으로 받아들여지지 않는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 누군가 아젠티가 훔쳤을 가능성을 묻는 상황에서도, <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 아젠티가 미의 기사단 기사이며 기사 정신에 위배되는 일은 하지 않는다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 이 신뢰는 그의 기행이 의심을 낳을 수는 있어도, 그의 윤리 자체를 쉽게 무너뜨리지는 못한다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
+<p>그럼에도 아젠티는 기사 정신을 어기는 사람으로 받아들여지지 않는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 누군가 아젠티가 훔쳤을 가능성을 묻는 상황에서도, <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 아젠티가 미의 기사단 기사이며 기사 정신에 위배되는 일은 하지 않는다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 이 신뢰는 그의 기행이 의심을 낳을 수는 있어도, 그의 윤리 자체를 쉽게 무너뜨리지는 못한다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <p>그의 강함은 직접적인 순위표보다 주변 인물의 반응과 역할에서 드러난다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 루카는 아젠티의 실력이 대단하다는 말을 많이 들었다고 말하고, 부활전 선수들은 아젠티의 심사를 통과하기 위해 강한 실력과 충분한 「미」를 함께 보여야 한다고 알려져 있다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 아젠티는 선수에게 싸움의 강도뿐 아니라 싸움이 품은 태도까지 묻는 기준이 되므로, 그의 위상은 강자이자 판정자라는 두 층으로 구성된다.<sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
 <p>아젠티의 내면에서 가장 위험한 적은 외부의 적만이 아니다. 그는 「미」의 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>에 접어든 뒤 희망, 참회, 삼중 마귀의 속삭임 같은 시련을 겪었고, 두려움 없는 창으로 나약함, 탐욕, 잡념의 유혹을 베어냈다. 그 속삭임은 이익 추구, 죄업, 권력, 살육, 식탐, 참회의 망각, 흔한 감정으로 모습을 바꾸었고, 아젠티는 영혼과 생명을 미의 에이언즈에게 바치겠다는 결의로 그것을 견뎠다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
 <p>이 시련은 아젠티를 단순히 낙관적인 기사로만 보지 못하게 만든다. 그는 아름다운 것만 보는 사람이 아니라, 욕망과 죄업과 권력의 유혹을 「추함」으로 알아보고 베어내야 하는 사람이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 스킬•2"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 그래서 아젠티의 신앙은 순진한 감탄이 아니라, 자신도 흔들릴 수 있음을 아는 사람이 매번 다시 창을 세우는 방식에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
@@ -714,19 +651,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>Mar. 7th에게서 아젠티는 순수한 마음과 착한 품행을 본다. 그는 은하에는 속물적이고 감언이설에 능한 사람이 많기 때문에, Mar. 7th 같은 사람을 더욱 아끼고 존중하고 싶다고 말한다. 전투 편성 시에도 그는 Mar. 7th를 위해 어둠을 물리치겠다고 말하며, 그녀를 보호받아야 할 약자로 낮추기보다 그 순수함을 지켜야 할 가치로 대한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•Mar. 7th"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
 <p><a class="wiki-link" href="char-9.html" title="히메코">히메코</a>에게서 아젠티는 고귀한 영혼과 용기를 본다. 그는 개척의 여정이 길고 험해도 히메코가 여유와 용기를 잃지 않았다고 평가하며, 그 품성을 본받아 자신을 더 엄격하게 대하고 악에 저항하는 마음을 다잡겠다고 말한다. 편성 대사에서도 그는 히메코의 용기가 닿는 곳에 별이 빛난다고 말하므로, 히메코는 아젠티가 타인의 품성에서 「미」를 읽어내는 대표적인 대상이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•히메코"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
 <p><a class="wiki-link" href="char-8.html" title="단항">단항</a>에 대해서는 경계심과 절제를 함께 본다. 아젠티는 단항이 늘 사람을 경계하지만 행동은 점잖고 자신에 대한 잣대가 기사도 정신처럼 엄격하다고 평가한다. 함께할 때에는 무력이 아니라 지략을 겨루는 자리라고 말하며, 단항을 전투력만이 아니라 판단과 절제의 동료로 대한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•단항"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p><a class="wiki-link" href="char-10.html" title="웰트">웰트</a>에게서 아젠티는 성숙함과 천진함이 공존하는 매력을 본다. 그는 웰트가 시간이 흘러도 천진한 마음으로 인생을 순수하게 즐긴다고 말하고, 편성 시에는 웰트의 종잡을 수 없는 기교와 달콤한 지략을 빌리고자 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 웰트에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•웰트"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 이 평가는 아젠티가 「미」를 외형이나 장엄함에만 두지 않고, 인생을 대하는 태도와 노련한 지혜에서도 찾는다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 웰트에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•웰트"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
+<p><a class="wiki-link" href="char-10.html" title="웰트">웰트</a>에게서 아젠티는 성숙함과 천진함이 공존하는 매력을 본다. 그는 웰트가 시간이 흘러도 천진한 마음으로 인생을 순수하게 즐긴다고 말하고, 편성 시에는 웰트의 종잡을 수 없는 기교와 달콤한 지략을 빌리고자 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 웰트에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•웰트"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 이 평가는 아젠티가 「미」를 외형이나 장엄함에만 두지 않고, 인생을 대하는 태도와 노련한 지혜에서도 찾는다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 웰트에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•웰트"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
 <h3 id="루카와-결투-심사">루카와 결투 심사</h3>
 <p>루카와의 관계에서 아젠티는 싸움의 상대이자 인정의 기준이다.<sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 대회 진행자는 루카가 미의 기사 아젠티에게 도전한다고 알리고, 루카는 아젠티의 실력이 대단하다는 말을 들었다고 말한다.<sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 루카는 자신의 공격과 펀치가 「미」라고 부를 만한지 묻고, 아젠티의 인정을 받은 뒤 감사한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>아젠티의 심사는 실력과 태도를 동시에 본다. <a class="wiki-link" href="npc-3140.html" title="카멜라">카멜라</a>는 아젠티가 미의 기사라서 부활전에 도전하는 선수들을 엄격하게 심사하며, 강한 실력뿐 아니라 충분한 「미」를 보여야 한다고 말한다. 그래서 루카가 아젠티에게 보여주어야 하는 것은 단순한 승패가 아니라, 자신이 왜 싸우는지와 그 싸움이 어떤 품격을 갖는지다.<sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p>아젠티의 심사는 실력과 태도를 동시에 본다. <a class="wiki-link" href="npc-3140.html" title="카멜라">카멜라</a>는 아젠티가 미의 기사라서 부활전에 도전하는 선수들을 엄격하게 심사하며, 강한 실력뿐 아니라 충분한 「미」를 보여야 한다고 말한다. 그래서 루카가 아젠티에게 보여 주어야 하는 것은 단순한 승패가 아니라, 자신이 왜 싸우는지와 그 싸움이 어떤 품격을 갖는지다.<sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
 <h3 id="칼레발라-사절단과-보검-미에카-키베사">칼레발라 사절단과 보검 「미에카•키베사」</h3>
-<p>아젠티는 칼레발라 사절단으로서 보검 「미에카•키베사」를 선주로 귀환시키는 임무를 맡았다. 대호는 그가 사절단들과 함께 검을 공조사로 호송한 인물이라고 말하고, 회염은 검 증정 의식 이후 아젠티가 운기군의 호송을 받으며 검갑을 지닌 채 사절단과 공조사로 향했다고 설명한다.<sup class="cite-ref" title="게임 본편 · 대호의 언급 · 대호의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 회염의 언급 · 회염의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 이 사건은 아젠티의 기사도가 개인적 신앙에만 머물지 않고, 외교적 물품의 호송과 의식의 질서 안에서도 작동한다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 아젠티의 언급 · 아젠티의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 회염의 언급 · 회염의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>아젠티는 칼레발라 사절단으로서 보검 「미에카•키베사」를 선주로 귀환시키는 임무를 맡았다. 대호는 그가 사절단들과 함께 검을 공조사로 호송한 인물이라고 말하고, 회염은 검 증정 의식 이후 아젠티가 운기군의 호송을 받으며 검갑을 지닌 채 사절단과 공조사로 향했다고 설명한다.<sup class="cite-ref" title="게임 본편 · 대호의 언급 · 대호의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 회염의 언급 · 회염의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 이 사건은 아젠티의 기사도가 개인적 신앙에만 머물지 않고, 외교적 물품의 호송과 의식의 질서 안에서도 이어진다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 아젠티의 언급 · 아젠티의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 회염의 언급 · 회염의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
 <p>검과 관련된 의심은 오히려 아젠티의 평판을 드러낸다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 누군가 아젠티가 훔쳤을 가능성을 제기하지만, 개척자는 그가 미의 기사단 기사이며 기사 정신에 위배되는 일은 하지 않는다고 부정한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 아젠티는 기이할 수는 있어도 불명예와는 쉽게 연결되지 않는 인물로 취급된다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <h3 id="유일무이호와-방랑-기사상">유일무이호와 방랑 기사상</h3>
-<p>아젠티는 자신의 우주선에 「유일무이」라는 이름을 붙였다. 그는 외관을 복잡하게 조각한 탓에 청소가 꽤 힘들다고 말한다. 이 대사는 그의 미학이 생활의 불편까지 낳을 정도로 과하지만, 그 과함이 바로 아젠티식 기사다움을 이루는 요소임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•유일무이호"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•일생"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
+<p>아젠티는 자신의 우주선에 「유일무이」라는 이름을 붙였다. 그는 외관을 복잡하게 조각한 탓에 청소가 꽤 힘들다고 말한다. 이 대사는 그의 미학이 생활의 불편까지 낳을 정도로 과하지만, 그 과함이 바로 아젠티식 기사다움을 이루는 요소임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•유일무이호"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•일생"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
 <p>그는 여행 중 듣고 본 것들을 「미」의 감각으로 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup> 「추악함」이 존재하지 않는 행성에는 「아름다움」도 존재하지 않는다는 이야기를 흥미롭게 여기고, 어떤 행성의 전사들이 개조한 의수에 책 페이지를 문질러 지식을 신경에 주입한다는 방식도 좋은 방법 같다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup> 아젠티의 방랑은 단순한 설교 여행이 아니라, 여러 세계의 기묘한 풍습을 자신의 기사도와 미학 속에 계속 받아들이는 여정이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•미(美)의 기사단"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <h2 id="장미-결투-그리고-이상한-성실함">장미, 결투, 그리고 이상한 성실함</h2>
 <p>아젠티의 말투는 지나치게 장중하지만, 그 장중함은 빈말로 끝나지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 그는 장미의 이름으로 인사하고, 곤란한 일이 생기면 상대를 안전하게 지키겠다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 전리품을 열 때에도 답례로 줄 수 있는 것은 장미의 향기뿐이라고 말하므로, 장미는 그의 기사적 예절과 「미」의 상징을 일상 대사까지 끌고 오는 표식이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•2"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
-<p>아젠티는 아름다움을 고급 취향으로만 좁히지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 폼폼에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 그는 두껍고 단단한 바게트를 선호하며 창으로 썰어 보관하면 긴 여정에 좋은 먹거리라고 말하고, <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>의 오락과 미식에도 놀라워하며 언젠가 달인의 지도를 받아보고 싶어 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> <a class="wiki-link" href="npc-581.html" title="폼폼">폼폼</a>을 “매력적인” 존재로 보고 갑옷 입은 기사의 어깨 위에 앉으면 명예의 상징으로 어울릴 것 같다고 말하는 점도, 그의 미감이 숭고함과 우스꽝스러움을 함께 품는다는 사실을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 폼폼에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup></p>
+<p>아젠티는 아름다움을 고급 취향으로만 좁히지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 폼폼에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 그는 두껍고 단단한 바게트를 선호하며 창으로 썰어 보관하면 긴 여정에 좋은 먹거리라고 말하고, <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>의 오락과 미식에도 놀라워하며 언젠가 달인의 지도를 받아보고 싶어 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> <a class="wiki-link" href="npc-581.html" title="폼폼">폼폼</a>을 “매력적인” 존재로 보고 갑옷 입은 기사의 어깨 위에 앉으면 명예의 상징으로 어울릴 것 같다고 말하는 점도, 그의 미감이 숭고함과 우스꽝스러움을 함께 품는다는 사실을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 폼폼에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup></p>
 <p>그에게 「미」는 어디에나 존재할 수 있지만, 아무 것이나 자동으로 「미」가 되지는 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 그는 「미」가 지척에도, 은하 너머에도 존재한다고 말하지만, 루카 같은 선수에게는 충분한 「미」를 보여야 한다는 기준을 요구한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 이 모순처럼 보이는 태도 때문에 아젠티는 가장 넓게 감탄하면서도 가장 엄격하게 심사하는 인물이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
 <p>아젠티의 한계도 이 지점에 있다. 그는 경건할수록 의문이 커지는 기사단의 혼돈 안에 있으며, 이드릴라의 부재와 죽음의 소문은 그의 신앙을 확정된 지식이 아니라 끝없는 탐색으로 만든다. 그는 “그분”을 찾고, 다시 그 빛을 보기 전까지 싸우며, 자신의 행적이 다른 기사들과 달라도 종점에서 만나게 될 것이라고 믿는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•활성화"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup></p>
 <p>그래서 아젠티는 완성된 진리를 가진 설교자가 아니라, 사라진 미의 흔적을 온몸으로 증명하려는 기사다.<sup class="cite-ref" title="공식 HoYoWiki · 아젠티"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그는 전쟁의 기억, 스승의 죽음, 삼중 마귀의 유혹, 이드릴라의 부재를 지나면서도 창을 놓지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 패배와 의심이 있어도 신념은 깨지지 않는다고 말하는 그의 태도는, 아젠티를 우스꽝스러운 낭만주의자가 아니라 우스꽝스러울 만큼 성실한 순례자로 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•미(美)의 기사단"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">아젠티</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1535?lang=ko-kr">원문</a></span><div class="ref-quote">「미(美)의 기사단」의 고전적인 기사. 실종된 「미(美)」의 에이언즈 이드릴라를 경건한 마음으로 흠모하고 있다. 정직하고 당당하며, 우주를 유람하면서 이드릴라의 명성을 널리 알린다</div></li>
@@ -784,7 +721,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 기타 인물</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-02</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -794,12 +731,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-1535">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%95%84%EC%A0%A0%ED%8B%B0&amp;body=%EC%95%84%EC%A0%A0%ED%8B%B0+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-1535.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

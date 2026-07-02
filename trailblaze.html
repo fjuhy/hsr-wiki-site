@@ -24,7 +24,6 @@
 }
 :root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -114,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -145,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -248,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -478,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -517,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -527,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -554,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -583,14 +530,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -599,40 +540,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 58% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
   <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -656,7 +593,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -692,31 +629,31 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>아키비리의 방향성은 “알지 못하는 곳”과 “알아서는 안 될 곳”의 대비에서 선명해진다. 알 수 없는 것은 견딜 수 있지만, 알아서는 안 된다고 금지된 곳에는 굴복할 수 없다는 문장은 개척의 성격을 잘 드러낸다. 이 길은 단순한 호기심보다 강하고, 금지와 단절 앞에서도 멈추지 않는 성향을 포함한다. 따라서 개척은 안전한 지도 위의 이동이 아니라, 지도 바깥으로 나가 금지된 경계와 미지의 영역을 실제로 마주하는 운명의 길이다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <p>개척의 상징성은 “세계의 끝”과 “존재의 나무의 종점”을 찾는 여정으로도 표현된다. 아키비리는 우주 미지의 경계를 따라 나아가며 존재의 나무의 종점을 찾았으나, 그의 운명은 뜻밖의 사고로 끝났다고 전해진다. 이 설정은 개척이 끝없는 전진만을 약속하지 않는다는 점을 보여 준다. 개척의 길은 닿을 수 없는 끝을 향해 움직이지만, 그 과정에서 길을 잃거나 멈추거나 상실을 맞을 가능성도 함께 품는다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
-<p>작중에서 개척은 은하열차가 여러 세계를 통과하며 사건에 관여하는 명분이자 방식으로 기능한다. 공식 관련 항목은 은하열차, 무명객, 우주 여행 현상을 개척과 함께 묶고 있으며, 이는 개척이 특정 인물 한 명의 신념을 넘어 이동 공동체와 우주적 현상으로 확장된다는 뜻이다. 은하열차의 이동은 이미 놓인 노선을 따라가는 데 그치지 않고, 끊어진 연결과 닫힌 세계를 다시 사건의 장으로 불러내는 역할을 한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>무명객에게 개척은 목적지보다 여정에 가까운 가치로 작동한다. 그들은 이미 알려진 질서 안에 머무르기보다 새로운 세계에 도착하고, 그곳의 문제와 사람들을 만난 뒤, 다시 다음 정거장으로 향한다. 이 과정에서 개척은 우주 여행의 형식과 윤리적 개입의 형식을 동시에 띤다. 은하열차가 어느 세계의 위기에 관여할 때, 그 관여는 단순한 방문이 아니라 개척이라는 길이 남긴 책무와도 연결된다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 페나코니 개척의 미래 · 임무 「아름답고 저주받은 사람들」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>개척은 운명의 길 전체에서 “앞으로 나아감”을 가장 직접적으로 드러내는 축이다. 보존이 지키는 힘, 파멸이 무너뜨리는 힘, 공허가 의미의 소멸을 가리키는 힘으로 읽힌다면, 개척은 닫힌 세계와 미지의 경계 사이에 통로를 내는 방향성을 지닌다. 다만 이 비교는 개척을 낭만적인 탐험으로만 축소해서는 안 된다. 아키비리의 길은 단절된 세계에서 출발했고, 미지의 경계를 넘는 과정은 항상 위험과 상실을 동반한다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<p>작중에서 개척은 은하열차가 여러 세계를 통과하며 사건에 관여하는 명분이자 방식으로 쓰인다. 공식 관련 항목은 은하열차, 무명객, 우주 여행 현상을 개척과 함께 묶고 있으며, 이는 개척이 특정 인물 한 명의 신념을 넘어 이동 공동체와 우주적 현상으로 확장된다는 뜻이다. 은하열차의 이동은 이미 놓인 노선을 따라가는 데 그치지 않고, 끊어진 연결과 닫힌 세계를 다시 사건의 장으로 불러내는 역할을 한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>무명객에게 개척은 목적지보다 여정에 가까운 가치다. 그들은 이미 알려진 질서 안에 머무르기보다 새로운 세계에 도착하고, 그곳의 문제와 사람들을 만난 뒤, 다시 다음 정거장으로 향한다. 이 과정에서 개척은 우주 여행의 형식과 윤리적 개입의 형식을 동시에 띤다. 은하열차가 어느 세계의 위기에 관여할 때, 그 관여는 단순한 방문이 아니라 개척이라는 길이 남긴 책무와도 연결된다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 페나코니 개척의 미래 · 임무 「아름답고 저주받은 사람들」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>개척은 운명의 길 전체에서 “앞으로 나아감”을 가장 직접적으로 드러낸다. 보존이 지키는 힘, 파멸이 무너뜨리는 힘, 공허가 의미의 소멸을 가리키는 힘으로 볼 수 있다면, 개척은 닫힌 세계와 미지의 경계 사이에 통로를 내는 방향성을 지닌다. 다만 이 비교는 개척을 낭만적인 탐험으로만 축소해서는 안 된다. 아키비리의 길은 단절된 세계에서 출발했고, 미지의 경계를 넘는 과정은 항상 위험과 상실을 동반한다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <h2 id="아키비리와-은하열차의-길">아키비리와 은하열차의 길</h2>
 <p>아키비리는 개척을 가장 직접적으로 체현하는 이름이다. 그는 페가나를 떠나 우주의 미지의 경계를 개척했고, 존재의 나무의 종점을 찾으려 했다. 이 출발점이 “고독하고 단절된 세계”였다는 점은 중요하다. 개척은 풍요로운 교류의 중심에서 태어난 사상이 아니라, 고립과 단절을 넘어서는 움직임으로 나타난다. 아키비리의 여정은 세계와 세계 사이의 끊어진 감각을 부수고, 아직 닿지 않은 곳을 향해 자기 운명을 던지는 행위다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>은하열차는 아키비리의 개척이 남긴 길을 작중에서 가장 뚜렷하게 계승하는 장치로 읽힌다. 관련 항목에서 은하열차와 무명객이 함께 개척에 묶이는 것은, 열차가 단순한 이동 수단이 아니라 개척의 사회적 형태라는 점을 말해 준다. 열차에 오른 이들은 같은 목적지에 정착하기보다, 여러 세계를 잇고 지나가며 그때마다 서로 다른 사건을 맞닥뜨린다. 이 때문에 은하열차의 길은 하나의 종착역으로 수렴하지 않고, 계속해서 다음 정거장과 다음 관계를 만들어 내는 방식으로 이어진다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>은하열차는 아키비리의 개척이 남긴 길을 작중에서 가장 뚜렷하게 계승하는 장치로 볼 수 있다. 관련 항목에서 은하열차와 무명객이 함께 개척에 묶이는 것은, 열차가 단순한 이동 수단이 아니라 개척의 사회적 형태라는 점을 말해 준다. 열차에 오른 이들은 같은 목적지에 정착하기보다, 여러 세계를 잇고 지나가며 그때마다 서로 다른 사건을 맞닥뜨린다. 이 때문에 은하열차의 길은 하나의 종착역으로 수렴하지 않고, 계속해서 다음 정거장과 다음 관계를 만들어 내는 방식으로 이어진다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>아키비리의 운명이 뜻밖의 사고로 종지부를 찍었다는 설정은 은하열차의 현재 여정에 그림자를 드리운다. 개척의 길은 이미 완성된 교리나 안전이 보장된 전통이 아니라, 한때 끊겼고 다시 이어져야 하는 길이다. 따라서 은하열차의 이동은 과거의 위대한 존재를 기념하는 순례에 머무르지 않는다. 그것은 중단된 개척을 현재의 세계들 속에서 다시 시험하고, 각 정거장에서 그 의미를 새롭게 갱신하는 실천이다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <h2 id="미지의-세계와-세계의-끝">미지의 세계와 세계의 끝</h2>
 <p>개척의 지향점은 늘 “아직 모르는 곳”에 있다. 공식 설명의 나침반은 알지 못하는 곳, 아는 곳, 알아서는 안 될 곳을 구분하며, 개척의 긴장은 바로 그 세 방향 사이에서 발생한다. 이미 아는 세계는 질서와 안정의 이름으로 머무를 수 있는 공간이지만, 개척은 그 바깥을 향한다. 알지 못하는 곳은 두려움을 주더라도 견딜 수 있는 영역이며, 알아서는 안 된다고 금지된 곳은 오히려 개척이 굴복하지 않는 경계가 된다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <p>세계의 끝은 개척이 향하는 궁극적 이미지이지만, 그 끝이 실제로 하나의 장소인지, 도달 가능한 종착점인지, 혹은 영원히 멀어지는 지평인지는 단정하기 어렵다. 제공된 공식 설명은 아키비리가 존재의 나무의 종점을 찾았다고 말할 뿐, 그 종점의 실체나 발견 여부를 확정하지 않는다. 이 때문에 개척의 끝은 목적지이면서 동시에 질문으로 남는다. 개척이란 끝을 이미 아는 자의 행군이 아니라, 끝이 무엇인지조차 모르는 상태에서 앞으로 나아가는 방식이다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <p>이 관점에서 미지의 세계는 단순한 배경 무대가 아니라 개척이라는 길을 작동시키는 조건이다. 모든 것이 밝혀지고 모든 길이 안전하게 정리된 우주에서는 개척이 필요하지 않다. 반대로 세계들이 단절되어 있고, 어떤 영역이 금기처럼 닫혀 있으며, 어떤 길은 아직 이름조차 얻지 못했기 때문에 개척이 생긴다. 개척은 미지를 제거하는 기술이 아니라, 미지와 마주하면서도 연결을 만들어 내는 운명의 태도다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<h2 id="페나코니와-여러-갈래의-개척">페나코니와 여러 갈래의 개척</h2>
+<h2 id="페나코니와-여러-방식의-개척">페나코니와 여러 방식의 개척</h2>
 <p><a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a> 장면에서 개척은 과거의 상징이 아니라 현재의 선택으로 다시 제기된다. <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>는 페나코니 “개척”의 미래와 미하일처럼 먼저 간 사람들의 숙원을 이유로, 은하열차가 가만히 지켜볼 수만은 없다고 말한다. 이 대사는 개척이 단순히 새 세계에 도착하는 일이 아니라, 먼저 길을 간 이들이 남긴 숙원과 그 세계의 미래를 함께 떠맡는 일임을 보여 준다. 페나코니에서 개척은 방문자의 자유로운 여행이 아니라, 이미 얽힌 역사와 책임을 마주하는 이름이 된다. <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 페나코니 개척의 미래 · 임무 「아름답고 저주받은 사람들」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p><a class="wiki-link" href="char-2494.html" title="반디">반디</a>의 언급은 페나코니의 “성대한 유산”과 시계공의 유산이 개척의 여정 및 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>에게 남다른 의미를 가진다고 설명한다. 여기서 개척은 은하열차의 집단적 행로이면서 동시에 특정 인물이 이어받는 사명처럼 다루어진다. 유산은 과거의 물건이나 기록에 그치지 않고, 앞으로 어떤 길을 택할지를 요구하는 장치가 된다. 페나코니의 사건은 개척이 단절된 노선을 다시 잇는 것뿐 아니라, 남겨진 의미를 현재의 선택으로 번역하는 과정임을 드러낸다. <sup class="cite-ref" title="게임 본편 — 대사 · 반디: 성대한 유산과 개척의 여정 · 임무 「와인즈버그 오하이오」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p><a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>은 “개척의 길은 하나만 있는 게 아니”라고 말하며, 늑대가 득실대는 컴컴한 숲에서는 우선 도망쳐 목숨을 지키는 선택도 가능하다고 조언한다. 이 대사는 개척을 무조건적인 돌진이나 희생으로 읽는 해석을 경계하게 한다. 개척에는 여러 갈래가 있고, 위험한 상황에서는 후퇴와 생존 역시 다음 길을 열기 위한 방식이 될 수 있다. 따라서 개척은 용기만으로 성립하지 않으며, 상황 판단과 신중함, 살아남아 다시 나아갈 가능성까지 포함한다. <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 개척의 길은 여러 갈래 · 임무 「벨벳의 악마」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p><a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>은 “개척의 길은 하나만 있는 게 아니”라고 말하며, 늑대가 득실대는 컴컴한 숲에서는 우선 도망쳐 목숨을 지키는 선택도 가능하다고 조언한다. 이 대사는 개척을 무조건적인 돌진이나 희생으로 읽는 해석을 경계하게 한다. 개척에는 여러 방식이 있고, 위험한 상황에서는 후퇴와 생존 역시 다음 길을 열기 위한 선택이 될 수 있다. 따라서 개척은 용기만으로 성립하지 않으며, 상황 판단과 신중함, 살아남아 다시 나아갈 가능성까지 포함한다. <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 개척의 길은 여러 갈래 · 임무 「벨벳의 악마」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>개척은 우주적 규모의 운명의 길이지만, 그 위상은 밝은 이상과 위험한 경계를 동시에 품는다. 아키비리가 찾으려 한 존재의 나무의 종점은 개척의 스케일이 단순한 행성 간 여행을 넘어 우주론적 질문에 닿아 있음을 보여 준다. 그러나 그의 운명이 뜻밖의 사고로 끝났다는 점은, 이 길이 위대한 만큼 안전하지 않다는 사실도 함께 남긴다. 개척은 세계를 잇는 힘이지만, 그 길을 걷는 존재가 세계의 끝에 도달한다는 보장은 없다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
 <p>개척의 무게는 미지 자체에서만 나오지 않는다. 개척은 “알아서는 안 될 곳”이라는 금지의 경계와 충돌하기 때문에, 이미 어떤 질서가 닫아 둔 영역을 흔들 수 있다. 그 경계가 왜 닫혔는지, 닫힌 것을 여는 일이 누구에게 어떤 결과를 낳는지는 매번 다르다. 따라서 개척은 선의의 탐험으로 시작하더라도 갈등, 오해, 희생을 부를 수 있으며, 은하열차가 각 세계의 사건에 관여할 때마다 그 부담은 구체적인 선택으로 돌아온다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 페나코니 개척의 미래 · 임무 「아름답고 저주받은 사람들」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>그럼에도 개척이 작중에서 지속적으로 긍정되는 이유는, 단절된 세계와 닫힌 길을 그대로 두지 않는다는 데 있다. 아키비리는 단절된 페가나를 떠났고, 은하열차와 무명객은 우주 여행의 형태로 개척과 연결된다. 개척은 세계를 정복하거나 소유하는 방식이 아니라, 만남과 이동을 통해 닫힌 가능성을 다시 여는 방식으로 작동한다. 위험을 제거하지 못하기 때문에 가벼운 길은 아니지만, 위험 때문에 멈추기만 하는 길도 아니다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>그럼에도 개척이 작중에서 지속적으로 긍정되는 이유는, 단절된 세계와 닫힌 길을 그대로 두지 않는다는 데 있다. 아키비리는 단절된 페가나를 떠났고, 은하열차와 무명객은 우주 여행의 형태로 개척과 연결된다. 개척은 세계를 정복하거나 소유하는 방식이 아니라, 만남과 이동을 통해 닫힌 가능성을 다시 여는 방식이다. 위험을 제거하지 못하기 때문에 가벼운 길은 아니지만, 위험 때문에 멈추기만 하는 길도 아니다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>개척과 직접적으로 연결되는 항목은 아키비리, 은하열차, 무명객, 우주 여행 현상이다. 아키비리는 개척의 길을 대표하는 존재로, 은하열차와 무명객은 그 길을 현재의 이동과 사건 속에서 이어 가는 축으로 다루어진다. 운명의 길이라는 큰 범주 안에서 개척은 다른 길들과 나란히 우주관을 구성하지만, 서사의 표면에서는 열차의 여정과 가장 밀접하게 결합한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>작중 대사에서 개척은 페나코니의 미래, 시계공의 유산, 성대한 유산, 그리고 여러 갈래의 선택과 함께 언급된다. 히메코는 페나코니의 개척이 앞서 간 이들의 숙원과 연결된다고 말하고, 반디는 시계공의 유산이 개척의 여정 및 개척자에게 특별한 의미를 갖는다고 설명한다. 블랙 스완의 조언은 개척이 하나의 정답으로 고정되지 않는다는 점을 보완한다. 이 세 언급은 개척을 과거의 신화, 현재의 책임, 미래의 선택이 겹치는 개념으로 만든다. <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 페나코니 개척의 미래 · 임무 「아름답고 저주받은 사람들」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 반디: 성대한 유산과 개척의 여정 · 임무 「와인즈버그 오하이오」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 개척의 길은 여러 갈래 · 임무 「벨벳의 악마」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>개척과 직접적으로 연결되는 항목은 아키비리, 은하열차, 무명객, 우주 여행 현상이다. 아키비리는 개척의 길을 대표하는 존재로, 은하열차와 무명객은 그 길을 현재의 이동과 사건 속에서 이어 가는 중심으로 다루어진다. 운명의 길이라는 큰 범주 안에서 개척은 다른 길들과 나란히 우주관을 구성하지만, 이야기의 표면에서는 열차의 여정과 가장 밀접하게 결합한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>작중 대사에서 개척은 페나코니의 미래, 시계공의 유산, 성대한 유산, 그리고 여러 선택지와 함께 언급된다. 히메코는 페나코니의 개척이 앞서 간 이들의 숙원과 연결된다고 말하고, 반디는 시계공의 유산이 개척의 여정 및 개척자에게 특별한 의미를 갖는다고 설명한다. 블랙 스완의 조언은 개척이 하나의 정답으로 고정되지 않는다는 점을 보완한다. 이 세 언급은 개척을 과거의 신화, 현재의 책임, 미래의 선택이 겹치는 개념으로 만든다. <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 페나코니 개척의 미래 · 임무 「아름답고 저주받은 사람들」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 반디: 성대한 유산과 개척의 여정 · 임무 「와인즈버그 오하이오」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 개척의 길은 여러 갈래 · 임무 「벨벳의 악마」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="해석과-맥락">해석과 맥락</h2>
 <p>개척을 해석할 때는 “탐험”, “여행”, “진보” 같은 단어 중 하나로만 환원하지 않는 편이 적절하다. 제공된 설정에서 개척은 미지의 경계를 향한 이동이지만, 동시에 금지된 곳에 굴복하지 않는 태도이며, 단절된 세계를 떠나는 결단이고, 먼저 간 이들의 숙원과 미래의 선택을 이어 받는 행위다. 개척은 밝은 낭만만으로 이루어지지 않으며, 실패와 사고, 후퇴와 생존까지 포함하는 넓은 길이다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 개척 ⌋ 아키비리"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 페나코니 개척의 미래 · 임무 「아름답고 저주받은 사람들」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 개척의 길은 여러 갈래 · 임무 「벨벳의 악마」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>또한 개척을 항상 직선적인 전진으로 이해하면 페나코니에서 제시된 여러 갈래의 의미를 놓치기 쉽다. 블랙 스완의 말처럼 개척의 길은 하나만 있는 것이 아니며, 어떤 상황에서는 목숨을 지키기 위한 회피가 다음 여정을 가능하게 하는 선택이 된다. 개척은 끝을 향해 나아가되 그 끝을 단정하지 않고, 미지를 향하되 모든 위험을 무시하지 않는다. 그런 점에서 개척은 은하열차의 길이자, 매번 다른 세계에서 다시 판단되어야 하는 살아 있는 운명의 길이다. <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 개척의 길은 여러 갈래 · 임무 「벨벳의 악마」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">⌈ 개척 ⌋ 아키비리</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/896?lang=ko-kr">원문</a></span><div class="ref-quote">「셀 수 없는 유성이 오늘 밤의 하늘을 가른다…. 만약 옳은 유성을 선택하면 그 유성이 소원을 수천 수백의 세계로 데려간다」 ——아드리안•스펜서-스미스, ≪별하늘 우화≫ 운명의 나침반에는 알지 못하는 곳과 아는 곳, 알아서는 안 될 곳, 이렇게 3개의 방향이 표시되어 있다. 「알 수 없는 곳」은 참을 수 있지만, 「알아서는 안 될 곳」에는 굴복할 수 없다. 아키비리는 고독하고 단절된 세계 페가나를 떠나 우주 미지의 경계를 끊임없이 개척하며, 존재의 나무의...</div></li>
+<p>또한 개척을 항상 직선적인 전진으로 이해하면 페나코니에서 제시된 여러 선택의 의미를 놓치기 쉽다. 블랙 스완의 말처럼 개척의 길은 하나만 있는 것이 아니며, 어떤 상황에서는 목숨을 지키기 위한 회피가 다음 여정을 가능하게 하는 선택이 된다. 개척은 끝을 향해 나아가되 그 끝을 단정하지 않고, 미지를 향하되 모든 위험을 무시하지 않는다. 그런 점에서 개척은 은하열차의 길이자, 매번 다른 세계에서 다시 판단되어야 하는 살아 있는 운명의 길이다. <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 개척의 길은 여러 갈래 · 임무 「벨벳의 악마」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">⌈ 개척 ⌋ 아키비리</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/896?lang=ko-kr">원문</a></span><div class="ref-quote">「셀 수 없는 유성이 오늘 밤의 하늘을 가른다…. 만약 옳은 유성을 선택하면 그 유성이 소원을 수천 수백의 세계로 데려간다」 ——아드리안•스펜서-스미스, ≪별하늘 우화≫ 운명의 나침반에는 알지 못하는 곳과 아는 곳, 알아서는 안 될 곳, 이렇게 3개의 방향이 표시되어 있다. 「알 수 없는 곳」은 참을 수 있지만, 「알아서는 안 될 곳」에는 굴복할 수 없다. 아키비리는 고독하고 단절된 세계 페가나를 떠나 우주 미지의 경계를 끊임없이 개척하며, 존재의 나무의...</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/896?lang=ko-kr">원문</a></span><div class="ref-quote">개척</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/896?lang=ko-kr">원문</a></span><div class="ref-quote">은하열차 - 개척; 무명객 - 개척; 우주 여행(현상)</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">히메코: 페나코니 개척의 미래</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">임무 「아름답고 저주받은 사람들」</span></span><div class="ref-quote">페나코니 「개척」의 미래뿐만 아니라 미하일 씨처럼 먼저 간 사람들의 숙원을 위해서라도, 은하열차가 가만히 지켜볼 수만은 없어</div></li>
@@ -729,7 +666,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>운명의 길</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>운명의 길</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-24</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-02</span></div></div>
   <p class="subtle">주요 근거: 게임 본편 — 대사, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-24 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>
@@ -739,12 +676,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="trailblaze">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EA%B0%9C%EC%B2%99&amp;body=%EA%B0%9C%EC%B2%99+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Ftrailblaze.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

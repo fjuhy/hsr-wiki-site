@@ -36,13 +36,10 @@
 .search-empty { margin: 6px 0 0; }
 mark { background: color-mix(in srgb, var(--warn) 24%, transparent); color: inherit; border-radius: 4px; padding: 0 2px; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
   .search-shell { order: 3; flex-basis: 100%; max-width: none; }
   .search-panel { position: absolute; top: calc(100% + 6px); left: 0; right: 0; }
   .search-panel-inner { grid-template-columns: 1fr; max-height: min(58vh, 520px); overflow: auto; }
   .search-column { max-height: none; }
   .search-column + .search-column { border-left: 0; border-top: 1px solid var(--line); }
-}
-@media (max-width: 520px) {
-  .search-input { padding: 8px 38px 8px 14px; }
 }

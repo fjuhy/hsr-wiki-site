@@ -24,7 +24,6 @@
 }
 :root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -114,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -145,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -248,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -478,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -517,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -527,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -554,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -583,14 +530,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -599,40 +540,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 58% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
   <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -656,7 +593,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -699,8 +636,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>이 경쟁은 두 사람의 성격 차이를 드러내는 장치이기도 하다. 은랑은 스크루룸에게 먼저 공격하는 쪽은 늘 자기라고 말하고, 그가 흥분하지 않는다고 불평한다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 은랑: 스크루룸에 대해"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그래서 둘의 관계는 단순한 승패 기록보다 넓다. 은랑에게 스크루룸은 게임처럼 도전할 수 있는 난관이고, 스크루룸에게 은랑은 시스템을 흔들어 실제 방어 능력을 시험하게 만드는 변수다.</p>
 <h2 id="기계-생명과-스크루별">기계 생명과 스크루별</h2>
 <p>스크루룸은 기계와 생명의 경계를 이야기할 때도 호출된다. Mar. 7th는 기계에 영혼이 있는지 알고 싶다면 스크루룸에게 물어보면 답을 알고 있을지도 모른다고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 기계의 영혼에 대한 언급 · 임무 「현실은 꿈의 메아리」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 공식 서적 「스크루룸의 메시지」는 스크루룸별 귀족이 야릴로-Ⅵ의 로봇이 규소 기반 생명체로 진화할 가능성을 논한 메시지라고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki — 서적 · 스크루룸의 메시지"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>이 두 근거를 함께 보면, 스크루룸은 기계를 도구로만 보는 인물이 아니다. 그는 기계가 스스로 생명으로 불릴 수 있는지, 로봇 사회가 어떤 방식으로 진화할 수 있는지에 관심을 둔 인물로 읽힌다. 작중에서 그가 펄을 두고 스크루별의 지능 기계 동족으로서 통하는 점이 많다고 말하는 것도 같은 맥락이다. <sup class="cite-ref" title="게임 본편 — 대사 · 펄과의 협력 · 카스토리스의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>스크루룸은 개인 연구자이면서 동시에 정치적 대표자이기도 하다. 그는 스크루별 군주의 이름으로 동맹이 부름에 응해 왔다고 말하고, 다른 장면에서는 <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>가 스크루별의 도움 덕분에 아이언툼에 대항하는 은하 연합군 조직이 순조롭다고 설명한다. 같은 근거에서 스크루룸은 은하 전체가 앰포리어스를 지켜보고 있다고 덧붙인다. <sup class="cite-ref" title="게임 본편 — 대사 · 스크루별 군주로서의 발언 · 임무 「현실은 꿈의 메아리」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스크루별의 지원과 은하 연합군 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그래서 스크루룸의 영향력은 연구실 안에 갇히지 않는다. 그의 판단은 스크루별의 자원과 외교적 행동으로 이어지고, 앰포리어스 사태 같은 은하 규모 대응에도 닿을 수 있다.</p>
+<p>이 두 근거를 함께 보면, 스크루룸은 기계를 도구로만 보는 인물이 아니다. 그는 기계가 스스로 생명으로 불릴 수 있는지, 로봇 사회가 어떤 방식으로 진화할 수 있는지에 관심을 둔 인물로 볼 수 있다. 작중에서 그가 펄을 두고 스크루별의 지능 기계 동족으로서 통하는 점이 많다고 말하는 것도 같은 맥락이다. <sup class="cite-ref" title="게임 본편 — 대사 · 펄과의 협력 · 카스토리스의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>스크루룸은 개인 연구자이면서 동시에 정치적 대표자이기도 하다. 그는 스크루별 군주의 이름으로 동맹이 부름에 응해 왔다고 말하고, 다른 장면에서는 <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>가 스크루별의 도움 덕분에 아이언툼에 대항하는 은하 연합군 조직이 순조롭다고 설명한다. <sup class="cite-ref" title="게임 본편 — 대사 · 스크루별 군주로서의 발언 · 임무 「현실은 꿈의 메아리」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스크루별의 지원과 은하 연합군 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그래서 스크루룸의 영향력은 연구실 안에 갇히지 않는다. 그의 판단은 스크루별의 자원과 외교적 행동으로 이어질 수 있다.</p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>스크루룸의 위상은 지식과 질서의 중간에 있다. 그는 지니어스 클럽 회원으로서 우주의 미지에 접근하지만, 헤르타처럼 모든 위험을 흥미 하나로 밀어붙이는 인물은 아니다. 루버트 연구에서 그는 죽은 지 오래된 지니어스도 얕볼 수 없다고 경고하고, 계획과 다른 데이터체가 시뮬레이션 우주를 벗어난 뒤에는 방화벽 개선이 필요하다고 판단한다. <sup class="cite-ref" title="게임 본편 — 대사 · 죽은 지니어스도 얕볼 수 없다는 판단 · Unknown의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 시뮬레이션 우주 방화벽 개선 필요 · 트리비의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
 <p>그 신중함 때문에 스크루룸은 위협적인 천재라기보다 위험을 이해하는 천재로 보인다. 그는 시뮬레이션 우주의 계산력을 끌어올리고, 외부 협력자를 받아들이며, 기계 생명의 가능성을 논한다. <sup class="cite-ref" title="게임 본편 — 대사 · 시뮬레이션 우주 계산과 제5의 파트너 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 펄과의 협력 · 카스토리스의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 서적 · 스크루룸의 메시지"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그러나 동시에 연구가 통제를 잃을 수 있다는 점도 알고 있다. 이 균형감이 스크루룸을 헤르타의 협력자이자 은랑의 라이벌, 스크루별의 군주로 모두 성립하게 만든다.</p>
@@ -711,7 +648,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>스크루별과 펄 관련 언급은 스크루룸을 기계 지성의 대표자로 확장한다. 그는 펄을 스크루별의 지능 기계 동족으로 받아들이고, 스크루별 군주의 이름으로 동맹을 선언할 수 있다. <sup class="cite-ref" title="게임 본편 — 대사 · 펄과의 협력 · 카스토리스의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스크루별 군주로서의 발언 · 임무 「현실은 꿈의 메아리」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 여기에 「스크루룸의 메시지」가 말하는 규소 기반 생명체 논의가 겹치면, 스크루룸은 기계가 살아 있는 존재가 될 수 있는지 묻는 세계관 질문을 정치와 연구 양쪽에서 떠안는 인물로 보인다. <sup class="cite-ref" title="공식 HoYoWiki — 서적 · 스크루룸의 메시지"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
 <h2 id="해석과-맥락">해석과 맥락</h2>
 <p>스크루룸은 스타레일 세계에서 “기계적인 말투를 쓰는 천재” 이상의 역할을 맡는다. 그는 감정을 과장하지 않지만, 그렇다고 차갑게 방관하지도 않는다. 연구가 위험해지면 경고하고, 시스템이 뚫리면 보안을 보완하며, 기계 생명이 새로운 단계로 나아갈 가능성도 검토한다. <sup class="cite-ref" title="게임 본편 — 대사 · 루버트 연구에 대한 스크루룸의 신중함 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 시뮬레이션 우주 방화벽 개선 필요 · 트리비의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 서적 · 스크루룸의 메시지"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>이 때문에 스크루룸의 존재감은 여러 축을 연결한다. 지니어스 클럽의 연구, 은랑의 해킹 서사, 시뮬레이션 우주의 보안, 스크루별의 외교, 기계 생명의 철학이 그를 통해 한곳에 모인다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속과 관련 인물"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 은랑 캐릭터 상세"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스크루별의 지원과 은하 연합군 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그는 사건의 중심에서 가장 큰소리를 내는 인물은 아니지만, 세계가 복잡해질수록 필요한 계산과 판단을 맡는 인물이다.</p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">스크루룸</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1120?lang=ko-kr">원문</a></span><div class="ref-quote">지니어스 클럽 #76 회원</div></li>
+<p>이 때문에 스크루룸의 존재감은 여러 축을 연결한다. 지니어스 클럽의 연구, 은랑의 해킹 이야기, 시뮬레이션 우주의 보안, 스크루별의 외교, 기계 생명의 철학이 그를 통해 한곳에 모인다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속과 관련 인물"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 은랑 캐릭터 상세"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스크루별의 지원과 은하 연합군 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그는 사건의 중심에서 가장 큰소리를 내는 인물은 아니지만, 세계가 복잡해질수록 필요한 계산과 판단을 맡는 인물이다.</p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">스크루룸</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1120?lang=ko-kr">원문</a></span><div class="ref-quote">지니어스 클럽 #76 회원</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속과 관련 인물</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1120?lang=ko-kr">원문</a></span><div class="ref-quote">스크루룸의 소속은 지니어스 클럽 - 지식이며, 관련 캐릭터로 헤르타와 은랑이 제시된다. 관련 임무로 「펑크 로드 스피릿」과 「고요함으로 돌아간 숲」이, 관련 서적으로 「스크루룸의 메시지」와 「감정의 본질——생물학적 분석」이 제시된다.</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">은랑: 스크루룸에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">은랑은 스크루룸을 두고 먼저 공격하는 것은 항상 자기 쪽이며, 그가 흥분할 줄 모르는 것 같다고 말한다.</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">시뮬레이션 우주 계산과 제5의 파트너</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">헤르타가 셉터 시스템의 시뮬레이션 정확도를 묻자 스크루룸은 시뮬레이션 우주의 계산력을 전부 집중하면 유사도가 71% 이상일 것이라고 답한다. 이어 헤르타는 시뮬레이션 우주에 다섯 번째 파트너를 부르겠다고 말한다.</div></li>
@@ -732,7 +669,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 지식 세력</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-02</span></div></div>
   <p class="subtle">주요 근거: 게임 본편 — 대사, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 서적, 공식 HoYoWiki — 음성</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -742,12 +679,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="screwllum">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%8A%A4%ED%81%AC%EB%A3%A8%EB%A3%B8&amp;body=%EC%8A%A4%ED%81%AC%EB%A3%A8%EB%A3%B8+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fscrewllum.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

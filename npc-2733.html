@@ -24,7 +24,6 @@
 }
 :root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -114,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -145,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -248,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -478,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -517,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -527,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -554,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -583,14 +530,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -599,40 +540,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 58% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
   <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -656,7 +593,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -686,14 +623,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>리차드</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A6%AC%EC%B0%A8%EB%93%9C&amp;page_slug=npc-2733">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>리차드</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/15/11771384/92cb5184b7c7a7e837b05a71034e6736_8756726105010679710.png" alt="리차드 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 공식 인물 이미지</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>리차드</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A6%AC%EC%B0%A8%EB%93%9C&amp;page_slug=npc-2733">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>리차드</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/15/11771384/92cb5184b7c7a7e837b05a71034e6736_8756726105010679710.png" alt="리차드 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>리차드는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a> 소속 NPC다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>리차드의 리차드는 페나코니 NPC 리차드를 중심으로 다룬다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 작중에는 리차드 발라킨, 지정학과의 리차드, 탐지기 명칭에 들어간 「리차드」처럼 같은 이름이 다른 맥락에서도 쓰이므로 구분이 필요하다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 파인디의 언급 · 임무 「Fate · 부패한 황금의 아리아」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>페나코니의 리차드는 “안다니 똥파리 리차드”라는 별칭과 그 비밀을 둘러싼 탐문 속에서 드러난다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <a class="wiki-link" href="npc-721.html" title="파멜라">파멜라</a>는 <a class="wiki-link" href="char-9.html" title="히메코">히메코</a> 사진을 “안다니 똥파리 리차드”의 비밀과 맞바꾸자고 하고, <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 검은 테 안경과 옆 가르마라는 단서를 떠올리며 그 정체를 좁혀 간다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
 <p>이 장면에서 리차드의 역할은 전투나 권력 행사보다 별명, 소문, 외형 단서를 통해 작은 수수께끼를 만드는 데 가깝다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p><a class="wiki-link" href="npc-729.html" title="온세자">온세자</a>는 리차드를 “형님”이라고 부르며 오랜만에 만난 사람처럼 반긴다.<sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 반응은 리차드가 소문 속의 낯선 대상에만 머물지 않고, 페나코니의 주변 인물에게 친숙한 관계를 가진 인물임을 보여준다.<sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p><a class="wiki-link" href="npc-729.html" title="온세자">온세자</a>는 리차드를 “형님”이라고 부르며 오랜만에 만난 사람처럼 반긴다.<sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 반응은 리차드가 소문 속의 낯선 대상에만 머물지 않고, 페나코니의 주변 인물에게 친숙한 관계를 가진 인물임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>그의 작중 위상은 강함보다 “비밀을 가진 사람”, “별명으로 추적되는 사람”, “오랜 친분으로 불리는 사람”이라는 생활권의 관계에서 읽는 편이 안전하다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <p>리차드는 페나코니의 거대한 권력 구도보다 거리의 소문과 사람 사이의 호칭 속에서 존재감을 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 파멜라는 그의 비밀을 거래 대상으로 삼고, 개척자는 외형 단서로 그를 찾으려 하며, 온세자는 친근하게 그를 맞이한다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
@@ -705,14 +642,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <h3 id="온세자와의-친분">온세자와의 친분</h3>
 <p>온세자는 리차드를 “형님”이라고 부르고, 오래 만나지 못했던 사람을 다시 만난 듯 반긴다.<sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 호칭은 리차드가 단순한 소문 속 대상이 아니라 누군가에게는 친근한 지인으로 기억된다는 점을 보강한다.<sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
 <h3 id="리차드-발라킨">리차드 발라킨</h3>
-<p>리차드 발라킨은 페나코니 NPC 리차드와 구분되는 벨로보그 쪽 역사 인물로 언급된다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> <a class="wiki-link" href="char-19.html" title="페라">페라</a>는 ≪실버메인 철위대 암호학≫의 내용을 떠올리며, 건군 초기 정보관 겸 기술팀 총책임자 리차드 발라킨이 전군에 최초의 암호화을 보급했다고 말한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>리차드 발라킨은 페나코니 NPC 리차드와 구분되는 벨로보그 쪽 역사 인물로 언급된다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> <a class="wiki-link" href="char-19.html" title="페라">페라</a>는 ≪실버메인 철위대 암호학≫의 내용을 떠올리며, 건군 초기 정보관 겸 기술팀 총책임자 리차드 발라킨이 전군에 최초의 암호화를 보급했다고 말한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <p>페라는 해독한 문서의 서명이 “리차드 발라킨”임을 확인하고, <a class="wiki-link" href="npc-860.html" title="몰리">몰리</a>는 성씨를 근거로 그가 자신의 조상일 수 있다고 반응한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 몰리의 언급 · 몰리의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <a class="wiki-link" href="char-16.html" title="서벌">서벌</a>은 훈장의 모양을 보고 리차드 발라킨이 『창조의 엔진』 프로젝트의 수석 엔지니어 중 한 명일 가능성이 크다고 본다.<sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
 <p>이 이름 겹침은 페나코니 리차드와 리차드 발라킨을 가르는 중요한 분기점이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 페나코니의 리차드는 별명과 소문 속 NPC로 남는 반면, 리차드 발라킨은 암호 문서, 철위대 초기 체계, 『창조의 엔진』 프로젝트와 이어지는 기록상의 인물로 다뤄진다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
 <h3 id="다른-리차드-명칭">다른 “리차드” 명칭</h3>
-<p>작중에는 “지정학과의 리차드”가 어디로 갔는지 묻는 말도 있어, 리차드라는 이름이 특정 한 명만을 가리키지 않을 수 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <a class="wiki-link" href="npc-840.html" title="파인디">파인디</a>는 자신의 정식 명칭을 「가정용 탐지기 『리차드』•0. 63 버전•전문가형•연례 호화판」이라고 소개하므로, 이 경우 “리차드”는 인물명이 아니라 기기명에 들어간 이름이다.<sup class="cite-ref" title="게임 본편 · 파인디의 언급 · 임무 「Fate · 부패한 황금의 아리아」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 파인디의 언급 · 임무 「Fate · 부패한 황금의 아리아」"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 파인디의 언급 · 임무 「Fate · 부패한 황금의 아리아」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
+<p>작중에는 “지정학과의 리차드”가 어디로 갔는지 묻는 말도 있어, 리차드라는 이름이 특정 한 명만을 가리키지 않을 수 있음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <a class="wiki-link" href="npc-840.html" title="파인디">파인디</a>는 자신의 정식 명칭을 「가정용 탐지기 『리차드』•0. 63 버전•전문가형•연례 호화판」이라고 소개하므로, 이 경우 “리차드”는 인물명이 아니라 기기명에 들어간 이름이다.<sup class="cite-ref" title="게임 본편 · 파인디의 언급 · 임무 「Fate · 부패한 황금의 아리아」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 파인디의 언급 · 임무 「Fate · 부패한 황금의 아리아」"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 파인디의 언급 · 임무 「Fate · 부패한 황금의 아리아」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
 <h2 id="별명으로-남는-페나코니의-단서">별명으로 남는 페나코니의 단서</h2>
-<p>리차드의 서사는 큰 전투나 권력 다툼보다, 누가 어떤 별명으로 불리고 어떤 비밀을 숨겼는지 추적하는 장면에 놓인다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그래서 리차드에서 중요한 지점은 “안다니 똥파리 리차드”라는 별칭이 어떻게 거래되는 정보가 되고, 어떻게 외형 단서를 따라 사람을 찾게 만드는가이다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>이 인물은 페나코니의 화려한 무대 뒤에서 돌아다니는 작은 소문망을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 파멜라의 거래 제안, 개척자의 추리, 온세자의 친근한 호칭을 함께 보면 리차드는 거대한 설정의 중심 인물이라기보다, 짧은 대화들이 모여 존재감을 만드는 NPC에 가깝다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2733?lang=ko-kr">원문</a></span><div class="ref-quote">리차드</div></li>
+<p>리차드의 이야기는 큰 전투나 권력 다툼보다, 누가 어떤 별명으로 불리고 어떤 비밀을 숨겼는지 추적하는 장면에 놓인다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그래서 리차드에서 중요한 지점은 “안다니 똥파리 리차드”라는 별칭이 어떻게 거래되는 정보가 되고, 어떻게 외형 단서를 따라 사람을 찾게 만드는가이다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>이 인물은 페나코니의 화려한 무대 뒤에서 돌아다니는 작은 소문망을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 파멜라의 거래 제안, 개척자의 추리, 온세자의 친근한 호칭을 함께 보면 리차드는 거대한 설정의 중심 인물이라기보다, 짧은 대화들이 모여 존재감을 만드는 NPC에 가깝다.<sup class="cite-ref" title="게임 본편 · 파멜라의 언급 · 파멜라의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온세자의 언급 · 온세자의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2733?lang=ko-kr">원문</a></span><div class="ref-quote">리차드</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2733?lang=ko-kr">원문</a></span><div class="ref-quote">페나코니</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">어디 보자…. 제가 기억하기론 ≪실버메인 철위대 암호학≫ 제7판 제4장 섹션1에 이렇게 쓰여있습니다. 「건군 초기, 정보관 겸 기술팀 총책임자인 리차드•발라킨이 전군에 최초의 암호화 문서를 보급했다——」</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">지정학과의 리차드는 어디로 갔어?</div></li>
@@ -738,7 +675,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 페나코니</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-02</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
@@ -748,12 +685,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="npc-2733">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EB%A6%AC%EC%B0%A8%EB%93%9C&amp;body=%EB%A6%AC%EC%B0%A8%EB%93%9C+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnpc-2733.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

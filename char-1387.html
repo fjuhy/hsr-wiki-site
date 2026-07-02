@@ -24,7 +24,6 @@
 }
 :root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -114,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -145,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -248,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -478,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -517,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -527,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -554,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -583,14 +530,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -599,40 +540,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 58% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
   <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -656,7 +593,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -686,13 +623,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>경류</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B2%BD%EB%A5%98&amp;page_slug=char-1387">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>경류</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/28/23901508/f4b4e47e34018b1ffa59f265d679323e_6444124785797897160.png" alt="경류 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>경류</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B2%BD%EB%A5%98&amp;page_slug=char-1387">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>경류</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/28/23901508/f4b4e47e34018b1ffa59f265d679323e_6444124785797897160.png" alt="경류 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>경류는 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 출신의 전대 검술 일인자이자 전설적인 「<a class="wiki-link" href="entry-1328.html" title="구름 위 5전사">구름 위 5전사</a>」 중 한 명으로, 「무결의 섬광」이라 불린 검사다.<sup class="cite-ref" title="공식 HoYoWiki · 경류"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 과거에는 운기군의 불패신화를 만든 검수였지만, 오늘날에는 선주의 기록에서 이름이 지워지고 마각의 몸의 경계를 걷는 역적으로 남았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검술의 일인자"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>경류의 삶은 영웅담과 범죄 기록이 한 사람 안에서 충돌하는 이야기다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그녀는 수많은 풍요의 백성을 베어 쓰러뜨린 전설적인 무인이지만, 마각에 빠져 동료들을 살육하고 신의를 저버린 죄인으로도 기억된다.<sup class="cite-ref" title="게임 본편 · 경류의 언급 · 경류의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그래서 경류는 선주의 무공이 어디까지 인간을 끌어올릴 수 있는지, 그리고 장생과 마각이 그 영광을 어떻게 무너뜨리는지를 함께 보여주는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검은 면사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>경류의 삶은 영웅담과 범죄 기록이 한 사람 안에서 충돌하는 이야기다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그녀는 수많은 풍요의 백성을 베어 쓰러뜨린 전설적인 무인이지만, 마각에 빠져 동료들을 살육하고 신의를 저버린 죄인으로도 기억된다.<sup class="cite-ref" title="게임 본편 · 경류의 언급 · 경류의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그래서 경류는 선주의 무공이 어디까지 인간을 끌어올릴 수 있는지, 그리고 장생과 마각이 그 영광을 어떻게 무너뜨리는지를 함께 보여 주는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검은 면사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>경류는 나부의 과거를 현재로 끌고 오는 인물이다.<sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그녀는 <a class="wiki-link" href="char-8.html" title="단항">단항</a>의 전생인 음월군 단풍과 생사를 함께한 친우였고, <a class="wiki-link" href="char-26.html" title="경원">경원</a> 장군의 은사였으며, <a class="wiki-link" href="blade.html" title="블레이드">블레이드</a>에게 검술을 가르친 사람이기도 하다.<sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 이 관계망 때문에 경류가 움직이면 단순히 한 죄수가 귀환하는 사건이 아니라, 구름 위 5전사의 붕괴 이후 남은 빚과 기억이 다시 나부에 모이는 사건이 된다.<sup class="cite-ref" title="게임 본편 · 응성의 언급 · 응성의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 카프카의 언급 · 카프카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<p>경류는 몇 년간 종적을 감춘 도주범으로 다시 나타나 원수에게 「신과 맞설 방법」을 바치겠다며 화외지민과 관짝 하나를 끌고 왔다. 그녀는 실력상 누구도 체포하기 어려운 인물로 여겨졌지만, 나부에 돌아와 스스로 자수하겠다고 공언했다. 이 귀환은 경류가 도망만 다니는 중죄범이 아니라, 자신의 죄와 목적을 들고 선주의 법과 권력 앞에 다시 선 인물임을 보여준다.<sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
+<p>경류는 몇 년간 종적을 감춘 도주범으로 다시 나타나 원수에게 「신과 맞설 방법」을 바치겠다며 화외지민과 관짝 하나를 끌고 왔다. 그녀는 실력상 누구도 체포하기 어려운 인물로 여겨졌지만, 나부에 돌아와 스스로 자수하겠다고 공언했다. 이 귀환은 경류가 도망만 다니는 중죄범이 아니라, 자신의 죄와 목적을 들고 선주의 법과 권력 앞에 다시 선 인물임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
 <p>경원은 경류와 <a class="wiki-link" href="char-711.html" title="나찰">나찰</a>에 관한 심문을 원수에게 올렸고, 시왕 신법에 따라 두 사람이 계속 「허릉」으로 호송될 것이라고 말한다. 경류 본인도 예전에는 자신의 의지로 허릉 선주의 시왕사 깊은 곳에 있는 오묘함의 문을 지나 해탈의 길로 들어섰다고 말한다. 그녀의 현재 행로는 나부의 군사 문제를 넘어 시왕사, 허릉, 원수, 신과 맞설 방법이 얽힌 더 큰 선주 권력의 문제로 확장된다.<sup class="cite-ref" title="게임 본편 · 비소의 언급 · 비소의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
 <p>나부에서 경류와 함께하는 마지막 하루는 겉으로는 손님 접대처럼 보이지만 실제로는 죄수 호송이다. 이 장면은 경류의 애매한 위치를 압축한다. 그녀는 여전히 「경류 님」으로 불리며 존중받고, 팬에게 인증샷을 부탁받을 정도로 전설의 이름을 유지하지만, 동시에 운기군과 판관의 감시 아래 움직이는 위험한 죄수다.<sup class="cite-ref" title="게임 본편 · 덤벙대는 유령의 언급 · 덤벙대는 유령의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 계네빈의 언급 · 계네빈의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <h2 id="출신과-검의-길">출신과 검의 길</h2>
@@ -702,28 +639,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>경류가 검술의 일인자에 오른 날, 검은 옷을 입은 단명종 장인은 나부 운기검수만이 제대로 다룰 수 있다는 검을 던졌다. 이 장인은 응성으로 이어지는 구름 위 5전사의 관계망과도 맞물리며, 경류의 검은 개인의 재능만이 아니라 동료들의 기술과 승부욕, 인정 욕망이 모인 결과물이 된다.<sup class="cite-ref" title="게임 본편 · 응성의 언급 · 응성의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 나찰의 언급 · 나찰의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> 경류의 무기는 점점 평범한 철을 벗어나 얼음, 천외의 금속, 달빛의 검으로 변해 가며, 그녀 자신도 인간의 승부를 넘어서는 방향으로 나아간다.<sup class="cite-ref" title="공식 HoYoWiki · 경류"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•담화검"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
 <h2 id="구름-위-5전사와-파국">구름 위 5전사와 파국</h2>
 <p>경류는 단풍, 경원, 응성, 백주와 함께 구름 위 5전사의 기억 속에 남아 있다.<sup class="cite-ref" title="게임 본편 · 응성의 언급 · 응성의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 나찰의 언급 · 나찰의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 나찰은 이 집단의 힘을 경류의 절세 검술, 음월군 단풍의 운음 술법, 백주의 별뗏목 조종술, 응성이 단조한 신병이기, 경원의 전술과 지략으로 묶어 설명한다. 경류는 이 조합에서 전면의 칼날을 맡는 인물이며, 다른 네 사람의 능력은 그녀의 검이 전쟁에서 더 큰 결과를 내도록 받쳐준다.<sup class="cite-ref" title="게임 본편 · 나찰의 언급 · 나찰의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>단풍은 경류와 경원, 응성이 전사하더라도 자신의 선택은 변함없다고 말한 적이 있다. 이 말은 구름 위 5전사가 단순한 전우 집단이 아니라, 각자의 선택이 서로의 생사와 죄책감까지 건드리는 관계였음을 보여준다.<sup class="cite-ref" title="게임 본편 · 「단풍」의 언급 · 「단풍」의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 카프카의 언급 · 카프카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 경류가 훗날 단풍에 대해 비디아다라 용존의 긴 세월을 은혜가 아니라 족쇄라고 말하고, 그가 결국 벗어났지만 그런 방식은 아니었어야 했다고 회상하는 것도 그 파국의 무게를 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단풍에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
-<p>백주는 경류에게 지나온 별들과 기이한 풍경, 도망쳐 나온 위험한 곳들을 이야기해 준 인물로 남아 있지만, 경류는 그 기억들을 제대로 붙잡지 못한다. 기억은 머릿속을 계속 돌지만 잡히지 않는다고 하는 경류의 말은, 마각의 몸과 오래된 상처가 그녀에게서 친밀한 과거마저 빼앗고 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백주에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검은 면사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>단풍은 경류와 경원, 응성이 전사하더라도 자신의 선택은 변함없다고 말한 적이 있다. 이 말은 구름 위 5전사가 단순한 전우 집단이 아니라, 각자의 선택이 서로의 생사와 죄책감까지 건드리는 관계였음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 「단풍」의 언급 · 「단풍」의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 카프카의 언급 · 카프카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 경류가 훗날 단풍에 대해 비디아다라 용존의 긴 세월을 은혜가 아니라 족쇄라고 말하고, 그가 결국 벗어났지만 그런 방식은 아니었어야 했다고 회상하는 것도 그 파국의 무게를 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단풍에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
+<p>백주는 경류에게 지나온 별들과 기이한 풍경, 도망쳐 나온 위험한 곳들을 이야기해 준 인물로 남아 있지만, 경류는 그 기억들을 제대로 붙잡지 못한다. 기억은 머릿속을 계속 돌지만 잡히지 않는다고 하는 경류의 말은, 마각의 몸과 오래된 상처가 그녀에게서 친밀한 과거마저 빼앗고 있음을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백주에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검은 면사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>응성과의 관계는 검과 빚으로 남았다.<sup class="cite-ref" title="게임 본편 · 응성의 언급 · 응성의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 블레이드는 경류에게 떠나기 전에 갚아야 할 빚이 있다고 말하고, 경류가 가르친 검술을 돌려주겠다고 한다.<sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 경류도 자신이 「뼈를 깎고 가슴에 새기는」 방식으로 그에게 검술을 전수했으며, 그의 검술이 완성되던 날 그가 가르침을 돌려주겠다고 맹세했다고 말한다. 이 관계는 사제 관계라기보다 서로의 몸과 원한에 검술을 새긴 채 다시 맞붙을 날을 기다리는 부채 관계다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>경류는 나부 선주 역대 검술의 일인자로 불리고, 경원 장군에게 무예를 가르친 스승으로 확인된다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 경원은 기억 속에서 「경류 스승님의 검술」을 천재가 막을 수 있겠냐는 식으로 언급하며, 그녀의 검술을 압도적인 기준으로 삼는다. 경류 자신은 명성이나 전승에 무심하지만, 그 무심함은 약자의 겸손이 아니라 이미 명성 밖에서도 예기로 증명되는 검사의 태도에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검술의 일인자"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>전쟁 기록 속 경류의 검은 풍요의 백성, 페더 가드, 보리인의 아비 늑대, 산처럼 크다는 기계짐승까지 쓰러뜨린다. 그녀는 전우와 제자와 함께 천족의 배로 쳐들어가 전쟁을 관망하던 늑대 수장의 목을 떨궜고, 구름 위의 비공성에서 페더 가드들의 날개를 찢었으며, 후이늠의 말발굽에 맞서 다리 여섯 달린 준마를 모는 자들을 잡아 감옥에 처넣었다. 이 기록들은 경류가 결투의 명수가 아니라 전쟁의 흐름을 바꾸는 공격수였다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
-<p>경류는 호뢰를 쓰러뜨린 인물로도 언급된다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <a class="wiki-link" href="char-1640.html" title="설의">설의</a>는 경류가 호뢰를 잡아들인 뒤 수백 년 동안 유폐옥이 호뢰에게 단 한 끼의 식사도 제공하지 않았는데도 그가 살아 있다고 말하며, <a class="wiki-link" href="char-2643.html" title="초구">초구</a>는 수장에게 당신을 쓰러뜨렸던 여자 경류가 최근 나부로 돌아왔다고 알린다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 호뢰 관련 언급은 경류의 과거 무력이 단순한 전설로만 남지 않고, 현재의 정치적 판단과 감금 체계에도 영향을 주는 사건으로 이어졌음을 보여준다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
+<p>전쟁 기록 속 경류의 검은 풍요의 백성, 페더 가드, 보리인의 아비 늑대, 산처럼 크다는 기계짐승까지 쓰러뜨린다. 그녀는 전우와 제자와 함께 천족의 배로 쳐들어가 전쟁을 관망하던 늑대 수장의 목을 떨궜고, 구름 위의 비공성에서 페더 가드들의 날개를 찢었으며, 후이늠의 말발굽에 맞서 다리 여섯 달린 준마를 모는 자들을 잡아 감옥에 처넣었다. 이 기록들은 경류가 결투의 명수가 아니라 전쟁의 흐름을 바꾸는 공격수였다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
+<p>경류는 호뢰를 쓰러뜨린 인물로도 언급된다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <a class="wiki-link" href="char-1640.html" title="설의">설의</a>는 경류가 호뢰를 잡아들인 뒤 수백 년 동안 유폐옥이 호뢰에게 단 한 끼의 식사도 제공하지 않았는데도 그가 살아 있다고 말하며, <a class="wiki-link" href="char-2643.html" title="초구">초구</a>는 수장에게 당신을 쓰러뜨렸던 여자 경류가 최근 나부로 돌아왔다고 알린다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 호뢰 관련 언급은 경류의 과거 무력이 단순한 전설로만 남지 않고, 현재의 정치적 판단과 감금 체계에도 영향을 주는 사건으로 이어졌음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
 <p>경류의 위험성은 강함만이 아니라 통제 불가능성에서 나온다.<sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검은 면사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <a class="wiki-link" href="npc-1159.html" title="청주">청주</a>는 경류의 실력이라면 누구도 그녀를 체포할 수 없을 것이라고 말하고, Mar. 7th는 기록 속 경류가 위험해 보인다고 반응한다.<sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 경류가 자수했기 때문에 호송이 가능해졌을 뿐, 작중 인물들은 그녀를 제압 가능한 죄수라기보다 스스로 법정으로 걸어 들어온 재난급 검사로 대한다.<sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
 <p>전투 대사와 능력 명칭도 경류의 위상을 살육과 해방의 양면으로 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 그녀는 적을 두고 망령이 하나 더 늘겠다고 말하고, [전백] 상태에서는 멈출 수 없다고 말하며, 전투 불능 상태에서는 드디어 해방이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 경류에게 싸움은 승패보다 오래된 몸과 죄, 불로장생의 저주가 한꺼번에 드러나는 순간이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 대기"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 승리"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup></p>
 <h2 id="마각과-죄">마각과 죄</h2>
-<p>경류는 스스로를 선주가 버린 병사이자 유랑 검객이라고 부르며, 자신을 모르는 척하는 편이 귀찮은 일에 휘말리지 않는 길이라고 말한다. 이 자기소개는 그녀가 과거의 영웅 칭호를 먼저 내세우지 않고, 버려짐과 유랑, 위험을 자신의 현재 정체성으로 받아들이고 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검술의 일인자"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>경류는 스스로를 선주가 버린 병사이자 유랑 검객이라고 부르며, 자신을 모르는 척하는 편이 귀찮은 일에 휘말리지 않는 길이라고 말한다. 이 자기소개는 그녀가 과거의 영웅 칭호를 먼저 내세우지 않고, 버려짐과 유랑, 위험을 자신의 현재 정체성으로 받아들이고 있음을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검술의 일인자"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <p>경류의 죄는 추상적인 반역이 아니라 마각의 몸에 빠져 동료들을 살육하고 신의를 저버린 사건으로 남아 있다. 공식 설명도 그녀가 인간의 승부에서 벗어나 「신」을 죽일 힘을 얻기 위해 다른 길을 선택했고, 그 결과 나부의 기록에서 검수가 하나 줄고 이름이 지워진 배신자가 하나 늘었다고 정리한다. 경류는 신을 상대하려는 의지와 동료를 해친 죄가 분리되지 않는 인물이며, 그 모순 때문에 영웅담이 곧 범죄의 전사가 된다.<sup class="cite-ref" title="공식 HoYoWiki · 경류"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 경류의 언급 · 경류의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>그녀는 일찌감치 자신의 한계를 뛰어넘어 마각의 몸의 경계에서 배회하고 있다고 말한다. 검은 면사로 눈을 가리는 이유도 과거를 눈으로 보고 분노에 휩싸이느니, 차라리 보지 않은 채 발길 닿는 대로 가는 편이 낫기 때문이다. 경류의 눈가림은 신비한 장식이 아니라 기억과 분노를 차단하기 위한 자기통제 장치다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검은 면사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
 <p>경류는 장생의 몸은 치유할 필요가 없다고 말하고, 전투에서 쓰러졌다 돌아올 때도 불로장생이 명을 다할 리 없다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · HP 회복"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 그러나 턴 대기 중에는 미치도록 애타게 기다리는 기분을 무한한 수명에 비유하고, 전투 불능 때는 해방을 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 대기"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 그녀에게 장생은 축복보다 끝나지 않는 대기와 상처의 지속에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 대기"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · HP 회복"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>경원은 경류의 제자이자 그녀의 과거를 가장 무겁게 안고 있는 나부의 장군이다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 나찰의 언급 · 나찰의 인게임 대사"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 경류는 경원이 무예 연마에 적합하지 않다고 평가하면서도, 누구든 검을 배우고 싶다면 가르친다는 자신의 사제관을 밝힌다. 파티 편성 대사에서는 전처럼 전략은 경원에게 맡기겠다고 말해, 경원을 단순한 제자보다 전장의 판단을 맡길 수 있는 동료로도 기억한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•경원"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup></p>
-<p>단풍과 단항·음월은 경류의 구름 위 5전사 시절과 파국을 잇는 축이다.<sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단풍에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•단항•음월"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup> 경류는 음월과 함께하던 일이 오래전처럼 느껴진다고 말하고, 단풍이 비디아다라 용존의 족쇄에서 벗어났지만 그 방식은 아니었어야 했다고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단풍에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•단항•음월"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup> 이 관계는 전생과 현생, 친우와 죄인, 해방과 잘못된 선택이 겹치는 선주 서사의 중심부를 만든다.<sup class="cite-ref" title="게임 본편 · 「단풍」의 언급 · 「단풍」의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단풍에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
-<p>블레이드는 경류가 남긴 검술과 상처를 되돌려주려는 상대다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 경류는 그에게 가혹한 방식으로 검술을 전수했고, 블레이드는 그 검술이 완성된 날 가르침을 돌려주겠다고 맹세했다. 카프카가 블레이드의 의식을 선주에서 멀리 떨어뜨려 경원, 경류, 응성, 단항을 잊게 하려는 장면은, 블레이드의 고통이 이 이름들과 강하게 묶여 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 카프카의 언급 · 카프카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>백주는 경류가 잃어버린 기억의 형태로 남아 있다. 경류는 백주가 별들과 기이한 풍경, 도망쳐 나온 위험한 곳들을 이야기해 준 것 같다고 말하지만, 아무 기억도 나지 않는다고 한다. 백주와의 관계는 현재의 경류가 단순히 사람을 잃은 것이 아니라, 사람과 나눈 세계의 기억까지 잃어가고 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백주에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
+<p>단풍과 단항·음월은 경류의 구름 위 5전사 시절과 파국을 잇는 관계다.<sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단풍에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•단항•음월"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup> 경류는 음월과 함께하던 일이 오래전처럼 느껴진다고 말하고, 단풍이 비디아다라 용존의 족쇄에서 벗어났지만 그 방식은 아니었어야 했다고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단풍에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•단항•음월"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup> 이 관계는 전생과 현생, 친우와 죄인, 해방과 잘못된 선택이 겹치는 선주 이야기의 중심부를 만든다.<sup class="cite-ref" title="게임 본편 · 「단풍」의 언급 · 「단풍」의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 청주의 언급 · 청주의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단풍에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
+<p>블레이드는 경류가 남긴 검술과 상처를 되돌려주려는 상대다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 블레이드의 언급 · 블레이드의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 경류는 그에게 가혹한 방식으로 검술을 전수했고, 블레이드는 그 검술이 완성된 날 가르침을 돌려주겠다고 맹세했다. 카프카가 블레이드의 의식을 선주에서 멀리 떨어뜨려 경원, 경류, 응성, 단항을 잊게 하려는 장면은, 블레이드의 고통이 이 이름들과 강하게 묶여 있음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 카프카의 언급 · 카프카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>백주는 경류가 잃어버린 기억의 형태로 남아 있다. 경류는 백주가 별들과 기이한 풍경, 도망쳐 나온 위험한 곳들을 이야기해 준 것 같다고 말하지만, 아무 기억도 나지 않는다고 한다. 백주와의 관계는 현재의 경류가 단순히 사람을 잃은 것이 아니라, 사람과 나눈 세계의 기억까지 잃어가고 있음을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백주에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
 <p>연경은 경류가 현재의 나부 검술을 다시 시험하는 상대다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 연경에 대해"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•연경"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 경류는 연경의 성장세를 만족스럽게 보면서도, 검술의 오묘함은 피로 얼룩진 살생의 길 없이는 알 수 없다고 선을 긋는다. 이 평가는 연경의 재능을 인정하면서도, 경류 자신의 검이 평화로운 수련으로는 닿기 어려운 전장과 죄의 산물임을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 연경에 대해"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•연경"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup></p>
 <p>나찰은 경류와 함께 심문과 호송의 대상이 되는 이방인이며, 경류가 마음이 허한 사람으로 인식하는 상대다.<sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 나찰에 대해"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup> 경류는 나찰이 자신처럼 마음에 구멍이 있고, 무엇을 해도 그 구멍은 메울 수 없다고 말한다. 두 사람의 동행은 신과 맞설 방법, 관짝, 허릉 호송이라는 큰 사건으로 이어지지만, 정서적으로는 채워지지 않는 결핍을 공유하는 불안한 동맹에 가깝다.<sup class="cite-ref" title="게임 본편 · 비소의 언급 · 비소의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 나찰에 대해"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup></p>
-<p>호뢰는 경류의 무력을 현재 시점에서도 증명하는 이름이다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 경류가 호뢰를 잡아들인 뒤 수백 년 동안 유폐옥은 그에게 식사를 제공하지 않았지만, 호뢰는 여전히 살아 있었다. 이 사건은 경류가 쓰러뜨린 적들이 평범한 범죄자나 병사가 아니라 선주의 감옥과 생물학적 상식까지 흔드는 존재였음을 보여준다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
+<p>호뢰는 경류의 무력을 현재 시점에서도 증명하는 이름이다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 경류가 호뢰를 잡아들인 뒤 수백 년 동안 유폐옥은 그에게 식사를 제공하지 않았지만, 호뢰는 여전히 살아 있었다. 이 사건은 경류가 쓰러뜨린 적들이 평범한 범죄자나 병사가 아니라 선주의 감옥과 생물학적 상식까지 흔드는 존재였음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 설의의 언급 · 설의의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 초구의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
 <h2 id="달빛의-검과-끝나지-않은-승부">달빛의 검과 끝나지 않은 승부</h2>
 <p>경류는 검술을 완성한 뒤에도 늘 한계에 도전해 왔고, 이번 여정의 종착지도 끝이 아닐 것이라고 말한다. 캐릭터 승급 대사에서도 하늘의 별을 베어내려면 아직 멀었다고 하며, 전설적인 검수의 자리에 머물지 않는 태도를 보인다. 그녀에게 검술의 완성은 멈춤이 아니라, 인간의 승부를 벗어나 신을 죽일 힘을 향해 더 깊이 들어가는 출발점이다.<sup class="cite-ref" title="공식 HoYoWiki · 경류"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup></p>
 <p>경류의 검은 점점 물체에서 상태로 변한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•담화검"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 어린 시절에는 얼음이 형체를 이룬 검을 쥐었고, 전장에서는 운기군의 검과 비검으로 싸웠으며, 지금은 평범한 병기를 버리고 달빛을 검으로 삼는다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 특성"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•담화검"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 이 변화는 경류가 기술의 숙련을 넘어, 자신의 몸과 기억과 마각까지 검의 일부로 삼게 되었음을 암시한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검은 면사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•담화검"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
@@ -790,7 +727,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-02</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -800,12 +737,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-1387">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EA%B2%BD%EB%A5%98&amp;body=%EA%B2%BD%EB%A5%98+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-1387.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

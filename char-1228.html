@@ -24,7 +24,6 @@
 }
 :root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -114,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -145,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -248,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -478,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -517,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -527,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -554,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -583,14 +530,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -599,40 +540,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 58% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
   <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -656,7 +593,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -686,18 +623,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>링스</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A7%81%EC%8A%A4&amp;page_slug=char-1228">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>링스</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/18/23901508/d87ac9fe7112cd292c2c7711551cce97_5283391527475890147.png" alt="링스 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>링스</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A7%81%EC%8A%A4&amp;page_slug=char-1228">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>링스</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/18/23901508/d87ac9fe7112cd292c2c7711551cce97_5283391527475890147.png" alt="링스 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>링스는 벨로보그의 설원 조사대원이자 랜도 가문의 막내딸로, 홀로 설원 깊은 곳을 탐험하는 극지 탐험가다.<sup class="cite-ref" title="공식 HoYoWiki · 링스"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 나른하고 담담해 보이지만 실제로는 한 번 정한 일을 밀어붙이는 추진력이 강하며, 불필요한 사교를 피하려는 태도 때문에 쉽게 다가가기 어려운 분위기를 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>그녀가 설원으로 나가는 이유는 거창한 사명보다 단순한 호기심에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 어린 시절 링스는 한파 전 세계의 풍경, 오로라, 설원 깊은 곳에 남은 답을 교실에서 듣기만 했고, 직접 보러 가면 의문이 풀린다고 생각했다. 이 태도는 랜도 가문의 “하고 싶으면 해라”라는 생활 방식과 맞물려, 링스를 도시 안의 설명에 만족하지 않는 인물로 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
 <p>링스는 벨로보그 바깥의 설원을 실제로 오가며 도시가 잃어버린 과거와 현재를 이어 주는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 눈보라는 벨로보그 밖의 세계와 구세계의 역사를 묻었지만, 링스는 설원에 가면 그 역사를 다시 드러낼 수 있다고 여긴다. 그래서 그녀의 탐험은 단순한 취미가 아니라, 성벽 안에서는 알 수 없는 지리와 유적, 표본과 기록을 도시 안으로 가져오는 행동이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
 <p>한파가 사라진 뒤 링스는 고대 도시 마스레니차 유적지를 계속 조사했고, 그곳에서 공동묘지와 떨어진 묘지를 발견했다. <a class="wiki-link" href="char-801.html" title="루카">루카</a>는 링스가 그 묘지를 이고르의 의관을 묻은 무덤으로 본다고 알고 있으며, 링스는 보석 펜던트를 통해 이고르가 야릴로-Ⅵ에 돌아오기 전 겪은 일을 알아보려 했다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 사건에서 링스는 유물을 발견하는 사람에 그치지 않고, 유물의 주인과 남겨진 사람 사이의 의미를 정리해 주는 조사자 역할을 맡는다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p><a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 나부</a>에서의 일도 링스의 역할을 잘 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 링스는 귀한 골동품을 가져와 복구 가능성을 묻고, 일부 자료가 복구된 뒤에도 옥조의 주인이 루카의 롤 모델이라는 이유로 루카에게 가장 먼저 보여주려 했다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그녀는 자료의 가치만 따지는 인물이 아니라, 발견한 기록이 누구에게 먼저 닿아야 하는지를 생각하는 인물이다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p><a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 나부</a>에서의 일도 링스의 역할을 잘 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 링스는 귀한 골동품을 가져와 복구 가능성을 묻고, 일부 자료가 복구된 뒤에도 옥조의 주인이 루카의 롤 모델이라는 이유로 루카에게 가장 먼저 보여 주려 했다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그녀는 자료의 가치만 따지는 인물이 아니라, 발견한 기록이 누구에게 먼저 닿아야 하는지를 생각하는 인물이다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
 <p><a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 젊은 세대가 더 넓은 세상을 체험하기를 바라며 링스와 <a class="wiki-link" href="char-22.html" title="후크">후크</a>도 여행에 동행할 수 있게 했고, 은하 문명과 소통한 경험이 없다는 점 때문에 <a class="wiki-link" href="npc-803.html" title="스바로그">스바로그</a>도 지식 멘토로 함께했다. 이 배치는 링스를 벨로보그 내부 인물에서 은하 문명과 접촉하는 세대의 일원으로 옮긴다. 링스는 성벽 밖의 설원뿐 아니라 벨로보그 바깥의 더 큰 세계를 배우는 위치에 서며, 그녀의 탐사 욕구는 행성 내부의 유적 조사에서 은하적 경험으로 확장된다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
-<p>벨로보그에서 링스의 위상은 “랜도 가문의 막내”와 “최고의 극지 탐험가”라는 두 축으로 세워진다.<sup class="cite-ref" title="공식 HoYoWiki · 링스"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 가족 안에서는 보호받는 막내이지만, 설원에서는 준비되지 않은 사람이 오히려 걱정해야 할 대상이라고 말할 만큼 자기 능력을 신뢰한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•단독 모험"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> <a class="wiki-link" href="char-17.html" title="게파드">게파드</a>는 설원의 추위와 괴물을 걱정하지만, 링스는 옷과 난로를 챙겼고 순찰대를 따라 설원에 간 경험도 있다고 답한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p><a class="wiki-link" href="char-16.html" title="서벌">서벌</a>은 링스가 혼자 탐험할 때 조심하라고 하면서도, 아이스바일과 스노보드, 물병과 어깨 밴드 같은 장비를 챙겨 준다. 이 장면은 랜도 가문의 걱정이 링스를 막는 방식이 아니라 장비와 준비를 보태는 방식으로 작동한다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 링스에게 위험은 포기의 이유가 아니라 방한 준비와 생존 훈련으로 줄여야 할 문제다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
+<p>벨로보그에서 링스의 위상은 “랜도 가문의 막내”와 “최고의 극지 탐험가”라는 두 중심으로 세워진다.<sup class="cite-ref" title="공식 HoYoWiki · 링스"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 가족 안에서는 보호받는 막내이지만, 설원에서는 준비되지 않은 사람이 오히려 걱정해야 할 대상이라고 말할 만큼 자기 능력을 신뢰한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•단독 모험"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> <a class="wiki-link" href="char-17.html" title="게파드">게파드</a>는 설원의 추위와 괴물을 걱정하지만, 링스는 옷과 난로를 챙겼고 순찰대를 따라 설원에 간 경험도 있다고 답한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
+<p><a class="wiki-link" href="char-16.html" title="서벌">서벌</a>은 링스가 혼자 탐험할 때 조심하라고 하면서도, 아이스바일과 스노보드, 물병과 어깨 밴드 같은 장비를 챙겨 준다. 이 장면은 랜도 가문의 걱정이 링스를 막는 방식이 아니라 장비와 준비를 보태는 방식임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 링스에게 위험은 포기의 이유가 아니라 방한 준비와 생존 훈련으로 줄여야 할 문제다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
 <p>링스의 실용성은 작은 사건에서도 드러난다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 누군가 난간에 혀가 얼어붙자 링스는 보온병을 꺼내 도와주고, 얼어붙은 혀가 녹아 겨우 분리된다. 이 장면은 그녀의 생존 지식이 거창한 탐사 기록뿐 아니라 도시 안의 돌발 상황에서도 즉시 쓰인다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
 <p>서벌과 게파드는 링스의 가족 관계를 이해하는 핵심 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 서벌에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 게파드에 대해"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 링스는 서벌을 다재다능하고 존경스러운 언니로 여기지만 그 말을 직접 전하기는 부끄러워하고, 게파드를 유능하고 대단한 오빠로 보면서도 걱정을 줄였으면 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 서벌에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 게파드에 대해"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> 파티 편성에서 서벌과 함께 싸우는 일을 특별하게 받아들이고, 게파드에게는 자신이 더는 어린아이가 아니라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•서벌"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•게파드"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
@@ -705,7 +642,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>페라는 링스의 가장 가까운 관계망에 속한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•페라"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 링스는 페라만 이해할 수 있는 것들이 많다고 말하고, 사람과 대화할 때는 화제를 찾고 의중을 헤아려야 해서 번거롭지만 페라와 이야기할 때는 그런 걱정이 없다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 페라도 서벌의 기계공방에 자주 가며 링스가 있으면 하룻밤 자고 온다고 말하고, 다른 인물은 페라와 링스가 자매 같은 사이라고 본다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 몰리의 언급 · 몰리의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
 <p>페라가 쓴 동인 소설에서 링스는 페라의 절친이자 벨로보그의 마법 소녀가 되는 인물로 등장한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 이 언급은 링스가 페라에게 단순한 동료가 아니라 상상과 취미 세계까지 함께 들어가는 가까운 친구라는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
 <p>브로냐와 <a class="wiki-link" href="char-21.html" title="삼포">삼포</a>에 대한 링스의 말은 그녀의 시선이 얼마나 생활감 있는지 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 브로냐가 매일 많은 사람을 만나야 해서 피곤할 것이라고 보고, 게파드가 쫓는 수배자 같은 삼포를 설원에서 본 듯하다며 전설의 벨로보그 야인일지도 모른다고 상상한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 링스에게 권력자와 수배자는 추상적인 지위보다 실제로 얼마나 사람을 만나고 어디서 목격되는지로 먼저 포착된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
-<p>루카, 이고르, <a class="wiki-link" href="char-24.html" title="청작">청작</a>과 얽힌 사건은 링스의 탐사가 다른 사람의 과거를 되찾는 통로가 된다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 링스는 골동품을 복구하려고 움직이고, 복구된 자료를 루카에게 먼저 보여주어야 한다고 판단한다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 루카가 “링스 말이 맞다”고 받아들이는 장면은 링스의 판단이 사건의 감정적 순서를 정리하는 역할까지 한다는 점을 드러낸다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>루카, 이고르, <a class="wiki-link" href="char-24.html" title="청작">청작</a>과 얽힌 사건은 링스의 탐사가 다른 사람의 과거를 되찾는 통로가 된다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 링스는 골동품을 복구하려고 움직이고, 복구된 자료를 루카에게 먼저 보여 주어야 한다고 판단한다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 루카가 “링스 말이 맞다”고 받아들이는 장면은 링스의 판단이 사건의 감정적 순서를 정리하는 역할까지 한다는 점을 드러낸다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
 <p>설원 곰, 식물 표본, 칸도르 협곡은 링스의 탐험이 작중 세계에 남기는 구체적인 흔적이다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> 페라는 임시 전시회의 설원 곰이 링스가 탐험할 때 발견한 대상이라고 말하고, 서벌은 링스가 체험 활동 중 집으로 식물 표본을 보냈다고 말한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 링스는 칸도르 협곡의 거친 산바람이 눈보라의 전조일 수 있으니 밤에는 협곡에 머물지 말라고 경고한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
 <h2 id="혼자가-좋은-탐험가">혼자가 좋은 탐험가</h2>
 <p>링스는 고독을 결핍으로 다루지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•단독 모험"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 그녀는 혼자 있을 때 마음이 안정된다고 말하고, 혼자라서 위험한 것이 아니라 혼자라서 좋다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•단독 모험"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 이 성격은 사람을 싫어한다기보다, 사람과 이야기할 때 필요한 화제 찾기와 의중 파악을 큰 소모로 느끼는 방식에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
@@ -769,7 +706,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 야릴로-Ⅵ·벨로보그</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-02</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -779,12 +716,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-1228">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EB%A7%81%EC%8A%A4&amp;body=%EB%A7%81%EC%8A%A4+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-1228.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

@@ -24,7 +24,6 @@
 }
 :root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -114,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -145,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -248,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -478,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -517,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -527,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -554,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -583,14 +530,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -599,40 +540,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 58% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
   <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -656,7 +593,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -686,18 +623,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
 <a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-other.html">기타 인물</a><span>운리</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%9A%B4%EB%A6%AC&amp;page_slug=char-2642">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>운리</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">기타 인물</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/06/23901508/4e844cab005d1f6968f7d2215df4b3d7_3253335270119622048.png" alt="운리 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-other.html">기타 인물</a><span>운리</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%9A%B4%EB%A6%AC&amp;page_slug=char-2642">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>운리</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">기타 인물</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/06/23901508/4e844cab005d1f6968f7d2215df4b3d7_3253335270119622048.png" alt="운리 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
 <p>운리는 검을 단순한 장비가 아니라 성격과 감촉과 품성을 가진 존재처럼 대한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검과 대화"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 좋은 검을 감상할 때도 외관, 분위기, 손끝의 감각, 평생 함께할 수 있을 것 같은 느낌을 차례로 따지며, 검과 교감하는 일이 초식만큼 중요하다고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•초식"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이 태도 때문에 운리의 검 사냥은 단순한 무기 회수가 아니라, 잘못된 주인에게 붙잡힌 검을 떼어내고 마검이 된 검은 녹여 없애는 일에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
-<p>운리의 출발점에는 염륜연마궁의 비극이 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그녀는 아버지 함광이 세양 마검을 만들어 염륜연마궁의 비극을 초래한 뒤, 회염의 도움으로 위기를 모면하고 그의 제자가 되었다. 운리는 그때의 기억을 심장 박동, 급박한 숨소리, 장인들이 “도망쳐”라고 부르던 소리, 수많은 비명으로 떠올린다. 이 사건은 운리를 마검을 쫓는 검객으로 만들었고, 그녀가 검을 아끼는 마음과 마검을 증오하는 마음이 같은 뿌리에서 나온다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki · 운리"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>운리의 출발점에는 염륜연마궁의 비극이 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그녀는 아버지 함광이 세양 마검을 만들어 염륜연마궁의 비극을 초래한 뒤, 회염의 도움으로 위기를 모면하고 그의 제자가 되었다. 운리는 그때의 기억을 심장 박동, 급박한 숨소리, 장인들이 “도망쳐”라고 부르던 소리, 수많은 비명으로 떠올린다. 이 사건은 운리를 마검을 쫓는 검객으로 만들었고, 그녀가 검을 아끼는 마음과 마검을 증오하는 마음이 같은 뿌리에서 나온다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki · 운리"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
 <p>운리는 검을 빼앗는 행동도 거리낌 없이 저지르지만, 그 기준은 소유권보다 검의 쓰임에 있다. 그녀는 명검으로 신분을 과시하거나, 가문에서 내려오는 검으로 약자를 괴롭히거나, 운기군인 형의 유품을 과시용으로 쓰는 이들에게서 검을 빼앗았다고 말한다. 회염이 그렇게 가져온 검들을 다 들고 다닐 것이냐고 묻자, 운리는 자신에게 「철군」이 있는 이상 다른 검을 들고 다니는 것은 한눈파는 일이라고 답한다. 그래서 운리의 검 사냥은 탐욕이 아니라, 보검이 낭비되거나 학대받는 상황을 참지 못하는 장인의 윤리로 움직인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <p>운리는 빼앗은 검을 없애기보다 알맞은 주인이 나타날 때까지 보호하려는 태도도 보인다. 그녀는 장인이 “돼지 목에 진주 목걸이” 같은 낭비를 가장 싫어한다고 말하며, 빼앗아 온 검들을 「용검로」의 쇳물에 보관하겠다고 한다. 이 말은 운리가 검의 가치를 파괴하는 사람이 아니라, 검이 누구의 손에서 어떤 의미가 되는지를 따지는 사람이라는 점을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검과 대화"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
 <p>마검 앞에서 운리는 더 냉혹해진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•활성화"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 그녀는 세양이 인간의 감정을 흡수하고 삼키며, 세양으로 만든 검이 분노와 살기와 폭력을 흡수하면 검을 쥔 자의 마음을 갉아먹어 결국 마검이 된다고 이해한다. 마검은 검술을 빠르게 끌어올릴 수 있지만, 결국 사용자를 검의 꼭두각시로 만든다고 운리는 본다. 그래서 그녀가 “승패는 검이 아니라 사람에게 달렸다”고 말하는 장면은 실력론이면서 동시에 마검에 대한 경고다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•1"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•마검"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
 <h2 id="작중-위상">작중 위상</h2>
 <p>운리는 어린 나이에 「염륜팔엽」 중 두 번째로 어린 천재 검객이 된 인물이다.<sup class="cite-ref" title="공식 HoYoWiki · 운리"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 그녀는 회염에게 총애받는 손녀이자 제자이며, 회염의 나이와 시선 때문에 늘 어린애 취급을 받는다고 말한다. 회염은 운리 뒤에 있는 『철군』이라는 이름의 용철검해를 보며, 완성되지 않은 검봉과 올곧은 검배를 눈앞의 소녀와 겹쳐 본다. 이 묘사는 운리가 아직 미완성의 검객이지만, 이미 자신의 검과 신념을 갖춘 인물이라는 위치를 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
 <p>운리의 강함은 재능과 실전 감각에서 먼저 확인된다.<sup class="cite-ref" title="공식 HoYoWiki · 운리"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <a class="wiki-link" href="char-28.html" title="연경">연경</a>은 운리의 타고난 재능이 뛰어나다고 평가하면서도, 기본기를 게을리해 겉만 번지르르한 무예 실력을 지녔다고 비판한다. 그는 회염 장군이 운리의 단점을 지적하지 않았느냐고 묻고, 운리의 가르침과 자신의 가르침을 두고 Mar. 7th의 성장을 평가한다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 이 관계에서 운리는 완성된 스승이 아니라, 뛰어난 재능과 뚜렷한 결점을 동시에 가진 젊은 검객으로 놓인다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>운리의 전투관은 자신감이 강하지만 무기에 책임을 떠넘기지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•1"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•마검"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그녀는 위험한 상황에서도 “녹일 수 없는 쇠는 아직 본 적 없어”라고 말하고, 턴이 시작되면 “승패는 검이 아니라 사람에게 달렸다”고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•1"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 피격 시에는 “다시! ” 또는 “제법이네”라고 반응해, 공격을 맞는 상황도 대련의 일부처럼 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 약공격 피격"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 강공격 피격"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 이 태도는 마검의 힘에 기대는 검객과 정반대에 서며, 운리가 검을 사랑하지만 검에게 지배당하지 않으려는 인물임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검과 대화"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•마검"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>운리의 전투관은 자신감이 강하지만 무기에 책임을 떠넘기지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•1"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•마검"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그녀는 위험한 상황에서도 “녹일 수 없는 쇠는 아직 본 적 없어”라고 말하고, 턴이 시작되면 “승패는 검이 아니라 사람에게 달렸다”고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•1"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 피격 시에는 “다시! ” 또는 “제법이네”라고 반응해, 공격을 맞는 상황도 대련의 일부처럼 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 약공격 피격"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 강공격 피격"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 이 태도는 마검의 힘에 기대는 검객과 정반대에 서며, 운리가 검을 사랑하지만 검에게 지배당하지 않으려는 인물임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검과 대화"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•마검"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
 <p>운리에게 「철군」은 무기이자 동행자이며, 아직 완성되지 않은 검이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 대기"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•무기"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 그녀는 인사할 때도 “검사는 검으로 인사를 해야지”라며 「철군」을 부르고, 전투 대기 중에는 「철군」에게 무엇을 베고 싶은지 묻는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 대기"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 「철군」은 아직 완성되지 않은 검이며, 운리는 빼앗은 마검을 그 안에 녹여 넣을 것이라 말한다. 「철군」은 운리의 성장과 마검 사냥이 끝나지 않았음을 함께 품은 검이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•무기"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
 <p>운리의 한계도 분명하다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 그녀는 최고 레벨에 이르러도 “모든 마검을 찾아내 파괴하기엔 아직 한참 부족해”라고 말한다. 전투 불능 시에는 “할아버지……”라고 부르며, 회염과의 관계가 단순한 스승 관계를 넘어 의지할 수밖에 없는 가족 관계임을 드러낸다. 운리는 강하고 빠르게 성장하지만, 마검을 모두 처리하기에는 아직 여정이 길고, 회염의 보호와 평가 아래서 벗어나 완전히 독립해야 하는 위치에 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 회염에 대해"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
 <h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
@@ -705,8 +642,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <p>함광과 염륜연마궁의 비극은 운리의 검 사냥을 개인적 복수보다 더 복잡한 사명으로 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 운리는 아버지가 검을 만드는 모습을 보며 대장간에서 자랐고, 용검로의 열기와 시장 음식과 장인의 손놀림까지 검의 감각으로 받아들였다. 그러나 함광은 세양 마검을 만들어 염륜연마궁의 비극을 초래했고, 운리는 도망치라는 장인들의 외침과 비명을 기억한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 이 배경 때문에 운리에게 단조는 따뜻한 성장 환경이면서 동시에 마검을 낳을 수 있는 위험한 기술이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
 <p>연경은 운리의 라이벌이자 공동 스승에 가까운 위치에 선다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 연경에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•연경"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 운리는 연경이 소장만 하고 쓰지 않는 보검을 많이 가지고 있으며 그 검들이 우는 소리가 들린다고 말한다. 파티 편성 음성에서는 연경에게 한 판 더 겨뤄보자고 청하고, 게임 본편에서는 연경과 함께 Mar. 7th에게 검술을 가르치는 관계로 등장한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•연경"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 연경은 운리의 재능을 인정하면서도 기본기를 비판하고, 운리는 연경과 부딪히며 자신의 검술관을 더 선명하게 드러낸다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
 <p>Mar. 7th는 운리가 처음으로 제자라고 부르는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · Mar. 7th에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•Mar. 7th"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 운리는 Mar. 7th에게 재능과 근성이 있다고 평가하며, 자신이 연경보다 잘 가르친다는 말을 들으면 기뻐할 것이라고 말한다. Mar. 7th는 운리와 연경을 모두 사부로 부르고, 두 사람에게 배운 검술을 스스로 체득해야 자신의 검술로 만들 수 있다고 말한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 이 관계에서 운리는 가르치는 사람이 되었지만, 연경의 비판과 Mar. 7th의 성장을 통해 자신도 배우는 위치에 남아 있다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p><a class="wiki-link" href="npc-3058.html" title="스코트">스코트</a>와 컴퍼니 기갑을 둘러싼 언급은 운리와 연경의 이름이 주변 인물에게 압박으로 받아들여진다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 스코트의 언급 · 스코트의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 연경은 Mar. 7th가 타고난 무술 재능과 실전 경험, 그리고 자신과 운리에게 배운 검술을 바탕으로 컴퍼니 기갑에 도전할 수 있을 것이라 말한다. 스코트는 사람들이 연경과 운리를 두려워해 말을 못 한다고 비꼬고, 본편 언급에는 “연경과 운리는 해낼 수 있어”라는 기대가 붙는다.<sup class="cite-ref" title="게임 본편 · 스코트의 언급 · 스코트의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 운리는 단독으로만 강한 인물이 아니라, 연경과 함께 주변의 평가와 기대를 끌어내는 젊은 검객 축으로 놓인다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 스코트의 언급 · 스코트의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
-<p><a class="wiki-link" href="char-2947.html" title="비소">비소</a>, <a class="wiki-link" href="char-2949.html" title="맥택">맥택</a>, <a class="wiki-link" href="char-2643.html" title="초구">초구</a>, <a class="wiki-link" href="char-2948.html" title="영사">영사</a>, <a class="wiki-link" href="char-29.html" title="백로">백로</a>, <a class="wiki-link" href="char-24.html" title="청작">청작</a>, <a class="wiki-link" href="char-1535.html" title="아젠티">아젠티</a>에 대한 음성은 운리가 선주 안팎의 인물들을 검과 식사와 대련의 감각으로 이해한다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 맥택에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 초구에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 영사에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 청작에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아젠티에 대해"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup> 운리는 비소와도 대련을 통해 마음을 나누는 일을 좋아한다고 말하고, 맥택은 직접 모습을 드러내지 않으면 만나기 어려운 막료라고 이해한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 맥택에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 초구의 훠궈 제안에는 매운 것과 뜨거운 것을 못 먹는다고 반응하고, 백로와는 금 조각상 거리에서 함께 많이 먹고 다시 식사하기로 약속했다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 초구에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 운리의 인간관계는 격식보다 몸으로 겪는 경험, 즉 겨루기와 먹기와 감각으로 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 초구에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
+<p><a class="wiki-link" href="npc-3058.html" title="스코트">스코트</a>와 컴퍼니 기갑을 둘러싼 언급은 운리와 연경의 이름이 주변 인물에게 압박으로 받아들여진다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 스코트의 언급 · 스코트의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 연경은 Mar. 7th가 타고난 무술 재능과 실전 경험, 그리고 자신과 운리에게 배운 검술을 바탕으로 컴퍼니 기갑에 도전할 수 있을 것이라 말한다. 스코트는 사람들이 연경과 운리를 두려워해 말을 못 한다고 비꼬고, 본편 언급에는 “연경과 운리는 해낼 수 있어”라는 기대가 붙는다.<sup class="cite-ref" title="게임 본편 · 스코트의 언급 · 스코트의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 운리는 단독으로만 강한 인물이 아니라, 연경과 함께 주변의 평가와 기대를 끌어내는 젊은 검객으로 자리 잡는다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 스코트의 언급 · 스코트의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
+<p><a class="wiki-link" href="char-2947.html" title="비소">비소</a>, <a class="wiki-link" href="char-2949.html" title="맥택">맥택</a>, <a class="wiki-link" href="char-2643.html" title="초구">초구</a>, <a class="wiki-link" href="char-2948.html" title="영사">영사</a>, <a class="wiki-link" href="char-29.html" title="백로">백로</a>, <a class="wiki-link" href="char-24.html" title="청작">청작</a>, <a class="wiki-link" href="char-1535.html" title="아젠티">아젠티</a>에 대한 음성은 운리가 선주 안팎의 인물들을 검과 식사와 대련의 감각으로 이해한다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 맥택에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 초구에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 영사에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 청작에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아젠티에 대해"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup> 운리는 비소와도 대련을 통해 마음을 나누는 일을 좋아한다고 말하고, 맥택은 직접 모습을 드러내지 않으면 만나기 어려운 막료라고 이해한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 맥택에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 초구의 훠궈 제안에는 매운 것과 뜨거운 것을 못 먹는다고 반응하고, 백로와는 금 조각상 거리에서 함께 많이 먹고 다시 식사하기로 약속했다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 초구에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 운리의 인간관계는 격식보다 몸으로 겪는 경험, 즉 겨루기와 먹기와 감각으로 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 초구에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 백로에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
 <p><a class="wiki-link" href="blade.html" title="블레이드">응성</a>과 블레이드에 대한 언급은 주명 단조 기술의 계보를 운리와 연결한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup> 운리는 주명 선주의 단조 기술이 별바다에서 유명하고, 실력 있는 장인 대부분이 회염의 제자이며, 그중에는 「찰나의 유성」 응성도 있다고 말한다. 또 응성을 직접 만난 적은 없지만 회염에게 많이 들었고, 회염의 가장 유명한 제자라고 할 수 있으며, 기회가 된다면 그 「지리검」을 만져보고 싶다고 말한다. 이 언급은 운리를 회염 개인의 손녀가 아니라 주명 단조 전통과 그 유명한 제자들의 뒤를 잇는 후대 검객으로 배치한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup></p>
 <h2 id="검을-듣는-사냥꾼">검을 듣는 사냥꾼</h2>
 <p>운리의 가장 큰 특징은 검을 도구로만 보지 않는다는 점이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검과 대화"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그녀는 검에도 성깔이 있고, 잘 들지 않을 때는 쓰다듬고 달래면 어디가 불편한지 알려준다고 말한다. 보검을 평가할 때도 손으로 만져 내면의 품성을 느끼고, 그 검과 평생 함께할 수 있을 것 같은 느낌을 찾는 일을 가장 중요하게 둔다. 운리에게 검술은 벤다는 기술 이전에, 검이 어떤 상태이고 누구의 손에 있어야 하는지를 듣는 일이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•검과 대화"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•초식"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
@@ -771,7 +708,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 기타 인물</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-02</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -781,12 +718,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-2642">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%9A%B4%EB%A6%AC&amp;body=%EC%9A%B4%EB%A6%AC+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-2642.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"
