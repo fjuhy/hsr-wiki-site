@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hoyohoyo.wiki/sitemap.xml
+Sitemap: https://hsr-wiki.example.invalid/sitemap.xml
