@@ -515,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -656,8 +660,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편 — 대사, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 더 알아보기, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
-  <ol class="log-list" data-update-history><li>2026-06-29 · Created public Nanook article so the official Nanook image belongs to its direct page rather than related broad pages.</li>
-<li>2026-06-29 · Added a Nanook-specific analysis section on entropy, civilization erasure, and the Antimatter Legion to close the depth-review blocker.</li></ol>
+  <ol class="log-list" data-update-history><li>2026-06-29 · Added a Nanook-specific analysis section on entropy, civilization erasure, and the Antimatter Legion to close the depth-review blocker.</li>
+<li>2026-06-29 · Created public Nanook article so the official Nanook image belongs to its direct page rather than related broad pages.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%E2%8C%88+%ED%8C%8C%EB%A9%B8+%E2%8C%8B+%EB%82%98%EB%88%84%ED%81%AC&amp;page_slug=nanook">수정 요청</a></div>
 </details>
 

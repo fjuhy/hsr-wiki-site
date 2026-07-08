@@ -515,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
