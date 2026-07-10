@@ -114,10 +114,12 @@ function scoreSuggestion(query, item) {
   const q = normalizeText(query);
   const qc = q.replace(/\s+/g, '');
   if (!qc) return 0;
+  const oneCharExactOnly = Array.from(qc).length === 1;
   const key = item.key || '';
   const keyc = item.keyCompact || key.replace(/\s+/g, '');
   let score = 0;
   if (key === q || keyc === qc) score = 100000;
+  else if (oneCharExactOnly) score = 0;
   else if (key.startsWith(q) || keyc.startsWith(qc)) score = 50000;
   else if (key.includes(q) || keyc.includes(qc)) score = 12000;
   else {
@@ -260,7 +262,7 @@ function renderResults(root, query, payload) {
     return;
   }
   if (Array.from(compact(query)).length < 2 && !payload.results.length) {
-    box.innerHTML = '<p class="search-empty">두 글자 이상 입력하면 문서 검색이 시작됩니다.</p>';
+    box.innerHTML = '<p class="search-empty">한 글자 검색은 등록된 표제어·별칭과 정확히 맞을 때만 표시됩니다. 더 넓게 찾으려면 두 글자 이상 입력해 주세요.</p>';
     return;
   }
   if (!payload.results.length) {

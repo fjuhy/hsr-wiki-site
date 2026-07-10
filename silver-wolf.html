@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>은랑 · hoyohoyo.wiki</title>
-  <meta name="description" content="은랑은 스텔라론 헌터 소속의 프로 해커로, 우주를 대형 시뮬레이션 게임처럼 받아들이고 현실 데이터를 수정하는 에테르 편집을 마스터한 인물이다. LV. 999와 환락의 카트리지는 별도 인물이 아니라, 은랑이 만렙 이후에도 게임을 끝내지 않고 새 규칙과 새 판을 만들려는 플레이어라는 점을 확장하는 설정 축이다.">
+  <meta name="description" content="은랑은 「스텔라론 헌터」 소속의 프로 해커로, 우주를 몰입감 넘치는 대형 시뮬레이션 게임으로 여기며 현실 데이터를 수정하는 기술 「에테르 편집」을 마스터했다. 합법적인 이름도 신분증 번호도 없이 패스트푸드 식당의 지하 오락실에서 자랐고, 지니어스 클럽의 스크루룸과 벌인 데이터 공방전은 오늘날 해커계의 전설로 남았다. 어린 시절 가진 이름은 여주인이 지어 준 별명뿐이었으며, 본인은 「은랑」이…">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="은랑 · hoyohoyo.wiki">
-  <meta property="og:description" content="은랑은 스텔라론 헌터 소속의 프로 해커로, 우주를 대형 시뮬레이션 게임처럼 받아들이고 현실 데이터를 수정하는 에테르 편집을 마스터한 인물이다. LV. 999와 환락의 카트리지는 별도 인물이 아니라, 은랑이 만렙 이후에도 게임을 끝내지 않고 새 규칙과 새 판을 만들려는 플레이어라는 점을 확장하는 설정 축이다.">
+  <meta property="og:description" content="은랑은 「스텔라론 헌터」 소속의 프로 해커로, 우주를 몰입감 넘치는 대형 시뮬레이션 게임으로 여기며 현실 데이터를 수정하는 기술 「에테르 편집」을 마스터했다. 합법적인 이름도 신분증 번호도 없이 패스트푸드 식당의 지하 오락실에서 자랐고, 지니어스 클럽의 스크루룸과 벌인 데이터 공방전은 오늘날 해커계의 전설로 남았다. 어린 시절 가진 이름은 여주인이 지어 준 별명뿐이었으며, 본인은 「은랑」이…">
   <meta property="og:url" content="https://hoyohoyo.wiki/silver-wolf.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/silver-wolf.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,107 +620,98 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-stellaron-hunters.html">스텔라론 헌터</a><span>은랑</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%9D%80%EB%9E%91&amp;page_slug=silver-wolf">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>은랑</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">스텔라론 헌터</span></div><figure class="article-hero-image"><img src="assets/wiki-images/0f/7c0c5d88ad437c765fe74a7cd93f98fb_524832894175834-0f198b885f54.webp" alt="은랑 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-stellaron-hunters.html">스텔라론 헌터</a><span>은랑</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%9D%80%EB%9E%91&amp;page_slug=silver-wolf">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>은랑</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">스텔라론 헌터</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/04/23/11390177/7c0c5d88ad437c765fe74a7cd93f98fb_5248328941758342790.png" alt="은랑 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>은랑은 「<a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>」 소속의 프로 해커로, 우주를 몰입감 있는 대형 시뮬레이션 게임처럼 받아들이고 현실 데이터를 수정하는 「<a class="wiki-link" href="aether-editing.html" title="에테르 편집">에테르 편집</a>」을 마스터한 인물이다. <sup class="cite-ref" title="공식 HoYoWiki · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 전투 속성"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 소속"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>은랑은 단순히 해킹을 잘하는 캐릭터가 아니다. 그녀는 세계를 게임처럼 보고, 그 안의 규칙과 데이터를 읽어 내는 인물에 가깝다. 공식 이야기도 은랑을 우주를 게임으로 여기는 슈퍼 해커라고 설명한다. 어떤 방어 시스템도 해독할 수 있고, <a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>과 벌인 데이터 공방전은 해커계의 전설로 남았다고 한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>은랑의 이야기는 패스트푸드 식당 지하 오락실에서 시작된다. 이후 폐품산, 네온 도시, <a class="wiki-link" href="punklorde.html" title="펑크 로드">펑크 로드</a>의 해커 전설을 거쳐 스텔라론 헌터의 팀으로 이어진다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 처음의 은랑은 혼자 게임을 깨는 플레이어에 가깝다. 하지만 나중에는 가상의 동료로 팀을 흉내 내던 단계를 지나, 실제 팀의 일원이 되겠다고 말한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>공식 HoYoWiki의 기준 설명은 은랑을 스텔라론 헌터의 멤버이자 프로 해커로 정의하고, 그녀가 우주를 대형 시뮬레이션 게임으로 여기며 에테르 편집을 통해 현실 데이터를 수정할 수 있다고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>공식 캐릭터 상세는 은랑을 우주를 게임으로 보는 슈퍼 해커로 요약한다. 여기서 핵심은 해킹 실력, 게임 감각, 우주 규모의 관문 의식이 하나로 묶인다는 점이다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>공식 관련 매체도 은랑을 전 은하의 네트워크 공격을 놀이처럼 받아들이는 천재 해커 이미지로 제시한다. <sup class="cite-ref" title="공식 HoYoWiki — 관련 매체 · 관련 매체"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <sup class="cite-ref" title="공식 YouTube/HoYoWiki 관련 매체 · 은하탐구생활——「은랑: 우주 제일 천재 해커!」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>한국어 공식 표기는 「은랑」이다. <sup class="cite-ref" title="공식 HoYoWiki · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 영어권 보조 자료에서는 Silver Wolf로 표기하지만, 한국어 표기에서는 공식 한국어 표기인 은랑을 기준으로 삼는다. <sup class="cite-ref" title="공식 HoYoWiki · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="Fandom 보조 자료 · Silver_Wolf"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>은랑 자신은 자기 이름을 게임 닉네임처럼 설명한다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•이름"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 캐릭터 이야기에서도 어린 시절의 은랑은 합법적인 이름이나 신분증 번호가 없고, 여주인이 지어 준 별명만 가진 인물로 나온다. 그래서 은랑이라는 이름은 법적 신원이라기보다, 온라인에서 쓰는 정체성과 별명에 더 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•이름"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>은랑은 현실을 데이터로 보고, 데이터를 게임 규칙처럼 다루는 해커형 인물이다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그녀가 마스터한 에테르 편집은 현실 데이터를 수정할 수 있는 기술이며, 은랑의 해킹은 일반적인 보안 침투를 넘어 현실의 규칙을 조작하는 능력으로 이어진다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>은랑에게 게임은 단순한 취미가 아니다. 그녀가 세상을 이해하는 방식에 가깝다. 어린 시절의 지하실은 오락실과 점수 기록의 세계였고, 이후 폐품산과 네온 도시도 각각 하나의 게임이 끝나는 것처럼 서술된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>펑크 로드에서 은랑은 혼자 움직이는 사람이 살아가기 어려운 환경을 돌파하며 전설이 된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그녀는 실제 동료가 없어서 「친구」, 「마왕」, 「샐러리맨」 같은 가상의 동료를 만들어 팀처럼 제시했고, 이 허구의 팀은 은랑이 아직 현실의 팀을 갖지 못한 플레이어였음을 보여 준다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>캐릭터 이야기의 마지막 단계에서 은랑은 펑크 로드의 과거 전설들을 떠올린다. 그리고 자신도 그들과 비슷한 끝점에 도착했음을 깨닫고, “팀의 일원”이 되겠다고 말한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그래서 은랑의 성장은 단순히 더 강한 해커가 되는 이야기가 아니다. 혼자 모든 스테이지를 깨던 플레이어가 실제 파티에 들어가는 이야기로 볼 수 있다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>공식 캐릭터 기본 정보에서 은랑의 운명의 길은 공허로 표기된다. <sup class="cite-ref" title="공식 HoYoWiki · 전투 속성"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>스텔라론 헌터 안에서 은랑은 정보전, 침투, 규칙 조작을 맡는 인물처럼 보인다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그녀가 있기 때문에 스텔라론 헌터는 단순히 싸움만 잘하는 집단으로 보이지 않는다. 데이터, 네트워크, 현실 정보 조작까지 다룰 수 있는 집단이라는 인상이 강해진다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 소속"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>은랑의 서사는 펑크 로드의 해커 문화와 전설 계보를 보여 주는 창구이기도 하다. 캐릭터 이야기에는 <a class="wiki-link" href="number-zero.html" title="0호">0호</a>, 선현, 석검, 연사 같은 이전 전설들이 언급되고, 은랑은 그 계보의 현재 전설로 자신의 위치를 인식한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>음성 대사는 은랑의 대인 관계도 게임적 감각으로 압축한다. <a class="wiki-link" href="kafka.html" title="카프카">카프카</a>에 대해서는 규칙을 무시하는 태도에 공감하고, <a class="wiki-link" href="blade.html" title="블레이드">블레이드</a>와는 게임 약속을 언급하며, 샘이 있는 임무는 단순한 파괴의 흐름으로 요약한다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카프카에 대해"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 샘에 대해"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 은랑이 우주에 더 다양한 콘텐츠를 추가하고 싶다고 말하는 점도, 그녀가 사건과 탐험을 반복 플레이를 깨는 콘텐츠처럼 인식한다는 해석을 뒷받침한다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•우주"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<h2 id="펑크-로드와-에테르-편집">펑크 로드와 에테르 편집</h2>
-<p>은랑의 고유한 설정 축은 펑크 로드의 해커 문화와 에테르 편집이 한 인물 안에서 만난다는 점이다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 펑크 로드는 그녀에게 단순한 고향 배경이 아니라, 혼자 움직이는 사람이 허구의 팀을 만들어서라도 살아남아야 했던 판이다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그래서 은랑이 나중에 실제 팀의 일원이 되겠다고 말하는 장면은 출신지를 떠나는 일이 아니라, 혼자 만든 게임판에서 실제 동료가 있는 판으로 옮겨 가는 변화로 읽힌다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>에테르 편집은 이 변화를 우주적 위험으로 키운다. 공식 설명은 은랑이 현실 데이터를 수정할 수 있다고 말하고, 캐릭터 이야기는 펑크 로드의 전설 「선현」을 그 기술의 창조자로 둔다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 이 때문에 은랑의 해킹은 보안망을 뚫는 재주에 그치지 않고, 세계를 데이터와 규칙의 층위에서 만지는 능력으로 보인다. 그녀가 스크루룸과 계속 공방을 벌이는 것도 이 축에서 중요하다. 은랑은 닫힌 문을 여는 해커라기보다, 더 어려운 상대와 규칙을 찾아 우주 전체를 다음 게임판으로 바꾸려는 인물에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스크루룸에 대해"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>은랑의 무서움은 정면 전투력보다 정보전과 규칙 조작에서 나온다. 공식 설명은 은랑이 현실 데이터를 수정할 수 있는 에테르 편집을 마스터했다고 말한다. 캐릭터 상세도 아무리 까다로운 방어 시스템도 손쉽게 해독할 수 있다고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 묘사만 보면 은랑은 “힘으로 밀어붙이는 전투원”이라기보다, 전장이나 시설의 규칙을 먼저 바꿔 버릴 수 있는 침투형 위험 인물에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>해커계에서 은랑의 이름값도 높다. 스크루룸과의 데이터 공방전이 오늘날 해커계의 전설로 남았다는 공식 설명이 있기 때문이다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이것은 은랑이 단순한 천재 해커를 넘어, <a class="wiki-link" href="genius-society.html" title="지니어스 클럽">지니어스 클럽</a>의 주요 인물과 얽힐 정도의 사건을 만든 인물임을 보여 준다. 다만 은랑의 음성에서는 스크루룸을 상대로 자신이 항상 먼저 공격한다고 말한다. 그래서 이 관계는 일방적인 승리라기보다, 계속 이어지는 도전과 공방에 가깝게 보인다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스크루룸에 대해"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>은랑이 위험한 이유는 세계를 “게임판”으로 보는 태도와 능력이 결합하기 때문이다. 그녀는 우주에 더 다양한 콘텐츠를 추가하고 싶다고 말하고, 전 은하의 네트워크 공격까지 놀이처럼 받아들이는 얼굴로 나타난다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•우주"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 관련 매체 · 관련 매체"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <sup class="cite-ref" title="공식 YouTube/HoYoWiki 관련 매체 · 은하탐구생활——「은랑: 우주 제일 천재 해커!」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 따라서 은랑의 위협성은 파괴 규모보다 접근 방식에 있다. 다른 인물이 벽을 부수는 쪽이라면, 은랑은 벽의 판정과 규칙을 수정하려는 쪽에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<h2 id="LV-999와-환락의-카트리지">LV.999와 환락의 카트리지</h2>
-<p>은랑 LV. 999는 별도 인물이 아니라, 은랑이 “무적의 플레이어”로 돌아온 형태이자 은랑의 플레이어 정체성을 더 노골적으로 드러내는 설정 축이다. 공식 기본 정보에서는 이 형태를 허수 속성, 환락 운명의 길, 스텔라론 헌터 소속으로 표기하지만, 설정상으로는 전투 분류보다 은랑이 은하 전체를 게임처럼 읽는 방식이 더 중요하다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑 LV.999"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>LV. 999 카트리지는 은랑에게 원래의 종착지이자 웃음 신이 말하는 환락의 절정이다. 은하의 모든 게임과 업적을 클리어한 뒤에도 은랑은 그 결말을 지루하다고 여기고, 카트리지를 손에 넣은 다음에는 남이 정한 클리어 루트가 아니라 자기 방식으로 플레이하려 한다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑 LV.999"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「LV.999」 카트리지"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
-<p>이 설정은 은랑의 환락이 아하를 위한 신앙이라기보다, 남이 만든 즐거움의 구조를 해킹해 자기 놀이로 바꾸는 태도에 가깝다는 점을 보여 준다. 은랑은 가면의 우인이 아하를 웃게 하려 한다면 해커는 자기 즐거움이 가장 중요하다고 말하고, 엘리오의 각본이 점점 디테일해지는 상황에서도 이스터에그 정도는 자기 마음대로 넣고 싶어 한다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 해커"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
-<p>LV. 999의 은랑은 “만렙에 오른 뒤 끝나는 캐릭터”가 아니다. 그녀는 최종 결전에서 이기기만 하면 중간에 한 번 지든 백 번 지든 재미라고 받아들이고, 자기 카트리지가 펑크 로드부터 스텔라론 헌터까지 영원히 로드되고 영원히 DLC가 나오길 바란다. 그래서 이 형태의 핵심은 강함보다 완결 거부에 있다. 은랑은 클리어한 뒤 떠나는 사람이 아니라, 클리어한 뒤에도 새 모드와 새 규칙을 만들려는 플레이어다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 엘리오에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>은랑의 관련 항목은 흩어진 이름표 목록이라기보다 세 갈래의 관계망으로 읽는 편이 자연스럽다. 하나는 현재의 소속인 스텔라론 헌터, 하나는 출신과 기술을 설명하는 펑크 로드와 에테르 편집, 나머지 하나는 스크루룸·프로메테우스·동료 음성으로 드러나는 성격의 결이다. 이 셋을 같이 보면 은랑은 “해킹을 잘하는 캐릭터”에서 멈추지 않는다. 혼자 게임을 클리어하던 플레이어가 실제 팀, 경쟁자, 장난감 같은 도구를 얻으며 우주 규모의 판으로 올라온 인물에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki · 소속"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>스텔라론 헌터는 은랑의 현재 위치를, 펑크 로드는 은랑이 왜 그런 방식으로 세상을 보는지를 설명한다. 공식 기본 정보는 은랑의 소속을 스텔라론 헌터로 적고, 캐릭터 이야기의 마지막 장면은 그녀가 “팀의 일원”이 되겠다고 말하는 지점으로 이어진다. <sup class="cite-ref" title="공식 HoYoWiki · 소속"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 반대로 펑크 로드의 지하 오락실, 폐품산, 네온 도시, 해커 전설의 계보는 은랑이 처음부터 팀 플레이어였던 것이 아니라는 점을 보여 준다. 그녀는 가상의 동료를 만들어 혼자 움직였고, 그 경험이 나중에 진짜 팀으로 들어가는 선택을 더 선명하게 만든다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>에테르 편집과 스크루룸은 은랑의 능력 규모를 보여 주는 축이다. 에테르 편집은 은랑이 현실 데이터를 수정할 수 있는 핵심 기술이고, 캐릭터 이야기에서는 펑크 로드의 전설 「선현」이 이 기술의 창조자로 남아 있다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 스크루룸과의 데이터 공방전은 그 능력이 단순한 개인 특기가 아니라 해커계의 전설로 남을 정도의 사건을 만들었다는 점을 보여 준다. 은랑이 스크루룸을 상대로 “항상 먼저 공격한다”고 말하는 음성까지 겹치면, 이 관계는 승패표보다 도전과 공방의 리듬으로 읽힌다. 은랑은 안전한 곳에서 천재성을 과시하는 인물이 아니라, 더 어려운 상대를 찾아 판을 흔드는 쪽에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스크루룸에 대해"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>음성 대사의 짧은 언급들은 은랑의 주변 인물을 단순 소개하지 않고, 그녀가 관계를 게임처럼 받아들이는 방식을 보강한다. 첫 만남에서는 개척자 안의 스텔라론이 영향을 주지 않았는지 확인하고, 자기 이름은 게임 닉네임 같은 것이라고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•이름"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 카프카에게서는 규칙을 무시하는 태도에 공감하고, 블레이드와는 “같이 게임하기로 한 약속”을 떠올리며, 샘이 있는 임무는 거친 파괴의 흐름으로 요약한다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카프카에 대해"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 샘에 대해"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 프로메테우스의 「친구」 모듈과 “우주에 더 다양한 콘텐츠를 추가하고 싶다”는 말까지 보면, 은랑의 관계망은 정서적 친밀감보다 놀이, 규칙, 콘텐츠, 도전이라는 감각으로 묶인다. <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•우주"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•프로메테우스"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
-<p>게임 본편의 동행 임무 「펑크 로드 스피릿」은 이 설정을 사건 안으로 끌어온다. 임무 설명은 우주정거장의 네트워크 보안 엔지니어가 군단 침입 사건의 배후를 의심하고, 개척자가 스텔라론 헌터 은랑의 행적을 쫓는다고 설명한다. 사건 뒤에도 레너드가 우주정거장의 네트워크 보안과 자기 일자리를 걱정한다는 점은 은랑의 해킹이 “멋있는 설정”이 아니라 현장의 불안과 피해를 남기는 실제 사건이라는 느낌을 준다. <sup class="cite-ref" title="게임 본편 — 임무 설명 · 동행 임무 「펑크 로드 스피릿」: 은랑의 행적 추적 · Unknown의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> <sup class="cite-ref" title="게임 본편 — 임무 설명 · 동행 임무 「펑크 로드 스피릿」 후속: 레너드의 걱정 · 연경의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
-<p>은랑의 해커식 사고방식은 전투와 장비를 다루는 대사에서도 직접 드러난다. 그녀는 물리적 파괴에 집착하지 말라며, 해커에게 가장 이상적인 전투는 내부에서 적을 격파하는 것이라고 말한다. Mar. 7th의 검을 개조하는 장면에서는 은랑이 검에 무엇을 했는지 아무도 모르고, 프로미는 은랑의 거친 용접 기술 때문에 검체의 충격 저항 성능이 떨어졌다고 말한다. 이런 장면은 은랑이 시스템을 잘 다루지만 꼭 깔끔하게만 움직이는 인물은 아니라는 맛을 더한다. 능력은 날카롭고, 태도는 장난스럽고, 결과는 주변 사람을 불안하게 만든다. <sup class="cite-ref" title="게임 본편 — 대사 · 은랑: 내부에서 적을 격파하는 해커식 전투 · 은랑의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 은랑: Mar. 7th의 검 개조 · Unknown의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · Mar. 7th: 은랑이 검에 한 일 · Mar. 7th의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 프로미: 은랑의 거친 용접 기술 · Unknown의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
-<p>스코트에게는 개인 데이터를 회사 컴퓨터에 저장하지 말았어야 했다고 말하고, 프로그래밍은 심플할수록 좋으며 복잡할수록 버그가 많아진다고 설명한다. <sup class="cite-ref" title="게임 본편 — 대사 · 은랑: 스코트의 개인 데이터 · 은랑의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 은랑: 프로그래밍은 심플함을 추구한다 · 은랑의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup> 반디가 마주친 칩충 떼를 과거 곤충 재난의 환영이나 공포의 밈일 수 있다고 보는 장면, 「간사하게 웃는 사람」의 행복 수술 문제를 조사하는 장면은 은랑이 단순 전투 해커가 아니라 이상 현상을 데이터와 패턴으로 읽는 분석가이기도 하다는 점을 보여 준다. 그래서 관련 언급을 모아 보면 은랑은 “규칙을 부수는 사람”보다 “규칙을 읽고, 비틀고, 장난처럼 시험하는 사람”에 더 가깝다. <sup class="cite-ref" title="게임 본편 — 이벤트 설명 · 은랑과 반디: 곤충 재난의 환영 또는 공포의 밈 · Unknown의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> <sup class="cite-ref" title="게임 본편 — 이벤트 설명 · 은랑과 간사하게 웃는 사람 조사 · Unknown의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
-<h2 id="해석과-맥락">해석과 맥락</h2>
-<p>은랑의 공식 전투 분류는 양자 속성, 공허 운명의 길, 스텔라론 헌터 소속으로 정리되지만, 은랑에서 중요한 설정은 전투 분류보다 “우주를 게임처럼 보고 현실 데이터를 수정할 수 있다”는 설명이다. <sup class="cite-ref" title="공식 HoYoWiki · 전투 속성"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 소속"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>에테르 편집도 너무 넓게 단정하면 안 된다. 공식 설명은 은랑이 현실 데이터를 수정할 수 있다고 말하지만, 그것이 모든 현실을 마음대로 바꾼다는 뜻까지 바로 확인해 주지는 않는다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 따라서 은랑의 작중 위상은 무제한 현실 개변보다 정보전, 침투, 규칙 조작 쪽에 맞춰 보는 편이 안전하다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>은랑이 “우주를 게임으로 본다”는 말은 단순한 취미 표현이 아니다. 은랑은 게임처럼 세계의 규칙을 읽고, 그 규칙을 이용해 돌파구를 찾는다. 공식 설명도 우주를 대형 시뮬레이션 게임으로 여긴다는 말과 현실 데이터를 수정하는 에테르 편집을 함께 제시한다. 그래서 은랑에게 게임은 현실 도피가 아니라, 현실을 다루는 방식에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>은랑의 캐릭터 이야기는 지하실, 폐품산, 네온 도시, 펑크 로드를 각각 종료되는 게임처럼 배열한다. 이 관점에서 은랑은 장소를 떠날 때마다 한 스테이지를 클리어하고, 더 높은 난도와 더 넓은 판으로 이동하는 인물로 읽을 수 있다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>은랑은 한때 가상의 동료를 만들어 팀처럼 보이게 했다. 하지만 마지막에는 실제 팀의 일원이 되겠다고 말한다. 이 변화는 혼자 플레이하던 사람이 스텔라론 헌터라는 진짜 파티에 들어가는 흐름으로 볼 수 있다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>에테르 편집은 은랑의 해킹을 단순한 컴퓨터 기술에서 훨씬 더 큰 능력으로 넓혀 준다. 현실 데이터를 수정할 수 있다는 설명 때문에, 은랑의 해킹은 정보 조작과 현실 변조의 사이에 놓인다. <sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">은랑</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">전투 속성</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">양자</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">공허</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">스텔라론 헌터</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">우주를 게임으로 여기는 슈퍼 해커. 아무리 까다로운 방어 시스템이라도 은랑은 손쉽게 해독할 수 있다. 그녀와 「지니어스 클럽」 스크루룸 간의 데이터 공방전은 오늘날 해커계의 전설로 남았다. 우주에 돌파해야 할 관문이 몇 개나 남았을까? 은랑은 엄청 기대하고 있다</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 그녀는 매일 조이스틱을 가지고 놀았다. 직원이 하나뿐인 패스트푸드 식당, 지하실을 개조한 오락실, 오래된 게임기 몇 대, 이게 그녀의 어린 시절이었다 그녀는 합법적인 이름과 신분증 번호가 없다. 여주인이 지어준 별명뿐이다. 그녀는 친구도 없지만, 전혀 외롭지 않다. 그녀는 ≪보른≫을 좋아한다. 가로줄 두 개에 광점 하나, 가장 간단한 격구 게임, 그녀는 이 게임을 하루 종일 할 수 있었다. 그녀는 ≪차크람32≫를 좋아한다. 격자...</div></li>
+<p>은랑은 「<a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>」 소속의 프로 해커로, 우주를 몰입감 넘치는 대형 시뮬레이션 게임으로 여기며 현실 데이터를 수정하는 기술 「<a class="wiki-link" href="aether-editing.html" title="에테르 편집">에테르 편집</a>」을 마스터했다.<sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 합법적인 이름도 신분증 번호도 없이 패스트푸드 식당의 지하 오락실에서 자랐고, <a class="wiki-link" href="genius-society.html" title="지니어스 클럽">지니어스 클럽</a>의 <a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>과 벌인 데이터 공방전은 오늘날 해커계의 전설로 남았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 어린 시절 가진 이름은 여주인이 지어 준 별명뿐이었으며, 본인은 「은랑」이라는 이름을 「그냥 게임 닉네임 같은 거」라고 설명한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•이름"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>은랑의 어린 시절은 직원이 하나뿐인 패스트푸드 식당, 지하실을 개조한 오락실, 오래된 게임기 몇 대가 전부였다. 친구는 없었지만 외롭지도 않았다. 가장 간단한 격구 게임 《보른》, 「수단과 방법을 가리지 말고 일등이 되어라」가 유일한 규칙인 《차크람32》, 그리고 《기하학 전쟁》·《오디세우스》·《스타 치타》를 하며 매일 조이스틱을 잡았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 모든 점수 기록에 한 사람의 이름만 남게 된 날, 그녀는 조이스틱을 내려놓고 여주인과 작별해 다음으로 떠나는 사람이 되었다. 「지하실」이라는 이름의 게임은 이날 종료되었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="Fandom 보조 자료 · Silver_Wolf/Lore"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>지하실을 떠난 그녀는 황야를 건너 서쪽으로 향해 폐품산에 도착했다. <a class="wiki-link" href="punklorde.html" title="펑크 로드">펑크 로드</a>에서 사람들은 팀을 이뤄 일하기 때문에 혼자 움직이는 사람은 살아가기 어렵고, 일거리를 구하던 그녀는 가상의 동료를 만들어 냈다. 첫 번째는 「친구」, 두 번째는 길거리 포스터에서 이름을 딴 「마왕」, 그다음은 「샐러리맨」과 「노예」였다. 그녀는 이 동료들을 스마트 무기에 저장해 중개인 앞에서 당당하게 자기 팀을 소개했고, 리스크도 보수도 상상을 뛰어넘는 첫 일자리를 따냈다. 24 시스템 시간 뒤 그녀가 슬래그파 거점의 정문으로 혼자 걸어 나오자, 한참 말이 없던 중개인은 금괴가 든 상자를 바닥에 던졌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>네온 도시에서 그녀는 가장 높은 빌딩 꼭대기에 서서 자신이 태어난 곳을 내려다봤다. 드론의 빨간 불빛이 밤하늘을 메우며 몰려왔다가 우르르 추락했고, 여러 조직에서 온 사람들이 「은랑」 하나를 잡으려고 어떤 대가도 감내할 기세로 북적였다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 어린 시절 게임기의 점수판에는 쫓아가야 할 천문학적인 기록이 가득했지만, 이제는 달랐다. 그녀는 닿을 수 없이 먼 별하늘을 올려다보고는 「시시해」 한마디를 남겼다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>펑크 로드에서 「전설」이라 불린 해커는 모두 같은 종착점을 향했다. 전 세계 네트워크를 처음으로 마비시킨 「<a class="wiki-link" href="number-zero.html" title="0호">0호</a>」는 스타피스 컴퍼니의 압송선을 자기 집 앞으로 불러들였고, 에테르 편집의 창조자 「선현」은 육신을 버리고 암흑 구역으로 돌입해 우주 인터넷을 배회하는 유령이 되었으며, 오아시스 구역에 반기를 든 폐품산의 자랑 「석검」은 순항의 레인저를 따라갔다고 전해진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 지금의 전설인 은랑은 자신도 그 문 앞에 도착했음을 알았다. 어린 시절의 지하실로 돌아가 게임기 스크린을 닦던 그녀의 머리 위에서 발소리가 들려왔다. 한 사람, 두 사람, 세 사람, 네 사람 — 남자 하나, 여자 하나, 철인 하나. 그녀는 문가의 사람들을 바라보며 말했다. 「팀의 일원이 되겠어.」 「펑크 로드」라는 이름의 게임은 이날 종료되었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>관리자 「ID: 엘리오」가 권한을 개방했고, 은랑은 스텔라론 헌터 진영에 합류했다. 늘 혼자 다니던 그녀에게 현상금 108.99억이 걸린 여자, 81.3억의 남자, 97.23억의 기갑이라는 파티원이 생겼다. 그녀는 「다들 대단해 보이는데, 내 발목은 잡지 마」라고 코웃음 치며 세 사람에게 오락기를 던져 주었다. 「한판 할래?」 추격병의 포화가 쏟아지는 가운데 그녀가 손가락을 튕기자, 은랑의 그래피티가 최신 수배령을 뒤덮었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>합류 이후 우주정거장에서는 은랑이 일으킨 풍파가 문제가 됐다. 군단 침입 사건의 배후에 속사정이 있다고 여긴 네트워크 보안 엔지니어가 개척자와 함께 은랑의 행적을 쫓았고,<sup class="cite-ref" title="게임 본편 — 임무 설명 · 동행 임무 「펑크 로드 스피릿」: 은랑의 행적 추적 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 사건이 일단락된 뒤에도 레너드는 우주정거장의 네트워크 보안과 자기 일자리를 걱정하며 테스트를 도와 달라고 부탁했다.<sup class="cite-ref" title="게임 본편 — 임무 설명 · 동행 임무 「펑크 로드 스피릿」 후속: 레너드의 걱정 · 연경의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<h2 id="능력">능력</h2>
+<p>은랑이 마스터한 「에테르 편집」은 현실 데이터를 수정하는 기술이다.<sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 창조자는 펑크 로드의 전설 「선현」이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 아무리 까다로운 방어 시스템도 은랑은 손쉽게 해독하며, 지니어스 클럽의 스크루룸과는 지금도 공방을 주고받는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 은랑은 「먼저 공격하는 건 항상 내 쪽이야」라며 좀처럼 흥분하지 않는 상대를 아쉬워한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스크루룸에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 공식 소개 영상에서는 은하 전체를 향해 언제 어디서든 자기 네트워크를 공격해 보라고 도발하기도 했다.<sup class="cite-ref" title="공식 YouTube/HoYoWiki 관련 매체 · 은하탐구생활——「은랑: 우주 제일 천재 해커!」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 관련 매체 · 관련 매체"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 전투 분류에서는 양자 속성과 공허 운명의 길로 표기된다.<sup class="cite-ref" title="공식 HoYoWiki · 전투 속성"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 운명의 길"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
+<p>전투에서도 해커의 방식을 고수한다. 물리적 파괴에 집착할 이유가 없다며 「해커에게 가장 이상적인 전투란 내부에서 적을 격파하는 거야」라고 말하고,<sup class="cite-ref" title="게임 본편 — 대사 · 은랑: 내부에서 적을 격파하는 해커식 전투 · 은랑의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 「프로그래밍은 심플함을 추구해. 복잡할수록 버그가 많아져」라는 원칙을 지킨다.<sup class="cite-ref" title="게임 본편 — 대사 · 은랑: 프로그래밍은 심플함을 추구한다 · 은랑의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 장비도 직접 만든다. 눈앞의 스크린에 폭탄을 던지면 은하계 절반 너머의 다른 스크린에서 튀어나오게 하는 「백스테이지 페인트볼」, 닿는 모든 것을 픽셀로 분해해 데이터를 포맷하는 「포맷총」, 고대 괴수 「탐식」을 모방한 「스네이크」가 그녀의 발명품이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
+<p>손끝이 늘 깔끔한 것은 아니다. Mar. 7th의 검을 개조했을 때는 검에 무슨 짓을 했는지 아무도 몰랐고, 당사자도 자기 검을 보며 불안해했다.<sup class="cite-ref" title="게임 본편 — 대사 · 은랑: Mar. 7th의 검 개조 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 — 대사 · Mar. 7th: 은랑이 검에 한 일 · Mar. 7th의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 프로미는 은랑의 거친 용접 기술 때문에 검체의 충격 저항 성능이 12% 떨어졌다고 지적했다.<sup class="cite-ref" title="게임 본편 — 대사 · 프로미: 은랑의 거친 용접 기술 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
+<p>이상 현상 앞에서는 분석가로 움직인다. 반디가 완전체 칩충 떼와 마주쳤을 때 은랑은 그것이 과거 곤충 재난의 환영이거나 사람들 마음속에 자리 잡은 공포의 밈일 수 있다고 판단했고,<sup class="cite-ref" title="게임 본편 — 이벤트 설명 · 은랑과 반디: 곤충 재난의 환영 또는 공포의 밈 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 업무 스트레스를 행복 수술로 벗어나려는 「간사하게 웃는 사람」을 조사했다.<sup class="cite-ref" title="게임 본편 — 이벤트 설명 · 은랑과 간사하게 웃는 사람 조사 · Unknown의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 개인 데이터를 회사 컴퓨터에 저장한 스코트에게는 「지금 당신 코가 석 자야」라고 쏘아붙였다.<sup class="cite-ref" title="게임 본편 — 대사 · 은랑: 스코트의 개인 데이터 · 은랑의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
+<h2 id="은랑-LV-999">은랑 LV.999</h2>
+<p>「은랑 LV.999」는 우주의 승리자가 되고 은하의 모든 업적을 클리어한 은랑이 LV.999 카트리지를 손에 넣고 복귀한 모습이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> 이 카트리지는 「무적의 저장 파일」이자 은랑의 원래 종착지, 웃음 신이 말하는 환락의 절정이다. 은랑은 그 결말을 「지루하기 짝이 없잖아」라고 잘라 말하고, 카트리지를 손에 넣었으니 어떻게 플레이할지는 자기 마음이라고 선언한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「LV.999」 카트리지"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 공식 기본 정보는 이 형태를 허수 속성, 환락 운명의 길, 스텔라론 헌터 소속으로 적는다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> 첫 만남 인사부터 「고난도 던전 가자, 내가 버스 태워 줄게. 딸깍 한 번이면 클리어라고」다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
+<p>LV.999라는 숫자는 은랑이 플레이한 게임 《늑대왕》의 최대 레벨이다. 《늑대왕》의 제작자는 환락의 에이언즈 아하로, 은랑은 고인물을 자처하며 「떠돌이 고아」 같은 고난도 시작을 강요하는 노가다식 설계라고 쓴소리를 남겼다. 불편 사항을 해결하겠다며 오랫동안 준비한 후속작 《늑대왕 온라인》도 직접 만들고 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
+<p>그녀에게는 목표를 달성할 때마다 스스로 숫자 배지를 수여하는 「업적 벽」이 있다. 펑크 로드에서 살아 있는 전설이 된 「나 혼자만 만렙」, 컴퍼니의 가상 화폐를 《스타 치타》를 하는 모든 사람에게 균등하게 나눠 주고 구린 내막까지 폭로한 「컴퍼니의 친구」, 죄악의 도시 예페라에서 모든 전자 악마의 공격을 끝까지 버틴 「블레이디도 보고 고개를 내저음」까지, 업적은 이미 셀 수 없이 많다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
+<p>환락을 대하는 태도는 해커식이다. 가면의 우인은 아하를 웃게 만들려 하지만 해커는 자신의 즐거움이 가장 중요하다고 말하고,<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 해커"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 엘리오의 「각본」이 점점 디테일해지자 이스터에그 정도는 원하는 대로 하고 싶다고 불평한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup> 최종 결전에서 이기기만 하면 중간에 한 번 지든 백 번 지든 다 게임의 재미라는 것이 그녀의 지론이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 엘리오에 대해"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 0호나 스톤 <a class="wiki-link" href="blade.html" title="블레이드">블레이드</a> 같은 전설적인 해커의 에테르 카트리지는 대부분 우주에 널리 알려진 소장품이 됐지만, 은랑은 자기 카트리지가 펑크 로드부터 스텔라론 헌터까지 영원히 로드되고 영원히 DLC가 나오길 바란다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>은랑은 관계도 사건도 게임의 언어로 말한다. 우주에 더 다양한 콘텐츠를 추가하고 싶다면서 매일 반복되는 탐험은 지루하지 않냐고 되묻고,<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•우주"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 우주에 돌파해야 할 관문이 몇 개나 남았는지 크게 기대하고 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 스스로 밝힌 선은 하나다. 「은하」라는 게임에서 퇴장하는 모든 이의 권리는 존중하지만, 모든 사람이 게임을 못 하게 하는 것은 절대 용납하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 현재 상황"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup> 취미는 머리를 쿠션에 파묻고 낮잠 자기, 그리고 귀여운 것을 조물조물하기다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
+<p>개척자와는 그가 깨어나던 때 만난 사이로, 다시 만나자 몸속의 스텔라론이 아무 영향도 없었는지부터 물었다.<sup class="cite-ref" title="게임 본편 — 임무 설명 · 동행 임무 「펑크 로드 스피릿」: 은랑의 행적 추적 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup> <a class="wiki-link" href="kafka.html" title="카프카">카프카</a>의 「규칙을 무시」하는 방식에는 공감하지 않을 수 없다고 말하면서도, 요즘은 많이 만나지 못했고 무슨 생각을 하는지 알 수 없다고 털어놓는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카프카에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카프카에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 블레이드와는 손 부상이 나으면 같이 게임을 하기로 약속했지만, 그 손은 아직도 낫지 않았다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 샘이 있는 임무는 「대체적으로 퍽퍽——퍽! 이게 끝」이라고 요약한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 샘에 대해"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup> 반디에 대해서는 인생을 게임에 비유하면 지금의 컨트롤이 예전만큼 능숙하지 않다며, 화면 속 캐릭터가 처음으로 자신의 의지대로 움직이고 있기 때문이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 반디에 대해"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> 은랑이 말하는 프로메테우스에는 모듈 4개가 탑재되어 있고, 그중 말을 제일 잘하는 모듈은 「친구」다. 폐품산에서 만든 첫 가상 동료와 같은 이름이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•프로메테우스"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="stellaron-hunters.html">스텔라론 헌터</a> — 은랑이 「팀의 일원이 되겠어」라고 말하며 합류한 소속 조직이다. 합류는 관리자 엘리오의 권한 개방으로 확정됐다.<sup class="cite-ref" title="공식 HoYoWiki · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></li>
+<li><a href="punklorde.html">펑크 로드</a> — 은랑의 고향. 팀을 이루지 않으면 살아가기 어려운 세계이며, 「전설」이라 불린 해커들은 모두 같은 종착점을 향한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></li>
+<li><a href="aether-editing.html">에테르 편집</a> — 현실 데이터를 수정하는 기술. 창조자는 <a href="punklorde.html">펑크 로드</a>의 전설 「선현」이고, 은랑이 이 기술을 마스터했다.<sup class="cite-ref" title="공식 HoYoWiki · 은랑"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></li>
+<li><a href="screwllum.html">스크루룸</a> — <a href="genius-society.html">지니어스 클럽</a>의 일원. 은랑과 벌인 데이터 공방전이 해커계의 전설로 남았고, 공격은 항상 은랑 쪽에서 먼저 건다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스크루룸에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></li>
+<li><a href="aeons.html">에이언즈</a>, <a href="path.html">운명의 길</a> — 아하: 환락의 <a href="aeons.html">에이언즈</a>이자 게임 《늑대왕》의 제작자. 은랑 LV.999 형태의 <a href="path.html">운명의 길</a>이 환락으로 표기된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">은랑</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">「스텔라론 헌터」의 멤버, 프로 해커 우주를 몰입감 넘치는 대형 시뮬레이션 게임으로 여기며 즐기고 있다 현실 데이터를 수정할 수 있는 「에테르 편집」을 마스터했다</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">스텔라론 헌터</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 그녀는 매일 조이스틱을 가지고 놀았다. 직원이 하나뿐인 패스트푸드 식당, 지하실을 개조한 오락실, 오래된 게임기 몇 대, 이게 그녀의 어린 시절이었다 그녀는 합법적인 이름과 신분증 번호가 없다. 여주인이 지어준 별명뿐이다. 그녀는 친구도 없지만, 전혀 외롭지 않다. 그녀는 ≪보른≫을 좋아한다. 가로줄 두 개에 광점 하나, 가장 간단한 격구 게임, 그녀는 이 게임을 하루 종일 할 수 있었다. 그녀는 ≪차크람32≫를 좋아한다. 격자...</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">우주를 게임으로 여기는 슈퍼 해커. 아무리 까다로운 방어 시스템이라도 은랑은 손쉽게 해독할 수 있다. 그녀와 「지니어스 클럽」 스크루룸 간의 데이터 공방전은 오늘날 해커계의 전설로 남았다. 우주에 돌파해야 할 관문이 몇 개나 남았을까? 은랑은 엄청 기대하고 있다</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">자신에 대해•이름</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">그냥 게임 닉네임 같은 거야. {개척자} 너도 마찬가지잖아?</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">Silver_Wolf/Lore</span> <span class="ref-source">Fandom 보조 자료 · <a href="https://honkai-star-rail.fandom.com/wiki/Silver_Wolf/Lore">원문</a></span></li>
 <li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 그녀는 커다란 황야를 건너 계속 서쪽으로 가다가 폐품산에 도착했다. 그녀는 일거리를 찾고 싶었지만, 독자적으로 움직이는 탓에 장애에 부딪친다. 펑크 로드에서 사람들은 팀을 이뤄 일을 하기 때문에, 독자적으로 움직이는 사람은 살아가기 어렵다 어쩔 수 없이 그녀는 가상의 동료를 만들 수밖에 없었다. 첫 번째 사람은 「친구」라고 불렸다. 당연히 그렇게 불러야 했다. 두 번째는 「마왕」이라고 불렸다. 그녀가 길거리에서 본 포스터에서 나...</div></li>
 <li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 그녀는 네온 도시에서 가장 높은 빌딩 꼭대기에 서 있다. 이곳에서는 그녀가 태어난 곳이 보인다. 직원이 하나뿐인 패스트푸드 식당, 지하실을 개조한 오락실, 오래된 게임기 몇 대, 이게 그녀의 어린 시절이었다 그녀는 좋아했던 ≪보른≫을 기억한다. 가로줄 두 개에 광점 하나, 가장 간단한 격구 게임, 그녀는 이 게임을 하루 종일 할 수 있었다. 바로 이때 드론의 빨간 불빛이 밤하늘을 가득 매우며 선을 이뤘다. 이들은 그녀를 향해 몰...</div></li>
 <li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 그녀는 의자 위에 서서 게임기 스크린을 닦는다. 원을 그리며 모든 먼지를 없애겠다는 듯이 닦고 또 닦는다. 그녀는 그 패스트푸드 식당,그 지하실로 돌아갔다. 문을 열자 모든 게 예전과 같았다. 여사장은 그녀를 위해 모든 것을 원래대로 남겨두었다 분홍빛 등불이 도시의 네온사인처럼 스크린 위로 쏟아진다. 그 불빛에 그녀는 그날 밤 봤던 별하늘이 떠오른다. 그녀는 그 빌딩 꼭대기에 처음으로 올라간 사람이 아니고, 그 별하늘을 처음으로...</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">은랑</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">「스텔라론 헌터」의 멤버, 프로 해커 우주를 몰입감 넘치는 대형 시뮬레이션 게임으로 여기며 즐기고 있다 현실 데이터를 수정할 수 있는 「에테르 편집」을 마스터했다</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">관련 매체</span> <span class="ref-source">공식 HoYoWiki — 관련 매체 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 소개 캐릭터 프리뷰 캐릭터 PV——「재미있네」2023/6/2 「카프카, 이게 무슨 뜻이야?」 「별 뜻 없어, 그냥 심심해서」 HoYoLAB: 은하탐구생활——「은랑: 우주 제일 천재 해커!」2023/6/7 우주 제일 천재 해커 은랑이 전 은하에 외친다. 은랑이랑 싸우고 싶으면 언제 어디서든 은랑의 네트워크를 공격해 봐. 그럼 은랑이 놀아줄 거야. [이상한 메시지 알림] 대량 투하!</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">은하탐구생활——「은랑: 우주 제일 천재 해커!」</span> <span class="ref-source">공식 YouTube/HoYoWiki 관련 매체 · <a href="https://www.youtube.com/watch?v=JIUyxrQlt1s">원문</a></span><div class="ref-quote">HoYoWiki 관련 매체에 수록된 공식 영상. 은랑이 전 은하에 “네트워크를 공격해 보라”고 도발하는 소개 문구가 함께 실림.</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">Silver_Wolf</span> <span class="ref-source">Fandom 보조 자료 · <a href="https://honkai-star-rail.fandom.com/wiki/Silver_Wolf">원문</a></span></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">자신에 대해•이름</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">그냥 게임 닉네임 같은 거야. {개척자} 너도 마찬가지잖아?</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">카프카에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">「규칙을 무시」하는 쪽으로는 카프카한테 공감하지 않을 수 없어</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">블레이드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">손 부상이 다 나으면 같이 게임하자고 약속했는데, 손이 지금까지도 안 낫더라고</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">샘에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">샘이 있는 임무는 대체적으로 퍽퍽——퍽! 이게 끝이야</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">잡담•우주</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">이 우주에 더욱 다양한 콘텐츠를 추가하고 싶어. 매일 반복되는 탐험 과정은 지루하지 않아?</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">스크루룸에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">먼저 공격하는 건 항상 내 쪽이야. 그 녀석은 흥분할 줄 모르는 거 맞지?</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">은랑 LV.999</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">새로운 환락 시즌, 무적의 플레이어 「은랑 LV.999」 기간 한정 복귀 중! 우주 최고의 승자가 되고 은하의 모든 업적도 클리어했는데, 이제 다음엔 뭘 하고 놀아야 할까? 「『환락』의 정점에 오르는 거? 지루하기 짝이 없잖아…. 카트리지를 손에 넣었으니, 이제 내 마음대로 할 거야~」 ========== 아하! 은랑 LV.999이 다음 칭호를 획득하였습니다. 축하합니다! ✧ 「코스믹 포스 레전드 플레이어」 1위 ✧ ✧ 「각본 파괴신」 1위 ✧ ======...</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">은랑 LV.999</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">전투 속성</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">허수</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">환락</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">스텔라론 헌터</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">새로운 환락 시즌, 무적의 플레이어 「은랑 LV.999」 기간 한정 복귀 중! 우주의 승리자 달성, 은하 모든 업적 달성, 다음엔 또 어떻게 플레이해 볼까? 「 『환락』 의 정점에 오르는 거? 지루하기 짝이 없잖아…. 카트리지를 손에 넣었으니, 이제 내 마음대로 할 거야~」</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">자신에 대해 • 「LV.999」 카트리지</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">LV.999의 무적의 저장 파일, 내 원래 종착지이자 웃음 신이 말하는 환락의 절정——즉 은하의 모든 「게임」 을 클리어하는 거지. 하아, 지루하기 짝이 없잖아…. 다행히 이 카트리지를 이미 손에 넣었으니, 어떻게 플레이할지는 내 마음이야~</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">잡담 • 해커</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">우인은 가면에게 빼앗기더라도 아하를 웃게 만들려 하겠지만, 해커는 그렇게 따분하지 않아. 자신의 즐거움이 가장 중요하지</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">「각본」 이 점점 디테일해지고 있어. 이스터에그 정도는 내가 원하는 대로 하면 안 되나?</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">「0호」 , 「스톤 블레이드」 … 전설적인 해커의 에테르 카트리지는 대부분 우주에 널리 알려진 소장품이 됐지. 하지만 내 건… 펑크 로드부터 스텔라론 헌터까지, 「은랑」 이 영원히 로드되고 영원히 DLC가 나왔으면 좋겠어</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">엘리오에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">엘리오가 나에 대해 뭔가 오해하고 있는 것 같은데, 최종 결전에서 이기기만 하면, 중간에 한 번 지든 백 번 지든 다 게임의 재미 아니겠어?</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">아, {개척자}. 잘 지내는 거 같네? 그 스텔라론은 아무 영향도 없었던 거야?</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">잡담•프로메테우스</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">프로메테우스는 4개의 모듈이 탑재되어 있어, 그중 말을 제일 잘하는 모듈은 「친구」지…. 「친구는 인연이니, 영원히 소중하게 여겨야 한다. 우리의 우정을 위해 건배!」</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">동행 임무 「펑크 로드 스피릿」: 은랑의 행적 추적</span> <span class="ref-source">게임 본편 — 임무 설명 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">우주정거장의 네트워크 보안 엔지니어는 군단 침입 사건의 배후에 속사정이 있다고 생각한다. 당신은 깨어나던 때의 만남을 떠올리며 그와 함께 스텔라론 헌터 「은랑」의 행적을 쫓기로 한다</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">동행 임무 「펑크 로드 스피릿」 후속: 레너드의 걱정</span> <span class="ref-source">게임 본편 — 임무 설명 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">은랑이 일으킨 풍파가 드디어 일단락됐지만, 레너드는 여전히 걱정이 많은 것 같다. 우주정거장의 네트워크 보안과 일자리를 지키기 위해 그가 테스트 진행을 도와달라고 부탁한다……</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">은랑: 내부에서 적을 격파하는 해커식 전투</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">왜 물리적 파괴에만 집착해? 해커에게 가장 이상적인 전투란 내부에서 적을 격파하는 거야</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">은랑: Mar. 7th의 검 개조</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">은랑이 Mar. 7th의 검에 무슨 짓을 했는지는 아무도 모른다</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">Mar. 7th: 은랑이 검에 한 일</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">은랑이 내 검에 뭘 한 걸까? 내가 정말 스코트 씨를 이길 수 있는 걸까?</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">프로미: 은랑의 거친 용접 기술</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">불가능합니다. 저를 Mar. 7th 님 무기에 연결할 때 은랑 님의 거친 용접 기술로 인해 검체의 충격 저항 성능이 12%나 떨어졌어요</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">은랑: 스코트의 개인 데이터</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">지금 당신 코가 석 자야. 그러게 개인 데이터를 회사 컴퓨터에 저장하지 말았어야지, 스코트</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">은랑: 프로그래밍은 심플함을 추구한다</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">프로그래밍은 심플함을 추구해. 복잡할수록 버그가 많아져</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">은랑과 반디: 곤충 재난의 환영 또는 공포의 밈</span> <span class="ref-source">게임 본편 — 이벤트 설명 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">반디가 완전체 칩충 떼와 마주치자, 은랑은 그것들이 과거 곤충 재난의 환영이거나 사람들의 마음속에 자리 잡은 공포의 밈일 수도 있다고 여긴다. 반디는 전투를 준비한다</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">은랑과 간사하게 웃는 사람 조사</span> <span class="ref-source">게임 본편 — 이벤트 설명 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">은랑은 「간사하게 웃는 사람」을 조사한다. 「간사하게 웃는 사람」은 업무 스트레스를 견디지 못하고 행복 수술을 통해 벗어나려 한다</div></li></ol></details>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">캐릭터 스토리 • 1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 20 개방 &gt;&gt;&gt;「합류할게」 &gt;&gt;&gt;이렇게, 「펑크 로드」 라는 이름의 게임은 이날 종료되었다. &gt;&gt;&gt;관리자 「ID: 엘리오」 님이 권한을 개방했습니다. &gt;&gt;&gt;「ID: 은랑」 님이 「스텔라론 헌터」 진영에 합류했습니다. 게임 「은하」 에 로그인합니다. [동료 시스템] 소녀는 예전에 항상 혼자 다녔지만, 지금은 멀티플레이 파티원이 몇 명 생겼다——108.99억 현상금이 걸린 여자, 81.3억의 남자, 그리고 97.23억의 기갑이다. 「다들...</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">동행 임무 「펑크 로드 스피릿」: 은랑의 행적 추적</span> <span class="ref-source">게임 본편 — 임무 설명 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">우주정거장의 네트워크 보안 엔지니어는 군단 침입 사건의 배후에 속사정이 있다고 생각한다. 당신은 깨어나던 때의 만남을 떠올리며 그와 함께 스텔라론 헌터 「은랑」의 행적을 쫓기로 한다</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">동행 임무 「펑크 로드 스피릿」 후속: 레너드의 걱정</span> <span class="ref-source">게임 본편 — 임무 설명 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">은랑이 일으킨 풍파가 드디어 일단락됐지만, 레너드는 여전히 걱정이 많은 것 같다. 우주정거장의 네트워크 보안과 일자리를 지키기 위해 그가 테스트 진행을 도와달라고 부탁한다……</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">스크루룸에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">먼저 공격하는 건 항상 내 쪽이야. 그 녀석은 흥분할 줄 모르는 거 맞지?</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">은하탐구생활——「은랑: 우주 제일 천재 해커!」</span> <span class="ref-source">공식 YouTube/HoYoWiki 관련 매체 · <a href="https://www.youtube.com/watch?v=JIUyxrQlt1s">원문</a></span><div class="ref-quote">HoYoWiki 관련 매체에 수록된 공식 영상. 은랑이 전 은하에 “네트워크를 공격해 보라”고 도발하는 소개 문구가 함께 실림.</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">관련 매체</span> <span class="ref-source">공식 HoYoWiki — 관련 매체 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 소개 캐릭터 프리뷰 캐릭터 PV——「재미있네」2023/6/2 「카프카, 이게 무슨 뜻이야?」 「별 뜻 없어, 그냥 심심해서」 HoYoLAB: 은하탐구생활——「은랑: 우주 제일 천재 해커!」2023/6/7 우주 제일 천재 해커 은랑이 전 은하에 외친다. 은랑이랑 싸우고 싶으면 언제 어디서든 은랑의 네트워크를 공격해 봐. 그럼 은랑이 놀아줄 거야. [이상한 메시지 알림] 대량 투하!</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">전투 속성</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">양자</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">공허</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">은랑: 내부에서 적을 격파하는 해커식 전투</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">왜 물리적 파괴에만 집착해? 해커에게 가장 이상적인 전투란 내부에서 적을 격파하는 거야</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">은랑: 프로그래밍은 심플함을 추구한다</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">프로그래밍은 심플함을 추구해. 복잡할수록 버그가 많아져</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">캐릭터 스토리 • 2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 40 개방 「백스테이지 페인트볼」 은 그녀가 가장 먼저 떠올린 아이디어였다. 그저 눈앞의 스크린에 폭탄을 던지기만 하면, 은하계 절반 너머의 또 다른 스크린에서 튀어나올 테니까. 만약 가면의 우인 무리가 그녀에게 거짓 정보를 주고 큰소리라도 친다면…… 「자신 있으면 랜선을 타고 넘어와서 우리를 터뜨려 보시지」 그녀는 기꺼이 그들의 소원을 들어줄 것이다. 그 폭탄 하나면 술집의 현지 지부를 통째로 날려버릴 수 있을 테니까. 「포맷총」 은...</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">은랑: Mar. 7th의 검 개조</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">은랑이 Mar. 7th의 검에 무슨 짓을 했는지는 아무도 모른다</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">Mar. 7th: 은랑이 검에 한 일</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">은랑이 내 검에 뭘 한 걸까? 내가 정말 스코트 씨를 이길 수 있는 걸까?</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">프로미: 은랑의 거친 용접 기술</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">불가능합니다. 저를 Mar. 7th 님 무기에 연결할 때 은랑 님의 거친 용접 기술로 인해 검체의 충격 저항 성능이 12%나 떨어졌어요</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">은랑과 반디: 곤충 재난의 환영 또는 공포의 밈</span> <span class="ref-source">게임 본편 — 이벤트 설명 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">반디가 완전체 칩충 떼와 마주치자, 은랑은 그것들이 과거 곤충 재난의 환영이거나 사람들의 마음속에 자리 잡은 공포의 밈일 수도 있다고 여긴다. 반디는 전투를 준비한다</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">은랑과 간사하게 웃는 사람 조사</span> <span class="ref-source">게임 본편 — 이벤트 설명 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">은랑은 「간사하게 웃는 사람」을 조사한다. 「간사하게 웃는 사람」은 업무 스트레스를 견디지 못하고 행복 수술을 통해 벗어나려 한다</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">은랑: 스코트의 개인 데이터</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">지금 당신 코가 석 자야. 그러게 개인 데이터를 회사 컴퓨터에 저장하지 말았어야지, 스코트</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">새로운 환락 시즌, 무적의 플레이어 「은랑 LV.999」 기간 한정 복귀 중! 우주의 승리자 달성, 은하 모든 업적 달성, 다음엔 또 어떻게 플레이해 볼까? 「 『환락』 의 정점에 오르는 거? 지루하기 짝이 없잖아…. 카트리지를 손에 넣었으니, 이제 내 마음대로 할 거야~」</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">자신에 대해 • 「LV.999」 카트리지</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">LV.999의 무적의 저장 파일, 내 원래 종착지이자 웃음 신이 말하는 환락의 절정——즉 은하의 모든 「게임」 을 클리어하는 거지. 하아, 지루하기 짝이 없잖아…. 다행히 이 카트리지를 이미 손에 넣었으니, 어떻게 플레이할지는 내 마음이야~</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">전투 속성</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">허수</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">환락</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">스텔라론 헌터</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">LV.999의 형태, 완전한 내 모습은 처음 보지? 고난도 던전 가자, 내가 버스 태워 줄게. 딸깍 한 번이면 클리어라고</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">캐릭터 스토리 • 4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 80 개방 「일단 『늑대왕』 의 고인물 플레이어로서 전작 제작자한테 쓴소리부터 할게. ——아하는 그냥 환락의 에이언즈일 뿐이지, 게임에 대해선 쥐뿔도 모른다고. 강제로 「떠돌이 고아」 같은 고난도 시작을 강요하고, 그 초기 카트리지로 경험치를 채우게 한다니, 너무 노가다잖아! 좀 시원하게 즐기게 해주면 덧나냐? 초반을 버티니 체험이 훨씬 나아졌어. 암흑 구역 제국의 패왕이 되어 레인저와 술집을 포섭하고 제Ⅸ 기관의 새로운 주인이 되는 건...</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">캐릭터 스토리 • 3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 60 개방 소녀에게는 「업적 벽」 이 있다. 목표를 달성할 때마다 그녀는 자신에게 숫자 배지를 하나씩 수여한다. 지금 그녀의 업적은 이미 셀 수 없이 많아졌다—— [업적] 「나 혼자만 만렙」 [내용] 펑크 로드에서 살아있는 「전설」 이 되기 [상태] 달성 [플레이어 평가] 「나에게 가장 어려운 건 살아남는 게 아니라, 펑크 로드에 머물며 제자리에 멈춰 있는 것이다」 [업적] 「컴퍼니의 친구」 [내용] 컴퍼니의 가상 화폐를 모든 「스타 치...</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">잡담 • 해커</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">우인은 가면에게 빼앗기더라도 아하를 웃게 만들려 하겠지만, 해커는 그렇게 따분하지 않아. 자신의 즐거움이 가장 중요하지</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">「각본」 이 점점 디테일해지고 있어. 이스터에그 정도는 내가 원하는 대로 하면 안 되나?</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">엘리오에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">엘리오가 나에 대해 뭔가 오해하고 있는 것 같은데, 최종 결전에서 이기기만 하면, 중간에 한 번 지든 백 번 지든 다 게임의 재미 아니겠어?</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">「0호」 , 「스톤 블레이드」 … 전설적인 해커의 에테르 카트리지는 대부분 우주에 널리 알려진 소장품이 됐지. 하지만 내 건… 펑크 로드부터 스텔라론 헌터까지, 「은랑」 이 영원히 로드되고 영원히 DLC가 나왔으면 좋겠어</div></li>
+<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">잡담•우주</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">이 우주에 더욱 다양한 콘텐츠를 추가하고 싶어. 매일 반복되는 탐험 과정은 지루하지 않아?</div></li>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">잡담 • 현재 상황</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">최근의 소동을 봤지? 난 「은하」 라는 게임에서 퇴장하는 모든 이의 권리는 존중하지만, 모든 사람이 게임을 못 하게 하는 건 절대 용납 못 해</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">머리를 쿠션에 파묻고 낮잠을 자는 거랑 귀여운 걸 조물조물하는 거</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">아, {개척자}. 잘 지내는 거 같네? 그 스텔라론은 아무 영향도 없었던 거야?</div></li>
+<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">카프카에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">「규칙을 무시」하는 쪽으로는 카프카한테 공감하지 않을 수 없어</div></li>
+<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">카프카에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">너만 그런 게 아니라 나도 요새 많이 못 봤어. 엘리오가 맡긴 임무는 당연히 완수하겠지만, 무슨 생각을 하고 있는지는… 알 수가 없네</div></li>
+<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">블레이드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">손 부상이 다 나으면 같이 게임하자고 약속했는데, 손이 지금까지도 안 낫더라고</div></li>
+<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">샘에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">샘이 있는 임무는 대체적으로 퍽퍽——퍽! 이게 끝이야</div></li>
+<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">반디에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4997?lang=ko-kr">원문</a></span><div class="ref-quote">반디의 인생을 게임에 비유한다면, 지금 반디의 컨트롤은 예전만큼 능숙하지 않아——화면 속 캐릭터가 처음으로 자신의 의지대로 움직이고 있기 때문이지</div></li>
+<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">잡담•프로메테우스</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/m/hsr/entry/710?lang=ko-kr">원문</a></span><div class="ref-quote">프로메테우스는 4개의 모듈이 탑재되어 있어, 그중 말을 제일 잘하는 모듈은 「친구」지…. 「친구는 인연이니, 영원히 소중하게 여겨야 한다. 우리의 우정을 위해 건배!」</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 스텔라론 헌터</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-24</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: Fandom 보조 자료, 게임 본편 — 대사, 게임 본편 — 이벤트 설명, 게임 본편 — 임무 설명, 공식 HoYoWiki</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-24 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>
@@ -781,12 +721,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="silver-wolf">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%9D%80%EB%9E%91&amp;body=%EC%9D%80%EB%9E%91+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fsilver-wolf.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

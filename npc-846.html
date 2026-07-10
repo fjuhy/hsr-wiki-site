@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>아모 · hoyohoyo.wiki</title>
-  <meta name="description" content="아모는 벨로보그에 속한 소설가 NPC다. 그는 자신을 “글쓰는 사람”이라고 소개하고, 길을 막아 미안하다고 말하며 플레이어와 대화한다.">
+  <meta name="description" content="아모는 벨로보그의 소설가다. 그는 자신이 쓴 《설국 모험 기담》을 스스로 부끄러워하며, 훗날 “이런 쓰레기를 쓴 사람”으로 기억되어 영원히 “문학사의 수치로 남게 될 것”이라고 자조한다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="아모 · hoyohoyo.wiki">
-  <meta property="og:description" content="아모는 벨로보그에 속한 소설가 NPC다. 그는 자신을 “글쓰는 사람”이라고 소개하고, 길을 막아 미안하다고 말하며 플레이어와 대화한다.">
+  <meta property="og:description" content="아모는 벨로보그의 소설가다. 그는 자신이 쓴 《설국 모험 기담》을 스스로 부끄러워하며, 훗날 “이런 쓰레기를 쓴 사람”으로 기억되어 영원히 “문학사의 수치로 남게 될 것”이라고 자조한다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/npc-846.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/npc-846.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,54 +620,41 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>아모</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EB%AA%A8&amp;page_slug=npc-846">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>아모</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="assets/wiki-images/41/d450a42185bad1da070e32f75d8f282b_724414828047261-41bb51e90474.webp" alt="아모 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 공식 인물 이미지</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>아모</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EB%AA%A8&amp;page_slug=npc-846">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>아모</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/04/25/11771384/d450a42185bad1da070e32f75d8f282b_7244148280472619086.png" alt="아모 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>아모는 벨로보그에 속한 소설가 NPC다.<sup class="cite-ref" title="공식 HoYoWiki · 아모"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그는 자신을 “글쓰는 사람”이라고 소개하고, 길을 막아 미안하다고 말하며 플레이어와 대화한다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>아모는 일일 임무 「길거리 펜팔」과 연결되어 있으며, 관련 항목으로는 제조 레시피 「징벌의 식량」이 붙어 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 제공된 근거에서 그의 역할은 전투나 통치가 아니라 벨로보그의 생활권 안에서 책, 의뢰, 전달을 잇는 쪽에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>아모는 행정구역에서 찾아갈 수 있는 청년으로 다뤄진다.<sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <a class="wiki-link" href="npc-859.html" title="니카">니카</a>는 《설국 모험 기담》과 관련된 일을 해결하려면 아모를 찾아가라고 안내하며, 아모가 전에 그 작품의 속편을 의뢰했고 참고용으로 전권을 받은 적이 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>이 흐름에서 아모는 단순한 배경 시민이 아니라 특정 책의 사본과 후속 의뢰를 둘러싼 정보가 모이는 인물이다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> “니카의 말을 아모에게 전해준다”는 진행과 “아모한테 물어보러 가자”는 흐름은, 그가 임무 안에서 확인과 전달의 대상이 된다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>아모의 작가 정체성은 《설국 모험 기담》을 통해 더 분명해진다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그는 자신이 그 작품을 형편없이 쓴 사람으로 기억되어 “문학사의 수치”가 될 수 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 대사는 아모를 확신에 찬 대문호보다, 자기 작품의 평가와 이름이 함께 남는 일을 의식하는 불안한 창작자로 보이게 한다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>아모의 위상은 강한 전투력이나 정치적 지위보다, 벨로보그의 일상적인 창작 네트워크 안에서 생긴다.<sup class="cite-ref" title="공식 HoYoWiki · 아모"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>대신 아모는 누군가가 직접 찾아가야 하는 사람으로 놓인다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 니카의 안내, 아모에게 말을 전하는 진행, 아모에게 물어보러 가자는 지시는 모두 그를 책 관련 사건의 접점으로 만든다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>「정당 권익 회사」의 게시문에서는 회원 아모가 의뢰 1건을 올리고, 수락할 생각이 있는 회원은 직접 만나 상담하라고 한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이 문구는 아모가 혼자 글만 쓰는 인물이 아니라, 의뢰를 내고 다른 사람과 만나 일을 움직이는 인물임을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>《설국 모험 기담》은 아모의 작가성을 가장 선명하게 드러내는 소재다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 아모는 이 작품 때문에 자기 이름이 조롱과 함께 남을 수 있다고 말하고, 니카는 아모가 속편을 의뢰하면서 전권을 참고용으로 받았다고 말한다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 두 장면을 함께 보면, 아모는 작품의 평판과 후속 창작 사이에 걸린 인물이다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>니카와 아모의 관계는 자료와 전달을 통해 이어진다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 니카는 자신에게 사본이 없으니 행정구역의 아모를 찾아가라고 하고, 이전에 아모에게 전권을 줬다고 설명한다.<sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 이 관계는 아모가 벨로보그의 책 관련 사건에서 자료를 보관하거나 참고하는 사람으로 쓰인다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>「정당 권익 회사」의 의뢰는 아모가 개인적인 문제를 외부와 연결하는 방식이다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 게시문은 의뢰를 수락할 회원이 아모를 직접 만나 상담하라고 하므로, 아모의 사건은 대화와 의뢰를 통해 확장된다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>아모르피스와 파구사 연회 관련 언급은 이름이 비슷하지만, 벨로보그의 소설가 아모와 동일 인물이라고 볼 근거는 없다.<sup class="cite-ref" title="공식 HoYoWiki · 아모"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 파이논은 아쿠아피스, 아포피스, 아모르피스를 미테미스의 삼형제이자 파구사 연회의 주최 측으로 소개하며, 이 언급은 아모의 벨로보그 소속 및 소설가 설정과 별도로 구분해야 한다.<sup class="cite-ref" title="공식 HoYoWiki · 아모"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<h2 id="설국-모험-기담-을-둘러싼-작가의-불안">《설국 모험 기담》을 둘러싼 작가의 불안</h2>
-<p>아모의 특징은 글을 쓰면서도 자기 이름이 어떻게 남을지 두려워한다는 데 있다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 그는 《설국 모험 기담》을 쓴 사람으로 조롱받는 상황을 스스로 상상하고, 그 결과를 “문학사의 수치”라는 말로 표현한다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>이 자기비하는 단순한 농담에 그치지 않고, 아모가 작가 이름과 작품 평가가 함께 묶인다는 사실을 알고 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 그는 실패를 떠올리면서도 속편 의뢰와 자료 수령을 통해 작품 주변에 계속 남아 있다.<sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>따라서 아모는 벨로보그의 거대한 사건을 해결하는 영웅이 아니라, 작은 문학 사건을 임무와 대화로 끌어오는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그의 존재감은 강함보다 접근성에서 나오며, 플레이어가 찾아가 묻고 전달해야 하는 생활형 NPC로 정리된다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">아모</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/846?lang=ko-kr">원문</a></span><div class="ref-quote">소설가</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/846?lang=ko-kr">원문</a></span><div class="ref-quote">아모</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/846?lang=ko-kr">원문</a></span><div class="ref-quote">벨로보그</div></li>
+<p>아모는 벨로보그의 소설가다.<sup class="cite-ref" title="공식 HoYoWiki · 아모"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 자신이 쓴 《설국 모험 기담》을 스스로 부끄러워하며, 훗날 “이런 쓰레기를 쓴 사람”으로 기억되어 영원히 “문학사의 수치로 남게 될 것”이라고 자조한다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>아모는 벨로보그 행정구역에서 마주칠 수 있는 청년이다. 처음 만나면 길을 막아 미안하다고 사과하며 자신을 “글쓰는 사람”이라고 소개한다.<sup class="cite-ref" title="게임 본편 · 아모의 언급 · 아모의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p><a class="wiki-link" href="npc-859.html" title="니카">니카</a>는 《설국 모험 기담》의 사본을 갖고 있지 않다며 개척자에게 행정구역의 아모를 찾아가 보라고 안내한다. 예전에 이 작품의 속편을 아모에게 의뢰한 적이 있어서, 그때 참고용으로 전권을 그에게 넘겨주었다고 설명한다.<sup class="cite-ref" title="게임 본편 · 니카의 언급 · 니카의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 안내에 따라 개척자는 니카의 말을 아모에게 전하고, 다시 그를 찾아가 이야기를 듣는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이 여정은 일일 임무 「길거리 펜팔」로 진행된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 임무"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>「정당 권익 회사」의 게시판에는 회원 아모가 의뢰 1건을 올렸다는 공고와, 수락할 회원은 직접 만나 상담하라는 문구가 함께 붙는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-3769.html">파이논</a>, <a href="npc-3756.html">아포피스</a> — <a href="char-3769.html">파이논</a>은 아쿠아피스, <a href="npc-3756.html">아포피스</a>, 아모르피스를 미테미스의 삼형제이자 파구사 연회의 주최 측으로 소개한다.<sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 아모르피스는 이름이 아모와 비슷하지만, 벨로보그의 소설가 아모와 동일 인물이라고 볼 근거는 없다.<sup class="cite-ref" title="공식 HoYoWiki · 아모"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 파이논의 언급 · 파이논의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">아모</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/846?lang=ko-kr">원문</a></span><div class="ref-quote">소설가</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/846?lang=ko-kr">원문</a></span><div class="ref-quote">벨로보그</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">아모의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아모의 인게임 대사</span></span><div class="ref-quote">하하, 그럼 난 영원히 문학사의 수치로 남게 되겠지… 「아모가 누구야? 누군데 감히 ≪설국 모험 기담≫이라며 이딴 쓰레기를 쓴 거지?」</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">아모의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아모의 인게임 대사</span></span><div class="ref-quote">내 소개를 안 했구나. 난 아모라고 해. 글쓰는 사람이지. 가는 길 막아서 미안해… 응? 왜, 더 볼일 있어?</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">관련 임무</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/846?lang=ko-kr">원문</a></span><div class="ref-quote">일일 임무 「길거리 펜팔」</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/846?lang=ko-kr">원문</a></span><div class="ref-quote">제조 레시피: 징벌의 식량</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「정당 권익 회사——회원 아모가 의뢰 1건을 게시했다. 의뢰를 수락할 생각이 있는 회원은 직접 만나서 상담하기를 바란다!」</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">니카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">니카의 인게임 대사</span></span><div class="ref-quote">제가 지금 사본을 가지고 있지 않아서요… 이렇게 하죠. 행정구역에서 아모라는 청년을 찾아가세요. 전에 ≪설국 모험 기담≫ 속편을 의뢰한 적이 있어서 전권을 참고하라고 줬었거든요. 다른 방법을 찾으셔도 되고요</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">니카의 말을 아모에게 전해준다…</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">(아모한테 물어보러 가자…)</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">아모의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아모의 인게임 대사</span></span><div class="ref-quote">하하, 그럼 난 영원히 문학사의 수치로 남게 되겠지… 「아모가 누구야? 누군데 감히 ≪설국 모험 기담≫이라며 이딴 쓰레기를 쓴 거지?」</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">파이논의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">파이논의 인게임 대사</span></span><div class="ref-quote">소개할게요. 이쪽은 미테미스의 삼형제——아쿠아피스, 아포피스, 아모르피스예요…. 이번 파구사 연회의 주최 측이죠</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">업적</span> <span class="ref-source">게임 본편 — 업적 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">아모르피스의 파구사 랜덤박스 음료를 한잔 마시고 나면……</div></li></ol></details>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">니카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">니카의 인게임 대사</span></span><div class="ref-quote">제가 지금 사본을 가지고 있지 않아서요… 이렇게 하죠. 행정구역에서 아모라는 청년을 찾아가세요. 전에 ≪설국 모험 기담≫ 속편을 의뢰한 적이 있어서 전권을 참고하라고 줬었거든요. 다른 방법을 찾으셔도 되고요</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">니카의 말을 아모에게 전해준다…</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">(아모한테 물어보러 가자…)</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">관련 임무</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/846?lang=ko-kr">원문</a></span><div class="ref-quote">일일 임무 「길거리 펜팔」</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「정당 권익 회사——회원 아모가 의뢰 1건을 게시했다. 의뢰를 수락할 생각이 있는 회원은 직접 만나서 상담하기를 바란다!」</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">파이논의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">파이논의 인게임 대사</span></span><div class="ref-quote">소개할게요. 이쪽은 미테미스의 삼형제——아쿠아피스, 아포피스, 아모르피스예요…. 이번 파구사 연회의 주최 측이죠</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 야릴로-Ⅵ·벨로보그</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
-  <p class="subtle">주요 근거: 게임 본편, 게임 본편 - 업적, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EB%AA%A8&amp;page_slug=npc-846">수정 요청</a></div>
@@ -727,12 +663,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="npc-846">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%95%84%EB%AA%A8&amp;body=%EC%95%84%EB%AA%A8+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnpc-846.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

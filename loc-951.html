@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>헤르타 · hoyohoyo.wiki</title>
-  <meta name="description" content="우주정거장 「헤르타」는 지니어스 클럽의 헤르타가 별의 궤도에 올린 박물관형 우주 함선으로, 은하 곳곳의 괴이한 존재와 기물을 모아 관측하고 연구하는 장소다.">
+  <meta name="description" content="우주정거장 「헤르타」는 지니어스 클럽의 헤르타가 별의 궤도에 쏘아 올린 박물관형 우주 함선으로, 은하 곳곳의 유물과 신비를 모아 관측하고 연구하는 곳이다. 정작 정거장 이름의 주인인 헤르타 본인이 이곳에서 습격을 받고 한때 행방불명되는 사건도 있었다. 헤르타는 평범한 세계의 법칙만으로는 채워지지 않는 호기심 때문에 이 함선을 만들었고, 「별하늘에 괴이한 모든 것을 봉인」하려는 연구에서 정거…">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="헤르타 · hoyohoyo.wiki">
-  <meta property="og:description" content="우주정거장 「헤르타」는 지니어스 클럽의 헤르타가 별의 궤도에 올린 박물관형 우주 함선으로, 은하 곳곳의 괴이한 존재와 기물을 모아 관측하고 연구하는 장소다.">
+  <meta property="og:description" content="우주정거장 「헤르타」는 지니어스 클럽의 헤르타가 별의 궤도에 쏘아 올린 박물관형 우주 함선으로, 은하 곳곳의 유물과 신비를 모아 관측하고 연구하는 곳이다. 정작 정거장 이름의 주인인 헤르타 본인이 이곳에서 습격을 받고 한때 행방불명되는 사건도 있었다. 헤르타는 평범한 세계의 법칙만으로는 채워지지 않는 호기심 때문에 이 함선을 만들었고, 「별하늘에 괴이한 모든 것을 봉인」하려는 연구에서 정거…">
   <meta property="og:url" content="https://hoyohoyo.wiki/loc-951.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/loc-951.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,139 +620,83 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html" aria-current="page"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html" aria-current="page"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-places.html">장소</a><a href="category-places-ships-stations.html">선주·정거장·거점</a><span>헤르타</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%97%A4%EB%A5%B4%ED%83%80&amp;page_slug=loc-951">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>헤르타</h1><div class="meta-row"><span class="badge">장소</span><span class="badge">선주·정거장·거점</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>우주정거장 「<a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>」는 <a class="wiki-link" href="genius-society.html" title="지니어스 클럽">지니어스 클럽</a>의 헤르타가 별의 궤도에 올린 박물관형 우주 함선으로, 은하 곳곳의 괴이한 존재와 기물을 모아 관측하고 연구하는 장소다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>이 정거장의 주인은 헤르타이며, 소속 파벌은 지니어스 클럽과 「지식」으로 묶인다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주인"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 파벌"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>헤르타가 이 함선을 만든 이유는 평범한 세계의 법칙만으로는 채워지지 않는 호기심 때문이며, 정거장은 「별하늘에 괴이한 모든 것을 봉인」하려는 연구에서 출발했다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>오늘날 우주정거장 「헤르타」는 수많은 기물과 유물을 「소장품」으로 보유한 별하늘의 박물관이자, 연구원들이 은하 곳곳의 물건을 수집하고 형태와 기능을 기록하는 연구 시설이다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>정거장에는 관리과, 은하 지정학과, 지형학과, 생태과, 신비주의과, 방위과, 의료과, 정비과, 서비스과가 있으며, 이 부서 구성은 정거장이 단순 전시장이 아니라 행정·탐사·방위·생활 기능을 함께 굴리는 대형 연구 거점임을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 연구 부서"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>주요 인물로는 아스타, <a class="wiki-link" href="char-11.html" title="아를란">아를란</a>, 건, <a class="wiki-link" href="npc-746.html" title="힌켈">힌켈</a>, <a class="wiki-link" href="npc-731.html" title="온명덕">온명덕</a>이 꼽히며, 정거장은 헤르타 개인의 이름을 걸고 있지만 실제 운영은 여러 연구원과 관리 인력이 떠받치는 구조다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주요 인물"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>공간상으로는 메인 컨트롤 캐빈, 헤르타의 사무실, 베이스 캐빈, 보관 캐빈 같은 구역이 확인되며, 특히 보관 캐빈은 정거장의 핵심 정체성인 수집과 봉인을 직접 떠올리게 하는 장소다. <sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · 메인 컨트롤 캐빈"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · 헤르타의 사무실"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · 베이스 캐빈"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · 보관 캐빈"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>우주정거장 「헤르타」는 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>가 위험천만한 모험을 겪은 뒤 은하열차에 오르는 출발점으로 놓인다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>이 장소는 이야기 초반의 무대이면서, 이후에도 헤르타와 <a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>, 아스타, 아를란, 연구원들이 계속 연결되는 연구 거점으로 남는다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<p>정거장의 일상은 헤르타의 이름과 평판을 중심으로 돌아가며, 중요한 손님이 방문하면 접대가 곧 헤르타의 얼굴과 연결될 만큼 구성원들은 주인의 명성을 의식한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>아스타는 헤르타가 순방을 떠난 상황에서도 정거장 책임자로 움직이며, <a class="wiki-link" href="npc-2620.html" title="지드">지드</a>는 헤르타가 없을 때도 문제가 생기면 아스타가 있다고 말한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>이 구도에서 헤르타는 모든 현장에 직접 서 있는 관리자가 아니라, 정거장 전체의 권위와 연구 방향을 정하는 이름에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주인"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 레너드의 언급 · 레너드의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>정거장 연구원들은 헤르타에게 쉽게 요구를 올리지 못하고, 헤르타가 알았다는 사실만으로도 일이 끝났다고 느낄 정도로 그녀를 두려워하거나 경외한다. <sup class="cite-ref" title="게임 본편 · 안기쁨의 언급 · 안기쁨의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 레너드의 언급 · 레너드의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>레너드는 우주정거장의 특별함을 아스타 정거장 책임자가 어디서나 보이는 점과, 운이 좋으면 지니어스 클럽의 헤르타에게 혼날 수도 있다는 점으로 말한다. <sup class="cite-ref" title="게임 본편 · 레너드의 언급 · 레너드의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>이 말은 정거장의 위계를 잘 보여준다. 아스타는 눈에 보이는 운영자이고, 헤르타는 드물게 나타나도 조직 전체를 긴장시키는 최상위 권위다. <sup class="cite-ref" title="게임 본편 · 레너드의 언급 · 레너드의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>헤르타는 개척자에게도 관심을 보이며, 스크루룸은 헤르타가 최근 개척자를 자주 언급했고 <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a>과 공생하는 감각을 궁금해했다고 말한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>따라서 우주정거장 「헤르타」는 개척자를 단순히 지나가게 하는 첫 무대가 아니라, 개척자의 몸에 깃든 스텔라론과 은하 규모의 연구 관심이 처음 맞물리는 장소다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>정거장은 시뮬레이션 우주 테스트와도 이어지며, 헤르타는 개척자가 테스트를 도와준 답례로 은하열차에 일정 기간 업무 교류 인원을 보낸다. <sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<p>이 연결은 정거장이 고립된 연구소가 아니라 은하열차와 인력, 실험, 보상 관계를 주고받는 활동 거점임을 보여준다. <sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>우주정거장 「헤르타」의 가장 큰 힘은 소장품과 연구 체계, 그리고 그 모든 것을 지키는 헤르타의 실력에서 나온다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>소장품은 다른 세력의 부러움과 욕심을 부르지만, 헤르타의 실력 때문에 정거장은 위기에 빠지지 않고 수집과 연구를 이어간다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>정거장은 연구 시설이면서 동시에 위험한 물건을 보유한 금고에 가깝고, 그 위험은 외부의 약탈 욕망과 내부의 실험 위험으로 동시에 나타난다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<p>지드는 헤르타와 일부 연구실이 「컴퍼니」에 개발을 맡긴 제품들이 운송 중 약탈당해 행방이 묘연해졌다고 말한다. <sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>이 사건은 정거장의 연구물이 정거장 안에만 머물지 않고 외부 개발, 운송, 약탈 위험까지 끌어들이는 물건임을 보여준다. <sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>정거장의 위험은 내부에서도 드러나며, 아를란은 헤르타가 서포트 캐빈에 대량의 「실험 소재」를 쌓아두었고 불똥 하나만 튀어도 우주정거장이 통째로 날아갈 수 있다는 말을 전한다. <sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<p>Mar. 7th는 그런 위험물을 서포트 캐빈에 쌓아두면 안 된다고 건의하는 것이 합리적이라고 반응하지만, 아를란은 모두가 헤르타의 성격을 안다고 답한다. <sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>이 장면에서 정거장의 한계가 분명해진다. 헤르타의 재능과 권위가 정거장을 지키지만, 같은 권위와 성격이 안전 절차를 흔드는 위험으로도 작용한다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>헤르타 개인의 위상은 지니어스 클럽 #83이라는 호칭과 함께 부각되며, 그녀가 정거장에서 습격을 받고 행방불명되었다는 속보는 별도의 성명을 낸 조직이 없을 만큼 큰 사건으로 다뤄진다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3010_Caption · Narration의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
-<p>이후 「소멸파」가 습격 사건의 범행을 시인했다는 소식이 이어지며, 정거장과 헤르타의 이름은 은하적 분쟁과 적대 세력의 표적 안에 놓인다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3020_Caption · Narration의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
-<p>헤르타의 인형이 피습되기 전 마지막으로 본 사람이 누구인지가 문제로 떠오르는 장면도 있으며, 정거장 주변 사건은 헤르타 본인뿐 아니라 그녀의 인형 시스템까지 공격 대상으로 만든다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act380_Caption · Narration의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
-<p>정거장의 방위와 위상은 절대 안전을 뜻하지 않는다. 헤르타의 이름은 침입자를 막는 억지력이지만, 동시에 소장품과 연구 성과와 인형이라는 공격 목표를 정거장 안에 쌓아 올린다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3010_Caption · Narration의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3020_Caption · Narration의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · CS_Chap00_Act380_Caption · Narration의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
-<p>헤르타 인형들은 정거장 곳곳에서 헤르타의 존재감을 늘리는 장치로 보이며, 헤르타 자신도 자기 인형이 되고 싶어 하는 사람이 또 있겠느냐고 말한다. <sup class="cite-ref" title="게임 본편 · 헤르타의 언급 · 헤르타의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
-<p>헤르타 인형들은 헤르타를 위해 일할 수 있어 영광이라고 말하고, 헤르타를 세상에 단 하나뿐인 존재이자 가장 지혜로운 존재로 떠받든다. <sup class="cite-ref" title="게임 본편 · 헤르타 인형의 언급 · 헤르타 인형의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 헤르타 인형의 언급 · 헤르타 인형의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
-<p>이 과장된 찬양은 우스꽝스럽지만, 정거장에서 헤르타의 이름이 단순 소유자 표기가 아니라 조직 문화와 장난, 홍보, 소문까지 장악하는 상징임을 보여준다. <sup class="cite-ref" title="게임 본편 · 경기 진행자의 언급 · 경기 진행자의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 헤르타 인형의 언급 · 헤르타 인형의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 헤르타 인형의 언급 · 헤르타 인형의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>헤르타와 아스타의 관계는 주인과 현장 책임자의 관계로 읽힌다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주인"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주요 인물"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>아스타는 헤르타가 순방을 떠난 동안에도 정거장 책임자로 대응하고, 헤르타가 중요한 테스트 중일 때는 사소한 일로 그녀를 번거롭게 할 수 없다고 판단한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
-<p>아스타가 정거장에서 실제 운영을 맡는 동안 헤르타는 연구와 결정의 최상단에 남아 있으며, 이 분업은 정거장이 개인 천재의 소유물이면서도 조직으로 굴러가야 하는 장소임을 보여준다. <sup class="cite-ref" title="게임 본편 · 레너드의 언급 · 레너드의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
-<p>아를란은 헤르타의 명성과 안전 문제 사이에 놓인 인물이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주요 인물"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<p>아를란은 큰 손님 접대가 소홀하면 헤르타의 얼굴에 먹칠하는 일이라고 말하고, 헤르타가 쌓아둔 실험 소재의 위험도 직접 전달한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<p>아를란의 대사는 정거장의 실무자가 헤르타의 명성을 지키면서도 헤르타가 만든 위험을 수습해야 하는 위치에 있음을 드러낸다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>스크루룸은 헤르타의 연구적 관심과 외부 협력망을 잇는 인물이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<p>스크루룸은 헤르타가 개척자를 자주 언급했다고 말하고, 헤르타의 부탁대로 무명객을 만나러 왔다고 설명한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<p>또한 스크루룸은 헤르타와 함께 앰포리어스를 위해 왔다고 말하며, 헤르타의 관심사가 정거장 내부 연구를 넘어 다른 세계와 사건으로 확장됨을 보여준다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
-<p>개척자는 우주정거장 「헤르타」에서 위험한 모험을 겪은 뒤 은하열차에 오르고, 이후에도 헤르타와 시뮬레이션 우주 테스트, 스텔라론 연구, 심부름과 질문으로 계속 연결된다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<p>이 관계에서 정거장은 개척자의 출발점이자 관찰실이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<p>헤르타는 개척자를 도와주는 조력자이면서도, 개척자의 특이성을 연구 대상으로 바라보는 지니어스 클럽의 연구자다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<p>컴퍼니와의 관계는 정거장이 은하 경제와 기술 개발망에 연결되어 있음을 보여준다. <sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
-<p>지드는 자신이 컴퍼니 사람이 아니라고 선을 긋지만, 헤르타와 몇몇 연구실이 컴퍼니에 개발을 맡긴 제품들이 있었다고 말한다. <sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>아스타는 정거장에서 사용하는 물건이 「헤르타 특별판」이라 광고가 없다고 말하며, 정거장의 일상용 기술도 외부 제품과 특별 사양의 형태로 연결되어 있음을 보여준다. <sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
-<p>이 관계는 정거장이 순수한 학술 공간으로만 머물지 않고, 외부 기업과 제품 개발, 운송, 약탈 위험을 함께 끌어안는 장소임을 드러낸다. <sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
-<p>「소멸파」는 헤르타와 정거장의 위험도를 외부에서 확인시켜 주는 적대 축이다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3010_Caption · Narration의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3020_Caption · Narration의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
-<p>헤르타가 정거장에서 습격을 받고 행방불명되었다는 속보가 나온 뒤, 「소멸파」가 그 사건의 범행을 시인했다는 소식이 이어진다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3010_Caption · Narration의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3020_Caption · Narration의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
-<p>이 사건은 헤르타의 정거장이 귀중한 소장품을 가진 연구소일 뿐 아니라, 은하적 폭력과 정치적 선언의 무대가 될 수 있음을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3010_Caption · Narration의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3020_Caption · Narration의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
-<p>헤르타 인형과 팬 문화는 정거장의 분위기를 가볍게 만들면서도, 헤르타의 이름이 얼마나 넓게 퍼져 있는지를 보여준다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 경기 진행자의 언급 · 경기 진행자의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3010_Caption · Narration의 인게임 대사"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p>「헤르•클라스」호와 「더•헤르•클라스」호는 헤르타에게서 영감을 받아 디자인되며, 아스타는 레이싱과 함께 헤르타 정거장을 홍보하려 한다. <sup class="cite-ref" title="게임 본편 · 경기 진행자의 언급 · 경기 진행자의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="게임 본편 · 페피의 언급 · 페피의 인게임 대사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup></p>
-<p>이 장난스러운 홍보와 팬클럽식 명명은 헤르타가 단지 학문 권위가 아니라 정거장의 브랜드와 유머의 원천으로도 소비된다는 점을 보여준다. <sup class="cite-ref" title="게임 본편 · 경기 진행자의 언급 · 경기 진행자의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="게임 본편 · 페피의 언급 · 페피의 인게임 대사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup></p>
-<h2 id="별하늘의-박물관과-위험한-연구소">별하늘의 박물관과 위험한 연구소</h2>
-<p>우주정거장 「헤르타」의 핵심은 박물관과 연구소가 같은 공간에 있다는 점이다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>박물관은 소장품을 보존하고 보여주는 장소이지만, 이 정거장의 소장품은 은하 곳곳에서 모은 유물과 기물이며 다른 세력까지 노리는 물건이다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>연구소는 관측하고 기록하고 체계를 세우는 장소이지만, 이 정거장의 연구는 불똥 하나로 정거장 전체가 날아갈 수 있다고 말해지는 실험 소재까지 품는다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<p>그래서 우주정거장 「헤르타」는 안전하게 지식을 보관하는 금고라기보다, 위험한 지식을 계속 들여오고 분류하고 시험하는 살아 있는 시설에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<p>헤르타가 찾는 것은 이미 설명된 지식이 아니라 수수께끼 속에서 더 난해한 수수께끼를 찾아내는 일이다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>그 목표 때문에 정거장은 안정된 결론을 쌓는 곳이 아니라, 모르는 것을 더 깊은 미지로 밀고 들어가는 곳이 된다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>이 성격은 정거장의 매력을 만들지만 동시에 한계를 만든다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>헤르타의 실력은 외부 세력이 소장품을 노려도 정거장이 무너지지 않게 하는 힘이지만, 헤르타의 성격은 내부 인원이 위험을 알면서도 쉽게 제동을 걸지 못하게 만든다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>정거장의 사람들은 헤르타를 존경하고 두려워하며, 때로는 헤르타의 이름을 홍보와 농담과 팬덤의 소재로 바꾼다. <sup class="cite-ref" title="게임 본편 · 안기쁨의 언급 · 안기쁨의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 레너드의 언급 · 레너드의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 경기 진행자의 언급 · 경기 진행자의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 헤르타 인형의 언급 · 헤르타 인형의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
-<p>이 복합적인 분위기 때문에 우주정거장 「헤르타」는 차갑고 엄숙한 연구소로만 보이지 않는다. <sup class="cite-ref" title="게임 본편 · 경기 진행자의 언급 · 경기 진행자의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="게임 본편 · 헤르타 인형의 언급 · 헤르타 인형의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 헤르타 인형의 언급 · 헤르타 인형의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
-<p>그곳은 천재의 호기심이 만든 거대한 실험장이고, 연구원들이 실제로 일하는 직장이며, 외부 세력이 노리는 보물창고이고, 헤르타라는 이름이 권위와 농담을 동시에 만드는 무대다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주요 인물"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 경기 진행자의 언급 · 경기 진행자의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">헤르타(지명)</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">지니어스 클럽의 헤르타는 평범한 세계의 만물 법칙에 만족하지 않고 아직 밝혀지지 않은 은하 속 존재로 눈을 돌렸다. 머나먼 우주의 신비가 자신의 호기심을 채워주길 기대하면서 말이다. 이를 위해, 헤르타는 박물관 형식의 우주 함선을 건조해 별의 궤도로 쏘아 올렸고 「별하늘에 괴이한 모든 것을 봉인」하는 연구를 시작했다. 그 유명한 우주정거장 「헤르타」는 이렇게 탄생했다. 오늘날 우주정거장은 수많은 기물 「소장품」을 보유함으로써 명실상부한 별하늘의 박물관이 되...</div></li>
+<p>우주정거장 「<a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>」는 <a class="wiki-link" href="genius-society.html" title="지니어스 클럽">지니어스 클럽</a>의 헤르타가 별의 궤도에 쏘아 올린 박물관형 우주 함선으로, 은하 곳곳의 유물과 신비를 모아 관측하고 연구하는 곳이다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 정작 정거장 이름의 주인인 헤르타 본인이 이곳에서 습격을 받고 한때 행방불명되는 사건도 있었다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3010_Caption · Narration의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 헤르타는 평범한 세계의 법칙만으로는 채워지지 않는 호기심 때문에 이 함선을 만들었고, 「별하늘에 괴이한 모든 것을 봉인」하려는 연구에서 정거장의 역사가 시작됐다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 오늘날 정거장은 은하 각지에서 모은 「소장품」을 갖춘 박물관이자, 연구원들이 유물의 형태와 기능을 기록하며 관측·연구 체계를 쌓아가는 시설이다. <sup class="cite-ref" title="공식 HoYoWiki · 헤르타(지명)"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<h2 id="활동">활동</h2>
+<p><a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 은하열차에 오르기 전 이 정거장에서 위험천만한 모험을 겪었다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이후에도 정거장은 은하열차와 계속 얽힌다. 헤르타는 개척자가 시뮬레이션 우주 테스트를 도와준 답례로 은하열차에 당분간 「업무 교류」 인원을 보냈는데, 그 정체는 요리 로봇 「볶음밥 천재 123호」였다. <sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 로봇이 은하열차의 식음료 담당자 「닥쳐」를 도발하자 폼폼은 이것이 헤르타의 「속뜻」은 아닐 거라며 도발을 금지했고, 「닥쳐」는 헤르타의 호의는 감사하지만 아직 은퇴할 나이가 아니라며 무명객들에게 양질의 식사를 계속 제공하겠다고 답했다. <sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p><a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>은 헤르타의 연구적 관심을 외부로 잇는 인물이다. 그는 헤르타가 개척자를 자주 언급했고 <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a>과 공생하는 감각을 궁금해했다고 전했다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이후 스크루룸은 헤르타의 부탁으로 무명객들을 만나러 왔다며, 헤르타와 함께 앰포리어스를 위해 왔다고 밝혔다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>정거장의 연구와 소장품은 외부와도 얽힌다. <a class="wiki-link" href="npc-2620.html" title="지드">지드</a>는 헤르타와 몇몇 연구실이 「컴퍼니」에 개발을 맡긴 제품이 운송 중 약탈당해 행방이 묘연해졌다고 전했다. <sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 아스타는 정거장에서 쓰는 물건이 광고 없는 「헤르타 특별판」이라고 말한다. <sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 내부 위험도 있다. 헤르타는 서포트 캐빈에 대량의 「실험 소재」를 쌓아 두었는데, <a class="wiki-link" href="char-11.html" title="아를란">아를란</a>은 헤르타의 말을 빌려 &quot;불똥 하나만 튀어도 우주정거장이 통째로 날아갈 것&quot;이라고 전했다. <sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> Mar. 7th는 이 위험을 헤르타에게 건의하는 것이 합리적이라고 말했지만, 아를란은 &quot;다들 헤르타 님의 성격을 아시잖아요&quot;라고 답했다. <sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 개척자는 안전을 위해 일단 철수하고 헤르타의 실험이 끝난 뒤 다시 오자고 제안했다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<p>헤르타는 제어 인형을 복수로 운용한다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 인형들은 &quot;헤르타 님을 위해 일할 수 있어 영광&quot;이라거나 &quot;헤르타 님은 세상에 단 하나뿐인 존재&quot;라며 그녀를 떠받드는 말을 반복하고, 일부 무명객은 인형 셋이 있는 사진을 찍고 싶다거나 인형이 더 필요하다고 말하기도 한다. <sup class="cite-ref" title="게임 본편 · 헤르타 인형의 언급 · 헤르타 인형의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 헤르타 인형의 언급 · 헤르타 인형의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 헤르타 본인은 자기 인형이 되고 싶어 하는 사람이 또 있겠느냐며, 인형이 늘어나면 결국 두 명의 자신이 서로 멀뚱멀뚱 쳐다보는 결말로 끝날 거라고 농담한다. <sup class="cite-ref" title="게임 본편 · 헤르타의 언급 · 헤르타의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 한 개척자는 인격에 영향을 줄 수 있는 음료가 헤르타의 인형에게 도움이 될지도 모른다고 농담하기도 했다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 이런 인기는 정거장 밖으로도 번져, 아스타는 레이싱을 계기로 헤르타 정거장을 홍보하러 나섰고, 페피가 만든 경주선은 헤르타에게서 영감을 받아 「헤르•클라스」호와 「더•헤르•클라스」호로 이름 붙었다. <sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 경기 진행자의 언급 · 경기 진행자의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 페피의 언급 · 페피의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
+<h2 id="조직과-운영">조직과 운영</h2>
+<p>정거장의 주인은 헤르타이며, 소속 파벌은 지니어스 클럽의 「지식」 계통이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주인"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 파벌"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> 정거장에는 관리과, 은하 지정학과, 지형학과, 생태과, 신비주의과, 방위과, 의료과, 정비과, 서비스과가 있고, 아스타·아를란·건·<a class="wiki-link" href="npc-746.html" title="힌켈">힌켈</a>·<a class="wiki-link" href="npc-731.html" title="온명덕">온명덕</a>이 주요 인물로 꼽힌다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 연구 부서"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 주요 인물"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
+<p>헤르타가 순방으로 자리를 비워도 정거장 운영은 멈추지 않는다. 지드는 &quot;우주정거장은 헤르타 님이 지키고 계시고, 그분이 안 계신다고 해도 문제가 생기면 아스타 정거장 책임자님이 계시잖아요&quot;라고 말한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 레너드는 우주정거장의 특별함을 &quot;어딜 봐도 아스타 정거장 책임자가 보이고, 운이 좋으면 가끔 헤르타 님에게 혼나기도 한다&quot;는 말로 설명한다. <sup class="cite-ref" title="게임 본편 · 레너드의 언급 · 레너드의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
+<p>연구원들은 헤르타를 어려워한다. 안기쁨은 말단 연구원이 헤르타에게 직접 요구할 수 없다고 말하고, 레너드는 헤르타가 사정을 알았다는 말만 듣고도 &quot;이제 다 망했다&quot;며 좌절한다. <sup class="cite-ref" title="게임 본편 · 안기쁨의 언급 · 안기쁨의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 레너드의 언급 · 레너드의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup> 헤르타가 중요한 테스트 중일 때는 아스타조차 사소한 용무로 그녀를 방해하지 않는다. <sup class="cite-ref" title="게임 본편 · 아스타의 언급 · 아스타의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
+<h2 id="습격-사건">습격 사건</h2>
+<p>정거장의 속보 방송은 청취자를 「헤르클라스 여러분」이라 부르며 시작한다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3010_Caption · Narration의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup> 이 방송은 곧이어 위대하신 지니어스 클럽 #83 헤르타가 우주정거장에서 습격을 받은 후 행방불명되었다는 소식을 전했고, 당시에는 성명을 발표한 조직이 없었다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3010_Caption · Narration의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 후속 방송에서는 「소멸파」가 이 습격의 범행을 시인하고 다음 행보를 알렸으며, 협회는 이 행동을 강력하게 규탄했다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3020_Caption · Narration의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 헤르타의 인형 역시 피습되었고, 그 직전 인형을 마지막으로 본 사람이 누구인지가 의문으로 남았다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act380_Caption · Narration의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-12.html">아스타</a>, <a href="char-11.html">아를란</a> — 헤르타 정거장의 실무는 <a href="char-12.html">아스타</a>와 <a href="char-11.html">아를란</a>이 나눠 맡는다. <a href="char-12.html">아스타</a>는 헤르타가 자리를 비운 동안 정거장 운영을 맡고 <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「스스로 부른 화」"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup>, <a href="char-11.html">아를란</a>은 손님 접대와 실험 소재 관리를 함께 짊어진다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급 · 아를란의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></li>
+<li><a href="npc-2620.html">지드</a>, <a href="screwllum.html">스크루룸</a>, <a href="trailblazer.html">개척자</a>, <a href="faction-965.html">은하열차</a>, <a href="amphoreus.html">앰포리어스</a> — 정거장 밖과의 연결은 <a href="npc-2620.html">지드</a>와 <a href="screwllum.html">스크루룸</a>이 잇는다. <a href="npc-2620.html">지드</a>는 컴퍼니와의 제품 개발·유통 관계를 언급하고 <sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 지드의 언급 · 지드의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup>, <a href="screwllum.html">스크루룸</a>은 헤르타의 연구적 관심을 <a href="trailblazer.html">개척자</a>, <a href="faction-965.html">은하열차</a>, <a href="amphoreus.html">앰포리어스</a> 사건으로 이어 준다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「펑크 로드 스피릿」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「영웅이여, 그 피 묻은 희망을 이루어라」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></li>
+<li><a href="faction-977.html">소멸파</a> — 「<a href="faction-977.html">소멸파</a>」는 헤르타 습격 사건의 범행을 시인한 세력이다. <sup class="cite-ref" title="게임 본편 · CS_Chap00_Act3020_Caption · Narration의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">헤르타(지명)</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">지니어스 클럽의 헤르타는 평범한 세계의 만물 법칙에 만족하지 않고 아직 밝혀지지 않은 은하 속 존재로 눈을 돌렸다. 머나먼 우주의 신비가 자신의 호기심을 채워주길 기대하면서 말이다. 이를 위해, 헤르타는 박물관 형식의 우주 함선을 건조해 별의 궤도로 쏘아 올렸고 「별하늘에 괴이한 모든 것을 봉인」하는 연구를 시작했다. 그 유명한 우주정거장 「헤르타」는 이렇게 탄생했다. 오늘날 우주정거장은 수많은 기물 「소장품」을 보유함으로써 명실상부한 별하늘의 박물관이 되...</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">우주정거장 「헤르타」</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">주인</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">헤르타</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">파벌</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">지니어스 클럽 - 지식</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">연구 부서</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">관리과, 은하 지정학과, 지형학과, 생태과, 신비주의과, 방위과, 의료과, 정비과, 서비스과</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">주요 인물</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">아스타; 아를란; 건; 힌켈; 온명덕</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">메인 컨트롤 캐빈</span> <span class="ref-source">공식 HoYoWiki — 갤러리 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">메인 컨트롤 캐빈</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">헤르타의 사무실</span> <span class="ref-source">공식 HoYoWiki — 갤러리 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">헤르타의 사무실</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">베이스 캐빈</span> <span class="ref-source">공식 HoYoWiki — 갤러리 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">베이스 캐빈</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">보관 캐빈</span> <span class="ref-source">공식 HoYoWiki — 갤러리 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">보관 캐빈</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">당신이 「헤르타」 정거장에서 막 위험천만한 모험을 겪었던 때였다. 그 후, 당신은 은하열차에 탑승해 자신만의 우주 코미디를 펼쳤다</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「펑크 로드 스피릿」</span></span><div class="ref-quote">오늘 대단한 사람이 우주정거장에 방문한대. 갑작스러운 발표라 다들 준비에 여념이 없어. 접대가 소홀하기라도 했다간 헤르타 님의 얼굴에 먹칠하는 거잖아</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「펑크 로드 스피릿」</span></span><div class="ref-quote">오! 안녕하세요, {NICKNAME}. 말씀 많이 들었습니다. 헤르타 씨가 최근 들어 당신의 얘기를 자주 하더군요</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「스스로 부른 화」</span></span><div class="ref-quote">헤르타 님은 별일 아니라면서 순방을 떠나셨어</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「스스로 부른 화」</span></span><div class="ref-quote">이제 남은 여파는 우주정거장 내부에서 수습할 수 있을 겁니다. 헤르타 씨를 대신해 감사의 인사를 하고 싶군요</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">지드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">지드의 인게임 대사</span></span><div class="ref-quote">게다가 전 「컴퍼니」 사람도 아닌데요, 뭘. 우주정거장은 헤르타 님이 지키고 계시고, 그분이 안 계신다고 해도 문제가 생기면 아스타 정거장 책임자님이 계시잖아요</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">레너드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">레너드의 인게임 대사</span></span><div class="ref-quote">하지만 우주정거장은 달라요. 어딜 봐도 아스타 정거장 책임자가 보이거든요. 운이 좋으면 가끔 헤르타 님에게 혼나기도 하죠——그 지니어스 클럽의 헤르타 님에게 말이죠!</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">안기쁨의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">안기쁨의 인게임 대사</span></span><div class="ref-quote">…헤르타 님이요? 안 돼요. 저 같은 말단 연구원이 어떻게 그런 요구를 하겠어요……?</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">레너드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">레너드의 인게임 대사</span></span><div class="ref-quote">헤르타 님도 아셨다고요? 끝장이다, 이제 다 망했어…</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「펑크 로드 스피릿」</span></span><div class="ref-quote">헤르타 씨가 당신을 무척 궁금해하더라고요, 저도 마찬가지고요. 스텔라론과 공생하는 건 대체 어떤 느낌인가요? 서로를 더 이해하면서 이 질문의 대답을 찾을 수 있는 시간이 주어졌으면 좋겠네요</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「펑크 로드 스피릿」</span></span><div class="ref-quote">안녕하세요. 헤르타 씨가 최근 들어 자주 언급했던 사람이 당신인 것 같군요</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">폼폼의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">폼폼의 인게임 대사</span></span><div class="ref-quote">차장도 깜짝 놀랐어. 헤르타 씨가 여기서 당분간 「업무 교류」를 하라며 보내준 거야. {NICKNAME}이(가) 시뮬레이션 우주 테스트를 도와준 답례래</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「영웅이여, 그 피 묻은 희망을 이루어라」</span></span><div class="ref-quote">그렇습니다. 헤르타 씨의 부탁대로 무명객 여러분을 만나러 왔으니 안심하시죠, {NICKNAME} 씨</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">지드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">지드의 인게임 대사</span></span><div class="ref-quote">헤르타 님과 몇몇 연구실에서「컴퍼니」에 개발을 맡긴 제품들이 있는데, 운송하던 중에 약탈을 당해서 행방이 묘연해졌다고 들었어요. 그 바람에 다들 업무에 복귀해야 하는 상황이죠……</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">아를란의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아를란의 인게임 대사</span></span><div class="ref-quote">죄송해요. 헤르타 님께서 최근 서포트 캐빈에 대량의 「실험 소재」를 쌓아놓으셨어요. 그분의 말을 빌려 말하자면 「불똥 하나만 튀어도 우주정거장이 통째로 날아갈 거야」</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">헤르타 씨한테 그렇게 위험한 물건을 서포트 캐빈에 쌓아두면 안 된다고 건의하는 게 합리적일 것 같은데?</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">아를란의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아를란의 인게임 대사</span></span><div class="ref-quote">맞아요. 하지만 다들 헤르타 님의 성격을 아시잖아요……</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">CS_Chap00_Act3010_Caption</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Narration의 인게임 대사</span></span><div class="ref-quote">얼마 전, 위대하신 지니어스 클럽 #83 헤르타 님이 우주정거장에서 습격을 받은 후 행방불명되셨으며, 현재까지 이 사건과 관련해 성명을 발표한 조직은 없습니다</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">CS_Chap00_Act3020_Caption</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Narration의 인게임 대사</span></span><div class="ref-quote">헤르타 님의 습격 사건에 대한 새로운 소식입니다! 「소멸파」가 이번 사건에 대한 범행을 시인하였으며, 다음 행보를 알렸습니다. 협회는 이와 같은 행동을 강력하게 규탄하면서……</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">CS_Chap00_Act380_Caption</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Narration의 인게임 대사</span></span><div class="ref-quote">헤르타의 인형이 피습되기 전, 마지막으로 본 사람이……</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">헤르타의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">헤르타의 인게임 대사</span></span><div class="ref-quote">흥, 하지만 헤르타 인형이 되고 싶어 하는 게 나 말고 또 누가 있겠어? 결국 두 명의 내가 멀뚱멀뚱 서로 쳐다보는 결말로 끝나겠지</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">헤르타 씨 셋이 있는 사진을 찍고 싶어요</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">더 많은 헤르타 씨가 필요해요</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">헤르타가 제어 인형 두 개를 더 데려왔다……</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">헤르타 인형의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">헤르타 인형의 인게임 대사</span></span><div class="ref-quote">헤르타 님은 세상에 단 하나뿐인 존재! 헤르타 님은 그 누구보다 지혜로우신 분!</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">헤르타 인형의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">헤르타 인형의 인게임 대사</span></span><div class="ref-quote">헤르타 님을 위해 일할 수 있어 영광입니다!</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">경기 진행자의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">경기 진행자의 인게임 대사</span></span><div class="ref-quote">등록된 이름은 「위대한 헤르타 님은 이 정도로 노력하는 팬클럽을 가지실만한 클라스다」, 줄여서 「헤르•클라스」호예요</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">헤르타 인형의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">헤르타 인형의 인게임 대사</span></span><div class="ref-quote">후후, 헤르타 님은 아이가 장난감을 가지고 놀듯 온 우주를 주무르시지!</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">CS_Chap00_Act3010_Caption</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Narration의 인게임 대사</span></span><div class="ref-quote">얼마 전, 위대하신 지니어스 클럽 #83 헤르타 님이 우주정거장에서 습격을 받은 후 행방불명되셨으며, 현재까지 이 사건과 관련해 성명을 발표한 조직은 없습니다</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">당신이 「헤르타」 정거장에서 막 위험천만한 모험을 겪었던 때였다. 그 후, 당신은 은하열차에 탑승해 자신만의 우주 코미디를 펼쳤다</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">폼폼의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">폼폼의 인게임 대사</span></span><div class="ref-quote">차장도 깜짝 놀랐어. 헤르타 씨가 여기서 당분간 「업무 교류」를 하라며 보내준 거야. {NICKNAME}이(가) 시뮬레이션 우주 테스트를 도와준 답례래</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">폼폼의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">이건 절대 헤르타 씨의 「속뜻」이 아닐 거야! 「볶음밥 천재 123호」, 은하열차의 식음료 담당자를 도발하는 건 금지야!</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">「닥쳐」의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">「닥쳐」의 인게임 대사</span></span><div class="ref-quote">헤르타 님의 호의는 감사하지만, 저는 아직 은퇴할 나이가 아닙니다. 여전히 무명객 여러분께 *양질의* 식사 서비스를 계속 제공할 수 있습니다</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「펑크 로드 스피릿」</span></span><div class="ref-quote">오! 안녕하세요, {NICKNAME}. 말씀 많이 들었습니다. 헤르타 씨가 최근 들어 당신의 얘기를 자주 하더군요</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「펑크 로드 스피릿」</span></span><div class="ref-quote">헤르타 씨가 당신을 무척 궁금해하더라고요, 저도 마찬가지고요. 스텔라론과 공생하는 건 대체 어떤 느낌인가요? 서로를 더 이해하면서 이 질문의 대답을 찾을 수 있는 시간이 주어졌으면 좋겠네요</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「펑크 로드 스피릿」</span></span><div class="ref-quote">안녕하세요. 헤르타 씨가 최근 들어 자주 언급했던 사람이 당신인 것 같군요</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「영웅이여, 그 피 묻은 희망을 이루어라」</span></span><div class="ref-quote">두 분의 행방을 찾게 되어 저와 헤르타 씨도 정말 기쁘답니다, {NICKNAME} 씨</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「영웅이여, 그 피 묻은 희망을 이루어라」</span></span><div class="ref-quote">그렇습니다. 헤르타 씨의 부탁대로 무명객 여러분을 만나러 왔으니 안심하시죠, {NICKNAME} 씨</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「영웅이여, 그 피 묻은 희망을 이루어라」</span></span><div class="ref-quote">안심하세요, {NICKNAME} 씨. 헤르타 씨와 전 앰포리어스를 위해 왔습니다</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">지드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">지드의 인게임 대사</span></span><div class="ref-quote">헤르타 님과 몇몇 연구실에서「컴퍼니」에 개발을 맡긴 제품들이 있는데, 운송하던 중에 약탈을 당해서 행방이 묘연해졌다고 들었어요. 그 바람에 다들 업무에 복귀해야 하는 상황이죠……</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">아스타의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아스타의 인게임 대사</span></span><div class="ref-quote">사실 우주정거장에서 사용하는 건 「헤르타 특별판」이라 광고가 없거든. 내가 깜빡했네…. 판매자한테 연락해서 특별판으로 교체해달라고 할게</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">아를란의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아를란의 인게임 대사</span></span><div class="ref-quote">죄송해요. 헤르타 님께서 최근 서포트 캐빈에 대량의 「실험 소재」를 쌓아놓으셨어요. 그분의 말을 빌려 말하자면 「불똥 하나만 튀어도 우주정거장이 통째로 날아갈 거야」</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">헤르타 씨한테 그렇게 위험한 물건을 서포트 캐빈에 쌓아두면 안 된다고 건의하는 게 합리적일 것 같은데?</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">아를란의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아를란의 인게임 대사</span></span><div class="ref-quote">맞아요. 하지만 다들 헤르타 님의 성격을 아시잖아요……</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">안전을 위해서 일단 철수하는 게 어떨까요? 용건이 있으면 헤르타 씨가 실험을 끝낸 다음에 다시 오죠……</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">헤르타가 제어 인형 두 개를 더 데려왔다……</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">헤르타 인형의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">헤르타 인형의 인게임 대사</span></span><div class="ref-quote">헤르타 님을 위해 일할 수 있어 영광입니다!</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">헤르타 인형의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">헤르타 인형의 인게임 대사</span></span><div class="ref-quote">헤르타 님은 세상에 단 하나뿐인 존재! 헤르타 님은 그 누구보다 지혜로우신 분!</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">헤르타 씨 셋이 있는 사진을 찍고 싶어요</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">더 많은 헤르타 씨가 필요해요</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">헤르타의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">헤르타의 인게임 대사</span></span><div class="ref-quote">흥, 하지만 헤르타 인형이 되고 싶어 하는 게 나 말고 또 누가 있겠어? 결국 두 명의 내가 멀뚱멀뚱 서로 쳐다보는 결말로 끝나겠지</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">이 음료를 마시면 인격에 영향이 갈 수도 있대요. 어쩌면 헤르타 씨의 인형에게 도움이 될지도 몰라요</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">아스타의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아스타의 인게임 대사</span></span><div class="ref-quote">페피는 오래전부터 레이싱을 하고 싶어 했고, 난… 헤르타 정거장을 홍보하려고 왔어. 일과 휴식, 두 마리 토끼를 잡은 셈이지</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">경기 진행자의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">경기 진행자의 인게임 대사</span></span><div class="ref-quote">등록된 이름은 「위대한 헤르타 님은 이 정도로 노력하는 팬클럽을 가지실만한 클라스다」, 줄여서 「헤르•클라스」호예요</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">페피의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페피의 인게임 대사</span></span><div class="ref-quote">(「더•헤르•클라스」호와 「헤르•클라스」호야. 둘 다 헤르타 씨에게서 영감을 받아 디자인한 거지, 멍!)</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">주인</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">헤르타</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">파벌</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">지니어스 클럽 - 지식</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">연구 부서</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">관리과, 은하 지정학과, 지형학과, 생태과, 신비주의과, 방위과, 의료과, 정비과, 서비스과</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">주요 인물</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/951?lang=ko-kr">원문</a></span><div class="ref-quote">아스타; 아를란; 건; 힌켈; 온명덕</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「스스로 부른 화」</span></span><div class="ref-quote">헤르타 님은 별일 아니라면서 순방을 떠나셨어</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">지드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">지드의 인게임 대사</span></span><div class="ref-quote">게다가 전 「컴퍼니」 사람도 아닌데요, 뭘. 우주정거장은 헤르타 님이 지키고 계시고, 그분이 안 계신다고 해도 문제가 생기면 아스타 정거장 책임자님이 계시잖아요</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">레너드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">레너드의 인게임 대사</span></span><div class="ref-quote">하지만 우주정거장은 달라요. 어딜 봐도 아스타 정거장 책임자가 보이거든요. 운이 좋으면 가끔 헤르타 님에게 혼나기도 하죠——그 지니어스 클럽의 헤르타 님에게 말이죠!</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">안기쁨의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">안기쁨의 인게임 대사</span></span><div class="ref-quote">…헤르타 님이요? 안 돼요. 저 같은 말단 연구원이 어떻게 그런 요구를 하겠어요……?</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">레너드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">레너드의 인게임 대사</span></span><div class="ref-quote">헤르타 님도 아셨다고요? 끝장이다, 이제 다 망했어…</div></li>
 <li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">아스타의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아스타의 인게임 대사</span></span><div class="ref-quote">헤르타 님은 요즘 중요한 테스트가 있어. 이런 일로 번거롭게 해드릴 수 없지</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「스스로 부른 화」</span></span><div class="ref-quote">로직: 헤르타 씨 본인에게 물어보면 되죠</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「영웅이여, 그 피 묻은 희망을 이루어라」</span></span><div class="ref-quote">안심하세요, {NICKNAME} 씨. 헤르타 씨와 전 앰포리어스를 위해 왔습니다</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「스스로 부른 화」</span></span><div class="ref-quote">…헤르타 씨의 심부름을 한 것 같은데요?</div></li>
-<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">아스타의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아스타의 인게임 대사</span></span><div class="ref-quote">사실 우주정거장에서 사용하는 건 「헤르타 특별판」이라 광고가 없거든. 내가 깜빡했네…. 판매자한테 연락해서 특별판으로 교체해달라고 할게</div></li>
-<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">CS_Chap00_Act3010_Caption</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Narration의 인게임 대사</span></span><div class="ref-quote">헤르타 님의 단독 속보입니다——헤르클라스 여러분, 반갑습니다! 긴급 속보를 알립니다</div></li>
-<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">아스타의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아스타의 인게임 대사</span></span><div class="ref-quote">페피는 오래전부터 레이싱을 하고 싶어 했고, 난… 헤르타 정거장을 홍보하려고 왔어. 일과 휴식, 두 마리 토끼를 잡은 셈이지</div></li>
-<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">페피의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페피의 인게임 대사</span></span><div class="ref-quote">(「더•헤르•클라스」호와 「헤르•클라스」호야. 둘 다 헤르타 씨에게서 영감을 받아 디자인한 거지, 멍!)</div></li></ol></details>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">CS_Chap00_Act3010_Caption</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Narration의 인게임 대사</span></span><div class="ref-quote">헤르타 님의 단독 속보입니다——헤르클라스 여러분, 반갑습니다! 긴급 속보를 알립니다</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">CS_Chap00_Act3020_Caption</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Narration의 인게임 대사</span></span><div class="ref-quote">헤르타 님의 습격 사건에 대한 새로운 소식입니다! 「소멸파」가 이번 사건에 대한 범행을 시인하였으며, 다음 행보를 알렸습니다. 협회는 이와 같은 행동을 강력하게 규탄하면서……</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">CS_Chap00_Act380_Caption</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Narration의 인게임 대사</span></span><div class="ref-quote">헤르타의 인형이 피습되기 전, 마지막으로 본 사람이……</div></li>
+<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「펑크 로드 스피릿」</span></span><div class="ref-quote">오늘 대단한 사람이 우주정거장에 방문한대. 갑작스러운 발표라 다들 준비에 여념이 없어. 접대가 소홀하기라도 했다간 헤르타 님의 얼굴에 먹칠하는 거잖아</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>장소 · 선주·정거장·거점</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>장소</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div></div>
-  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 갤러리, 공식 HoYoWiki — 기본 정보</p>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%97%A4%EB%A5%B4%ED%83%80&amp;page_slug=loc-951">수정 요청</a></div>
@@ -812,12 +705,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="loc-951">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%ED%97%A4%EB%A5%B4%ED%83%80&amp;body=%ED%97%A4%EB%A5%B4%ED%83%80+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Floc-951.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

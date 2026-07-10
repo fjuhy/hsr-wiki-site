@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>아스타 · hoyohoyo.wiki</title>
+  <meta name="description" content="아스타는 우주정거장 「헤르타」의 책임자이자 천문학 연구자다. 명문가의 후계자였던 그를 정거장으로 보낸 것은 헤르타 본인이 아니라, 가족 회의실에 나타나 3일 안에 그를 우주정거장으로 보내라고 명령한 헤르타의 인형이었다. 정거장 책임자가 된 뒤로는 연구원 관리, 설비 구매, 위기 대응까지 직접 챙긴다.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="hoyohoyo.wiki">
+  <meta property="og:title" content="아스타 · hoyohoyo.wiki">
+  <meta property="og:description" content="아스타는 우주정거장 「헤르타」의 책임자이자 천문학 연구자다. 명문가의 후계자였던 그를 정거장으로 보낸 것은 헤르타 본인이 아니라, 가족 회의실에 나타나 3일 안에 그를 우주정거장으로 보내라고 명령한 헤르타의 인형이었다. 정거장 책임자가 된 뒤로는 연구원 관리, 설비 구매, 위기 대응까지 직접 챙긴다.">
+  <meta property="og:url" content="https://hoyohoyo.wiki/char-12.html">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="canonical" href="https://hoyohoyo.wiki/char-12.html">
+  <link rel="icon" href="data:,">
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #111418;
+    --paper: #191e22;
+    --surface: #20272a;
+    --ink: #edf2f0;
+    --muted: #aab6b2;
+    --line: #34403d;
+    --accent: #7fc9bd;
+    --accent-ink: #dff8f3;
+    --accent-soft: #213c3a;
+    --warn: #e1ad7d;
+    --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111418;
+  --paper: #191e22;
+  --surface: #20272a;
+  --ink: #edf2f0;
+  --muted: #aab6b2;
+  --line: #34403d;
+  --accent: #7fc9bd;
+  --accent-ink: #dff8f3;
+  --accent-soft: #213c3a;
+  --warn: #e1ad7d;
+  --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { background: var(--accent-soft); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 2px;
+}
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.site-header-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
+.brand:hover { background: transparent; color: var(--accent-ink); }
+.brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.top-links a, .theme-toggle {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.theme-toggle { cursor: pointer; min-width: 38px; }
+.top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.layout {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 24px;
+}
+.sidebar {
+  align-self: start;
+  position: sticky;
+  top: 74px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  padding: 12px;
+}
+.sidebar h2 { font-size: 12px; margin: 0 0 10px; color: var(--muted); letter-spacing: .04em; }
+.queue-list { display: grid; gap: 3px; max-height: 74vh; overflow: auto; }
+.category-nav-group { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
+.category-nav-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-special + .category-nav-group { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-parent { font-weight: 850; }
+.category-nav-child { padding-left: 18px !important; font-size: 13px; color: var(--muted) !important; }
+.category-nav-special { font-weight: 850; border-bottom: 1px solid var(--line); padding-bottom: 8px; margin-bottom: 8px; }
+.queue-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 7px;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.queue-list a:hover, .queue-list a[aria-current="page"] { background: var(--accent-soft); }
+.article-shell {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.article-top {
+  padding: 28px 42px 18px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; color: var(--muted); font-size: 13px; }
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs span::before { content: "/"; margin-right: 6px; color: var(--muted); }
+.article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
+.article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-mini-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.article-mini-actions a { color: var(--muted); text-decoration: none; }
+.article-mini-actions a:hover { color: var(--accent-ink); background: transparent; text-decoration: underline; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: color-mix(in srgb, var(--paper) 72%, var(--accent-soft));
+  color: var(--accent-ink);
+  font-size: 12px;
+  font-weight: 760;
+}
+.article-body { padding: 26px 42px 44px; max-width: 900px; }
+.article-body h2 {
+  margin: 34px 0 12px;
+  padding-top: 12px;
+  font-size: 24px;
+  line-height: 1.32;
+  border-top: 1px solid var(--line);
+}
+.article-body h2:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.article-body h3 { margin: 22px 0 8px; font-size: 18px; line-height: 1.35; }
+.article-body p { margin: 0 0 16px; }
+.article-body ul { margin: 0 0 18px; padding-left: 20px; }
+.article-body li { margin: 6px 0; }
+.wiki-link { font-weight: 730; text-decoration-style: solid; }
+.cite-ref { font-size: .72em; vertical-align: super; margin-left: 2px; }
+.cite-ref a {
+  border-radius: 999px;
+  padding: 1px 4px;
+  background: var(--accent-soft);
+  text-decoration: none;
+  font-weight: 800;
+}
+.references, .article-tools, .comments-section, .ad-slot, .report-panel {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.references { font-size: 12px; line-height: 1.5; }
+.references summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.references summary:hover { color: var(--accent-ink); }
+.references h2, .article-tools h2, .comments-section h2, .report-panel h2 { border-top: 0; margin: 0 0 12px; padding-top: 0; font-size: 17px; }
+.references ol { padding-left: 18px; }
+.references li { margin: 6px 0 10px; }
+.ref-title { font-weight: 800; }
+.ref-source, .subtle { color: var(--muted); font-size: 12px; }
+.ref-quote { color: var(--muted); margin-top: 3px; font-size: 11px; }
+.article-tools {
+  margin-top: 28px;
+  font-size: 13px;
+}
+.article-tools summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.article-tools summary:hover { color: var(--accent-ink); }
+.info-grid, .category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.info-item, .category-card, .home-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 11px 12px;
+}
+.category-card, .home-card {
+  color: var(--ink);
+  text-decoration: none;
+}
+.category-card:hover, .home-card:hover { background: var(--accent-soft); }
+.category-section { margin-bottom: 18px; }
+.category-subsection { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 12px; }
+.category-subsection h3 { margin-bottom: 4px; }
+.info-item strong, .category-card strong, .home-card strong { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.document-tree { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.document-tree ul { list-style: none; margin: 8px 0 0; padding-left: 18px; border-left: 1px solid var(--line); display: grid; gap: 6px; }
+.document-tree li { margin: 0; }
+.document-tree a { font-weight: 780; text-decoration: none; }
+.document-tree-category > div, .document-tree-subcategory > div, .document-tree-page { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.document-tree-category > div > a { color: var(--ink); font-size: 18px; }
+.document-tree-subcategory > div > a { color: var(--accent); }
+.status-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+.status-filter input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.status-group { margin-top: 22px; }
+.status-group h3 { margin-bottom: 4px; }
+.status-list { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.status-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 9px;
+}
+.status-row a { font-weight: 800; text-decoration: none; }
+.status-row p { grid-column: 1 / -1; margin: 0; }
+.status-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  background: var(--surface);
+  color: var(--ink);
+}
+.status-pill.is-documented { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); color: var(--accent-ink); }
+.status-pill.is-thin, .status-pill.is-out_of_scope { border-color: color-mix(in srgb, var(--warn) 46%, var(--line)); color: var(--warn); }
+.history-list { margin: 12px 0 0; padding-left: 18px; }
+.history-list li { margin: 7px 0; }
+.log-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+.log-list li {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+}
+.action-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+.button-link:hover { background: var(--accent-soft); }
+.comments-section input, .comments-section textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.comments-section textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+.comments-section button {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 760;
+}
+.comments-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0 0; }
+.comments-toolbar button, .comment-card button, .report-panel button {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+}
+.comments-section button[type="submit"], .report-panel button[type="submit"] {
+  background: var(--accent);
+  color: var(--paper);
+}
+.comments-list { display: grid; gap: 10px; margin-top: 14px; }
+.comment-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 10px 12px;
+}
+.comment-card p { margin: 5px 0 0; }
+.comment-card.is-held { border-style: dashed; }
+.comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+.ad-slot { color: var(--muted); font-size: 12px; }
+.stub { padding: 38px 42px; max-width: 900px; }
+.stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
+.stub p { max-width: 760px; }
+.home-hero {
+  position: relative;
+  min-height: clamp(320px, 40vw, 520px);
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+  overflow: hidden;
+}
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
+}
+.home-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.home-hero-image-dark { display: none; }
+.home-hero-copy {
+  width: min(760px, 100%);
+  padding: clamp(34px, 6vw, 72px) 42px 38px;
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
+}
+.home-hero-kicker {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  color: rgba(59,72,92,.74);
+  font-size: 13px;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+.home-hero h1 {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  font-size: 64px;
+  font-weight: 820;
+  letter-spacing: 0;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+.home-hero-subtitle {
+  margin: 0;
+  max-width: 560px;
+  color: rgba(24,34,55,.84);
+  font-size: 21px;
+  line-height: 1.55;
+  font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+}
+.home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
+.home-section h2 { margin: 0 0 12px; font-size: 21px; }
+.recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
+.report-panel form { display: grid; gap: 10px; }
+.report-panel label { display: grid; gap: 4px; font-weight: 760; }
+.report-panel input, .report-panel textarea, .report-panel select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 9px 10px;
+  font: inherit;
+}
+.report-panel textarea { min-height: 130px; resize: vertical; }
+@media (max-width: 900px) {
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
+}
+@media (max-width: 820px) {
+  body { font-size: 16px; line-height: 1.74; }
+  .layout { grid-template-columns: 1fr; padding: 14px; }
+  .article-shell { order: 1; }
+  .sidebar { order: 2; position: static; }
+  .queue-list { max-height: 34vh; }
+  .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
+  .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
+  .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
+}
+@media (max-width: 520px) {
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
+  .brand small { display: none; }
+  .top-links a { padding: 7px 8px; }
+  .home-hero h1 { font-size: 33px; }
+  .article-body { padding-bottom: 32px; }
+}</style>
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
+  <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
+  <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
+  <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
+  <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
+</head>
+<body>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">hoyohoyo.wiki</a><search class="search-shell" data-wiki-search data-pagefind-ignore>
+  <form class="search-form" data-search-form role="search">
+    <label class="search-input-wrap">
+      <span class="sr-only">위키 검색</span>
+      <input class="search-input" data-search-input type="search" placeholder="문서·고유명사 검색 /" autocomplete="off" spellcheck="false">
+      <span class="search-kbd">/</span>
+    </label>
+  </form>
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-panel-inner">
+      <section class="search-column">
+        <h2 class="search-heading">자동완성</h2>
+        <div data-search-suggestions></div>
+      </section>
+      <section class="search-column">
+        <h2 class="search-heading">문서 검색</h2>
+        <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
+      </section>
+    </div>
+  </div>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+<main class="layout">
+  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
+<a class="category-nav-child" href="category-people-stellaron-hunters.html"><span>스텔라론 헌터</span></a>
+<a class="category-nav-child" href="category-people-herta-space-station.html" aria-current="page"><span>우주정거장 「헤르타」</span></a>
+<a class="category-nav-child" href="category-people-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-people-ipc.html"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-people-belobog.html"><span>야릴로-Ⅵ·벨로보그</span></a>
+<a class="category-nav-child" href="category-people-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-people-penacony.html"><span>페나코니</span></a>
+<a class="category-nav-child" href="category-people-amphoreus.html"><span>앰포리어스</span></a>
+<a class="category-nav-child" href="category-people-cosmic-factions.html"><span>우주 유랑 세력</span></a>
+<a class="category-nav-child" href="category-people-other.html"><span>기타 인물</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-factions.html"><span>파벌</span></a><a class="category-nav-child" href="category-factions-path.html"><span>운명의 길 파벌</span></a>
+<a class="category-nav-child" href="category-factions-ipc.html"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-factions-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-factions-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-factions-penacony.html"><span>페나코니 세력</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-paths.html"><span>운명의 길</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
+<a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
+<a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
+<a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
+<a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+  <article class="article-shell" data-pagefind-body>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-herta-space-station.html">우주정거장 「헤르타」</a><span>아스타</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EC%8A%A4%ED%83%80&amp;page_slug=char-12">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>아스타</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주정거장 「헤르타」</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyowiki/2023/02/21/7efb3fde8547b31aa6328e5393538d86_8780278128209122769.png" alt="아스타 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
+    <div class="article-body"><h2 id="개요">개요</h2>
+<p>아스타는 우주정거장 「헤르타」의 책임자이자 천문학 연구자다.<sup class="cite-ref" title="공식 HoYoWiki · 아스타"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 명문가의 후계자였던 그를 정거장으로 보낸 것은 헤르타 본인이 아니라, 가족 회의실에 나타나 3일 안에 그를 우주정거장으로 보내라고 명령한 헤르타의 인형이었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 정거장 책임자가 된 뒤로는 연구원 관리, 설비 구매, 위기 대응까지 직접 챙긴다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>정거장 책임자가 된 뒤 아스타의 업무는 크게 늘었다. 의견이 다른 연구원들을 관리하고, 헤르타 대신 편지에 답장하고, 여러 회사와 소통하며 새 설비를 구매한다. &quot;2번 설비실의 뉴웰 이만 망원경을 가져와. 100배 천문 단위로 설치하고 전방 『분자구름』을 관측한다&quot;는 지시도 직접 내린다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 아스타가 정거장을 관리하기 시작한 뒤로 헤르타는 좀처럼 모습을 드러내지 않았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 헤르타는 시시한 질문에 답하는 일과 정거장 관리를 아스타에게 맡길 수 있고, 자신이 놓친 흥미로운 연구 방향까지 그가 찾아낼 수 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 헤르타의 언급"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>정거장 안에서 아스타의 이름은 문제 해결의 기준으로 통한다. 헤르타는 문제를 해결하고 싶으면 아스타를 찾아가고, 사람을 해결하고 싶어도 아스타를 찾아가라고 말하고,<sup class="cite-ref" title="게임 본편 · 헤르타의 언급"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 레너드는 우주정거장 어디에서나 아스타 정거장 책임자가 보인다고 말한다.<sup class="cite-ref" title="게임 본편 · 레너드의 언급"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 아스타는 연구원들이 보상을 가로채지 못하게 경고하고, 지식 아카이브 인덱스 시스템을 공유하며, 방위과에 정박 중인 비행체의 소방 안전 검사를 명령한다.<sup class="cite-ref" title="게임 본편 · 지드의 언급"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 단항의 언급"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 아를란의 언급"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>반물질 군단이 우주정거장을 습격하자, 단항은 정거장 책임자 아스타의 의뢰로 구조하러 왔다고 밝힌다.<sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이후 「토파즈 후원단」이 정거장에서 훔친 에테르 정령은 아스타의 개인 소장품으로 밝혀졌고,<sup class="cite-ref" title="게임 본편 · 와일더의 언급"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 토파즈는 아스타와 협상해 정령의 처분을 열차 일행에게 맡겼다.<sup class="cite-ref" title="게임 본편 · 토파즈의 언급"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 왓슨은 아스타가 특별 의뢰를 해결할 권한 있는 특파원으로 개척자를 추천했다고 전한다.<sup class="cite-ref" title="게임 본편 · 왓슨의 언급"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 왓슨의 언급"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<h2 id="가문과-천문학">가문과 천문학</h2>
+<p>아스타는 어린 나이에 직접 망원경을 고르고 도성 시스템까지 외울 만큼 천문학에 몰두했다. 어른들은 겉으로는 그를 칭찬했지만, 뒤에서는 &quot;어린 나이에 비싼 것만 고른다&quot;고 흉봤다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 언젠가 발견한 별에 자기 이름을 붙이고 싶다는 아스타의 말에, 가족은 &quot;생일선물로 네 이름으로 된 행성은 어때? 두 개도 괜찮아. 어차피 얼마 안 하니까&quot;라고 답했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
+<p>시간이 흐르면서 집안 어른들은 천문학자가 되고 싶다는 아스타를 문제아로 여기기 시작했고, 가족 회의에서 이 일로 몇 번이나 다툼이 벌어졌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 회의 끝에 헤르타의 인형이 회의실로 들어와 &quot;당신들에게 대드는 저 소녀의 말이 훨씬 더 재밌으니까&quot;라며 3일 안에 아스타를 우주정거장으로 보내라고 명령했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 공식 소개는 이 선택을 두고 &quot;우주정거장을 지휘하는 게… 가업을 물려받는 것보단 쉽겠지!&quot;라고 요약한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 아스타 본인도 지금까지 &quot;열심히 일하지 않으면 집으로 돌아가서 가업을 이어야 해&quot;라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•업무"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
+<p>정거장으로 오기 전, 아스타는 어머니와 배식 봉사를 나갔다가 아를란을 처음 만났다. 음식을 받고도 자리를 뜨지 않던 소년은 &quot;방금 먹은 밥값을 내고 싶은데 지금은 돈이 없으니까&quot;라고 말했고, 아스타의 어머니는 그에게 일자리를 소개해 줬다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>아스타는 첫 만남에서 도움이 필요하면 반드시 연락하라며, 도움은 절대 사양하지 않는다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 정거장에 도착했을 때 연구원들이 1인실을 마련해 줬지만, 모두와 멀리 떨어져 지내고 싶지 않아 쓰지 않았다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 헤르타처럼 제멋대로 행동하려는 사람에게는 먼저 헤르타만 한 지혜가 있는지 돌아보라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 헤르타에 대해"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
+<p>아를란과는 성대모사를 주고받을 만큼 편한 사이다. 아스타가 &quot;모두들 아스타 책임자님의 판단을 따르면 된다&quot;는 아를란의 말투를 흉내 내면, 아를란은 &quot;너도 조심해&quot;라는 아스타의 대꾸까지 받아넘긴다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아를란에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 아를란과 함께 출장을 갈 때는 반려 빼미를 열차 일행에게 맡기기도 했다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
+<p>돈으로 해결되는 문제에는 망설임이 적다. 열차에 문제가 생기면 돈으로 해결할 수 있는 일이라면 뭐든 말하라고 하고,<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 은하열차에 대해"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 토파즈에게는 비행체를 통째로 빌려 별바다를 보며 「컴퍼니」 이야기를 나누자고 제안한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 토파즈에 대해"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 완·매에게는 소매 액세서리 구매 링크를 물었다가 직접 수놓은 것임을 알고 놀랐고, 이후 완·매에게서 별 모양 펜던트를 선물 받았다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 완•매에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="person-994.html">헤르타</a> — 아스타를 정거장 책임자로 임명하고, 정거장 관리와 연구 방향 판단을 그에게 맡긴 고용주다.<sup class="cite-ref" title="게임 본편 · 헤르타의 언급"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></li>
+<li><a href="char-11.html">아를란</a> — 배식 봉사에서 처음 만난 뒤 정거장에서 함께 일하는 동료로, 성대모사를 주고받을 만큼 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아를란에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></li>
+<li><a href="topaz.html">토파즈</a> — 「<a href="topaz.html">토파즈</a> 후원단」이 훔친 아스타의 에테르 정령을 두고 협상해, 처분을 열차 일행에게 맡긴 인물이다.<sup class="cite-ref" title="게임 본편 · 토파즈의 언급"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></li>
+<li><a href="npc-732.html">왓슨</a> — 아스타가 특별 의뢰를 해결할 권한 있는 특파원으로 <a href="trailblazer.html">개척자</a>를 추천한 대상이다.<sup class="cite-ref" title="게임 본편 · 왓슨의 언급"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">아스타</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">우주정거장 「헤르타」의 책임자. 명문가 출신의 아가씨. 호기심 넘치는 천문학 연구자로 자기주장이 강한 연구원을 다루는데 능하다.</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 「별들은 자신의 궤적을 따라 움직이지. 그럼 인간들은? 인간은 정말 자신의 운명을 통제할 수 없는 걸까?」 우월한 가정 배경 덕분에 아스타는 별하늘을 탐사할 수 있는 힘을 가지게 되었지만 아이러니하게도 그 배경은 그녀의 성장을 막는 장애물이 되고 말았다 시간이 흐르면서 집안 어른들은 천문학자가 되고 싶다는 아스타를 문제아라고 생각하기 시작했다. 가족 회의에서 이 일로 친척들과 몇 번이나 다툼이 있었지만 바뀐 건 없었다 어느 날,...</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 우주정거장 「헤르타」의 책임자가 된 뒤 아스타의 삶은 더 바빠지기 시작했다. 그녀는 각자 의견이 다른 연구원들을 관리해야 했고 헤르타 대신 수많은 편지에 일일이 답장을 하는 건 물론 각 회사들과 소통하고 여러 가지 루트를 통해 새로운 설비를 구매해야 했다 「2번 설비실의 뉴웰 이만 망원경을 가져와. 100배 천문 단위로 설치하고 전방 『분자구름』을 관측한다」 「특히 입자 밀도에 주목하고, 초밀도 구조가 발견되면 『항성 배아』의...</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">헤르타의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">내가 대답하기 귀찮은 시시한 질문들에 답해주는 것 외에도, 아스타가 우주정거장을 관리하는 데 도움을 줄 수도 있고, 심지어는 내가 미처 발견하지 못한 흥미로운 연구 방향을 찾아낼 수도 있을 거야</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">헤르타의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">어쨌든 문제를 해결하고 싶다면 아스타를 찾아가고, 사람을 해결하고 싶어도 아스타를 찾아가</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">레너드의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">하지만 우주정거장은 달라요. 어딜 봐도 아스타 정거장 책임자가 보이거든요. 운이 좋으면 가끔 헤르타 님에게 혼나기도 하죠——그 지니어스 클럽의 헤르타 님에게 말이죠!</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">지드의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">수수료는 없어요. 전 인맥을 넓히고 싶지, 당신을 이용해서 돈을 벌 생각은 아니거든요——그리고 아스타 정거장 책임자가 연구원들에게 당신의 몫을 가로채지 말라고 경고했고요</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">단항의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">아스타가 지식 아카이브 인덱스 시스템을 공유해줘서 설치해 봤더니, 아카이브가 바이러스에 감염된 것 같아</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">아를란의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">그래서 아스타 정거장 책임자께서 방위과에 정박 중인 모든 비행체에 대해 소방 안전 검사를 실시하라고 명령하셨죠</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">이 우주정거장은 반물질 군단의 습격을 받았고 우린 정거장 책임자 아스타의 의뢰로 구조하러 왔어</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">와일더의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">사실 그 에테르 정령은 「토파즈 후원단」이 임의로 우주정거장 「헤르타」에서 훔친 소장품이에요——정확히는 정거장 책임자, 아스타 님의 소장품 중 하나죠</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">토파즈의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">아스타 씨랑 협상해 봤는데——너희한테 그 에테르 정령의 처분을 맡기자고 하시더라!? 너흰 제때 아스타 씨한테 알려주기만 하면 돼</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">왓슨의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">응? 아스타 정거장 책임자가 추천한 특파원이 이렇게 젊을 줄이야</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">왓슨의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">그래서 한 담당자가 아스타 정거장 책임자에게 특별 의뢰를 해결할 만한 권한 있는 「특파원」을 보내달라고 요청한 거야. 그래서 네가 오게 된 거지</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 어린 나이에 직접 망원경을 고르기 시작하는 모습을 본 어른들은 그녀에게 칭찬을 아끼지 않았고 그녀 스스로도 이를 꽤나 자랑스럽게 여겼다. 망원경의 메인 렌즈에 사용되는 기술, 도성 시스템을 기억하는 건 너무나 쉬웠으니까 그러던 어느 날, 어른들의 대화를 엿듣던 그녀는 그제야 진실을 알게 된다. 그녀를 칭찬하던 어른들이 그녀의 뒤에서 어린 나이에 비싼 것만 고른다고 혀를 끌끌 차고 있었다 망원경을 좋아하는 건 그녀의 개인적인 취향...</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">호기심과 체력 모두 왕성한 소녀. 우주정거장의 「헤르타」가 임명한 정거장 책임자다. 자기주장이 강한 연구원을 다루는 일이나, 각종 트집을 잡는 지식학회에 어떻게 우주정거장을 대표해 단도직입적으로 대응하는지 같은 건 아스타에게 모두 누워서 떡 먹기이다. 우주정거장을 지휘하는 게… 가업을 물려받는 것보단 쉽겠지!</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">자신에 대해•업무</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">맞아, 열심히 일하지 않으면 집으로 돌아가서 가업을 이어야 해…</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 그녀와 어머니가 제대로 된 봉사자인지는 별로 중요하지 않다는 걸 그녀도 잘 알고 있었다. 사람들이 원하는 건 두 사람이 이 자리에 얼굴을 비추는 것 그것뿐이니까 음식을 모두 나누어주자 사람들은 곧 흩어졌지만 남자아이 한 명은 제 자리에 서서는 꿈쩍도 하지 않고았다. 오른손에 상처를 입은 소년은 그녀에게 불만이 많은지 굶주린 늑대처럼 그녀를 노려보고 있었다 「너도 나한테 돈을 빌리고 싶은 거니?」 「아니요. 난 돈은 필요없어요....</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">안녕, {개척자}. 난 우주정거장 「헤르타」의 책임자 아스타라고 해. 도움이 필요하면 반드시 연락할게…. 걱정 마, 도움은 절대 사양하지 않거든</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">우주정거장에 도착했을 때 연구원들이 나한테 1인실을 따로 준비해 줬어. 고마웠지, 고맙긴 한데 거긴 모두랑 멀리 떨어져 있어서 거기서 지내고 싶지는 않더라고</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">헤르타에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">자신이 헤르타 님처럼 제멋대로 행동할 수 있다고 생각하는 사람이 있다면, 일단 자기가 헤르타 님 같은 지혜를 갖췄는지부터 고민해 봤으면 좋겠어~</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">아를란에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">아를란 성대모사 해줄게. 「모두들 아스타 책임자님의 판단을 따르면 된다」라고 하면, 내가 「너도 조심해」라고 해. 그럼 아를란은 「괜찮습니다, 전 저만의 판단이 있으니까요」라고 하지</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">뭐? 몰래 올라탄 게 아니었구나. 아스타와 아를란이 출장 가서, 너를 열차에 맡기기로 했다고…… 그랬구나</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">은하열차에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">열차는 은하를 유람하니까 내가 도와주지 못할 수도 있어. 하지만 돈으로 해결할 수 있는 일이라면 뭐든 얘기해</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">토파즈에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">전에 토파즈 씨랑 휴가 이야기를 나눴어. 비행체를 통째로 빌려서 드넓은 별바다를 감상하며 「컴퍼니」 얘기 좀 하자고 했는데… 언제쯤 시간이 맞을까……</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">완•매에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/12?lang=ko-kr">원문</a></span><div class="ref-quote">완•매 씨에게 소매 액세서리 구매 링크를 물어봤는데 놀랍게도 직접 수놓은 거였더라고. 게다가 그다음 우주정거장에 왔을 때 별 모양 펜던트를 나한테 선물하는 거 있지? 진짜 놀랐어! 손재주도 그녀의 논문만큼이나 섬세하더라니까</div></li></ol></details>
+<details class="article-tools" data-page-dates data-public-launch-surface>
+  <summary>문서 정보와 변경 로그</summary>
+  <h2>문서 정보</h2>
+  <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 우주정거장 「헤르타」</span></div>
+<div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
+<div class="info-item"><strong>작성 일자</strong><span>2026-07-02</span></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
+  <h3>최근 변경</h3>
+  <ol class="log-list" data-update-history><li>2026-07-02 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>
+  <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EC%8A%A4%ED%83%80&amp;page_slug=char-12">수정 요청</a></div>
+</details>
+
+<section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-12">
+  <h2>댓글</h2>
+  <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
+  <div class="giscus" data-giscus-container></div>
+  <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
+  <script src="https://giscus.app/client.js"
+    data-repo="fjuhy/hsr-wiki-issues"
+    data-repo-id="R_kgDOTGod_A"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOTGod_M4C__rq"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="0"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="ko"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+</section>
+</div>
+  </article>
+</main>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;:&quot;f803b654b24e4e57a86718dbfcdc82e2&quot;}"></script>
+</body>
+</html>

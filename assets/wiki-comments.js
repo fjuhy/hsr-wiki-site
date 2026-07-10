@@ -349,46 +349,6 @@ function initDisabled(root) {
   setStatus(root, '댓글은 운영 설정 연결 후 활성화됩니다.');
 }
 
-function initGiscusMode(root) {
-  const started = Date.now();
-  let settled = false;
-  const markReady = () => {
-    if (settled) return;
-    settled = true;
-    root.classList.add('is-giscus-ready');
-    root.classList.remove('is-giscus-unavailable');
-    window.removeEventListener('message', onMessage);
-  };
-  const markUnavailable = () => {
-    if (settled) return;
-    settled = true;
-    root.classList.add('is-giscus-unavailable');
-    root.classList.remove('is-giscus-ready');
-    window.removeEventListener('message', onMessage);
-  };
-  function onMessage(event) {
-    if (event.origin !== 'https://giscus.app') return;
-    const payload = event.data?.giscus;
-    if (payload?.resizeHeight || payload?.discussion) markReady();
-  }
-  window.addEventListener('message', onMessage);
-  const check = () => {
-    if (settled) return;
-    const iframe = root.querySelector('iframe.giscus-frame');
-    const height = iframe ? iframe.getBoundingClientRect().height : 0;
-    if (iframe && height > 180) {
-      markReady();
-      return;
-    }
-    if (Date.now() - started > 6500) {
-      markUnavailable();
-      return;
-    }
-    window.setTimeout(check, 500);
-  };
-  check();
-}
-
 function initComments(root) {
   const mode = root.dataset.commentsMode || 'disabled';
   if (mode === 'local_mock') {
@@ -400,7 +360,6 @@ function initComments(root) {
     return;
   }
   if (mode === 'giscus') {
-    initGiscusMode(root);
     return;
   }
   initDisabled(root);

@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>갤러거 · hoyohoyo.wiki</title>
-  <meta name="description" content="그의 첫인상은 느슨하고 무심한 중년 남성에 가깝지만, 페나코니의 보안과 꿈세계의 비밀을 잇는 역할은 훨씬 무겁다. 그는 “사냥개”로서 사고를 처리하는 사람이면서, 필요하다면 누군가를 감쪽같이 사라지게 만드는 편이 더 쉽다고 말할 만큼 거친 질서의 언어에 익숙하다. 이 말투는 허세만이 아니라, 페나코니의 화려한 좋은꿈 아래에서 누가 문제를 치우고 누가 흔적을 감추는지를 보여준다.">
+  <meta name="description" content="갤러거는 페나코니 사냥개 가문의 보안관이자, 좋은꿈의 술집에서 일하는 음료 제조가다. 그는 스스로를 「허구 역사학자」 갤러거라고 부르는데, 실제로는 여러 사람에게서 얻어낸 기억 조각을 자신의 것으로 만들어 꿈세계에 빚어낸 허구의 인물이다. 그는 “갤러거는 나의 가장 진실한 거짓말”이라고 말한다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="갤러거 · hoyohoyo.wiki">
-  <meta property="og:description" content="그의 첫인상은 느슨하고 무심한 중년 남성에 가깝지만, 페나코니의 보안과 꿈세계의 비밀을 잇는 역할은 훨씬 무겁다. 그는 “사냥개”로서 사고를 처리하는 사람이면서, 필요하다면 누군가를 감쪽같이 사라지게 만드는 편이 더 쉽다고 말할 만큼 거친 질서의 언어에 익숙하다. 이 말투는 허세만이 아니라, 페나코니의 화려한 좋은꿈 아래에서 누가 문제를 치우고 누가 흔적을 감추는지를 보여준다.">
+  <meta property="og:description" content="갤러거는 페나코니 사냥개 가문의 보안관이자, 좋은꿈의 술집에서 일하는 음료 제조가다. 그는 스스로를 「허구 역사학자」 갤러거라고 부르는데, 실제로는 여러 사람에게서 얻어낸 기억 조각을 자신의 것으로 만들어 꿈세계에 빚어낸 허구의 인물이다. 그는 “갤러거는 나의 가장 진실한 거짓말”이라고 말한다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/char-1924.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/char-1924.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,112 +620,89 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>갤러거</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B0%A4%EB%9F%AC%EA%B1%B0&amp;page_slug=char-1924">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>갤러거</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="assets/wiki-images/8c/ba84e3b270cbf2e86ff9144890034c9d_780215563457190-8c03e562ad66.webp" alt="갤러거 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>갤러거</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B0%A4%EB%9F%AC%EA%B1%B0&amp;page_slug=char-1924">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>갤러거</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/20/ba84e3b270cbf2e86ff9144890034c9d_7802155634571905416.png" alt="갤러거 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>그의 첫인상은 느슨하고 무심한 중년 남성에 가깝지만, <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>의 보안과 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>의 비밀을 잇는 역할은 훨씬 무겁다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 “사냥개”로서 사고를 처리하는 사람이면서, 필요하다면 누군가를 감쪽같이 사라지게 만드는 편이 더 쉽다고 말할 만큼 거친 질서의 언어에 익숙하다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 말투는 허세만이 아니라, 페나코니의 화려한 좋은꿈 아래에서 누가 문제를 치우고 누가 흔적을 감추는지를 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>갤러거의 중요한 비밀은 그가 단순한 현지 보안관으로만 끝나지 않는다는 점이다.<sup class="cite-ref" title="게임 본편 · 갤러거의 언급 · 갤러거의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그는 자신을 “허구 역사학자” 갤러거라고 밝히며, <a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 그가 여러 사람에게서 얻어낸 인지를 자신의 것으로 만들고 꿈세계에서 허구로 완벽한 “갤러거”를 만들어냈다고 지적한다.<sup class="cite-ref" title="게임 본편 · 갤러거의 언급 · 갤러거의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그래서 “갤러거”라는 이름은 한 개인의 신상 정보라기보다, 페나코니의 기억과 허구가 뒤섞여 만들어낸 역할이자 가면에 가깝다.<sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>갤러거는 은하열차 일행이 페나코니의 숨겨진 진실에 접근하는 과정에서 안내자와 문지기 역할을 동시에 맡는다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>는 갤러거 덕분에 “시계공”의 진짜 정체, 가족과의 관계, 좋은꿈과 죽음 뒤에 숨은 세력 투쟁에 관한 의문이 풀렸다고 정리한다. 이 장면에서 그는 단순히 정보를 전달하는 조력자가 아니라, 은하열차가 어느 질문을 던져야 하는지까지 방향을 바꾸는 인물이다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>그는 페나코니에 찾아온 무명객들을 처음부터 낯선 손님으로만 보지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 무명객에 대해"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 갤러거는 별들 사이에 통로가 있었던 시절 이 세계에도 무명객의 발자취가 남아 있었지만, 페나코니가 그 누구의 이름도 기억하지 못했다고 말한다. 이 말은 페나코니의 현재 사건이 새 손님의 우발적 방문이 아니라, 오래전에 끊긴 개척의 기억과 다시 이어지는 사건임을 암시한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 무명객에 대해"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•개척자"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>갤러거는 “시계공”의 이름으로 초대장을 보낸 인물로 이해된다. 히메코는 그가 <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a>의 위기를 해결할 파벌을 찾고, 그들이 페나코니로 와서 진실을 밝히길 바라는 마음에 “시계공”의 이름으로 초대장을 보낸 것인지 묻는다. 이 질문은 갤러거가 사건의 주변부에서 반응한 사람이 아니라, 외부 세력이 페나코니의 거짓된 평온을 흔들도록 판을 연 사람임을 보여준다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>좋은꿈의 술집에서 그는 사람을 취하게 만드는 음료만 만드는 것이 아니라, 손님이 감춰둔 말과 감정을 드러나게 하는 자리에 앉아 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 그는 스페셜 블렌드의 명성과 맛을 빌려 손님과 대화를 시작하고, 주변이 어두워지면 차가운 눈으로 기쁘고 슬픈 이야기를 듣는다. 그에게 음료 제조는 기분을 섞는 일이고, 꿈속에서 소다수를 만들 때 그때의 기분이 맛으로 들어간다. 그래서 갤러거의 바텐더 역할은 페나코니가 숨기려는 감정과 기억을 표면으로 끌어올리는 장치가 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>사냥개 가문의 보안관으로서 그는 좋은꿈의 질서를 유지하는 쪽에 서 있지만, 그 질서가 감추는 균열도 누구보다 잘 본다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그는 좋은꿈에는 기쁨뿐이며 바로 그것이 가장 큰 슬픔이라고 말하는 서술 속에 놓이고, 실의에 빠진 사람들은 가족에게 쫓겨날까 두려워 꿈세계 가장자리를 떠돈다. 갤러거가 맡은 보안은 단순한 순찰이나 체포가 아니라, 페나코니가 “기쁨”이라는 표면 아래 밀어낸 사람들을 지켜보고 감당하는 일이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>그의 작중 행보는 “진실”을 숨기는 사람의 행동과 “진실”을 마주하게 하는 사람의 행동을 함께 가진다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 히메코는 갤러거의 말에 다른 뜻이 있다고 느끼고, <a class="wiki-link" href="char-2494.html" title="반디">반디</a>는 그를 데려온 뒤 이제 “진실”을 마주할 시간이라고 말한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 갤러거는 비밀을 바로 털어놓는 안내자가 아니라, 상대가 감당할 수 있는 순간까지 진실을 늦추고, 때가 오면 그 진실의 입구로 사람들을 데려가는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>갤러거는 사냥개 가문 안에서 가볍게 소비되는 인물이 아니라, 흉터와 경력 때문에 인정과 존경을 받는 보안관으로 그려진다. 좋은꿈에서는 사고가 거의 없기 때문에 험악한 흉터는 보안관에게 보기 드문 영광이자 경력과 명성의 상징으로 받아들여진다. 용의자를 잡아도 기뻐하지 않는 그의 공허함은 사건 처리에 익숙해진 노련함과, 좋은꿈의 범죄가 더 이상 성취감으로 보상되지 않는 피로를 함께 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>전투와 실무의 감각도 그의 위상을 뒷받침한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 승급"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 갤러거는 직감과 본능도 훈련으로 날카롭게 벼릴 수 있다고 말하고, 몸에 밴 기억은 거짓말을 하지 않는다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 승급"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 이 대사는 그가 단순히 오래 버틴 사람이 아니라, 경험을 실제 대응 능력으로 바꿔 온 현장형 인물임을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 승급"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>그는 적 앞에서 물러서기보다 앞으로 나서는 쪽에 가깝다.</p>
-<p>갤러거의 강함은 압도적인 무력보다 오래된 경험, 정보 장악, 정체 조작에 더 크게 놓여 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 선데이는 갤러거가 수많은 인지를 모아 꿈세계에서 허구의 “갤러거”를 만들었다고 말하며, 이것은 무력보다 더 위험한 방식으로 한 인물의 존재 자체를 설계하는 능력에 가깝다. 갤러거의 위협성은 상대를 쓰러뜨리는 장면보다, 누가 그를 알고 있는지조차 불확실하게 만들고 사건의 진짜 출발점을 뒤늦게 드러내는 데서 커진다.<sup class="cite-ref" title="게임 본편 · 원칙을 고수하는 사냥개 가문 일원의 언급 · 원칙을 고수하는 사냥개 가문 일원의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>그의 한계는 시간과 소멸의 감각으로 나타난다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 그는 시간이 얼마 남지 않았다고 말하고, 전투 불능 상태에서는 다시 한 번만 더라고 중얼거리며, 전투 복귀 때는 자신의 사명이 끝나지 않았다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 갤러거는 강한 보안관이자 정체를 설계한 허구의 인물이지만, 무한히 버틸 수 있는 존재가 아니라 남은 사명을 향해 시간을 쓰는 사람으로 남는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<h3 id="사냥개-가문과-페나코니의-보안">사냥개 가문과 페나코니의 보안</h3>
-<p>갤러거는 자신을 사냥개 가문의 갤러거라고 소개하고, 자신이 기르는 들개들이 있었다고 말한다. 공식 설명에서도 그는 사냥개 가문의 보안관이며, 다섯 가문 중 사냥개가 보금자리를 수호하는 직책을 맡는다고 설명한다.<sup class="cite-ref" title="공식 HoYoWiki · 갤러거"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 관계에서 갤러거는 페나코니의 질서를 지키는 말단 인력이 아니라, 사냥개라는 거친 이름이 실제로 어떤 방식으로 문제를 처리하는지 보여주는 얼굴이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
-<p>그는 사냥개 가문의 이름이 썩 듣기 좋지 않으며, 사람들이 자신을 졸개라고 부른다고 말한다. 그러나 그 불명예에 가까운 호칭과 달리, 작중 인물들은 갤러거를 찾아야 할 보안관으로 여기고 가족이 발급한 서류를 통해 그를 만나려 한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 사냥개 가문에서의 갤러거는 낮게 불리는 이름과 실제 사건 해결 능력 사이의 간극을 품은 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
-<h3 id="은하열차와-무명객">은하열차와 무명객</h3>
-<p>갤러거는 신입 무명객에게 페나코니에 온 것을 환영한다고 말하며, 자신을 이곳의 “사냥개” 중 하나로 소개한다. 그는 파티 편성 대사에서 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>에게 “개척”의 힘을 다시 보여 달라고 말한다. 이 관계는 갤러거가 은하열차를 단순한 외부 손님으로 보지 않고, 페나코니가 잊은 오래된 발자취를 다시 불러올 세력으로 대한다는 점에서 중요하다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 무명객에 대해"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>히메코와 Mar. 7th는 여러 차례 갤러거를 찾아야 한다고 말한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 히메코는 갤러거가 은하열차 일행이 올 줄 알고 있었던 것 같다고 묻고, 그의 말에 다른 뜻이 있다고 판단한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 갤러거와 은하열차의 관계는 우연한 만남이 아니라, 초대와 조사와 해명의 순서로 짜인 만남이다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<h3 id="시계공-미하일-그리고-불가능한-일">시계공, 미하일, 그리고 “불가능한 일”</h3>
-<p>갤러거는 “시계공”의 이름과 강하게 연결된다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 히메코는 갤러거가 “시계공”의 이름으로 초대장을 보내 스텔라론의 위기를 해결할 파벌을 찾고, 그들이 페나코니의 진실을 밝히길 바랐는지 묻는다. 이 연결은 갤러거가 페나코니 내부의 문제를 외부의 개척 세력에게 넘긴 것이 아니라, 숨겨진 진실을 드러낼 수 있는 자리를 의도적으로 마련했다는 뜻을 갖는다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>히메코는 미하일이 가장 값진 무언가를 남겼을 것이라고 말하며, 갤러거에게 아직 할 말이 남아 있지 않느냐고 묻는다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 이 대화에서 갤러거는 시계공의 유산과 은하열차의 조사 사이를 잇는 증언자가 된다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 그의 역할은 과거의 이름을 보존하는 데 그치지 않고, 그 이름이 현재의 선택으로 이어지도록 사람들을 불러 모으는 데 있다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
-<h3 id="미샤와-쿨쿨이">미샤와 쿨쿨이</h3>
-<p>갤러거는 <a class="wiki-link" href="char-1808.html" title="미샤">미샤</a>를 말을 아주 잘 듣는 아이라고 말하고, 자신은 그 나이 때 사람들을 물고 다녔다고 농담한다. 파티 편성 대사에서는 미샤에게 엄한 데 돌아다니지 말고 일찍 자라고 말한다. 이 관계는 갤러거가 거칠고 무심해 보여도 어린 인물에게는 보호자처럼 행동한다는 면을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 미샤에 대해"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•미샤"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
-<p>미샤는 쿨쿨이가 기억의 영역 밈이며, 커다란 눈이 여러 개 달렸고 무섭게 생겼지만 실제로는 말을 잘 듣고 갤러거가 쭉 보살펴 왔다고 말한다. 갤러거가 위험한 존재를 단순히 제거하지 않고 돌봐 왔다는 사실은 그의 보안관 역할이 통제와 보호 사이에 놓여 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<h3 id="선데이와-가족의-숨은-질서">선데이와 가족의 숨은 질서</h3>
-<p>갤러거는 선데이에게서 “조화의 송가”와 비슷한 냄새가 나지만, 그 아래 더 진실한 냄새를 맡았다고 말한다. 선데이는 갤러거가 여러 인지의 조각을 자신의 것으로 만들고, 꿈세계에서 허구의 “갤러거”를 완성했다고 꿰뚫어 본다. 이 관계는 서로가 상대의 겉모습 아래를 맡거나 읽는 대립으로 이루어진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 선데이에 대해"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>선데이가 갤러거에게 인내심이 많지 않다고 압박하는 장면은 두 사람이 같은 사건의 핵심부에 서 있음을 보여준다. 갤러거가 선데이 아래의 진짜 냄새를 감지하고, 선데이가 갤러거의 허구적 정체를 파헤치는 구도는 페나코니의 좋은꿈이 서로 다른 거짓과 진실의 충돌로 유지되고 있음을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 선데이에 대해"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<h3 id="반디와-진실의-문턱">반디와 진실의 문턱</h3>
-<p>반디는 갤러거와 헤어진 뒤 누군가가 계속 자신들을 쫓아왔다고 말한다. 이후 반디는 주민들에게서 “갤러거”라는 낯익은 이름을 들었다고 말하고, 은하열차가 의논하는 동안 자신은 갤러거를 찾아보겠다고 한다.<sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup> 반디에게 갤러거는 단순한 조력자가 아니라, 페나코니에서 벌어지는 추적과 진실 탐색의 실마리로 기능한다.<sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
-<p>반디는 갤러거를 데려온 뒤 이제 “진실”을 마주할 시간이라고 말한다. 이 한마디는 갤러거가 진실 자체라기보다, 진실을 말할 수 있는 자리와 사람들을 연결하는 열쇠에 가깝다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<h3 id="시오반과-음료-제조">시오반과 음료 제조</h3>
-<p>시오반은 갤러거가 무신경해 보이지만 마음에 묻어둔 일이 많고, 그렇지 않았다면 이 바의 단골이 되지도 않았을 것이라고 말한다. 그는 갤러거의 솜씨를 보았다고 말하며, 갤러거를 제외하면 음료 제조를 그렇게 빨리 익힌 사람은 드물다고 평가한다.<sup class="cite-ref" title="게임 본편 · 시오반의 언급 · 시오반의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · 시오반의 언급 · 시오반의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 시오반의 언급은 갤러거의 바텐더 면모가 장식이 아니라, 주변 사람들에게 실제 솜씨와 습관으로 인식되는 생활의 일부임을 보여준다.<sup class="cite-ref" title="게임 본편 · 시오반의 언급 · 시오반의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 시오반의 언급 · 시오반의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
-<p>시오반은 갤러거라면 손님의 요구가 아무리 까다로워도 그에 맞는 맛을 만들어내며, 마법을 부리는 것이 분명하다고 말한다. 이 평가는 갤러거가 사람의 기분과 이야기를 맛으로 읽고 바꾸는 인물이라는 설정과 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 시오반의 언급 · 시오반의 인게임 대사"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
-<h2 id="좋은꿈의-바텐더가-만든-거짓말">좋은꿈의 바텐더가 만든 거짓말</h2>
-<p>갤러거의 서사는 “좋은꿈”의 밝은 표면을 믿지 않는 사람의 이야기다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성흔 활성화"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 그는 좋은꿈에 너무 깊이 빠지지 말라고 경고하고, 페나코니의 거리에서 백일몽을 꾸는 사람들을 지켜보는 것을 좋아한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성흔 활성화"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•백일몽"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> 이 경고와 관찰은 그가 꿈을 부정해서가 아니라, 꿈이 사람을 숨기고 지우는 방식까지 알고 있기 때문에 나온다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•넥타이"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup></p>
-<p>그가 바라보는 페나코니에서는 넥타이가 비뚤어져도 아무도 신경 쓰지 않고, 상대가 인간인지조차 상관하지 않는다. 이 말은 단순한 자기비하가 아니라, 좋은꿈이 사람의 외형과 정체와 감정을 얼마나 쉽게 흐리게 만드는지 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•넥타이"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup> 갤러거가 “허구”로 만들어진 존재라는 폭로는 이 도시의 무관심과 맞물려 더 강해진다.<sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•넥타이"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup></p>
-<p>그의 개인 서사는 과거의 저항과 패배를 품고 있다. 그는 전성기가 지나 무뎌졌고, 백일몽이 산산조각나면서 웅지와 포부도 사그라들었다고 묘사된다. 과거의 그는 감금된 상태에서도 자유를 갈망했고, 동료들과 압제에 저항하며 목숨을 서로에게 맡겼으며, 자유로운 땅을 꿈꿨다. 그러나 다수에게 이기지 못했고, 익숙한 사람들은 하나씩 죽었으며, 이상은 무너지고 잔학한 행위가 판을 쳤다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>그는 이 과거를 손님에게 농담처럼 돌려 말한다. 손님이 그 일이 정말 갤러거가 겪은 일이냐고 묻자, 그는 진짜일 리 없다고 웃으며 하던 일을 계속한다. 이 장면의 핵심은 갤러거가 거짓말로 과거를 숨긴다는 점보다, 진실과 거짓을 섞어야만 버틸 수 있는 존재가 되었다는 점이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>“갤러거는 나의 가장 진실한 거짓말”이라는 고백은 그의 정체를 가장 압축적으로 보여준다. 이 말은 갤러거라는 이름이 가짜라는 뜻만이 아니라, 가짜로 만든 이름이야말로 그가 남긴 사명과 감정과 선택을 가장 정확히 담고 있다는 뜻으로 읽힌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그래서 갤러거는 페나코니의 좋은꿈 안에서 거짓으로 태어난 인물이지만, 그 거짓을 통해 은하열차가 진실에 도달하도록 만든다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>그의 음료는 이 정체성과 닮아 있다. 맛은 기분을 담고, 스페셜 블렌드는 사람들의 방어선을 무너뜨리며, 손님들은 평소 숨기던 말을 술잔 앞에서 흘린다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 갤러거는 좋은꿈의 바텐더로서 사람을 취하게 하지만, 동시에 페나코니가 취해 있는 거짓을 깨우는 사람이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성흔 활성화"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p>그가 남기는 인상은 무심한 보안관, 능숙한 음료 제조가, 허구 역사학자, 시계공의 이름으로 사람들을 부른 설계자라는 여러 얼굴이 겹친 모습이다.<sup class="cite-ref" title="공식 HoYoWiki · 갤러거"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 갤러거의 언급 · 갤러거의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그 얼굴들은 서로 모순되는 것처럼 보이지만, 모두 페나코니의 좋은꿈이 감춘 것을 드러내기 위해 필요했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 갤러거는 자신이 진짜인지 가짜인지보다, 그 가짜 이름으로 누구를 진실 앞에 세웠는지가 더 중요한 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">페나코니 사냥개 가문의 보안관. 겉치레에 신경 쓰지 않고 게으르고 제멋대로인 음료 제조가이기도 하다. 옷차림이 어수선하고, 음료도 멋대로 만든다. 손님에게 예의를 차리지만 경계심이 있다. 복잡한 과거가 있는 것 같지만, 절대로 먼저 이야기를 꺼내지 않는다.</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">반디 씨의 행방은 여전히 묘연한 상태지만, 갤러거 씨 덕분에 「시계공」의 진짜 정체, 가족과의 관계, 그리고 좋은꿈과 죽음 그 이면에 숨겨진 세력 투쟁에 관한 의문이 풀렸어</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">난 갤러거야. 이곳의 「사냥개」 중 하나지. 꿈의 땅 페나코니에 온 걸 환영해, 신입 무명객</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">다섯 가문 중에서 「사냥개」는 보금자리를 수호하는 직책을 맡고 있어. 그러니까… 사고 치는 녀석들은 다 내가 처리한다는 뜻이야. 누군가를 뿅하고 나타나게 하는 것보다, 감쪽같이 증발시키는 편이 훨씬 쉽지</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 60 개방 「좋은꿈에는 오직 기쁨뿐이고, 이게 바로 가장 큰 슬픔이다. 이 좋은꿈 속에서 실의에 빠진 사람들은 가족에 쫓겨날까 두려워하며 유령처럼 꿈세계의 가장자리를 떠돈다. 이들은 조심스럽게 자신의 감정을 숨기고, 시큼하면서도 씁쓸한 냄새가 나는 기억을 피한다. 스페셜 블렌드를 마시는 찰나에만 이들의 방어선이 무너지는데 마치 평생 하고 싶은 말을 쏟아내려고 하는 것만 같다—— 『날 무시하는 녀석들은 호텔을 한 세 바퀴쯤 돌 수 있을 정...</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">갤러거의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">갤러거의 인게임 대사</span></span><div class="ref-quote">「허구 역사학자」 갤러거다</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">선데이의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">그것들이 한곳에 모일 때, 수많은 진실이 거짓으로 엮이게 돼——넌 그들에게 얻어낸 실낱같은 인지를 자신의 것으로 만든 후, 꿈세계에서 *허구*로 완벽한 「갤러거」를 만들어낸 거야……</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 80 개방 「근무 시간에 그는 경험이 풍부하고, 동요 없이 일을 처리하는 보안관이다. 전성기는 지났고, 그도 많이 무뎌졌다. 백일몽이 산산조각나면서 웅지와 포부도 함께 사그라들었다. 퇴근 후, 그는 단골 술집으로 가서 자신과 오랜 친구들을 위해 직접 음료를 제조하며 기나긴 밤을 보낸다. 술잔이 부딪힐 때, 그 말들은 거품처럼 넘실대다가 이내 사라진다. 그는 자신의 황금기를 회상한다. 당시의 그는 감금된 상태였지만 자유를 갈망했다. 그들은...</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">저기… 우리한테 조사를 도울 수 있도록 가족이 발급해준 서류가 있거든. 그러니 갤러거 씨를 만날 수 있게 해주면 안 될까?</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">무슨 의미인지 잘 모르겠는데…. 갤러거 씨, 자세히 설명해 주실 수 있나요?</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">무명객에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">별들 사이에 통로가 있었을 때, 이 세계에도 무명객의 발자취가 남아있었지. 아쉽게도 페나코니는 그중 그 누구의 이름도 기억하지 못했어</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">파티 편성•개척자</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">「개척」의 힘을 다시 한번 보여주게</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">그게 「불가능한 일」의 진정한 의미였군요. 그러니까 갤러거 씨는 스텔라론의 위기를 해결할 파벌을 찾고, 그들이 페나코니로 와서 진실을 밝히길 바라는 마음에 「시계공」의 이름으로 초대장을 보내신 건가요?</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">반디의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">반디의 인게임 대사</span></span><div class="ref-quote">갤러거 씨를 데려왔어. 이제… 「진실」을 마주할 시간이야</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 40 개방 「사람은 늘 계기가 있어야만 교류를 시작한다. 좋은꿈의 각종 스페셜 블렌드는 화학 반응을 촉진하는 촉매제다. 주위를 둘러볼 때면 금세 사교의 달인을 발견할 수 있다. 그는 좋은꿈 스페셜 블렌드의 명성을 빌려 시럽과 솔글래드의 역사부터 시작해서 손님에게 음료를 섞는 시간과 맛의 연관성을 설명한다. 그 후에는 스페셜 블렌드의 향과 사람의 성격이 얼마나 잘 어울리는지, 재료 배합 비결을 터득하는 방법은 무엇인지 이야기한다…. 주변의...</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">음료 제조는 아주 감성적인 일이야. 꿈속에서 소다수를 제조하려면 그때의 기분을 첨가해야 하거든. 기분이 답답하면 맛이 진하고, 기분이 좋으면 맛이 달콤하지…. 음료 제조는 인생의 희로애락을 섞는 것이기도 해</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 20 개방 「담배, 사탕, 저렴한 샴푸——그는 전형적인 중년 독신 남성 냄새를 풍긴다. 옷은 깨끗한 편이지만 항상 꾸깃꾸깃 구겨져 있고, 품위가 없다. 외모 가꾸기도 귀찮아한다. 그는 친구가 많지 않아서, 퇴근하고 좋은꿈 스페셜 블렌드를 즐기는 게 가장 큰 취미이다. 늘 같은 곳, 늘 같은 맛, 늘 같은 접대, 수십 년 동안 한번도 바뀐 적이 없다. 이런 사람이 사냥개 가문 일원들의 인정과 존경을 받는 이유는 그의 얼굴에 있는 흉터 때문...</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">…갤러거 씨, 말 속에 다른 뜻이 있는 것 같네요</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">캐릭터 승급</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">직감이든 본능이든… 훈련을 통해 날카롭게 벼릴 수 있지</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">행적 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">말 안 해도 알지? 머슬 메모리는 거짓말을 하지 않아</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">원칙을 고수하는 사냥개 가문 일원의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">원칙을 고수하는 사냥개 가문 일원의 인게임 대사</span></span><div class="ref-quote">당신들이 말하는 그 갤러거가 대체 누군데요? 지금까지 여러 사람이 제게 그 이름을 언급했어요. 저 회색 머리는 저번에도 말했었다고요</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">캐릭터 최고 레벨</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">시간이 얼마 남지 않았어</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">전투 불능</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">다시 한 번만 더.....</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">전투 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">내 사명은 끝나지 않았어.....</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">갤러거</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">겉치장에 신경 쓰지 않는 음료 제조가. 사냥개 가문의 보안관이기도 하다. 페나코니 현지인이며, 경험이 무척 풍부하지만 그것에 관해 남에게 먼저 말하는 경우가 거의 없다</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">자신에 대해•신분</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">「사냥개 가문」이라는 이름은 썩 듣기 좋은 편은 아니야. 다들 날 뭐라고 부른다고? 졸개? 실력도 형편없는 것들이 입은 험하구먼</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">그럼 그 보안관님을 직접 찾아가면 되잖아…? {NICKNAME}(이)가 언급했던 갤러거 씨겠지?</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">갤러거… 갤러거 씨는… 어딨으려나?</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">…그래도 더 이상 우리를 막지 않을 거야. 가자, 갤러거 씨한테 가서 어떻게 된 일인지 물어봐야지</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">갤러거 씨, 안녕하세요. 듣자하니, 저희가 이곳에 올 줄 알고 계셨나 보네요?</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">갤러거 씨, 저희에게 하실 말씀이 남아있지 않나요?</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">그렇지 않아요, 갤러거 씨. 미하일 씨는 분명 가장 값진 무언가를 저희에게 남겼을 거예요</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">미샤에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">미샤는 말을 아주 잘 듣는 아이지. 난 그 나이 때 맨날 사람들을 물고 다니기만 했는데 말이야</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">파티 편성•미샤</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">엄한 데 돌아다닐 생각 말고 꼬맹이는 일찍 가서 자. 키 안 클라</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">미샤의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">미샤의 인게임 대사</span></span><div class="ref-quote">쿨쿨이는 기억의 영역 밈이에요. 커다란 눈이 여러 개 달렸고 무섭게 생겼죠. 근데 실제로는 말을 참 잘 들어요. 쭉 갤러거 씨가 보살펴 오셨죠</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">선데이에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">그의 냄새는 「조화의 송가」와 비슷해. 하지만 난 그 아래 덮인… 더 진실한 냄새를 맡았어</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">반디의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">반디의 인게임 대사</span></span><div class="ref-quote">그런데 주민들로부터… 「갤러거」라는 낯익은 이름을 들었어요</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">반디의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">반디의 인게임 대사</span></span><div class="ref-quote">아마 은하열차 내부에서도 의논할 시간이 필요할 거예요. 그동안 전 갤러거 씨를 찾아볼게요</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">반디의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">반디의 인게임 대사</span></span><div class="ref-quote">——돌아보지 마. 널 노리는 게 확실해. 갤러거 씨와 헤어진 이후로 계속 우릴 쫓아왔거든</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">시오반의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시오반의 인게임 대사</span></span><div class="ref-quote">갤러거의 솜씨는 본 적이 있지만 넌 음료 제조에 관심이 있을지 모르겠네——솔직히 말할게, 내가 한동안 일 때문에 바를 떠나야 하거든, 대신해 줄 임시 음료 제조가가 필요해</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">시오반의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시오반의 인게임 대사</span></span><div class="ref-quote">…훌륭한 맛이야. 이렇게 음료 제조를 빨리 익히는 사람은 갤러거를 빼면 네가 처음이야. 정말 이 곳에 말뚝 박을 생각은 없어?</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">시오반의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시오반의 인게임 대사</span></span><div class="ref-quote">그 후엔 갤러거랑 재밌게 대화했지? 걔가 무신경해 보이기는 해도, 마음에 묻어둔 일이 정말 많거든. 그러지 않았으면 이 바의 단골이 되지도 않았겠지</div></li>
-<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">시오반의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시오반의 인게임 대사</span></span><div class="ref-quote">페나코니의 음료 제조가를 무시하지 마. 갤러거라면 더더욱. 저 친구는 마법을 부리는 게 분명해…. 손님의 요구사항이 얼마나 까다롭든, 그에 맞는 맛을 만들어내거든</div></li>
-<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">성흔 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">좋은꿈에 너무 깊이 빠지지 않게 조심해</div></li>
-<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">잡담•백일몽</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">난 페나코니의 거리를 거닐며 백일몽을 꾸는 사람들을 지켜보는 게 가장 좋아....나도 예전엔 우주 악당이 되어 난동을 부릴까 생각한 적이 있어. 기껏해야 컴퍼니 지하 감방에서 옥살이나 좀 하겠지....하하, 이 생각은 아직 유효해!</div></li>
-<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">자신에 대해•넥타이</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">넥타이가 비뚤어졌어도 어차피 난 안 보여. 페나코니에선 아무도 다른 사람의 옷차림 따위 신경 쓰지 않아. 여기선 상대방이 「인간」인지조차도 상관 안 한다니까</div></li></ol></details>
+<p>갤러거는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a> 사냥개 가문의 보안관이자, 좋은꿈의 술집에서 일하는 음료 제조가다.<sup class="cite-ref" title="공식 HoYoWiki · 갤러거"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 스스로를 「허구 역사학자」 갤러거라고 부르는데, 실제로는 여러 사람에게서 얻어낸 기억 조각을 자신의 것으로 만들어 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>에 빚어낸 허구의 인물이다.<sup class="cite-ref" title="게임 본편 · 갤러거의 언급 · 갤러거의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그는 “갤러거는 나의 가장 진실한 거짓말”이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>갤러거는 무명객에게 자신을 “이곳의 「사냥개」 중 하나”라고 소개하며 페나코니에 온 것을 환영한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 다섯 가문 중 「사냥개」는 보금자리를 수호하는 직책을 맡아 사고를 일으키는 자들을 처리하며, 그는 누군가를 나타나게 하는 것보다 감쪽같이 증발시키는 편이 더 쉽다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 발광하는 찻주전자나 사방을 기어다니는 전화 부스를 본다면 「나쁜꿈 극단」의 말썽꾸러기일 가능성이 크며, 죽지는 않고 기껏해야 피부가 한 꺼풀 벗겨지는 정도라고 그는 설명한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p><a class="wiki-link" href="char-2494.html" title="반디">반디</a>는 갤러거와 헤어진 뒤 누군가 계속 자신들을 쫓아왔다고 말한다.<sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 이후 <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>와 Mar. 7th는 갤러거를 여러 차례 찾으려 하고, 히메코는 가족이 발급한 서류를 내세워 그를 만나게 해 달라고 요청한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 사냥개 가문의 한 일원은 여러 사람이 같은 이름을 언급했다며 그가 누구인지 되묻지만, 결국 길을 막지 않는다.<sup class="cite-ref" title="게임 본편 · 원칙을 고수하는 사냥개 가문 일원의 언급 · 원칙을 고수하는 사냥개 가문 일원의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>히메코는 갤러거에게 은하열차 일행이 올 줄 알고 있었던 것 같다고 묻고, 그의 말에 다른 뜻이 있다고 느낀다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 그는 별들 사이에 통로가 있었던 시절 이 세계에도 무명객의 발자취가 남아 있었지만, 페나코니는 그중 누구의 이름도 기억하지 못했다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 무명객에 대해"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 히메코는 그가 한 말의 의미를 잘 모르겠다며 자세히 설명해 달라고 요청하고, Mar. 7th는 그를 “역시 사연이 많은 분”이라고 말한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<p>히메코는 반디의 행방이 여전히 묘연하지만, 갤러거 덕분에 「시계공」의 진짜 정체와 가족과의 관계, 좋은꿈과 죽음 이면에 숨은 세력 투쟁에 관한 의문이 풀렸다고 정리한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
+<p><a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 갤러거에게 인내심이 많지 않다며 게으름 피우지 말라고 압박한다.<sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 그는 갤러거가 여러 사람에게서 얻어낸 인지의 조각을 자신의 것으로 만들어, 꿈세계에서 허구로 완벽한 「갤러거」를 만들어냈다고 지적한다.<sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 갤러거는 선데이에게서 「조화의 송가」와 비슷한 냄새가 나지만, 그 아래 더 진실한 냄새를 맡았다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 선데이에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
+<p>반디는 주민들에게서 「갤러거」라는 낯익은 이름을 들었다고 말하고, 은하열차가 의논하는 동안 자신이 갤러거를 찾아보겠다고 한다.<sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> <a class="wiki-link" href="char-1808.html" title="미샤">미샤</a>는 기억의 영역 밈 쿨쿨이가 커다란 눈이 여럿 달려 무섭게 생겼지만 실제로는 말을 잘 들으며, 갤러거가 쭉 보살펴 왔다고 말한다. 미샤는 갤러거가 참나무 가문의 방문객을 맞고 있어 방해하지 말라고 당부한다.<sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
+<p>갤러거는 자신을 「허구 역사학자」 갤러거라고 밝힌다.<sup class="cite-ref" title="게임 본편 · 갤러거의 언급 · 갤러거의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 히메코는 그가 <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a>의 위기를 해결할 파벌을 찾아, 그들이 페나코니로 와서 진실을 밝히길 바라는 마음에서 「시계공」의 이름으로 초대장을 보낸 것인지 묻는다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> 히메코는 갤러거에게 아직 할 말이 남아 있지 않느냐고 묻고, 그렇지 않다며 미하일이 분명 가장 값진 무언가를 남겼을 것이라고 말한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 미카는 사람들을 데려왔으니 나머지 이야기는 갤러거에게 직접 들으라며 자리를 비키고, 반디는 갤러거를 데려온 뒤 이제 「진실」을 마주할 시간이라고 말한다.<sup class="cite-ref" title="게임 본편 · 미카의 언급 · 미카의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
+<p>이후 한 인물은 갤러거에게 작별 인사를 하려 한다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「낯선 땅의 이방인」"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
+<h2 id="과거">과거</h2>
+<p>갤러거는 근무 중에는 경험이 많고 동요 없이 사건을 처리하는 보안관이지만, 전성기는 지났고 스스로도 많이 무뎌졌다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 백일몽이 산산조각나면서 예전의 웅지와 포부도 사그라들었다. 퇴근 후에는 단골 술집에서 오랜 친구들과 함께 음료를 나누며 긴 밤을 보낸다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>그가 회상하는 황금기는 감금된 상태에서도 자유를 갈망하던 시절이다. 동료들과 함께 압제에 저항하며 서로에게 목숨을 맡겼고, 자유로운 땅을 꿈꿨다. 다수에게는 이기지 못했고, 익숙한 얼굴들은 하나씩 죽었으며, 이상은 무너지고 잔학한 행위가 판을 쳤다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>손님이 그 이야기가 정말 겪은 일이냐고 묻자, 그는 “당연하죠, 진짜일 리가 있겠어요?”라며 웃고 하던 일을 계속한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그는 예전에 우주 악당이 되어 난동을 부릴까 생각한 적도 있다며, 기껏해야 컴퍼니 지하 감방에서 옥살이나 했을 거라고 농담한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•백일몽"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>갤러거는 담배와 사탕, 저렴한 샴푸 냄새를 풍기는 중년 독신 남성이다. 옷은 깨끗한 편이지만 늘 구겨져 있고, 외모를 가꾸는 데는 관심이 없다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 얼굴의 흉터는 사고가 거의 없는 좋은꿈에서 보안관에게는 보기 드문 영광이자 경력과 명성의 상징으로 통하며, 사냥개 가문 안에서 그가 인정과 존경을 받는 이유이기도 하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 그는 사건을 마주할 때마다 먼저 사탕을 하나 까서 입에 넣고, 다 씹을 때쯤 조사에 착수한다. 용의자를 잡아도 더 이상 기뻐하지 않으며, 눈에서는 성취감 대신 공허함과 우울함이 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 그가 자주 하는 말은 「운명의 장난」이다.<sup class="cite-ref" title="게임 본편 · 미카의 언급 · 미카의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 초콜릿을 가장 싫어하며, 부족한 맛을 초콜릿으로 덮은 레시피는 혀로 금세 알아챈다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
+<p>갤러거는 좋은꿈 스페셜 블렌드의 명성을 빌려 손님과 대화를 시작하고, 시럽과 솔글래드의 역사에서부터 음료를 섞는 시간과 맛의 관계까지 설명한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 주변이 어두워지면 차가운 눈으로 손님들의 기쁘고 슬픈 이야기를 듣고, 손님이 다 돌아간 뒤에는 홀로 은색 술잔을 닦으며 문밖을 바라본다. 그는 영원히 돌아오지 않을 사람을 기다리며, 그 사람이 언젠가 거짓말로 이 기나긴 운명을 끝내주기를 바란다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 그에게 음료 제조는 감성적인 일이어서, 꿈속에서 소다수를 만들 때는 그때의 기분을 맛에 담는다. 기분이 답답하면 맛이 진해지고, 기분이 좋으면 맛이 달콤해진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
+<p>동료 음료 제조가 시오반은 갤러거가 무신경해 보여도 마음에 묻어둔 일이 많다며, 그러지 않았으면 이 바의 단골이 되지도 않았을 것이라고 말한다.<sup class="cite-ref" title="게임 본편 · 시오반의 언급 · 시오반의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 시오반은 손님의 요구가 아무리 까다로워도 그에 맞는 맛을 만들어내는 그를 두고 마법을 부리는 것이 분명하다고 평가하며, 음료 제조를 갤러거만큼 빨리 익힌 사람은 처음 봤다고 말한다.<sup class="cite-ref" title="게임 본편 · 시오반의 언급 · 시오반의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · 시오반의 언급 · 시오반의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
+<p>갤러거는 미샤를 “말을 아주 잘 듣는 아이”라고 말하며, 자신은 그 나이 때 사람들을 물고 다니기만 했다고 농담한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 미샤에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup> 파티에 미샤가 있으면 엄한 데 돌아다니지 말고 일찍 자라고 당부한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•미샤"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> 그는 로빈에 대해 페나코니를 떠난 현지인은 많지 않다며, 그녀가 그런 결정을 내린 데에는 속사정이 있을 것이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 로빈에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 좋은꿈에 너무 깊이 빠지지 말라고 경고하면서도, 페나코니의 거리를 거닐며 백일몽을 꾸는 사람들을 지켜보는 것을 가장 좋아한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성흔 활성화"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•백일몽"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-3150.html">선데이</a>, <a href="char-2494.html">반디</a>, <a href="npc-2441.html">시오반</a>, <a href="char-1808.html">미샤</a> — 갤러거의 정체는 <a href="char-3150.html">선데이</a>가 폭로하고, <a href="char-2494.html">반디</a>가 그를 찾아 진실 앞으로 데려오면서 밝혀진다.<sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 반디의 언급 · 반디의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> 좋은꿈 술집에서는 <a href="npc-2441.html">시오반</a>과 함께 일하고, <a href="char-1808.html">미샤</a>와 함께 쿨쿨이를 돌본다.<sup class="cite-ref" title="게임 본편 · 시오반의 언급 · 시오반의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="게임 본편 · 미샤의 언급 · 미샤의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">갤러거</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">겉치장에 신경 쓰지 않는 음료 제조가. 사냥개 가문의 보안관이기도 하다. 페나코니 현지인이며, 경험이 무척 풍부하지만 그것에 관해 남에게 먼저 말하는 경우가 거의 없다</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">페나코니 사냥개 가문의 보안관. 겉치레에 신경 쓰지 않고 게으르고 제멋대로인 음료 제조가이기도 하다. 옷차림이 어수선하고, 음료도 멋대로 만든다. 손님에게 예의를 차리지만 경계심이 있다. 복잡한 과거가 있는 것 같지만, 절대로 먼저 이야기를 꺼내지 않는다.</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">갤러거의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">갤러거의 인게임 대사</span></span><div class="ref-quote">「허구 역사학자」 갤러거다</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">선데이의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">그것들이 한곳에 모일 때, 수많은 진실이 거짓으로 엮이게 돼——넌 그들에게 얻어낸 실낱같은 인지를 자신의 것으로 만든 후, 꿈세계에서 *허구*로 완벽한 「갤러거」를 만들어낸 거야……</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 80 개방 「근무 시간에 그는 경험이 풍부하고, 동요 없이 일을 처리하는 보안관이다. 전성기는 지났고, 그도 많이 무뎌졌다. 백일몽이 산산조각나면서 웅지와 포부도 함께 사그라들었다. 퇴근 후, 그는 단골 술집으로 가서 자신과 오랜 친구들을 위해 직접 음료를 제조하며 기나긴 밤을 보낸다. 술잔이 부딪힐 때, 그 말들은 거품처럼 넘실대다가 이내 사라진다. 그는 자신의 황금기를 회상한다. 당시의 그는 감금된 상태였지만 자유를 갈망했다. 그들은...</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">난 갤러거야. 이곳의 「사냥개」 중 하나지. 꿈의 땅 페나코니에 온 걸 환영해, 신입 무명객</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">다섯 가문 중에서 「사냥개」는 보금자리를 수호하는 직책을 맡고 있어. 그러니까… 사고 치는 녀석들은 다 내가 처리한다는 뜻이야. 누군가를 뿅하고 나타나게 하는 것보다, 감쪽같이 증발시키는 편이 훨씬 쉽지</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">만약 어느 날 발광하는 찻주전자나 사방을 기어다니는 전화 부스를 본다면——그건 「나쁜꿈 극단」의 말썽꾸러기일 가능성이 커. 걱정하진 마, 죽진 않으니까. 기껏해야 피부가 한 꺼풀 벗겨지는 정도랄까</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">반디의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">반디의 인게임 대사</span></span><div class="ref-quote">——돌아보지 마. 널 노리는 게 확실해. 갤러거 씨와 헤어진 이후로 계속 우릴 쫓아왔거든</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">갤러거… 갤러거 씨는… 어딨으려나?</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">그럼 그 보안관님을 직접 찾아가면 되잖아…? {NICKNAME}(이)가 언급했던 갤러거 씨겠지?</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">저기… 우리한테 조사를 도울 수 있도록 가족이 발급해준 서류가 있거든. 그러니 갤러거 씨를 만날 수 있게 해주면 안 될까?</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">원칙을 고수하는 사냥개 가문 일원의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">원칙을 고수하는 사냥개 가문 일원의 인게임 대사</span></span><div class="ref-quote">당신들이 말하는 그 갤러거가 대체 누군데요? 지금까지 여러 사람이 제게 그 이름을 언급했어요. 저 회색 머리는 저번에도 말했었다고요</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">…그래도 더 이상 우리를 막지 않을 거야. 가자, 갤러거 씨한테 가서 어떻게 된 일인지 물어봐야지</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">갤러거 씨, 안녕하세요. 듣자하니, 저희가 이곳에 올 줄 알고 계셨나 보네요?</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">…갤러거 씨, 말 속에 다른 뜻이 있는 것 같네요</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">무명객에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">별들 사이에 통로가 있었을 때, 이 세계에도 무명객의 발자취가 남아있었지. 아쉽게도 페나코니는 그중 그 누구의 이름도 기억하지 못했어</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">무슨 의미인지 잘 모르겠는데…. 갤러거 씨, 자세히 설명해 주실 수 있나요?</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">갤러거 씨는… 역시 사연이 많은 분이었어</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">반디 씨의 행방은 여전히 묘연한 상태지만, 갤러거 씨 덕분에 「시계공」의 진짜 정체, 가족과의 관계, 그리고 좋은꿈과 죽음 그 이면에 숨겨진 세력 투쟁에 관한 의문이 풀렸어</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">선데이의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">갤러거 씨, 난 인내심이 그리 많지 않아. 그렇게 게으름 피우면——</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">선데이에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">그의 냄새는 「조화의 송가」와 비슷해. 하지만 난 그 아래 덮인… 더 진실한 냄새를 맡았어</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">반디의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">반디의 인게임 대사</span></span><div class="ref-quote">그런데 주민들로부터… 「갤러거」라는 낯익은 이름을 들었어요</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">반디의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">반디의 인게임 대사</span></span><div class="ref-quote">아마 은하열차 내부에서도 의논할 시간이 필요할 거예요. 그동안 전 갤러거 씨를 찾아볼게요</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">미샤의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">미샤의 인게임 대사</span></span><div class="ref-quote">쿨쿨이는 기억의 영역 밈이에요. 커다란 눈이 여러 개 달렸고 무섭게 생겼죠. 근데 실제로는 말을 참 잘 들어요. 쭉 갤러거 씨가 보살펴 오셨죠</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">미샤의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">미샤의 인게임 대사</span></span><div class="ref-quote">그러시군요… 그럼 갤러거 씨와 얘기를 나눠보시는 게 좋겠어요. 아, 다만 지금은 참나무 가문의 방문객을 맞고 계셔서 저희에게 절대 방해하지 말라고 하셨어요</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">그게 「불가능한 일」의 진정한 의미였군요. 그러니까 갤러거 씨는 스텔라론의 위기를 해결할 파벌을 찾고, 그들이 페나코니로 와서 진실을 밝히길 바라는 마음에 「시계공」의 이름으로 초대장을 보내신 건가요?</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">갤러거 씨, 저희에게 하실 말씀이 남아있지 않나요?</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">그렇지 않아요, 갤러거 씨. 미하일 씨는 분명 가장 값진 무언가를 저희에게 남겼을 거예요</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">미카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">미카의 인게임 대사</span></span><div class="ref-quote">사람들을 데려왔으니 나머지 이야기는 갤러거 씨한테 직접 들으시지요. 그럼 이만…</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">반디의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">반디의 인게임 대사</span></span><div class="ref-quote">갤러거 씨를 데려왔어. 이제… 「진실」을 마주할 시간이야</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「낯선 땅의 이방인」</span></span><div class="ref-quote">갤러거 씨한테 작별 인사를 하려고요</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">잡담•백일몽</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">난 페나코니의 거리를 거닐며 백일몽을 꾸는 사람들을 지켜보는 게 가장 좋아....나도 예전엔 우주 악당이 되어 난동을 부릴까 생각한 적이 있어. 기껏해야 컴퍼니 지하 감방에서 옥살이나 좀 하겠지....하하, 이 생각은 아직 유효해!</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 20 개방 「담배, 사탕, 저렴한 샴푸——그는 전형적인 중년 독신 남성 냄새를 풍긴다. 옷은 깨끗한 편이지만 항상 꾸깃꾸깃 구겨져 있고, 품위가 없다. 외모 가꾸기도 귀찮아한다. 그는 친구가 많지 않아서, 퇴근하고 좋은꿈 스페셜 블렌드를 즐기는 게 가장 큰 취미이다. 늘 같은 곳, 늘 같은 맛, 늘 같은 접대, 수십 년 동안 한번도 바뀐 적이 없다. 이런 사람이 사냥개 가문 일원들의 인정과 존경을 받는 이유는 그의 얼굴에 있는 흉터 때문...</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">미카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">미카의 인게임 대사</span></span><div class="ref-quote">후후… 갤러거 씨가 자주 하는 말을 빌리자면, 「운명의 장난」인 셈이죠</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">레시피가 형편없는 음료와 디저트는 초콜릿으로 부족한 맛을 덮는 경우가 많지만, 내 혀를 속일 순 없지…. 내가 초콜릿을 제일 싫어하는 걸 어쩌겠어</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 40 개방 「사람은 늘 계기가 있어야만 교류를 시작한다. 좋은꿈의 각종 스페셜 블렌드는 화학 반응을 촉진하는 촉매제다. 주위를 둘러볼 때면 금세 사교의 달인을 발견할 수 있다. 그는 좋은꿈 스페셜 블렌드의 명성을 빌려 시럽과 솔글래드의 역사부터 시작해서 손님에게 음료를 섞는 시간과 맛의 연관성을 설명한다. 그 후에는 스페셜 블렌드의 향과 사람의 성격이 얼마나 잘 어울리는지, 재료 배합 비결을 터득하는 방법은 무엇인지 이야기한다…. 주변의...</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">음료 제조는 아주 감성적인 일이야. 꿈속에서 소다수를 제조하려면 그때의 기분을 첨가해야 하거든. 기분이 답답하면 맛이 진하고, 기분이 좋으면 맛이 달콤하지…. 음료 제조는 인생의 희로애락을 섞는 것이기도 해</div></li>
+<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">시오반의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시오반의 인게임 대사</span></span><div class="ref-quote">그 후엔 갤러거랑 재밌게 대화했지? 걔가 무신경해 보이기는 해도, 마음에 묻어둔 일이 정말 많거든. 그러지 않았으면 이 바의 단골이 되지도 않았겠지</div></li>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">시오반의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시오반의 인게임 대사</span></span><div class="ref-quote">…훌륭한 맛이야. 이렇게 음료 제조를 빨리 익히는 사람은 갤러거를 빼면 네가 처음이야. 정말 이 곳에 말뚝 박을 생각은 없어?</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">시오반의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시오반의 인게임 대사</span></span><div class="ref-quote">페나코니의 음료 제조가를 무시하지 마. 갤러거라면 더더욱. 저 친구는 마법을 부리는 게 분명해…. 손님의 요구사항이 얼마나 까다롭든, 그에 맞는 맛을 만들어내거든</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">미샤에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">미샤는 말을 아주 잘 듣는 아이지. 난 그 나이 때 맨날 사람들을 물고 다니기만 했는데 말이야</div></li>
+<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">파티 편성•미샤</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">엄한 데 돌아다닐 생각 말고 꼬맹이는 일찍 가서 자. 키 안 클라</div></li>
+<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">로빈에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">페나코니에 온 외지인은 많은데, 이곳을 떠난 현지인은 많지 않아…. 그녀가 그런 결정을 내린 데에는 분명 속사정이 있겠지</div></li>
+<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">성흔 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1924?lang=ko-kr">원문</a></span><div class="ref-quote">좋은꿈에 너무 깊이 빠지지 않게 조심해</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 페나코니</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -786,12 +712,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-1924">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EA%B0%A4%EB%9F%AC%EA%B1%B0&amp;body=%EA%B0%A4%EB%9F%AC%EA%B1%B0+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-1924.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

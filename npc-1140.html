@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>노버트 · hoyohoyo.wiki</title>
-  <meta name="description" content="노버트는 벨로보그 소속 인물이며, 쿠스퍼가의 도련님으로 불린다. 그는 교통부 대신 노엘의 조카로 알려져 있고, 시정 부서에서 운송 조정 업무를 맡고 있다.">
+  <meta name="description" content="노버트는 벨로보그 교통부 대신 노엘의 조카이며, 시정 부서에서 운송 조정 업무를 맡고 있다. 그는 겨울 성 박물관 진귀품 절도 사건의 실행자로 붙잡혔고, 조사 과정에서 「춥다리 아저씨」라는 배후 인물의 존재가 드러난다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="노버트 · hoyohoyo.wiki">
-  <meta property="og:description" content="노버트는 벨로보그 소속 인물이며, 쿠스퍼가의 도련님으로 불린다. 그는 교통부 대신 노엘의 조카로 알려져 있고, 시정 부서에서 운송 조정 업무를 맡고 있다.">
+  <meta property="og:description" content="노버트는 벨로보그 교통부 대신 노엘의 조카이며, 시정 부서에서 운송 조정 업무를 맡고 있다. 그는 겨울 성 박물관 진귀품 절도 사건의 실행자로 붙잡혔고, 조사 과정에서 「춥다리 아저씨」라는 배후 인물의 존재가 드러난다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/npc-1140.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/npc-1140.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,85 +620,74 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>노버트</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%85%B8%EB%B2%84%ED%8A%B8&amp;page_slug=npc-1140">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>노버트</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>노버트는 벨로보그 소속 인물이며, 쿠스퍼가의 도련님으로 불린다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그는 교통부 대신 노엘의 조카로 알려져 있고, 시정 부서에서 운송 조정 업무를 맡고 있다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>겉으로는 벨로보그의 행정과 상류층 사교권에 걸쳐 있는 인물이다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <a class="wiki-link" href="npc-852.html" title="월리스">월리스</a>는 노버트가 괴테 호텔 로비에서 다른 상류층 인사들과 티타임을 즐기던 사람이라고 기억하고, <a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 그의 신분과 직업을 도시 책임자로서 알고 있었다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>노버트는 겨울 성 박물관 진귀품 목록과 관련된 사건에서 박물관 전시품 절도의 핵심 실행자로 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그는 공범을 철위대로 위장시키고 악덕 구매자와 이어진 거래 현장에 나타나며, 사건을 단순한 일탈이 아니라 조직적인 문화재 절도 사건으로 키운다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 악덕 구매자의 언급 · 악덕 구매자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>노버트 사건은 괴테 호텔 사교 모임에서 생긴 공백으로 시작된다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 월리스는 노버트가 어느 날부터 모임에 나오지 않았고, 마치 증발한 것처럼 사라졌다고 말한다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>브로냐는 노버트가 며칠 동안 자취를 감췄다면 그의 행방을 아는 시종이 있을 것이라고 판단하고, 카일에게 노엘 대신의 저택 주변을 조사하게 한다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 카일은 노버트가 최근 이상한 시간대에 자주 나갔고, 어디 가느냐는 질문에는 상점가에 “구경” 간다고 둘러댔다고 보고한다.<sup class="cite-ref" title="게임 본편 · 경비병 카일의 언급 · 경비병 카일의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>이 수상한 이동은 노버트를 사건의 중심으로 끌어들인다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 브로냐는 노버트가 당황해서 둘러댄 “상점가”라는 말을 다른 단서와 연결할 수 있다고 보고, <a class="wiki-link" href="char-19.html" title="페라">페라</a>는 노버트가 문화재 털이범일 가능성을 제기한다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>현장에서 노버트는 혼자 움직인 용의자가 아니라 사람을 부리는 인물로 드러난다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 페라는 범인이 노버트든 아니든 조력자가 한둘은 아닐 것이라고 경고하고, 이후 노버트 밑에서 일하는 사람들을 더 마주칠 것이라고 본다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>노버트의 범행은 철위대 위장으로 결정적으로 드러난다.<sup class="cite-ref" title="게임 본편 · 철위대 차림의 시종의 언급 · 철위대 차림의 시종의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 철위대 차림의 시종은 그를 “노버트 도련님”이라고 부르고, 페라는 노버트가 동료를 철위대로 위장시켰다고 판단한다.<sup class="cite-ref" title="게임 본편 · 철위대 차림의 시종의 언급 · 철위대 차림의 시종의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>체포 국면에서 노버트는 악덕 구매자와 함께 몰린다.<sup class="cite-ref" title="게임 본편 · 악덕 구매자의 언급 · 악덕 구매자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 악덕 구매자는 노버트에게 보안이 완벽하다고 하지 않았느냐고 따지고, 페라는 공범이 이미 제압당했으니 도망칠 곳이 없다고 압박한다.<sup class="cite-ref" title="게임 본편 · 악덕 구매자의 언급 · 악덕 구매자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>노버트의 위협성은 전투력보다 신분, 접근권, 인맥, 허영에서 나온다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 그는 교통부 대신 노엘의 조카이며 시정 부서에서 운송 조정 업무를 맡고 있지만, 브로냐는 그 업무가 비교적 한가해서 라임스테인가의 도련님과 자주 어울렸다고 본다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<p>페라는 노버트를 돈에 홀린 도련님으로 평가하면서도, 그가 무슨 능력으로 많은 사람을 모아 대규모 절도를 꾸몄는지는 석연치 않다고 본다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 이 의문은 노버트가 사건의 전부가 아니라 더 큰 배후와 연결된 실행자였음을 드러낸다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<p>노버트는 박물관 전시품을 훔칠 마음을 먹고 실행에 나선 인물이지만, 구매자 소개와 계획 수립은 “춥다리 아저씨”가 제공한 것으로 전해진다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 그래서 그는 체포되는 얼굴이자, 더 신중한 배후로 이어지는 중간 고리다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<h3 id="벨로보그-행정과-노엘-대신의-집안">벨로보그 행정과 노엘 대신의 집안</h3>
-<p>노엘 대신의 조카라는 신분과 운송 조정 업무는 노버트의 범행을 외부 침입자의 범죄가 아니라 내부 신분을 가진 사람의 일탈로 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 브로냐가 그의 신분과 직업을 떠올리는 장면은 노버트가 도시 질서 밖의 무명 인물이 아니라 관리 가능한 체계 안에 있던 인물임을 보여준다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<h3 id="괴테-호텔의-사교권">괴테 호텔의 사교권</h3>
-<p>월리스가 기억하는 노버트는 괴테 호텔 로비에서 상류층 인사들과 티타임을 즐기던 인물이다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그가 어느 날부터 모임에 나오지 않은 변화는 행방 추적과 저택 조사로 이어지고, 평범한 사교 모임의 결석은 문화재 절도 사건의 첫 단서가 된다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<h3 id="브로냐와-페라의-수사">브로냐와 페라의 수사</h3>
-<p>브로냐는 노버트의 신분을 떠올린 뒤 카일에게 노엘 대신의 저택 주변을 조사하게 하고, 노버트가 둘러댄 “상점가”라는 말까지 단서로 묶는다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 페라는 노버트를 문화재 절도 용의자로 추적하고, 현장에서 철위대 위장과 공범의 존재를 확인한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>노버트가 붙잡힌 뒤에도 수사는 끝나지 않는다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 페라는 철위대가 얻은 새 정보를 전하며, 노버트의 진술을 통해 “춥다리 아저씨”라는 배후 인물에게 수사를 이어간다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
-<h3 id="공범-악덕-구매자-철위대-위장">공범, 악덕 구매자, 철위대 위장</h3>
-<p>노버트의 범행은 공범이 낀 현장 범죄로 나타난다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 철위대 차림의 시종과 공범은 노버트를 “도련님”으로 인식하고, 페라는 그가 동료를 철위대로 위장시켰다고 본다.<sup class="cite-ref" title="게임 본편 · 철위대 차림의 시종의 언급 · 철위대 차림의 시종의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 철위대 차림의 공범의 언급 · 철위대 차림의 공범의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
-<p>철위대 위장은 노버트가 벨로보그의 공적 권위를 범죄에 끌어다 쓰려 했다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 철위대 차림의 시종의 언급 · 철위대 차림의 시종의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 악덕 구매자는 노버트에게 보안이 완벽하다고 하지 않았느냐고 따지며, 노버트가 절도품 거래의 안전까지 약속한 쪽에 서 있었음을 드러낸다.<sup class="cite-ref" title="게임 본편 · 악덕 구매자의 언급 · 악덕 구매자의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<h3 id="춥다리-아저씨">춥다리 아저씨</h3>
-<p>노버트는 체포 뒤 “춥다리 아저씨”라는 미스터리한 인물이 자신을 부추겨 박물관 전시품을 훔칠 마음을 먹었다고 진술한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 페라는 노버트가 그 말을 그대로 믿었다기보다, 자신의 “능력”으로 큰돈을 벌고 싶어 했을 것이라고 본다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
-<p>“춥다리 아저씨”는 구매자를 소개하고 절도 계획까지 세워 주며, 고문 비용으로 3할을 요구한 인물로 전해진다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 노버트에게 이 관계는 크게 이득 보는 장사처럼 보였지만, 실제로는 그의 욕심과 신분을 이용해 범행을 굴리는 구조였다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>그 배후는 노버트보다 훨씬 신중하다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> 노버트의 말에 따르면 “춥다리 아저씨”는 철위대에 대해 잘 알고 성안의 움직임이 보이면 흔적 없이 사라지는 인물이며, 페라는 그가 노버트의 체포 사실을 알고 이미 도망갔을 것이라고 본다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<h2 id="돈에-홀린-도련님과-이용당한-실행자">돈에 홀린 도련님과 이용당한 실행자</h2>
-<p>노버트의 핵심은 범죄 거물이라기보다, 자기 신분과 얕은 능력을 돈벌이 수단으로 착각한 도련님이라는 데 있다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> 그는 박물관 전시품 절도에 가담하고 공범을 움직였지만, 페라가 보기에는 혼자서 대규모 절도를 설계할 만큼 설득력 있는 인물이 아니다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>그 한계 때문에 노버트는 벨로보그 상류층의 허영과 배후 범죄자의 계산이 만나는 지점이 된다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 그는 괴테 호텔의 사교권, 대신 가문의 친족이라는 신분, 운송 조정 업무라는 행정적 배경을 가졌지만, 실제 계획과 구매자 연결은 “춥다리 아저씨”에게 기대어 움직인다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>노버트의 체포는 사건의 끝이 아니라 다음 배후를 드러내는 문턱이다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그가 잡힌 뒤 철위대는 새 정보를 얻고, 페라는 노버트의 진술을 바탕으로 더 신중하고 정보력이 뛰어난 인물을 추적한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1140?lang=ko-kr">원문</a></span><div class="ref-quote">노버트</div></li>
+<p>노버트는 벨로보그 교통부 대신 노엘의 조카이며, 시정 부서에서 운송 조정 업무를 맡고 있다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 겨울 성 박물관 진귀품 절도 사건의 실행자로 붙잡혔고, 조사 과정에서 「춥다리 아저씨」라는 배후 인물의 존재가 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>노버트는 괴테 호텔 로비에서 다른 상류층 인사들과 자주 티타임을 즐기던 인물로, <a class="wiki-link" href="npc-852.html" title="월리스">월리스</a>와도 안면이 있었다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그러던 어느 날부터 그는 모임에 나오지 않았고, 월리스는 그가 마치 증발해버린 것 같다고 말한다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p><a class="wiki-link" href="char-19.html" title="페라">페라</a>가 노버트의 신원을 묻자 <a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 그가 교통부 대신 노엘의 조카이며 시정 부서에서 운송 조정 업무를 맡고 있다고 기억해 낸다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 브로냐는 그 업무가 한가한 편이라 라임스테인가의 도련님과 자주 어울렸을 것이라고 덧붙인다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>브로냐는 노버트가 며칠째 자취를 감췄다면 행방을 아는 시종이 있을 것이라 보고 카일에게 노엘 대신의 저택 주변을 조사하게 한다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 카일은 노버트가 최근 이상한 시간대에 자주 외출했고, 어디 가느냐고 물으면 상점가에 「구경」 간다며 둘러댔다고 보고한다.<sup class="cite-ref" title="게임 본편 · 경비병 카일의 언급 · 경비병 카일의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 브로냐는 이 「상점가」라는 말을 다른 단서와 연결할 수 있다고 보고, 페라는 노버트가 문화재 절도범일 가능성을 제기한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
+<p>페라는 범인이 노버트든 아니든 조력자가 한둘은 아닐 것이라고 경고한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 현장에서 페라는 노버트와 사업을 의논하러 왔다며 위장 접근하고, 철위대 차림의 시종이 그를 「노버트 도련님」이라 부르는 것을 확인해 그가 동료를 철위대로 위장시켰다는 사실을 밝혀낸다.<sup class="cite-ref" title="게임 본편 · 철위대 차림의 시종의 언급 · 철위대 차림의 시종의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 철위대 차림의 공범의 언급 · 철위대 차림의 공범의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 페라는 이후로도 노버트 밑에서 일하는 사람을 계속 마주친다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
+<p>페라는 「쿠스퍼가의 노버트 씨」를 지목하며 그와 동행에게 손을 들라고 명령한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 거래 현장에서 악덕 구매자는 보안이 완벽하다던 약속은 어떻게 됐냐며 노버트를 몰아세우고, 페라는 공범이 이미 제압되어 도망칠 곳이 없다고 압박해 그를 체포한다.<sup class="cite-ref" title="게임 본편 · 악덕 구매자의 언급 · 악덕 구매자의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 이후 사교 모임에서 월리스는 체포됐던 노버트에게 어떻게 이렇게 빨리 풀려났느냐고 묻는다.<sup class="cite-ref" title="게임 본편 · 월리스의 언급 · 월리스의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
+<p>페라는 체포 뒤에도 의문을 지우지 못한다. 노버트는 돈에 홀린 도련님일 뿐인데, 대체 무슨 능력으로 이렇게 많은 사람을 모아 대규모 절도를 꾸몄는지 석연치 않다고 본다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
+<h2 id="춥다리-아저씨">춥다리 아저씨</h2>
+<p>철위대는 노버트의 진술에서 새로운 정보를 얻어 페라에게 전한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> 노버트는 「춥다리 아저씨」라는 미스터리한 인물이 부추기는 바람에 박물관 전시품을 훔칠 마음을 먹었다고 진술한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 페라는 이 말을 그대로 믿지 않고, 노버트가 자신의 「능력」으로 큰돈을 벌고 싶어 했을 뿐이라고 본다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
+<p>「춥다리 아저씨」는 구매자를 소개하고 절도 계획까지 세워 준 뒤, 고문 비용으로 3할을 요구했다고 전해진다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 노버트의 말에 따르면 그는 철위대 사정을 훤히 꿰고 있어 성안에 조금이라도 움직임이 보이면 흔적 없이 사라진다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
+<p>노버트는 괴테 호텔의 문을 사이에 두고 「춥다리 아저씨」와 연락을 주고받았고, 접선 시간은 페라의 조사와 같은 시각으로 밝혀진다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 문 너머로 「음? 노버트?」라는 목소리가 들리지만, 페라는 「춥다리 아저씨」가 이미 노버트의 체포 사실을 알고 도망쳤을 것이라고 본다.<sup class="cite-ref" title="게임 본편 · 춥다리 아저씨의 언급 · 춥다리 아저씨의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-19.html">페라</a> — 문화재 절도 사건을 수사해 노버트를 체포한 철위대원이다. 「춥다리 아저씨」의 뒤를 쫓는 것도 그다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></li>
+<li><a href="char-14.html">브로냐</a> — 노버트의 신원을 기억해 내고 카일에게 그의 행방 조사를 지시했다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">…아, 기억났어. 교통부 대신 노엘 씨에게 조카가 하나 있는데, 그 사람 이름이 노버트였어. 아마 시정 부서에서 운송 조정하는 일을 하고 있을 거야</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1140?lang=ko-kr">원문</a></span><div class="ref-quote">벨로보그</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">쿠스퍼가의 노버트 씨, 그리고 옆에 있는 분——뒤돌아서 저를 보세요! 손도 제가 볼 수 있는 곳으로 올리세요!</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">…아, 기억났어. 교통부 대신 노엘 씨에게 조카가 하나 있는데, 그 사람 이름이 노버트였어. 아마 시정 부서에서 운송 조정하는 일을 하고 있을 거야</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1140?lang=ko-kr">원문</a></span><div class="ref-quote">겨울 성 박물관 진귀품 목록</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">노버트 씨의 진술에 따르면, 그는 「춥다리 아저씨」라는 미스터리한 인물이 부추기는 바람에 박물관 전시품을 훔칠 마음을 먹었대요</div></li>
 <li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">월리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">월리스의 인게임 대사</span></span><div class="ref-quote">맞아! 노버트라는 친구인데, 예전에 괴테 호텔 로비에서 종종 티타임을 즐겼지——물론 다른 상류층 인사들도 함께했어</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">도시의 책임자로서 소속된 사람의 신분과 직업은 당연히 알아야지. 노버트 씨 업무가 좀 한가하긴 해, 그래서 라임스테인가의 도련님과 자주 어울렸구나</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1140?lang=ko-kr">원문</a></span><div class="ref-quote">겨울 성 박물관 진귀품 목록</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">그렇다면, 노버트 씨가 정말 문화재 털이범일 수도 있다는 건가요?</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">노버트 씨의 진술에 따르면, 그는 「춥다리 아저씨」라는 미스터리한 인물이 부추기는 바람에 박물관 전시품을 훔칠 마음을 먹었대요</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">역시 노버트 씨였네요! 동료를 철위대로 위장시키다니 간이 배 밖으로 나왔군요!</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">악덕 구매자의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">악덕 구매자의 인게임 대사</span></span><div class="ref-quote">이게 무슨 일인가, 노버트?! 보안은 완벽하다고 하지 않았나?</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">발버둥 쳐도 소용없어요, 노버트 씨——공범은 이미 제압당했어요, 도망칠 곳은 없다고요!</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">월리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">월리스의 인게임 대사</span></span><div class="ref-quote">근데 어느 날부터 노버트가 모임에 나오질 않더라고. 마치 증발해버린 것처럼. 마지막으로 했던 말이 있었는데, 대충……</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">월리스 씨의 말처럼 노버트 씨가 며칠 동안 자취를 감췄다면, 분명 그의 행방을 아는 시종이 있을 거야</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">카일, 이 일을 부탁해도 될까? 노엘 대신의 저택에 가서 주변 사람에게 노버트 씨의 행방을 물어봐 줘</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">경비병 카일의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">경비병 카일의 인게임 대사</span></span><div class="ref-quote">노버트 씨는 최근 이상한 시간대에 자주 나간다고 합니다. 어디 가냐고 물어도 상점가에 「구경」 간다며 얼버무린다더군요</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">노버트 씨가 사건과 관련이 있는 거야?</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">노버트 씨가 당황해서 둘러댄 「상점가」와 합치면… 모든 단서를 하나로 연결할 수 있을 것 같아</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">조심하세요, {NICKNAME}. 범인이 노버트 도련님이든 아니든…. 분명 조력자가 한둘은 아닐 거예요</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">계속 앞으로 가면, 아마 노버트 씨 밑에서 일하는 사람을 더 마주칠 거예요</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">철위대 차림의 시종의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">철위대 차림의 시종의 인게임 대사</span></span><div class="ref-quote">네, 네 알겠습니다, 노버트 도련님!</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">근데 좀 석연치 않아요…. 노버트 씨는 돈에 홀린 도련님일 뿐인데 대체 무슨 능력으로 이렇게 많은 사람을 모아서 이런 대규모 절도를 꾸민 걸까요……</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">노버트 씨의 일이 좀 한가하긴 해, 그래서 라임스테인가의 도련님과 자주 어울렸구나</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">「춥다리 아저씨」는 구매자 소개뿐만 아니라, 노버트 씨에게 계획도 세워주고 고문 비용은 3할만 받겠다고 했대요…. 도련님 눈에는 크게 이득 보는 장사였겠죠</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">노버트 씨가 그러는데 「춥다리 아저씨」는 아주 신중하고 철위대에 대해 훤히 꿰뚫고 있대요. 성안에 조금이라도 움직임이 보이면 흔적도 없이 사라진다더라고요……</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">지난번에 잡은 노버트 씨 기억하세요? 철위대가 새로운 정보를 얻어서 알려드리려고 왔어요</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">이렇게까지 신분을 감추고, 꽤 빠르고 정확한 소식통까지…. 아마 노버트 씨가 잡힌 사실도 알고서 빨리 도망간 걸 거예요</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">노버트… 노버트… 어디선가 들어본 이름인데. 미안, 잠시 생각 좀 해볼게……</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">노버트 씨 말로는, 괴테 호텔의 문을 사이에 두고 「춥다리 아저씨」와 소통했다고 해요. 평소에 만나는 시간이… 바로 지금이에요</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">철위대 차림의 공범의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">철위대 차림의 공범의 인게임 대사</span></span><div class="ref-quote">잠깐, 방금… 노버트 도련님이라고 했어?</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">…이런 엉터리 같은 이야기를 노버트 씨가 믿진 않았겠죠. 그냥 자신의 「능력」으로 큰돈을 벌고 싶었을 거예요</div></li></ol></details>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">월리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">월리스의 인게임 대사</span></span><div class="ref-quote">근데 어느 날부터 노버트가 모임에 나오질 않더라고. 마치 증발해버린 것처럼. 마지막으로 했던 말이 있었는데, 대충……</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">혹시 노버트 씨가 뭐 하는 분인지 아시나요?</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">노버트… 노버트… 어디선가 들어본 이름인데. 미안, 잠시 생각 좀 해볼게……</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">도시의 책임자로서 소속된 사람의 신분과 직업은 당연히 알아야지. 노버트 씨 업무가 좀 한가하긴 해, 그래서 라임스테인가의 도련님과 자주 어울렸구나</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">노버트 씨의 일이 좀 한가하긴 해, 그래서 라임스테인가의 도련님과 자주 어울렸구나</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">월리스 씨의 말처럼 노버트 씨가 며칠 동안 자취를 감췄다면, 분명 그의 행방을 아는 시종이 있을 거야</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">카일, 이 일을 부탁해도 될까? 노엘 대신의 저택에 가서 주변 사람에게 노버트 씨의 행방을 물어봐 줘</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">경비병 카일의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">경비병 카일의 인게임 대사</span></span><div class="ref-quote">노버트 씨는 최근 이상한 시간대에 자주 나간다고 합니다. 어디 가냐고 물어도 상점가에 「구경」 간다며 얼버무린다더군요</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">노버트 씨가 사건과 관련이 있는 거야?</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">노버트 씨가 당황해서 둘러댄 「상점가」와 합치면… 모든 단서를 하나로 연결할 수 있을 것 같아</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">그렇다면, 노버트 씨가 정말 문화재 털이범일 수도 있다는 건가요?</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">조심하세요, {NICKNAME}. 범인이 노버트 도련님이든 아니든…. 분명 조력자가 한둘은 아닐 거예요</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">철위대 차림의 시종의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">철위대 차림의 시종의 인게임 대사</span></span><div class="ref-quote">네, 네 알겠습니다, 노버트 도련님!</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">역시 노버트 씨였네요! 동료를 철위대로 위장시키다니 간이 배 밖으로 나왔군요!</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">엣헴, 이제 들어가도 되죠? 노버트 도련님과 사업에 대해 급히 의논할 게 있어요</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">철위대 차림의 공범의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">철위대 차림의 공범의 인게임 대사</span></span><div class="ref-quote">잠깐, 방금… 노버트 도련님이라고 했어?</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">계속 앞으로 가면, 아마 노버트 씨 밑에서 일하는 사람을 더 마주칠 거예요</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">봐요, 또 노버트 씨예요!</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">쿠스퍼가의 노버트 씨, 그리고 옆에 있는 분——뒤돌아서 저를 보세요! 손도 제가 볼 수 있는 곳으로 올리세요!</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">악덕 구매자의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">악덕 구매자의 인게임 대사</span></span><div class="ref-quote">이게 무슨 일인가, 노버트?! 보안은 완벽하다고 하지 않았나?</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">발버둥 쳐도 소용없어요, 노버트 씨——공범은 이미 제압당했어요, 도망칠 곳은 없다고요!</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">월리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">월리스의 인게임 대사</span></span><div class="ref-quote">…노버트, 어서 모두에게 말해보게. 어떻게 이렇게 빨리 나온 건가?</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">근데 좀 석연치 않아요…. 노버트 씨는 돈에 홀린 도련님일 뿐인데 대체 무슨 능력으로 이렇게 많은 사람을 모아서 이런 대규모 절도를 꾸민 걸까요……</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">지난번에 잡은 노버트 씨 기억하세요? 철위대가 새로운 정보를 얻어서 알려드리려고 왔어요</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">아무튼, 지난번에 잡은 노버트 씨 기억하죠? 철위대가 새로운 정보를 얻어서 알려드리려고 왔어요</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">…이런 엉터리 같은 이야기를 노버트 씨가 믿진 않았겠죠. 그냥 자신의 「능력」으로 큰돈을 벌고 싶었을 거예요</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">「춥다리 아저씨」는 구매자 소개뿐만 아니라, 노버트 씨에게 계획도 세워주고 고문 비용은 3할만 받겠다고 했대요…. 도련님 눈에는 크게 이득 보는 장사였겠죠</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">노버트 씨가 그러는데 「춥다리 아저씨」는 아주 신중하고 철위대에 대해 훤히 꿰뚫고 있대요. 성안에 조금이라도 움직임이 보이면 흔적도 없이 사라진다더라고요……</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">노버트 씨 말로는, 괴테 호텔의 문을 사이에 두고 「춥다리 아저씨」와 소통했다고 해요. 평소에 만나는 시간이… 바로 지금이에요</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">춥다리 아저씨의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">춥다리 아저씨의 인게임 대사</span></span><div class="ref-quote">음? 노버트?</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">이렇게까지 신분을 감추고, 꽤 빠르고 정확한 소식통까지…. 아마 노버트 씨가 잡힌 사실도 알고서 빨리 도망간 걸 거예요</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 야릴로-Ⅵ·벨로보그</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
@@ -759,12 +697,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="npc-1140">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EB%85%B8%EB%B2%84%ED%8A%B8&amp;body=%EB%85%B8%EB%B2%84%ED%8A%B8+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnpc-1140.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

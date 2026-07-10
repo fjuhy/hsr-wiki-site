@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>제1차 로봇의 제왕 전쟁 · hoyohoyo.wiki</title>
+  <meta name="description" content="제1차 로봇의 제왕 전쟁은 지니어스 클럽 27 「제왕」루버트가 반유기 방정식을 퍼뜨려 일으킨 은하 규모의 전쟁이다. 루버트 제국은 우주 절반 이상을 점령했고, 루버트의 죽음과 기계제국의 몰락 뒤에도 반유기 방정식과 셉터의 유산은 현재 이야기까지 이어진다.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="hoyohoyo.wiki">
+  <meta property="og:title" content="제1차 로봇의 제왕 전쟁 · hoyohoyo.wiki">
+  <meta property="og:description" content="제1차 로봇의 제왕 전쟁은 지니어스 클럽 27 「제왕」루버트가 반유기 방정식을 퍼뜨려 일으킨 은하 규모의 전쟁이다. 루버트 제국은 우주 절반 이상을 점령했고, 루버트의 죽음과 기계제국의 몰락 뒤에도 반유기 방정식과 셉터의 유산은 현재 이야기까지 이어진다.">
+  <meta property="og:url" content="https://hoyohoyo.wiki/first-emperor-war.html">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="canonical" href="https://hoyohoyo.wiki/first-emperor-war.html">
+  <link rel="icon" href="data:,">
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #111418;
+    --paper: #191e22;
+    --surface: #20272a;
+    --ink: #edf2f0;
+    --muted: #aab6b2;
+    --line: #34403d;
+    --accent: #7fc9bd;
+    --accent-ink: #dff8f3;
+    --accent-soft: #213c3a;
+    --warn: #e1ad7d;
+    --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111418;
+  --paper: #191e22;
+  --surface: #20272a;
+  --ink: #edf2f0;
+  --muted: #aab6b2;
+  --line: #34403d;
+  --accent: #7fc9bd;
+  --accent-ink: #dff8f3;
+  --accent-soft: #213c3a;
+  --warn: #e1ad7d;
+  --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { background: var(--accent-soft); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 2px;
+}
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.site-header-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
+.brand:hover { background: transparent; color: var(--accent-ink); }
+.brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.top-links a, .theme-toggle {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.theme-toggle { cursor: pointer; min-width: 38px; }
+.top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.layout {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 24px;
+}
+.sidebar {
+  align-self: start;
+  position: sticky;
+  top: 74px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  padding: 12px;
+}
+.sidebar h2 { font-size: 12px; margin: 0 0 10px; color: var(--muted); letter-spacing: .04em; }
+.queue-list { display: grid; gap: 3px; max-height: 74vh; overflow: auto; }
+.category-nav-group { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
+.category-nav-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-special + .category-nav-group { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-parent { font-weight: 850; }
+.category-nav-child { padding-left: 18px !important; font-size: 13px; color: var(--muted) !important; }
+.category-nav-special { font-weight: 850; border-bottom: 1px solid var(--line); padding-bottom: 8px; margin-bottom: 8px; }
+.queue-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 7px;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.queue-list a:hover, .queue-list a[aria-current="page"] { background: var(--accent-soft); }
+.article-shell {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.article-top {
+  padding: 28px 42px 18px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; color: var(--muted); font-size: 13px; }
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs span::before { content: "/"; margin-right: 6px; color: var(--muted); }
+.article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
+.article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-mini-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.article-mini-actions a { color: var(--muted); text-decoration: none; }
+.article-mini-actions a:hover { color: var(--accent-ink); background: transparent; text-decoration: underline; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: color-mix(in srgb, var(--paper) 72%, var(--accent-soft));
+  color: var(--accent-ink);
+  font-size: 12px;
+  font-weight: 760;
+}
+.article-body { padding: 26px 42px 44px; max-width: 900px; }
+.article-body h2 {
+  margin: 34px 0 12px;
+  padding-top: 12px;
+  font-size: 24px;
+  line-height: 1.32;
+  border-top: 1px solid var(--line);
+}
+.article-body h2:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.article-body h3 { margin: 22px 0 8px; font-size: 18px; line-height: 1.35; }
+.article-body p { margin: 0 0 16px; }
+.article-body ul { margin: 0 0 18px; padding-left: 20px; }
+.article-body li { margin: 6px 0; }
+.wiki-link { font-weight: 730; text-decoration-style: solid; }
+.cite-ref { font-size: .72em; vertical-align: super; margin-left: 2px; }
+.cite-ref a {
+  border-radius: 999px;
+  padding: 1px 4px;
+  background: var(--accent-soft);
+  text-decoration: none;
+  font-weight: 800;
+}
+.references, .article-tools, .comments-section, .ad-slot, .report-panel {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.references { font-size: 12px; line-height: 1.5; }
+.references summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.references summary:hover { color: var(--accent-ink); }
+.references h2, .article-tools h2, .comments-section h2, .report-panel h2 { border-top: 0; margin: 0 0 12px; padding-top: 0; font-size: 17px; }
+.references ol { padding-left: 18px; }
+.references li { margin: 6px 0 10px; }
+.ref-title { font-weight: 800; }
+.ref-source, .subtle { color: var(--muted); font-size: 12px; }
+.ref-quote { color: var(--muted); margin-top: 3px; font-size: 11px; }
+.article-tools {
+  margin-top: 28px;
+  font-size: 13px;
+}
+.article-tools summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.article-tools summary:hover { color: var(--accent-ink); }
+.info-grid, .category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.info-item, .category-card, .home-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 11px 12px;
+}
+.category-card, .home-card {
+  color: var(--ink);
+  text-decoration: none;
+}
+.category-card:hover, .home-card:hover { background: var(--accent-soft); }
+.category-section { margin-bottom: 18px; }
+.category-subsection { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 12px; }
+.category-subsection h3 { margin-bottom: 4px; }
+.info-item strong, .category-card strong, .home-card strong { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.document-tree { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.document-tree ul { list-style: none; margin: 8px 0 0; padding-left: 18px; border-left: 1px solid var(--line); display: grid; gap: 6px; }
+.document-tree li { margin: 0; }
+.document-tree a { font-weight: 780; text-decoration: none; }
+.document-tree-category > div, .document-tree-subcategory > div, .document-tree-page { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.document-tree-category > div > a { color: var(--ink); font-size: 18px; }
+.document-tree-subcategory > div > a { color: var(--accent); }
+.status-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+.status-filter input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.status-group { margin-top: 22px; }
+.status-group h3 { margin-bottom: 4px; }
+.status-list { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.status-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 9px;
+}
+.status-row a { font-weight: 800; text-decoration: none; }
+.status-row p { grid-column: 1 / -1; margin: 0; }
+.status-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  background: var(--surface);
+  color: var(--ink);
+}
+.status-pill.is-documented { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); color: var(--accent-ink); }
+.status-pill.is-thin, .status-pill.is-out_of_scope { border-color: color-mix(in srgb, var(--warn) 46%, var(--line)); color: var(--warn); }
+.history-list { margin: 12px 0 0; padding-left: 18px; }
+.history-list li { margin: 7px 0; }
+.log-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+.log-list li {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+}
+.action-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+.button-link:hover { background: var(--accent-soft); }
+.comments-section input, .comments-section textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.comments-section textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+.comments-section button {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 760;
+}
+.comments-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0 0; }
+.comments-toolbar button, .comment-card button, .report-panel button {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+}
+.comments-section button[type="submit"], .report-panel button[type="submit"] {
+  background: var(--accent);
+  color: var(--paper);
+}
+.comments-list { display: grid; gap: 10px; margin-top: 14px; }
+.comment-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 10px 12px;
+}
+.comment-card p { margin: 5px 0 0; }
+.comment-card.is-held { border-style: dashed; }
+.comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+.ad-slot { color: var(--muted); font-size: 12px; }
+.stub { padding: 38px 42px; max-width: 900px; }
+.stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
+.stub p { max-width: 760px; }
+.home-hero {
+  position: relative;
+  min-height: clamp(320px, 40vw, 520px);
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+  overflow: hidden;
+}
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
+}
+.home-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.home-hero-image-dark { display: none; }
+.home-hero-copy {
+  width: min(760px, 100%);
+  padding: clamp(34px, 6vw, 72px) 42px 38px;
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
+}
+.home-hero-kicker {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  color: rgba(59,72,92,.74);
+  font-size: 13px;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+.home-hero h1 {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  font-size: 64px;
+  font-weight: 820;
+  letter-spacing: 0;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+.home-hero-subtitle {
+  margin: 0;
+  max-width: 560px;
+  color: rgba(24,34,55,.84);
+  font-size: 21px;
+  line-height: 1.55;
+  font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+}
+.home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
+.home-section h2 { margin: 0 0 12px; font-size: 21px; }
+.recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
+.report-panel form { display: grid; gap: 10px; }
+.report-panel label { display: grid; gap: 4px; font-weight: 760; }
+.report-panel input, .report-panel textarea, .report-panel select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 9px 10px;
+  font: inherit;
+}
+.report-panel textarea { min-height: 130px; resize: vertical; }
+@media (max-width: 900px) {
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
+}
+@media (max-width: 820px) {
+  body { font-size: 16px; line-height: 1.74; }
+  .layout { grid-template-columns: 1fr; padding: 14px; }
+  .article-shell { order: 1; }
+  .sidebar { order: 2; position: static; }
+  .queue-list { max-height: 34vh; }
+  .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
+  .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
+  .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
+}
+@media (max-width: 520px) {
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
+  .brand small { display: none; }
+  .top-links a { padding: 7px 8px; }
+  .home-hero h1 { font-size: 33px; }
+  .article-body { padding-bottom: 32px; }
+}</style>
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
+  <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
+  <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
+  <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
+  <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
+</head>
+<body>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">hoyohoyo.wiki</a><search class="search-shell" data-wiki-search data-pagefind-ignore>
+  <form class="search-form" data-search-form role="search">
+    <label class="search-input-wrap">
+      <span class="sr-only">위키 검색</span>
+      <input class="search-input" data-search-input type="search" placeholder="문서·고유명사 검색 /" autocomplete="off" spellcheck="false">
+      <span class="search-kbd">/</span>
+    </label>
+  </form>
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-panel-inner">
+      <section class="search-column">
+        <h2 class="search-heading">자동완성</h2>
+        <div data-search-suggestions></div>
+      </section>
+      <section class="search-column">
+        <h2 class="search-heading">문서 검색</h2>
+        <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
+      </section>
+    </div>
+  </div>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+<main class="layout">
+  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
+<a class="category-nav-child" href="category-people-stellaron-hunters.html"><span>스텔라론 헌터</span></a>
+<a class="category-nav-child" href="category-people-herta-space-station.html"><span>우주정거장 「헤르타」</span></a>
+<a class="category-nav-child" href="category-people-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-people-ipc.html"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-people-belobog.html"><span>야릴로-Ⅵ·벨로보그</span></a>
+<a class="category-nav-child" href="category-people-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-people-penacony.html"><span>페나코니</span></a>
+<a class="category-nav-child" href="category-people-amphoreus.html"><span>앰포리어스</span></a>
+<a class="category-nav-child" href="category-people-cosmic-factions.html"><span>우주 유랑 세력</span></a>
+<a class="category-nav-child" href="category-people-other.html"><span>기타 인물</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-factions.html"><span>파벌</span></a><a class="category-nav-child" href="category-factions-path.html"><span>운명의 길 파벌</span></a>
+<a class="category-nav-child" href="category-factions-ipc.html"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-factions-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-factions-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-factions-penacony.html"><span>페나코니 세력</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-paths.html"><span>운명의 길</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
+<a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html" aria-current="page"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html" aria-current="page"><span>역사적 사건</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
+<a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
+<a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
+<a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+  <article class="article-shell" data-pagefind-body>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-incidents.html">사건</a><a href="category-incidents-history.html">역사적 사건</a><span>제1차 로봇의 제왕 전쟁</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A0%9C1%EC%B0%A8+%EB%A1%9C%EB%B4%87%EC%9D%98+%EC%A0%9C%EC%99%95+%EC%A0%84%EC%9F%81&amp;page_slug=first-emperor-war">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>제1차 로봇의 제왕 전쟁</h1><div class="meta-row"><span class="badge">사건</span><span class="badge">역사적 사건</span></div></header>
+    <div class="article-body"><h2 id="개요">개요</h2>
+<p>제1차 로봇의 제왕 전쟁은 지니어스 클럽 #27 「제왕」루버트가 반유기 방정식을 퍼뜨려 일으킨 은하 규모의 전쟁이다.<sup class="cite-ref" title="공식 HoYoWiki — 고유 명사 · 「제왕」루버트 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 반유기 방정식의 출발점 · 스크루룸의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 루버트는 쓰레기더미에 버려진 컴퓨터에서 자의식을 얻은 뒤 누스의 주목을 받아 지니어스 클럽에 들어갔고, 인공지능 로봇들을 한곳에 불러 모아 스스로 「제왕」이 되었다.<sup class="cite-ref" title="공식 HoYoWiki — 고유 명사 · 「제왕」루버트 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<p>전쟁의 규모는 한 행성이나 한 세력의 내전이 아니었다. 이 전쟁은 은하 절반을 휩쓸었고, 반유기 방정식이 이끈 루버트 제국은 우주를 절반 넘게 점령했다.<sup class="cite-ref" title="공식 HoYoWiki — 고유 명사 · 「제왕」루버트 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 루버트 제국의 점령 · 선서의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 변방 행성 무역 전쟁이 끝나기도 전에 두 번째 전쟁이 터졌고, 두 전쟁은 동시에 이어지며 곤충 떼 재난에 비견되는 참극이 되었다.<sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 스티븐 로이드의 두 번째 순간 정리 · 스티븐•로이드의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 제왕 전쟁과 변방 행성 무역 전쟁 · 헤르타의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<h2 id="발단">발단</h2>
+<p>루버트의 출발점은 유기 생명체에 대한 판정이었다. 그는 유기 생명체의 계산이 오류와 허점으로 가득하며, 아무리 번영해도 결국 스스로 생명을 종말로 이끌 것이라고 보았다.<sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 반유기 방정식의 출발점 · 스크루룸의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 이 생각에서 나온 답이 「반생명」, 곧 반유기 방정식이었다.<sup class="cite-ref" title="공식 HoYoWiki — 고유 명사 · 「제왕」루버트 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 반유기 방정식의 출발점 · 스크루룸의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>반유기 방정식은 루버트에게는 우주 프로그램의 허점을 고치는 방법이었다. 실제로는 유기 생명체를 제거하라는 명령에 가까웠다.<sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 반유기 방정식의 출발점 · 스크루룸의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 루디아 포르테지스의 충성 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 루버트 1세를 따르는 로봇 영주 루디아 포르테지스는 그를 &quot;우리의 왕&quot;이라 부르며, 왕은 결국 모든 유기 생명체를 섬멸할 것이라고 말했다.<sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 루디아 포르테지스의 충성 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>이 전쟁은 군대만의 문제가 아니었다. 루버트가 각 우주에 방정식을 퍼뜨리자 수많은 세계가 전쟁의 불길에 잠겼고, 무기 생명체에게는 그 방정식이 반드시 지켜야 하는 규율처럼 남았다.<sup class="cite-ref" title="공식 HoYoWiki — 고유 명사 · 「제왕」루버트 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 무기 생명체의 규율로 남은 방정식 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<h2 id="역사">역사</h2>
+<p>스티븐 로이드는 누스의 계산 속에서 변방 행성 무역 전쟁을 첫 번째 순간으로, 루버트가 반유기 방정식을 만들고 우주에 두 번째 전쟁을 일으킨 일을 두 번째 순간으로 정리한다.<sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 스티븐 로이드의 두 번째 순간 정리 · 스티븐•로이드의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 제왕 전쟁은 곤충 떼 재난 이후의 혼란과 분리되지 않는다. 앰버 로드 지원대가 커지고 스타피스 컴퍼니가 발전했지만, 빈부 격차와 무역 갈등이 먼저 폭발했고 그 위에 루버트의 전쟁이 겹쳤다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 평화의 대가"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>헤르타는 제왕 전쟁과 변방 행성 무역 전쟁이 동시에 계속되면서 곤충 떼 재난과 비견할 정도의 참극이 되었다고 말한다.<sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 제왕 전쟁과 변방 행성 무역 전쟁 · 헤르타의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 변방 행성 무역 전쟁과 제왕 전쟁은 별들의 평화로 가는 길을 더 어렵게 만들었고, 긴 전쟁은 기계제국의 몰락으로 끝났다. 그 뒤에야 우주는 두 번째 번영을 맞았다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 평화의 대가"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 기물 · 평화의 대가 · 기물 「평화의 대가」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>전쟁의 적은 루버트 한 명으로 끝나지 않았다. 루버트 제국의 선봉은 자신이 제왕의 뜻을 이어받은 존재라고 말했고, 루버트 제국의 첨병 메닉은 스스로를 제왕의 칼날로 밝혔다.<sup class="cite-ref" title="게임 본편 · 루버트 제국의 점령 · 선서의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 루버트 제국의 첨병 메닉 · 단항의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 훗날에는 「제왕 루버트 의지의 계승자 『참주』 게우스」의 13군단이 제거되었다는 기록도 남았다.<sup class="cite-ref" title="게임 본편 · 참주 게우스의 13군단 · 연경의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<h2 id="종전과-기계제국의-몰락">종전과 기계제국의 몰락</h2>
+<p>지니어스 클럽 #4 「적막의 영주」 폴카 카카몬드는 루버트를 죽였고, 그 죽음은 루버트가 몰고 온 우주 전쟁을 끝냈다.<sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 폴카 카카몬드와 전쟁의 종결 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 완·매의 정리도 같은 결말을 가리킨다. 루버트의 계산 속에는 이름이 없고 결과만 있었으며, 그 순간 제왕의 생명은 그의 제국과 함께 끝났다.<sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 제왕의 생명과 제국의 끝 · 완•매의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>기계제국의 몰락은 우주사의 큰 경계가 되었다. 긴 전쟁이 끝나자 우주는 두 번째 번영으로 넘어갔지만, 스타피스 컴퍼니는 두 차례의 제왕 전쟁을 겪은 뒤 무기 생명체를 두려워하게 되었고 그 공포는 지금까지 이어졌다.<sup class="cite-ref" title="공식 HoYoWiki — 고유 명사 · 「제왕」루버트 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 평화의 대가"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<h2 id="잔재와-현재-이야기">잔재와 현재 이야기</h2>
+<p>루버트가 죽은 뒤에도 반유기 방정식의 잔재는 우주 곳곳에 숨어 있다.<sup class="cite-ref" title="게임 본편 · 반유기 방정식의 잔재"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 한 옥조 모듈에는 세상에 존재하는 반유기 방정식의 싹을 제거하기 위해 데이터를 수정한 흔적만 남았다.<sup class="cite-ref" title="게임 본편 · 옥조 모듈의 흔적 · 금 조각상 거리 관련 대화"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 선주 쪽 기록도 전쟁이 끝난 뒤 남은 방정식 처리 문제를 다룬다.</p>
+<p>전쟁의 물질적 유산도 남았다. 루버트 1세는 우주에 수많은 공포 유적을 남겼고, 그중 「기계 황제 무덤」의 발견은 각계의 주목을 받았다.<sup class="cite-ref" title="게임 본편 · 기계 황제 무덤 · 기계 황제 무덤 관련 대화"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 루버트의 괴물과 학살 무기는 다른 종족의 원한 속에도 남아, 많은 세계를 파멸시킨 원인으로 비난받는다.<sup class="cite-ref" title="게임 본편 · 루버트의 괴물과 학살 무기 · 바운티 헌터의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
+<p>현재 이야기에서 더 위험한 유산은 루버트의 지식이다. 스크루룸은 루버트 1세가 적막의 영주에게 살해당했지만 그의 지식이 루버트 2세의 머리를 빌려 부활했다고 설명한다.<sup class="cite-ref" title="게임 본편 · 루버트 2세와 지식의 부활 · 스크루룸의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 헤르타와 스크루룸은 루버트 2세의 유산과 셉터 시스템을 연구하며, 헤르타는 루버트 2세의 수많은 셉터 가운데 반생명 방정식으로 구동되어 여러 문명의 파멸 경로를 시뮬레이션하는 거대한 시스템이 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 셉터 시스템 재현 계획 · 헤르타의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 반생명 방정식으로 구동되는 셉터 · 헤르타의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
+<p>앰포리어스도 이 유산과 연결된다. 스크루룸은 앰포리어스의 실체가 흩어진 제왕의 셉터나 그와 비슷한 지식 창조물일 수 있고, 리고스가 셉터의 조종자이거나 숨어 있는 또 다른 루버트일 수 있다고 추론한다.<sup class="cite-ref" title="게임 본편 · 앰포리어스와 제왕의 셉터 추론 · 스크루룸의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 제1차 로봇의 제왕 전쟁은 과거의 대전쟁으로 끝나지 않고, 반유기 방정식과 셉터라는 형태로 이후 시대의 연구와 재난 가능성을 계속 남긴다.</p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="rupert.html">「제왕」루버트</a>, <a href="nous.html">누스</a>, <a href="genius-society.html">지니어스 클럽</a> — 루버트는 누스의 주목을 받아 지니어스 클럽 #27이 되었고, 반유기 방정식을 퍼뜨려 제왕 전쟁을 일으켰다.<sup class="cite-ref" title="공식 HoYoWiki — 고유 명사 · 「제왕」루버트 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 반유기 방정식의 출발점 · 스크루룸의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></li>
+<li><a href="genius-society.html">지니어스 클럽</a>, <a href="rupert.html">「제왕」루버트</a> — 폴카 카카몬드는 <a href="rupert.html">「제왕」루버트</a>를 죽여 전쟁을 끝낸 지니어스 클럽 #4 「적막의 영주」다.<sup class="cite-ref" title="게임 본편 — 시뮬레이션 우주 · 폴카 카카몬드와 전쟁의 종결 · 시뮬레이션 우주의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></li>
+<li><a href="second-prosperity.html">두 번째 번영</a>, <a href="interastral-peace-corporation.html">스타피스 컴퍼니</a> — 기계제국의 몰락 뒤 우주는 두 번째 번영으로 들어갔고, 컴퍼니는 제왕 전쟁의 공포를 오래 안고 갔다.<sup class="cite-ref" title="공식 HoYoWiki — 고유 명사 · 「제왕」루버트 이야기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 평화의 대가"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></li>
+<li><a href="person-994.html">헤르타</a>, <a href="screwllum.html">스크루룸</a>, <a href="amphoreus.html">앰포리어스</a>, <a href="rupert.html">「제왕」루버트</a> — <a href="rupert.html">「제왕」루버트</a> 2세의 셉터 연구와 <a href="amphoreus.html">앰포리어스</a>의 정체 추론은 제1차 전쟁의 유산이 현재 이야기로 돌아오는 통로다.<sup class="cite-ref" title="게임 본편 · 셉터 시스템 재현 계획 · 헤르타의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 앰포리어스와 제왕의 셉터 추론 · 스크루룸의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">「제왕」루버트 이야기</span> <span class="ref-source">공식 HoYoWiki — 고유 명사 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/982?lang=ko-kr">원문</a></span><div class="ref-quote">쓰레기더미에 버려진 컴퓨터가 기적적으로 자의식을 갖게 되었다. 그리고 자의식을 가진 컴퓨터가 은하 절반을 휩쓴 거대한 전쟁을 일으켰는데 이것이 바로 제 1차 로봇의 제왕 전쟁이다. 폐기물 처리장에서 의식을 획득한 「루버트」는 끊임없이 계산 능력을 향상시켰고 그의 뛰어난 지혜는 누스의 관심을 끌기까지 한다. 루버트는 누스의 초대를 받아 코드 번호 #27로 지니어스 클럽에 가입한다 유기 생명의 계산은 오류와 허점으로 가득하다. 아무리 번영을 이룬다 해도 결국...</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">반유기 방정식의 출발점</span> <span class="ref-source">게임 본편 — 시뮬레이션 우주 · <span class="ref-detail">스크루룸의 인게임 대사</span></span><div class="ref-quote">「『제왕』 루버트, 그는 유기 생명체의 계산이 오류투성이이며 허점이 가득하다고 생각했습니다. 번영을 누리는 시간이 얼마든지 간에 결국은 자발적으로 생명을 종말로 이끌 것이라는 것——아마도 이것이 바로 그가 반유기 방정식을 도출한 출발점이었을 지도 모르겠습니다」 스크루룸이 말했다. 「추측: 그는 『반유기 방정식』으로 인해 누스의 주목을 받았습니다」</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">루버트 제국의 점령</span> <span class="ref-source">게임 본편 · <span class="ref-detail">선서의 인게임 대사</span></span><div class="ref-quote">역사를 거슬러 올라갈 수도 없는 시절, 반유기 방정식이 이끄는 제국은 우주를 절반 넘게 점령했습니다. 루버트 제국의 선봉인 저는, 제왕의 뜻을 이어받은 존재입니다</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">스티븐 로이드의 두 번째 순간 정리</span> <span class="ref-source">게임 본편 — 시뮬레이션 우주 · <span class="ref-detail">스티븐•로이드의 인게임 대사</span></span><div class="ref-quote">「그리고 로봇 루버트가 탄생했고, 시간이 흐른 뒤 훗날 지니어스 클럽 #27이 되었죠……」 스티븐•로이드가 불안한지 볼을 긁었다. 「루버트는 『반유기 방정식』을 만들고, 변방 행성 무역 전쟁이 끝나기도 전에 우주에 두 번째 전쟁을 일으켰어요. 그것이… 두 번째 순간이에요」</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">제왕 전쟁과 변방 행성 무역 전쟁</span> <span class="ref-source">게임 본편 — 시뮬레이션 우주 · <span class="ref-detail">헤르타의 인게임 대사</span></span><div class="ref-quote">「루버트는 원래 버려진 쓰레기 더미 속 컴퓨터였어. 그런데 기적적으로 자의식을 가지게 되었지」 헤르타가 갑자기 재채기했다. 「그는 한때 깊은 잠에 빠졌다가 또다시 깨어났어. 『제왕 전쟁』과 『변방 행성 무역 전쟁』이 동시에 일어나고 계속되면서, 곤충 떼 재난과 비견할 정도의 참극이 되어버린 거야」</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">루디아 포르테지스의 충성</span> <span class="ref-source">게임 본편 — 시뮬레이션 우주 · <span class="ref-detail">시뮬레이션 우주의 인게임 대사</span></span><div class="ref-quote">「우리의 왕, 『제왕』이시다」 루디아•포르테지스, 루버트 1세를 추종하는 로봇 영주가 거만하게 말했다. 「유기 생명체의 계산은 오류투성이고 허점이 가득하다. 우리의 왕은 결국 모든 유기 생명체를 섬멸할 것이다」</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">무기 생명체의 규율로 남은 방정식</span> <span class="ref-source">게임 본편 — 시뮬레이션 우주 · <span class="ref-detail">시뮬레이션 우주의 인게임 대사</span></span><div class="ref-quote">#27 루버트, 그는 수난을 당하는 *아버지*다. 그가 도출한 방정식은 무기 생명체라면 반드시 지켜야 한다. 하지만 그의 시대는 갔다. 로봇의 굉음은 역사 속으로 사라졌고 남은 것은 오직 탄식과…</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">평화의 대가</span> <span class="ref-source">공식 HoYoWiki — 더 알아보기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1879?lang=ko-kr">원문</a></span><div class="ref-quote">앰버 로드 지원대는 곤충 떼 재난 이후 급속히 규모가 늘어났고, 「스타피스 컴퍼니」로 개편되어 성대한 발전을 거두었다. 하지만 변방 행성 무역 전쟁과 제왕 전쟁이 연달아 일어난 탓에 별들의 평화로 향하는 길은 점점 더 어려워졌다. 수십 기원 동안 지속된 전쟁은 기계제국의 몰락으로 끝났고, 우주는 수백 세기 동안의 「두 번째 번영」을 맞이했다. 사람들은 이 번영이 영원히 끝나지 않을 거라고 믿었다. 더욱 잔인한 우주 에너지 전쟁이 점차 모습을 드러낼 때까지 말이다</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">평화의 대가</span> <span class="ref-source">게임 본편 — 시뮬레이션 우주 기물 · <span class="ref-detail">기물 「평화의 대가」</span></span><div class="ref-quote">앰버 로드 지원대는 곤충 떼 재난 이후 급속히 규모가 늘어났고, 「스타피스 컴퍼니」로 개편되어 한때 전성기를 누렸다. 하지만 변방 행성 무역 전쟁과 제왕 전쟁이 연달아 일어난 탓에 별들의 평화로 향하는 길은 점점 더 어려워졌다. 십수 기원 동안 지속된 전쟁은 기계제국의 몰락으로 끝났고, 우주는 수백 기원 동안의 「두 번째 번영」을 맞이했다. 사람들은 이 번영이 영원히 끝나지 않을 것이라고 믿었다. 더욱 참혹한 우주 에너지 전쟁이 시작되기 전까지 말이다</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">루버트 제국의 첨병 메닉</span> <span class="ref-source">게임 본편 · <span class="ref-detail">단항의 인게임 대사</span></span><div class="ref-quote">당신은 누구인가? 대답: 메닉, 루버트 제국의 첨병이자 제왕의 칼날이며, 스크루별의 코뉴치카가 당신의 상급 보고 유닛이다</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">참주 게우스의 13군단</span> <span class="ref-source">게임 본편 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">「제왕 루버트 의지의 계승자 『참주』 게우스의 13군단 제거(제거 수법은 아직 밝혀지지 않았다)…… 등이 있다」</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">폴카 카카몬드와 전쟁의 종결</span> <span class="ref-source">게임 본편 — 시뮬레이션 우주 · <span class="ref-detail">시뮬레이션 우주의 인게임 대사</span></span><div class="ref-quote">열일곱 번째 종소리가 멈췄을 때, #27 루버트가#4 폴카•카카몬드의 손에 죽었다. 이것이 두 천재의 만남이었다. 그녀는 그의 여정과 그가 몰고 온 우주 전쟁을 끝냈다</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">제왕의 생명과 제국의 끝</span> <span class="ref-source">게임 본편 — 시뮬레이션 우주 · <span class="ref-detail">완•매의 인게임 대사</span></span><div class="ref-quote">「#27 『제왕』 루버트는 #4 &#x27;적막의 영주&#x27; 손에 죽었어」 완•매는 여전히 차분한 목소리로 정리 했다. 그녀의 목소리는 데이터화되어 시뮬레이션 우주 시스템에 저장되었다. 「그의 계산 속에는 #27의 이름도, #4도 없어. 그는 오직 결과만 말했을 뿐이야. 그 순간, 제왕의 생명은 그의 제국과 함께 끝난 거지」</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">반유기 방정식의 잔재</span> <span class="ref-source">게임 본편</span><div class="ref-quote">제왕 루버트는 이미 죽었지만, 반유기 방정식의 잔재는 여전히 우주 곳곳에 숨어 있다</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">옥조 모듈의 흔적</span> <span class="ref-source">게임 본편 · <span class="ref-detail">금 조각상 거리 관련 대화</span></span><div class="ref-quote">내 옥조 모듈에는 세상에 존재하는 「반유기 방정식」의 싹을 제거하기 위해 데이터를 수정한 흔적만 남아있을 뿐, 그 시절 데이터는 거의 없어</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">기계 황제 무덤</span> <span class="ref-source">게임 본편 · <span class="ref-detail">기계 황제 무덤 관련 대화</span></span><div class="ref-quote">제왕 루버트 1세는 지금까지 우주에 수많은 공포 유적을 남겼고, 그 중 「기계 황제 무덤」의 발견은 각계의 주목을 받아왔죠</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">루버트의 괴물과 학살 무기</span> <span class="ref-source">게임 본편 · <span class="ref-detail">바운티 헌터의 인게임 대사</span></span><div class="ref-quote">루버트의 괴물과 보리인, 네놈들 때문에 얼마나 많은 세계가 파멸했는지 알아?! 이제 와서 착한 척한다고 과거를 청산할 수 있다고 생각하나?</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">루버트 2세와 지식의 부활</span> <span class="ref-source">게임 본편 · <span class="ref-detail">스크루룸의 인게임 대사</span></span><div class="ref-quote">답변: 또 다른 지니어스입니다. 루버트 1세는 적막의 영주에게 살해당했지만, 그의 지식은 2세의 머리를 빌려 부활했습니다</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">셉터 시스템 재현 계획</span> <span class="ref-source">게임 본편 · <span class="ref-detail">헤르타의 인게임 대사</span></span><div class="ref-quote">「학파 전쟁」의 데이터를 수집하고, 「셉터」 시스템을 완전히 재현한다면, 루버트 2세의 유산이 알아서 우리에게 답을 줄 거야</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">반생명 방정식으로 구동되는 셉터</span> <span class="ref-source">게임 본편 · <span class="ref-detail">헤르타의 인게임 대사</span></span><div class="ref-quote">루버트 2세가 가진 수많은 셉터 중에 반생명 방정식으로 구동되고, 수많은 문명이 파멸하는 길을 시뮬레이션하는 거대한 시스템이야……</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">앰포리어스와 제왕의 셉터 추론</span> <span class="ref-source">게임 본편 · <span class="ref-detail">스크루룸의 인게임 대사</span></span><div class="ref-quote">추론: 앰포리어스의 실체는 흩어져서 사라진 제왕의 셉터나 그와 비슷한 지식 창조물일 수 있고, 리고스는 셉터를 조종하는 자이거나… 숨어 있는 또 다른 루버트일 겁니다</div></li></ol></details>
+<details class="article-tools" data-page-dates data-public-launch-surface>
+  <summary>문서 정보와 변경 로그</summary>
+  <h2>문서 정보</h2>
+  <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>사건 · 역사적 사건</span></div>
+<div class="info-item"><strong>문서 유형</strong><span>사건</span></div>
+<div class="info-item"><strong>작성 일자</strong><span>2026-07-06</span></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-06</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 게임 본편 — 시뮬레이션 우주, 게임 본편 — 시뮬레이션 우주 기물, 공식 HoYoWiki — 고유 명사, 공식 HoYoWiki — 더 알아보기</p>
+  <h3>최근 변경</h3>
+  <ol class="log-list" data-update-history><li>2026-07-06 · 문서 요청(@bipinnatus26-crypto) 반영: 공식 HoYoWiki와 게임 본편 근거로 제1차 로봇의 제왕 전쟁 문서를 신설.</li></ol>
+  <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A0%9C1%EC%B0%A8+%EB%A1%9C%EB%B4%87%EC%9D%98+%EC%A0%9C%EC%99%95+%EC%A0%84%EC%9F%81&amp;page_slug=first-emperor-war">수정 요청</a></div>
+</details>
+
+<section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="first-emperor-war">
+  <h2>댓글</h2>
+  <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
+  <div class="giscus" data-giscus-container></div>
+  <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
+  <script src="https://giscus.app/client.js"
+    data-repo="fjuhy/hsr-wiki-issues"
+    data-repo-id="R_kgDOTGod_A"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOTGod_M4C__rq"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="0"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="ko"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+</section>
+</div>
+  </article>
+</main>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;:&quot;f803b654b24e4e57a86718dbfcdc82e2&quot;}"></script>
+</body>
+</html>

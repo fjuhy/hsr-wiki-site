@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>펄 · hoyohoyo.wiki</title>
+  <meta name="description" content="사람과 정보, 확률과 권한을 엮어 선택지를 만드는 펄이 약속과 현장의 책임 앞에서 어떤 결정을 내리는지 다룬다.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="hoyohoyo.wiki">
+  <meta property="og:title" content="펄 · hoyohoyo.wiki">
+  <meta property="og:description" content="사람과 정보, 확률과 권한을 엮어 선택지를 만드는 펄이 약속과 현장의 책임 앞에서 어떤 결정을 내리는지 다룬다.">
+  <meta property="og:url" content="https://hoyohoyo.wiki/pearl.html">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="canonical" href="https://hoyohoyo.wiki/pearl.html">
+  <link rel="icon" href="data:,">
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #111418;
+    --paper: #191e22;
+    --surface: #20272a;
+    --ink: #edf2f0;
+    --muted: #aab6b2;
+    --line: #34403d;
+    --accent: #7fc9bd;
+    --accent-ink: #dff8f3;
+    --accent-soft: #213c3a;
+    --warn: #e1ad7d;
+    --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111418;
+  --paper: #191e22;
+  --surface: #20272a;
+  --ink: #edf2f0;
+  --muted: #aab6b2;
+  --line: #34403d;
+  --accent: #7fc9bd;
+  --accent-ink: #dff8f3;
+  --accent-soft: #213c3a;
+  --warn: #e1ad7d;
+  --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { background: var(--accent-soft); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 2px;
+}
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.site-header-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
+.brand:hover { background: transparent; color: var(--accent-ink); }
+.brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.top-links a, .theme-toggle {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.theme-toggle { cursor: pointer; min-width: 38px; }
+.top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.layout {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 24px;
+}
+.sidebar {
+  align-self: start;
+  position: sticky;
+  top: 74px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  padding: 12px;
+}
+.sidebar h2 { font-size: 12px; margin: 0 0 10px; color: var(--muted); letter-spacing: .04em; }
+.queue-list { display: grid; gap: 3px; max-height: 74vh; overflow: auto; }
+.category-nav-group { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
+.category-nav-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-special + .category-nav-group { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-parent { font-weight: 850; }
+.category-nav-child { padding-left: 18px !important; font-size: 13px; color: var(--muted) !important; }
+.category-nav-special { font-weight: 850; border-bottom: 1px solid var(--line); padding-bottom: 8px; margin-bottom: 8px; }
+.queue-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 7px;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.queue-list a:hover, .queue-list a[aria-current="page"] { background: var(--accent-soft); }
+.article-shell {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.article-top {
+  padding: 28px 42px 18px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; color: var(--muted); font-size: 13px; }
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs span::before { content: "/"; margin-right: 6px; color: var(--muted); }
+.article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
+.article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-mini-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.article-mini-actions a { color: var(--muted); text-decoration: none; }
+.article-mini-actions a:hover { color: var(--accent-ink); background: transparent; text-decoration: underline; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: color-mix(in srgb, var(--paper) 72%, var(--accent-soft));
+  color: var(--accent-ink);
+  font-size: 12px;
+  font-weight: 760;
+}
+.article-body { padding: 26px 42px 44px; max-width: 900px; }
+.article-body h2 {
+  margin: 34px 0 12px;
+  padding-top: 12px;
+  font-size: 24px;
+  line-height: 1.32;
+  border-top: 1px solid var(--line);
+}
+.article-body h2:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.article-body h3 { margin: 22px 0 8px; font-size: 18px; line-height: 1.35; }
+.article-body p { margin: 0 0 16px; }
+.article-body ul { margin: 0 0 18px; padding-left: 20px; }
+.article-body li { margin: 6px 0; }
+.wiki-link { font-weight: 730; text-decoration-style: solid; }
+.cite-ref { font-size: .72em; vertical-align: super; margin-left: 2px; }
+.cite-ref a {
+  border-radius: 999px;
+  padding: 1px 4px;
+  background: var(--accent-soft);
+  text-decoration: none;
+  font-weight: 800;
+}
+.references, .article-tools, .comments-section, .ad-slot, .report-panel {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.references { font-size: 12px; line-height: 1.5; }
+.references summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.references summary:hover { color: var(--accent-ink); }
+.references h2, .article-tools h2, .comments-section h2, .report-panel h2 { border-top: 0; margin: 0 0 12px; padding-top: 0; font-size: 17px; }
+.references ol { padding-left: 18px; }
+.references li { margin: 6px 0 10px; }
+.ref-title { font-weight: 800; }
+.ref-source, .subtle { color: var(--muted); font-size: 12px; }
+.ref-quote { color: var(--muted); margin-top: 3px; font-size: 11px; }
+.article-tools {
+  margin-top: 28px;
+  font-size: 13px;
+}
+.article-tools summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.article-tools summary:hover { color: var(--accent-ink); }
+.info-grid, .category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.info-item, .category-card, .home-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 11px 12px;
+}
+.category-card, .home-card {
+  color: var(--ink);
+  text-decoration: none;
+}
+.category-card:hover, .home-card:hover { background: var(--accent-soft); }
+.category-section { margin-bottom: 18px; }
+.category-subsection { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 12px; }
+.category-subsection h3 { margin-bottom: 4px; }
+.info-item strong, .category-card strong, .home-card strong { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.document-tree { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.document-tree ul { list-style: none; margin: 8px 0 0; padding-left: 18px; border-left: 1px solid var(--line); display: grid; gap: 6px; }
+.document-tree li { margin: 0; }
+.document-tree a { font-weight: 780; text-decoration: none; }
+.document-tree-category > div, .document-tree-subcategory > div, .document-tree-page { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.document-tree-category > div > a { color: var(--ink); font-size: 18px; }
+.document-tree-subcategory > div > a { color: var(--accent); }
+.status-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+.status-filter input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.status-group { margin-top: 22px; }
+.status-group h3 { margin-bottom: 4px; }
+.status-list { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.status-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 9px;
+}
+.status-row a { font-weight: 800; text-decoration: none; }
+.status-row p { grid-column: 1 / -1; margin: 0; }
+.status-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  background: var(--surface);
+  color: var(--ink);
+}
+.status-pill.is-documented { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); color: var(--accent-ink); }
+.status-pill.is-thin, .status-pill.is-out_of_scope { border-color: color-mix(in srgb, var(--warn) 46%, var(--line)); color: var(--warn); }
+.history-list { margin: 12px 0 0; padding-left: 18px; }
+.history-list li { margin: 7px 0; }
+.log-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+.log-list li {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+}
+.action-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+.button-link:hover { background: var(--accent-soft); }
+.comments-section input, .comments-section textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.comments-section textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+.comments-section button {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 760;
+}
+.comments-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0 0; }
+.comments-toolbar button, .comment-card button, .report-panel button {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+}
+.comments-section button[type="submit"], .report-panel button[type="submit"] {
+  background: var(--accent);
+  color: var(--paper);
+}
+.comments-list { display: grid; gap: 10px; margin-top: 14px; }
+.comment-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 10px 12px;
+}
+.comment-card p { margin: 5px 0 0; }
+.comment-card.is-held { border-style: dashed; }
+.comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+.ad-slot { color: var(--muted); font-size: 12px; }
+.stub { padding: 38px 42px; max-width: 900px; }
+.stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
+.stub p { max-width: 760px; }
+.home-hero {
+  position: relative;
+  min-height: clamp(320px, 40vw, 520px);
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+  overflow: hidden;
+}
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
+}
+.home-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.home-hero-image-dark { display: none; }
+.home-hero-copy {
+  width: min(760px, 100%);
+  padding: clamp(34px, 6vw, 72px) 42px 38px;
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
+}
+.home-hero-kicker {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  color: rgba(59,72,92,.74);
+  font-size: 13px;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+.home-hero h1 {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  font-size: 64px;
+  font-weight: 820;
+  letter-spacing: 0;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+.home-hero-subtitle {
+  margin: 0;
+  max-width: 560px;
+  color: rgba(24,34,55,.84);
+  font-size: 21px;
+  line-height: 1.55;
+  font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+}
+.home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
+.home-section h2 { margin: 0 0 12px; font-size: 21px; }
+.recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
+.report-panel form { display: grid; gap: 10px; }
+.report-panel label { display: grid; gap: 4px; font-weight: 760; }
+.report-panel input, .report-panel textarea, .report-panel select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 9px 10px;
+  font: inherit;
+}
+.report-panel textarea { min-height: 130px; resize: vertical; }
+@media (max-width: 900px) {
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
+}
+@media (max-width: 820px) {
+  body { font-size: 16px; line-height: 1.74; }
+  .layout { grid-template-columns: 1fr; padding: 14px; }
+  .article-shell { order: 1; }
+  .sidebar { order: 2; position: static; }
+  .queue-list { max-height: 34vh; }
+  .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
+  .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
+  .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
+}
+@media (max-width: 520px) {
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
+  .brand small { display: none; }
+  .top-links a { padding: 7px 8px; }
+  .home-hero h1 { font-size: 33px; }
+  .article-body { padding-bottom: 32px; }
+}</style>
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
+  <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
+  <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
+  <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
+  <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
+</head>
+<body>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">hoyohoyo.wiki</a><search class="search-shell" data-wiki-search data-pagefind-ignore>
+  <form class="search-form" data-search-form role="search">
+    <label class="search-input-wrap">
+      <span class="sr-only">위키 검색</span>
+      <input class="search-input" data-search-input type="search" placeholder="문서·고유명사 검색 /" autocomplete="off" spellcheck="false">
+      <span class="search-kbd">/</span>
+    </label>
+  </form>
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-panel-inner">
+      <section class="search-column">
+        <h2 class="search-heading">자동완성</h2>
+        <div data-search-suggestions></div>
+      </section>
+      <section class="search-column">
+        <h2 class="search-heading">문서 검색</h2>
+        <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
+      </section>
+    </div>
+  </div>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+<main class="layout">
+  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
+<a class="category-nav-child" href="category-people-stellaron-hunters.html"><span>스텔라론 헌터</span></a>
+<a class="category-nav-child" href="category-people-herta-space-station.html"><span>우주정거장 「헤르타」</span></a>
+<a class="category-nav-child" href="category-people-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-people-ipc.html" aria-current="page"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-people-belobog.html"><span>야릴로-Ⅵ·벨로보그</span></a>
+<a class="category-nav-child" href="category-people-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-people-penacony.html"><span>페나코니</span></a>
+<a class="category-nav-child" href="category-people-amphoreus.html"><span>앰포리어스</span></a>
+<a class="category-nav-child" href="category-people-cosmic-factions.html"><span>우주 유랑 세력</span></a>
+<a class="category-nav-child" href="category-people-other.html"><span>기타 인물</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-factions.html"><span>파벌</span></a><a class="category-nav-child" href="category-factions-path.html"><span>운명의 길 파벌</span></a>
+<a class="category-nav-child" href="category-factions-ipc.html"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-factions-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-factions-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-factions-penacony.html"><span>페나코니 세력</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-paths.html"><span>운명의 길</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
+<a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
+<a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
+<a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
+<a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+  <article class="article-shell" data-pagefind-body>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-ipc.html">스타피스 컴퍼니</a><span>펄</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%8E%84&amp;page_slug=pearl">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>펄</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">스타피스 컴퍼니</span></div></header>
+    <div class="article-body"><h2 id="개요">개요</h2>
+<p>풍요의 이변이 이상 낙원을 덮치자, 펄은 외부의 초대를 공개적으로 거절했다. 그곳에 필요한 사람은 알현자가 아니라 최고 경영자라며 사태 수습을 택했다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「울리는 징, 요란한 꽹과리」"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 펄은 스타피스 컴퍼니 전략투자부의 엘리트이자 10인의 스톤하트이며, 펄럭스 그룹의 관리자와 이상 낙원의 법인 대표·최고 경영자를 겸한다. <sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 전략투자부·펄럭스·이상 낙원에서의 직책 · 공식 한국어 자막 01:25–01:40"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>펄은 사람의 능력, 흩어진 정보, 성공 확률, 조직의 권한을 한데 묶어 여러 해법을 준비하는 인물이다. 다만 중요한 순간의 결정을 계산에만 맡기지는 않는다. 라만차에게 한 약속을 다시 확인하고, 이상 낙원에 남아 현지의 책임을 맡은 장면은 펄의 판단이 결국 자신이 책임질 수 있는 선택으로 모인다는 점을 드러낸다. <sup class="cite-ref" title="게임 본편 · 펄의 라만차 약속 · 펄의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「울리는 징, 요란한 꽹과리」"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>펄과 애쉬베일의 인연은 컴퍼니 웹사이트에 올린 의뢰에서 시작됐다. 펄은 100건이 넘는 지원서 가운데 가장 저렴하면서도 비용 대비 사건 해결률이 가장 높은 애쉬베일을 골랐고, 이후에도 그와 여러 차례 협력했다. <sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 애쉬베일과의 협력 관계 · 공식 한국어 자막 01:40–02:05"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 사건 해결에서의 판단 방식 · 공식 한국어 자막 02:10–03:02"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>불사의 명탐정이 필요한 의뢰에서는 인터넷에 데이터와 기록을 남겨 애쉬베일이 목표를 찾아오게 했다. 자신의 소장품실도 마음대로 조사하도록 열어 주었다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 애쉬베일이 찾아낸 정보가 많은 사람의 목숨을 구하자, 펄은 그 성과를 직접 인정했다. <sup class="cite-ref" title="게임 본편 · 펄의 정보 평가 · 펄의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>15년 전처럼 환월 게임이 다시 통제 불능으로 치닫자 펄은 애쉬베일에게 에이언즈 게임을 바로잡아 달라고 청했다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 환월 게임 관련 본편 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 늦은 시간에 그에게서 전화가 올 확률을 5% 미만으로 보았지만, 예상 밖의 정보를 가져오자 인맥과 실력을 높이 평가했다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이어 수표에 0을 몇 개 적으면 되겠느냐며 보수를 제시하고, 그의 힘이 절실하다고 밝힌 뒤 현장에서는 원하는 대로 움직일 재량을 주었다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>그러면서도 통제 수단은 남겼다. 애쉬베일의 정체는 은퇴한 갤럭시 레인저의 수장 라만차였고, 펄이 건넨 칩에는 위치 추적기가 들어 있었다. <sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 라만차가 이를 알아챈 뒤에도 펄은 거래를 폐기하지 않았다. 환월 게임에서 승리하면 그의 고통을 없애고 소원을 이루어 주겠다는 최초의 약속을 지키겠다고 답했다. <sup class="cite-ref" title="게임 본편 · 펄의 라만차 약속 · 펄의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>펄은 무명객에게 경호가 필요하지 않다는 판단을 들은 뒤에도 그들의 안전을 위해 애쉬베일을 보냈다. <sup class="cite-ref" title="게임 본편 · 쿠치바의 언급 · 쿠치바의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 이후 이상 낙원에 풍요의 이변이 발생하자 외부 초대보다 사태 수습을 앞세웠다. 최고 경영자인 자신이 현지에 필요하다는 것이 그가 밝힌 이유였다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「울리는 징, 요란한 꽹과리」"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<h2 id="확률과-정보">확률과 정보</h2>
+<p>펄에게 확률은 확정된 미래가 아니라 정보가 늘어날 때 정밀해지는 판단값이다. 충분한 정보를 넣으면 일정 확률로 정확한 결과를 얻을 수 있다고 말했고, 효광의 제안에 따라 넓은 데이터를 모으면 알고리즘도 스스로 개선될 수 있다고 보았다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 좋은 말을 들은 뒤 좋은 일이 생길 확률이 높아졌다고 응수한 대목에서는 확률의 언어를 일상적인 대화에도 자연스럽게 끌어온다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p>정보가 많다고 해서 모두 같은 무게로 취급하지도 않는다. 「0호」에 관한 정보는 절반만 진실이라고 가르면서, 그가 큰 실수를 저질러 컴퍼니의 죄수가 됐다는 소식은 확실하다고 못 박았다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 루이스·플레밍의 승격설과 범인원·시장개척부를 둘러싼 소문은 유기 생명체가 좋아하는 환상으로 치부했다. <sup class="cite-ref" title="게임 본편 · 펄의 언급"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 한편 기술개발부가 넘겨받은 유물 기록은 펄에게도 열람 권한이 없었다. 정보의 신뢰도는 스스로 가리지만, 조직이 막아 둔 접근선까지 넘을 수 있는 것은 아니다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
+<p>그 계산력은 공동 연구에도 투입된다. 스크루룸은 시뮬레이션 우주의 다음 과제에 한해 펄을 협력자로 받아들였고, 펄은 일부 계산력을 제공하기로 했다. 두 사람은 스크루별 출신의 지능 기계라는 공통점도 지녔다. <sup class="cite-ref" title="게임 본편 — 대사 · 펄과의 협력 · 카스토리스의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 펄은 차분화 우주에서 계산력 지원 책임자로 참여해, 지니어스들이 시뮬레이션한 환월 게임 「낙원 만필」을 조사했다. <sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 차분화 우주 계산력 지원 · 공식 한국어 자막 01:13–01:58"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 개인의 직감으로 답을 선언하기보다 검증할 계산 환경을 만들고 다른 전문가의 연산과 접속하는 것이 펄의 방식이다. <sup class="cite-ref" title="게임 본편 — 대사 · 펄과의 협력 · 카스토리스의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 차분화 우주 계산력 지원 · 공식 한국어 자막 01:13–01:58"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
+<h2 id="사람을-배치하는-방식">사람을 배치하는 방식</h2>
+<p>펄은 모든 일을 직접 처리하기보다 필요한 능력을 가진 사람에게 자리와 권한을 준다. 그 대신 보수, 정보의 통로, 안전장치를 함께 설계해 결과로 이어질 가능성을 높인다. 애쉬베일에게 조사 공간과 재량을 열어 주면서도 추적 수단을 남긴 일은 신뢰와 통제를 둘 중 하나로 고르지 않는 방식을 보여 준다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>펄은 사람 한 명이 아니라 여러 세력의 자원도 하나의 계산 안에 넣는다. 「개척」의 길과 「보존」의 틀 위에 「화합」의 인력, 「지식」의 계산력, 「수렵」의 군사력을 합치면 「파멸」의 위협을 무너뜨릴 수 있다고 연산했다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 「수렵」의 사도까지 모인 자리에서 「환락」을 두고 벌어진 의식을 은하 형세의 축소판으로 본 것도 같은 방식이다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 각 세력의 차이를 지우는 대신, 무엇을 제공할 수 있는지 따져 하나의 대응책 안에 배치한다.</p>
+<h2 id="직책과-책임">직책과 책임</h2>
+<p>10인의 스톤하트는 좀처럼 모습을 드러내지 않는 전략투자부 부장 다이아몬드를 대신해 대외 업무를 맡는다. 조직의 생존이 걸린 의제에서는 열 명이 독립적이고 평등하게 투표하며, 초석 하나가 파괴된 뒤에는 아홉 표만 남았다. <sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 10인의 스톤하트 구성과 의사결정 · 별무리 기행 PV 공식 설명"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 펄은 이 조직의 대외 업무를 맡지만, 중대한 결정에서는 다른 스톤하트와 같은 무게의 한 표를 가진다. 권한이 한 사람의 확신으로 곧장 결론이 되지 않도록 만든 구조다. <sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 10인의 스톤하트 구성과 의사결정 · 별무리 기행 PV 공식 설명"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
+<p>반대로 자신이 최고 경영자인 이상 낙원에서는 결정을 남에게 넘기지 않았다. 풍요의 이변을 최우선 목표로 삼고 현지에 남은 선택은 직함을 명예가 아니라 사태를 맡을 의무로 받아들인 행동이다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「울리는 징, 요란한 꽹과리」"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 라만차의 위치를 추적할 만큼 위험을 관리하면서도 약속의 당사자로 남은 태도 역시 같다. 펄은 선택지를 통제하지만, 결정적인 장면에서는 그 선택의 책임까지 다른 사람에게 떠넘기지 않는다. <sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 라만차 약속 · 펄의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-4781.html">애쉬베일</a> — 펄이 비용과 해결 가능성을 따져 고용한 탐정이다. 환월 게임에서는 재량을 받은 협력자이자 라만차의 정체를 드러내는 인물로 이어진다. <sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 사건 해결에서의 판단 방식 · 공식 한국어 자막 02:10–03:02"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></li>
+</ul>
+<ul>
+<li><a href="screwllum.html">스크루룸</a> — 스크루별 지능 기계라는 공통점과 시뮬레이션 우주 협정을 통해 펄의 계산 협력을 살필 수 있다. <sup class="cite-ref" title="게임 본편 — 대사 · 펄과의 협력 · 카스토리스의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 차분화 우주 계산력 지원 · 공식 한국어 자막 01:13–01:58"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></li>
+</ul>
+<ul>
+<li><a href="diamond.html">다이아몬드</a> — 펄이 속한 10인의 스톤하트를 이끄는 전략투자부 부장이다. 스톤하트의 독립 투표 구조를 함께 읽을 수 있다. <sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 10인의 스톤하트 구성과 의사결정 · 별무리 기행 PV 공식 설명"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></li>
+</ul>
+<ul>
+<li><a href="char-4736.html">효광</a> — 데이터 수집과 알고리즘 개선, 확률을 둘러싼 펄의 사고방식이 드러나는 대화 상대다. <sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></li>
+</ul>
+<ul>
+<li><a href="faction-965.html">무명객</a> — 펄이 애쉬베일에게 안전을 맡긴 장면과 이상 낙원의 사태를 연결한다. <sup class="cite-ref" title="게임 본편 · 쿠치바의 언급 · 쿠치바의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「울리는 징, 요란한 꽹과리」"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「울리는 징, 요란한 꽹과리」</span></span><div class="ref-quote">전 초대를 공개적으로 거절하고 풍요의 이변을 최우선 목표로 삼겠습니다. 로직: 지금 이상 낙원에 필요한 건 알현자가 아닌 「최고 경영자」입니다</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">전략투자부·펄럭스·이상 낙원에서의 직책</span> <span class="ref-source">공식 YouTube — @Honkaistarrail_kr · <span class="ref-detail">공식 한국어 자막 01:25–01:40</span> · <a href="https://www.youtube.com/watch?v=BaiyAI1A4Bc&amp;t=85s">원문</a></span><div class="ref-quote">오늘의 게스트는 컴퍼니 전략투자부 소속의 엘리트이자 펄럭스 그룹의 관리자 이상 낙원의 법인 대표 겸 최고 경영자 10인의 스톤하트——「펄」 님입니다~</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">펄의 라만차 약속</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">라만차 씨, 당신이 믿든 믿지 않든 전 저희가 한 최초의 약속은 지킬 거예요. 환월 게임에서 승리하는 순간 당신이 겪은 모든 고통을 없애고, 당신의 소원을 이뤄드리죠——</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">애쉬베일과의 협력 관계</span> <span class="ref-source">공식 YouTube — @Honkaistarrail_kr · <span class="ref-detail">공식 한국어 자막 01:40–02:05</span> · <a href="https://www.youtube.com/watch?v=BaiyAI1A4Bc&amp;t=100s">원문</a></span><div class="ref-quote">열차팀이 이상 낙원에 온다고 했을 때부터 유명한 ≪은하탐구생활≫의 게스트로 출연할 수 있기를 기대했어요 애쉬베일 씨와 다양한 협력을 해오신 펄 님만큼 이번 방송의 게스트로 적합한 분은 없죠 농담: 이상 낙원에 있는 제가 오면 출장비를 아낄 수 있답니다 확실히 애쉬베일 씨와 업무적 교류가 많긴 하지만 단순히 게스트로서 절 부른 건 아니겠죠 카멜라 씨는 잘 지내나요?</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">사건 해결에서의 판단 방식</span> <span class="ref-source">공식 YouTube — @Honkaistarrail_kr · <span class="ref-detail">공식 한국어 자막 02:10–03:02</span> · <a href="https://www.youtube.com/watch?v=BaiyAI1A4Bc&amp;t=130s">원문</a></span><div class="ref-quote">흑흑… 제 귀여운 인턴이 사흘이나 출근을 안 했다고요 이런 일은 한 번도 없었는데… 납치되거나 작동을 멈춘 건 아니겠죠? ლ(ٱ٥ٱლ), 펄 님 어서 명탐정 애쉬베일 씨에게 연락 좀 해주세요 전 그저 명탐정을 소개해 주는 도구일 뿐이라니, 슬프군요——농담입니다 걱정 마세요, 그와는 잘 아는 사이니 끝나고 바로 연락해 보죠 그럼 안심입니다 그런데 어떤 계기로 애쉬베일 씨와 협력하게 되신 건가요? 컴퍼니 웹사이트에 의뢰를 올렸는데 100개가 넘는 지원서에서 제...</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">당신이 찾아볼 수 있게 인터넷에 충분한 데이터와 기록을 남겨, 그 불사의 명탐정을 찾도록 유도한 것도 저랍니다. 또, 제 소장품실에 들어와 마음대로 둘러볼 수 있도록 허락해 드렸죠</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">펄의 정보 평가</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">애쉬베일 씨, 제게 전해주신 「깜짝」 정보에 감사드려요. 당신은 은연중에 많은 사람들의 목숨을 구하셨어요</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">환월 게임 관련 본편 대사</span></span><div class="ref-quote">15년 전과 마찬가지로 환월 게임에 다시 통제 불능의 조짐이 나타났어요. 애쉬베일 씨, 부디 이 에이언즈 게임을 바로잡는 데 힘을 보태주세요</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">…애쉬베일 씨? 이 시간에 당신에게 전화가 올 확률은 5%도 되지 않는데</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">인간 드라마의 클리셰대로라면, 이쯤에서 제가 박수를 쳐야겠죠? 이런 정보까지 찾아내다니, 역시 명탐정 애쉬베일 씨의 인맥과 실력은 대단하군요</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">죄송하지만 제 손은 수표책 위에 있어서 그럴 수는 없을 것 같네요. 애쉬베일 씨, 말씀해 보세요. 이번 협력의 보수로 0을 몇 개나 적어드리면 되죠?</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">애쉬베일 씨, 늘 당신을 존경해 왔지만 지금은 애쉬베일 씨의 힘이 더 절실한 상황이에요</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">그러니 마음 놓고 원하는 대로 하세요, 애쉬베일 씨</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">임무 요약의 정체 공개</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 요약 텍스트</span></span><div class="ref-quote">애쉬베일의 진짜 정체는 은퇴한 갤럭시 레인저의 수장, 라만차였다. 그는 당신에게 펄이 줬던 칩을 꺼내 달라고 부탁한다. 그건 위치 추적기였다. 한편, 당신은 누군가가 당신을 부르는 목소리를 듣는다</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">쿠치바의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">쿠치바의 인게임 대사</span></span><div class="ref-quote">펄 님은 여러분의 안전을 위해 애쉬베일 씨를 보내셨어요. 물론 무명객의 실력이라면 경호원이 필요 없다는 건 알지만, 펄 님은 그 어떤 위험도 감수하고 싶지 않으신 모양입니다</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">전 효광 장군만큼 점괘에 정통하진 않지만, 충분한 정보를 입력하면 일정 확률로 정확한 결과를 얻을 수 있어요</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">설명: 이건 효광 장군의 제안입니다. 광범위한 데이터 수집은 알고리즘의 자가 개선에 도움이 되죠</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">효광 장군이 좋은 말을 다 했으니, 좋은 일이 생길 확률이 아주 높아 보입니다</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">「0호」에 대한 정보는 반은 진실이고 반은 거짓이죠. 스텔라론 헌터처럼 말이에요. 하지만 한 가지 소식, 「0호」가 큰 실수를 했고 현재 컴퍼니의 죄수가 되었다는 것만은 확실하답니다</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">유기 생명체는 환상을 좋아하죠. 그들은 심지어 루이스•플레밍이 「재물」의 에이언즈가 되려 하고, 범인원이 원시 박사의 앞잡이이며, 시장개척부가 「파멸」과 결탁해 스텔라론 유통을 방조한다고 말하죠……</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">「기술개발부」의 담당자 야불리 씨가 그의 유물을 인계했는데, 제게도 그 기록을 열람할 권한이 없어요</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">펄과의 협력</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">카스토리스의 인게임 대사</span></span><div class="ref-quote">스크루룸은 펄과 협정을 맺어 시뮬레이션 우주의 다음 과제에 한해 협력자 명단에 올리기로 했고, 펄이 일부 계산력을 제공한다고 설명한다. 그는 스크루별의 지능 기계 동족으로서 펄과 통하는 점이 많다고 말한다.</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">차분화 우주 계산력 지원</span> <span class="ref-source">공식 YouTube — @Honkaistarrail_kr · <span class="ref-detail">공식 한국어 자막 01:13–01:58</span> · <a href="https://www.youtube.com/watch?v=5u1_XUiELJk&amp;t=73s">원문</a></span><div class="ref-quote">환월 게임에 대한 시민 여러분의 의구심을 불식시키기 위해 특별히 차분화 우주 계산력 지원 전문가 펄 책임자님과 함께 지니어스들이 시뮬레이션한 환월 게임 「낙원 만필」을 파헤쳐 보겠습니다! 이상 낙원의 최고 경영자이자 우주적인 예술 감정가 그리고 스크루룸 님과 동향이신 펄 책임자님의 합류는 분명 차분화 우주에 새로운 체험을 선사할 겁니다 칭찬의 오차값이 다소 높지만, 괜찮습니다 모든 게스트를 챙기며 맞춰주는 게 쉽지 않을 테니까요 스타피스 엔터테인먼트 담당자...</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">연산에 따라 「개척」의 길을 따르고 「보존」의 틀을 기반으로, 「화합」의 인력과 「지식」의 계산력, 「수렵」의 군사력을 통합하면——「파멸」의 위협은 결국 무너질 겁니다</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">그리고 현재 「수렵」의 사도 역시 이 자리에 함께하고 있습니다. 「환락」을 두고 다투는 이 의식은 그야말로 은하의 형세를 보여주는 축소판이죠</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">10인의 스톤하트 구성과 의사결정</span> <span class="ref-source">공식 YouTube — @Honkaistarrail_kr · <span class="ref-detail">별무리 기행 PV 공식 설명</span> · <a href="https://www.youtube.com/watch?v=vhIsH-RjAUw">원문</a></span><div class="ref-quote">전략투자부 부장 「다이아몬드」는 공개적으로 모습을 드러내는 일이 극히 드물고, 그를 대신해 나서는 것은 「10인의 스톤하트」라는 단체이다. 그리고 팀의 생존에 관한 중대한 의제에 대해 「다이아몬드」는 10대 엘리트가 독립적이고 평등한 방식, 즉 투표를 통해 결정을 내리는 것을 허락했다. 앰버, 아게이트, 토파즈, 수길라이트, 어벤츄린, 펄, 사파이어, 제이드, 옵시디언, 오팔—— 그러나 지금은 초석 하나가 파괴되고, 저울추는 아홉 개만 남았다. 다음번 탁자...</div></li></ol></details>
+<details class="article-tools" data-page-dates data-public-launch-surface>
+  <summary>문서 정보와 변경 로그</summary>
+  <h2>문서 정보</h2>
+  <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 스타피스 컴퍼니</span></div>
+<div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
+<div class="info-item"><strong>작성 일자</strong><span>2026-07-10</span></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-10</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 게임 본편 — 대사, 공식 YouTube — @Honkaistarrail_kr</p>
+  <h3>최근 변경</h3>
+  <ol class="log-list" data-update-history><li>2026-07-10 · 문서 근거와 서술을 다시 점검했습니다.</li>
+<li>2026-07-10 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>
+  <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%8E%84&amp;page_slug=pearl">수정 요청</a></div>
+</details>
+
+<section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="pearl">
+  <h2>댓글</h2>
+  <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
+  <div class="giscus" data-giscus-container></div>
+  <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
+  <script src="https://giscus.app/client.js"
+    data-repo="fjuhy/hsr-wiki-issues"
+    data-repo-id="R_kgDOTGod_A"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOTGod_M4C__rq"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="0"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="ko"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+</section>
+</div>
+  </article>
+</main>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;:&quot;f803b654b24e4e57a86718dbfcdc82e2&quot;}"></script>
+</body>
+</html>

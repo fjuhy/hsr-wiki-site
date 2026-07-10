@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>갤럭시 레인저 - 수렵 · hoyohoyo.wiki</title>
-  <meta name="description" content="갤럭시 레인저는 「수렵」의 운명을 걷는 파벌이다. 이들은 란을 숭상하고, 폭력으로 폭력을 제압하는 란의 살벌한 결단력을 높이 평가한다. 다만 「수렵」에 나서는 모든 이가 「풍요」와 척을 지려는 것은 아니며, 갤럭시 레인저의 정체성도 단순한 반풍요 세력보다 개인의 행동으로 정의를 퍼뜨리는 의협 집단에 가깝다.">
+  <meta name="description" content="갤럭시 레인저는 「수렵」의 운명을 걷는 파벌이다. 은퇴한 전임 수장 라만차는 스텔라론 헌터 애쉬베일이라는 이름으로 살아가며, 살아 있는 후배 레인저 중 한 명은 그를 배신자로, 다른 한 명은 사냥감으로 여긴다. 선주의 ≪환우통감≫은 이들을 &quot;마음속에 별을 품은 자들&quot;로 기록한다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="갤럭시 레인저 - 수렵 · hoyohoyo.wiki">
-  <meta property="og:description" content="갤럭시 레인저는 「수렵」의 운명을 걷는 파벌이다. 이들은 란을 숭상하고, 폭력으로 폭력을 제압하는 란의 살벌한 결단력을 높이 평가한다. 다만 「수렵」에 나서는 모든 이가 「풍요」와 척을 지려는 것은 아니며, 갤럭시 레인저의 정체성도 단순한 반풍요 세력보다 개인의 행동으로 정의를 퍼뜨리는 의협 집단에 가깝다.">
+  <meta property="og:description" content="갤럭시 레인저는 「수렵」의 운명을 걷는 파벌이다. 은퇴한 전임 수장 라만차는 스텔라론 헌터 애쉬베일이라는 이름으로 살아가며, 살아 있는 후배 레인저 중 한 명은 그를 배신자로, 다른 한 명은 사냥감으로 여긴다. 선주의 ≪환우통감≫은 이들을 &quot;마음속에 별을 품은 자들&quot;로 기록한다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/faction-978.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/faction-978.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -662,63 +611,63 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <a class="category-nav-child" href="category-people-amphoreus.html"><span>앰포리어스</span></a>
 <a class="category-nav-child" href="category-people-cosmic-factions.html"><span>우주 유랑 세력</span></a>
 <a class="category-nav-child" href="category-people-other.html"><span>기타 인물</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-factions.html" aria-current="page"><span>파벌</span></a><a class="category-nav-child" href="category-factions-path.html" aria-current="page"><span>운명의 길 파벌</span></a>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-factions.html" aria-current="page"><span>파벌</span></a><a class="category-nav-child" href="category-factions-path.html"><span>운명의 길 파벌</span></a>
 <a class="category-nav-child" href="category-factions-ipc.html"><span>스타피스 컴퍼니</span></a>
-<a class="category-nav-child" href="category-factions-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-factions-xianzhou.html" aria-current="page"><span>선주 연맹</span></a>
 <a class="category-nav-child" href="category-factions-knowledge.html"><span>지식 세력</span></a>
 <a class="category-nav-child" href="category-factions-penacony.html"><span>페나코니 세력</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-paths.html"><span>운명의 길</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-path.html">운명의 길 파벌</a><span>갤럭시 레인저 - 수렵</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B0%A4%EB%9F%AD%EC%8B%9C+%EB%A0%88%EC%9D%B8%EC%A0%80+-+%EC%88%98%EB%A0%B5&amp;page_slug=faction-978">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>갤럭시 레인저 - 수렵</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">운명의 길 파벌</span><span class="badge">세력</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-xianzhou.html">선주 연맹</a><span>갤럭시 레인저 - 수렵</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B0%A4%EB%9F%AD%EC%8B%9C+%EB%A0%88%EC%9D%B8%EC%A0%80+-+%EC%88%98%EB%A0%B5&amp;page_slug=faction-978">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>갤럭시 레인저 - 수렵</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">선주 연맹</span><span class="badge">세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>갤럭시 레인저는 「수렵」의 운명을 걷는 파벌이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이들은 란을 숭상하고, 폭력으로 폭력을 제압하는 란의 살벌한 결단력을 높이 평가한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 다만 「수렵」에 나서는 모든 이가 「풍요」와 척을 지려는 것은 아니며, 갤럭시 레인저의 정체성도 단순한 반풍요 세력보다 개인의 행동으로 정의를 퍼뜨리는 의협 집단에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>선주의 ≪환우통감≫은 “최고의 레인저는 마음 속에 별을 품고 있다”는 말로 이들을 기억한다.<sup class="cite-ref" title="공식 HoYoWiki · 갤럭시 레인저 - 수렵"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 말은 갤럭시 레인저가 본부의 명령보다 각자의 신념과 여정으로 움직이는 집단이라는 이미지를 압축한다.<sup class="cite-ref" title="공식 HoYoWiki · 갤럭시 레인저 - 수렵"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>갤럭시 레인저가 완전히 이름 없는 개인들의 느슨한 모임으로만 남는 것은 아니다. 게임 본편은 <a class="wiki-link" href="char-4781.html" title="애쉬베일">라만차</a>를 갤럭시 레인저의 리더, 또는 레인저의 수장으로 부르고, 임무 요약은 애쉬베일의 진짜 정체가 은퇴한 갤럭시 레인저의 수장 라만차였다고 정리한다.<sup class="cite-ref" title="게임 본편 · 히메코의 라만차 언급 · 히메코의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 완·매의 라만차 언급 · 완·매의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 라만차는 현재 조직을 지휘하는 행정 책임자라기보다, 후배 레인저들이 찾고 의심하고 원망하는 전임 수장의 이름으로 작동한다.<sup class="cite-ref" title="게임 본편 · 은퇴와 레인저 관계 · 애쉬베일의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부트힐에 대해"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>갤럭시 레인저는 의협 단체를 이루어 수렵의 운명을 걷는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이들은 우주의 선량함과 공의가 개인의 행동을 통해 널리 퍼져야 한다고 믿고, 행성들을 오가며 현지인을 위해 정의를 수호하고 사악한 무리를 처단한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>이들의 방식은 통치가 아니라 개입이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 갤럭시 레인저는 한곳에 머물러 질서를 관리하기보다, 악을 처단한 뒤 다시 새로운 여정으로 떠난다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그래서 이 파벌은 영토와 행정으로 존재감을 드러내는 세력이 아니라, 우주의 사건 현장에 나타나 개인의 결단으로 결과를 바꾸는 유랑형 의협 집단으로 기능한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>갤럭시 레인저의 힘은 중앙 지휘 체계보다 각 레인저의 기동력과 개인 전투에서 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이들은 에이언즈의 축복을 통해 우주를 누비며, 보통 개별적으로 전투하고 서로 거의 또는 전혀 연락하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 느슨한 조직 구조에도 불구하고 각자는 현장에 직접 뛰어들어 정의를 수호하고 사악한 무리를 처단하는 실행자로 움직인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>갤럭시 레인저는 절멸 대군을 암살하는 데 성공해 한때 명성을 떨쳤다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이후 한 레인저는 <a class="wiki-link" href="genius-society.html" title="지니어스 클럽">지니어스 클럽</a> #64 「원시 박사」의 회귀 실험을 저지했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 사례들은 갤럭시 레인저가 단순한 방랑자가 아니라, 우주적 위협과 유명 인물의 계획까지 표적으로 삼을 수 있는 수렵자 집단임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>이 명성은 내부의 상처와도 붙어 있다. 애쉬베일은 자신이 오래전에 은퇴했으며, 살아 있는 레인저 중 누군가는 자신을 배신자로 보고 다른 누군가는 사냥감으로 본다고 말한다.<sup class="cite-ref" title="게임 본편 · 은퇴와 레인저 관계 · 애쉬베일의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <a class="wiki-link" href="char-2367.html" title="부트힐">부트힐</a>이 이상 낙원에서 자신의 리더를 찾으려 했고, 전임 레인저 리더가 재물을 챙겨 도망갔다는 소문을 믿지 않는다는 언급도 같은 균열을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부트힐에 대해"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 갤럭시 레인저의 전설은 정의로운 의협담만이 아니라, 누가 사냥꾼이고 누가 배신자인지를 두고 아직 끝나지 않은 논쟁까지 포함한다.<sup class="cite-ref" title="게임 본편 · 은퇴와 레인저 관계 · 애쉬베일의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부트힐에 대해"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>「수렵」은 갤럭시 레인저를 이해하는 핵심 항목이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 갤럭시 레인저는 「수렵」의 길을 걷지만, 그 방향은 특정 적대 관계 하나로만 좁혀지지 않고 란의 결단력, 개인의 정의 실천, 우주를 떠도는 의협 활동으로 묶인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>부트힐과 <a class="wiki-link" href="char-3057.html" title="라파">라파</a>는 갤럭시 레인저 소속 캐릭터로 연결된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속 캐릭터"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 이 소속 표기는 갤럭시 레인저가 배경 설정에만 머무르는 이름이 아니라, 실제 인물들의 정체성과 행적을 묶는 파벌이라는 점을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속 캐릭터"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>애쉬베일, 즉 라만차는 이 관계망의 과거 쪽 중심에 선다.<sup class="cite-ref" title="게임 본편 · 라만차 자기 확인 · 애쉬베일의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 부트힐은 전임 리더의 소문을 믿지 않는 후배 레인저로, 라파와 원시 박사 관련 의뢰는 라만차의 오래된 동료와 빚을 현재 사건으로 끌어온다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부트힐에 대해"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 라파에 대해"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 이 축을 더하면 갤럭시 레인저는 “흩어진 수렵 신도”라는 설명을 넘어, 세대와 소문과 원한을 남기는 실제 파벌로 보인다.<sup class="cite-ref" title="게임 본편 · 은퇴와 레인저 관계 · 애쉬베일의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 부트힐"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<h2 id="만전령과-흩어진-레인저들">만전령과 흩어진 레인저들</h2>
-<p>갤럭시 레인저는 평소 서로 흩어져 움직이고, 연락도 거의 또는 전혀 주고받지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 때문에 이들의 결속은 본부, 계급, 명령망보다 공유된 신념과 불문율에 더 크게 기대고 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>흩어진 레인저들을 모으는 거의 유일한 장치는 「만전령」이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 하늘 한구석에 「만전령」이라는 별이 나타나면, 갤럭시 레인저는 그 혜성 같은 빛을 따라가야 한다는 불문율을 따른다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 만전령은 평소 각자의 길을 걷는 개인들을 한 방향으로 묶는 신호이며, 갤럭시 레인저의 조직성은 명령보다 별을 따르는 약속에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>이 구조 때문에 라만차의 존재가 더 중요해진다. 평소에는 흩어져 있는 레인저들에게 전임 수장이라는 이름은 명령권보다 기억과 판단의 기준으로 남고, 애쉬베일의 정체가 라만차라는 사실은 갤럭시 레인저의 과거가 현재 사건을 계속 흔든다는 뜻이 된다.<sup class="cite-ref" title="게임 본편 · 은퇴와 레인저 관계 · 애쉬베일의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부트힐에 대해"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">갤럭시 레인저</div></li>
+<p>갤럭시 레인저는 「수렵」의 운명을 걷는 파벌이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 은퇴한 전임 수장 <a class="wiki-link" href="char-4781.html" title="애쉬베일">라만차</a>는 스텔라론 헌터 애쉬베일이라는 이름으로 살아가며, 살아 있는 후배 레인저 중 한 명은 그를 배신자로, 다른 한 명은 사냥감으로 여긴다.<sup class="cite-ref" title="게임 본편 · 은퇴와 레인저 관계 · 애쉬베일의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 선주의 ≪환우통감≫은 이들을 &quot;마음속에 별을 품은 자들&quot;로 기록한다.<sup class="cite-ref" title="공식 HoYoWiki · 갤럭시 레인저 - 수렵"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<h2 id="활동">활동</h2>
+<p>갤럭시 레인저는 의협 단체를 조직해 수렵이라는 운명을 걷는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이들은 란을 숭상하고, 폭력으로 폭력을 제압하는 란의 결단력을 높이 평가한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 다만 「수렵」에 나서는 모든 이가 「풍요」와 척을 지려는 것은 아니다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>갤럭시 레인저는 우주의 선량함과 공의가 개인의 행동을 통해 퍼져야 한다고 믿는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 에이언즈의 축복으로 우주를 누비며 행성마다 현지인을 위해 정의를 수호하고 사악한 무리를 처단한 뒤, 다시 새로운 여정을 떠난다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 갤럭시 레인저는 절멸 대군을 암살하는 데 성공해 한때 명성을 떨쳤다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 여러 해 뒤에는 한 레인저가 <a class="wiki-link" href="genius-society.html" title="지니어스 클럽">지니어스 클럽</a> #64 「원시 박사」의 회귀 실험을 저지했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<h2 id="조직과-운영">조직과 운영</h2>
+<p>갤럭시 레인저는 본부나 계급 없이 개별적으로 움직이며, 서로 거의 또는 전혀 연락하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 이들을 한자리에 모으는 장치는 「만전령」뿐이다. 하늘에 「만전령」이라는 별이 나타나면, 갤럭시 레인저는 그 혜성 같은 빛을 따라가야 한다는 불문율을 따른다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<h2 id="라만차와-레인저들">라만차와 레인저들</h2>
+<p>라만차는 갤럭시 레인저의 전임 수장이며, 현재는 스텔라론 헌터 애쉬베일이라는 이름으로 산다.<sup class="cite-ref" title="게임 본편 · 라만차 자기 확인 · 애쉬베일의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그의 소속은 &#x27;이상 낙원 갤럭시 레인저&#x27;로 기록되어 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 히메코는 라만차라는 이름을 오래전에 들어본 전설로 기억하고, 완·매는 그를 &quot;레인저의 수장&quot;이라 부른다.<sup class="cite-ref" title="게임 본편 · 히메코의 라만차 언급 · 히메코의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 완·매의 라만차 언급 · 완·매의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 라만차 자신은 &quot;난 언제 어디서든 이름 석 자를 숨기지 않지. 내가 바로 라만차다&quot;라고 밝힌다.<sup class="cite-ref" title="게임 본편 · 라만차 자기 확인 · 애쉬베일의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 애쉬베일은 정체를 드러내며 개척자에게 위치 추적기였던 펄의 칩을 꺼내 달라고 부탁했다.<sup class="cite-ref" title="게임 본편 · 임무 요약의 정체 공개 · 임무 요약 텍스트"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>라만차는 이미 오래전에 은퇴했다. 살아 있는 레인저 중 한 명은 그를 배신자로 보고, 다른 한 명은 사냥감으로 여긴다.<sup class="cite-ref" title="게임 본편 · 은퇴와 레인저 관계 · 애쉬베일의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <a class="wiki-link" href="char-2367.html" title="부트힐">부트힐</a>은 이상 낙원에서 전임 리더를 찾아갔지만 허탕을 쳤다. 전임 리더가 재물을 챙겨 도망갔다는 소문이 돌지만, 부트힐은 그 소문을 믿지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부트힐에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <a class="wiki-link" href="char-3057.html" title="라파">라파</a>는 원시 박사의 행방을 조사해 달라고 라만차에게 의뢰하고, 떠나기 전 내레이터군을 그에게 맡겼다. 라만차는 라파가 원시 박사를 쓰러뜨리고 돌아오면 그동안 쌓인 바나나값을 받아내겠다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 라파에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 라만차는 부트힐과 함께 나설 때 &quot;요즘 레인저들은 갈수록 전 세대보다 더 강하다니까&quot;라고 평한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 부트힐"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>라만차의 의수와 검장은 블레이드와 그의 스승의 손을 거쳐 탄생했다.<sup class="cite-ref" title="게임 본편 · 블레이드와 라만차의 의수 · 블레이드의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 블레이드가 유폐옥에 갇혔을 때 라만차는 그를 면회하러 왔다.<sup class="cite-ref" title="게임 본편 · 라만차의 유폐옥 방문 · 블레이드의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 펄은 환월 게임에서 승리하면 라만차가 겪은 모든 고통을 없애고 소원을 이뤄주겠다고 약속했다.<sup class="cite-ref" title="게임 본편 · 펄의 라만차 약속 · 펄의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="path-81.html">수렵</a>, <a href="path.html">운명의 길</a>, <a href="char-2367.html">부트힐</a>, <a href="char-3057.html">라파</a>, <a href="char-4781.html">라만차</a> — 「<a href="path-81.html">수렵</a>」은 갤럭시 레인저의 <a href="path.html">운명의 길</a>이며, 란은 이들이 숭상하는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <a href="char-2367.html">부트힐</a>과 <a href="char-3057.html">라파</a>는 갤럭시 레인저에 속한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속 캐릭터"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> <a href="char-2367.html">부트힐</a>은 이상 낙원에서 <a href="char-4781.html">라만차</a>를 찾아 나섰고, <a href="char-3057.html">라파</a>는 원시 박사 사건으로 <a href="char-4781.html">라만차</a>와 얽힌다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부트힐에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 라파에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">갤럭시 레인저</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">유형</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">파벌</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">수렵</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">「수렵」에 나서는 모든 독실한 사람들이 「풍요」와 척을 지려하는 것은 아니다. 우주에는 민첩한 몸놀림을 가진 레인저 한 무리가 존재한다. 그들은 폭력으로 폭력을 제압하는 란을 숭상하며 란의 살벌한 결단력을 칭송한다. 또한 그들은 우주의 선량함과 공의가 개인의 행동으로 널리 퍼져야 한다고 믿는다 「갤럭시 레인저」는 의협 단체를 조직해 수렵이라는 운명을 걷는 자들이다. 에이언즈의 축복을 통해 우주를 누비는 그들은 행성 하나하나를 오가며 현지인들을 위해 정의를...</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">갤럭시 레인저 - 수렵</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">「최고의 레인저는 마음 속에 별을 품고 있다」 ——선주, ≪환우통감(寰宇通鉴)≫</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">히메코의 라만차 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">갤럭시 레인저의 리더, 라만차. 그 이름은 들어봤지만, 아주 오래된 전설로 알고 있는데……</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">완·매의 라만차 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">완·매의 인게임 대사</span></span><div class="ref-quote">아니, 레인저의 수장, 라만차 씨. 이 무명객에게 설명해 줄래요?</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">임무 요약의 정체 공개</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 요약 텍스트</span></span><div class="ref-quote">애쉬베일의 진짜 정체는 은퇴한 갤럭시 레인저의 수장, 라만차였다. 그는 당신에게 펄이 줬던 칩을 꺼내 달라고 부탁한다. 그건 위치 추적기였다. 한편, 당신은 누군가가 당신을 부르는 목소리를 듣는다</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">은퇴와 레인저 관계</span> <span class="ref-source">게임 본편 · <span class="ref-detail">애쉬베일의 인게임 대사</span></span><div class="ref-quote">당연히 모르지. 나는 이미 오래전에 은퇴했으니까. 내가 아는 레인저 중 아직 살아있는 자 중 한 명은 날 배신자로 보고, 다른 한 명은 날 사냥감으로 여긴다고</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">부트힐에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4781?lang=ko-kr">원문</a></span><div class="ref-quote">그는 이상 낙원에서 자신의 리더를 찾아갔지만, 허탕을 쳤지. 다들 전임 레인저 리더가 재물을 챙긴 다음 도망가서 호의호식하고 있다고 하던데, 그 띨띨이는 왜 믿지를 않는 걸까?</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">⌈ 수렵 ⌋ 란</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">소속 캐릭터</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">부트힐; 라파</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">라만차 자기 확인</span> <span class="ref-source">게임 본편 · <span class="ref-detail">애쉬베일의 인게임 대사</span></span><div class="ref-quote">난 언제 어디서든 이름 석 자를 숨기지 않지. 내가 바로 라만차다</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">라파에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4781?lang=ko-kr">원문</a></span><div class="ref-quote">그 아이가 원시 박사의 행방을 조사해달라고 의뢰하고는, 떠나기 전에 내레이터군을 나한테 맡기고 갔어. 언젠가 원시 박사를 쓰러트리면 다시 와서 데려가겠다고 했지. 그동안의 바나나값은, 그때 가서 하나하나 다 받아낼 거야</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">파티 편성 • 부트힐</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4781?lang=ko-kr">원문</a></span><div class="ref-quote">요즘 레인저들은 갈수록 전 세대보다 더 강하다니까</div></li></ol></details>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">은퇴와 레인저 관계</span> <span class="ref-source">게임 본편 · <span class="ref-detail">애쉬베일의 인게임 대사</span></span><div class="ref-quote">당연히 모르지. 나는 이미 오래전에 은퇴했으니까. 내가 아는 레인저 중 아직 살아있는 자 중 한 명은 날 배신자로 보고, 다른 한 명은 날 사냥감으로 여긴다고</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">임무 요약의 정체 공개</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 요약 텍스트</span></span><div class="ref-quote">애쉬베일의 진짜 정체는 은퇴한 갤럭시 레인저의 수장, 라만차였다. 그는 당신에게 펄이 줬던 칩을 꺼내 달라고 부탁한다. 그건 위치 추적기였다. 한편, 당신은 누군가가 당신을 부르는 목소리를 듣는다</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">갤럭시 레인저 - 수렵</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">「최고의 레인저는 마음 속에 별을 품고 있다」 ——선주, ≪환우통감(寰宇通鉴)≫</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">「수렵」에 나서는 모든 독실한 사람들이 「풍요」와 척을 지려하는 것은 아니다. 우주에는 민첩한 몸놀림을 가진 레인저 한 무리가 존재한다. 그들은 폭력으로 폭력을 제압하는 란을 숭상하며 란의 살벌한 결단력을 칭송한다. 또한 그들은 우주의 선량함과 공의가 개인의 행동으로 널리 퍼져야 한다고 믿는다 「갤럭시 레인저」는 의협 단체를 조직해 수렵이라는 운명을 걷는 자들이다. 에이언즈의 축복을 통해 우주를 누비는 그들은 행성 하나하나를 오가며 현지인들을 위해 정의를...</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">라만차 자기 확인</span> <span class="ref-source">게임 본편 · <span class="ref-detail">애쉬베일의 인게임 대사</span></span><div class="ref-quote">난 언제 어디서든 이름 석 자를 숨기지 않지. 내가 바로 라만차다</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4781?lang=ko-kr">원문</a></span><div class="ref-quote">이상 낙원 갤럭시 레인저</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">히메코의 라만차 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">갤럭시 레인저의 리더, 라만차. 그 이름은 들어봤지만, 아주 오래된 전설로 알고 있는데……</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">완·매의 라만차 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">완·매의 인게임 대사</span></span><div class="ref-quote">아니, 레인저의 수장, 라만차 씨. 이 무명객에게 설명해 줄래요?</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">부트힐에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4781?lang=ko-kr">원문</a></span><div class="ref-quote">그는 이상 낙원에서 자신의 리더를 찾아갔지만, 허탕을 쳤지. 다들 전임 레인저 리더가 재물을 챙긴 다음 도망가서 호의호식하고 있다고 하던데, 그 띨띨이는 왜 믿지를 않는 걸까?</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">라파에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4781?lang=ko-kr">원문</a></span><div class="ref-quote">그 아이가 원시 박사의 행방을 조사해달라고 의뢰하고는, 떠나기 전에 내레이터군을 나한테 맡기고 갔어. 언젠가 원시 박사를 쓰러트리면 다시 와서 데려가겠다고 했지. 그동안의 바나나값은, 그때 가서 하나하나 다 받아낼 거야</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">파티 편성 • 부트힐</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4781?lang=ko-kr">원문</a></span><div class="ref-quote">요즘 레인저들은 갈수록 전 세대보다 더 강하다니까</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">블레이드와 라만차의 의수</span> <span class="ref-source">게임 본편 · <span class="ref-detail">블레이드의 인게임 대사</span></span><div class="ref-quote">라만차 씨의 의수와 검장은 스승님과 내 손을 거쳐 탄생한 합작품이었지</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">라만차의 유폐옥 방문</span> <span class="ref-source">게임 본편 · <span class="ref-detail">블레이드의 인게임 대사</span></span><div class="ref-quote">유옥에 갇혔을 때, 라만차 씨도 날 면회하러 왔었어</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">펄의 라만차 약속</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">라만차 씨, 당신이 믿든 믿지 않든 전 저희가 한 최초의 약속은 지킬 거예요. 환월 게임에서 승리하는 순간 당신이 겪은 모든 고통을 없애고, 당신의 소원을 이뤄드리죠——</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">⌈ 수렵 ⌋ 란</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">소속 캐릭터</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/978?lang=ko-kr">원문</a></span><div class="ref-quote">부트힐; 라파</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
-  <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>파벌 · 운명의 길 파벌</span></div>
+  <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>파벌 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>세력</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
@@ -728,12 +677,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="faction-978">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EA%B0%A4%EB%9F%AD%EC%8B%9C+%EB%A0%88%EC%9D%B8%EC%A0%80+-+%EC%88%98%EB%A0%B5&amp;body=%EA%B0%A4%EB%9F%AD%EC%8B%9C+%EB%A0%88%EC%9D%B8%EC%A0%80+-+%EC%88%98%EB%A0%B5+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Ffaction-978.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

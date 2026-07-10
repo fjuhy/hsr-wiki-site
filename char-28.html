@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>연경 · hoyohoyo.wiki</title>
-  <meta name="description" content="그의 첫인상은 자신감이 앞서는 어린 검객에 가깝지만, 이 자신감은 단순한 허세가 아니라 실제 전공과 장군의 인정 위에 세워져 있다. 연경은 처음 만난 개척자에게도 곧바로 대련을 청하고, 상대가 누구든 대충하지 않겠다고 말할 만큼 검술을 생활의 중심에 놓는다. 그래서 연경은 나부의 질서 속에서 보호받는 아이이면서 동시에 전장과 연무에서 이미 이름이 알려진 실전 전력이다.">
+  <meta name="description" content="연경은 선주 「나부」 운기군 역사상 최연소 호위병이자 경원 장군의 수행원이다. 비검 여섯 자루를 순식간에 막아내는 재능이 운기군 수석 교련조차 백 년을 연습해야 이를 경지라, 선주인들은 그를 「검에서 태어난 아이」라고 불렀다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="연경 · hoyohoyo.wiki">
-  <meta property="og:description" content="그의 첫인상은 자신감이 앞서는 어린 검객에 가깝지만, 이 자신감은 단순한 허세가 아니라 실제 전공과 장군의 인정 위에 세워져 있다. 연경은 처음 만난 개척자에게도 곧바로 대련을 청하고, 상대가 누구든 대충하지 않겠다고 말할 만큼 검술을 생활의 중심에 놓는다. 그래서 연경은 나부의 질서 속에서 보호받는 아이이면서 동시에 전장과 연무에서 이미 이름이 알려진 실전 전력이다.">
+  <meta property="og:description" content="연경은 선주 「나부」 운기군 역사상 최연소 호위병이자 경원 장군의 수행원이다. 비검 여섯 자루를 순식간에 막아내는 재능이 운기군 수석 교련조차 백 년을 연습해야 이를 경지라, 선주인들은 그를 「검에서 태어난 아이」라고 불렀다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/char-28.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/char-28.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,100 +620,79 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>연경</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%97%B0%EA%B2%BD&amp;page_slug=char-28">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>연경</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="assets/wiki-images/c2/c05c4f13d0b7efdf751b450a33dc417b_171191013523640-c2f10c92d3b1.webp" alt="연경 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>연경</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%97%B0%EA%B2%BD&amp;page_slug=char-28">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>연경</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyowiki/2023/02/21/c05c4f13d0b7efdf751b450a33dc417b_1711910135236400099.png" alt="연경 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>그의 첫인상은 자신감이 앞서는 어린 검객에 가깝지만, 이 자신감은 단순한 허세가 아니라 실제 전공과 장군의 인정 위에 세워져 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 연경은 처음 만난 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>에게도 곧바로 대련을 청하고, 상대가 누구든 대충하지 않겠다고 말할 만큼 검술을 생활의 중심에 놓는다. 그래서 연경은 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>의 질서 속에서 보호받는 아이이면서 동시에 전장과 연무에서 이미 이름이 알려진 실전 전력이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>연경의 핵심은 “아직 어린데 이미 강하다”가 아니라, 너무 이른 나이에 검과 군직과 명성을 모두 손에 넣은 인물이 어디까지 성장할 수 있는지 보여주는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그는 자신이 어리다는 평가를 알고 있지만, “미래가 기대된다”는 말만으로 현재의 실력을 유예당하는 것도 달가워하지 않는다. 연경에게 검은 장난감이나 장식이 아니라 꿈, 직책, 자존심, 장군을 보좌하는 방식이 한꺼번에 걸린 대상이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•공조사의 검기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>연경은 <a class="wiki-link" href="char-26.html" title="경원">경원</a> 곁에서 움직이는 호위병으로, 신책부와 장군의 부담을 덜어주는 가까운 전력이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그는 경원이 무력으로 이름을 떨칠 필요가 없도록 자신이 장군의 짐을 덜어야 한다고 여긴다. 이 태도는 충성심이면서 동시에 자신의 실력을 장군에게 증명하려는 욕망이기도 하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•경원"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>경원은 연경을 단순히 곁에 둔 것이 아니라 직접 검술을 가르쳤고, 연경은 경원이 신책부를 덜 걱정할 수 있도록 그림자처럼 곁을 맴돌았다. 병적부에는 경원이 소년을 발견하고 반대를 무릅쓰고 군에 데려왔다는 내용이 남아 있으나, 연경의 혈통 계승 정보는 비어 있다. 이 공백은 연경이 출신보다 재능과 전공으로 먼저 설명되는 인물임을 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>연경은 어린 나이에 군직을 받았다는 이유로 “황당한 장군”이라는 소문을 불러왔지만, 첫 전쟁에서 큰 승리를 거두며 반대 여론을 잠재웠다. 그는 풍요의 주민이 제작한 거대한 기수 「방풍」의 머리를 베어 적군을 물러나게 했고, 이후 경원과 함께 보리인의 탐랑 진영을 파괴해 소부 셋을 베었으며, 날개를 만든 자와 싸워 하늘을 뒤덮은 나운함을 격파한 전적도 지닌다. 이 전공들은 연경이 장군의 보호 아래 있는 기대주에 그치지 않고, 실제 전장 기록으로 검증된 운기군 전력임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>그의 일상적 역할은 나부의 치안과 체면을 지키는 쪽으로도 드러난다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 연경은 <a class="wiki-link" href="npc-3058.html" title="스코트">스코트</a>에게 자신을 운기 효위라고 밝히고 길거리에서 말썽을 일으키지 말라고 경고하며, 필요할 때는 자신이 바로 나부의 방어자 검객이라고 정체를 드러낸다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 이 장면의 연경은 대결을 좋아하는 소년이면서도 공적인 질서를 대표하는 얼굴이다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>연경은 연무 의식과 검술 교육의 장에서도 존재감을 갖는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 나부를 포함한 선주는 운기군의 실력을 시험하는 「성천 연무」 행사를 열고, 검술 종목의 승자는 「검술의 일인자」 칭호를 차지할 수 있다. Mar. 7th의 시험 상대가 연경으로 지정되고, Mar. 7th가 그를 “연경 사부”라고 부르는 장면은 연경이 단순한 참가자가 아니라 다른 인물의 수련 과정에 기준점으로 들어간다는 뜻이다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>연경은 운기군 역사상 최연소 호위병, 경원 장군 호위병, 공조사 보검의 수집 대가라는 여러 호칭과 소문을 지닌다. 그는 비검 여섯 자루를 순식간에 막을 수 있는 재능 때문에 선주인들에게 “검에서 태어난 아이”라고 불렸다. 이 별명은 혈통이 밝혀지지 않은 소년을 검 그 자체에 가까운 존재로 받아들이는 나부 사람들의 시선을 압축한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>공식 서술은 연경을 “기세등등한 운기 호위병”이자 선주 「나부」의 최강 검객 검생검사 소년으로 부르며, 손에 검을 쥐고 있으면 누구도 이 천재를 얕잡아 보지 못한다고 한다. 다만 같은 서술은 그의 보검을 잠시나마 거두게 하는 것이 시간뿐이라고도 말한다. 연경의 약점은 재능 부족이 아니라 아직 쌓아야 할 시간이 남아 있다는 점에 놓인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•검술의 일인자"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>연경 자신도 나부 안에서는 더 이상 자신의 상대가 없다고 말하면서, 우주라면 다를 것이라고 덧붙인다. 이 말은 소년다운 과장이지만, 동시에 그의 성장 서사가 나부 내부의 인정에서 우주적 강자들과의 비교로 넘어가고 있음을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•상대"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 그는 강적을 만나면 두려워하기보다 한 수 배우겠다고 받아들이고, 전투 불능 상태에서도 검 앞에 부끄럽다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>경원과의 대련은 연경의 강함과 한계를 동시에 보여준다. 연경은 지켜야 할 장군에게 검을 휘두르는 것을 주저하지만, 경원은 검을 들었으면 패배하지 않겠다는 자신감을 가지라고 가르친다. 연경은 기습으로 허점을 노리지만, 경원은 그 의도를 예상하고 검기가 너무 강해 숨겨지지 않는다고 지적한다. 이 대련에서 연경은 이미 뛰어난 검객이지만, 경원 앞에서는 기세와 재능이 아직 숙련된 통찰을 넘지 못한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p><a class="wiki-link" href="blade.html" title="블레이드">블레이드</a>와 <a class="wiki-link" href="char-8.html" title="단항">단항</a>에 대한 언급도 연경의 현 위치를 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 연경은 단항과 겨루며 그의 창술이 뛰어난데도 단항 본인은 그것을 특별히 신경 쓰지 않는다고 느끼고, 다시 가르침을 청해도 되겠느냐고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•단항"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 블레이드에 대해서는 검을 휘두를 때마다 간파당한다고 말하며, 검술의 조예만으로 그를 이길 수 있을지 의문을 품는다. 이 비교는 연경이 강자와 부딪힌 뒤에도 자존심만 세우지 않고 자신의 검술이 닿지 않는 지점을 인식한다는 점을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<p><a class="wiki-link" href="char-1387.html" title="경류">경류</a>에 대한 말은 연경의 검도가 하나의 정답으로 닫혀 있지 않음을 보여준다. 그는 극한만을 추구하는 검술이 하나뿐이라고 생각했지만, 경류와 경원과 자신이 결국 모두 다른 길을 걷는다고 받아들인다. 연경의 성장은 더 센 검을 얻는 과정만이 아니라, 검술의 길이 여러 갈래라는 사실을 배우는 과정이기도 하다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경류에 대해"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 승급"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>경원은 연경의 보호자, 스승, 지휘관이라는 세 역할을 동시에 맡는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•경원"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 경원은 반대를 무릅쓰고 연경을 군에 데려왔고, 직접 검술을 가르쳤으며, 대련을 통해 연경의 마음가짐과 검의 숨김까지 바로잡는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 연경은 장군의 명이라면 사명을 다하겠다고 말하고, 장군이 자신의 실력을 인정했으니 장군의 짐을 덜어야 한다고 여긴다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•경원"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이 관계는 애정 어린 사제 관계이면서도, 나부가 어린 천재를 공적 전력으로 키우는 방식이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>공조사는 연경의 검 사랑을 일상으로 끌어내는 기관이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•공조사의 검기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 연경은 공조사에서 제작한 진기 비검, 근접전용 단도, 자유자재로 움직이는 검 등을 사들이고, 크기별로 두 자루씩 구매해 하나는 사용하고 하나는 소장한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•공조사의 검기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그는 새로운 검을 사면 칼자루 싸개, 재질, 문양, 가락지, 명패까지 고르는 재미를 말하며, 월말에는 검 지출 때문에 장군에게 도움을 구하는 처지가 된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•공조사의 검기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 진귀한 전리품 오픈"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 이 집착은 우스운 소비 습관이지만, 동시에 연경이 검을 실전 도구이자 꿈의 물건으로 동시에 대하는 방식이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>「검술의 일인자」 칭호는 연경의 야망을 가장 분명하게 드러내는 목표다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 연경은 나부의 1인자, 더 나아가 선주의 1인자가 되어 나부 「검술의 일인자」와 연맹의 「검괴」 칭호를 얻고 싶어 한다. 그러나 「음월의 난」 이후 수천 년 동안 나부 운기군 최고의 검객에게 주어지는 「검술의 일인자」 칭호는 비어 있었고, 그 이유는 단순한 실력 경쟁만으로 설명되지 않는 비밀스러운 사정과 연결된다. 연경이 이 칭호에 집착하는 것은 개인의 명예욕이면서, 나부의 오래 비어 있던 검객 계보를 다시 채우려는 도전이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•검술의 일인자"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>성천 연무와 연무 의식은 연경을 다른 젊은 전사들의 기준점으로 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <a class="wiki-link" href="char-801.html" title="루카">루카</a>는 나부 선주를 대표하는 방어자 검객 연경이 대단한 전사일 것이라며 자신감을 잃기도 하고, 반드시 연경을 이기겠다고 다짐한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> 다른 인물들이 연경을 이겨야 할 상대로 말한다는 점은, 연경이 이미 도전자들의 목표로 기능한다는 뜻이다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
-<p><a class="wiki-link" href="char-2642.html" title="운리">운리</a>와 Mar. 7th는 연경의 교육자 면모와 경쟁자 면모를 함께 드러낸다.<sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> Mar. 7th는 연경을 사부라고 부르고, 운리는 Mar. 7th의 시험 상대가 사부인 연경이라고 말한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> Mar. 7th는 연경 사부와 겨루면 자신이 이길 수 있을지 묻고, 이후 사실은 연경 사부를 이기지 못했다고 인정한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 이 흐름에서 연경은 어린 스승이라는 모순된 위치에 서며, 나이가 아니라 실력과 경험으로 타인을 가르치는 인물로 작동한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p>운리와의 관계에는 협력과 말다툼이 함께 있다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 경원의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup> 연경은 운리가 발뺌하지 못하게 증거를 찍어 달라고 부탁하고, 운리는 연경의 터무니없는 말은 들을 것 없다고 받아친다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 경원의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 그러나 둘은 Mar. 7th의 사부로 함께 언급되고, 스코트가 사람들이 연경과 운리를 두려워해 말을 못 한다고 말할 만큼 주변에서 한 묶음으로 인식되기도 한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 스코트의 언급 · 스코트의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup> 이 관계는 나부의 젊은 검객들이 서로를 견제하면서도 같은 사건 안에서 협력하는 구도를 만든다.<sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
-<p><a class="wiki-link" href="char-27.html" title="소상">소상</a>, <a class="wiki-link" href="char-25.html" title="정운">정운</a>, <a class="wiki-link" href="char-712.html" title="어공">어공</a>, <a class="wiki-link" href="char-804.html" title="부현">부현</a>, <a class="wiki-link" href="char-711.html" title="나찰">나찰</a>에 대한 언급은 연경이 나부 인물들을 검과 실력의 관점으로 읽는다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 정운에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 소상에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어공에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부현에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 나찰에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 그는 정운이 주간하는 「득물지」에 검기 관련 내용이 나오면 추천 문구를 부탁받고, 소상의 검은 좋은 검이지만 좋은 검이라고 모두가 잘 쓸 수 있는 것은 아니라고 평가한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 정운에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 소상에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 어공을 두고는 활을 쏘지 않았어도 마음속으로 수백 수천 번 쐈을 것이라고 보고, 나찰에게는 검갑을 무기로 쓰는 줄 알았다며 진짜 실력을 볼 대련 방법을 찾으려 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어공에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 나찰에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 연경은 사람을 볼 때도 무기, 자세, 수련의 깊이를 먼저 읽는 검객이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 소상에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어공에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 나찰에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p>블레이드와 단항은 연경에게 패배감이나 배움의 감각을 남기는 상대다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 단항은 창술이 뛰어나지만 그것을 목적이 아니라 수단처럼 다루는 인물로 보이고, 블레이드는 연경의 검을 읽어내며 검술의 조예만으로 이길 수 있을지 의심하게 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 연경이 이들을 언급할 때 중요한 점은 패배 자체보다, 자기 검술을 더 넓은 우주의 강자들과 비교하기 시작한다는 변화다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•상대"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<h2 id="검에-몰린-소년의-성장선">검에 몰린 소년의 성장선</h2>
-<p>연경은 취미까지 검을 뽑는 속도에 방해가 된다고 말할 만큼 삶의 거의 모든 관심을 검술에 모은다. 전리품을 열 때도 새 검을 살 용돈을 떠올리고, 도시로 돌아갈 때도 희귀한 검이 남아 있을지 걱정한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•1"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•2"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> 이 성향은 귀여운 낭비벽으로 보이지만, 연경에게 검이 자기 미래를 구체적으로 붙잡는 물건이라는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•공조사의 검기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>그가 꿈꾸는 정상은 단순한 승리 횟수보다 더 크다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup> 연경은 역사에 이름을 남긴 뒤 무엇을 더 할 수 있느냐고 경원에게 묻고, 경원은 자신도 장군이 되리라고 생각해 본 적이 없으니 혼자 생각하라고 답한다. 이 질문은 연경이 이미 “강해지고 싶다”를 넘어 “강해진 뒤 무엇이 남는가”를 묻기 시작했다는 뜻이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 승급"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup></p>
-<p>연경의 한계는 분명하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•검술의 일인자"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 경원은 그에게 부족한 것이 검술이 아니라 시간이라고 말하고, 연경은 자신이 「검술의 일인자」보다 무엇이 부족한지 고민한다. 블레이드에게 검을 간파당하고, 경원에게 기습을 읽히는 경험은 연경의 검이 이미 날카롭지만 아직 깊이와 침착함을 더 배워야 한다는 사실을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<p>그래도 연경은 패배를 수치로만 남기지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 그는 방심하지 않겠다고 다시 일어서고, 강적을 만나면 한 수 배우겠다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작•위험 경보"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup> 그래서 연경은 완성된 최강자가 아니라, 완성되기 전부터 이미 나부의 전장과 연무장을 움직이는 미완의 천재다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•검술의 일인자"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 운기군 역사상 최연소 호위병, 경원 장군 호위병, 공조사 보검의 수집 대가…. 수많은 호칭과 소문 탓에 사람들은 이 천재 소년이 어린애라는 사실을 짐작하지 못했다 기억 속의 연경은 경원이 신책부를 덜 걱정할 수 있도록 그림자처럼 곁을 맴돌았고, 경원은 그런 연경에게 검술을 가르쳐줬다. 몇 년간의 수련 끝에 검술을 능숙하게 익힌 연경은 속세에 흔들리지 않는 마음을 갖게 되었다 운기군 무술 경전에 따르면 자유자재로 비검 여섯 자루를...</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 운기군의 병적부에는 경원이 소년을 어떻게 발견했는지, 어떻게 반대를 무릅쓰고 군에 데려왔는지 적혀 있었다. 다만 가족란에는 연경의 혈통 계승에 관한 정보가 빠져 있었다 대부분의 장군감은 떡잎부터 알아볼 수 있었다. 천 년간의 수렵 생활에서 두각을 나타낸 천재는 드물었다. 그러나 성년이 채 되기도 전에 군직을 받았다는 소식이 퍼지자 사람들 사이에서 「황당한 장군」이라는 이야기가 나왔다 하지만 반대의 목소리는 천재 소년이 첫 전쟁에...</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">경원에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">연경이 있으니 장군님은 무력으로 명성을 떨칠 필요 없어요. 장군님께서 제 실력을 인정했으니 당연히 제가 장군님의 짐을 덜어드려야죠!</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">나부 선주를 대표하는 방어자 검객… 연경은 분명 실력이 대단한 전사겠죠? 갑자기 자신이 없어지네요!</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">기세등등한 운기 호위병. 선주 「나부」의 최강 검객 검생검사 소년. 연경이 손에 검을 쥐고 있으면 그 누구도 이 천재를 얕잡아 보지 못한다 그가 손에 쥔 보검을 잠시나마 거두게 하는 건 시간뿐이다</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">행적 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">제가 어린 건 사실이지만, 「미래가 기대된다」라는 말은 너무 형식적이지 않나요?</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 연경에게 검술 말고 좋아하는 게 있냐고 묻는다면 명쾌한 대답이 돌아올 것이다 「취미는 검을 뽑는 속도에 방해만 될 뿐이야」 아이들이 장난감을 끊임없이 사는 것처럼 연경 역시 용돈을 탕진해가며 공조사에서 제작한 진기 비검, 근접전용 단도, 자유자재로 움직이는 검 등 대부분 보검을 사들였다…. 그는 다양한 검을 두 개씩 사들여 하나는 소장용으로 간직했다. 그래서 월말이 되면 「불쌍한 빈털터리 장군」이 되었다 소년이 검을 사랑하는 건...</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">잡담•공조사의 검기</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">공조사의 검기를 논할 때면, 오던 졸음도 확 달아나요. 크기별로 모두 두 자루씩 구매해서 하나는 사용하고 하나는 소장하죠…. 하지만 월말이니까 「장군님 거를 먹고, 쓰고, 간절하게 도움을 청하는」 수 밖에요</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 「123번째 대련: 연경, 경원」 「장군님과 싸우고 싶지 않아요. 이 연경, 너무 괴롭습니다…」 「검을 들었으면 패배하지 않겠다는 자신감을 가져야지, 어찌 약한 소리를 하느냐?」 「지켜야 할 상대에게 검을 휘두르는 호위병이 어딨습니까? 다치시기라도 한다면…」 「검을 그 입처럼 잘 놀렸다면 이기고도 남았을 터인데. 한 손으로 상대해줄 테니 어서 덤비거라」 「안 됩니다, 꼭 두 손이어야 합니다! 아니면 신군과 싸우는 것도 괜찮습니다...</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">파티 편성•경원</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">장군님의 명이라면 이 연경, 반드시 사명을 다하겠습니다</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">연경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">스코트 씨, 저는 운기 효위 연경이라고 합니다. 우리 전에도 만났었죠? 언행에 주의하시고, 길거리에서 괜한 말썽 일으키지 마시길 바랍니다</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">연경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">제 진짜 이름을 말씀드리지 못한 점 사과드릴게요. 제가 바로 나부의 방어자 검객 연경이에요</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">연경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">나부의 방어자 검객… 연경에게 도전하겠다고요? 우리 꽤 인연이 깊은걸요?</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">다른 선주처럼 「나부」도 「성천 연무」 행사를 열어요. 운기군의 실력을 시험하는 목적이죠. 검술 종목에서 승리한 사람은 「검술의 일인자」 칭호를 차지할 수 있어요!</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">운리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">운리의 인게임 대사</span></span><div class="ref-quote">진정한 수료라곤 할 수 없지. 다만 이번 시험 상대는 Mar. 7th의 사부——연경이야</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">…고마워, 연경 사부!</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">연경 사부, 너랑 겨루면… 내가 이길 수 있을까?</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">잡담•검술의 일인자</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">「검술의 일인자」라는 이름을 얻지 못했으니 기술을 더 갈고닦아야 해요. 근데 장군님은 저에게 부족한 건 검술이 아니라 시간이래요…. 제가 그 「검술의 일인자」보다 부족한 게 뭘까요……</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">자신에 대해•상대</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">「나부」엔 이제 제 상대가 없어요. 하지만 우주라면… 다르겠죠</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">전투 시작•위험 경보</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">강적이야, 한 수 배워보지</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">전투 불능</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">검 앞에… 부끄럽군……</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">단항에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">단항 씨와 겨룰 때 느낀 건데, 창술이 뛰어나면서도 그 점을 전혀 신경 쓰지 않더라고요…. 그분께 창술은 수단일 뿐인 걸까요?</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">블레이드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">검을 휘두를 때마다 그에게 간파당하는데… 검술의 조예만으로 그를 이길 수 있을까요?</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">파티 편성•단항</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">지금 제 검술 실력으로 다시 가르침을 청해도 될까요?</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">경류에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">단순히 극한만을 추구하는 검술은 하나밖에 없는 줄 알았는데… 그분과 장군님, 전… 결국 모두 다 다른 길을 걷게 되나 봐요</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">캐릭터 승급</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">꿈에 닿기까지, 얼마나 검을 휘둘러야 할까요?</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">새로운 검을 사면 칼자루 싸개에 공을 들여야 해요. 재질은 흑배나무를 쓸 건지, 비단을 쓸 건지, 검파두식 문양은 용을 쓸 건지, 호랑이를 쓸 건지, 그리고 가락지, 명패…. 하나씩 고르는 재미가 있죠!</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">진귀한 전리품 오픈</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">이제 장군님께 손 벌리지 않아도 되겠네요!</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">설마 그쪽도… 연무 의식 참가 선수인가요? 그쪽도 연경이란 선수와 대결하기 위해 온 거예요?</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">나! 루카! 무조건 이기고 만다! 반드시 연경을 이길 거야!</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">연경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">반드시 연경을 이길 거야!</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">운리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">운리의 인게임 대사</span></span><div class="ref-quote">Mar. 7th, 검술을 배우면서 구체적으로 이루고 싶은 목표가 있어? 연무 의식에서 어떤 등급이나 순위를 받고 싶다든가, 연경이나 나, 또는 누군가를 상대로 이기고 싶다든가?</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">사실 난 연경 사부를 이기지 못했어……</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">연경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">경원의 인게임 대사</span></span><div class="ref-quote">두 분의 촬영 솜씨가 뛰어나다고 하던데, 이 연경 부탁드리고 싶은 게 있어요——운리 아가씨가 발뺌하지 못하게 증거를 찍어주세요</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">운리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">운리의 인게임 대사</span></span><div class="ref-quote">연경의 그 터무니없는 말은 들을 것 없어</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">운리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">운리의 인게임 대사</span></span><div class="ref-quote">연경, {NICKNAME}, 우리 셋이 저 사람들이 벌칙 내용을 잊을 때까지 두들겨 패자</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">연경 사부, 운리 사부, 미안해. 내가 졌어……</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">스코트의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">스코트의 인게임 대사</span></span><div class="ref-quote">하하, 내가 들은 바로는 사람들이 연경과 운리가 두려워 말을 못 하는 것뿐이라던데!</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">연경과 운리는 해낼 수 있어</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">정운에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">정운 아가씨가 주간하는 「득물지」에 검기와 관련된 부분이 나오면 절 찾아와서 추천 문구를 쓰기도 해요</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">소상에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">소상 아가씨의 검은 좋은 검이에요. 하지만 좋은 검이라고 모두가 잘 쓸 수 있는 건 아니죠. 1할의 힘을 쓰려면 10배의 기력이 필요해요</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">어공에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">천박사에 방문한 적이 있는데, 어공 님께서 홀로 가죽 과녁을 한참 동안 보시더라고요. 한 발도 쏘지 않았지만, 이미 마음속으로 수백 수천 번을 쏘셨겠죠</div></li>
-<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">부현에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">부 태복은 장군이 되고 싶어하는데…. 다른 건 몰라도 입만 열면 누구든 지루해하는 그 언변부터 고쳐야 할 거예요</div></li>
-<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">나찰에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">처음에는 검갑을 무기로 쓰는 줄 알고 이상하다고 생각했죠…. 진짜 실력을 볼 수 있게 대련할 방법을 찾아야겠어요……</div></li>
-<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">전리품 오픈•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">용돈 좀 벌었네</div></li>
-<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">도시로 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">희귀한 검이 남아 있으려나……</div></li>
-<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">전리품 오픈•2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">몇 개만 더 찾으면 새 검을 살 수 있겠어요!</div></li>
-<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">「역사에 이름을 남기고 나면 뭘 더 할 수 있을까요?」 장군님께 이 질문을 했더니, 본인은 장군이 되리라고 생각해본 적이 없어서 대답할 수 없다고 혼자 생각하래요. 휴……</div></li>
-<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">전투 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">이번에는 방심하지 않겠어</div></li></ol></details>
+<p>연경은 선주 「<a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>」 운기군 역사상 최연소 호위병이자 <a class="wiki-link" href="char-26.html" title="경원">경원</a> 장군의 수행원이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 연경"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 비검 여섯 자루를 순식간에 막아내는 재능이 운기군 수석 교련조차 백 년을 연습해야 이를 경지라, 선주인들은 그를 「검에서 태어난 아이」라고 불렀다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>경원은 소년이던 연경을 발견해 반대를 무릅쓰고 군에 데려왔다. 운기군 병적부에는 이 경위가 남아 있지만, 가족란의 혈통 계승 정보는 비어 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 경원은 직접 검술을 가르쳤고, 연경은 몇 년의 수련 끝에 검술을 능숙히 익혀 속세에 흔들리지 않는 마음을 갖게 되었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<p>성년이 되기도 전에 군직을 받았다는 소식이 퍼지자 「황당한 장군」이라는 소문이 돌았지만, 첫 전쟁에서 거둔 큰 승리로 반대 여론은 가라앉았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 풍요의 주민이 만든 거대 기수 「방풍」의 머리를 베어 적군을 물러나게 했고, 이후 경원과 함께 보리인의 탐랑 진영을 무너뜨려 소부 셋을 베었으며, 날개를 만든 자와 싸워 하늘을 뒤덮은 나운함을 격파했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>나부를 비롯한 선주는 운기군의 실력을 시험하는 「성천 연무」 행사를 열고, 검술 종목의 승자에게 「검술의 일인자」 칭호를 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 행사에서 연경은 Mar. 7th의 시험 상대로 지정됐다. Mar. 7th는 그를 &quot;연경 사부&quot;라 부르며 따랐고, 대결이 끝난 뒤에는 사실 그를 이기지 못했다고 인정했다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>나부 거리에서는 신분을 감추고 다니다가도 필요하면 정체를 밝힌다. <a class="wiki-link" href="npc-3058.html" title="스코트">스코트</a>에게는 자신을 운기 효위라 소개하며 말썽을 일으키지 말라고 경고했고, 곧이어 자신이 나부의 방어자 검객임을 알렸다.<sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 연경의 언급 · 연경의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>경원은 연경에게 보호자이자 스승이며 지휘관이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 경원이 연경을 가르치는 데 심혈을 기울이자, 주변에서는 후계자를 육성한다거나 아이를 비밀무기로 삼는다는 소문이 돌았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 두 사람의 123번째 대련에서 연경은 &quot;장군님과 싸우고 싶지 않아요&quot;라며 주저했지만, 경원은 &quot;검을 들었으면 패배하지 않겠다는 자신감을 가져야지&quot;라고 다그쳤다. 연경이 기습으로 허점을 노리자 경원은 &quot;검기가 너무 강해 숨겨지지가 않는구나&quot;라며 그 의도를 미리 읽었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 연경은 &quot;장군님께서 제 실력을 인정했으니 당연히 제가 장군님의 짐을 덜어드려야죠&quot;라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<p>연경은 검술 말고 좋아하는 게 있냐는 물음에 &quot;취미는 검을 뽑는 속도에 방해만 될 뿐&quot;이라고 답할 만큼 검에 몰두한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 공조사에서 만든 진기 비검, 근접전용 단도, 자유자재로 움직이는 검 등을 크기별로 두 자루씩 사들여 하나는 쓰고 하나는 소장한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•공조사의 검기"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 새 검을 살 때는 칼자루 싸개의 재질과 문양, 가락지와 명패까지 고르는 재미를 즐기지만, 이 지출 탓에 월말이면 경원에게 손을 벌린다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•공조사의 검기"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>연경은 나부의 다른 인물들을 검과 실력의 관점에서 평가한다. <a class="wiki-link" href="char-25.html" title="정운">정운</a>이 주간하는 「득물지」에 검기 관련 내용이 실릴 때면 추천 문구를 부탁받고, <a class="wiki-link" href="char-27.html" title="소상">소상</a>의 검은 좋은 검이지만 아무나 잘 쓸 수 있는 것은 아니라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 정운에 대해"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 소상에 대해"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> <a class="wiki-link" href="char-712.html" title="어공">어공</a>이 활을 한 번도 쏘지 않고 과녁을 오래 바라보는 모습을 보고는 마음속으로 이미 수백 수천 번을 쐈을 것이라 짐작하고, <a class="wiki-link" href="char-711.html" title="나찰">나찰</a>에게는 검갑을 무기로 쓰는 줄 알고 이상하게 여겨 진짜 실력을 볼 대련 방법을 찾으려 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어공에 대해"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 나찰에 대해"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> <a class="wiki-link" href="char-804.html" title="부현">부현</a>에 대해서는 장군이 되고 싶다면 누구든 지루하게 만드는 말버릇부터 고쳐야 한다고 평하고, 계네빈이 든 검에 대해서는 물어보려다 상대가 검을 그대로 삼켜버리는 바람에 아직도 어느 문파의 검법인지 모른다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부현에 대해"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 계네빈에 대해"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
+<p>연경은 극한만을 추구하는 검술이 하나뿐이라고 생각했지만, <a class="wiki-link" href="char-1387.html" title="경류">경류</a>와 경원과 자신이 결국 서로 다른 길을 걷는다는 것을 알게 됐다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경류에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <a class="wiki-link" href="char-8.html" title="단항">단항</a>과 겨루면서는 뛰어난 창술을 정작 신경 쓰지 않는 태도에 창술이 그에게 수단일 뿐인지 궁금해하고, <a class="wiki-link" href="blade.html" title="블레이드">블레이드</a>와는 검을 휘두를 때마다 간파당해 검술의 조예만으로 이길 수 있을지 의문을 품는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 연경은 나부 안에서는 더 이상 자신의 상대가 없지만 우주라면 다를 것이라고 말하며, 경원이 블레이드를 풀어준 뒤에는 그에게 &quot;장군님이 널 놓아줬으니, 더는 거슬리게 굴지 마&quot;라고 경계했다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•상대"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•블레이드"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
+<p>Mar. 7th는 연경을 &quot;연경 사부&quot;라 부르며 &quot;연경 사부가 나를 얼마나 아끼는데&quot;라고 두둔하고, 대결에서 진 뒤에는 &quot;미안해, 내가 졌어&quot;라며 순순히 인정한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> <a class="wiki-link" href="char-2642.html" title="운리">운리</a>는 연경이 남긴 말인 &quot;『영웅 협객』이 되고 싶다면 자신을 향상시키는 것 외에는 다른 지름길이 없다&quot;를 Mar. 7th에게 인용해 전한다.<sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 운리는 연경의 말을 두고 &quot;그 터무니없는 말은 들을 것 없어&quot;라며 받아치면서도, 함께 장난을 치는 사이다.<sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> 스코트는 사람들이 연경과 운리를 두려워해 말을 못 하는 것뿐이라고 말한다.<sup class="cite-ref" title="게임 본편 · 스코트의 언급 · 스코트의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 성천 연무에서는 <a class="wiki-link" href="char-801.html" title="루카">루카</a>가 &quot;나부 선주를 대표하는 방어자 검객&quot; 연경과 겨루러 왔다며 &quot;반드시 연경을 이길 거야!&quot;라고 다짐한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
+<h2 id="검술의-일인자">검술의 일인자</h2>
+<p>연경의 꿈은 나부의 1인자를 넘어 선주 전체의 1인자가 되어 나부 「검술의 일인자」와 연맹의 「검괴」 칭호를 얻는 것이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 「음월의 난」 이후 수천 년간 나부 운기군 최고의 검객에게 주어지는 이 칭호는 비어 있었다. 이유는 아무도 원하지 않아서가 아니라 형언하기 어려운 비밀스러운 사정 때문이었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 전임 「검술의 일인자」는 공적을 열세 번이나 세운 전설의 검객이었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 경원은 연경에게 부족한 것이 검술이 아니라 시간이라고 말했고, 연경은 자신이 그 칭호의 주인에 비해 무엇이 모자란지 되묻는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•검술의 일인자"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-26.html">경원</a> — <a href="char-26.html">경원</a>은 연경을 발견해 군에 데려오고 직접 검술을 가르친 스승이자 지휘관이다. 대련과 대화로 연경의 마음가짐과 검의 허점을 함께 바로잡는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></li>
+<li><a href="char-26.html">경원</a> — 공조사는 연경이 보검을 사들이는 곳이다. 크기별로 두 자루씩 사는 습관은 매달 말 <a href="char-26.html">경원</a>에게 손을 벌리는 사정으로 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•공조사의 검기"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></li>
+<li><a href="char-2642.html">운리</a>, <a href="char-7.html">Mar. 7th</a>, <a href="char-801.html">루카</a>, <a href="xianzhou-luofu.html">나부</a> — <a href="char-2642.html">운리</a>와 <a href="char-7.html">Mar. 7th</a>, <a href="char-801.html">루카</a>는 <a href="xianzhou-luofu.html">나부</a>의 젊은 검객들이다. Mar. 7th에게는 사부, <a href="char-2642.html">운리</a>에게는 함께 장난치는 동료, <a href="char-801.html">루카</a>에게는 넘어야 할 목표로 각기 다르게 얽힌다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 운리의 언급 · 운리의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></li>
+<li><a href="char-8.html">단항</a>, <a href="blade.html">블레이드</a>, <a href="char-1387.html">경류</a>, <a href="xianzhou-luofu.html">나부</a> — <a href="char-8.html">단항</a>, <a href="blade.html">블레이드</a>, <a href="char-1387.html">경류</a>는 연경이 자신의 검술을 견주는 강자들이다. 이들과 겨루거나 대화를 나눌 때마다 연경은 <a href="xianzhou-luofu.html">나부</a> 바깥의 상대를 의식한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경류에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블레이드에 대해"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 운기군 역사상 최연소 호위병, 경원 장군 호위병, 공조사 보검의 수집 대가…. 수많은 호칭과 소문 탓에 사람들은 이 천재 소년이 어린애라는 사실을 짐작하지 못했다 기억 속의 연경은 경원이 신책부를 덜 걱정할 수 있도록 그림자처럼 곁을 맴돌았고, 경원은 그런 연경에게 검술을 가르쳐줬다. 몇 년간의 수련 끝에 검술을 능숙하게 익힌 연경은 속세에 흔들리지 않는 마음을 갖게 되었다 운기군 무술 경전에 따르면 자유자재로 비검 여섯 자루를...</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">연경</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">경원 장군의 수행원이다. 어린 나이임에도 불구하고 천재라 불릴 정도로 뛰어난 검술을 지니고 있다. 검 한 자루만 있으면 누구에게도 지지 않는다</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 운기군의 병적부에는 경원이 소년을 어떻게 발견했는지, 어떻게 반대를 무릅쓰고 군에 데려왔는지 적혀 있었다. 다만 가족란에는 연경의 혈통 계승에 관한 정보가 빠져 있었다 대부분의 장군감은 떡잎부터 알아볼 수 있었다. 천 년간의 수렵 생활에서 두각을 나타낸 천재는 드물었다. 그러나 성년이 채 되기도 전에 군직을 받았다는 소식이 퍼지자 사람들 사이에서 「황당한 장군」이라는 이야기가 나왔다 하지만 반대의 목소리는 천재 소년이 첫 전쟁에...</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">다른 선주처럼 「나부」도 「성천 연무」 행사를 열어요. 운기군의 실력을 시험하는 목적이죠. 검술 종목에서 승리한 사람은 「검술의 일인자」 칭호를 차지할 수 있어요!</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">…고마워, 연경 사부!</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">운리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">운리의 인게임 대사</span></span><div class="ref-quote">진정한 수료라곤 할 수 없지. 다만 이번 시험 상대는 Mar. 7th의 사부——연경이야</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">연경 사부, 너랑 겨루면… 내가 이길 수 있을까?</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">사실 난 연경 사부를 이기지 못했어……</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">연경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">스코트 씨, 저는 운기 효위 연경이라고 합니다. 우리 전에도 만났었죠? 언행에 주의하시고, 길거리에서 괜한 말썽 일으키지 마시길 바랍니다</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">연경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">제 진짜 이름을 말씀드리지 못한 점 사과드릴게요. 제가 바로 나부의 방어자 검객 연경이에요</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 「123번째 대련: 연경, 경원」 「장군님과 싸우고 싶지 않아요. 이 연경, 너무 괴롭습니다…」 「검을 들었으면 패배하지 않겠다는 자신감을 가져야지, 어찌 약한 소리를 하느냐?」 「지켜야 할 상대에게 검을 휘두르는 호위병이 어딨습니까? 다치시기라도 한다면…」 「검을 그 입처럼 잘 놀렸다면 이기고도 남았을 터인데. 한 손으로 상대해줄 테니 어서 덤비거라」 「안 됩니다, 꼭 두 손이어야 합니다! 아니면 신군과 싸우는 것도 괜찮습니다...</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">경원에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">연경이 있으니 장군님은 무력으로 명성을 떨칠 필요 없어요. 장군님께서 제 실력을 인정했으니 당연히 제가 장군님의 짐을 덜어드려야죠!</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 연경에게 검술 말고 좋아하는 게 있냐고 묻는다면 명쾌한 대답이 돌아올 것이다 「취미는 검을 뽑는 속도에 방해만 될 뿐이야」 아이들이 장난감을 끊임없이 사는 것처럼 연경 역시 용돈을 탕진해가며 공조사에서 제작한 진기 비검, 근접전용 단도, 자유자재로 움직이는 검 등 대부분 보검을 사들였다…. 그는 다양한 검을 두 개씩 사들여 하나는 소장용으로 간직했다. 그래서 월말이 되면 「불쌍한 빈털터리 장군」이 되었다 소년이 검을 사랑하는 건...</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">잡담•공조사의 검기</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">공조사의 검기를 논할 때면, 오던 졸음도 확 달아나요. 크기별로 모두 두 자루씩 구매해서 하나는 사용하고 하나는 소장하죠…. 하지만 월말이니까 「장군님 거를 먹고, 쓰고, 간절하게 도움을 청하는」 수 밖에요</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">새로운 검을 사면 칼자루 싸개에 공을 들여야 해요. 재질은 흑배나무를 쓸 건지, 비단을 쓸 건지, 검파두식 문양은 용을 쓸 건지, 호랑이를 쓸 건지, 그리고 가락지, 명패…. 하나씩 고르는 재미가 있죠!</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">정운에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">정운 아가씨가 주간하는 「득물지」에 검기와 관련된 부분이 나오면 절 찾아와서 추천 문구를 쓰기도 해요</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">소상에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">소상 아가씨의 검은 좋은 검이에요. 하지만 좋은 검이라고 모두가 잘 쓸 수 있는 건 아니죠. 1할의 힘을 쓰려면 10배의 기력이 필요해요</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">어공에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">천박사에 방문한 적이 있는데, 어공 님께서 홀로 가죽 과녁을 한참 동안 보시더라고요. 한 발도 쏘지 않았지만, 이미 마음속으로 수백 수천 번을 쏘셨겠죠</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">나찰에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">처음에는 검갑을 무기로 쓰는 줄 알고 이상하다고 생각했죠…. 진짜 실력을 볼 수 있게 대련할 방법을 찾아야겠어요……</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">부현에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">부 태복은 장군이 되고 싶어하는데…. 다른 건 몰라도 입만 열면 누구든 지루해하는 그 언변부터 고쳐야 할 거예요</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">계네빈에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">그 선생님은… 아주 멋진 검을 들고 계셔서 이야기 좀 해보려고 했는데 그 검을 삼키더라니까요!? 이 연경, 아직도 그게 어느 문파의 검법인지 모르겠어요……</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">경류에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">단순히 극한만을 추구하는 검술은 하나밖에 없는 줄 알았는데… 그분과 장군님, 전… 결국 모두 다 다른 길을 걷게 되나 봐요</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">단항에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">단항 씨와 겨룰 때 느낀 건데, 창술이 뛰어나면서도 그 점을 전혀 신경 쓰지 않더라고요…. 그분께 창술은 수단일 뿐인 걸까요?</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">블레이드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">검을 휘두를 때마다 그에게 간파당하는데… 검술의 조예만으로 그를 이길 수 있을까요?</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">자신에 대해•상대</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">「나부」엔 이제 제 상대가 없어요. 하지만 우주라면… 다르겠죠</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">파티 편성•블레이드</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">장군님이 널 놓아줬으니, 더는 거슬리게 굴지 마</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">그럴 리 없어. 연경 사부가 나를 얼마나 아끼는데!</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">연경 사부, 운리 사부, 미안해. 내가 졌어……</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">운리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">운리의 인게임 대사</span></span><div class="ref-quote">연경은 「악당을 물리치는 방법에는 여러 가지가 있겠지만, 『영웅 협객』이 되고 싶다면 자신을 향상시키는 것 외에는 다른 지름길이 없다」고 말했었지</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">운리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">운리의 인게임 대사</span></span><div class="ref-quote">연경의 그 터무니없는 말은 들을 것 없어</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">운리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">운리의 인게임 대사</span></span><div class="ref-quote">연경, {NICKNAME}, 우리 셋이 저 사람들이 벌칙 내용을 잊을 때까지 두들겨 패자</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">스코트의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">스코트의 인게임 대사</span></span><div class="ref-quote">하하, 내가 들은 바로는 사람들이 연경과 운리가 두려워 말을 못 하는 것뿐이라던데!</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">설마 그쪽도… 연무 의식 참가 선수인가요? 그쪽도 연경이란 선수와 대결하기 위해 온 거예요?</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">나부 선주를 대표하는 방어자 검객… 연경은 분명 실력이 대단한 전사겠죠? 갑자기 자신이 없어지네요!</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">나! 루카! 무조건 이기고 만다! 반드시 연경을 이길 거야!</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">잡담•검술의 일인자</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/28?lang=ko-kr">원문</a></span><div class="ref-quote">「검술의 일인자」라는 이름을 얻지 못했으니 기술을 더 갈고닦아야 해요. 근데 장군님은 저에게 부족한 건 검술이 아니라 시간이래요…. 제가 그 「검술의 일인자」보다 부족한 게 뭘까요……</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
-  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%97%B0%EA%B2%BD&amp;page_slug=char-28">수정 요청</a></div>
@@ -773,12 +701,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-28">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%97%B0%EA%B2%BD&amp;body=%EC%97%B0%EA%B2%BD+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-28.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

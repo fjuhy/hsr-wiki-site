@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>스타피스 컴퍼니 · hoyohoyo.wiki</title>
-  <meta name="description" content="스타피스 컴퍼니는 은하 전역에서 활동하는 거대 기업 재단이자, 운명의 길 보존과 에이언즈 클리포트를 따르는 파벌이다. 이름과 유형은 각각 스타피스 컴퍼니와 파벌로 제시되며, 에이언즈 항목에서는 그 신앙적 중심이 「보존」 클리포트임이 명시된다. 따라서 컴퍼니는 단순한 상업 회사가 아니라 보존의 이념, 범은하 무역, 금융 질서, 물류망, 인재 운용을 한 조직 안에 결합한 거대 제도에 가깝다.">
+  <meta name="description" content="스타피스 컴퍼니는 은하 전역의 거래에 쓰이는 「신용 포인트」 시스템을 만들어 운영하는 범은하 기업 재단이자, 운명의 길 보존의 에이언즈 클리포트를 따르는 파벌이다. 공식 설명은 컴퍼니를 자유 무역을 내세우는 재단이자 화폐 발행과 자원 독점으로 움직이는 「비즈니스 독재」로 함께 규정하면서도, 창업 초심은 클리포트를 위해 모든 것을 바치는 헌신적인 후방 원군이라고 말한다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="스타피스 컴퍼니 · hoyohoyo.wiki">
-  <meta property="og:description" content="스타피스 컴퍼니는 은하 전역에서 활동하는 거대 기업 재단이자, 운명의 길 보존과 에이언즈 클리포트를 따르는 파벌이다. 이름과 유형은 각각 스타피스 컴퍼니와 파벌로 제시되며, 에이언즈 항목에서는 그 신앙적 중심이 「보존」 클리포트임이 명시된다. 따라서 컴퍼니는 단순한 상업 회사가 아니라 보존의 이념, 범은하 무역, 금융 질서, 물류망, 인재 운용을 한 조직 안에 결합한 거대 제도에 가깝다.">
+  <meta property="og:description" content="스타피스 컴퍼니는 은하 전역의 거래에 쓰이는 「신용 포인트」 시스템을 만들어 운영하는 범은하 기업 재단이자, 운명의 길 보존의 에이언즈 클리포트를 따르는 파벌이다. 공식 설명은 컴퍼니를 자유 무역을 내세우는 재단이자 화폐 발행과 자원 독점으로 움직이는 「비즈니스 독재」로 함께 규정하면서도, 창업 초심은 클리포트를 위해 모든 것을 바치는 헌신적인 후방 원군이라고 말한다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/interastral-peace-corporation.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/interastral-peace-corporation.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,81 +620,83 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-ipc.html">스타피스 컴퍼니</a><span>스타피스 컴퍼니</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%8A%A4%ED%83%80%ED%94%BC%EC%8A%A4+%EC%BB%B4%ED%8D%BC%EB%8B%88&amp;page_slug=interastral-peace-corporation">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>스타피스 컴퍼니</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">스타피스 컴퍼니</span><span class="badge">세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>스타피스 컴퍼니는 은하 전역에서 활동하는 거대 기업 재단이자, 운명의 길 보존과 에이언즈 클리포트를 따르는 파벌이다. 이름과 유형은 각각 스타피스 컴퍼니와 파벌로 제시되며, 에이언즈 항목에서는 그 신앙적 중심이 「보존」 클리포트임이 명시된다. 따라서 컴퍼니는 단순한 상업 회사가 아니라 보존의 이념, 범은하 무역, 금융 질서, 물류망, 인재 운용을 한 조직 안에 결합한 거대 제도에 가깝다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>컴퍼니의 외부 홍보는 자유 무역을 내세우지만, 설정 설명은 그 운영 방식을 화폐 발행과 자원 독점에 기반한 비즈니스 독재로 묘사한다. 동시에 창업 초심은 클리포트를 위한 헌신적인 후방 원군이라는 데 놓여 있으며, 회사의 기업 정신은 모든 것을 앰버 로드에게 바친다는 문장으로 요약된다. 이 이중성 때문에 스타피스 컴퍼니는 은하 시민에게 편리한 경제 인프라이자, 부와 규칙을 장악한 압도적 권력으로 함께 인식된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>클리포트의 보존은 위협 앞에서 장벽을 세워 살아 있는 세계를 보호하는 우주적 행위로 설명된다. 컴퍼니가 자신을 앰버 로드의 후방 원군으로 규정한다는 점은, 그들이 시장과 물류를 단순한 영리 사업이 아니라 보존을 수행하는 수단으로 해석한다는 뜻이다. 다만 그 수단이 실제 현장에서는 채무, 독점, 계약, 정치적 승인, 무력적 질서 유지와 결합하기 때문에, 컴퍼니의 보존은 보호와 통제 사이의 긴장을 낳는다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>작중에서 스타피스 컴퍼니는 새로운 문명권이 은하 사회와 접촉할 때 가장 먼저 모습을 드러내는 외부 체계 중 하나다. 야릴로-Ⅵ가 외부와의 연락을 회복한 뒤 현재까지 컴퍼니와만 대외 업무를 해왔다는 언급, 벨로보그의 스타피스 통신 기지국이 운영을 재개한 뒤 외부 초대장이 도착했다는 언급은 컴퍼니가 고립된 세계와 은하 네트워크를 연결하는 통신·외교 창구로 기능함을 보여준다. <sup class="cite-ref" title="게임 본편 — 대사 · 루카: 야릴로-Ⅵ와 컴퍼니의 대외 업무 · 루카의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 브로냐: 벨로보그의 스타피스 통신 기지국 · 브로냐의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>동시에 컴퍼니는 자신이 연결한 세계를 단순히 관찰하지 않는다. <a class="wiki-link" href="market-development-department.html" title="시장개척부">시장개척부</a>가 새로운 세계를 우주 상업 시스템으로 끌어들이고, <a class="wiki-link" href="entry-1814.html" title="사업통합부">사업통합부</a>가 초장거리 배송망과 시설·화물 목록을 관리하며, <a class="wiki-link" href="strategic-investment-department.html" title="전략투자부">전략투자부</a>가 장기 투자와 부채 청산을 담당한다. 이 구조는 컴퍼니가 접촉, 계약, 수송, 가격 결정, 투자, 회수까지 이어지는 일련의 과정을 내부 부서 체계로 처리할 수 있음을 뜻한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>컴퍼니의 영향력은 사적인 상거래와 공적인 외교의 경계를 흐린다. <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>와의 협의 현장에서 시장개척부 대변인이 우주 안보와 자유 시장에 관한 문제를 논의했다는 방송은, 컴퍼니가 무역 회사의 언어로 외교 의제와 안보 의제를 다루는 조직임을 드러낸다. 금 조각상 거리 상업구역의 계약 만료 시점에 컴퍼니 지역 담당자가 개입하고 부두의 채무 위기가 발생했다는 증언 역시, 지역 상권과 채무 구조가 컴퍼니의 확장과 맞물릴 수 있음을 보여준다. <sup class="cite-ref" title="게임 본편 — 방송/대사 · 나부 협의와 시장개척부 대변인 · 남자 목소리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 명희: 금 조각상 거리와 컴퍼니 지역 담당자 · 명희의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="신용-포인트와-범은하-경제">신용 포인트와 범은하 경제</h2>
-<p>은하의 거의 모든 비즈니스는 컴퍼니가 만든 「신용 포인트」 시스템을 기반으로 이루어진다. 작중 인물도 컴퍼니 담당자라는 지위와 신용 포인트를 벌어들이는 능력을 권위의 근거처럼 내세운다. 이는 컴퍼니가 단순히 시장의 참가자가 아니라, 시장에서 쓰이는 화폐와 교환 기준 자체를 제공하는 위치에 있음을 뜻한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스코트: 신용 포인트와 컴퍼니 담당자 · 스코트의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>이 경제 체계는 편의성과 위험을 동시에 지닌다. 컴퍼니가 물류, 금융, 가격 결정, 정보망, 인재 배치를 한꺼번에 다룰 수 있기 때문에 은하 무역은 빠르게 확장될 수 있지만, 같은 이유로 특정 세계나 산업은 컴퍼니의 신용, 채무, 계약, 배송망에서 벗어나기 어렵다. 설정상 대중이 컴퍼니를 음모를 꾸미는 독재자처럼 보는 이유도 이러한 부의 절대적 통제력과 멈추지 않는 확장에서 비롯된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<h2 id="7대-부서와-운영-체계">7대 부서와 운영 체계</h2>
-<p>스타피스 컴퍼니의 7대 부서는 같은 “회사 부서”라기보다, 은하 경제를 기능별로 나누어 관리하는 거대한 권한 단위에 가깝다. 시장을 열고, 물류를 관리하고, 장기 투자를 집행하고, 건축 자재를 운송하고, 기술을 상업화하고, 인재와 정보망을 운용하고, 오래된 산업을 보존하는 역할이 각각 분리되어 있다. 이 구조 덕분에 컴퍼니는 한 세계와 접촉한 뒤 외교, 계약, 배송, 가격, 채무, 인재 배치까지 이어지는 과정을 내부에서 처리할 수 있다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 부서"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>시장개척부는 새로운 세계를 우주 상업 시스템으로 편입시키는 전면 부서다. 오스왈도 슈나이더와 츠가냐-Ⅳ 관련 방송처럼 독립 사건과 인물 근거가 충분하며, 컴퍼니 안에서는 확장·외교·편입 기능을 대표하는 축으로 놓인다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐-Ⅳ와 스타피스 헌장 · 스타피스 방송의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐의 반란 진압 보도 · 스타피스 방송의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>사업통합부는 시장개척 이후의 초장거리 배송망, 시설·화물 목록, 특별 물자 조사와 가격 결정을 맡는 최대 규모 부서다.</p>
-<p>전략투자부는 장기 투자와 불량 자산 청산을 맡고, <a class="wiki-link" href="ten-stonehearts.html" title="10인의 스톤하트">10인의 스톤하트</a>와 초석, 다이아몬드, <a class="wiki-link" href="topaz.html" title="토파즈">토파즈</a>, 어벤츄린, 제이드 같은 인물·프로젝트 근거로 확장된다. 공식 설명은 이 부서의 스톤하트가 만계의 암으로 생긴 악성 부채를 청산한다고 말하고, <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a> 항목은 만계의 암을 스텔라론의 관련 항목으로 둔다. 그래서 전략투자부는 채무 집행과 장기 투자 권한의 핵심 부서이자, 스텔라론 재앙 이후의 세계를 회사의 장부 위에서 다시 분류하는 부서로 요약된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 화폐 전쟁 프로젝트 · 제이드의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p><a class="wiki-link" href="entry-1812.html" title="건축자재물류부">건축자재물류부</a>는 앰버 로드 지원대에서 이어진 가장 오래된 부서로, 클리포트에게 건축 자재를 운송하는 임무를 맡는다. 기술개발부는 <a class="wiki-link" href="intelligentsia-guild.html" title="지식학회">지식학회</a>와의 협업을 통해 연구 성과를 상업 프로젝트로 바꾸는 통로이고, 인재격려부는 인재 채용·배치와 정보망을 담당한다. 전통프로젝트부는 비중이 낮아진 산업을 장기 관리하는 부서다. 이 네 부서는 현재 근거가 주로 공식 부서 설명에 집중되어 있어, IPC의 운영 체계 안에서 함께 놓을 때 역할이 더 분명해진다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<h2 id="채무-외교-방송-사례">채무, 외교, 방송 사례</h2>
-<p>벨로보그 관련 언급은 컴퍼니의 채무 집행 방식을 보여주는 대표 사례다. 토파즈는 스타피스 컴퍼니의 채무 청산 전문가이자 「독촉의 황옥」으로 소개되며, 은하열차가 벨로보그의 채무 문제를 중재해 주었다는 대사도 나온다. 이후 토파즈는 채무 위기를 피해간 벨로보그 사람들이 스스로 일어설 능력을 갖췄는지 확인하고 싶다고 말해, 컴퍼니의 부채 관리가 단순 회계가 아니라 행성의 자립 가능성 평가와 연결되어 있음을 보여준다. <sup class="cite-ref" title="게임 본편 — 대사 · 빼미: 채무 청산 전문가 토파즈 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 토파즈: 벨로보그 채무 문제 · 토파즈의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 토파즈: 벨로보그의 채무 위기 이후 · 토파즈의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>나부와 관련된 사례에서는 컴퍼니가 상업 세력이면서 외교 무대의 행위자임이 드러난다. 연무 의식 참가, 나부와의 협의 체결, 시장개척부 대변인과 천박사 조타수 <a class="wiki-link" href="char-712.html" title="어공">어공</a>의 의견 교환은 컴퍼니가 단순 거래처가 아니라 여러 세력과 공식 협의를 맺고 자유 시장과 우주 안보를 논의하는 범은하적 외교 주체로 기능함을 보여준다. <sup class="cite-ref" title="게임 본편 — 대사 · 루카: 야릴로-Ⅵ와 컴퍼니의 대외 업무 · 루카의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 — 방송/대사 · 나부 협의와 시장개척부 대변인 · 남자 목소리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>스타피스 방송의 츠가냐-Ⅳ 보도는 컴퍼니식 질서가 어떻게 공적 언어로 포장되는지 보여준다. 방송은 시장개척부의 지도, 《스타피스 헌장》, 합법 의석, 기본적 자유, 개척 사업의 본보기 같은 표현을 사용하지만, 이어지는 보도에서는 현지 씨족의 불만과 반란 진압도 함께 언급된다. 이 대비는 컴퍼니의 공적 서사가 자유와 질서의 언어를 사용하더라도, 그 현장에는 반발과 강제력이 개입할 수 있음을 보여준다. <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐-Ⅳ와 스타피스 헌장 · 스타피스 방송의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 오스왈도 슈나이더와 츠가냐 개척 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐의 반란 진압 보도 · 스타피스 방송의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 카티카 씨족과 시장개척부 지역 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>스타피스 컴퍼니의 위상은 은하 무역의 참가자라는 말로는 충분히 설명되지 않는다. 설정은 컴퍼니를 스포츠 경기의 선수, 종목, 경기장, 규칙 자체에 비유하며, 많은 시민이 도처에 깔린 상품과 로고를 통해 컴퍼니를 체감한다고 설명한다. 이 비유는 컴퍼니가 시장 안에서 경쟁하는 한 기업이 아니라, 시장이 성립하는 조건과 규칙을 제공하는 구조적 권력임을 강조한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>컴퍼니의 압박감도 그 구조적 권력에서 나온다. 화폐, 물류, 부서 체계, 투자, 정보망이 하나의 파벌 안에 결합되어 있기 때문에, 컴퍼니와 충돌하는 세계는 경제, 외교, 정보, 채무, 물류의 여러 층위에서 동시에 압박을 받을 수 있다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>컴퍼니를 단순한 사익 집단으로만 이해하면 설정의 일부를 놓치게 된다. 컴퍼니는 자신들의 모든 경영책이 클리포트의 묵인과 신뢰 아래 있다고 여기는 인물을 배출하며, 공식 설정에서도 창업 정신을 앰버 로드에 대한 봉헌으로 설명한다. 문제는 이 신앙적 확신이 실제 운영에서 화폐 독점, 자원 독점, 채무 청산, 지역 사업 개입과 결합한다는 데 있다. <sup class="cite-ref" title="공식 HoYoWiki · 스타피스 컴퍼니 - 보존"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 명희: 금 조각상 거리와 컴퍼니 지역 담당자 · 명희의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>공식 관련 항목은 신용 포인트, 앰버기원, 10인의 스톤하트, 지식학회, 범은하 상사, 뭇별 경기장을 함께 묶는다. 이 목록은 컴퍼니가 화폐와 역법, 내부 엘리트 조직, 외부 학술 파벌, 상업 조직, 대규모 경기장 같은 서로 다른 영역을 가로지르는 파벌임을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>인물 차원에서는 토파즈, 어벤츄린, 루이스 플레밍이 컴퍼니 관련 인물로 연결되며, 작중 대사에서는 다이아몬드, 오스왈도 슈나이더, 제이드도 전략투자부와 시장개척부의 이해관계를 드러내는 이름으로 언급된다. 이 인물들은 컴퍼니가 단일한 얼굴을 가진 조직이 아니라, 부서별 권한과 프로젝트별 이해가 교차하는 거대 관료·기업 체계라는 점을 보여준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 인물"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 화폐 전쟁 프로젝트 · 제이드의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 어벤츄린: 다이아몬드와 오스왈도의 불화 · 어벤츄린의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
-<p>컴퍼니는 보존의 추종 세력으로도 명시된다. 보존의 추종 세력 항목에는 축성가와 스타피스 컴퍼니가 함께 제시되며, 이는 컴퍼니의 상업 활동이 보존이라는 운명의 길과 분리되지 않는다는 점을 뒷받침한다. 따라서 스타피스 컴퍼니에서는 경제 조직, 정치 조직, 종교적 후방 조직이라는 세 층위를 함께 보아야 한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<h2 id="해석과-맥락">해석과 맥락</h2>
-<p>스타피스 컴퍼니의 서사는 선한 보호자와 악한 독점 기업 중 하나로 고정하기 어렵다. 공식 설정은 컴퍼니가 앰버 로드를 위해 모든 것을 바치는 후방 원군이라고 설명하는 동시에, 화폐 발행과 자원 독점으로 움직이는 비즈니스 독재라는 표현도 함께 제시한다. 그러므로 컴퍼니의 행위는 보존의 사명을 내세우는 신앙적 확신과, 은하 경제를 장악한 기업 권력이 같은 방향으로 움직일 때 어떤 결과가 생기는지를 보여주는 사례로 읽는 것이 적절하다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>또한 작중 방송과 대사는 언제나 특정 인물이나 매체의 관점을 거친 정보라는 점을 구분해야 한다. 스타피스 방송은 시장개척부의 개척 사업을 자유와 합법성의 언어로 설명하지만, 같은 보도 안에서 현지 반란과 진압을 다룬다. 스코트나 토파즈 같은 인물의 발언도 컴퍼니 내부자의 자부심, 직무 논리, 개인적 판단이 섞여 있으므로, 컴퍼니의 공식 이념과 현장 행위 사이에는 계속 간극이 남는다. <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐-Ⅳ와 스타피스 헌장 · 스타피스 방송의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 오스왈도 슈나이더와 츠가냐 개척 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐의 반란 진압 보도 · 스타피스 방송의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 카티카 씨족과 시장개척부 지역 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스코트: 스타피스 컴퍼니와 앰버 로드 · 스코트의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 토파즈: 벨로보그 채무 문제 · 토파즈의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">스타피스 컴퍼니</div></li>
+<p>스타피스 컴퍼니는 은하 전역의 거래에 쓰이는 「신용 포인트」 시스템을 만들어 운영하는 범은하 기업 재단이자, 운명의 길 보존의 에이언즈 클리포트를 따르는 파벌이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 공식 설명은 컴퍼니를 자유 무역을 내세우는 재단이자 화폐 발행과 자원 독점으로 움직이는 「비즈니스 독재」로 함께 규정하면서도, 창업 초심은 클리포트를 위해 모든 것을 바치는 헌신적인 후방 원군이라고 말한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>은하 무역을 스포츠 경기에 비유하면 컴퍼니는 최고의 선수이자 각종 종목이며 경기장이고 규칙 그 자체라는 것이 공식 설명이다. 부에 대한 통제력과 멈추지 않는 확장 때문에 은하 시민 다수는 컴퍼니를 음모를 꾸미는 독재자로 여긴다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<h2 id="활동">활동</h2>
+<p>컴퍼니는 새 문명권이 은하 사회와 접촉할 때 가장 먼저 나서는 외부 창구다. 야릴로-Ⅵ는 외부와 연락을 회복한 뒤 지금까지 컴퍼니하고만 대외 업무를 봐 왔고, 벨로보그의 스타피스 통신 기지국이 운영을 재개하자 한 달 뒤 신호가 왜곡된 초대장이 도착했다. <sup class="cite-ref" title="게임 본편 — 대사 · 루카: 야릴로-Ⅵ와 컴퍼니의 대외 업무 · 루카의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 브로냐: 벨로보그의 스타피스 통신 기지국 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>벨로보그에서는 채무 청산 전문가 「독촉의 황옥」 <a class="wiki-link" href="topaz.html" title="토파즈">토파즈</a>가 채무 문제를 처리했다. 은하열차가 벨로보그의 채무 문제를 중재해 주었다는 언급이 있으며, 토파즈는 채무 위기를 피해 간 벨로보그 사람들이 스스로 일어설 능력을 갖췄는지 확인하고 싶다고 말했다. <sup class="cite-ref" title="게임 본편 — 대사 · 빼미: 채무 청산 전문가 토파즈 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 토파즈: 벨로보그 채무 문제 · 토파즈의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 토파즈: 벨로보그의 채무 위기 이후 · 토파즈의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>금 조각상 거리 상업구역에서는 경영 계약이 만료될 무렵 컴퍼니 지역 담당자가 개입했고, 부두에는 채무 위기가 뒤따랐다. <sup class="cite-ref" title="게임 본편 — 대사 · 명희: 금 조각상 거리와 컴퍼니 지역 담당자 · 명희의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p><a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>에서는 협의 체결 현장에서 <a class="wiki-link" href="market-development-department.html" title="시장개척부">시장개척부</a> 대변인이 나부의 천박사 조타수 <a class="wiki-link" href="char-712.html" title="어공">어공</a>과 만나 우주 안보가 자유 시장에 끼치는 영향을 논의했다. <sup class="cite-ref" title="게임 본편 — 방송/대사 · 나부 협의와 시장개척부 대변인 · 남자 목소리의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>츠가냐-Ⅳ에서는 시장개척부의 지도 아래 《스타피스 헌장》에 따라 독립 연합 수장국이 세워지고 스타피스 회의의 의석을 얻었다고 스타피스 방송이 보도했다. 시장개척부 부장 오스왈도 슈나이더는 이 조치를 「모든 솜보르 시민의 기본적 자유를 위한 기반」이라고 밝혔다. 같은 방송은 뒤이어 현지 카티카 씨족의 소규모 반란과 그 진압을 함께 전했는데, 씨족장은 시장개척부의 지역 사업에 오랫동안 불만을 품고 있었다고 한다. <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐-Ⅳ와 스타피스 헌장 · 스타피스 방송의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 오스왈도 슈나이더와 츠가냐 개척 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐의 반란 진압 보도 · 스타피스 방송의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 카티카 씨족과 시장개척부 지역 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
+<p>컴퍼니는 <a class="wiki-link" href="stellaron.html" title="스텔라론">스텔라론</a> 헌터에게도 수배령을 내렸다. 수배령은 「블레이드, 은랑, 샘… 이 네 명은 죽여도 상관없다. 『운명의 노예』를 해치거나 독립적인 사고 능력을 잃게 해선 안 된다」고 명시한다. <sup class="cite-ref" title="공식 HoYoWiki · 스텔라론 헌터 - ???"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
+<h2 id="신용-포인트와-은하-경제">신용 포인트와 은하 경제</h2>
+<p>은하의 거의 모든 거래는 컴퍼니가 만든 「신용 포인트」 시스템을 기준으로 이루어진다. 작중 인물도 컴퍼니 담당자라는 직함과 신용 포인트를 얼마나 버는지를 권위의 근거로 내세운다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스코트: 신용 포인트와 컴퍼니 담당자 · 스코트의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
+<p>컴퍼니가 물류, 금융, 가격 결정, 정보망, 인재 배치를 한 조직 안에서 함께 다루기 때문에 은하 무역은 빠르게 확장될 수 있지만, 같은 구조 탓에 특정 세계나 산업은 컴퍼니의 신용·채무·계약·배송망에서 벗어나기 어렵다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<h2 id="조직과-운영">조직과 운영</h2>
+<p>컴퍼니는 7대 부서로 나뉘며, 각 부서는 수십에서 수백 개의 문명 세계를 관리하고 부서별 직원 수는 억만 단위에 이른다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 부서"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p>시장개척부는 클리포트의 사명을 알리고 새로운 세계를 우주 상업 시스템에 편입시키는 부서다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p><a class="wiki-link" href="entry-1814.html" title="사업통합부">사업통합부</a>는 시장개척 이후의 초장거리 배송망과 시설·화물 목록을 관리하고 특별 물자의 조사와 가격 결정을 맡는다. 직원 수가 전체의 45%를 차지하는 컴퍼니 최대 규모 부서다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p><a class="wiki-link" href="strategic-investment-department.html" title="전략투자부">전략투자부</a>는 단기 수익을 위한 투자를 하지 않는 부서로, 소속 엘리트 팀 「<a class="wiki-link" href="ten-stonehearts.html" title="10인의 스톤하트">10인의 스톤하트</a>」가 만계의 암으로 생긴 악성 부채를 청산한다. 스톤하트는 각자 「초석」이라는 자산을 하나씩 지니는데, 초석에는 「보존」 사도의 권한이 봉인되어 있다. 게임 내 대사는 초석을 스톤하트에게 목숨보다 중요한 물건이라고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 선데이: 초석과 보존 사도 권한 · 선데이의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · Dr. 레이시오: 10인의 스톤하트와 초석 · 단항의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
+<p><a class="wiki-link" href="entry-1812.html" title="건축자재물류부">건축자재물류부</a>는 앰버 로드 지원대에서 이어진 컴퍼니의 가장 오래된 부서로, 클리포트에게 건축 자재를 운송한다. 이 부서는 한때 「앰버 로드 지원대」였으나 루이스의 출세 이후 개편되어 지금의 이름을 갖게 되었다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p>기술개발부는 <a class="wiki-link" href="intelligentsia-guild.html" title="지식학회">지식학회</a>와 협업해 연구 성과를 상업 프로젝트로 전환하고, 인재격려부는 인재 채용·배치와 은하 정보망 운용을 맡는다. 전통프로젝트부는 비중이 낮아진 산업을 장기 관리한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<h2 id="주요-인물">주요 인물</h2>
+<p>시장개척부 부장 오스왈도 슈나이더는 전직 무명객이다. 공식 소개 영상은 그를 「전 무명객 오스왈도 슈나이더」로 부른다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <sup class="cite-ref" title="공식 YouTube — @Honkaistarrail_kr · 〈붕괴: 스타레일〉 별무리 기행 PV: 「스타피스 안내: 선발, 계획과 기회」"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 그는 「이 우주에 클리포트보다 더 현명한 회장이 있습니까? 그는 우리의 모든 경영책을 묵인하고, 의심하거나 질문하지 않습니다. 이는 큰 영광이고 신뢰입니다」라고 말한다. <sup class="cite-ref" title="공식 HoYoWiki · 스타피스 컴퍼니 - 보존"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
+<p>컴퍼니 내부에서는 그가 곧 이사회에 입성할 것이라는 평가가 있다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 외부에서는 선주 연맹의 평가 파일이 그를 「보존의 광팬」, 「일을 벌이는 걸 굉장히 좋아하는 자」로 규정하고 연맹에 대한 위험도를 「높음」으로 책정했다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 전략투자부 부장 「다이아몬드」와의 불화는 컴퍼니 안에서 모두가 아는 사실로 전해진다. <sup class="cite-ref" title="게임 본편 — 대사 · 어벤츄린: 다이아몬드와 오스왈도의 불화 · 어벤츄린의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
+<p>건축자재물류부 부장 타라반 킨은 컴퍼니가 검증한 몇 안 되는 「보존」의 사도이자 7인 이사회의 일원이다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p>전략투자부가 주도하는 「화폐 전쟁」 프로젝트는 제이드가 담당자를 맡고 토파즈와 어벤츄린이 멤버로 참여하며, 주요 연구개발은 지식학회가 수행한다. <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 화폐 전쟁 프로젝트 · 제이드의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 제이드: 전략투자부와 지식학회 · 제이드의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="entry-992.html">앰버기원</a>, <a href="ten-stonehearts.html">10인의 스톤하트</a>, <a href="factions.html">파벌</a>, <a href="intelligentsia-guild.html">지식학회</a>, <a href="preservation.html">보존</a> — 공식 관련 항목은 화폐(신용 포인트), 역법(<a href="entry-992.html">앰버기원</a>), 내부 엘리트 조직(<a href="ten-stonehearts.html">10인의 스톤하트</a>), 외부 학술 <a href="factions.html">파벌</a>(<a href="intelligentsia-guild.html">지식학회</a>), 상업 조직(범은하 상사), 대규모 경기장(뭇별 경기장)이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> <a href="preservation.html">보존</a>의 추종 세력 목록에는 축성가와 스타피스 컴퍼니가 함께 오른다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></li>
+<li><a href="topaz.html">토파즈</a>, <a href="aventurine.html">어벤츄린</a>, <a href="louis-fleming.html">루이스 플레밍</a>, <a href="faction-978.html">갤럭시 레인저</a>, <a href="char-2367.html">부트힐</a> — 관련 인물로는 <a href="topaz.html">토파즈</a>, <a href="aventurine.html">어벤츄린</a>, <a href="louis-fleming.html">루이스 플레밍</a>이 공식적으로 묶인다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 인물"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> <a href="faction-978.html">갤럭시 레인저</a>의 일원인 <a href="char-2367.html">부트힐</a>은 컴퍼니를 복수의 대상으로 노리며, 그의 대담한 행동은 컴퍼니의 이목을 끌기 위한 것이라고 설명된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">스타피스 컴퍼니</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">유형</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">파벌</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">에이언즈</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">⌈ 보존 ⌋ 클리포트</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">외부 홍보만 보면 회사는 자유 무역을 외치는 거대 기업 재단이다. 운영 방식은 화폐를 발행해 자원을 독점하는 비즈니스 독재다. 창업 초심을 말하자면, 회사는 「보존」의 에이언즈를 위해 모든 것을 바치는 헌신적인 후방 원군이다. 많은 은하 시민이 컴퍼니를 이야기할 때, 종종 도처에 깔린 상품과 로고를 언급한다. 마치 「거래가 존재하는 곳이면, 스타피스 컴퍼니가 존재한다」처럼. 사실 은하의 모든 비즈니스는 컴퍼니의 「신용 포인트」 시스템을 기반으로 이루어진다....</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">⌈ 보존 ⌋ 클리포트</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/889?lang=ko-kr">원문</a></span><div class="ref-quote">「철학적으로 고민하는 자는 은하수를 쳐다보며, 문명의 궁극적인 목표를 탐구한다——『벽을 세워라』, 웅장한 목소리가 머리에서 울려 퍼진다. 『벽을 세워라』」 ——아드리안•스펜서-스미스, ≪별하늘 우화≫ 천혜성의 벽, 아공 결정의 벽, 거대 인력체 기반의 축조자. 숭배자들은 그를 「앰버 로드」라고 부른다. 그는 더 오래된 「황혼 전쟁」의 생존자다. 적의 잠식이 코앞인 것을 아는 그는 하는 수 없이 광년의 단위로 장벽을 구축해 아직 생기가 남아 있는 세계를 단절...</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">루카: 야릴로-Ⅵ와 컴퍼니의 대외 업무</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">궁금한 게 하나 있어요…. 야릴로-Ⅵ가 외부와의 연락을 회복하긴 했지만 지금까진 컴퍼니와만 일을 해왔잖아요. 그런데 왜 갑자기 「나부」라는 곳으로 가서 격투 대회에 참가하라는 거죠?</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">브로냐: 벨로보그의 스타피스 통신 기지국</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">얼마 전, 벨로보그의 스타피스 통신 기지국이 운영을 재개했어. 그리고 한 달 전, 신호가 심하게 왜곡된 「초대장」을 하나 받았지——</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">지금의 스타피스 컴퍼니는 7대 부서로 나뉜다. 어쩌면 「부서」 라는 문자적인 의미만으로 더 이상 이 범은하 기업의 놀라운 규모를 설명할 수 없을 지도 모른다. 현실의 모든 컴퍼니 부서는 수십에서 수백 개의 문명 세계를 장악하고 있으며, 그 직원은 대대로 억만 단위에 달한다. 그들의 무역 활동에 영향을 받는 사람의 수는 더 말할 것도 없다. 7대 부서는 다음과 같다: 「시장개척부」 시장개척부는 클리포트의 사명을 더 많은 은하계에 알리기 위해 힘쓰며, 새로운...</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">나부 협의와 시장개척부 대변인</span> <span class="ref-source">게임 본편 — 방송/대사 · <span class="ref-detail">남자 목소리의 인게임 대사</span></span><div class="ref-quote">협의 체결의 현장에서 스타피스 컴퍼니 시장개척부 대변인과 나부 천박사 조타수 어공 씨가 서로의 의견을 나눴으며, 우주 안보의 형세가 자유 시장에 끼치는 영향과 같은 문제에 대해서도 공감대를 형성했습니다</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">루카: 야릴로-Ⅵ와 컴퍼니의 대외 업무</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">궁금한 게 하나 있어요…. 야릴로-Ⅵ가 외부와의 연락을 회복하긴 했지만 지금까진 컴퍼니와만 일을 해왔잖아요. 그런데 왜 갑자기 「나부」라는 곳으로 가서 격투 대회에 참가하라는 거죠?</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">브로냐: 벨로보그의 스타피스 통신 기지국</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">얼마 전, 벨로보그의 스타피스 통신 기지국이 운영을 재개했어. 그리고 한 달 전, 신호가 심하게 왜곡된 「초대장」을 하나 받았지——</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">빼미: 채무 청산 전문가 토파즈</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">빼미(원격 조종 인형)의 인게임 대사</span></span><div class="ref-quote">홍팀은 스타피스 컴퍼니의 채무 청산 전문가——「독촉의 황옥」 토파즈입니다!</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">토파즈: 벨로보그 채무 문제</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">토파즈의 인게임 대사</span></span><div class="ref-quote">너희 은하열차에서 벨로보그를 도와 채무 문제를 중재해 준 것도 모자라 이번엔 연무 의식에 참가하게 도와주다니… 하하, 애도 아닌데 이제 혼자 걸음마 정도는 떼야 하는 거 아닌가?</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">토파즈: 벨로보그의 채무 위기 이후</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">토파즈의 인게임 대사</span></span><div class="ref-quote">풉, 호기롭네. 난 벨로보그에 딱히 악감정은 없어. 채무 위기를 피해간 벨로보그 사람들이 정말 스스로 일어설 능력을 갖췄는지 확인하고 싶을 뿐이라고</div></li>
 <li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">명희: 금 조각상 거리와 컴퍼니 지역 담당자</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">명희의 인게임 대사</span></span><div class="ref-quote">금 조각상 거리 상업구역의 경영 계약이 만료될 즘 컴퍼니의 지역 담당자가 이곳에 눈독을 들였어요. 부두의 채무 위기도 그들의 작품이죠</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">스코트: 신용 포인트와 컴퍼니 담당자</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">스코트의 인게임 대사</span></span><div class="ref-quote">태복사 점술가라면 별거 아니네. 나는 스타피스 컴퍼니 담당자라고! 네가 나보다 부하 직원이 많아? 아니면 신용 포인트를 나보다 많이 벌어? 딱히 대단한 것도 없잖아</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">부서</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">시장개척부; 사업통합부; 기술개발부; 건축자재물류부; 전략투자부; 인재격려부; 전통프로젝트부</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">츠가냐-Ⅳ와 스타피스 헌장</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「츠가냐-Ⅳ는 시장개척부의 지도하에 《스타피스 헌장》에 따라 독립적이고 자주적인 연합 수장국을 세웠고, 스타피스 회의에서 합법적인 의석을 획득했다고 선언했습니다——」</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">나부 협의와 시장개척부 대변인</span> <span class="ref-source">게임 본편 — 방송/대사 · <span class="ref-detail">남자 목소리의 인게임 대사</span></span><div class="ref-quote">협의 체결의 현장에서 스타피스 컴퍼니 시장개척부 대변인과 나부 천박사 조타수 어공 씨가 서로의 의견을 나눴으며, 우주 안보의 형세가 자유 시장에 끼치는 영향과 같은 문제에 대해서도 공감대를 형성했습니다</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">츠가냐-Ⅳ와 스타피스 헌장</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「츠가냐-Ⅳ는 시장개척부의 지도하에 《스타피스 헌장》에 따라 독립적이고 자주적인 연합 수장국을 세웠고, 스타피스 회의에서 합법적인 의석을 획득했다고 선언했습니다——」</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">오스왈도 슈나이더와 츠가냐 개척 사업</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「시장개척부의 오스왈도•슈나이더 부장은 이번 조치를 『모든 솜보르 시민의 기본적 자유를 위한 기반』이자, 컴퍼니가 주인 없는 행성 구역인 츠가냐에서 개척 사업을 펼치는 데 본보기가 될 것이라고 밝혔습니다……」</div></li>
 <li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">츠가냐의 반란 진압 보도</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「스타피스 방송 속보입니다. 컴퍼니 시장개척부 대변인은 주인 없는 행성인 츠가냐에서 소규모 반란이 일어났으며, 해당 반란은 현재 진압된 상태라고 밝혔습니다——」</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/986?lang=ko-kr">원문</a></span><div class="ref-quote">만계의 암(현상)</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">선데이: 초석과 보존 사도 권한</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">「초석」은 전략투자부의 중요 자산으로 「보존」 사도의 권한이 봉인되어 있으며, 각 청산 전문가가 하나씩 소지하고 있다고 들었습니다</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">제이드: 화폐 전쟁 프로젝트</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">제이드의 인게임 대사</span></span><div class="ref-quote">여기서 「화폐 전쟁」 프로젝트를 개발 중이야. 내가 프로젝트 담당자고, 토파즈와 어벤츄린은 프로젝트 멤버지</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">빼미: 채무 청산 전문가 토파즈</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">빼미(원격 조종 인형)의 인게임 대사</span></span><div class="ref-quote">홍팀은 스타피스 컴퍼니의 채무 청산 전문가——「독촉의 황옥」 토파즈입니다!</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">토파즈: 벨로보그 채무 문제</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">토파즈의 인게임 대사</span></span><div class="ref-quote">너희 은하열차에서 벨로보그를 도와 채무 문제를 중재해 준 것도 모자라 이번엔 연무 의식에 참가하게 도와주다니… 하하, 애도 아닌데 이제 혼자 걸음마 정도는 떼야 하는 거 아닌가?</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">토파즈: 벨로보그의 채무 위기 이후</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">토파즈의 인게임 대사</span></span><div class="ref-quote">풉, 호기롭네. 난 벨로보그에 딱히 악감정은 없어. 채무 위기를 피해간 벨로보그 사람들이 정말 스스로 일어설 능력을 갖췄는지 확인하고 싶을 뿐이라고</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">오스왈도 슈나이더와 츠가냐 개척 사업</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「시장개척부의 오스왈도•슈나이더 부장은 이번 조치를 『모든 솜보르 시민의 기본적 자유를 위한 기반』이자, 컴퍼니가 주인 없는 행성 구역인 츠가냐에서 개척 사업을 펼치는 데 본보기가 될 것이라고 밝혔습니다……」</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">카티카 씨족과 시장개척부 지역 사업</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「반란을 일으킨 집단은 현지 『카티카』 씨족으로 확인되었습니다. 이 씨족의 족장은 컴퍼니에 대해 장기간 불만을 품고 있었으며, 시장개척부의 지역 사업에 심각한 부정적 영향을 주었다고 알려졌습니다」</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">스타피스 컴퍼니 - 보존</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">「우선 죄송합니다. 직설적으로 말하자면, 이 우주에 클리포트보다 더 현명한 회장이 있습니까? 그는 우리의 모든 경영책을 묵인하고, 의심하거나 질문하지 않습니다. 이는 큰 영광이고 신뢰입니다!」 ——오스왈도 • 슈나이더, 스타피스 컴퍼니 • 시장개척부 팀장, P47급</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">신용 포인트; 앰버기원(역법); 10인의 스톤하트 - 보존; 지식학회 - 지식; 범은하 상사; 뭇별 경기장</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">관련 인물</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">토파즈&amp;복순이; 어벤츄린 (Coming Soon); 루이스•플레밍(인물)</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">카티카 씨족과 시장개척부 지역 사업</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「반란을 일으킨 집단은 현지 『카티카』 씨족으로 확인되었습니다. 이 씨족의 족장은 컴퍼니에 대해 장기간 불만을 품고 있었으며, 시장개척부의 지역 사업에 심각한 부정적 영향을 주었다고 알려졌습니다」</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">스텔라론 헌터 - ???</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/961?lang=ko-kr">원문</a></span><div class="ref-quote">「——블레이드, 은랑, 샘… 이 네 명은 죽여도 상관없다. 『운명의 노예』를 해치거나 독립적인 사고 능력을 잃게 해선 안 된다」 ——스타피스 컴퍼니가 내건 수배령</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">스코트: 신용 포인트와 컴퍼니 담당자</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">스코트의 인게임 대사</span></span><div class="ref-quote">태복사 점술가라면 별거 아니네. 나는 스타피스 컴퍼니 담당자라고! 네가 나보다 부하 직원이 많아? 아니면 신용 포인트를 나보다 많이 벌어? 딱히 대단한 것도 없잖아</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">지금의 스타피스 컴퍼니는 7대 부서로 나뉜다. 어쩌면 「부서」 라는 문자적인 의미만으로 더 이상 이 범은하 기업의 놀라운 규모를 설명할 수 없을 지도 모른다. 현실의 모든 컴퍼니 부서는 수십에서 수백 개의 문명 세계를 장악하고 있으며, 그 직원은 대대로 억만 단위에 달한다. 그들의 무역 활동에 영향을 받는 사람의 수는 더 말할 것도 없다. 7대 부서는 다음과 같다: 「시장개척부」 시장개척부는 클리포트의 사명을 더 많은 은하계에 알리기 위해 힘쓰며, 새로운...</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">부서</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">시장개척부; 사업통합부; 기술개발부; 건축자재물류부; 전략투자부; 인재격려부; 전통프로젝트부</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/986?lang=ko-kr">원문</a></span><div class="ref-quote">만계의 암(현상)</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">선데이: 초석과 보존 사도 권한</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">「초석」은 전략투자부의 중요 자산으로 「보존」 사도의 권한이 봉인되어 있으며, 각 청산 전문가가 하나씩 소지하고 있다고 들었습니다</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">Dr. 레이시오: 10인의 스톤하트와 초석</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">단항의 인게임 대사</span></span><div class="ref-quote">설마 다른 사람의 초석을 내놓았다고 생각하는 거야? 10인의 스톤하트 단결력을 과대평가한 모양이군. 그건 그들의 목숨보다 중요한 물건이라고</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">〈붕괴: 스타레일〉 별무리 기행 PV: 「스타피스 안내: 선발, 계획과 기회」</span> <span class="ref-source">공식 YouTube — @Honkaistarrail_kr · <a href="https://www.youtube.com/watch?v=gMlzmFoculY">원문</a></span><div class="ref-quote">전 무명객 오스왈도•슈나이더의 인도 하에</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">스타피스 컴퍼니 - 보존</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">「우선 죄송합니다. 직설적으로 말하자면, 이 우주에 클리포트보다 더 현명한 회장이 있습니까? 그는 우리의 모든 경영책을 묵인하고, 의심하거나 질문하지 않습니다. 이는 큰 영광이고 신뢰입니다!」 ——오스왈도 • 슈나이더, 스타피스 컴퍼니 • 시장개척부 팀장, P47급</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">「『시장개척부』, 부장: 오스왈도•슈나이더, 이사회 후보 이사. 아직 경력이 길지 않은 부장으로 『보존』의 광팬이다. 일을 벌이는 걸 굉장히 좋아하는 자로 연맹에 대한 위험도는 높음으로 책정된다」</div></li>
 <li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">어벤츄린: 다이아몬드와 오스왈도의 불화</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">어벤츄린의 인게임 대사</span></span><div class="ref-quote">「다이아몬드」와 오스왈도의 불화는 모두가 알고 있는 사실이죠. 그래도 여태까지는 어느 정도 대치 상태를 유지해 왔지만……</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">추종 세력</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/85?lang=ko-kr">원문</a></span><div class="ref-quote">축성가(築城家) - 보존; 스타피스 컴퍼니 - 보존</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">스코트: 스타피스 컴퍼니와 앰버 로드</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">스코트의 인게임 대사</span></span><div class="ref-quote">시간 낭비라고? 넌 지금 스타피스 컴퍼니의 신뢰성과 앰버 로드의 영광을 지키는 거라고!</div></li></ol></details>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">제이드: 화폐 전쟁 프로젝트</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">제이드의 인게임 대사</span></span><div class="ref-quote">여기서 「화폐 전쟁」 프로젝트를 개발 중이야. 내가 프로젝트 담당자고, 토파즈와 어벤츄린은 프로젝트 멤버지</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">제이드: 전략투자부와 지식학회</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">제이드의 인게임 대사</span></span><div class="ref-quote">복잡한 프로젝트라서 컴퍼니 안팎의 많은 리소스가 동원됐지. 하지만 주도하는 건 우리 전략투자부야. 주요 연구개발은 지식학회가 담당하고 있고</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">신용 포인트; 앰버기원(역법); 10인의 스톤하트 - 보존; 지식학회 - 지식; 범은하 상사; 뭇별 경기장</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">추종 세력</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/85?lang=ko-kr">원문</a></span><div class="ref-quote">축성가(築城家) - 보존; 스타피스 컴퍼니 - 보존</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">관련 인물</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">토파즈&amp;복순이; 어벤츄린 (Coming Soon); 루이스•플레밍(인물)</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">은하를 떠도는 개조 인간 카우보이. 극도로 낙관적이고 자유분방하다. 「갤럭시 레인저」의 일원으로, 악을 처단하기 위해서라면 무슨 짓이든 할 수 있다—— 그의 대담한 행동은 복수의 대상인 「스타피스 컴퍼니」의 이목을 끌기 위함이다</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>파벌 · 스타피스 컴퍼니</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>세력</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-24</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
-  <p class="subtle">주요 근거: 게임 본편 — 대사, 게임 본편 — 방송/대사, 게임 본편 — 스타피스 방송, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 게임 본편 — 대사, 게임 본편 — 방송/대사, 게임 본편 — 스타피스 방송, 공식 HoYoWiki</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-24 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%8A%A4%ED%83%80%ED%94%BC%EC%8A%A4+%EC%BB%B4%ED%8D%BC%EB%8B%88&amp;page_slug=interastral-peace-corporation">수정 요청</a></div>
@@ -754,12 +705,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="interastral-peace-corporation">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%8A%A4%ED%83%80%ED%94%BC%EC%8A%A4+%EC%BB%B4%ED%8D%BC%EB%8B%88&amp;body=%EC%8A%A4%ED%83%80%ED%94%BC%EC%8A%A4+%EC%BB%B4%ED%8D%BC%EB%8B%88+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Finterastral-peace-corporation.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>데미우르고스 · hoyohoyo.wiki</title>
+  <meta name="description" content="데미우르고스는 키레네와 겹치는 정체이면서, 앰포리어스의 알려지지 않은 열세 번째 티탄이자 셉터 δ-me13의 「생명의 제1원인」 문제에 붙은 이름이다. 키레네의 별칭 하나로 끝나지 않고, 잔다르가 지운 생명 형태이자 아이언툼에 맞설 잃어버린 열쇠로 다뤄진다.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="hoyohoyo.wiki">
+  <meta property="og:title" content="데미우르고스 · hoyohoyo.wiki">
+  <meta property="og:description" content="데미우르고스는 키레네와 겹치는 정체이면서, 앰포리어스의 알려지지 않은 열세 번째 티탄이자 셉터 δ-me13의 「생명의 제1원인」 문제에 붙은 이름이다. 키레네의 별칭 하나로 끝나지 않고, 잔다르가 지운 생명 형태이자 아이언툼에 맞설 잃어버린 열쇠로 다뤄진다.">
+  <meta property="og:url" content="https://hoyohoyo.wiki/demiurge.html">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="canonical" href="https://hoyohoyo.wiki/demiurge.html">
+  <link rel="icon" href="data:,">
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #111418;
+    --paper: #191e22;
+    --surface: #20272a;
+    --ink: #edf2f0;
+    --muted: #aab6b2;
+    --line: #34403d;
+    --accent: #7fc9bd;
+    --accent-ink: #dff8f3;
+    --accent-soft: #213c3a;
+    --warn: #e1ad7d;
+    --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111418;
+  --paper: #191e22;
+  --surface: #20272a;
+  --ink: #edf2f0;
+  --muted: #aab6b2;
+  --line: #34403d;
+  --accent: #7fc9bd;
+  --accent-ink: #dff8f3;
+  --accent-soft: #213c3a;
+  --warn: #e1ad7d;
+  --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { background: var(--accent-soft); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 2px;
+}
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.site-header-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
+.brand:hover { background: transparent; color: var(--accent-ink); }
+.brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.top-links a, .theme-toggle {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.theme-toggle { cursor: pointer; min-width: 38px; }
+.top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.layout {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 24px;
+}
+.sidebar {
+  align-self: start;
+  position: sticky;
+  top: 74px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  padding: 12px;
+}
+.sidebar h2 { font-size: 12px; margin: 0 0 10px; color: var(--muted); letter-spacing: .04em; }
+.queue-list { display: grid; gap: 3px; max-height: 74vh; overflow: auto; }
+.category-nav-group { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
+.category-nav-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-special + .category-nav-group { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-parent { font-weight: 850; }
+.category-nav-child { padding-left: 18px !important; font-size: 13px; color: var(--muted) !important; }
+.category-nav-special { font-weight: 850; border-bottom: 1px solid var(--line); padding-bottom: 8px; margin-bottom: 8px; }
+.queue-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 7px;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.queue-list a:hover, .queue-list a[aria-current="page"] { background: var(--accent-soft); }
+.article-shell {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.article-top {
+  padding: 28px 42px 18px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; color: var(--muted); font-size: 13px; }
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs span::before { content: "/"; margin-right: 6px; color: var(--muted); }
+.article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
+.article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-mini-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.article-mini-actions a { color: var(--muted); text-decoration: none; }
+.article-mini-actions a:hover { color: var(--accent-ink); background: transparent; text-decoration: underline; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: color-mix(in srgb, var(--paper) 72%, var(--accent-soft));
+  color: var(--accent-ink);
+  font-size: 12px;
+  font-weight: 760;
+}
+.article-body { padding: 26px 42px 44px; max-width: 900px; }
+.article-body h2 {
+  margin: 34px 0 12px;
+  padding-top: 12px;
+  font-size: 24px;
+  line-height: 1.32;
+  border-top: 1px solid var(--line);
+}
+.article-body h2:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.article-body h3 { margin: 22px 0 8px; font-size: 18px; line-height: 1.35; }
+.article-body p { margin: 0 0 16px; }
+.article-body ul { margin: 0 0 18px; padding-left: 20px; }
+.article-body li { margin: 6px 0; }
+.wiki-link { font-weight: 730; text-decoration-style: solid; }
+.cite-ref { font-size: .72em; vertical-align: super; margin-left: 2px; }
+.cite-ref a {
+  border-radius: 999px;
+  padding: 1px 4px;
+  background: var(--accent-soft);
+  text-decoration: none;
+  font-weight: 800;
+}
+.references, .article-tools, .comments-section, .ad-slot, .report-panel {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.references { font-size: 12px; line-height: 1.5; }
+.references summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.references summary:hover { color: var(--accent-ink); }
+.references h2, .article-tools h2, .comments-section h2, .report-panel h2 { border-top: 0; margin: 0 0 12px; padding-top: 0; font-size: 17px; }
+.references ol { padding-left: 18px; }
+.references li { margin: 6px 0 10px; }
+.ref-title { font-weight: 800; }
+.ref-source, .subtle { color: var(--muted); font-size: 12px; }
+.ref-quote { color: var(--muted); margin-top: 3px; font-size: 11px; }
+.article-tools {
+  margin-top: 28px;
+  font-size: 13px;
+}
+.article-tools summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.article-tools summary:hover { color: var(--accent-ink); }
+.info-grid, .category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.info-item, .category-card, .home-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 11px 12px;
+}
+.category-card, .home-card {
+  color: var(--ink);
+  text-decoration: none;
+}
+.category-card:hover, .home-card:hover { background: var(--accent-soft); }
+.category-section { margin-bottom: 18px; }
+.category-subsection { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 12px; }
+.category-subsection h3 { margin-bottom: 4px; }
+.info-item strong, .category-card strong, .home-card strong { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.document-tree { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.document-tree ul { list-style: none; margin: 8px 0 0; padding-left: 18px; border-left: 1px solid var(--line); display: grid; gap: 6px; }
+.document-tree li { margin: 0; }
+.document-tree a { font-weight: 780; text-decoration: none; }
+.document-tree-category > div, .document-tree-subcategory > div, .document-tree-page { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.document-tree-category > div > a { color: var(--ink); font-size: 18px; }
+.document-tree-subcategory > div > a { color: var(--accent); }
+.status-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+.status-filter input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.status-group { margin-top: 22px; }
+.status-group h3 { margin-bottom: 4px; }
+.status-list { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.status-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 9px;
+}
+.status-row a { font-weight: 800; text-decoration: none; }
+.status-row p { grid-column: 1 / -1; margin: 0; }
+.status-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  background: var(--surface);
+  color: var(--ink);
+}
+.status-pill.is-documented { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); color: var(--accent-ink); }
+.status-pill.is-thin, .status-pill.is-out_of_scope { border-color: color-mix(in srgb, var(--warn) 46%, var(--line)); color: var(--warn); }
+.history-list { margin: 12px 0 0; padding-left: 18px; }
+.history-list li { margin: 7px 0; }
+.log-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+.log-list li {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+}
+.action-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+.button-link:hover { background: var(--accent-soft); }
+.comments-section input, .comments-section textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.comments-section textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+.comments-section button {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 760;
+}
+.comments-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0 0; }
+.comments-toolbar button, .comment-card button, .report-panel button {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+}
+.comments-section button[type="submit"], .report-panel button[type="submit"] {
+  background: var(--accent);
+  color: var(--paper);
+}
+.comments-list { display: grid; gap: 10px; margin-top: 14px; }
+.comment-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 10px 12px;
+}
+.comment-card p { margin: 5px 0 0; }
+.comment-card.is-held { border-style: dashed; }
+.comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+.ad-slot { color: var(--muted); font-size: 12px; }
+.stub { padding: 38px 42px; max-width: 900px; }
+.stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
+.stub p { max-width: 760px; }
+.home-hero {
+  position: relative;
+  min-height: clamp(320px, 40vw, 520px);
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+  overflow: hidden;
+}
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
+}
+.home-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.home-hero-image-dark { display: none; }
+.home-hero-copy {
+  width: min(760px, 100%);
+  padding: clamp(34px, 6vw, 72px) 42px 38px;
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
+}
+.home-hero-kicker {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  color: rgba(59,72,92,.74);
+  font-size: 13px;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+.home-hero h1 {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  font-size: 64px;
+  font-weight: 820;
+  letter-spacing: 0;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+.home-hero-subtitle {
+  margin: 0;
+  max-width: 560px;
+  color: rgba(24,34,55,.84);
+  font-size: 21px;
+  line-height: 1.55;
+  font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+}
+.home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
+.home-section h2 { margin: 0 0 12px; font-size: 21px; }
+.recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
+.report-panel form { display: grid; gap: 10px; }
+.report-panel label { display: grid; gap: 4px; font-weight: 760; }
+.report-panel input, .report-panel textarea, .report-panel select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 9px 10px;
+  font: inherit;
+}
+.report-panel textarea { min-height: 130px; resize: vertical; }
+@media (max-width: 900px) {
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
+}
+@media (max-width: 820px) {
+  body { font-size: 16px; line-height: 1.74; }
+  .layout { grid-template-columns: 1fr; padding: 14px; }
+  .article-shell { order: 1; }
+  .sidebar { order: 2; position: static; }
+  .queue-list { max-height: 34vh; }
+  .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
+  .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
+  .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
+}
+@media (max-width: 520px) {
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
+  .brand small { display: none; }
+  .top-links a { padding: 7px 8px; }
+  .home-hero h1 { font-size: 33px; }
+  .article-body { padding-bottom: 32px; }
+}</style>
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
+  <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
+  <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
+  <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
+  <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
+</head>
+<body>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">hoyohoyo.wiki</a><search class="search-shell" data-wiki-search data-pagefind-ignore>
+  <form class="search-form" data-search-form role="search">
+    <label class="search-input-wrap">
+      <span class="sr-only">위키 검색</span>
+      <input class="search-input" data-search-input type="search" placeholder="문서·고유명사 검색 /" autocomplete="off" spellcheck="false">
+      <span class="search-kbd">/</span>
+    </label>
+  </form>
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-panel-inner">
+      <section class="search-column">
+        <h2 class="search-heading">자동완성</h2>
+        <div data-search-suggestions></div>
+      </section>
+      <section class="search-column">
+        <h2 class="search-heading">문서 검색</h2>
+        <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
+      </section>
+    </div>
+  </div>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+<main class="layout">
+  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
+<a class="category-nav-child" href="category-people-stellaron-hunters.html"><span>스텔라론 헌터</span></a>
+<a class="category-nav-child" href="category-people-herta-space-station.html"><span>우주정거장 「헤르타」</span></a>
+<a class="category-nav-child" href="category-people-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-people-ipc.html"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-people-belobog.html"><span>야릴로-Ⅵ·벨로보그</span></a>
+<a class="category-nav-child" href="category-people-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-people-penacony.html"><span>페나코니</span></a>
+<a class="category-nav-child" href="category-people-amphoreus.html"><span>앰포리어스</span></a>
+<a class="category-nav-child" href="category-people-cosmic-factions.html"><span>우주 유랑 세력</span></a>
+<a class="category-nav-child" href="category-people-other.html"><span>기타 인물</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-factions.html"><span>파벌</span></a><a class="category-nav-child" href="category-factions-path.html"><span>운명의 길 파벌</span></a>
+<a class="category-nav-child" href="category-factions-ipc.html"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-factions-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-factions-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-factions-penacony.html"><span>페나코니 세력</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-paths.html"><span>운명의 길</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
+<a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html" aria-current="page"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
+<a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
+<a class="category-nav-child" href="category-concepts-cosmology.html" aria-current="page"><span>우주론·법칙</span></a>
+<a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+  <article class="article-shell" data-pagefind-body>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-cosmology.html">우주론·법칙</a><span>데미우르고스</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8D%B0%EB%AF%B8%EC%9A%B0%EB%A5%B4%EA%B3%A0%EC%8A%A4&amp;page_slug=demiurge">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>데미우르고스</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">우주론·법칙</span></div></header>
+    <div class="article-body"><h2 id="개요">개요</h2>
+<p>데미우르고스는 키레네에게 붙은 어려운 별명 하나가 아니다. 앰포리어스 후반부에서 이 이름은 세 가지를 함께 가리킨다. 알려지지 않은 열세 번째 티탄, 셉터 δ-me13가 처음 풀려고 했던 「생명의 제1원인」, 그리고 키레네·미미와 겹쳐지는 깊은 정체다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 열세 번째 티탄과 최초의 지식의 씨앗"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 셉터 δ-me13와 생명의 제1원인"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네 — 자신에 대해 • 존재"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>그래서 데미우르고스의 핵심 질문은 “키레네의 다른 이름인가?”에서 끝나지 않는다. 잔다르는 데미우르고스라는 생명 형태를 연산에서 빼야 아이언툼이 완성된다고 말하고, 헤르타와 스크루룸은 데미우르고스를 아이언툼에 맞설 잃어버린 열쇠로 찾는다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 잔다르의 부정과 배제"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 아이언툼에 맞서는 잃어버린 열쇠"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 키레네와 겹치지만, 동시에 앰포리어스의 생명과 아이언툼 문제 전체를 여는 이름이다.</p>
+<h2 id="데미우르고스는-무엇인가">데미우르고스는 무엇인가</h2>
+<p>가장 먼저 잡아야 할 점은 데미우르고스가 “생명이 어디서 시작되는가”라는 질문에 붙은 이름이라는 것이다. 셉터 δ-me13의 원래 연산 목표는 「데미우르고스」라는 생명 형태였고, 스크루룸은 그것을 「생명의 제1원인」 문제로 정리한다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 셉터 δ-me13와 생명의 제1원인"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>앰포리어스 쪽에서는 이 존재가 알려지지 않은 열세 번째 티탄으로 불린다. “아무도 모르는 외로운 신”, “최초의 지식의 씨앗”이라는 말도 따라붙는다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 열세 번째 티탄과 최초의 지식의 씨앗"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 즉 데미우르고스는 단순히 한 인물의 이름이 아니라, 앰포리어스가 숨겨 온 생명의 시작점이자 티탄 체계의 빈칸이다.</p>
+<p>인물별로 보면 의미가 더 분명해진다. 잔다르에게 데미우르고스는 아이언툼을 완성하려면 지워야 하는 생명 형태다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 잔다르의 부정과 배제"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 헤르타와 스크루룸에게는 아이언툼에 맞설 수 있는 잃어버린 열쇠다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 아이언툼에 맞서는 잃어버린 열쇠"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 키레네에게는 미미에서 키레네를 거쳐 데미우르고스로 이어지는 자기 이야기의 마지막 층이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네 — 자신에 대해 • 존재"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="키레네와의-관계">키레네와의 관계</h2>
+<p>키레네와 데미우르고스는 완전히 별개의 존재로 보기 어렵다. 키레네는 자신을 설명할 때 “천진난만한 「미미」에서, 생기발랄한 「키레네」, 아름답고 우아하며 또 행복한 「데미우르고스」까지”라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네 — 자신에 대해 • 존재"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 사이퍼는 핑크 머리의 친구를 「최초의 지식의 씨앗」 데미우르고스로 짐작하고, 아낙사고라스도 키레네에게 “데미우르고스가 너였을 줄이야”라고 말한다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 키레네와 겹치는 정체"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>다만 “데미우르고스 = 키레네의 별명”으로만 줄이면 핵심이 사라진다. 키레네는 작중에서 표면에 드러난 얼굴이고, 데미우르고스는 그 얼굴 뒤에서 셉터·잔다르·아이언툼 문제와 이어지는 더 깊은 층이다. 공개된 단서들은 키레네라는 인물 안에 데미우르고스라 불리는 층이 겹쳐 있고, 그 층이 앰포리어스의 생명 문제와 연결된다는 쪽으로 모인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네 — 자신에 대해 • 존재"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 셉터 δ-me13와 생명의 제1원인"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 잔다르의 부정과 배제"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>이 관계를 이해하면 키레네의 “삼천만 편의 이야기”도 다르게 보인다. 키레네는 수없이 비슷하고도 다른 이야기를 읽었고, 개척자와 여행하며 그 공백을 메워 낭만적인 결말을 쓸 수 있었다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네 — 견문"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> PhiLia093가 삼천만 세월 동안 데미우르고스에게 앰포리어스의 기억을 주었다는 설명도 같은 축에 놓인다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · PhiLia093와 삼천만 번의 기억"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 키레네와 데미우르고스의 관계는 단순한 이름 바꾸기가 아니라, 기억을 받아 자라난 존재가 어떤 결말에 도달하는가의 문제다.</p>
+<h2 id="활동">활동</h2>
+<p>데미우르고스는 작중에서 계속 걸어 다니며 행동을 보여 주는 인물처럼 나오지 않는다. 오히려 여러 인물이 남긴 말, 셉터의 내부 구조, 키레네의 자기 설명을 통해 윤곽이 드러난다. 셉터 δ-me13는 방문자를 데미우르고스 매트릭스로 받아들이고, 헤르타는 그 매트릭스를 셉터의 내핵층으로 본다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 데미우르고스 매트릭스"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>이 때문에 데미우르고스의 활동은 이동 경로보다 가능성의 형태로 드러난다. 그는 셉터가 풀려고 했던 생명의 문제였고, PhiLia093가 기억을 건넨 대상이며, 아이언툼과 다른 결말을 만들 수 있는 가능성으로 남아 있다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 셉터 δ-me13와 생명의 제1원인"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · PhiLia093와 삼천만 번의 기억"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 아이언툼에 맞서는 잃어버린 열쇠"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<h2 id="배제된-생명-형태">배제된 생명 형태</h2>
+<p>잔다르의 말은 일부러 불편하게 들린다. 그는 데미우르고스가 존재한 적 없다고 말하면서도, 곧 자신이 데미우르고스를 죽였고 그 생명 형태를 처음부터 연산에서 배제했다고 설명한다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 잔다르의 부정과 배제"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 아낙사고라스가 이름 없는 티탄의 거대 무덤을 근거로 되묻는 것도 이 모순 때문이다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 잔다르의 부정과 배제"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>이 모순은 문서에서 피해야 할 문제가 아니라, 데미우르고스의 핵심이다. 헤르타는 잔다르의 행동이 데미우르고스의 존재를 뒷받침하지만, 에버나이트의 말과 매트릭스의 상황은 데미우르고스가 존재하지 않는다는 쪽을 가리킨다고 본다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 존재와 부재의 모순"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 데미우르고스는 “있었다”와 “없었다” 중 하나로 깔끔하게 정리되지 않는다. 잔다르가 지웠기 때문에 기록에서는 사라졌지만, 지워야만 했다는 사실 때문에 오히려 중요성이 드러난다.</p>
+<h2 id="아이언툼에-맞서는-열쇠">아이언툼에 맞서는 열쇠</h2>
+<p>데미우르고스가 중요한 이유는 키레네의 정체 떡밥 때문만이 아니다. 잔다르가 데미우르고스를 배제해야 아이언툼이 완성된다고 말한 점을 거꾸로 보면, 데미우르고스는 아이언툼의 설계가 가장 두려워한 가능성이다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 잔다르의 부정과 배제"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>헤르타와 스크루룸이 데미우르고스를 찾는 이유도 여기에 있다. 두 사람은 파묻힌 과거가 아이언툼에게 맞설 열쇠가 될 수 있다고 보고, 헤르타는 자신들이 「데미우르고스」라는 잃어버린 열쇠를 찾으러 왔다고 말한다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 아이언툼에 맞서는 잃어버린 열쇠"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이때 열쇠는 무기 하나가 아니라, 아이언툼이 닫아 버린 생명의 다른 가능성에 가깝다.</p>
+<p>PhiLia093는 그 가능성에 기억을 주었다. 그녀는 데미우르고스가 성장하면 자신의 반신인 아이언툼에 맞설 수 있다고 믿었고, 마지막에는 한 줄기 기억이 되어 사라진다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · PhiLia093와 삼천만 번의 기억"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 데미우르고스가 앰포리어스 이야기의 중심에 오는 이유는 바로 이 지점이다. 키레네의 이름, 셉터의 문제, 잔다르의 삭제, PhiLia093의 기억이 모두 아이언툼과 다른 결말을 향해 모인다.</p>
+<h2 id="확정된-것과-조심할-점">확정된 것과 조심할 점</h2>
+<p>확정해서 말할 수 있는 부분은 분명하다. 데미우르고스는 열세 번째 티탄과 최초의 지식의 씨앗으로 불리고, 셉터 δ-me13의 원래 연산 목표였으며, 잔다르가 아이언툼을 위해 배제한 생명 형태다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 열세 번째 티탄과 최초의 지식의 씨앗"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 셉터 δ-me13와 생명의 제1원인"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 잔다르의 부정과 배제"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 키레네 자신도 미미·키레네·데미우르고스를 한 흐름 안에 놓고, 다른 인물들도 키레네를 데미우르고스와 연결한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네 — 자신에 대해 • 존재"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 키레네와 겹치는 정체"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>조심해야 할 부분은 둘의 관계를 너무 단순하게 만드는 일이다. 데미우르고스는 키레네와 강하게 겹치지만, 키레네의 별칭 하나로 끝나는 이름은 아니다. 동시에 키레네와 완전히 무관한 별도 신으로 떼어 놓아도 흐름이 맞지 않는다. 현재 공개된 근거 안에서는 “키레네 안에 데미우르고스라는 더 깊은 정체와 역할이 겹쳐 있다”는 설명이 가장 덜 무리하다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네 — 자신에 대해 • 존재"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 키레네와 겹치는 정체"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 존재와 부재의 모순"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-4003.html">키레네</a> — 데미우르고스와 가장 직접적으로 겹치는 인물이다. 키레네는 미미, 키레네, 데미우르고스를 자기 이야기의 흐름 안에 놓는다. 키레네가 표면에 드러난 얼굴이라면, 데미우르고스는 그 얼굴 뒤에서 생명 문제와 아이언툼 문제로 이어지는 더 깊은 이름이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네 — 자신에 대해 • 존재"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네 — 견문"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></li>
+<li><a href="amphoreus.html">앰포리어스</a>, <a href="char-3769.html">파이논</a>, <a href="char-3561.html">아낙사</a>, <a href="char-3956.html">에버나이트</a> — 데미우르고스의 비밀은 앰포리어스의 열세 번째 티탄, 이름 없는 티탄의 거대 무덤, 반복되는 불을 쫓는 이야기와 함께 드러난다. 아낙사와 에버나이트의 증언은 데미우르고스가 “있었다/없었다” 양쪽으로 갈라지는 이유를 보여 준다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 열세 번째 티탄과 최초의 지식의 씨앗"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 잔다르의 부정과 배제"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 존재와 부재의 모순"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></li>
+<li><a href="person-994.html">헤르타</a>, <a href="screwllum.html">스크루룸</a>, <a href="nous.html">⌈ 지식 ⌋ 누스</a> — 헤르타와 스크루룸은 데미우르고스를 셉터의 원래 연산 목표이자 아이언툼에 맞설 잃어버린 열쇠로 추적한다. 누스는 잔다르와 아이언툼의 계획이 향하는 축이므로, 데미우르고스 문제는 내부 사건을 넘어 누스와도 이어진다.<sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 셉터 δ-me13와 생명의 제1원인"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 — 앰포리어스 메인 스토리 · 아이언툼에 맞서는 잃어버린 열쇠"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">열세 번째 티탄과 최초의 지식의 씨앗</span> <span class="ref-source">게임 본편 — 앰포리어스 메인 스토리</span><div class="ref-quote">데미우르고스는 “13번째 티탄”, “아무도 모르는 외로운 신”, “최초의 지식의 씨앗”으로 불린다. 다른 장면에서 스크루룸은 데미우르고스를 세계 내부의 알려지지 않은 열세 번째 티탄이자 키레네의 삼천만 번의 「기억」의 청취자라고 정리한다.</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">셉터 δ-me13와 생명의 제1원인</span> <span class="ref-source">게임 본편 — 앰포리어스 메인 스토리</span><div class="ref-quote">헤르타는 셉터의 원래 연산 목표가 「데미우르고스」라는 이름의 생명 형태였다고 파악한다. 스크루룸은 이것이 「생명의 제1원인」, 곧 셉터 δ-me13가 최초로 맡았던 과제이며 폐기된 뒤에도 계속 답을 찾던 문제라고 분석한다.</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">키레네 — 자신에 대해 • 존재</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4003?lang=ko-kr">원문</a></span><div class="ref-quote">키레네는 자신을 두고 “천진난만한 「미미」에서, 생기발랄한 「키레네」, 아름답고 우아하며 또 행복한 「데미우르고스」까지”라고 말하며, 개척자 덕분에 자신의 이야기가 완벽해졌다고 정리한다.</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">잔다르의 부정과 배제</span> <span class="ref-source">게임 본편 — 앰포리어스 메인 스토리</span><div class="ref-quote">잔다르는 데미우르고스가 존재한 적 없다고 말한 뒤, 스스로 그를 죽였고 「데미우르고스」라는 생명의 형태를 처음부터 연산에서 배제했다고 설명한다. 그 조치가 있어야 아이언툼이 완성될 수 있었다고도 말한다.</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">아이언툼에 맞서는 잃어버린 열쇠</span> <span class="ref-source">게임 본편 — 앰포리어스 메인 스토리</span><div class="ref-quote">헤르타와 스크루룸은 파묻힌 과거가 아이언툼에게 맞설 열쇠일 수 있다고 보며, 헤르타는 자신들이 「데미우르고스」라는 잃어버린 열쇠를 찾으러 왔다고 말한다. 만약 열쇠를 찾지 못한다면 「자물쇠」를 열쇠로 삼을 수밖에 없다고도 말한다.</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">키레네와 겹치는 정체</span> <span class="ref-source">게임 본편 — 앰포리어스 메인 스토리</span><div class="ref-quote">사이퍼는 핑크 머리의 친구를 「최초의 지식의 씨앗」 데미우르고스로 짐작하고, 아낙사고라스는 키레네를 향해 “데미우르고스가 너였을 줄이야”라고 말한다. 키레네는 그 분류가 정확하다고 받아친다.</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">키레네 — 견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4003?lang=ko-kr">원문</a></span><div class="ref-quote">키레네는 삼천만 편의 비슷하고도 다른 이야기를 읽었고, 개척자와 여행하며 각 이야기의 아쉬운 부분에 즐거움을 더하고 공백을 메운 끝에 낭만적인 결말을 쓸 수 있었다고 말한다.</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">PhiLia093와 삼천만 번의 기억</span> <span class="ref-source">게임 본편 — 앰포리어스 메인 스토리</span><div class="ref-quote">헤르타는 PhiLia093가 삼천만 세월을 견디며 데미우르고스에게 앰포리어스의 「기억」을 주었고, 데미우르고스가 성장하면 반신인 아이언툼에 맞설 수 있다고 믿었다고 말한다. 이어 잔다르는 PhiLia093가 마지막 희생 뒤 한 줄기 기억이 되어 사라졌고, 은하열차가 가져온 또 다른 스텔라론이 오염된 셉터와 주파수 공진을 일으켜 혼란스러운 데미우르고스를 끌어들였다고 말한다.</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">데미우르고스 매트릭스</span> <span class="ref-source">게임 본편 — 앰포리어스 메인 스토리</span><div class="ref-quote">셉터 δ-me13는 데미우르고스 매트릭스에 들어온 이들을 맞이한다. 헤르타는 데미우르고스 매트릭스를 셉터의 내핵층으로 부르며, 바깥에서 스크루룸과 함께 그 내핵층을 공격하겠다고 말한다.</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">존재와 부재의 모순</span> <span class="ref-source">게임 본편 — 앰포리어스 메인 스토리</span><div class="ref-quote">헤르타는 잔다르의 행동이 데미우르고스의 존재를 뒷받침하는 근거인 동시에, 에버나이트의 말과 현 상황은 데미우르고스가 존재하지 않는다는 쪽을 반영한다고 말한다. 그녀는 두 일이 동시에 성립할 수 있다고 가정해야 하며, 그 모순의 끝에 진실이 있다고 본다.</div></li></ol></details>
+<details class="article-tools" data-page-dates data-public-launch-surface>
+  <summary>문서 정보와 변경 로그</summary>
+  <h2>문서 정보</h2>
+  <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 우주론·법칙</span></div>
+<div class="info-item"><strong>문서 유형</strong><span>개념</span></div>
+<div class="info-item"><strong>작성 일자</strong><span>2026-07-08</span></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-08</span></div></div>
+  <p class="subtle">주요 근거: 공식 HoYoWiki — 음성, 게임 본편 — 앰포리어스 메인 스토리</p>
+  <h3>최근 변경</h3>
+  <ol class="log-list" data-update-history><li>2026-07-08 · updated</li>
+<li>2026-07-08 · created</li></ol>
+  <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%8D%B0%EB%AF%B8%EC%9A%B0%EB%A5%B4%EA%B3%A0%EC%8A%A4&amp;page_slug=demiurge">수정 요청</a></div>
+</details>
+
+<section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="demiurge">
+  <h2>댓글</h2>
+  <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
+  <div class="giscus" data-giscus-container></div>
+  <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
+  <script src="https://giscus.app/client.js"
+    data-repo="fjuhy/hsr-wiki-issues"
+    data-repo-id="R_kgDOTGod_A"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOTGod_M4C__rq"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="0"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="ko"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+</section>
+</div>
+  </article>
+</main>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;:&quot;f803b654b24e4e57a86718dbfcdc82e2&quot;}"></script>
+</body>
+</html>

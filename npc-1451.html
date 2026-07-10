@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>약연 · hoyohoyo.wiki</title>
-  <meta name="description" content="약연은 선주 「나부」 소속 NPC이며, 진주 지킴이로 활동한다.">
+  <meta name="description" content="약연은 선주 「나부」에 속한 진주 지킴이로, 해변 순찰을 맡는다. 그녀는 진주 지킴이들이 개척자의 능력을 인정했다며, 순찰 중 생긴 일은 알아서 처리하라고 맡긴다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="약연 · hoyohoyo.wiki">
-  <meta property="og:description" content="약연은 선주 「나부」 소속 NPC이며, 진주 지킴이로 활동한다.">
+  <meta property="og:description" content="약연은 선주 「나부」에 속한 진주 지킴이로, 해변 순찰을 맡는다. 그녀는 진주 지킴이들이 개척자의 능력을 인정했다며, 순찰 중 생긴 일은 알아서 처리하라고 맡긴다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/npc-1451.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/npc-1451.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,86 +620,41 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>약연</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%BD%EC%97%B0&amp;page_slug=npc-1451">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>약연</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="assets/wiki-images/58/816095e66d6be9e7267ccac922381bb9_135071835200070-58b3b4dfc7a7.webp" alt="약연 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 공식 인물 이미지</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>약연</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%BD%EC%97%B0&amp;page_slug=npc-1451">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>약연</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/04/30/11771384/816095e66d6be9e7267ccac922381bb9_1350718352000706775.png" alt="약연 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>약연은 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 소속 NPC이며, 진주 지킴이로 활동한다.<sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>작중에서 약연은 단정사에 있는 비디아다라족 인물로도 다뤄지며, 무명객이 그녀를 도운 일이 있었다.<sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>약연의 이름은 해변 순찰, 방생파 대응, 표류병 전달, 단정사 연락과 함께 움직인다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>그녀는 긴 대면 장면보다 관할 구역과 후속 연락을 통해 존재감을 남기는 인물이다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 조수의 언급 · 조수의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>약연의 핵심 역할은 자신이 맡은 순찰 구역에서 생기는 문제를 관리하는 것이다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p><a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 약연의 순찰 구역에서 방생파를 발견하면 쫓아내고, 이미 방생된 것이 있으면 처리하라는 지시를 받은 상태로 움직인다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>이 지시는 약연을 단순한 배경 인물이 아니라, 해당 해변에서 무엇을 처리해야 하는지 정하는 관리자로 만든다.<sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>표류병 사건에서도 약연은 물건과 정보를 넘겨받는 상대다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<p>개척자는 해변에 다른 문제가 없는지 확인한 뒤 편지를 약연에게 가져가야 한다고 판단하고, 주운 표류병을 약연에게 건넨다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>표류병을 약연에게 가져가라는 목표가 반복되고, 개척자는 약연이 어떻게 생각할지 궁금해한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>약연은 개척자를 세세하게 감시하기보다 현장 판단을 맡기는 쪽으로 움직인다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>그녀는 진주 지킴이들이 개척자의 능력을 인정했으니 순찰 중 생긴 일은 알아서 처리하라고 했고, 이 말은 개척자가 약연의 관할 안에서 직접 조치할 수 있는 근거가 된다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>약연의 위상은 전투 장면보다 관할권과 업무 흐름 안에서 드러난다.<sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 조수의 언급 · 조수의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>그녀는 진주 지킴이로서 해변 순찰과 방생파 대응에 연결되어 있으며, 방생파를 쫓아내거나 방생된 것을 처리하라는 지시는 그녀의 구역이 실제 조치가 필요한 현장임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>약연은 단정사와도 이어진다.<sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p><a class="wiki-link" href="npc-1898.html" title="소형 로봇">소형 로봇</a>은 금 조각상 거리 외에 단정사도 가야 한다고 말하며, 그곳에 있는 비디아다라족 약연을 무명객이 도왔다고 전한다.<sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>이후 단정사 쪽 일은 약연에게 메시지를 남기고 답장을 기다리는 방식으로 이어진다.<sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>약연은 한 번 연락이 끊긴 상태로 남지만, 뒤이어 연락이 닿고 그녀가 보낸 문자 메시지를 확인하라는 흐름까지 이어진다.<sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>확인되는 것은 그녀가 진주 지킴이이며, 진주 지킴이들이 인정한 개척자의 능력을 바탕으로 순찰 중 생긴 일을 맡겼다는 점이다.<sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>따라서 약연의 작중 위치는 싸움의 승패보다 해변 관리, 단정사 연락, 표류병 후속 처리 같은 실무 흐름에서 읽힌다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<h3 id="진주-지킴이와-순찰-구역">진주 지킴이와 순찰 구역</h3>
-<p>약연은 진주 지킴이이며, 그녀의 순찰 구역은 방생파 대응과 방생된 대상 처리로 구체화된다.<sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>진주 지킴이들이 개척자의 능력을 인정했다는 말은 약연의 지시가 개인적 부탁에 그치지 않고 조직의 판단과 이어져 있음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<h3 id="방생파와-해변-문제">방생파와 해변 문제</h3>
-<p>방생파는 약연의 순찰 구역에서 쫓아내야 할 대상으로 나오며, 이미 방생된 것은 처리 대상이 된다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>이 관계는 약연이 해변을 지키는 인물이라는 설정을 실제 행동 규칙으로 바꾼다.<sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<h3 id="표류병과-후속-이야기">표류병과 후속 이야기</h3>
-<p>개척자는 주운 표류병을 약연에게 건네고, 약연이 그 일을 어떻게 받아들일지 궁금해한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>이후 약연은 표류병의 후속 이야기에 아직 답장하지 않았고, 그녀의 현재 상황도 알 수 없는 상태로 남는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>표류병 사건에서 약연은 정보를 받아 처리하는 끝점이지만, 답장이 늦어지면서 사건의 후속 사정도 그녀의 부재와 함께 남는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h3 id="단정사와-연락망">단정사와 연락망</h3>
-<p>소형 로봇은 단정사에 있는 비디아다라족 약연을 무명객이 도왔다고 말하고, 당시에는 그녀와 연락이 닿지 않는다고 한다.<sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>조수 역시 약연의 상태가 계속 「업무 중」이며 전화를 걸어도 통화 중이어서 바쁜 것 같다고 말한다.<sup class="cite-ref" title="게임 본편 · 조수의 언급 · 조수의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>약연은 직접 자리에 나타나지 않는 순간에도 메시지와 답장을 통해 사건의 후속 흐름에 걸려 있다.<sup class="cite-ref" title="게임 본편 · 조수의 언급 · 조수의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="해변을-맡은-진주-지킴이">해변을 맡은 진주 지킴이</h2>
-<p>약연은 큰 서사를 직접 끌고 가는 인물이라기보다, 나부의 한 구역이 누군가의 관리 아래 돌아가고 있다는 감각을 만드는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>방생파를 쫓아내고 방생된 것을 처리하라는 지시는 해변의 질서가 배경 설정에 머물지 않고, 개척자가 실제로 수행해야 하는 현장 업무가 되게 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>약연이 개척자에게 순찰 중 생긴 일을 알아서 처리하라고 한 점은 그녀의 관리 방식도 드러낸다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>그녀는 모든 일을 직접 붙잡기보다, 진주 지킴이들이 인정한 능력을 근거로 개척자에게 판단을 넘긴다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>그래서 약연은 연락되지 않거나 답장이 늦어지는 동안에도 관할과 지시를 통해 계속 작중에 남아 있으며, 개척자의 행동은 그 틀 안에서 이어진다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">약연</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1451?lang=ko-kr">원문</a></span><div class="ref-quote">진주 지킴이</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1451?lang=ko-kr">원문</a></span><div class="ref-quote">약연</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1451?lang=ko-kr">원문</a></span><div class="ref-quote">선주 「나부」</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">소형 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">소형 로봇의 인게임 대사</span></span><div class="ref-quote">금 조각상 거리 외에 단정사도 가야 합니다——당시 무명객이 그곳에 있는 비디아다라족 약연 님을 도왔다고 하는데, 지금은 연락이 되지 않네요</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(여기가 약연의 순찰 구역이야. 방생파를 발견하면 쫓아내고 방생한 게 있으면 처리하라고 했지…. 정말이지, 진정 이 해변은 지키는 게 누구인 건지…)</div></li>
+<p>약연은 선주 「<a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a>」에 속한 진주 지킴이로, 해변 순찰을 맡는다. <sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그녀는 진주 지킴이들이 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>의 능력을 인정했다며, 순찰 중 생긴 일은 알아서 처리하라고 맡긴다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>개척자는 약연의 순찰 구역에서 방생파를 발견하면 쫓아내고, 이미 방생된 것이 있으면 처리하라는 지시를 받는다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 해변에 다른 문제가 없는지 확인한 뒤에는 주운 표류병을 약연에게 가져다준다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 개척자는 약연이 표류병을 어떻게 받아들일지 궁금해한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>다른 임무에서는 <a class="wiki-link" href="npc-1898.html" title="소형 로봇">소형 로봇</a>이 금 조각상 거리 외에 단정사도 가야 한다고 말하며, 그곳에 사는 비디아다라족 약연을 예전에 무명객이 도운 적이 있다고 전한다. <sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 이때 약연과는 연락이 되지 않고, 소형 로봇은 메시지를 남기고 답장을 기다린다. <sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 조수는 약연의 상태가 계속 “업무 중”이고 전화도 통화 중이어서 바쁜 것 같다고 말한다. <sup class="cite-ref" title="게임 본편 · 조수의 언급 · 조수의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이후 소형 로봇은 약연과 연락이 닿았다며 그녀가 보낸 문자 메시지를 확인해 보라고 전한다. <sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 다만 표류병의 후속 이야기에는 약연이 아직 답장하지 않는다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="xianzhou-luofu.html">선주 나부</a>, <a href="npc-1898.html">소형 로봇</a> — 공식 정보는 약연을 <a href="xianzhou-luofu.html">선주 나부</a> 소속 진주 지킴이로 분류한다. <sup class="cite-ref" title="공식 HoYoWiki · 약연"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 조수와 <a href="npc-1898.html">소형 로봇</a>은 약연과의 연락 상태를 확인하는 역할로 등장한다. <sup class="cite-ref" title="게임 본편 · 조수의 언급 · 조수의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 소형 로봇의 언급 · 소형 로봇의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">약연</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1451?lang=ko-kr">원문</a></span><div class="ref-quote">진주 지킴이</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1451?lang=ko-kr">원문</a></span><div class="ref-quote">선주 「나부」</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(약연은 진주 지킴이들이 내 능력을 인정했으니 순찰 중에 생긴 일은 알아서 처리하라고 했어)</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(여기가 약연의 순찰 구역이야. 방생파를 발견하면 쫓아내고 방생한 게 있으면 처리하라고 했지…. 정말이지, 진정 이 해변은 지키는 게 누구인 건지…)</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(해변에 다른 문제는 없는 것 같네. 그럼 일단 이 편지를 약연에게 갖다 줘야겠어)</div></li>
 <li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">(주운 표류병을 약연에게 건넨다)</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">소형 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">소형 로봇의 인게임 대사</span></span><div class="ref-quote">단정사 쪽은 제가 약연 님에게 메시지를 남겼으니, 답장을 기다려 보죠</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">조수의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">조수의 인게임 대사</span></span><div class="ref-quote">약연 님은 메시지를 남기지 않으셨네요. 상태가 계속 「업무 중」으로 되어 있고 전화를 걸어도 통화 중인 걸로 보아, 아마 일이 바쁘신 것 같습니다</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">아쉽게도 약연은 아직 표류병의 후속 이야기에 대해 답장해 주지 않았다. 지금 그녀의 상황이 어떨지 모르겠다</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">소형 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">소형 로봇의 인게임 대사</span></span><div class="ref-quote">약연 님과 연락이 닿았습니다. 약연 님이 보내신 문자 메시지를 확인해 보세요</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(여기가 약연의 순찰 구역이야. 방생파를 발견하면 쫓아내고 방생한 게 있으면 처리하라고 했지…. 정말이지, 진정 이 해변은 지키는 게 누구인 건지…)</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(여기가 약연의 순찰 구역이야. 방생파를 발견하면 쫓아내고 방생한 게 있으면 처리하라고 했지…. 정말이지, 진정 이 해변은 지키는 게 누구인 건지…)</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(여기가 약연의 순찰 구역이야. 방생파를 발견하면 쫓아내고 방생한 게 있으면 처리하라고 했지…. 정말이지, 진정 이 해변은 지키는 게 누구인 건지…)</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">표류병을 약연에게 가져가자</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">(주운 표류병을 약연에게 건넨다)</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(해변에 다른 문제는 없는 것 같네. 그럼 일단 이 편지를 약연에게 갖다 줘야겠어)</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">표류병을 약연에게 가져가자</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(약연이 어떻게 생각할지 궁금하네)</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(약연은 진주 지킴이들이 내 능력을 인정했으니 순찰 중에 생긴 일은 알아서 처리하라고 했어)</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(약연은 진주 지킴이들이 내 능력을 인정했으니 순찰 중에 생긴 일은 알아서 처리하라고 했어)</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(약연은 진주 지킴이들이 내 능력을 인정했으니 순찰 중에 생긴 일은 알아서 처리하라고 했어)</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(약연은 진주 지킴이들이 내 능력을 인정했으니 순찰 중에 생긴 일은 알아서 처리하라고 했어)</div></li></ol></details>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(약연이 어떻게 생각할지 궁금하네)</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">소형 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">소형 로봇의 인게임 대사</span></span><div class="ref-quote">금 조각상 거리 외에 단정사도 가야 합니다——당시 무명객이 그곳에 있는 비디아다라족 약연 님을 도왔다고 하는데, 지금은 연락이 되지 않네요</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">소형 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">소형 로봇의 인게임 대사</span></span><div class="ref-quote">단정사 쪽은 제가 약연 님에게 메시지를 남겼으니, 답장을 기다려 보죠</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">조수의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">조수의 인게임 대사</span></span><div class="ref-quote">약연 님은 메시지를 남기지 않으셨네요. 상태가 계속 「업무 중」으로 되어 있고 전화를 걸어도 통화 중인 걸로 보아, 아마 일이 바쁘신 것 같습니다</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">소형 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">소형 로봇의 인게임 대사</span></span><div class="ref-quote">약연 님과 연락이 닿았습니다. 약연 님이 보내신 문자 메시지를 확인해 보세요</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">아쉽게도 약연은 아직 표류병의 후속 이야기에 대해 답장해 주지 않았다. 지금 그녀의 상황이 어떨지 모르겠다</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
@@ -760,12 +664,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="npc-1451">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%95%BD%EC%97%B0&amp;body=%EC%95%BD%EC%97%B0+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnpc-1451.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

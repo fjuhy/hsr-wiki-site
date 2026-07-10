@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>링스 · hoyohoyo.wiki</title>
-  <meta name="description" content="링스는 벨로보그의 설원 조사대원이자 랜도 가문의 막내딸로, 홀로 설원 깊은 곳을 탐험하는 극지 탐험가다. 나른하고 담담해 보이지만 실제로는 한 번 정한 일을 밀어붙이는 추진력이 강하며, 불필요한 사교를 피하려는 태도 때문에 쉽게 다가가기 어려운 분위기를 만든다.">
+  <meta name="description" content="링스는 벨로보그의 설원 조사대원이자 랜도 가문의 막내딸로, 벨로보그 최고의 극지 탐험가로 불린다. 한파가 사라진 뒤 그녀는 고대 도시 마스레니차 유적지에서 공동묘지와 동떨어진 무덤 하나를 발견했는데, 루카는 이 무덤을 이고르의 의관을 묻은 자리로 알고 있다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="링스 · hoyohoyo.wiki">
-  <meta property="og:description" content="링스는 벨로보그의 설원 조사대원이자 랜도 가문의 막내딸로, 홀로 설원 깊은 곳을 탐험하는 극지 탐험가다. 나른하고 담담해 보이지만 실제로는 한 번 정한 일을 밀어붙이는 추진력이 강하며, 불필요한 사교를 피하려는 태도 때문에 쉽게 다가가기 어려운 분위기를 만든다.">
+  <meta property="og:description" content="링스는 벨로보그의 설원 조사대원이자 랜도 가문의 막내딸로, 벨로보그 최고의 극지 탐험가로 불린다. 한파가 사라진 뒤 그녀는 고대 도시 마스레니차 유적지에서 공동묘지와 동떨어진 무덤 하나를 발견했는데, 루카는 이 무덤을 이고르의 의관을 묻은 자리로 알고 있다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/char-1228.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/char-1228.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,97 +620,92 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>링스</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A7%81%EC%8A%A4&amp;page_slug=char-1228">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>링스</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="assets/wiki-images/08/d87ac9fe7112cd292c2c7711551cce97_528339152747589-0863c09f1f06.webp" alt="링스 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>링스</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%A7%81%EC%8A%A4&amp;page_slug=char-1228">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>링스</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/18/23901508/d87ac9fe7112cd292c2c7711551cce97_5283391527475890147.png" alt="링스 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>링스는 벨로보그의 설원 조사대원이자 랜도 가문의 막내딸로, 홀로 설원 깊은 곳을 탐험하는 극지 탐험가다.<sup class="cite-ref" title="공식 HoYoWiki · 링스"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 나른하고 담담해 보이지만 실제로는 한 번 정한 일을 밀어붙이는 추진력이 강하며, 불필요한 사교를 피하려는 태도 때문에 쉽게 다가가기 어려운 분위기를 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>그녀가 설원으로 나가는 이유는 거창한 사명보다 단순한 호기심에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 어린 시절 링스는 한파 전 세계의 풍경, 오로라, 설원 깊은 곳에 남은 답을 교실에서 듣기만 했고, 직접 보러 가면 의문이 풀린다고 생각했다. 이 태도는 랜도 가문의 “하고 싶으면 해라”라는 생활 방식과 맞물려, 링스를 도시 안의 설명에 만족하지 않는 인물로 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>링스는 벨로보그 바깥의 설원을 실제로 오가며 도시가 잃어버린 과거와 현재를 이어 주는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 눈보라는 벨로보그 밖의 세계와 구세계의 역사를 묻었지만, 링스는 설원에 가면 그 역사를 다시 드러낼 수 있다고 여긴다. 그래서 그녀의 탐험은 단순한 취미가 아니라, 성벽 안에서는 알 수 없는 지리와 유적, 표본과 기록을 도시 안으로 가져오는 행동이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>한파가 사라진 뒤 링스는 고대 도시 마스레니차 유적지를 계속 조사했고, 그곳에서 공동묘지와 떨어진 묘지를 발견했다. <a class="wiki-link" href="char-801.html" title="루카">루카</a>는 링스가 그 묘지를 이고르의 의관을 묻은 무덤으로 본다고 알고 있으며, 링스는 보석 펜던트를 통해 이고르가 야릴로-Ⅵ에 돌아오기 전 겪은 일을 알아보려 했다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 사건에서 링스는 유물을 발견하는 사람에 그치지 않고, 유물의 주인과 남겨진 사람 사이의 의미를 정리해 주는 조사자 역할을 맡는다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p><a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 나부</a>에서의 일도 링스의 역할을 잘 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 링스는 귀한 골동품을 가져와 복구 가능성을 묻고, 일부 자료가 복구된 뒤에도 옥조의 주인이 루카의 롤 모델이라는 이유로 루카에게 가장 먼저 보여주려 했다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그녀는 자료의 가치만 따지는 인물이 아니라, 발견한 기록이 누구에게 먼저 닿아야 하는지를 생각하는 인물이다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p><a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 젊은 세대가 더 넓은 세상을 체험하기를 바라며 링스와 <a class="wiki-link" href="char-22.html" title="후크">후크</a>도 여행에 동행할 수 있게 했고, 은하 문명과 소통한 경험이 없다는 점 때문에 <a class="wiki-link" href="npc-803.html" title="스바로그">스바로그</a>도 지식 멘토로 함께했다. 이 배치는 링스를 벨로보그 내부 인물에서 은하 문명과 접촉하는 세대의 일원으로 옮긴다. 링스는 성벽 밖의 설원뿐 아니라 벨로보그 바깥의 더 큰 세계를 배우는 위치에 서며, 그녀의 탐사 욕구는 행성 내부의 유적 조사에서 은하적 경험으로 확장된다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>벨로보그에서 링스의 위상은 “랜도 가문의 막내”와 “최고의 극지 탐험가”라는 두 축으로 세워진다.<sup class="cite-ref" title="공식 HoYoWiki · 링스"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 가족 안에서는 보호받는 막내이지만, 설원에서는 준비되지 않은 사람이 오히려 걱정해야 할 대상이라고 말할 만큼 자기 능력을 신뢰한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•단독 모험"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> <a class="wiki-link" href="char-17.html" title="게파드">게파드</a>는 설원의 추위와 괴물을 걱정하지만, 링스는 옷과 난로를 챙겼고 순찰대를 따라 설원에 간 경험도 있다고 답한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p><a class="wiki-link" href="char-16.html" title="서벌">서벌</a>은 링스가 혼자 탐험할 때 조심하라고 하면서도, 아이스바일과 스노보드, 물병과 어깨 밴드 같은 장비를 챙겨 준다. 이 장면은 랜도 가문의 걱정이 링스를 막는 방식이 아니라 장비와 준비를 보태는 방식으로 작동한다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 링스에게 위험은 포기의 이유가 아니라 방한 준비와 생존 훈련으로 줄여야 할 문제다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<p>링스의 실용성은 작은 사건에서도 드러난다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 누군가 난간에 혀가 얼어붙자 링스는 보온병을 꺼내 도와주고, 얼어붙은 혀가 녹아 겨우 분리된다. 이 장면은 그녀의 생존 지식이 거창한 탐사 기록뿐 아니라 도시 안의 돌발 상황에서도 즉시 쓰인다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>서벌과 게파드는 링스의 가족 관계를 이해하는 핵심 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 서벌에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 게파드에 대해"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 링스는 서벌을 다재다능하고 존경스러운 언니로 여기지만 그 말을 직접 전하기는 부끄러워하고, 게파드를 유능하고 대단한 오빠로 보면서도 걱정을 줄였으면 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 서벌에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 게파드에 대해"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> 파티 편성에서 서벌과 함께 싸우는 일을 특별하게 받아들이고, 게파드에게는 자신이 더는 어린아이가 아니라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•서벌"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•게파드"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
-<p>서벌의 기계공방과 매커니컬 피버는 링스가 설원 조사대원만은 아니라는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 링스의 언급 · 링스의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 링스는 매커니컬 피버에서 건반 연주자를 맡고, 서벌은 기타 겸 보컬을 맡으며, 주문이 없을 때는 <a class="wiki-link" href="char-19.html" title="페라">페라</a>와 링스를 불러 연습한다.<sup class="cite-ref" title="게임 본편 · 링스의 언급 · 링스의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 이 밴드 활동은 링스가 사교를 귀찮아하면서도 가족과 가까운 사람들 안에서는 관계를 유지한다는 점을 보완한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
-<p>페라는 링스의 가장 가까운 관계망에 속한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•페라"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 링스는 페라만 이해할 수 있는 것들이 많다고 말하고, 사람과 대화할 때는 화제를 찾고 의중을 헤아려야 해서 번거롭지만 페라와 이야기할 때는 그런 걱정이 없다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 페라도 서벌의 기계공방에 자주 가며 링스가 있으면 하룻밤 자고 온다고 말하고, 다른 인물은 페라와 링스가 자매 같은 사이라고 본다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 몰리의 언급 · 몰리의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
-<p>페라가 쓴 동인 소설에서 링스는 페라의 절친이자 벨로보그의 마법 소녀가 되는 인물로 등장한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 이 언급은 링스가 페라에게 단순한 동료가 아니라 상상과 취미 세계까지 함께 들어가는 가까운 친구라는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p>브로냐와 <a class="wiki-link" href="char-21.html" title="삼포">삼포</a>에 대한 링스의 말은 그녀의 시선이 얼마나 생활감 있는지 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 브로냐가 매일 많은 사람을 만나야 해서 피곤할 것이라고 보고, 게파드가 쫓는 수배자 같은 삼포를 설원에서 본 듯하다며 전설의 벨로보그 야인일지도 모른다고 상상한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 링스에게 권력자와 수배자는 추상적인 지위보다 실제로 얼마나 사람을 만나고 어디서 목격되는지로 먼저 포착된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
-<p>루카, 이고르, <a class="wiki-link" href="char-24.html" title="청작">청작</a>과 얽힌 사건은 링스의 탐사가 다른 사람의 과거를 되찾는 통로가 된다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 링스는 골동품을 복구하려고 움직이고, 복구된 자료를 루카에게 먼저 보여주어야 한다고 판단한다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 루카가 “링스 말이 맞다”고 받아들이는 장면은 링스의 판단이 사건의 감정적 순서를 정리하는 역할까지 한다는 점을 드러낸다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>설원 곰, 식물 표본, 칸도르 협곡은 링스의 탐험이 작중 세계에 남기는 구체적인 흔적이다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> 페라는 임시 전시회의 설원 곰이 링스가 탐험할 때 발견한 대상이라고 말하고, 서벌은 링스가 체험 활동 중 집으로 식물 표본을 보냈다고 말한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 링스는 칸도르 협곡의 거친 산바람이 눈보라의 전조일 수 있으니 밤에는 협곡에 머물지 말라고 경고한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
-<h2 id="혼자가-좋은-탐험가">혼자가 좋은 탐험가</h2>
-<p>링스는 고독을 결핍으로 다루지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•단독 모험"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 그녀는 혼자 있을 때 마음이 안정된다고 말하고, 혼자라서 위험한 것이 아니라 혼자라서 좋다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•단독 모험"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 이 성격은 사람을 싫어한다기보다, 사람과 이야기할 때 필요한 화제 찾기와 의중 파악을 큰 소모로 느끼는 방식에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p>그렇다고 링스가 관계를 끊고 사는 인물은 아니다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 몰리의 언급 · 몰리의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 설원에서 링스는 사진을 찍어 보내고, 상대는 원고와 작업대의 모습을 보내며, 두 사람은 멀리 떨어진 장소에서 각자의 밤을 공유한다. 이 장면은 링스의 고독이 고립이 아니라 자신에게 맞는 거리 조절이라는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p>링스의 탐험 방식은 “가면 어떻게든 문제가 해결된다”는 단순한 낙관으로 끝나지 않는다. 그녀는 침낭과 방습매트를 확인하고 출발하며, 배낭에 넣은 물건은 언제든 쓸 수 있다고 보고, 새로운 생존 팁을 배워 다음 조사에 적용하려 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•1"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 수수께끼 풀이 성공•1"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> 링스에게 자유는 준비 없는 충동이 아니라, 더 멀리 가기 위해 필요한 수단을 하나씩 챙기는 습관이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•활성화"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•발동"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<p>이 때문에 링스는 벨로보그의 닫힌 세계를 가장 조용하게 넓히는 인물 중 하나다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 게파드가 도시를 지키고 서벌이 공방과 무대에서 자기 길을 가는 동안, 링스는 성벽 밖으로 나가 묻힌 역사와 새로운 길을 찾는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 그녀의 무게는 큰 선언보다 반복되는 출발, 기록, 복귀에 있으며, 그 반복이 벨로보그가 잃어버린 세계를 다시 읽는 방법이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작•1"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 승리"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">링스</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">벨로보그의 설원 탐험가, 랜도 가문의 막내 여동생. 담담한 성격에 행동력이 매우 강하다. 종종 홀로 설원을 탐험한다</div></li>
+<p>링스는 벨로보그의 설원 조사대원이자 랜도 가문의 막내딸로, 벨로보그 최고의 극지 탐험가로 불린다.<sup class="cite-ref" title="공식 HoYoWiki · 링스"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 한파가 사라진 뒤 그녀는 고대 도시 마스레니차 유적지에서 공동묘지와 동떨어진 무덤 하나를 발견했는데, <a class="wiki-link" href="char-801.html" title="루카">루카</a>는 이 무덤을 이고르의 의관을 묻은 자리로 알고 있다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>링스는 어린 시절 교실에서 한파 이전 세계가 얼마나 넓고 다채로웠는지, 오로라라는 천문 현상이 얼마나 찬란한지를 교과서와 수업으로만 배웠다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 더 구체적인 내용을 물을 때마다 선생님은 안타까운 얼굴로 “아쉽게도 그건 설원 깊은 곳에서만……”이라고 같은 대답을 반복했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 링스는 “그래서… 난 설원 깊은 곳에 가 보고 싶어!”라고 가족에게 선포했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 랜도 가문은 “하고 싶으면 해라”는 방식으로 자식들을 대했고, 언니 <a class="wiki-link" href="char-16.html" title="서벌">서벌</a>은 이미 기계공방 사장 겸 로큰롤 가수가, 오빠 <a class="wiki-link" href="char-17.html" title="게파드">게파드</a>는 실버메인 철위대의 방위관이 되어 있었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 링스는 춥다고 못 갈 이유는 방한 준비로, 위험하다고 못 갈 이유는 생존 훈련으로 해결하면 된다고 여기고 설원 조사대에 들어갔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>조사대원이 된 링스는 성벽 밖 설원을 오가며 눈보라가 묻어버린 구세계의 흔적을 찾는다. 그녀는 “눈보라는 벨로보그 이외의 모든 것을 묻었어요. 구세계의 역사도 함께요. 하지만 설원만 가면 다시 이 역사를 빛낼 수 있어요”라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 체험 활동 중 발견한 식물 표본을 집으로 보내기도 했고, 임시 전시회에 오른 설원 곰도 링스가 탐험 중 발견한 것이다.<sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>한파가 사라진 뒤 링스는 고대 도시 마스레니차 유적지를 계속 탐사했다. 몇 달 전에는 그곳에서 공동묘지와 떨어진 무덤 하나를 발견했다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 루카는 이 무덤을 링스가 이고르의 의관을 묻은 자리로 보고 있다고 전했다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 링스는 무덤에서 나온 보석 펜던트를 통해 이고르가 야릴로-Ⅵ로 돌아오기 전 겪은 일을 알아보려 했다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>수호자 <a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 젊은 세대가 더 넓은 세상을 체험하길 바라는 마음에서 링스와 <a class="wiki-link" href="char-22.html" title="후크">후크</a>가 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 나부</a> 여행에 동행하도록 허락했고, 셋 다 은하 문명과 소통한 경험이 없다는 이유로 <a class="wiki-link" href="npc-803.html" title="스바로그">스바로그</a>도 지식 멘토로 함께했다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 이 여행에서 링스는 귀한 골동품을 가져와 <a class="wiki-link" href="char-24.html" title="청작">청작</a>에게 복구할 수 있는지 물었다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 자료 일부가 복구되자 링스는 그 옥조의 주인이 루카의 롤 모델이라는 이유로 루카에게 가장 먼저 보여줘야 한다고 말했다.<sup class="cite-ref" title="게임 본편 · 청작의 언급 · 청작의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 루카는 “링스 말이 맞아. 고마워, 링스”라며 이를 받아들였다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
+<p>이후 링스는 제레와 함께 지오매로우 광맥 생산 라인에서 일하다 돌아온 적이 있다. 이 무렵 게파드는 <a class="wiki-link" href="char-19.html" title="페라">페라</a>와 실버메인 철위대를 조직해 전선을 축소하고 참호를 구축하고 있었다.<sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>링스는 나른해 보이지만 실제로는 추진력이 매우 강하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 함부로 다가가기 어려운 분위기는 불필요한 사교를 피하려는 태도에서 비롯되는데, 그녀는 불필요한 사교를 “음… 사교란 건 그냥 다 불필요한 거 아니야?”라고 정의한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 사람과 대화할 때는 화제를 찾고 상대의 의중을 헤아려야 해서 번거롭다고 말하며, 페라와 이야기할 때만은 그런 걱정이 없다고 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 반면 혼자 있을 때는 마음이 안정된다고 말하고, “당신이 걱정해야 할 사람은 내가 아니라 준비되지 않은 사람이에요… 혼자니까 좋은 거죠”라고 답한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•단독 모험"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<p>평소의 담담한 태도는 승부가 걸리면 달라진다. 누군가 “링스, 넌 또 어쩐 일이야?”라고 묻자, 링스의 눈빛은 실버메인 철위대처럼 단호해지고 승리에 대한 갈망만 남았다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
+<p>링스는 서벌을 다재다능하고 존경스러운 언니로 여기지만, 그 말을 직접 전하기는 부끄러워한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 서벌에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 서벌과 함께 싸우는 일은 “언니랑 같이 싸울 수 있다니……”라고 말할 만큼 특별하게 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•서벌"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 게파드는 유능하고 대단한 오빠지만 걱정을 줄였으면 하고, 게파드 앞에서는 “내가 할게, 오빠! 난 이제 어린애가 아냐”라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 게파드에 대해"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•게파드"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 게파드가 설원의 추위와 괴물을 걱정할 때 링스는 옷과 난로를 챙겼고 순찰대를 따라 설원에 가 본 경험도 있다고 답하며, 서벌은 “링스가 하고 싶은 대로 하게 놔둬”라며 편을 들어 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 브로냐에 대해서는 “매일 그렇게 많은 사람들을 만나야 하니 틀림없이 피곤할 거예요”라고 말하고, 게파드가 쫓는 수배자 <a class="wiki-link" href="char-21.html" title="삼포">삼포</a>를 설원에서 본 것 같다며 전설의 “벨로보그 야인”일지도 모른다고 추측한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
+<p>링스와 가장 가까운 사이는 페라다. 링스는 “페라만 이해할 수 있는 많은 것들이 있어요”라고 말하고, 몰리는 둘을 자매 같은 사이라고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 몰리의 언급 · 몰리의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> 페라는 퇴근 후 서벌의 기계공방에 자주 놀러 가는데, 링스가 있으면 하룻밤 자고 오기도 한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> 페라가 수줍어하며 보여 준 동인 소설에서 링스는 절친이자 벨로보그의 마법 소녀가 되는 인물로 등장한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 링스는 밴드 “매커니컬 피버”에서 건반 연주자를 맡고, 기타와 보컬은 서벌이 맡는다.<sup class="cite-ref" title="게임 본편 · 링스의 언급 · 링스의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 게파드에 따르면 서벌은 기계공방에 주문이 없을 때 페라와 링스를 불러 함께 연습한다.<sup class="cite-ref" title="게임 본편 · 게파드의 언급 · 게파드의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
+<p>링스의 실용성은 도시 안의 돌발 상황에서도 드러난다. 누군가 “링스, 도와줘!”라고 외치자 링스는 보온병을 꺼내 혀가 난간에 얼어붙은 사람을 도왔고, 얼어붙은 혀는 녹아서 겨우 분리됐다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 링스는 아무 말도 하지 않았지만 “자업자득이네요”라는 혼잣말이 들린 것 같았다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
+<p>링스는 설원에 나가서도 사진을 찍어 보내고, 상대는 막 완성한 원고나 작업대 사진으로 답장한다. 두 사람은 그렇게 각자의 밤을 나눠 가진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 다른 이는 링스를 본보기 삼아 “링스처럼 극지 탐험가가 되면 되잖아”라고 말하기도 한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
+<h2 id="탐험과-장비">탐험과 장비</h2>
+<p>서벌은 링스가 혼자 탐험할 때 조심하라면서도 장비를 챙겨 준다. 링스가 사고 싶어 했던 아이스바일 “뱅가드”를 직접 개조해 주고, 패스파인더 시리즈에서 새로 나온 스노보드는 게파드가 샀다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 물병은 괴테 호텔 창립 기념일 한정판이고, 어깨 밴드는 서벌이 사이즈를 맞춰 개조했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
+<p>링스는 출발 전 침낭과 방습매트를 확인한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 배낭에 챙긴 물건은 언제든 쓸 수 있다고 여기고, 새로운 생존 팁을 익히면 다음 조사 때 시도해 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•1"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 수수께끼 풀이 성공•1"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 설원 탐험에는 번거로움이 따르지만, 그것을 해결하는 과정도 하나의 즐거움이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup></p>
+<p>링스는 칸도르 협곡의 거친 산바람이 눈보라의 전조일 수 있다며, 밤에는 협곡에 머물지 말라고 경고한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-16.html">서벌</a>, <a href="char-17.html">게파드</a> — <a href="char-16.html">서벌</a>과 <a href="char-17.html">게파드</a>는 랜도 가문에서 링스의 언니와 오빠다. <a href="char-16.html">서벌</a>은 아이스바일과 어깨 밴드를 개조해 주고, <a href="char-17.html">게파드</a>는 스노보드를 사 주는 등 각자의 방식으로 링스의 탐험을 지원한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></li>
+<li><a href="char-19.html">페라</a>, <a href="char-16.html">서벌</a> — <a href="char-19.html">페라</a>는 링스와 가장 가까운 친구이자 밴드 동료다. 둘은 <a href="char-16.html">서벌</a>의 기계공방과 밴드 “매커니컬 피버”에서 자주 만난다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 링스의 언급 · 링스의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></li>
+<li><a href="char-801.html">루카</a>, <a href="xianzhou-luofu.html">선주 나부</a> — <a href="char-801.html">루카</a>는 <a href="xianzhou-luofu.html">선주 나부</a> 여행에서 링스와 동행한 인물로, 마스레니차 무덤과 이고르의 유품을 두고 링스와 이야기를 나눈다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></li>
+<li><a href="char-14.html">브로냐</a>, <a href="char-21.html">삼포</a>, <a href="char-22.html">후크</a>, <a href="xianzhou-luofu.html">선주 나부</a> — <a href="char-14.html">브로냐</a>와 <a href="char-21.html">삼포</a>는 링스의 대사에 등장하는 인물이다. <a href="char-14.html">브로냐</a>는 링스와 <a href="char-22.html">후크</a>의 <a href="xianzhou-luofu.html">선주 나부</a> 동행을 허락했고, <a href="char-21.html">삼포</a>는 링스가 설원에서 목격했다고 말하는 수배자다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">링스</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">벨로보그의 설원 탐험가, 랜도 가문의 막내 여동생. 담담한 성격에 행동력이 매우 강하다. 종종 홀로 설원을 탐험한다</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">랜도 가문의 막내딸, 벨로보그 최고의 극지 탐험가. 나른해 보이지만 사실 추진력이 매우 뛰어나다. 함부로 다가갈 수 없는 분위기를 풍기는 건 불필요한 사교를 피하기 위해서다. 불필요한 사교의 정의를 하자면——「음… 사교란 건 그냥 다 불필요한 거 아니야?」</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 설원의 풍경은 벨로보그의 일상과 멀어도 너무 멀다——너무 멀어서 여자아이는 꿈속에서만 그 풍경을 볼 수 있다. 평소에 공부할 때, 그녀는 역사 교과서에서 한파 전의 세계가 얼마나 넓고 다채로웠는지 언급한 지문을 자주 읽었다. 하지만 링스가 더 구체적인 내용을 묻자, 선생님은 안타깝다는 얼굴로 대답했다. 「아쉽게도 그건 설원 깊은 곳에서만……」 지리 수업 시간에 링스는 선생님이 자주 언급하는 「오로라」라는 기이한 천문 현상에 대해...</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">자신에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">랜도 가문은 모든 일을 단순하게 대하죠. 「하고 싶으면 해라」. 전 설원을 보고 싶어서 조사팀에 들어갔어요…. 이게 다예요</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 「링스는 왜 극지 조사대원이 됐어?」 링스의 단짝 친구는 전에 그녀에게 이런 질문을 던진 적이 있다. 그때 그녀는 어떻게 대답해야 할지 몰랐기에, 이 농담 같은 질문도 흐지부지됐다. 하지만 그날 이후, 링스도 이 질문에 대한 답을 수도 없이 고민했다——설마 자신이 벨로보그의 사전문명이나 지리를 좋아하나? 아니면 벨로보그에서 피할 수 없는 사교로부터 도망치고 싶나? 아니면…… 어쩌면 그녀 자신도 알아차리지 못했을 수 있겠지만, 링...</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">눈보라는 벨로보그 이외의 모든 것을 묻었어요. 물론 구세계의 역사도 함께요. 하지만 설원만 가면 다시 이 구세계의 역사를 빛낼 수 있어요——그럼 가야죠. 가면 어떻게든 문제가 해결되지 않겠어요?</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">맞아요. 한파가 사라진 뒤로 링시… 흐흠, 링스는 줄곧 고대 도시 「마스레니차」 유적지를 탐사해 왔어요. 그리고 몇 달 전, 그곳에서 공동묘지와 동떨어진 묘지 하나를 발견했죠</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 「우리 링스, 도착했니?」그녀의 휴대폰에서 경쾌한 알림음이 울린다 익숙한 프로필 사진으로부터 메시지가 온다. 링스는 바로 답장을 보내지 않고 렌즈에 입김을 불고는, 살얼음이 가득한 장갑으로 렌즈를 닦는다. 렌즈 상태는 양호하다. 그녀는 휴대폰을 치켜들었다. 뷰파인더에 잡힌 벨로보그 벽 밖의 밤하늘은 간만에 청명하다. 바람도, 눈도, 구름도 없이 검은 벨벳처럼 까만 하늘에 별빛만이 찬란하게 빛나고 있다. 찰칵, 그리고 전송. 신호...</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">맞아요. 한파가 사라진 뒤로 링시… 흐흠, 링스는 줄곧 고대 도시 「마스레니차」 유적지를 탐사해 왔어요. 그리고 몇 달 전, 그곳에서 공동묘지와 동떨어진 묘지 하나를 발견했죠</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">들어본 적 있어요! 링스는 그곳이 이고르의 의관을 묻은 무덤이라고 생각하죠!</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 설원의 풍경은 벨로보그의 일상과 멀어도 너무 멀다——너무 멀어서 여자아이는 꿈속에서만 그 풍경을 볼 수 있다. 평소에 공부할 때, 그녀는 역사 교과서에서 한파 전의 세계가 얼마나 넓고 다채로웠는지 언급한 지문을 자주 읽었다. 하지만 링스가 더 구체적인 내용을 묻자, 선생님은 안타깝다는 얼굴로 대답했다. 「아쉽게도 그건 설원 깊은 곳에서만……」 지리 수업 시간에 링스는 선생님이 자주 언급하는 「오로라」라는 기이한 천문 현상에 대해...</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 「링스는 왜 극지 조사대원이 됐어?」 링스의 단짝 친구는 전에 그녀에게 이런 질문을 던진 적이 있다. 그때 그녀는 어떻게 대답해야 할지 몰랐기에, 이 농담 같은 질문도 흐지부지됐다. 하지만 그날 이후, 링스도 이 질문에 대한 답을 수도 없이 고민했다——설마 자신이 벨로보그의 사전문명이나 지리를 좋아하나? 아니면 벨로보그에서 피할 수 없는 사교로부터 도망치고 싶나? 아니면…… 어쩌면 그녀 자신도 알아차리지 못했을 수 있겠지만, 링...</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">자신에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">랜도 가문은 모든 일을 단순하게 대하죠. 「하고 싶으면 해라」. 전 설원을 보고 싶어서 조사팀에 들어갔어요…. 이게 다예요</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">눈보라는 벨로보그 이외의 모든 것을 묻었어요. 물론 구세계의 역사도 함께요. 하지만 설원만 가면 다시 이 구세계의 역사를 빛낼 수 있어요——그럼 가야죠. 가면 어떻게든 문제가 해결되지 않겠어요?</div></li>
 <li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">서벌의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">서벌의 인게임 대사</span></span><div class="ref-quote">아, 그거~ 그건 우리 링스가 체험 활동 갔을 때 집으로 보낸 식물 표본이야</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">들어본 적 있어요! 링스는 그곳이 이고르의 의관을 묻은 무덤이라고 생각하죠!</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">괜찮아요, 아주 특별한 임시 전시회인데 링스가 탐험할 때 발견한 설원 곰이에요. 아마 몰래 놀러 나간 것 같아요</div></li>
 <li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">링스는 고고학 조사를 떠났어요. 보석 펜던트를 통해 이고르가 야릴로-Ⅵ에 돌아오기 전에 겪었던 일을 알아볼 거래요. 스바로그 보스는 후크랑 같이 놀고 있죠. 애 하나는 끝내주게 잘 보거든요</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">청작의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">청작의 인게임 대사</span></span><div class="ref-quote">링스한테 얘기 다 들었어요. 굉장히 귀한 골동품을 가지고 왔다면서 고칠 수 있는지 물어보더라고요</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">청작의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">청작의 인게임 대사</span></span><div class="ref-quote">사실 자료 중 일부는 이미 복구를 끝냈어요. 그런데 링스가 이 옥조의 주인은 루카 씨의 롤 모델이라면서 무조건 루카 씨한테 가장 먼저 보여줘야 한다더라고요</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">링스 말이 맞아. 고마워, 링스</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">링스를 오래 기다리게 두면 안 되니까 먼저 태복사로 가자</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">그건 그래. 치료받는 데 시간이 얼마나 걸릴지도 모르잖아. 일단 태복사로 가서 링스와 합류하자</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">오, 링스 저기 있네. 얼른 가보자</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">수호자님은 젊은 세대들이 더 넓은 세상을 체험해 보길 바라는 마음에 링스와 후크도 함께 여행할 수 있게 해주셨어. 우리 셋 다 은하 문명과 소통한 경험이 없다는 점을 고려해 스바로그 보스도 지식 멘토로 우리와 함께 오게 됐고</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">게파드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">게파드의 인게임 대사</span></span><div class="ref-quote">참고로 「링스」는 우리 랜도 가문의 막둥이야</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 「링스, 벨로보그 밖이 얼마나 추운지 너도 알잖아…」 「…괜찮아, 오빠. 두툼한 옷과 난로도 전부 챙겼는걸」 「그래도 설원은 위험해——날씨도 너무 춥고 무시무시한 괴물도 득실거린단 말이야……」 「…괜찮으니까 걱정 마. 예전에 순찰대를 따라서 몇 번 가 봤잖아. 충분히 대처할 수 있어」 「그게 언제였더라?」 「윽……」 「휴… 누나, 빨리 와서 링스 좀 말려줘」 「뭐? 링스가 하고 싶은 대로 하게 놔둬. 우리 링스가 저렇게 주관이...</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">잡담•단독 모험</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">당신이 걱정해야 할 사람은 내가 아니라 준비되지 않은 사람이에요…. 혼자서 위험할까 봐 걱정된다고요? 휴… 혼자니까 좋은 거죠</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">설원 탐험… 번거로움이 있기야 하겠지만, 그 또한 해결하는 것이 하나의 즐거움이에요</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">링스, 도와줘!</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">링스는 자신의 보온병을 꺼내 당신을 도와주기 시작한다. 얼어붙은 혀가 녹으면서 겨우 난간에서 분리된다</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">인사</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">침낭, 방습매트… 둘 다 괜찮아요. 출발할 시간이네요</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">서벌에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">언니는 다재다능하고 사실은 그런 언니가 존경스러워요…. 됐어요, 언니한텐 말하지 말아요</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">게파드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">오빠는 유능하고 대단한 사람이에요…. 그냥 걱정만 좀 줄였으면 좋겠어요</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">파티 편성•서벌</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">언니랑 같이 싸울 수 있다니……</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">파티 편성•게파드</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">내가 할게, 오빠! 난 이제 어린애가 아냐</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">링스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">링스의 인게임 대사</span></span><div class="ref-quote">네…. 저는 링스라고 해요. 「매커니컬 피버」 밴드에서 건반 연주자를 맡고 있고… 설원 조사팀 팀원이에요</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">서벌의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">서벌의 인게임 대사</span></span><div class="ref-quote">기타 겸 보컬은 당연히 나고, 건반 연주자는 우리 랜도 가문의 제일 귀여운 막내——링스야</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">게파드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">게파드의 인게임 대사</span></span><div class="ref-quote">여전하지——매일 기계공방을 지키고 있다가, 주문이 있으면 일하고, 주문 없을 때는 페라랑 링스를 불러서 연습해</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">사람과 이야기할 때는 필사적으로 화제를 찾아야 하고, 또 상대방의 의중을 헤아려야 하죠. 번거로워요…. 페라와 이야기할 때는 그런 걱정 따위 필요 없는데……</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">평소에 퇴근하면 서벌 씨의 기계공방에 자주 놀러 가는데, 링스가 있으면 하룻밤 자고 와요. 자취가 뭐 그렇죠, 혼자 집에 있으면 심심하거든요</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">페라에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">페라만 이해할 수 있는 많은 것들이 있어요…</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">파티 편성•페라</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">문제가 생기면 나한테 전부 맡겨, 페라</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">몰리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">몰리의 인게임 대사</span></span><div class="ref-quote">아, 그리고 페라 씨랑 링스 씨도! 둘 다 아주 좋은 사람이야. 지금은 이미 자매같은 사이야, 하하</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">페라가 수줍어하며 자신이 쓴 동인 소설을 보여준다. 이건 절친인 링스와 벨로보그의 마법 소녀가 되는 이야기다</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">페라가 수줍어하며 자신이 쓴 동인 소설을 보여준다. 이건 절친인 링스와 벨로보그의 마법 소녀가 되는 이야기다</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">브로냐에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">브로냐 아가씨는 매일 그렇게 많은 사람들을 만나야 하니, 틀림없이 피곤할 거예요</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">삼포에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">오빠가 쫓고 있는 수배자 같은데 가끔 설원에서 본 것 같아요…. 아! 설마 전설의… 「벨로보그 야인」일까요?!</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">괜찮아요, 아주 특별한 임시 전시회인데 링스가 탐험할 때 발견한 설원 곰이에요. 아마 몰래 놀러 나간 것 같아요</div></li>
-<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">칸도르 협곡의 거친 산바람을 조심하세요. 보통은 눈보라의 전조현상이거든요——제발, 제발 명심하세요! 밤에는 협곡에 머물러선 안 돼요</div></li>
-<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">성혼 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">혼자일 때면 마음이 안정되네요……</div></li>
-<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">전리품 오픈•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">배낭에 넣으면 언제든 쓸 수 있죠</div></li>
-<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">수수께끼 풀이 성공•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">새로운 생존 팁이네요</div></li>
-<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">행적 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">괜찮네요…! 다음 조사 때 시도해 봐야겠어요</div></li>
-<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">필살기•활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">먼 곳으로 가기 위해…</div></li>
-<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">필살기•발동</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">수단과 방법을 전부 꺼내볼까~!?</div></li>
-<li id="ref-50" data-reference-item data-ref-number="50"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">…저는 링스, 벨로보그의 설원 조사대원입니다. 업무에 관한 일이라면 근무 시간에 절 찾아주세요. 나머지 시간엔… 자리를 비우거든요. 흠, 그럼, 이만</div></li>
-<li id="ref-51" data-reference-item data-ref-number="51"><span class="ref-title">턴 시작•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">조사 기록을 시작해요</div></li>
-<li id="ref-52" data-reference-item data-ref-number="52"><span class="ref-title">전투 승리</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">모든 걸음이 탐험 계획의 일부예요</div></li></ol></details>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">수호자님은 젊은 세대들이 더 넓은 세상을 체험해 보길 바라는 마음에 링스와 후크도 함께 여행할 수 있게 해주셨어. 우리 셋 다 은하 문명과 소통한 경험이 없다는 점을 고려해 스바로그 보스도 지식 멘토로 우리와 함께 오게 됐고</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">청작의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">청작의 인게임 대사</span></span><div class="ref-quote">링스한테 얘기 다 들었어요. 굉장히 귀한 골동품을 가지고 왔다면서 고칠 수 있는지 물어보더라고요</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">청작의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">청작의 인게임 대사</span></span><div class="ref-quote">사실 자료 중 일부는 이미 복구를 끝냈어요. 그런데 링스가 이 옥조의 주인은 루카 씨의 롤 모델이라면서 무조건 루카 씨한테 가장 먼저 보여줘야 한다더라고요</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">링스 말이 맞아. 고마워, 링스</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">서벌의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">서벌의 인게임 대사</span></span><div class="ref-quote">게파드 그 녀석은 페라랑 함께 실버메인 철위대를 조직해 전선을 축소하고 참호를 구축하고 있어요. 좀 전에 제레와 링스가 지오매로우 광맥 생산 라인에서 돌아왔는데… 음, 한마디 할래?</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">사람과 이야기할 때는 필사적으로 화제를 찾아야 하고, 또 상대방의 의중을 헤아려야 하죠. 번거로워요…. 페라와 이야기할 때는 그런 걱정 따위 필요 없는데……</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">성혼 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">혼자일 때면 마음이 안정되네요……</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">잡담•단독 모험</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">당신이 걱정해야 할 사람은 내가 아니라 준비되지 않은 사람이에요…. 혼자서 위험할까 봐 걱정된다고요? 휴… 혼자니까 좋은 거죠</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">링스, 넌 또 어쩐 일이야?</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">링스의 눈빛은 실버메인 철위대처럼 단호했다. 이미 모든 감정을 끊어낸 듯한 그녀의 마음속에는 승리에 대한 갈망만이 남아있다</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">서벌에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">언니는 다재다능하고 사실은 그런 언니가 존경스러워요…. 됐어요, 언니한텐 말하지 말아요</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">파티 편성•서벌</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">언니랑 같이 싸울 수 있다니……</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">게파드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">오빠는 유능하고 대단한 사람이에요…. 그냥 걱정만 좀 줄였으면 좋겠어요</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">파티 편성•게파드</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">내가 할게, 오빠! 난 이제 어린애가 아냐</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 「링스, 벨로보그 밖이 얼마나 추운지 너도 알잖아…」 「…괜찮아, 오빠. 두툼한 옷과 난로도 전부 챙겼는걸」 「그래도 설원은 위험해——날씨도 너무 춥고 무시무시한 괴물도 득실거린단 말이야……」 「…괜찮으니까 걱정 마. 예전에 순찰대를 따라서 몇 번 가 봤잖아. 충분히 대처할 수 있어」 「그게 언제였더라?」 「윽……」 「휴… 누나, 빨리 와서 링스 좀 말려줘」 「뭐? 링스가 하고 싶은 대로 하게 놔둬. 우리 링스가 저렇게 주관이...</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">브로냐에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">브로냐 아가씨는 매일 그렇게 많은 사람들을 만나야 하니, 틀림없이 피곤할 거예요</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">삼포에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">오빠가 쫓고 있는 수배자 같은데 가끔 설원에서 본 것 같아요…. 아! 설마 전설의… 「벨로보그 야인」일까요?!</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">페라에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">페라만 이해할 수 있는 많은 것들이 있어요…</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">몰리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">몰리의 인게임 대사</span></span><div class="ref-quote">아, 그리고 페라 씨랑 링스 씨도! 둘 다 아주 좋은 사람이야. 지금은 이미 자매같은 사이야, 하하</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">평소에 퇴근하면 서벌 씨의 기계공방에 자주 놀러 가는데, 링스가 있으면 하룻밤 자고 와요. 자취가 뭐 그렇죠, 혼자 집에 있으면 심심하거든요</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">페라가 수줍어하며 자신이 쓴 동인 소설을 보여준다. 이건 절친인 링스와 벨로보그의 마법 소녀가 되는 이야기다</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">링스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">링스의 인게임 대사</span></span><div class="ref-quote">네…. 저는 링스라고 해요. 「매커니컬 피버」 밴드에서 건반 연주자를 맡고 있고… 설원 조사팀 팀원이에요</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">서벌의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">서벌의 인게임 대사</span></span><div class="ref-quote">기타 겸 보컬은 당연히 나고, 건반 연주자는 우리 랜도 가문의 제일 귀여운 막내——링스야</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">게파드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">게파드의 인게임 대사</span></span><div class="ref-quote">여전하지——매일 기계공방을 지키고 있다가, 주문이 있으면 일하고, 주문 없을 때는 페라랑 링스를 불러서 연습해</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">링스, 도와줘!</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">링스는 자신의 보온병을 꺼내 당신을 도와주기 시작한다. 얼어붙은 혀가 녹으면서 겨우 난간에서 분리된다</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「자업자득이네요」——링스는 아무 말도 하지 않았지만 이 한 마디가 들린 것 같다</div></li>
+<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 「우리 링스, 도착했니?」그녀의 휴대폰에서 경쾌한 알림음이 울린다 익숙한 프로필 사진으로부터 메시지가 온다. 링스는 바로 답장을 보내지 않고 렌즈에 입김을 불고는, 살얼음이 가득한 장갑으로 렌즈를 닦는다. 렌즈 상태는 양호하다. 그녀는 휴대폰을 치켜들었다. 뷰파인더에 잡힌 벨로보그 벽 밖의 밤하늘은 간만에 청명하다. 바람도, 눈도, 구름도 없이 검은 벨벳처럼 까만 하늘에 별빛만이 찬란하게 빛나고 있다. 찰칵, 그리고 전송. 신호...</div></li>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">링스처럼 극지 탐험가가 되면 되잖아</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">인사</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">침낭, 방습매트… 둘 다 괜찮아요. 출발할 시간이네요</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">전리품 오픈•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">배낭에 넣으면 언제든 쓸 수 있죠</div></li>
+<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">수수께끼 풀이 성공•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">새로운 생존 팁이네요</div></li>
+<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">행적 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">괜찮네요…! 다음 조사 때 시도해 봐야겠어요</div></li>
+<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">설원 탐험… 번거로움이 있기야 하겠지만, 그 또한 해결하는 것이 하나의 즐거움이에요</div></li>
+<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1228?lang=ko-kr">원문</a></span><div class="ref-quote">칸도르 협곡의 거친 산바람을 조심하세요. 보통은 눈보라의 전조현상이거든요——제발, 제발 명심하세요! 밤에는 협곡에 머물러선 안 돼요</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 야릴로-Ⅵ·벨로보그</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -771,12 +715,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-1228">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EB%A7%81%EC%8A%A4&amp;body=%EB%A7%81%EC%8A%A4+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-1228.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

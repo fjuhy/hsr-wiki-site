@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>공허 · hoyohoyo.wiki</title>
-  <meta name="description" content="공허는 에이언즈 IX가 관장하는 운명의 길이다. 이 길은 우주의 의미, 가치, 목적을 긍정하기보다 그것들이 끝내 비어 있다는 인식에 닿아 있으며, 나태와 피곤, 무의미한 행위가 그 특징으로 제시된다. 따라서 공허는 단순한 어둠이나 파괴 충동의 이름이 아니라, 존재와 행위의 의의를 무력화하는 관점에 가깝다. 운명의 길 가운데에서도 공허는 어떤 목표를 향해 나아가거나 질서를 세우는 힘이라기보다,...">
+  <meta name="description" content="공허는 에이언즈 IX가 관장하는 운명의 길로, 나태와 피곤함, 무의미한 행위를 특징으로 한다. IX는 다른 에이언즈와 교류하지 않으며, 안개로 가득한 그의 심연은 바라보는 것만으로 평범한 인간의 이성을 잃게 한다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="공허 · hoyohoyo.wiki">
-  <meta property="og:description" content="공허는 에이언즈 IX가 관장하는 운명의 길이다. 이 길은 우주의 의미, 가치, 목적을 긍정하기보다 그것들이 끝내 비어 있다는 인식에 닿아 있으며, 나태와 피곤, 무의미한 행위가 그 특징으로 제시된다. 따라서 공허는 단순한 어둠이나 파괴 충동의 이름이 아니라, 존재와 행위의 의의를 무력화하는 관점에 가깝다. 운명의 길 가운데에서도 공허는 어떤 목표를 향해 나아가거나 질서를 세우는 힘이라기보다,...">
+  <meta property="og:description" content="공허는 에이언즈 IX가 관장하는 운명의 길로, 나태와 피곤함, 무의미한 행위를 특징으로 한다. IX는 다른 에이언즈와 교류하지 않으며, 안개로 가득한 그의 심연은 바라보는 것만으로 평범한 인간의 이성을 잃게 한다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/nihility.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/nihility.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,56 +620,43 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-paths.html">운명의 길</a><span>공허</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B3%B5%ED%97%88&amp;page_slug=nihility">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>공허</h1><div class="meta-row"><span class="badge">운명의 길</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>공허는 에이언즈 IX가 관장하는 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>이다. 이 길은 우주의 의미, 가치, 목적을 긍정하기보다 그것들이 끝내 비어 있다는 인식에 닿아 있으며, 나태와 피곤, 무의미한 행위가 그 특징을 이룬다. 따라서 공허는 단순한 어둠이나 파괴 충동의 이름이 아니라, 존재와 행위의 의의를 무력화하는 관점에 가깝다. 운명의 길 가운데에서도 공허는 어떤 목표를 향해 나아가거나 질서를 세우는 힘이라기보다, 모든 목표와 질서가 결국 공허하다는 결론을 우주적 규모로 드러내는 축으로 이해된다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>공허의 에이언즈인 IX는 다른 에이언즈와 교류하지 않는 존재로 설명되며, 다중우주의 본질이 공허하고 무가치하다고 믿는다. 이 설정은 공허가 다른 운명의 길과 맺는 관계를 해석할 때 중요한 출발점이 된다. 개척이 미지로 향하는 전진을, 보존이 지켜야 할 질서를, 파멸이 세계를 부수는 방향성을 품는다면, 공허는 그 모든 방향성 자체가 무의미하다는 근원적 무관심을 내세운다. IX의 침묵과 비교류성은 공허가 교리나 명령을 통해 확장되는 길이라기보다, 우주에 이미 깔려 있는 무가치의 감각을 에이언즈의 존재로 형상화한 길임을 보여 준다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>작중 세계관에서 운명의 길은 에이언즈와 파벌, 개인의 신념 및 초월적 힘이 만나는 기본 분류다. 공허 역시 이 구조 안에서 하나의 운명의 길로 놓이며, IX와 연결된 세력 및 인물들의 행적을 설명하는 배경이 된다. 공허의 추종 세력으로는 제IX 기관, 혼돈의 의사, 자멸자가 함께 묶인다. 이들은 모두 같은 이름 아래 놓이지만, 공허가 반드시 하나의 조직적 교단이나 단일한 행동 규범으로만 나타난다고 보기는 어렵다. 공허의 본질이 무의미와 무관심에 가깝기 때문에, 그 주변에 모이는 파벌 또한 신념의 확신보다 허무의 체험, 붕괴, 또는 그 허무에 대한 각기 다른 대응을 통해 이해하는 편이 자연스럽다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>게임 내 분류에서 공허는 적에게 약화 효과를 부여해 전투 능력을 낮추는 역할을 맡는다. 이는 전투 운용 조언이라기보다 설정적 상징과도 맞물린다. 공허의 힘은 상대를 직접적으로 찬양하거나 구원하는 힘이 아니라, 능력과 의지를 약화시키고 우세를 무너뜨리는 방식으로 표현된다. 무의미와 피로의 길이 전투 체계에서는 저하, 결핍, 방해의 형태로 번역되는 셈이다. 다만 이 분류만으로 공허의 전부를 이해해서는 안 된다. 세계관상의 공허는 전투 분류보다 훨씬 넓은 개념이며, IX의 존재론적 무관심과 다중우주에 대한 무가치 인식이 그 중심에 있다. <sup class="cite-ref" title="공식 HoYoWiki · 공허"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<h2 id="IX와-공허의-성질">IX와 공허의 성질</h2>
-<p>IX는 형상이 안개에 겹겹이 싸인 미스터리한 존재로 묘사된다. 공허의 에이언즈가 명확한 얼굴이나 의지를 드러내지 않는다는 점은, 이 길이 인격적 계시나 적극적 통치와 거리를 둔다는 인상을 강화한다. 혼돈의 의사는 검은 안개 속에 아무것도 없으며, 그 심연을 바라보는 것만으로도 평범한 인간이 이성을 잃을 수 있다고 경고한다. 이 묘사는 공허가 단순히 사유 가능한 철학적 명제가 아니라, 마주하는 행위 자체가 정신을 손상시킬 수 있는 설정적 위험이라는 점을 드러낸다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>IX가 다른 에이언즈와 교류하지 않는다는 설정은 공허의 성격을 더욱 선명하게 한다. 다른 운명의 길들이 추종, 사명, 확장, 보존, 파괴처럼 어떤 식으로든 행위의 방향을 만들 때, IX는 그 방향의 필요성을 인정하지 않는 존재로 보인다. 그렇다고 해서 공허가 아무 영향도 미치지 않는다는 뜻은 아니다. 오히려 공허는 의지를 드러내지 않음으로써 더욱 넓게 작용한다. 세계가 의미를 부여하려는 모든 시도 뒤편에서, 그 의미가 결국 사라질 수 있다는 가능성을 열어 두기 때문이다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>공허는 에이언즈 IX가 관장하는 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>로, 나태와 피곤함, 무의미한 행위를 특징으로 한다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> IX는 다른 에이언즈와 교류하지 않으며, 안개로 가득한 그의 심연은 바라보는 것만으로 평범한 인간의 이성을 잃게 한다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<h2 id="설정">설정</h2>
+<p>IX의 존재는 미스터리이며, 형상은 안개에 겹겹이 싸여 있다. 그는 다중우주의 본질이 공허하고 무가치하다고 믿는다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>혼돈의 의사 모용은 이렇게 경고한다. &quot;그대는 차라리 찬란한 별들을 쳐다볼지언정, 공허한 심연을 바라보지 말지어다…. 검은 안개에는 아무것도 없으며, 시선만으로도 평범한 인간은 이성을 잃는다.&quot; <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>전투 분류에서는 공허가 적에게 디버프 효과를 부여해 적의 전투 능력을 낮추고 우세를 점하게 한다. <sup class="cite-ref" title="공식 HoYoWiki · 공허"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
 <h2 id="권능과-표징">권능과 표징</h2>
-<p>공허의 권능은 다른 운명의 길처럼 선택받은 자에게 명확히 나누어지는 힘으로만 설명되지 않는다. <a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>은 깊이 잠든 무상자가 그 누구도 스쳐보지 않으므로, 누구도 공허의 권능을 나눠 받을 수 없다는 식으로 말한다. 이 언급은 공허의 에이언즈가 추종자에게 은총을 내려 힘을 분배하는 전형적 구조와 다르다는 점을 시사한다. IX가 바라보지 않는다면, 공허의 권능은 계약이나 허가, 사명 부여를 통해 전승되는 힘으로 다루기 어렵다. <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 공허의 권능을 나눠 받을 수 없음 · 임무 「태양은 다시 떠오른다」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p><a class="wiki-link" href="char-1919.html" title="아케론">아케론</a>의 언급은 이 점을 보완한다. 그는 깊이 잠든 무상자가 누구에게도 눈길을 주지 않고, 형태도 의지도 없으며, 공허가 모두를 평등하게 뒤덮고 있다고 말한다. 여기서 공허는 특정 대상에게 선택적으로 내려오는 축복보다, 모든 존재가 피할 수 없이 노출되는 배경에 가깝다. 권능을 나눠 받을 수 없다는 말과 모두를 뒤덮는다는 말은 모순이 아니라, 공허의 두 층위를 나란히 보여 준다. 공허는 누구에게도 특별히 베풀어지지 않지만, 동시에 누구도 완전히 벗어날 수 없는 우주적 조건으로 작용한다. <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: 공허는 모두를 평등하게 뒤덮는다 · 아케론의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 공허의 권능을 나눠 받을 수 없음 · 임무 「태양은 다시 떠오른다」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>공허가 남기는 흔적은 표징이라는 방식으로도 나타난다. 아케론은 찰나의 꿈을 IX의 수천 가지 표징 중 하나라고 부르며, 공허가 지켜보는 가운데 인물들이 잠시 멈췄다가 각자의 방향으로 나아간다고 말한다. 이 표현에서 IX의 표징은 명령문이나 교리문답이 아니라, 현실의 틈에서 마주치는 경험적 흔적에 가깝다. 공허는 길을 제시하기보다, 길을 걷는 행위가 허공 위에 놓여 있음을 드러낸다. 그럼에도 인물들은 멈춘 뒤 다시 각자의 방향으로 나아가며, 이 긴장이 공허 관련 서사의 중요한 정서를 만든다. <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: IX의 표징 · 아케론의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>공허의 작중 위상은 물리적 파괴력만으로 설명되지 않는다. 파멸처럼 세계를 부수는 힘이 명시적 재앙이라면, 공허는 세계를 이해하고 견디는 정신적 기반을 무너뜨리는 위험에 가깝다. 검은 안개와 공허한 심연을 바라보는 것만으로 평범한 인간이 이성을 잃을 수 있다는 경고는, 공허가 인식의 대상이 되는 순간부터 위협이 시작된다는 뜻으로 읽힌다. 이 때문에 공허는 단순히 위험한 에너지나 적대 세력이 아니라, 접촉과 관찰 자체가 손상을 낳을 수 있는 운명의 길로 자리한다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>또한 공허는 모두를 평등하게 뒤덮는다는 점에서 회피하기 어려운 위험을 지닌다. 특정 파벌이나 행성, 시대에만 국한된 재난이라면 경계선을 세울 수 있지만, 공허는 의미와 가치의 가능성 전체를 향해 놓인 배경적 압력이다. IX가 누구에게도 눈길을 주지 않고 의지도 드러내지 않는다는 언급은 이 위험을 더 차갑게 만든다. 공허는 분노하거나 설득당하는 상대가 아니며, 협상 가능한 의도를 내세우지도 않는다. 그런 무관심 속에서 존재들은 스스로 의미를 붙잡거나, 의미가 붕괴하는 방향으로 끌려갈 수 있다. <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: 공허는 모두를 평등하게 뒤덮는다 · 아케론의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>공허의 설정적 위상은 권능 공유의 불가능성과도 연결된다. 누군가가 IX의 힘을 명확히 받아 세상을 통제한다면 위험은 소유자의 의도와 행위로 좁혀질 수 있다. 그러나 공허는 그 누구도 정식으로 나눠 받지 못하는 동시에 모두를 뒤덮는 것으로 말해진다. 이 구조에서는 위험의 중심이 특정 보유자에게 있지 않고, 공허 자체의 보편성과 접촉 경험에 놓인다. 따라서 공허와 관련된 사건은 누가 힘을 얻었는가보다, 어떤 존재가 공허를 보았고 어떤 방식으로 그 흔적에 잠식되었는가를 통해 읽는 편이 적절하다. <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 공허의 권능을 나눠 받을 수 없음 · 임무 「태양은 다시 떠오른다」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: 공허는 모두를 평등하게 뒤덮는다 · 아케론의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>공허를 이해할 때 함께 보아야 할 항목은 에이언즈와 운명의 길이다. 에이언즈는 특정 운명의 길을 관장하는 초월적 존재들이며, 공허의 경우 그 중심에 IX가 있다. 운명의 길이라는 틀은 공허를 다른 길과 병렬로 놓아 비교하게 해 주지만, 공허는 그 안에서도 독특한 예외성을 보인다. IX는 다른 에이언즈와 교류하지 않고, 다중우주의 본질을 공허하고 무가치하다고 여긴다. 이런 성격 때문에 공허는 단순한 속성 분류가 아니라, 우주론 전체에 대한 부정적 해석으로 기능한다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>공식적으로 언급되는 공허 관련 파벌로는 제IX 기관, 혼돈의 의사, 자멸자가 있다. 이 중 혼돈의 의사는 IX의 심연을 경고하는 인용을 통해 공허의 위험을 직접적으로 설명하는 위치에 놓인다. 제IX 기관과 자멸자 역시 공허의 추종 세력으로 분류되지만, 공허가 명령과 권능 분배를 중심으로 움직이는 길이 아니라는 점을 고려하면, 이들의 관계는 일반적인 충성 관계보다 복잡하게 읽힌다. 이들은 공허를 숭배하거나 연구하거나, 혹은 공허에 의해 변질된 존재들로 해석될 여지가 있다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>블랙 스완과 아케론의 대사는 공허가 작중 인물들의 언어 속에서 어떻게 이해되는지를 보여 준다. 블랙 스완은 공허의 권능이 누구에게도 나뉘지 않는다는 문제를 짚고, 아케론은 공허가 모두를 평등하게 뒤덮는다고 말한다. 이어 아케론은 IX의 수천 가지 표징 중 하나를 언급하며, 공허가 지켜보는 가운데 각자가 다시 길을 간다는 장면을 제시한다. <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 공허의 권능을 나눠 받을 수 없음 · 임무 「태양은 다시 떠오른다」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: 공허는 모두를 평등하게 뒤덮는다 · 아케론의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: IX의 표징 · 아케론의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<h2 id="해석과-맥락">해석과 맥락</h2>
-<p>공허를 해석할 때 가장 주의할 점은 무의미를 곧 악의나 파괴 의지로 단순화하지 않는 것이다. IX는 다른 에이언즈와 교류하지 않고, 다중우주의 본질이 공허하고 무가치하다고 믿는 존재다. 이 설정은 공허가 적극적으로 세계를 증오하거나 파괴하려는 길이라기보다, 의미와 가치가 성립하지 않는다는 차가운 결론에 가까움을 보여 준다. 물론 그 결론이 작중에서는 극도로 위험하게 작용하지만, 위험의 원인은 분노나 정복욕이 아니라 무관심과 무가치의 확산에 있다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>또 하나의 주의점은 공허의 권능을 다른 길의 축복과 같은 방식으로 상상하지 않는 것이다. 제공된 작중 언급에 따르면, 깊이 잠든 무상자는 누구에게도 눈길을 주지 않으며 누구도 공허의 권능을 나눠 받을 수 없다. 동시에 공허는 모두를 평등하게 뒤덮는다. 그러므로 공허와 관련된 인물이나 세력을 다룰 때는 그들이 IX에게 선택받았다고 단정하기보다, 공허의 표징과 접촉했거나 공허의 영향 아래 놓였다는 식으로 조심스럽게 서술하는 편이 설정에 더 가깝다. <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 공허의 권능을 나눠 받을 수 없음 · 임무 「태양은 다시 떠오른다」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: 공허는 모두를 평등하게 뒤덮는다 · 아케론의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: IX의 표징 · 아케론의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>마지막으로, 공허의 전투 분류와 세계관 설정은 구분해야 한다. 전투 체계에서 공허는 적의 전투 능력을 낮추는 약화 효과와 연결되지만, 세계관에서 공허는 IX의 존재, 다중우주의 무가치성, 이성을 잃게 하는 심연, 모두를 뒤덮는 허무의 감각을 포함한다. 전자는 플레이어가 접하는 시스템적 표지이고, 후자는 공허라는 운명의 길이 작중 우주론에서 갖는 본질적 위치다. 두 층위는 서로를 보완하지만, 어느 한쪽만으로 공허 전체를 설명할 수는 없다. <sup class="cite-ref" title="공식 HoYoWiki · 공허"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 공허 ⌋ Ⅸ"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: 공허는 모두를 평등하게 뒤덮는다 · 아케론의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/82?lang=ko-kr">원문</a></span><div class="ref-quote">공허</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">에이언즈</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/82?lang=ko-kr">원문</a></span><div class="ref-quote">⌈ 공허 ⌋ Ⅸ</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">더 알아보기</span> <span class="ref-source">공식 HoYoWiki — 더 알아보기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/82?lang=ko-kr">원문</a></span><div class="ref-quote">에이언즈 「IX」가 관장하는 운명의 길. 나태, 피곤, 무의미한 행위는 운명의 길 「공허」의 특징이다.</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">⌈ 공허 ⌋ Ⅸ</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/887?lang=ko-kr">원문</a></span><div class="ref-quote">「그대는 차라리 찬란한 별들을 쳐다볼지언정, 공허한 심연을 바라보지 말지어다…. 검은 안개에는 아무것도 없으며, 시선만으로도 평범한 인간은 이성을 잃는다」 ——혼돈의 의사 모용 「공허」의 존재는 미스터리다. 그의 형상은 안개에 겹겹이 싸여 있다. Ⅸ는 다른 에이언즈와 교류하지 않으며, 다중우주의 본질이 공허하고 무가치하다고 믿는다.</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/887?lang=ko-kr">원문</a></span><div class="ref-quote">Ⅸ</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/887?lang=ko-kr">원문</a></span><div class="ref-quote">공허</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">추종 세력</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/82?lang=ko-kr">원문</a></span><div class="ref-quote">제Ⅸ 기관 - 공허; 혼돈의 의사 - 공허; 자멸자 - 공허</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">공허</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/82?lang=ko-kr">원문</a></span><div class="ref-quote">적에게 디버프 효과를 부여해 적의 전투 능력을 감소시키고 우세를 점할 수 있습니다</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">블랙 스완: 공허의 권능을 나눠 받을 수 없음</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">임무 「태양은 다시 떠오른다」</span></span><div class="ref-quote">깊이 잠든 무상자는 그 누구도 스쳐보지 않으니, 그 누구도 「공허」의 권능을 나눠 받을 수 없다고 말하고 싶은 거지?</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">아케론: 공허는 모두를 평등하게 뒤덮는다</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">아케론의 인게임 대사</span></span><div class="ref-quote">깊이 잠든 무상자는 그 누구에게도 눈길을 주지 않고 형태가 없을 뿐만 아니라 의지조차 없어… 「공허」는 평등하게 모두를 뒤덮고 있지</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">아케론: IX의 표징</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">아케론의 인게임 대사</span></span><div class="ref-quote">이건 찰나의 꿈이자 「IX」의 수천 가지 표징 중 하나일 뿐이야…. 「공허」가 지켜보는 가운데 우리는 이곳에 잠시 멈췄다가 각자의 방향으로 나아가는 거지</div></li></ol></details>
+<p><a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>은 임무 「태양은 다시 떠오른다」에서 &quot;깊이 잠든 무상자는 그 누구도 스쳐보지 않으니, 그 누구도 「공허」의 권능을 나눠 받을 수 없다&quot;고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 블랙 스완: 공허의 권능을 나눠 받을 수 없음 · 임무 「태양은 다시 떠오른다」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p><a class="wiki-link" href="char-1919.html" title="아케론">아케론</a>은 &quot;깊이 잠든 무상자는 그 누구에게도 눈길을 주지 않고 형태가 없을 뿐만 아니라 의지조차 없어… 「공허」는 평등하게 모두를 뒤덮고 있지&quot;라고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: 공허는 모두를 평등하게 뒤덮는다 · 아케론의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>아케론은 또 어떤 순간을 &quot;「IX」의 수천 가지 표징 중 하나&quot;라 부르며, &quot;「공허」가 지켜보는 가운데 우리는 이곳에 잠시 멈췄다가 각자의 방향으로 나아가는 거지&quot;라고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 아케론: IX의 표징 · 아케론의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<h2 id="추종-세력">추종 세력</h2>
+<p>공허의 추종 세력으로는 제Ⅸ 기관, 혼돈의 의사, 자멸자가 있다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="aeons.html">에이언즈</a>, <a href="char-1806.html">블랙 스완</a>, <a href="char-1919.html">아케론</a> — 공허를 관장하는 <a href="aeons.html">에이언즈</a>는 IX다. IX의 형상과 성격에 관한 설정은 IX 문서에서 더 자세히 다룬다. <a href="char-1806.html">블랙 스완</a>과 <a href="char-1919.html">아케론</a>은 대사를 통해 공허의 권능과 성질을 직접 언급한 인물이다.</li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">더 알아보기</span> <span class="ref-source">공식 HoYoWiki — 더 알아보기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/82?lang=ko-kr">원문</a></span><div class="ref-quote">에이언즈 「IX」가 관장하는 운명의 길. 나태, 피곤, 무의미한 행위는 운명의 길 「공허」의 특징이다.</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">⌈ 공허 ⌋ Ⅸ</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/887?lang=ko-kr">원문</a></span><div class="ref-quote">「그대는 차라리 찬란한 별들을 쳐다볼지언정, 공허한 심연을 바라보지 말지어다…. 검은 안개에는 아무것도 없으며, 시선만으로도 평범한 인간은 이성을 잃는다」 ——혼돈의 의사 모용 「공허」의 존재는 미스터리다. 그의 형상은 안개에 겹겹이 싸여 있다. Ⅸ는 다른 에이언즈와 교류하지 않으며, 다중우주의 본질이 공허하고 무가치하다고 믿는다.</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">공허</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/82?lang=ko-kr">원문</a></span><div class="ref-quote">적에게 디버프 효과를 부여해 적의 전투 능력을 감소시키고 우세를 점할 수 있습니다</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">블랙 스완: 공허의 권능을 나눠 받을 수 없음</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">임무 「태양은 다시 떠오른다」</span></span><div class="ref-quote">깊이 잠든 무상자는 그 누구도 스쳐보지 않으니, 그 누구도 「공허」의 권능을 나눠 받을 수 없다고 말하고 싶은 거지?</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">아케론: 공허는 모두를 평등하게 뒤덮는다</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">아케론의 인게임 대사</span></span><div class="ref-quote">깊이 잠든 무상자는 그 누구에게도 눈길을 주지 않고 형태가 없을 뿐만 아니라 의지조차 없어… 「공허」는 평등하게 모두를 뒤덮고 있지</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">아케론: IX의 표징</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">아케론의 인게임 대사</span></span><div class="ref-quote">이건 찰나의 꿈이자 「IX」의 수천 가지 표징 중 하나일 뿐이야…. 「공허」가 지켜보는 가운데 우리는 이곳에 잠시 멈췄다가 각자의 방향으로 나아가는 거지</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">추종 세력</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/82?lang=ko-kr">원문</a></span><div class="ref-quote">제Ⅸ 기관 - 공허; 혼돈의 의사 - 공허; 자멸자 - 공허</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>운명의 길</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>운명의 길</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-24</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편 — 대사, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 더 알아보기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-24 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>
@@ -730,12 +666,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="nihility">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EA%B3%B5%ED%97%88&amp;body=%EA%B3%B5%ED%97%88+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnihility.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

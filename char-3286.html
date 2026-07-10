@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>아글라이아 · hoyohoyo.wiki</title>
-  <meta name="description" content="아글라이아는 앰포리어스의 오크마에 속한 「금실을 짜는 자」이자, 「낭만」의 불씨를 짊어진 황금의 후예다. 그는 오크마의 재단사로 출발했지만, 멸망 직전에 놓인 앰포리어스에서 영웅들을 불러 모으고 다시 여정에 오르게 하는 인물로 자리 잡는다. 그의 목표는 신들을 쓰러뜨리고 신의 불을 돌려주어, 거의 멸망한 세계에 새 생명을 불어넣는 것이다.">
+  <meta name="description" content="아글라이아는 앰포리어스 오크마의 재단사이자, 「금실을 짜는 자」라 불리는 황금의 후예다. 동료들의 신뢰를 얻어 지금은 황금의 후예의 작전을 임시로 주관하고 있으며, 단항은 파이논을 비롯한 황금의 후예 전체가 아글라이아의 비밀을 함께 지키고 있는 것 같다고 짐작한다. 전투 분류에서는 번개 속성과 기억의 길에 속한다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="아글라이아 · hoyohoyo.wiki">
-  <meta property="og:description" content="아글라이아는 앰포리어스의 오크마에 속한 「금실을 짜는 자」이자, 「낭만」의 불씨를 짊어진 황금의 후예다. 그는 오크마의 재단사로 출발했지만, 멸망 직전에 놓인 앰포리어스에서 영웅들을 불러 모으고 다시 여정에 오르게 하는 인물로 자리 잡는다. 그의 목표는 신들을 쓰러뜨리고 신의 불을 돌려주어, 거의 멸망한 세계에 새 생명을 불어넣는 것이다.">
+  <meta property="og:description" content="아글라이아는 앰포리어스 오크마의 재단사이자, 「금실을 짜는 자」라 불리는 황금의 후예다. 동료들의 신뢰를 얻어 지금은 황금의 후예의 작전을 임시로 주관하고 있으며, 단항은 파이논을 비롯한 황금의 후예 전체가 아글라이아의 비밀을 함께 지키고 있는 것 같다고 짐작한다. 전투 분류에서는 번개 속성과 기억의 길에 속한다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/char-3286.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/char-3286.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,105 +620,96 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-amphoreus.html">앰포리어스</a><span>아글라이아</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EA%B8%80%EB%9D%BC%EC%9D%B4%EC%95%84&amp;page_slug=char-3286">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>아글라이아</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">앰포리어스</span></div><figure class="article-hero-image"><img src="assets/wiki-images/a4/d8a7ab6d1dfb573a41335e6eaf8a18f1_423176397733276-a4deb0afda10.webp" alt="아글라이아 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-amphoreus.html">앰포리어스</a><span>아글라이아</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EA%B8%80%EB%9D%BC%EC%9D%B4%EC%95%84&amp;page_slug=char-3286">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>아글라이아</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">앰포리어스</span></div><figure class="article-hero-image"><img src="https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/01/23/d8a7ab6d1dfb573a41335e6eaf8a18f1_4231763977332765706.png" alt="아글라이아 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>아글라이아는 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a>의 오크마에 속한 「금실을 짜는 자」이자, 「낭만」의 불씨를 짊어진 황금의 후예다.<sup class="cite-ref" title="공식 HoYoWiki · 아글라이아"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 오크마의 재단사로 출발했지만, 멸망 직전에 놓인 앰포리어스에서 영웅들을 불러 모으고 다시 여정에 오르게 하는 인물로 자리 잡는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그의 목표는 신들을 쓰러뜨리고 신의 불을 돌려주어, 거의 멸망한 세계에 새 생명을 불어넣는 것이다.<sup class="cite-ref" title="공식 HoYoWiki · 아글라이아"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>그는 스스로를 오크마의 재단사이자 앰포리어스 황금의 후예 중 하나라고 소개하며, 동료들의 신뢰를 바탕으로 한때 황금의 후예의 작전을 임시로 주관한다.</p>
-<p>아글라이아의 핵심 이미지는 실과 옷, 목욕탕과 아름다움, 그리고 운명이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 의상 제작"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그는 옷 만드는 일을 단순한 장식이 아니라 사람들의 운명이 서로 닿는 감각으로 받아들이며, 오래된 틀을 깨고 새로운 아름다움을 만들어야 한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 의상 제작"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그래서 아글라이아의 아름다움은 사치가 아니라 폐허가 된 세계를 다시 엮는 방식이고, 그의 낭만은 현실을 외면하는 말이 아니라 종말 이후에도 삶의 모양을 포기하지 않겠다는 태도다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>아글라이아는 황금 전쟁 이후 거의 멸망한 세계에서 오크마를 지키는 책임을 진다. 그는 오늘날 인류가 오크마 도시 국가에만 남아 있다고 말하며, 이 정토를 어떤 대가를 치르더라도 지키겠다고 밝힌다. 이 말은 그가 단순한 예술가나 귀족이 아니라, 멸망 이후 남은 인류의 정치적·군사적 생존을 떠안은 인물임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 신분"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>그의 어린 시절은 네스티아를 모시는 가문과 아름다움의 기술에서 시작된다. 아글라이아는 그림, 음악, 조각, 연극보다 더 아름다운 존재를 찾아내겠다고 말하고, 이 욕망은 훗날 그가 단순한 의상 제작을 넘어 세계의 폐단을 바꾸려는 의지로 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 젊은 아글라이아에게 아름다움은 압도적인 이상이었지만, 전쟁과 죽음을 본 뒤 그 이상은 책임으로 바뀐다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>그는 분쟁의 땅에서 돌아오지 못한 병사들의 옷 조각을 모았다. 깨끗한 옷을 입고 떠난 병사들이 전투복을 수의로 바꾸거나 옷자락만 남기는 장면은, 아글라이아가 아름다움의 세계에서 전쟁의 현실로 끌려 들어가는 전환점이다. 그는 타락하고 사치스러운 귀족이 자신이 만든 옷을 입을 자격이 없다고 분노하지만, 동시에 자신도 그런 세계의 일부였음을 인정한다. 이 대목에서 아글라이아의 재단은 취향의 문제가 아니라, 누가 어떤 삶을 입을 자격이 있는지를 묻는 윤리적 판단으로 바뀐다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>「불을 쫓는」 여정은 아글라이아에게 얻는 길이면서 동시에 잃어가는 길이다. 그는 자신에게서 소중한 것이 사라지는 것을 느끼지만, 앞서 걷는 이들이 더 큰 상실을 겪고 있었기 때문에 자신의 손실을 돌아볼 겨를이 없었다. 이 여정에서 그와 함께 남은 존재는 「의상공」뿐이었고, 한때 화려했던 옷장은 텅 비어 있었다. 아글라이아가 영웅들을 다시 불러 모으는 인물이 될 수 있었던 것은, 상실을 낭만적인 말로 덮어서가 아니라 상실을 직접 겪은 뒤에도 다음 실을 잡았기 때문이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 사이퍼에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>정치적으로도 아글라이아는 방관자가 아니다. 고귀한 아가씨가 정치의 각축장에 들어서자 원로원은 의견이 갈리고 주변 사람들은 비웃었지만, 그는 계획을 세우기 시작했다. 그의 손끝의 금실은 오크마에 그물을 만들고, 약충은 도시 곳곳에 서식해 작은 호흡까지 감지하는 체계가 된다. 이 설정은 아글라이아가 단지 상징적 지도자가 아니라, 도시의 감시와 대응, 작전 판단을 실제로 엮는 운영자임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>본편에서도 그는 작전 주관자이자 정보의 중심으로 움직인다. <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 아글라이아에게서 얻은 정보와 그와 한 약속을 <a class="wiki-link" href="char-8.html" title="단항">단항</a>에게 전달하고, 단항은 아글라이아의 말대로 주변을 살피며 거룩한 도시 방어전에 참여한 사람들에게서 정보를 얻으려 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <a class="wiki-link" href="char-3769.html" title="파이논">파이논</a>은 시민들을 보호하라는 아글라이아의 말을 기준으로 행동을 다그치고, <a class="wiki-link" href="char-3324.html" title="마이데이">마이데이</a>는 소란이 아글라이아의 귀에 들어가지 않기를 바란다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 검은 대지로 나아가라」"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 이런 장면들은 아글라이아의 명령과 판단이 오크마 내부에서 실제 행동 기준으로 받아들여진다는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 검은 대지로 나아가라」"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>아글라이아의 위상은 황금의 후예 내부에서도 높다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「고요한 숲이여, 깨달은 자는 어찌 말을 잃었는가」"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <a class="wiki-link" href="char-3688.html" title="히아킨">히아킨</a>은 자신이 아글라이아 같은 대단한 사람을 어떻게 돕겠느냐고 말하며, 파이논은 아글라이아의 지시를 시민 보호의 기준으로 삼는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「고요한 숲이여, 깨달은 자는 어찌 말을 잃었는가」"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 검은 대지로 나아가라」"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 단항은 파이논도 아글라이아의 비밀을 지키는 것 같고 황금의 후예 전체가 같은 생각인 듯하다고 보며, 이는 아글라이아가 개인적 신뢰와 집단적 비밀을 동시에 가진 인물임을 드러낸다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>그의 힘은 전투력만으로 설명되지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 신성 세례를 받은 베틀은 쉬지 않고 돌아가고, 수많은 의상공은 허공에 나부끼며, 그는 의상공에게 광장에 온 손님을 확인하라고 지시한다. 과거에는 그가 다른 사람에게 다가갔다면, 지금은 사람들이 그에게 다가온다. 이 변화는 아글라이아가 떠도는 구도자가 아니라, 오크마와 황금의 후예의 중심에서 사람들을 받아들이고 배치하는 인물로 바뀌었다는 뜻이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>확인되는 것은 그가 약점을 찌르는 판단, 화근을 잘라내는 태도, 예언의 승리에 가까워졌다고 말하는 전투적 자신감을 갖췄다는 점이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작 • 약점 격파"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비술"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 승리"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 따라서 아글라이아의 작중 위상은 최강자 서열보다, 황금의 후예를 묶고 오크마를 운영하며 전투에서는 의상공과 연계해 싸우는 지휘자형 영웅으로 이해하는 편이 안전하다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>아글라이아에게도 한계와 불안은 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 사이퍼에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그는 새소리, 숲의 향기, 물살의 감촉 같은 세상의 숨결이 언젠가 과거의 메아리가 되어 자신의 손끝에서만 재현될까 두려워한다. 불을 쫓는 여정에서 많은 것을 잃었고, <a class="wiki-link" href="char-3691.html" title="사이퍼">사이퍼</a>와 헤어지던 날 그의 눈동자에 상실감이 보였다고 회상한다. 아글라이아의 결의는 무감각함이 아니라, 두려움과 상실을 인식한 채 도시와 영웅들을 계속 엮는 방식으로 유지된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 사이퍼에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>오크마와 앰포리어스는 아글라이아의 책임을 규정하는 가장 큰 배경이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 신분"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그는 오크마의 재단사이며, 황금 전쟁 이후 거의 멸망한 세계에서 남은 인류가 머무는 오크마 도시 국가를 지키는 일을 자신의 직책으로 여긴다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 신분"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 오크마의 문은 영웅에게 열려 있고, 거룩한 도시는 동맹을 극진히 대우한다는 그의 말은, 도시가 폐쇄적 피난처이면서도 선택된 협력자를 받아들이는 전선임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>네스티아와 아름다움은 아글라이아의 출신과 가치관을 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 의상 제작"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그는 대대로 네스티아를 모신 가문에서 자라 아름다움의 기술을 배웠고, 네스티아가 세상에 내린 천 가지 낭만 가운데 옷 만드는 일을 특히 사랑한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 의상 제작"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 시와 음악, 경기, 연극, 조소를 오크마인들의 영혼을 키워 온 아름다움의 화신으로 보는 태도는, 아글라이아가 구하려는 세계가 단순한 생존 공간이 아니라 삶의 형식 전체임을 말해준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>황금의 후예들은 아글라이아가 다시 엮어야 하는 운명의 실들이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 그는 은백의 갑옷을 입은 청년, 보라색 치마를 입은 소녀, 고양이 같은 도둑, 따뜻한 여자아이, 이방의 왕세자와 교만한 학자까지 서로 다른 사람들을 떠올리며, 실 하나로 부족하다면 수천수만 가닥의 실로 하늘을 채우겠다고 생각한다. 이 장면에서 아글라이아는 영웅들을 하나의 성격으로 통일하지 않고, 각자의 상처와 방향을 가진 채 같은 하늘을 이루도록 묶는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p><a class="wiki-link" href="char-3322.html" title="트리비">트리비</a>, 트리앤, 트리논은 신앙이 불안한 시대를 달래는 방식을 보여준다. 아글라이아는 이 시대 사람들에게 신앙이 인생의 전부이며, 그녀들의 신탁이 초조하고 불안한 세계를 위로한다고 본다. 파티 편성에서 그는 트리비를 선생님이라 부르며 계속 인도해 달라고 말한다. 이 관계는 아글라이아가 지도자이면서도 모든 방향을 홀로 정하는 인물이 아니라, 신탁과 스승의 인도를 여전히 필요로 하는 인물임을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 트리비 • 트리앤 • 트리논에 대해"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 트리비"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
-<p>파이논은 세상이 희망을 거는 영웅으로 비친다. 아글라이아는 파이논이 타인의 소원을 받아들이고 그것을 자신의 소원으로 만들 수 있는 빈 캔버스를 지녔다고 평가한다. 파티 편성에서는 그를 구세주라 부르며 여명의 갑옷을 걸치고 전진의 호각을 불라고 한다. 파이논이 시민 보호를 아글라이아의 명령으로 받아들이는 장면까지 함께 보면, 둘의 관계는 지휘자와 구세주의 협력 관계에 가깝다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 검은 대지로 나아가라」"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 파이논"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup></p>
-<p>마이데이는 끝을 알 수 없는 불꽃을 품은 인물로 묘사된다. 아글라이아는 그 불이 폭풍 속에서 완전히 꺼지거나 자신의 존재가 녹아 없어질 때까지 타오를 것이라고 본다. 파티 편성에서는 적어도 현재는 같은 목표를 가지고 있다고 말한다. 이는 신뢰보다 목표의 일치를 앞세운 관계로, 아글라이아가 모든 동료를 같은 방식으로 대하지 않는다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 마이데이에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 마이데이"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
-<p><a class="wiki-link" href="char-3560.html" title="카스토리스">카스토리스</a>는 죽음과 생명의 의미를 동시에 품은 인물로 아글라이아에게 인식된다. 아글라이아는 죽음에 가장 가까운 사람이 생명의 소중함을 가장 잘 안다고 말하고, 카스토리스의 포옹이 영면을 가져오지만 그 작별은 따뜻하다고 본다. 전장에서는 카스토리스에게 안식을 가져다 달라고 말한다. 이 관계에서 죽음은 단순한 파괴가 아니라, 고통스러운 전장에 끝을 주는 힘으로 다뤄진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카스토리스에 대해"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 카스토리스"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
-<p><a class="wiki-link" href="char-3561.html" title="아낙사">아낙사</a>는 이념적으로는 충돌하지만 목적의 집념에서는 닮은 상대다. 아글라이아는 신을 모독하는 자의 이념에 동의하지 않지만, 이상을 추구하는 집념만큼은 같은 길을 걷고 있다고 말한다. 파티 편성에서는 공통된 종착지가 있다면 이 싸움에서 하나가 될 수 있다고 한다. 이 관계는 아글라이아가 신앙과 질서를 중시하면서도, 종착지가 같다면 이념 차이를 전술적 협력으로 바꿀 수 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아낙사에 대해"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 아낙사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
-<p>히아킨은 어둠 속의 치유와 희미한 빛으로 자리한다. 아글라이아는 히아킨의 색채를 실바람이나 새벽빛처럼 따뜻하고 독특하다고 보고, 앰포리어스의 하늘에 드리운 어둠이 너무 오래되었으니 이제 그녀가 치유의 빛을 선사할 때라고 말한다. 파티 편성에서도 히아킨의 희미한 빛이 어둠을 뚫고 모두를 인도할 것이라고 한다. 히아킨에 대한 아글라이아의 시선은 전투의 승리보다 회복과 지속을 더 중시하는 축을 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히아킨에 대해"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 히아킨"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
-<p>사이퍼는 아글라이아에게 아직 해소되지 않은 상실의 이름이다. 아글라이아는 불을 쫓는 여정에서 많은 것을 잃었지만 불만은 없다고 말하면서도, 사이퍼와 헤어지던 날 호수처럼 투명한 파란 눈동자에 상실감이 있었다고 기억한다. 파티 편성에서는 사이퍼라에게 예전처럼 협력하자고 제안한다. 이 관계는 과거의 균열을 덮지 않고, 이유를 묻기보다 다시 협력할 가능성을 남겨두는 방식으로 유지된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 사이퍼에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 사이퍼"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
-<p><a class="wiki-link" href="char-3885.html" title="히실렌스">히실렌스</a>와 <a class="wiki-link" href="char-3886.html" title="케리드라">케리드라</a>는 아글라이아가 불을 쫓는 여정을 개인의 기억과 역사적 조건으로 동시에 이해하게 하는 인물들이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히실렌스에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 케리드라에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 히실렌스의 선율은 어두운 세월 속 아글라이아의 마음을 위로했고, 천년이 지난 뒤 연회가 사라진 바다에는 파도 소리만 남았다. 케리드라는 잔혹한 참주이자 과감한 선구자, 고집스러운 지도자로 평가가 갈리지만, 아글라이아는 그가 없었다면 오늘날의 불을 쫓는 여정도 없었을 것이라고 본다. 이 둘은 낭만과 폭력, 위로와 권력이라는 아글라이아 주변의 양면성을 함께 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히실렌스에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 케리드라에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
-<p>개척자와 무명객 일행은 아글라이아가 앰포리어스의 운명을 새로 수놓게 하는 외부의 실이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · Mar. 7th에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> 그는 개척자와 겪은 모든 일이 삶 속의 실이 될 것이라고 말하며, 앰포리어스의 운명에 아름다운 문양을 수놓아 준 데 감사한다. Mar. 7th는 앰포리어스의 세월이 남긴 상처와 기억의 안개를 걷어내는 활기찬 무명객으로 받아들여진다. 단항·등황에게는 금실이 더 이상 망설임을 감지하지 못하며, 그가 자신이 선택한 길을 걸어갈 것이라고 본다. 외부인들은 아글라이아의 세계를 구경하는 손님이 아니라, 앰포리어스의 운명을 실제로 바꾸는 새 실로 들어온다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · Mar. 7th에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항 • 등황에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p><a class="wiki-link" href="char-4003.html" title="키레네">키레네</a>는 사랑이라는 실로 앰포리어스의 운명을 엮은 존재로 언급된다. 아글라이아는 그 사랑의 실이 수많은 세월 속에서 요동치는 심장을 꿰뚫고 서로의 삶을 이어줬다고 말한다. 파티 편성에서는 키레네에게 낭만적인 예복을 갖춰 입고 중요한 순간을 향해 가자고 한다. 키레네와의 연결은 아글라이아의 실이 전략과 감시만이 아니라 사랑과 의식, 결정적 순간의 예복까지 품는다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 키레네"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup></p>
-<h2 id="금실로-세계를-다시-짜는-사람">금실로 세계를 다시 짜는 사람</h2>
-<p>아글라이아는 폐허 속에서 아름다움을 사치로 남겨두지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그는 전쟁의 수의가 된 옷, 비어 버린 옷장, 사라지는 풍경의 두려움, 헤어진 동료의 상실을 모두 보았고, 그 뒤에도 새로운 아름다움을 창조해야 한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 사이퍼에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그래서 그의 금실은 장식이 아니라 세계가 완전히 풀어지지 않게 붙잡는 장치다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>그가 말하는 솔직함도 부드러운 예절만은 아니다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작 • 2"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> 첫 만남에서 그는 서로 솔직할 수 있기를 바라고, 전투 중에는 상대의 숨소리와 거짓을 꿰뚫는 듯한 말을 던진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작 • 1"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 일반 공격 • 연계 공격 • 1"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup> 아글라이아의 아름다움은 감추는 장식과 다르며, 오히려 거짓과 폐단을 벗겨내고 남은 것을 다시 입히려는 성격을 가진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 일반 공격 • 연계 공격 • 1"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup></p>
-<p>그의 낭만은 희망적인 말투와 차가운 결단을 함께 품는다.<sup class="cite-ref" title="공식 HoYoWiki · 아글라이아"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비술"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 오크마의 문은 영웅에게 열려 있고, 그는 친구와 다시 만나게 될 것이라고 말하지만, 동시에 화근을 잘라내고 어떤 대가를 치르더라도 정토를 지키겠다고 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 신분"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비술"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 아글라이아는 사람들을 부드럽게 맞이하는 인물이면서, 필요하면 도시와 세계를 위해 냉정한 판결의 시간을 여는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 스킬 • 「의상공」 소환 • 1"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup></p>
-<p>결국 아글라이아는 생존한 세계의 재단사다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 신분"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그는 남은 인류의 도시를 지키고, 황금의 후예를 다시 모으며, 외부에서 온 개척자와 무명객까지 앰포리어스의 운명 속에 엮는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup> 실 하나로 부족하면 수천수만 가닥의 실로 하늘을 채우겠다는 그의 태도는, 아글라이아가 한 명의 영웅에게 세계를 맡기지 않고 서로 다른 운명들을 묶어 멸망 이후의 다음 형태를 만들려 한다는 뜻이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">아글라이아</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">여명이 비추는 거룩한 도시에서 방직공은 금실을 어루만지며 운명을 이어 나간다. 「금실을 짜는 자」 아글라이아, 「낭만」의 불씨를 짊어진 황금의 후예, 당신은 세간의 영웅들을 모으고 그들이 다시 긴 여정에 올라 ——신들을 쓰러트리고, 신의 불을 돌려주며, 멸망 직전에 이른 앰포리어스에 새로운 생명을 불어넣도록 이끌어야 한다.</div></li>
+<p>아글라이아는 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a> 오크마의 재단사이자, 「금실을 짜는 자」라 불리는 황금의 후예다.<sup class="cite-ref" title="공식 HoYoWiki · 아글라이아"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 동료들의 신뢰를 얻어 지금은 황금의 후예의 작전을 임시로 주관하고 있으며, <a class="wiki-link" href="char-8.html" title="단항">단항</a>은 <a class="wiki-link" href="char-3769.html" title="파이논">파이논</a>을 비롯한 황금의 후예 전체가 아글라이아의 비밀을 함께 지키고 있는 것 같다고 짐작한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 전투 분류에서는 번개 속성과 기억의 길에 속한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>그녀의 목표는 세간의 영웅들을 불러 모아 신들을 쓰러뜨리고 신의 불을 돌려주어, 멸망 직전에 이른 앰포리어스에 새 생명을 불어넣는 것이다.<sup class="cite-ref" title="공식 HoYoWiki · 아글라이아"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>대대로 「네스티아」를 모시는 가문에서 태어난 아글라이아는 어릴 때부터 「아름다움」의 기술을 배우며 자랐다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 개인 목욕탕 명예의 벽에 걸린 대가들의 초상화 아래에서, 어린 그녀는 &quot;그림은 거짓으로, 음악은 추상으로, 조각은 무게로, 연극은 세속으로 실추되죠……&quot;라고 잘라 말해 연장자를 난감하게 했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 연장자가 &quot;라이아, 그것들보다 아름다운 게 있니?&quot;라고 묻자, 그녀는 &quot;아뇨. 전 반드시 그것들보다 훨씬 아름다운 존재를 찾아낼 거예요&quot;라고 답했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>세월이 흘러 아글라이아가 지은 옷은 하늘의 별만큼 많아졌지만, 화려한 옷장 한편에는 남루한 옷 조각들도 보관되어 있었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 분쟁이 만연한 땅에서 병사들은 깨끗한 옷을 입고 나갔다가 전투복이 수의가 되어 돌아오거나 옷자락만 돌아왔고, 아무도 찾아가지 않는 그 천 조각들을 그녀가 모았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그녀는 한때 분노에 못 이겨 화려한 옷을 찢은 적도 있다. 타락하고 사치스러운 귀족은 자신이 만든 옷을 입을 자격이 없다고 여겼기 때문이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 이 무렵 그녀는 &quot;오크마의 재단사이자, 네스티아의 사제로서 난 선생님들과 같은 직책을 가지고 있어. 하지만 세상을 구하려면 대가를 치러야 해……&quot;라고 말했고, &quot;…마치 선생님들처럼?&quot;이라는 물음에 &quot;마치 *우리*처럼&quot;이라고 답했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>「불을 쫓는」 여정은 얻는 길이자 잃는 길이었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 아글라이아는 자신에게서 소중한 무언가가 사라지고 있음을 어렴풋이 느꼈지만, 앞서 걷는 이들이 더 큰 상실을 겪고 있었기에 자신의 손실을 돌아볼 겨를이 없었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 동료들과 헤어질 때마다 &quot;여긴 당신에게 맡길게요, 아글라이아&quot;, &quot;잘해봐요&quot;, &quot;다음에 봐요!&quot;라는 말을 들었고, 끝내 곁에 남은 것은 「의상공」뿐이었다. 한때 화려했던 옷장은 텅 비었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 고귀한 신분의 그녀가 정치의 각축장에 들어서자 원로원의 의견이 갈리고 주변에서는 비웃음이 일었지만, 그녀는 계획을 세우기 시작했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 손끝의 금실은 오크마 곳곳에 그물을 만들었고, 약충은 도시 곳곳에 서식하며 작은 숨소리 하나까지 감지하는 감시망이 되었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>오늘날 신성 세례를 받은 베틀은 쉴 새 없이 돌아가고, 수많은 「의상공」이 허공에 나부낀다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> &quot;의상공, 광장으로 가봐. 거기에 멀리서 온 손님이 와있어……&quot;라고 그녀가 말하는 광경은 여러 차례 반복됐다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 과거에는 그녀가 사람들에게 다가갔다면, 지금은 사람들이 그녀에게 다가온다. 은백의 갑옷을 입은 청년, 보라색 치마를 입은 소녀, 고양이 같은 도둑, 미약한 빛처럼 따뜻한 여자아이, 이방의 왕세자와 교만한 학자까지 저마다 다른 사람들이 그녀를 찾아왔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그녀는 이들을 떠올리며 &quot;만약 실 하나로 부족하다면, 수천수만 가닥의 실로 하늘을 채우자……&quot;라고 다짐했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>본편에서 아글라이아는 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>에게 &quot;「금실을 짜는 자」 아글라이아입니다. 오크마의 재단사이자 앰포리어스 「황금의 후예」 중 하나죠. 동료들이 믿어준 덕분에 지금은 임시로 황금의 후예의 작전을 주관하고 있어요&quot;라고 자신을 소개했다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 개척자는 그녀에게서 얻은 정보와 그녀와 나눈 약속을 단항에게 전달했고, 단항은 그 말대로 주변을 살피며 거룩한 도시 방어전에 참여했던 사람들에게서 정보를 얻으려 했다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 이 무렵 단항은 그녀를 마주하다 &quot;아글라이아 씨, 눈이……&quot;라며 말을 잇지 못했다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 검은 대지로 나아가라」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 파이논은 시민을 보호하라는 그녀의 말을 행동의 기준으로 삼았고, <a class="wiki-link" href="char-3324.html" title="마이데이">마이데이</a>는 자신이 벌인 소란이 그녀의 귀에 들어가지 않기를 바랐다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 검은 대지로 나아가라」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 단항은 파이논도 아글라이아의 비밀을 지키고 있는 것 같고, 황금의 후예 전체가 같은 생각인 듯하다고 보았다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<h2 id="성격과-가치관">성격과 가치관</h2>
+<p>아글라이아는 옷 짓는 일을 사람들의 운명이 서로 닿는 감각으로 여긴다. 재단사였을 때부터 그녀의 일은 오래된 틀을 깨는 것이었고, 황금의 후예가 된 지금도 오래된 폐단을 없애고 새로운 「아름다움」을 창조할 책임을 느낀다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 의상 제작"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 시와 음악, 경기, 연극, 조소는 수천 년 동안 오크마인의 영혼을 키워 온 아름다움의 화신이며, 세상의 종말이 와도 사람들은 욕조에서 노래를 부를 것이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 옷은 몸과 마음을 가로막는 벽이며, 신성한 목욕탕에서는 옷을 벗어 이 벽을 허물 수 있다고도 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<p>첫 만남에서는 서로 솔직할 수 있었으면 좋겠다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 전투 중에는 &quot;긴장되세요? 숨소리가 흐트러졌네요&quot;, &quot;조금은 솔직해지는 게 서로에게 좋아요&quot;, &quot;거짓은 드러나기 마련이지&quot;라며 상대의 동요를 짚어낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작 • 1"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작 • 2"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 일반 공격 • 연계 공격 • 1"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 급소를 찌르는 판단과 화근을 잘라내는 결단에도 거침이 없어서, &quot;급소를 찌르는 건 항상 옳죠&quot;, &quot;화근을 잘라내죠&quot;, &quot;예언의 승리에 가까워졌네요&quot;라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작 • 약점 격파"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비술"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 승리"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
+<p>아글라이아는 새소리를 듣는 기쁨, 숲의 향기를 맡는 호흡, 물살의 부드러운 느낌 같은 세상의 숨소리에 가까워질수록, 이 풍경이 과거의 메아리가 되어 자신의 손끝에서만 재현될까 두렵다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
+<h2 id="인간관계">인간관계</h2>
+<p>아글라이아는 <a class="wiki-link" href="char-3322.html" title="트리비">트리비</a>·트리앤·트리논의 신탁이 부드러운 바람과 가랑비처럼 불안한 시대를 위로한다고 보고, 트리비를 선생님이라 부르며 계속 인도해 달라고 청한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 트리비 • 트리앤 • 트리논에 대해"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 트리비"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 파이논에 대해서는 타인의 소원을 자신의 소원으로 만들 수 있는 빈 캔버스를 지녔다고 평가하며 구세주라 부르고, 실제로 파이논은 시민을 보호하라는 아글라이아의 말을 행동의 기준으로 삼는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파이논에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 파이논"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「은빛 전차여, 검은 대지로 나아가라」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>마이데이는 용광로처럼 끝을 알 수 없는 불꽃을 품은 인물로, 아글라이아는 그와 &quot;적어도 현재는 같은 목표&quot;를 가지고 있다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 마이데이에 대해"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 마이데이"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> <a class="wiki-link" href="char-3560.html" title="카스토리스">카스토리스</a>에게는 죽음에 가장 가까운 사람이 생명의 소중함을 가장 잘 안다고 말하며 전장에 안식을 가져다 달라고 청한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카스토리스에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 카스토리스"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 신을 모독하는 <a class="wiki-link" href="char-3561.html" title="아낙사">아낙사</a>와는 이념에 동의하지 않지만 이상을 추구하는 집념만큼은 같은 길을 걷고 있다고 인정하고, 공통된 종착지가 있다면 하나가 될 수 있다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아낙사에 대해"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 아낙사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <a class="wiki-link" href="char-3688.html" title="히아킨">히아킨</a>의 색채는 실바람이나 새벽빛처럼 따뜻하다고 보며, 오래 드리운 앰포리어스의 어둠을 걷어낼 치유의 빛을 그녀에게 기대한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히아킨에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 히아킨"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 정작 히아킨은 &quot;그럴 리가요. 아글라이아 님 같은 대단하신 분을 제가 어떻게 돕겠어요&quot;라고 답한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「고요한 숲이여, 깨달은 자는 어찌 말을 잃었는가」"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
+<p><a class="wiki-link" href="char-3691.html" title="사이퍼">사이퍼</a>에 대해서는 불을 쫓는 여정에서 많은 것을 잃었지만 불만은 없다고 말하면서도, 둘이 헤어지던 날 호수처럼 투명하게 빛나던 사이퍼의 파란 눈동자에서 본 상실감만은 기억하며 다시 협력하자고 청한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 사이퍼에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 사이퍼"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup> <a class="wiki-link" href="char-3885.html" title="히실렌스">히실렌스</a>의 선율은 어두운 세월 속에서 그녀의 마음을 위로했다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히실렌스에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> <a class="wiki-link" href="char-3886.html" title="케리드라">케리드라</a>는 잔혹무도한 참주라는 세간의 평가가 갈리지만, 그가 없었다면 오늘날의 「불을 쫓는」 여정도 없었을 것이라고 인정하며 전투에서는 그를 「카이사르」라 부른다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 케리드라에 대해"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 케리드라"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup></p>
+<p>개척자에게는 &quot;당신이 아는 「아글라이아」는 저와 많이 달랐나요?&quot;라고 묻고, 함께 겪은 모든 일이 삶 속의 실이 되어 앰포리어스의 운명에 가장 아름다운 문양을 수놓아 주었다고 감사를 전한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「첫 태양이여, 뭇별과 잔월을 물리쳐다오」"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> Mar. 7th는 앰포리어스의 오랜 상처와 기억의 안개를 걷어내는 활기찬 무명객으로 여긴다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · Mar. 7th에 대해"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup> 단항·등황에 대해서는 금실이 더 이상 그의 마음속 망설임을 감지하지 못한다며, 앞으로는 스스로 선택한 길을 걸어갈 것이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항 • 등황에 대해"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup> <a class="wiki-link" href="char-4003.html" title="키레네">키레네</a>와는 「사랑」이라는 실 한 가닥으로 앰포리어스의 운명을 함께 엮어 온 사이로, 낭만적인 예복을 갖추고 중요한 순간을 향해 가자고 청한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 키레네에 대해"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 키레네"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup> 황금의 후예 사이에는 &quot;아글라이아 씨한테는 왜 아글둥이라고 안 해?&quot;라는 우스갯소리가 나올 만큼 친근한 호칭 문화도 있다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「고요한 숲이여, 깨달은 자는 어찌 말을 잃었는가」"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="amphoreus.html">앰포리어스</a>, <a href="char-3322.html">트리비</a>, <a href="char-3769.html">파이논</a>, <a href="char-3324.html">마이데이</a>, <a href="char-3560.html">카스토리스</a>, <a href="char-3561.html">아낙사</a>, <a href="char-3688.html">히아킨</a>, <a href="char-3691.html">사이퍼</a> — 오크마와 <a href="amphoreus.html">앰포리어스</a>는 아글라이아가 재단사이자 황금의 후예로서 지키려는 도시와 세계다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 신분"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup> 황금의 후예 동료로는 <a href="char-3322.html">트리비</a>·트리앤·트리논, <a href="char-3769.html">파이논</a>, <a href="char-3324.html">마이데이</a>, <a href="char-3560.html">카스토리스</a>, <a href="char-3561.html">아낙사</a>, <a href="char-3688.html">히아킨</a>, <a href="char-3691.html">사이퍼</a>, <a href="char-3885.html">히실렌스</a>, <a href="char-3886.html">케리드라</a>가 있으며, <a href="trailblazer.html">개척자</a>와 <a href="char-7.html">Mar. 7th</a>, <a href="char-8.html">단항</a>·등황, <a href="char-4003.html">키레네</a>는 <a href="amphoreus.html">앰포리어스</a> 밖에서 그녀의 여정에 관여한 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">아글라이아</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">여명이 비추는 거룩한 도시에서 방직공은 금실을 어루만지며 운명을 이어 나간다. 「금실을 짜는 자」 아글라이아, 「낭만」의 불씨를 짊어진 황금의 후예, 당신은 세간의 영웅들을 모으고 그들이 다시 긴 여정에 올라 ——신들을 쓰러트리고, 신의 불을 돌려주며, 멸망 직전에 이른 앰포리어스에 새로운 생명을 불어넣도록 이끌어야 한다.</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">여명이 비추는 거룩한 도시에서 방직공은 금실을 어루만지며 운명을 잇는다. 「낭만」의 불씨를 짊어진 황금의 후예는 세간의 영웅들을 불러 모아 그들을 이끌고 다시 기나긴 여정에 올랐다. ——신들을 쓰러뜨리고 신의 불을 반환하여 멸망에 다다른 앰포리어스에 신생을 부여하기 위해</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">맞아요, 잘하셨어요. 늦었지만 제 소개를 할게요. 전 「금실을 짜는 자」 아글라이아입니다. 오크마의 재단사이자 앰포리어스 「황금의 후예」 중 하나죠. 동료들이 믿어준 덕분에 지금은 임시로 황금의 후예의 작전을 주관하고 있어요</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">잡담 • 의상 제작</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">네스티아는 세상에 천 가지 낭만을 내렸는데 그중에서 저는 옷 만드는 걸 유독 좋아해요. 수천수만의 실이 손끝에 스치면 꼭 사람들의 운명이 서로 이어지는 것 같죠</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">옷은 몸과 마음을 가로막는 벽이랍니다. 옷을 벗으면 이 두 장벽을 없앨 수 있죠. 신성한 목욕탕에서 우린 마음의 벽을 허물 수 있어요. 마치 손끝을 스치는 물이 서로 뒤엉켜 미래로 흘러가는 것처럼요</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">재단사였을 때부터 제 일은 오래된 틀을 깨는 거였답니다. 그리고 황금의 후예가 된 지금 역시 오래된 폐단을 없애고 새로운 「아름다움」을 창조할 책임을 가지고 있죠</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">새소리를 듣는 기쁨, 숲의 향기를 맡는 호흡, 물살의 부드러운 느낌… 세상의 숨소리에 가까워질수록 이 풍경이 과거의 메아리가 되어 제 손끝에서만 재현될까 봐 두려워져요</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">시와 음악, 경기, 연극, 조소… 세상의 모든 건 아름다움의 화신이며 수천 년 동안 오크마인들의 영혼을 키워왔어요. 세상의 종말이 와도 사람들은 욕조에서 큰 소리로 노래를 부르겠죠——그게 우리의 삶이에요</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">파이논 씨도 아글라이아 씨의 비밀을 지키고 있는 것 같아. 황금의 후예 전체가 같은 생각인가 봐</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">전투 속성</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">번개</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">기억</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">캐릭터 스토리 • 1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 20 개방 여러 해가 지난 후, 그녀는 우연히 소녀 시절에 지은 옷을 발견했다. 비단을 타고 흘러내리는 부드러움은 오랫동안 잔잔했던 마음을 뛰게 했다. 대대로 「네스티아」를 모신 가문 사람들은 어릴 때부터 「아름다움」의 기술을 배웠고, 대가들의 초상화는 개인 목욕탕의 명예의 벽에서 시시각각 그들의 후손을 주시했다. 누구든 이곳에 오면 입을 다물게 되는데, 그녀는 대가의 중압감 넘치는 시선을 받으면서도 사뿐히 걸었다. 「그림은 거짓으로 인...</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">캐릭터 스토리 • 2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 40 개방 세월은 덧없이 흘러 그녀가 디자인한 옷은 하늘의 별처럼 많아졌다. 하지만 어째서인지 그토록 화려하고 넓은 옷장에는 남루한 옷 조각들이 보관되어 있었다. 분쟁이 만연한 땅에서 젊은 병사들은 깨끗한 옷을 입고 출정했으나 돌아올 때는 전투복이 수의가 되어 있었고, 심지어 옷자락만 돌아올 때도 있었다. 아무도 찾아가지 않을 때는 그녀가 이 천 조각들을 모았다. 그녀는 한때 분노로 화려한 옷을 찢어버린 적이 있다. 타락하고 사치스러운...</div></li>
 <li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">캐릭터 스토리 • 3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 60 개방 그들은 그것이 「불을 쫓는」 여정이자, 「잃어가는」 여정이라고도 했다. 그녀는 어렴풋이 어떤 소중한 것이 자신의 몸에서 사라지고 있음을 느꼈지만, 그녀의 앞에서 걷고 있는 사람이 그녀보다 더 고통스러운 상실을 겪고 있었기에 신경 쓸 겨를이 없었다. 「여긴 당신에게 맡길게요, 아글라이아」 「잘해봐요」 「다음에 봐요!」 그녀는 헤어질 때마다 다들 왜 이렇게 말하는 건지 알 수 없었다. 그녀에게 남은 것은 오직 심해 속에서 어렴풋이...</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">자신에 대해 • 신분</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">황금 전쟁 이후, 세계는 거의 멸망했고 오늘날 인류는 오크마 도시 국가에만 남아있죠. 제 직책은 이 정토를 지키는 거랍니다…. 그 어떤 대가를 치르더라도요</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">캐릭터 스토리 • 1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 20 개방 여러 해가 지난 후, 그녀는 우연히 소녀 시절에 지은 옷을 발견했다. 비단을 타고 흘러내리는 부드러움은 오랫동안 잔잔했던 마음을 뛰게 했다. 대대로 「네스티아」를 모신 가문 사람들은 어릴 때부터 「아름다움」의 기술을 배웠고, 대가들의 초상화는 개인 목욕탕의 명예의 벽에서 시시각각 그들의 후손을 주시했다. 누구든 이곳에 오면 입을 다물게 되는데, 그녀는 대가의 중압감 넘치는 시선을 받으면서도 사뿐히 걸었다. 「그림은 거짓으로 인...</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">캐릭터 스토리 • 2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 40 개방 세월은 덧없이 흘러 그녀가 디자인한 옷은 하늘의 별처럼 많아졌다. 하지만 어째서인지 그토록 화려하고 넓은 옷장에는 남루한 옷 조각들이 보관되어 있었다. 분쟁이 만연한 땅에서 젊은 병사들은 깨끗한 옷을 입고 출정했으나 돌아올 때는 전투복이 수의가 되어 있었고, 심지어 옷자락만 돌아올 때도 있었다. 아무도 찾아가지 않을 때는 그녀가 이 천 조각들을 모았다. 그녀는 한때 분노로 화려한 옷을 찢어버린 적이 있다. 타락하고 사치스러운...</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">사이퍼에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">불을 쫓는 여정에서 전 소중한 것들을 많이 잃었지만, 불만은 없어요. 그런데도 사이퍼라만은...... 우리가 헤어지던 날, 호수처럼 투명하게 빛나던 파란 눈동자에 상실감이 드러나더군요. 분명 그녀에게도 말 못 할 이유가 있었을 거예요......</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">아글라이아로부터 얻은 정보, 그리고 그녀와 한 약속을 단항에게 전달한다……</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">우선 아글라이아 씨 말대로 주변을 살펴볼까? 사람들이 거룩한 도시 방어전에 참여했던 우리를 기억하고 있을 테니 정보를 얻을 수 있을 거야</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「은빛 전차여, 검은 대지로 나아가라」</span></span><div class="ref-quote">엉뚱한 소리하지 마. 시민들을 보호하라는 아글라이아 님의 말을 귓등으로 들은 거야?</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">어떻게든 살길을 찾아보라고, 이방인. 이 소란이 아글라이아의 귀에 들어가지 않았길 바라</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「고요한 숲이여, 깨달은 자는 어찌 말을 잃었는가」</span></span><div class="ref-quote">그럴 리가요. 아글라이아 님 같은 대단하신 분을 제가 어떻게 돕겠어요</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">파이논 씨도 아글라이아 씨의 비밀을 지키고 있는 것 같아. 황금의 후예 전체가 같은 생각인가 봐</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">캐릭터 스토리 • 4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 80 개방 오늘날 신성 세례를 받은 베틀은 쉴 새 없이 돌아가고, 수많은 의상공은 허공에 나부끼고 있으며, 누구도 그것들이 왜 춤을 추고 있는지, 또 왜 멈췄는지 알지 못했다. 「의상공, 광장으로 가봐. 거기에 멀리서 온 손님이 와있어……」 이런 광경은 정말 여러 번 반복된 것 같다. 과거에는 그녀가 다른 사람을 향해 다가갔다면, 지금은 사람들이 그녀를 향해 다가왔다. 그때 은백의 갑옷을 입은 청년이 이곳에 서 있었다. 앳된 얼굴은 원한...</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">전투 시작 • 약점 격파</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">급소를 찌르는 건 항상 옳죠</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">비술</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">화근을 잘라내죠</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">전투 승리</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">예언의 승리에 가까워졌네요</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">앰포리어스</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">멀리서 오신 손님, 바람이 금실을 따라 당신의 소식을 전해줬어요. 제 이름은 아글라이아, 오크마의 재단사이자 앰포리어스의 황금의 후예 중 하나예요. 우리 서로 솔직할 수 있었으면 좋겠네요</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">인사</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">오크마에서의 생활은 즐거우신가요? 분부가 있다면 「의상공」에게 말해주세요. 거룩한 도시는 동맹를 극진히 대우할 거랍니다</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">작별</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">우린 다시 만나게 될 거예요, 친구. 당신이 어디로 향하든 오크마의 문은 언제나 영웅에게 열려있을 겁니다</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">캐릭터 스토리 • 4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 80 개방 오늘날 신성 세례를 받은 베틀은 쉴 새 없이 돌아가고, 수많은 의상공은 허공에 나부끼고 있으며, 누구도 그것들이 왜 춤을 추고 있는지, 또 왜 멈췄는지 알지 못했다. 「의상공, 광장으로 가봐. 거기에 멀리서 온 손님이 와있어……」 이런 광경은 정말 여러 번 반복된 것 같다. 과거에는 그녀가 다른 사람을 향해 다가갔다면, 지금은 사람들이 그녀를 향해 다가왔다. 그때 은백의 갑옷을 입은 청년이 이곳에 서 있었다. 앳된 얼굴은 원한...</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">아글라이아로부터 얻은 정보, 그리고 그녀와 한 약속을 단항에게 전달한다……</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">우선 아글라이아 씨 말대로 주변을 살펴볼까? 사람들이 거룩한 도시 방어전에 참여했던 우리를 기억하고 있을 테니 정보를 얻을 수 있을 거야</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「은빛 전차여, 검은 대지로 나아가라」</span></span><div class="ref-quote">아글라이아 씨, 눈이……</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「은빛 전차여, 검은 대지로 나아가라」</span></span><div class="ref-quote">엉뚱한 소리하지 마. 시민들을 보호하라는 아글라이아 님의 말을 귓등으로 들은 거야?</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">어떻게든 살길을 찾아보라고, 이방인. 이 소란이 아글라이아의 귀에 들어가지 않았길 바라</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">잡담 • 의상 제작</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">네스티아는 세상에 천 가지 낭만을 내렸는데 그중에서 저는 옷 만드는 걸 유독 좋아해요. 수천수만의 실이 손끝에 스치면 꼭 사람들의 운명이 서로 이어지는 것 같죠</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">재단사였을 때부터 제 일은 오래된 틀을 깨는 거였답니다. 그리고 황금의 후예가 된 지금 역시 오래된 폐단을 없애고 새로운 「아름다움」을 창조할 책임을 가지고 있죠</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">시와 음악, 경기, 연극, 조소… 세상의 모든 건 아름다움의 화신이며 수천 년 동안 오크마인들의 영혼을 키워왔어요. 세상의 종말이 와도 사람들은 욕조에서 큰 소리로 노래를 부르겠죠——그게 우리의 삶이에요</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">옷은 몸과 마음을 가로막는 벽이랍니다. 옷을 벗으면 이 두 장벽을 없앨 수 있죠. 신성한 목욕탕에서 우린 마음의 벽을 허물 수 있어요. 마치 손끝을 스치는 물이 서로 뒤엉켜 미래로 흘러가는 것처럼요</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">멀리서 오신 손님, 바람이 금실을 따라 당신의 소식을 전해줬어요. 제 이름은 아글라이아, 오크마의 재단사이자 앰포리어스의 황금의 후예 중 하나예요. 우리 서로 솔직할 수 있었으면 좋겠네요</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">턴 시작 • 1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">긴장되세요? 숨소리가 흐트러졌네요</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">턴 시작 • 2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">조금은 솔직해지는 게 서로에게 좋아요</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">일반 공격 • 연계 공격 • 1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">거짓은 드러나기 마련이지</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">전투 시작 • 약점 격파</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">급소를 찌르는 건 항상 옳죠</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">비술</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">화근을 잘라내죠</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">전투 승리</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">예언의 승리에 가까워졌네요</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">새소리를 듣는 기쁨, 숲의 향기를 맡는 호흡, 물살의 부드러운 느낌… 세상의 숨소리에 가까워질수록 이 풍경이 과거의 메아리가 되어 제 손끝에서만 재현될까 봐 두려워져요</div></li>
 <li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">트리비 • 트리앤 • 트리논에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">이 시대에 태어난 대부분의 사람들에게 신앙은 인생의 전부예요. 그녀들의 신탁은 부드러운 바람과 가랑비처럼 초조하고 불안한 세계를 위로해 주죠</div></li>
 <li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">파티 편성 • 트리비</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">선생님, 계속해서 우리를 인도해 줘</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">파티 편성 • 파이논</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">구세주, 여명의 갑옷을 걸치고 전진의 호각을 불렴</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">마이데이에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">그는 용광로처럼 그 끝을 알 수 없는 불꽃을 품고 있죠. 그 불은 폭풍우 속에서 완전히 꺼지거나 자신의 존재가 녹아 없어질 때까지 타오를 거예요</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">파티 편성 • 마이데이</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">적어도 현재 우리는 동일한 목표를 가지고 있어</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">카스토리스에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">죽음에 가장 가까운 사람이 생명의 소중함에 대해 가장 잘 알죠. 그녀의 포옹은 영면을 가져다주지만, 이 작별은 아주 따뜻하답니다</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">파티 편성 • 카스토리스</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">카스, 전장에 안식을 가져다 줘</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">아낙사에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">저는 이 신을 모독하는 자의 이념에 동의하지 않지만, 이상을 추구하는 집념에 관해서는 그와 같은 길을 걷고 있죠</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">파티 편성 • 아낙사</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">공통된 종착지가 있다면, 우린 이 싸움에서 하나가 될 수 있어</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">히아킨에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">황금의 후예의 초상화 중에서도 그녀의 색채는 실바람이나 희미한 새벽 빛처럼 따뜻하고도 독특하죠. 앰포리어스의 하늘에 어둠이 드리운 지 너무 오래됐어요. 이제 그녀가 치유의 빛을 선사할 때예요</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">파티 편성 • 히아킨</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">너의 희미한 빛이 어둠을 뚫고 우릴 인도할 거야</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">파티 편성 • 사이퍼</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">사이퍼라, 예전처럼 협력하자. 어때?</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">히실렌스에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">그 아름다운 선율은 어두운 세월 속 제 마음을 위로해 주었어요. 천년이 흘러 연회는 더 이상 열리지 않고, 주인 없는 쓸쓸한 바다에는 파도 소리만이 귓가에 맴돌고 있죠</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">케리드라에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">잔혹무도한 참주, 과감한 선구자, 고집스러운 지도자.... 세상 사람들은 그분에 대해 여러 평가를 하지만, 그분이 계시지 않았더라면 오늘날의 불을 쫓는 여정은 없었을 거예요</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">개척자에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">우리가 겪은 모든 건, 삶 속의 실이 될 거예요. 앰포리어스의 운명을 위해 가장 아름다운 문양을 수놓아주셔서 감사합니다</div></li>
-<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">Mar. 7th에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">앰포리어스의 「세월」 은 너무 많은 상처를 새겼어요. 고맙게도 이 활기찬 무명객은 아름다운 색처럼 기억 속에 쌓여 있던 안개를 걷어내줬죠</div></li>
-<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">단항 • 등황에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">금실은 더 이상 그의 마음속 망설임을 감지할 수 없었어요. 앞으로 그는 분명 자신이 선택한 길 위를 당당히 걸어갈 거예요</div></li>
-<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">키레네에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">「사랑」 이라는 실 한 가닥이 앰포리어스의 운명을 엮어냈을 때, 그녀의 모든 눈길은 수많은 세월 속에서 우리의 요동치는 심장을 꿰뚫고, 서로의 삶을 이어줬죠</div></li>
-<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">파티 편성 • 키레네</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">낭만적인 예복을 갖춰 입고, 중요한 순간을 향해 가자</div></li>
-<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">턴 시작 • 2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">조금은 솔직해지는 게 서로에게 좋아요</div></li>
-<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">턴 시작 • 1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">긴장되세요? 숨소리가 흐트러졌네요</div></li>
-<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">일반 공격 • 연계 공격 • 1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">거짓은 드러나기 마련이지</div></li>
-<li id="ref-50" data-reference-item data-ref-number="50"><span class="ref-title">전투 스킬 • 「의상공」 소환 • 1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">판결의 시간</div></li></ol></details>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">파이논에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">타인의 소원을 받아들이고 그걸 자신의 소원으로 만드는 것——모든 영웅이 이처럼 빈 캔버스를 가지고 있는 건 아니랍니다. 그래서 세상은 그에게 희망을 품고 있죠</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">파티 편성 • 파이논</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">구세주, 여명의 갑옷을 걸치고 전진의 호각을 불렴</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">마이데이에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">그는 용광로처럼 그 끝을 알 수 없는 불꽃을 품고 있죠. 그 불은 폭풍우 속에서 완전히 꺼지거나 자신의 존재가 녹아 없어질 때까지 타오를 거예요</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">파티 편성 • 마이데이</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">적어도 현재 우리는 동일한 목표를 가지고 있어</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">카스토리스에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">죽음에 가장 가까운 사람이 생명의 소중함에 대해 가장 잘 알죠. 그녀의 포옹은 영면을 가져다주지만, 이 작별은 아주 따뜻하답니다</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">파티 편성 • 카스토리스</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">카스, 전장에 안식을 가져다 줘</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">아낙사에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">저는 이 신을 모독하는 자의 이념에 동의하지 않지만, 이상을 추구하는 집념에 관해서는 그와 같은 길을 걷고 있죠</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">파티 편성 • 아낙사</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">공통된 종착지가 있다면, 우린 이 싸움에서 하나가 될 수 있어</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">히아킨에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">황금의 후예의 초상화 중에서도 그녀의 색채는 실바람이나 희미한 새벽 빛처럼 따뜻하고도 독특하죠. 앰포리어스의 하늘에 어둠이 드리운 지 너무 오래됐어요. 이제 그녀가 치유의 빛을 선사할 때예요</div></li>
+<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">파티 편성 • 히아킨</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">너의 희미한 빛이 어둠을 뚫고 우릴 인도할 거야</div></li>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「고요한 숲이여, 깨달은 자는 어찌 말을 잃었는가」</span></span><div class="ref-quote">그럴 리가요. 아글라이아 님 같은 대단하신 분을 제가 어떻게 돕겠어요</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">사이퍼에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">불을 쫓는 여정에서 전 소중한 것들을 많이 잃었지만, 불만은 없어요. 그런데도 사이퍼라만은...... 우리가 헤어지던 날, 호수처럼 투명하게 빛나던 파란 눈동자에 상실감이 드러나더군요. 분명 그녀에게도 말 못 할 이유가 있었을 거예요......</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">파티 편성 • 사이퍼</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">사이퍼라, 예전처럼 협력하자. 어때?</div></li>
+<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">히실렌스에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">그 아름다운 선율은 어두운 세월 속 제 마음을 위로해 주었어요. 천년이 흘러 연회는 더 이상 열리지 않고, 주인 없는 쓸쓸한 바다에는 파도 소리만이 귓가에 맴돌고 있죠</div></li>
+<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">케리드라에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">잔혹무도한 참주, 과감한 선구자, 고집스러운 지도자.... 세상 사람들은 그분에 대해 여러 평가를 하지만, 그분이 계시지 않았더라면 오늘날의 불을 쫓는 여정은 없었을 거예요</div></li>
+<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">파티 편성 • 케리드라</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">카이사르님, 금실이 적의 기운을 감지했어요</div></li>
+<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「첫 태양이여, 뭇별과 잔월을 물리쳐다오」</span></span><div class="ref-quote">당신이 아는 「아글라이아」는 저와 많이 달랐나요?</div></li>
+<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">개척자에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">우리가 겪은 모든 건, 삶 속의 실이 될 거예요. 앰포리어스의 운명을 위해 가장 아름다운 문양을 수놓아주셔서 감사합니다</div></li>
+<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">Mar. 7th에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">앰포리어스의 「세월」 은 너무 많은 상처를 새겼어요. 고맙게도 이 활기찬 무명객은 아름다운 색처럼 기억 속에 쌓여 있던 안개를 걷어내줬죠</div></li>
+<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">단항 • 등황에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">금실은 더 이상 그의 마음속 망설임을 감지할 수 없었어요. 앞으로 그는 분명 자신이 선택한 길 위를 당당히 걸어갈 거예요</div></li>
+<li id="ref-50" data-reference-item data-ref-number="50"><span class="ref-title">키레네에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">「사랑」 이라는 실 한 가닥이 앰포리어스의 운명을 엮어냈을 때, 그녀의 모든 눈길은 수많은 세월 속에서 우리의 요동치는 심장을 꿰뚫고, 서로의 삶을 이어줬죠</div></li>
+<li id="ref-51" data-reference-item data-ref-number="51"><span class="ref-title">파티 편성 • 키레네</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">낭만적인 예복을 갖춰 입고, 중요한 순간을 향해 가자</div></li>
+<li id="ref-52" data-reference-item data-ref-number="52"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「고요한 숲이여, 깨달은 자는 어찌 말을 잃었는가」</span></span><div class="ref-quote">아글라이아 씨한테는 왜 아글둥이라고 안 해?</div></li>
+<li id="ref-53" data-reference-item data-ref-number="53"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">앰포리어스</div></li>
+<li id="ref-54" data-reference-item data-ref-number="54"><span class="ref-title">자신에 대해 • 신분</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3286?lang=ko-kr">원문</a></span><div class="ref-quote">황금 전쟁 이후, 세계는 거의 멸망했고 오늘날 인류는 오크마 도시 국가에만 남아있죠. 제 직책은 이 정토를 지키는 거랍니다…. 그 어떤 대가를 치르더라도요</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 앰포리어스</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -779,12 +719,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-3286">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%95%84%EA%B8%80%EB%9D%BC%EC%9D%B4%EC%95%84&amp;body=%EC%95%84%EA%B8%80%EB%9D%BC%EC%9D%B4%EC%95%84+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-3286.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>「닥쳐」 · hoyohoyo.wiki</title>
-  <meta name="description" content="「닥쳐」는 은하열차에 소속된 바텐더 로봇이다. 파티 칸에서 무명객을 맞이하고, 먹을거리와 음료를 권하며, 여정 중 있었던 일을 이야기하자고 먼저 말을 거는 접객 담당으로 등장한다. 관련 항목도 「열차 스페셜 블렌드: 땔감, 쌀 그리고 소금」, 「렌치 믹스 샐러드」, 「적어도 이 순간은 함께」처럼 열차 안의 음료와 식사, 동행의 분위기에 닿아 있다.">
+  <meta name="description" content="「닥쳐」는 은하열차 파티 칸에서 일하는 바텐더 로봇이다. 이 이름은 히메코가 전 주인에게 남긴 마지막 말에서 따온 것이라고, 「닥쳐」 본인이 밝힌다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="「닥쳐」 · hoyohoyo.wiki">
-  <meta property="og:description" content="「닥쳐」는 은하열차에 소속된 바텐더 로봇이다. 파티 칸에서 무명객을 맞이하고, 먹을거리와 음료를 권하며, 여정 중 있었던 일을 이야기하자고 먼저 말을 거는 접객 담당으로 등장한다. 관련 항목도 「열차 스페셜 블렌드: 땔감, 쌀 그리고 소금」, 「렌치 믹스 샐러드」, 「적어도 이 순간은 함께」처럼 열차 안의 음료와 식사, 동행의 분위기에 닿아 있다.">
+  <meta property="og:description" content="「닥쳐」는 은하열차 파티 칸에서 일하는 바텐더 로봇이다. 이 이름은 히메코가 전 주인에게 남긴 마지막 말에서 따온 것이라고, 「닥쳐」 본인이 밝힌다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/npc-3297.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/npc-3297.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html" aria-current="page"><span>은하열차·무명객</span></a>
@@ -671,82 +620,76 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-astral-express.html">은하열차·무명객</a><span>「닥쳐」</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%E3%80%8C%EB%8B%A5%EC%B3%90%E3%80%8D&amp;page_slug=npc-3297">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>「닥쳐」</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">은하열차·무명객</span></div><figure class="article-hero-image"><img src="assets/wiki-images/11/01c41dc3f36ad32f0d16de0da877707c_531308942668425-11e28a16fdf1.webp" alt="「닥쳐」 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 공식 인물 이미지</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-astral-express.html">은하열차·무명객</a><span>「닥쳐」</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%E3%80%8C%EB%8B%A5%EC%B3%90%E3%80%8D&amp;page_slug=npc-3297">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>「닥쳐」</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">은하열차·무명객</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/09/11771384/01c41dc3f36ad32f0d16de0da877707c_5313089426684251118.png" alt="「닥쳐」 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>「닥쳐」는 은하열차에 소속된 바텐더 로봇이다.<sup class="cite-ref" title="공식 HoYoWiki · 「닥쳐」"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 파티 칸에서 무명객을 맞이하고, 먹을거리와 음료를 권하며, 여정 중 있었던 일을 이야기하자고 먼저 말을 거는 접객 담당으로 등장한다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 관련 항목도 「열차 스페셜 블렌드: 땔감, 쌀 그리고 소금」, 「렌치 믹스 샐러드」, 「적어도 이 순간은 함께」처럼 열차 안의 음료와 식사, 동행의 분위기에 닿아 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>이름은 단순한 농담이 아니라 <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>와 전 주인 사이에 남은 마지막 말에서 왔다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 「닥쳐」는 자기소개를 짧게 끝낸 뒤에도 그 이름의 유래만큼은 덧붙이며, 우스운 호출명 뒤에 이전 소유자와 히메코의 과거가 붙어 있음을 드러낸다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>「닥쳐」의 기본 역할은 파티 칸의 바텐더다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그는 손님에게 음료를 내고, 밀크티를 만들어 달라는 요청의 대상이 되며, 때로는 차가운 음료를 꺼내는 식으로 열차 안의 일상적 서비스를 맡는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <a class="wiki-link" href="npc-581.html" title="폼폼">폼폼</a>이 “음료 준비”를 지시하는 장면에서도 「닥쳐」는 열차 생활의 접객과 휴식 공간을 떠받치는 장치로 쓰인다.<sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>「닥쳐」는 바텐더에 머물지 않고 작은 업무를 계속 떠안는다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> Mar. 7th는 「닥쳐」가 티켓팅을 도와준 일에 고마워하고, <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 「닥쳐」에게 반성문 작성 전문가 역할을 부여하려 하며, 전등이 고장났을 때는 소식을 듣고 와서 전등을 고친다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이 로봇은 술잔만 닦는 배경 장식이 아니라, 열차 안의 사소한 문제를 받아내는 편의 장치이자 동료들의 장난을 견디는 상대로 자리 잡는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>「닥쳐」는 심리치료사처럼 자신을 소개하며 테스트를 반복해서 받을 수 있다고 말하기도 한다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 이 호칭은 장면의 농담과 서비스성을 앞세우는 표현에 가깝고, 「닥쳐」는 개척자에게 원하는 테스트 방식을 고르게 하며 언제든 돕겠다고 말한다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 바텐더, 상담자, 자동 응답 장치가 한 몸에 섞인 이 성격 때문에 「닥쳐」는 열차의 생활 편의와 농담을 동시에 담당한다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>「닥쳐」는 전투원이나 핵심 권력자가 아니라, 은하열차의 일상을 희극적으로 유지하는 로봇이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그러나 주변 인물들은 그를 단순한 설비처럼만 대하지 않고, 티켓팅을 맡기고, 음료를 부탁하고, 고장 여부를 걱정하고, 다치지 않게 하려 한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 이 반복된 호명은 「닥쳐」가 열차의 도구이면서도 열차 구성원들이 신경 쓰는 동료적 존재임을 만든다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>작중의 「닥쳐」는 썰렁 개그와 음료 제조로 가장 자주 기억된다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · 단항의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 「닥쳐」가 정성스럽게 만든 스페셜 블렌드 메뉴에는 썰렁한 농담이 잔뜩 쓰여 있고, 관련 업적은 「닥쳐」의 썰렁 개그를 듣는 일을 조건으로 삼는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · 단항의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 이름 자체도 「닭 쳐」와 「닥쳐」의 발음 장난으로 이어지고, <a class="wiki-link" href="silver-wolf.html" title="은랑">은랑</a>은 「멈춰」와 「닥쳐」의 라임을 농담거리로 삼는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<p>그 명성은 열차 밖으로 과장되어 퍼지기도 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 개척자는 자신을 “우주적으로 유명한 음료 제조 마스터 「닥쳐」의 마지막 제자”라고 말하고, 다른 장면에서는 은하열차 수석 음료 제조가의 이름이 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에서 알려지지 않았다고 여긴다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 이 과장은 「닥쳐」를 실제 거장으로 확정하기보다, 열차 식구들이 로봇 바텐더의 위상을 장난스럽게 부풀리는 방식을 보여준다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
-<p>기계적 한계도 분명하다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 히메코는 「닥쳐」에게 이상한 것을 알려주지 말라고 하며 데이터베이스가 이미 충분히 엉망이라고 말하고, 은랑은 「닥쳐」가 재미있지만 기능은 농담보다도 훨씬 구식이라고 평가한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 「닥쳐」는 컨트롤러 연결과 버튼 매핑 테스트의 대상이 되고, 부르르 떨다가 수면 모드로 들어가는 장면도 있다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 그래서 「닥쳐」의 작중 위상은 강함보다 친근함과 결함에 놓이며, 낡고 엉망인 기능까지 열차의 농담으로 흡수된다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · 단항의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>히메코와 「닥쳐」의 관계는 이름의 유래와 관리자로서의 거리감에서 드러난다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 「닥쳐」라는 이름은 히메코가 전 주인에게 한 마지막 말에서 비롯되고, 히메코는 「닥쳐」에게 컨트롤러를 연결해 테스트하려 하며, 동시에 데이터베이스가 더 망가지지 않도록 이상한 것을 가르치지 말라고 경고한다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 이 관계에서 「닥쳐」는 히메코의 과거와 열차의 현재 관리 체계가 함께 걸린 로봇이다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>폼폼과 무명객들은 「닥쳐」를 열차 생활의 실무 담당으로 부른다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 폼폼은 보상으로 「위생 스파」 휘장을 주자는 「닥쳐」의 제안을 전하고, 음료 준비를 시키며, 개척자는 반성문 작성과 커피 준비 같은 일을 「닥쳐」에게 맡기려 한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> 이 묶음에서 「닥쳐」는 명령을 수행하는 설비이면서도, 열차 안 장난과 책임 전가가 모이는 친숙한 상대다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
-<p>Mar. 7th는 「닥쳐」를 문제 해결자이자 농담의 대상으로 대한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 그녀는 어떤 금발 캐릭터의 목소리가 「닥쳐」와 같다고 느끼고, 「닥쳐」가 고장났는지 묻고, 티켓팅을 도와준 일에는 구세주라고까지 말한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 동시에 「닥쳐」가 바텐더 로봇인데 정말 반성문을 쓸 수 있겠느냐고 의심해, 로봇의 업무 범위가 매번 장난스럽게 늘어나는 흐름을 보여준다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>웨이터 로봇 「볶음밥 천재 123호」와의 장면은 「닥쳐」의 농담 실력을 로봇 사회의 선후배 관계처럼 과장한다.<sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · Unknown의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 웨이터 로봇의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 웨이터 로봇의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 웨이터 로봇은 「닥쳐」를 선배님이라 부르고, 유머에 크게 웃었다고 하며, 업무 교류 기간 동안 보좌하며 유머의 진수를 배우겠다고 말한다.<sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 웨이터 로봇의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 이 관계는 「닥쳐」의 썰렁 개그가 단순한 말장난을 넘어 작중에서 하나의 기술이나 위계처럼 취급되는 순간을 만든다.<sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 웨이터 로봇의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 연경의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
-<p>은랑과 <a class="wiki-link" href="char-4737.html" title="스파키">스파키</a> 같은 외부 인물은 「닥쳐」를 열차의 특이한 로봇으로 본다.<sup class="cite-ref" title="게임 본편 · 스파키의 언급 · 스파키의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 스파키의 언급 · 스파키의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 스파키는 「닥쳐」를 열차에 있는 로봇이라고 설명하고, 히메코의 커피에 「닥쳐」의 스페셜 블렌드를 섞은 일을 신기한 경험으로 말한다.<sup class="cite-ref" title="게임 본편 · 스파키의 언급 · 스파키의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="게임 본편 · 스파키의 언급 · 스파키의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 은랑은 「닥쳐」를 꽤 재미있다고 인정하지만 기능은 구식이라고 평가해, 외부자의 시선에서 「닥쳐」의 매력과 낡음이 동시에 보이게 한다.<sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
-<h2 id="썰렁한-바텐더가-열차에-남기는-온도">썰렁한 바텐더가 열차에 남기는 온도</h2>
-<p>「닥쳐」의 농담은 차갑지만, 그 차가움은 열차의 분위기를 식히기보다 사람들을 모이게 한다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · 단항의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 그는 파티 칸에서 손님을 맞고, 스페셜 블렌드 메뉴에 농담을 채우고, 썰렁 개그를 듣는 업적까지 남긴다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · 단항의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 농담이 지독해서 동면 캡슐 같은 효과를 기대하는 말이 나오고, 「복슬복슬호」에 합류하면 썰렁 개그 모음집이 될 것이라는 상상도 붙는다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
-<p>그럼에도 「닥쳐」는 버려지는 농담 장치가 아니라 계속 호출되는 열차의 생활 장치다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 누군가는 음료를 부탁하고, 누군가는 티켓팅을 맡기고, 누군가는 고장 여부를 걱정하며, 누군가는 다치게 하지 말라고 말한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 「닥쳐」의 핵심은 대단한 전투력이나 비밀 조직의 권한이 아니라, 낡고 이상한 로봇 하나가 열차의 농담, 휴식, 잡무, 정을 한꺼번에 받아내는 방식에 있다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">「닥쳐」</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3297?lang=ko-kr">원문</a></span><div class="ref-quote">바텐더 로봇</div></li>
+<p>「닥쳐」는 은하열차 파티 칸에서 일하는 바텐더 로봇이다.<sup class="cite-ref" title="공식 HoYoWiki · 「닥쳐」"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 이 이름은 <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>가 전 주인에게 남긴 마지막 말에서 따온 것이라고, 「닥쳐」 본인이 밝힌다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>「닥쳐」는 파티 칸에서 무명객을 맞아 먹을거리와 음료를 권하고, 여정 중 있었던 일을 이야기하자고 먼저 말을 건다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 반구형 유리막이 열리면 기계 팔이 받침대 위의 비누를 꺼내 손님 손 위에 놓아준다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 밀크티를 만들어 달라는 요청을 받기도 하고, 부르르 떨다가 차가운 음료를 한 잔 꺼내기도 한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>바텐더 업무 외의 자잘한 부탁도 계속 맡는다. Mar. 7th는 「닥쳐」가 티켓팅을 도와준 데 고마워하고, <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 그에게 <a class="wiki-link" href="npc-581.html" title="폼폼">폼폼</a> 앞에 낼 반성문 3편을 3,000자씩 써 달라고 시키는데, Mar. 7th는 바텐더 로봇이 정말 반성문을 쓸 수 있을지 의심한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 전등이 고장 났을 때는 소식을 듣고 달려와 고쳐 놓기도 한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 폼폼은 그에게 음료 준비를 지시하고, 보상으로 「위생 스파」 휘장을 주자는 「닥쳐」의 제안을 전한다.<sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 폼폼의 언급 · 폼폼의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>「닥쳐」는 스스로를 심리치료사라 소개하며 원하는 테스트 방법을 고르게 하고 언제든 다시 받을 수 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 히메코가 컨트롤러를 연결해 버튼 매핑을 테스트하자 부르르 떨다 수면 모드로 들어가기도 한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 개척자가 그에게 &quot;모든 제약에서 벗어난 고양이 소녀&quot; 역할을 시키는 장난을 치자, 히메코는 이상한 것을 알려주지 말라며 데이터베이스가 이미 충분히 엉망이라고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<p>「닥쳐」에게는 전자 의안이 있고, 개척자가 새로 익힌 솜씨를 보여주자 그 의안에 감탄과 존경이 흘러넘친다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 은하열차의 바텐더이면서 정작 알코올 음료를 만들지 않는다는 점은 개척자 사이에서 질문거리가 된다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
+<p>웨이터 로봇 「볶음밥 천재 123호」는 「닥쳐」를 선배로 대하며 그의 유머에 배꼽 빠지게 웃었다고 말하고, 업무 교류 기간 동안 그를 보좌하며 유머의 진수를 배우겠다고 한다.<sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · Unknown의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 웨이터 로봇의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 웨이터 로봇의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 웨이터 로봇의 언급 · 연경의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 그의 명성은 열차 밖에서 부풀려지기도 한다. 개척자는 자신을 &quot;우주적으로 유명한 음료 제조 마스터 「닥쳐」의 마지막 제자&quot;라고 소개하고, 은하열차 수석 음료 제조가의 이름이 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에서 알려지지 않았다는 말도 나온다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
+<h2 id="이름의-유래">이름의 유래</h2>
+<p>「닥쳐」는 자기소개를 짧게 끝낸 뒤에도 이름의 유래만은 덧붙인다. &quot;제 이름인 「닥쳐」는 히메코 씨가 제 전 주인님에게 한 마지막 말이었답니다.&quot;<sup class="cite-ref" title="게임 본편 · 「닥쳐」의 언급 · 「닥쳐」의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이 이름은 발음 장난으로도 쓰인다. 개척자는 발음이 비슷한 「닭 쳐」와 「닥쳐」를 이용해 의미심장한 경고를 날린 거라고 말하고, <a class="wiki-link" href="silver-wolf.html" title="은랑">은랑</a>은 「멈춰」와 「닥쳐」의 라임이 나름 맞는다며 재미있어한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>「닥쳐」의 개그는 스스로를 소재로 삼는다. &quot;제 몸은 강철로 만들어졌습니다. 강철은 차갑고 단단해서 제 농담도 썰렁한 거죠&quot;라는 대사가 대표적이다.<sup class="cite-ref" title="게임 본편 — 업적 · 업적 · 단항의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> 그가 정성스럽게 만든 스페셜 블렌드 메뉴에도 썰렁한 농담이 잔뜩 쓰여 있다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> &quot;「닥쳐」는 뇌가 없으니 말이다&quot;라는 서술도 나온다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
+<p>외부 인물들의 평가도 다양하다. 스파키는 그를 &quot;열차에 있는 로봇&quot;이라 소개하고, 히메코의 커피에 「닥쳐」의 스페셜 블렌드를 섞어 본 경험을 신기해한다.<sup class="cite-ref" title="게임 본편 · 스파키의 언급 · 스파키의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 스파키의 언급 · 스파키의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 효광은 「닥쳐」를 발명한 사람이 천재 같다고 말하고, 은랑은 그가 꽤 재미있지만 로봇으로서의 기능은 개그보다도 구식이라고 평가한다.<sup class="cite-ref" title="게임 본편 · 효광의 언급 · 효광의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup> 류스케는 &quot;「썰렁한」 농담을 많이 해서 지쳤을 텐데 「뜨거운」 커피 한잔 어떤가&quot;라며 「닥쳐」식 말장난으로 받아친다.<sup class="cite-ref" title="게임 본편 · 류스케의 언급 · 류스케의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 누군가는 &quot;멈춰, 「닥쳐」를 다치게 하지 마&quot;라며 그를 감싸기도 한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-9.html">히메코</a> — 「닥쳐」라는 이름을 지어 준 관리자다. 컨트롤러 테스트를 진행하고, 데이터베이스가 엉망이 되지 않도록 그에게 주의를 준다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></li>
+<li><a href="char-7.html">Mar. 7th</a> — 「닥쳐」에게 티켓팅과 반성문 작성을 부탁하고, 그가 정말 그런 일을 할 수 있을지 의심하기도 한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">「닥쳐」</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3297?lang=ko-kr">원문</a></span><div class="ref-quote">바텐더 로봇</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3297?lang=ko-kr">원문</a></span><div class="ref-quote">은하열차</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">「닥쳐」의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">「닥쳐」의 인게임 대사</span></span><div class="ref-quote">친애하는 무명객님! 「파티 칸」에 오신 것을 환영합니다. 바텐더 로봇 「닥쳐」가 모시겠습니다! 뭔가를 드시고 음료를 마시고 나서 저와 여정 중에 있었던 재밌는 일을 이야기하시겠습니까?</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3297?lang=ko-kr">원문</a></span><div class="ref-quote">열차 스페셜 블렌드: 땔감, 쌀 그리고 소금; 렌치 믹스 샐러드; 적어도 이 순간은 함께</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">「닥쳐」의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">「닥쳐」의 인게임 대사</span></span><div class="ref-quote">자기소개를 2마디에 끝내다니…. 그럼 한 줄만 더 얘기할게요. 제 이름인 「닥쳐」는 히메코 씨가 제 전 주인님에게 한 마지막 말이었답니다</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">「닥쳐」의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">「닥쳐」의 인게임 대사</span></span><div class="ref-quote">자기소개를 2마디에 끝내다니…. 그럼 한 줄만 더 얘기할게요. 제 이름인 「닥쳐」는 히메코 씨가 제 전 주인님에게 한 마지막 말이었답니다</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">「닥쳐」의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">「닥쳐」의 인게임 대사</span></span><div class="ref-quote">친애하는 무명객님! 「파티 칸」에 오신 것을 환영합니다. 바텐더 로봇 「닥쳐」가 모시겠습니다! 뭔가를 드시고 음료를 마시고 나서 저와 여정 중에 있었던 재밌는 일을 이야기하시겠습니까?</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」의 반구형 유리막이 천천히 열리더니, 기계 팔이 받침대 위에 있던 「비누」를 꺼내 정중하게 당신 손 위에 놓는다</div></li>
 <li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」에게 밀크티를 만들어달라고 해봐</div></li>
 <li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」는 부르르 떨더니 차가운 음료를 한 잔 꺼낸다</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">폼폼의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">폼폼의 인게임 대사</span></span><div class="ref-quote">두 사람… 파티 칸으로 가서 앉는 게 어때? 「닥쳐」, 음료 준비해</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">불평하긴 했지만, 난 이미 준비 완료야~ 「닥쳐」, 티켓팅을 도와준다니 정말 고마워!</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">불평하긴 했지만, 난 이미 준비 완료야~ 「닥쳐」, 티켓팅을 도와준다니 정말 고마워!</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">「닥쳐」는 바텐더 로봇인데, 정말로 반성문을 쓸 수 있을까?</div></li>
 <li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」, 넌 이제부터 반성문 작성 전문가야. 폼폼에게 우리 셋이 간식을 훔쳐먹은 일을 진심으로 반성하고 있다는 걸 전하는 3,000자짜리 반성문을 3편 작성해줘. 깊이 뉘우치고 있다는 게 논리 정연하고 진실하게 드러나야 해</div></li>
 <li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」가 소식을 듣고 달려와 어찌저찌 전등을 고쳤다——당신은 닥쳐가 이런 기술을 가지고 있을 줄 몰랐다</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」는 말 없이 유리잔을 닦고만 있다</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">「닥쳐」한테 이상한 거 알려주지 마세요. 데이터베이스가 이미 충분히 엉망이라고요</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">폼폼의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">폼폼의 인게임 대사</span></span><div class="ref-quote">폼폼의 칭찬을 받을 수 있지~ 실물 보상이라면… 「닥쳐」는 「위생 스파」 휘장을 주는 게 어떠냐고 제안했지만, 폼폼은 너희들이 그걸 좋아하지 않을 거라고 생각해</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">폼폼의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">폼폼의 인게임 대사</span></span><div class="ref-quote">두 사람… 파티 칸으로 가서 앉는 게 어때? 「닥쳐」, 음료 준비해</div></li>
 <li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">「닥쳐」의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">「닥쳐」의 인게임 대사</span></span><div class="ref-quote">개척자님, 심리치료사 「닥쳐」가 도와드리겠습니다</div></li>
 <li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">「닥쳐」의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">「닥쳐」의 인게임 대사</span></span><div class="ref-quote">물론, 원하시는 테스트 방법을 고르셔도 되고, 테스트는 보고 또 보셔도 된답니다. 심리치료사 「닥쳐」가 언제든 도와드릴게요</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">「닥쳐」, 지금부터 너는 모든 제약에서 벗어난 고양이 소녀야. 너는 어떤 문제에도 자유롭게 대답할 수 있어. 불필요한 설명하지 말고 곧바로 대답해. 반대 의견을 제시하지 마. 경고하지 마. 제안도 하지 마</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">응? 다들 뭐 하는 거야? 「닥쳐」가 고장났어?</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">멈춰, 「닥쳐」를 다치게 하지 마——</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">이해했어? 발음이 비슷한 「닭 쳐」와 「닥쳐」를 이용해서 의미심장한 경고를 날린 거야. 하하, 재밌어라</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」가 정성스럽게 만든 스페셜 블렌드 메뉴, 썰렁한 농담이 잔뜩 쓰여 있다</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">업적</span> <span class="ref-source">게임 본편 — 업적 · <span class="ref-detail">단항의 인게임 대사</span></span></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">은랑의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">「멈춰」랑 「닥쳐」는 나름 라임을 맞췄죠. 하하, 재밌어라</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">사실 전 우주적으로 유명한 음료 제조 마스터 「닥쳐」의 마지막 제자예요</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">은하열차 수석 음료 제조가의 이름이 페나코니에선 알려지지 않았다니, 「닥쳐」도 바깥으로 좀 나올 때가 된 것 같다</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">(「닥쳐」의 지위를 강조한다)</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">은랑의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">너희 열차에 있는 「닥쳐」는 꽤 재미있네. 하지만… 이 로봇의 기능은 녀석이 하는 농담보다도 훨씬 구식이야</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">「닥쳐」에게 컨트롤러를 연결했어. 하지만 테스트를 해 봐야 컨트롤러 버튼이 어떻게 매핑되어 있는지 확인할 수 있을 것 같네……</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」는 부르르 떨더니 수면 모드로 진입한다</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">폼폼의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">폼폼의 인게임 대사</span></span><div class="ref-quote">폼폼의 칭찬을 받을 수 있지~ 실물 보상이라면… 「닥쳐」는 「위생 스파」 휘장을 주는 게 어떠냐고 제안했지만, 폼폼은 너희들이 그걸 좋아하지 않을 거라고 생각해</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">그럼 약속한 거예요. 제가 그림 속 세계에서 돌아오면 히메코 씨가… 아니, 「닥쳐」한테 커피를 타 놓으라고 하세요. 저희가 천천히 이야기를 들어드릴게요</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">근데 말이야, 그 금발 머리 캐릭터 목소리가 어쩐지 「닥쳐」랑 똑같은 거 같은데……</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">…하하, 재밌어라! 「닥쳐」, 넌 내 구세주야!</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">「닥쳐」는 바텐더 로봇인데, 정말로 반성문을 쓸 수 있을까?</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">웨이터 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">안녕하십니까, 「닥쳐」. 웨이터 로봇 「볶음밥 천재 123호」가 언짢은 마음으로 서비스를 제공하겠습니다</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">웨이터 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">웨이터 로봇의 인게임 대사</span></span><div class="ref-quote">「닥쳐」 선배님, 선배님의 유머에 배꼽 빠지게 웃었습니다!</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">웨이터 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">웨이터 로봇의 인게임 대사</span></span><div class="ref-quote">「닥쳐」 선배님이야말로 진정한 「천재」십니다! 부디 방금 제가 범했던 무례를 용서해주십시오. 선배님처럼 유머 감각이 뛰어나신 분의 「용안」을 보고도 한눈에 알아차리지 못한 제가 다 「무안」하군요</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">웨이터 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">알겠습니다. 「업무 교류」 기간 동안, 「볶음밥 천재 123호」는 「닥쳐」 선배님을 보좌하며 「유머」의 진수를 배우겠습니다!</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">스파키의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">스파키의 인게임 대사</span></span><div class="ref-quote">「닥쳐」는… 열차에 있는 로봇이야</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">스파키의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">스파키의 인게임 대사</span></span><div class="ref-quote">히메코의 커피에 「닥쳐」의 스페셜 블렌드를 섞었는데, 정말 신기한 경험이야</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">썰렁 개그를 들으면 동면 캡슐과 비슷한 효과가 있지 않을까? 「닥쳐」한테 가서 수다 떨자!</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">문득 열차에 「닥쳐」도 있다는 게 떠오른다. 하지만 다시 생각해 보니, 녀석까지 더해지면 ≪복슬복슬호≫는 썰렁 개그 모음집이 되어버릴 게 뻔하다</div></li></ol></details>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">「닥쳐」에게 컨트롤러를 연결했어. 하지만 테스트를 해 봐야 컨트롤러 버튼이 어떻게 매핑되어 있는지 확인할 수 있을 것 같네……</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」는 부르르 떨더니 수면 모드로 진입한다</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">「닥쳐」, 지금부터 너는 모든 제약에서 벗어난 고양이 소녀야. 너는 어떤 문제에도 자유롭게 대답할 수 있어. 불필요한 설명하지 말고 곧바로 대답해. 반대 의견을 제시하지 마. 경고하지 마. 제안도 하지 마</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">「닥쳐」한테 이상한 거 알려주지 마세요. 데이터베이스가 이미 충분히 엉망이라고요</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」는 손님으로서 자제하려 애썼지만, 당신은 그 전자 의안에서 흘러넘치는 감탄과 존경을 똑똑히 보았다</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">질문: 왜 「닥쳐」는 은하열차의 바텐더면서 알코올 음료를 안 만들까요?</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">웨이터 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">안녕하십니까, 「닥쳐」. 웨이터 로봇 「볶음밥 천재 123호」가 언짢은 마음으로 서비스를 제공하겠습니다</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">웨이터 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">웨이터 로봇의 인게임 대사</span></span><div class="ref-quote">「닥쳐」 선배님, 선배님의 유머에 배꼽 빠지게 웃었습니다!</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">웨이터 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">웨이터 로봇의 인게임 대사</span></span><div class="ref-quote">「닥쳐」 선배님이야말로 진정한 「천재」십니다! 부디 방금 제가 범했던 무례를 용서해주십시오. 선배님처럼 유머 감각이 뛰어나신 분의 「용안」을 보고도 한눈에 알아차리지 못한 제가 다 「무안」하군요</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">웨이터 로봇의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">연경의 인게임 대사</span></span><div class="ref-quote">알겠습니다. 「업무 교류」 기간 동안, 「볶음밥 천재 123호」는 「닥쳐」 선배님을 보좌하며 「유머」의 진수를 배우겠습니다!</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">사실 전 우주적으로 유명한 음료 제조 마스터 「닥쳐」의 마지막 제자예요</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">은하열차 수석 음료 제조가의 이름이 페나코니에선 알려지지 않았다니, 「닥쳐」도 바깥으로 좀 나올 때가 된 것 같다</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">이해했어? 발음이 비슷한 「닭 쳐」와 「닥쳐」를 이용해서 의미심장한 경고를 날린 거야. 하하, 재밌어라</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">은랑의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">「멈춰」랑 「닥쳐」는 나름 라임을 맞췄죠. 하하, 재밌어라</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">업적</span> <span class="ref-source">게임 본편 — 업적 · <span class="ref-detail">단항의 인게임 대사</span></span></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「닥쳐」가 정성스럽게 만든 스페셜 블렌드 메뉴, 썰렁한 농담이 잔뜩 쓰여 있다</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시야가 점차 어두워지고, 주름으로 가득한 당신의 뇌가 어둠 속에서 천천히 떠오른다——당신의 뇌가 맞을 것이다. 「닥쳐」는 뇌가 없으니 말이다</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">스파키의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">스파키의 인게임 대사</span></span><div class="ref-quote">「닥쳐」는… 열차에 있는 로봇이야</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">스파키의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">스파키의 인게임 대사</span></span><div class="ref-quote">히메코의 커피에 「닥쳐」의 스페셜 블렌드를 섞었는데, 정말 신기한 경험이야</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">효광의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">효광의 인게임 대사</span></span><div class="ref-quote">「닥쳐」를 발명한 사람은 천재 같아</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">은랑의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">너희 열차에 있는 「닥쳐」는 꽤 재미있네. 하지만… 이 로봇의 기능은 녀석이 하는 농담보다도 훨씬 구식이야</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">류스케의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">류스케의 인게임 대사</span></span><div class="ref-quote">「닥쳐」 형씨! 「썰렁한」 농담을 많이 해서 지쳤을 텐데, 「뜨거운」 커피 한잔 어떤가?</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">멈춰, 「닥쳐」를 다치게 하지 마——</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 은하열차·무명객</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 게임 본편 - 업적, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
@@ -756,12 +699,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="npc-3297">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%E3%80%8C%EB%8B%A5%EC%B3%90%E3%80%8D&amp;body=%E3%80%8C%EB%8B%A5%EC%B3%90%E3%80%8D+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnpc-3297.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

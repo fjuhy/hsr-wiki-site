@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>효광 · hoyohoyo.wiki</title>
-  <meta name="description" content="효광은 선주 「옥궐」의 융도 장군이며, 스스로는 격식 있는 장군 호칭보다 「효 사장」이라는 호칭을 더 시원하고 자유로운 이름으로 여긴다.">
+  <meta name="description" content="효광은 선주 「옥궐」의 융도 장군이다. 예지 능력을 지닌 점술가이자 옥궐의 군권을 쥔 장군이라는 두 얼굴을 가져, 공식 소개에서 「하늘이 선택한 선주의 예언가」 1위와 「이 장군은 좀 거친 편」 1위 칭호를 함께 받았다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="효광 · hoyohoyo.wiki">
-  <meta property="og:description" content="효광은 선주 「옥궐」의 융도 장군이며, 스스로는 격식 있는 장군 호칭보다 「효 사장」이라는 호칭을 더 시원하고 자유로운 이름으로 여긴다.">
+  <meta property="og:description" content="효광은 선주 「옥궐」의 융도 장군이다. 예지 능력을 지닌 점술가이자 옥궐의 군권을 쥔 장군이라는 두 얼굴을 가져, 공식 소개에서 「하늘이 선택한 선주의 예언가」 1위와 「이 장군은 좀 거친 편」 1위 칭호를 함께 받았다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/char-4736.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/char-4736.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,165 +620,91 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>효광</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%9A%A8%EA%B4%91&amp;page_slug=char-4736">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>효광</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="assets/wiki-images/93/d47b90bf7124f8694e2117a5e4999ba6_397987765083433-93652b761126.webp" alt="효광 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>효광</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%9A%A8%EA%B4%91&amp;page_slug=char-4736">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>효광</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/22/294502711/d47b90bf7124f8694e2117a5e4999ba6_3979877650834337771.png" alt="효광 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>효광은 선주 「옥궐」의 융도 장군이며, 스스로는 격식 있는 장군 호칭보다 「효 사장」이라는 호칭을 더 시원하고 자유로운 이름으로 여긴다.<sup class="cite-ref" title="공식 HoYoWiki · 효광"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 호칭"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>그녀는 수렵의 「눈」으로 길흉을 꿰뚫어 보지만, 예견된 운명 앞에서 멈추기보다 직접 위험 속으로 들어가 변수를 만들려는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki · 효광"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>효광의 핵심은 점술가의 예지와 장군의 결단이 한 몸에 붙어 있다는 점이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>그녀는 “보이는 미래”를 절대적인 결론으로 받아들이지 않고, 가능성이란 바꾸기 위해 존재한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>이 태도 때문에 효광은 옥궐의 질서를 지키는 장군이면서도, 동시에 그 질서를 뒤흔들어 정체를 깨려는 개혁가로 움직인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>효광은 옥궐의 장군으로서 점괘, 행정, 기술 개발, 항로 판단을 모두 정치적 결정으로 끌어올리는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 효광의 언급 · 효광의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>그녀는 자신을 전 변지격물원의 명예원장, 십방광영법계의 주인, 선주 무형문화재 작형권의 계승자라고 소개하며, 옥궐의 지식·제도·기예가 한 사람에게 모이는 위치에 서 있다.<sup class="cite-ref" title="게임 본편 · 효광의 언급 · 효광의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>옥궐의 점술 기관에서 자란 효광은 어린 시절부터 규율을 벗어나는 방식으로 배움을 확장했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>그녀는 아침 수행에 빠지고 패 대회에 나가거나, 한밤중에 젊은 점술가들을 불러 이방의 점괘 비술을 시험하고, 수업 시간에 자신이 만든 점법으로 스승에게 도전했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>이 일화들은 효광이 단순히 재능 있는 점술가가 아니라, 기존 학파와 절차를 시험대에 올리는 성향으로 성장했음을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>장군이 된 뒤에도 효광의 방식은 크게 달라지지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>옥조 초소형화 연구에서 공조사가 절차와 기존 방향을 들어 반대하자, 효광은 옥조가 선주의 명줄과 직결되더라도 제자리걸음만 할 수는 없다고 판단하고, <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>의 효율을 의식하며 머뭇거릴 시간이 없다고 밀어붙인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>기존 순항 경로가 낮은 위험도와 안정적 수익을 보장한다는 태복사의 점괘 앞에서도, 효광은 안전한 답만 따르는 태도를 옥궐의 해법으로 보지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>그녀에게 점괘는 결정을 대신하는 명령이 아니라, 위험을 계산한 뒤 어느 지점에서 판을 흔들지 정하는 도구다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>효광은 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a>의 인과가 궁관진에서 사라진 이상 현상에 대해 <a class="wiki-link" href="char-26.html" title="경원">경원</a>에게 의견을 구할 만큼, 선주 연맹의 큰 사건을 해석하는 예지자이기도 하다.<sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p><a class="wiki-link" href="char-25.html" title="정운">정운</a>은 자신이 중요한 일을 맡은 것이 아니라 옥궐의 효광 장군을 보조하러 왔다고 말하고, 중요한 설명은 효광에게 직접 들어야 한다고 판단한다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p><a class="wiki-link" href="char-8.html" title="단항">단항</a>은 효광과 함께 <a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>의 계획을 밝혀내겠다고 말하며, 효광이 스텔라론 헌터와 관련된 국면에서도 협력 대상으로 놓인다는 점을 드러낸다.<sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<p><a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 효광이 다시 나타나면 협력 계획을 이야기해야 한다고 말해, 그녀의 부재와 재등장이 작중 협력 구도의 다음 단계를 여는 조건으로 작용함을 보여 준다.<sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>효광의 위상은 “예언자”와 “장군” 사이에서 만들어진다.<sup class="cite-ref" title="공식 HoYoWiki · 효광"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 효광의 언급 · 효광의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>그녀는 수렵의 사냥꾼의 「눈」인 위령 「시륜천치명왕」을 하사받았고, 이를 자신은 「시간」으로 바꿔 부르길 좋아한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>또한 옥궐은 전지 천군 <a class="wiki-link" href="nous.html" title="⌈ 지식 ⌋ 누스">누스</a>의 연산에서 영감을 얻어 미래를 점치는 「십방광영법계」를 만들었고, 효광은 그 법계와 사고를 통해 여러 가능성을 살필 수 있었다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>이 두 설정은 효광의 예지가 단순한 감이나 미신이 아니라, 선주 옥궐의 거대한 점술 체계와 수렵의 권능에 닿아 있음을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 효광의 언급 · 효광의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>효광은 예지가 강할수록 더 완강하게 미래를 고정하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<p>그녀는 법안으로 세상만사를 다 알 수 있다면 재미없다고 말하고, 변수의 등장을 전환점으로 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 행적 활성화"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>효광이 장군의 칭호를 얻는 과정은 그녀의 강함을 점술의 정확도만으로 설명하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>「천홍봉천」을 거친 그녀는 장군의 부절을 얻기 위해 법계 속 마지막 시련을 치렀고, 온몸의 뼈를 뒤흔드는 위엄과 천뢰처럼 떨어지는 화살을 맞닥뜨렸다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>그녀는 전례 없는 위험의 징조를 읽고 평생 배운 것을 동원해 방향을 추론하며 화살을 피했고, 조금만 방심해도 흔적 없이 사라질 시련을 버텨냈다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>이 장면에서 효광의 강함은 적을 압도하는 힘보다, 사라질 가능성이 높은 재난을 읽고 피하며 끝까지 결정을 이어 가는 능력으로 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>전투 대사에서도 효광은 위험을 피해야 할 불운으로만 보지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작 • 위험 경보"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<p>그녀는 기회가 위험 속에 있다고 말하고, 강공을 권하며, 훼방을 받으면 자신도 그럴 생각이라고 받아친다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작 • 위험 경보"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 시작 • 2"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 턴 대기"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>피격과 전투 불능 대사에는 복이 될지 모른다는 여유와 대흉을 인식하는 감각, 그리고 운명이 이렇다는 사실을 믿지 못하는 균열이 함께 남아 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 약공격 피격"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 강공격 피격"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>따라서 효광은 무오류의 예언자가 아니라, 예지의 한계를 알면서도 그 한계에 몸을 던져 결과를 바꾸려는 장군이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>전투 연출과 대사에서도 효광은 상서로운 별, 재난의 구름, 최악의 운세, 하늘의 뜻, 법안과 같은 표현으로 전투를 점괘와 운세의 판으로 바꾼다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 스킬 • 1"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 스킬 • 2"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 환락 스킬 • 1"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 환락 스킬 • 2"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기 • 활성화"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기 • 발동"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 승리"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>경원과 효광의 관계는 선주 장군들 사이의 예의 바른 화합보다 논쟁과 견제로 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 경원"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
-<p>효광은 사람들이 자신과 「신책 장군」이 매번 다툰다고 보지만, 자신들은 서로의 진실을 말하는 것뿐이라고 하며, 겉으로만 화목한 상태는 선주의 발전에 도움이 되지 않는다고 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>경원 또한 앰포리어스의 인과가 궁관진에서 사라진 이상 현상에 대해 효광의 판단을 묻고, 효광은 경원과의 파티 편성에서 「융도만큼 지혜롭다」는 말의 진위를 시험해 보자고 말한다.<sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 경원"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
-<p>이 관계에서 효광은 선주 내부의 안정된 합의를 깨는 반대자이자, 큰 이상 현상을 해석할 때 불러야 하는 예지의 권위자로 기능한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p><a class="wiki-link" href="char-804.html" title="부현">부현</a>은 효광의 사매이며, 효광은 부현이 옥궐에 보고하러 왔을 때 며칠 더 머무르라는 권유도 거절하고 제시간에 돌아간다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부현에 대해"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
-<p>효광은 어린 시절 부현이 자신과 겨루기를 좋아했으나 지금은 그 대상이 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a> 장군으로 바뀌었다고 아쉬워하고, 파티 편성에서는 예전처럼 잘 협조해 달라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부현에 대해"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 부현"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
-<p>두 사람의 관계는 같은 점술 계보 안에서 경쟁과 협력이 엇갈리는 사저·사매 관계이며, 효광의 후계 구상에서도 부현은 장군 자리를 이을 수 있는 인물로 거론된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부현에 대해"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 부현"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
-<p>경천은 효광과 부현의 과거를 잇는 사부로 남아 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
-<p>효광은 귀향한 사매와 마주 앉아 경천에게 제사를 지냈는지 묻고, 경천이 옥궐을 지키며 기다리라고 했던 과거와 “운명은 처음부터 끝까지 외길”이라는 가르침을 떠올린다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
-<p>효광이 운명을 읽으면서도 바꾸려 하는 태도는 경천의 가르침을 단순히 부정하는 것이 아니라, 그 외길을 어디서 틀 수 있는지 시험하는 방식으로 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p><a class="wiki-link" href="char-2947.html" title="비소">비소</a>와 효광의 관계는 수렵의 「발톱」과 「눈」이라는 비유로 묶인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
-<p>효광은 천격 장군 비소를 수렵의 발톱 같다고 말하며, 발톱 없는 눈은 약하고 눈 없는 발톱은 앞을 못 본다고 평가한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
-<p>비소는 효광의 생각을 듣기 좋아하고 효광은 비소의 지휘를 믿으며, 파티 편성에서도 효광은 비소에게 새 묘수를 들려주려 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 비소"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
-<p>이 관계는 효광의 예지가 전장에서 홀로 완결되지 않고, 지휘와 실행력을 가진 다른 장군과 맞물릴 때 더 큰 힘을 낸다는 점을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 비소"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
-<p>망귀인과 정운은 효광의 작중 이동과 외교적 접점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 망귀인에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 망귀인"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
-<p>효광은 상회의 여우족인 망귀인이 백성을 위해 목소리를 내고 에이언즈의 불공평함을 비난하는 기백을 좋게 평가하며, 파티 편성에서는 소통과 교류를 부탁한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 망귀인에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 망귀인"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
-<p>정운은 효광을 보조하러 왔다가 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a> 일행을 만났다고 말하고, 효광에게 직접 설명을 들어야 할 사안이 있다고 판단한다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>이 묶음에서 효광은 점술가의 방 안에 갇힌 인물이 아니라, 상회·외교·현장 설명을 통해 여러 세력 사이의 소통을 여는 장군으로 움직인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 망귀인에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 망귀인"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
-<p>개척자와 효광의 관계는 예지의 사각지대에서 시작된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 개척자"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p>효광은 개척자의 미래가 자신의 눈이 아니라 개척자의 발밑에 달려 있다고 말하고, 파티 편성에서도 개척자의 운명이 여전히 잘 보이지 않는다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 개척자"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p>효광에게 개척자는 완전히 해석된 대상이 아니라, 그녀가 좋아하는 변수와 전환점이 실제 인물로 나타난 경우에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 개척자"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p>선데이와 <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>에 대한 언급은 효광이 선주 밖의 인물까지 큰 판의 변수로 읽는다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히메코에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 선데이에 대해"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 히메코"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 선데이"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup></p>
-<p>효광은 히메코를 재능을 숨기고 행실을 낮추는 사람으로 보며, 사람은 출발한 지점으로 돌아가 다시 여정을 시작한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히메코에 대해"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup></p>
-<p>효광은 선주 장군이 페나코니의 전 결정권자인 선데이를 끌어들인 일을 불가사의하게 여기면서도, 자신이 원한 것이 바로 그런 예상 불가한 전환점이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 선데이에 대해"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup></p>
-<p>선데이에게는 타인을 강요하지 않는다고 말하고, 히메코에게는 항법사로서 협력을 부탁한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 히메코"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 선데이"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup></p>
-<p>스파키와 청작은 효광의 환락성, 놀이, 어리석은 척의 감각을 비춘다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스파키에 대해"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 청작에 대해"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 스파키"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 청작"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup></p>
-<p>효광은 스파키를 폭죽처럼 터져 사람들을 어쩔 줄 모르게 하는 존재로 보고, 함께 놀면 전에 없던 새로운 일을 할 수 있을 것이라고 기대한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스파키에 대해"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup></p>
-<p>청작에 대해서는 많은 사람이 죽을 때까지 교만하게 살지만 청작은 어리석은 척하기의 묘미를 안다고 평가하고, 이것을 장군이 되기 위한 필수 덕목이라고까지 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 청작에 대해"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup></p>
-<p>효광이 패 놀이 우승을 여러 번 차지했고 패 놀이 실력만큼은 부정할 수 없다고 말하는 점까지 합치면, 그녀의 환락은 단순한 장난이 아니라 긴장된 판에서 허점을 만들고 읽는 능력과 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스파키에 대해"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 청작에 대해"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup></p>
-<p>경류에 대한 효광의 평가는 그녀가 금기적 힘을 무조건 배척하지 않는다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경류에 대해"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 경류"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup></p>
-<p>효광은 번식의 잔해, 파멸의 황금 피, 풍요 본연의 힘을 빌리는 것까지 개의치 않는다고 말하지만, 경류가 그린 그림은 아직 자신을 납득시키지 못했다고 선을 긋는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경류에 대해"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup></p>
-<p>이 태도는 효광이 위험한 수단을 다룰 수는 있어도, 그 수단이 어떤 미래를 만들지에 대한 설득 없이는 쉽게 승인하지 않는 인물임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경류에 대해"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup></p>
-<p>토파즈와 펄의 언급은 효광의 영향력이 선주 내부를 넘어 스타피스 컴퍼니 쪽 관측과 데이터 판단의 영역에도 걸쳐 있음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 토파즈의 언급 · 토파즈의 인게임 대사"><a href="#ref-56" data-cite-popover data-ref-target="ref-56" aria-label="각주 56 내용 보기" aria-expanded="false">56</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-57" data-cite-popover data-ref-target="ref-57" aria-label="각주 57 내용 보기" aria-expanded="false">57</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-58" data-cite-popover data-ref-target="ref-58" aria-label="각주 58 내용 보기" aria-expanded="false">58</a></sup></p>
-<p>토파즈는 옥궐 선주의 효광 장군이 그 자리에 있을 줄 몰랐다고 반응하고, 펄은 자신이 효광만큼 점괘에 정통하진 않지만 충분한 정보를 입력하면 일정 확률로 정확한 결과를 얻을 수 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 토파즈의 언급 · 토파즈의 인게임 대사"><a href="#ref-56" data-cite-popover data-ref-target="ref-56" aria-label="각주 56 내용 보기" aria-expanded="false">56</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-57" data-cite-popover data-ref-target="ref-57" aria-label="각주 57 내용 보기" aria-expanded="false">57</a></sup></p>
-<p>펄은 광범위한 데이터 수집이 알고리즘의 자가 개선에 도움이 된다는 설명을 효광의 제안으로 돌린다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-58" data-cite-popover data-ref-target="ref-58" aria-label="각주 58 내용 보기" aria-expanded="false">58</a></sup></p>
-<p>효광의 점술은 여기서 신비한 예언에만 머물지 않고, 정보 수집과 알고리즘 개선이라는 계산 체계와도 접속한다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-57" data-cite-popover data-ref-target="ref-57" aria-label="각주 57 내용 보기" aria-expanded="false">57</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-58" data-cite-popover data-ref-target="ref-58" aria-label="각주 58 내용 보기" aria-expanded="false">58</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<h2 id="운명을-보는-장군이-변수를-택하는-방식">운명을 보는 장군이 변수를 택하는 방식</h2>
-<p>효광의 가장 큰 특징은 미래를 볼수록 오히려 현재에 뛰어든다는 점이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-59" data-cite-popover data-ref-target="ref-59" aria-label="각주 59 내용 보기" aria-expanded="false">59</a></sup></p>
-<p>그녀는 하늘의 뜻이 계산보다 위에 있는지, 계산이 하늘의 뜻보다 나은지 재는 논쟁보다 일이 닥쳤을 때 직접 나서는 편이 시원하다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>이 말은 효광이 점괘를 무시한다는 뜻이 아니라, 점괘를 본 뒤에도 몸을 움직여야만 생기는 결과를 중시한다는 뜻에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작 • 위험 경보"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<p>그녀의 한계도 바로 이 지점에서 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 개척자"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p>효광은 모든 미래를 완전히 장악하지 못하고, 개척자의 미래처럼 자신의 눈으로도 잘 보이지 않는 영역을 인정한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 개척자"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p>전투 불능 순간에는 운명이 이런 결말을 낳았다는 사실을 믿지 못하는 반응도 보인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>그래서 효광의 매력은 “틀리지 않는 예언자”가 아니라, 틀릴 수 있고 보이지 않는 것이 있음을 알면서도 판을 다시 여는 인물이라는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>그녀가 장군보다 사장이라는 호칭을 좋아하는 이유도 같은 맥락에 놓인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 호칭"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>장군이라는 두 글자는 책임과 구속을 부르지만, 효광은 그 구속 안에서도 더 자유롭고 시원시원한 방식으로 옥궐을 움직이려 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 호칭"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>효광은 질서를 버리는 반역자가 아니라, 질서가 굳어 멈추는 순간을 가장 위험하게 보는 장군이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>이 때문에 그녀의 점괘는 결말을 봉인하는 판결문이 아니라, 불리한 운세를 뒤집기 위해 어디에 손을 대야 하는지 알려 주는 시작점이 된다.<sup class="cite-ref" title="공식 HoYoWiki · 효광"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">효광</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「난 효광, 선주 『옥궐』의 융도 장군이지. 다른 사람들처럼 날 『효 사장』이라고 불러. 이번 만남에서 자잘한 것들은 점괘로 내다볼 수 있지만, 난 직접 겪어보고 싶었어——역시, 의외의 즐거움이 많네」 신비롭고 대담하며, 과감하고 변화를 추구하는 행보는 눈이 휘둥그레질 정도다. 수렵의 「눈」으로 길흉을 꿰뚫어 보고, 하늘의 뜻을 거스를 수 없다는 걸 알면서도 「융도 장군」은 여전히 홀로 위험에 뛰어든다. 어떻게 이 최악의 점괘를 뒤집고 운명을 바꿀 수 있을...</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">난 효광, 선주 「옥궐」 의 융도 장군이지. 다른 사람들처럼 날 「효 사장」 이라고 불러. 이번 만남에서 자잘한 것들은 점괘로 내다볼 수 있지만, 난 직접 겪어보고 싶었어――역시, 의외의 즐거움이 많네</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">자신에 대해 • 호칭</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「장군」 이라는 두 글자에는 자연스럽게 많은 책임과 구속이 따르지. 차라리 「사장」 이 더 시원시원하고 자유로워――물론, 난 그런 번잡한 예절 같은 건 신경 쓰지 않으니, 이름을 부르고 싶다면 안 될 것도 없지</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">신비롭고 대담하며, 과감하고 변화를 추구하는 행보는 눈이 휘둥그레질 정도다. 수렵의 「눈」 으로 길흉을 꿰뚫어 보고, 하늘의 뜻을 거스를 수 없다는 걸 알면서도 「융도 장군」 은 여천히 홀로 위험에 뛰어든다. 어떻게 이 최악의 점괘를 뒤집고 운명을 바꿀 수 있을까?</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">자신에 대해 • 「관자재의 눈」</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">두 눈으로 수만의 것을 살피는 본좌는, 거대한 파도에 언제 뒤집힐지 모르는 한 척의 배처럼 흔들리는 은하의 운명을 여러번 지켜봐왔어. 하지만 난 「본 것만이 진실」 이라 믿지 않아. 가능성이라는 건 본디 바꾸라고 존재하는 거 아닐까?</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">자신에 대해 • 관념</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">흔히 점술가들은 「사람의 계산이 하늘의 뜻을 벗어나지 못한다」 고들 하지. 실력자들은 「하늘의 뜻이 내 계산만 못 하다」 라고 늘어놓길 좋아해. 하지만 난 그렇게 이리저리 재느니 일이 닥쳤을 때 직접 나서는 게 훨씬 편하고 시원시원하더라고</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">캐릭터 스토리 • 3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 60 개방 권명: 옥궐 정무 칙령 기록 성력 ████년 무자 ██호 2 개요: 옥조 초소형화 기술 신청에 관하여 자문 내용: 비옥한 흙 특성 연구가 단계적·성과를 거두었으므로, 본원은 옥조의 추가적인 소형화 연구에 집중해야 한다고 판단함. 공조사 의견: 변지격물원이 소형화 옥조 연구 경비를 신청한 건에 대하여. 첫째, 해당 연구 방향은 공조사와 상충됨. 둘째, 공조사의 결재 없이 장군에게 직접 보고하는 것은 절차에 부합하지 않음. 결재권...</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">경원에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">다른 사람은 내가 「신책 장군」 과 매번 다툰다는데, 우린 그저 서로의 진실을 말하는 것뿐이야. 겉으로 화목한 건 선주의 발전에 도움이 되지 않는다고. 평온한 물을 뒤흔들어 수백 척의 배가 물살을 다투는 상황을 일으키고 싶다면, 내가 나서서 맡아줘야 하지</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">효광의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">효광의 인게임 대사</span></span><div class="ref-quote">전 변지격물원의 명예원장, 십방광영법계의 주인, 선주 무형문화재 작형권(雀形拳)의 계승자인 융도 장군——효광입니다</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">캐릭터 스토리 • 1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 20 개방 어느 날, 옥궐 태복사의 아침 회의가 끝난 후, 장엄하고 고요한 공기 중에 잡담 소리가 맴돌았다. 「아침 수행에 빠진 건 그렇다 쳐도, 옥궐배 패 대회에 참가하러 가다니!」 「전에 한소리 했더니 『패성』 이란 칭호를 얻을 수 있는 건 모두 효상에 통달한 사람이라면서, 못 믿겠으면 자기랑 겨뤄보자고 하더라니까...」 「그래서, 진짜 겨뤄봤어? 이겼어?」 「......」 몇 겹의 가운이 불만으로 가득한듯 바람에 펄력였다. 「저번...</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">연맹의 누군가는 법진의 계산 결과를 보고 망설이며 우왕좌왕하곤 해. 어느 점괘의 결과가 「이번 점괘는 신뢰할 수 없다」 라고 나온다면 무능한 그들의 뇌는 과부하에 걸려서 망가지겠지?</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">경원의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">경원의 인게임 대사</span></span><div class="ref-quote">앰포리어스의 인과가 궁관진에서 사라졌잖나——효광 장군은 이 이상 현상을 어떻게 보지?</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">정운의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">정운의 인게임 대사</span></span><div class="ref-quote">그런 중요한 일을 어떻게 제가 맡겠어요——이번에는 옥궐 선주의 효광 장군님을 보조하러 왔다가, 길에서 우연히 두 분을 만난 것뿐이랍니다</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">정운의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">정운의 인게임 대사</span></span><div class="ref-quote">말하자면 긴데… 아무래도 효광 장군께 직접 설명을 들어야 할 것 같아요</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">단항의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">단항의 인게임 대사</span></span><div class="ref-quote">효광 장군과 함께 스텔라론 헌터의 계획을 밝혀낼게. 이번엔 무슨 일이 있더라도 너희를 위험에 빠뜨리진 않을 거야…. 그것만큼은 내가 꼭 약속해</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">선데이의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">효광 장군이 다시 나타나면, 함께 협력 계획에 대해 이야기해 봐야겠어요. 행운을 빕니다, {NICKNAME} 씨</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">천궁이 하사한 위령의 이름은 「시륜천치명왕」 이야――그건 수렵의 사냥꾼의 「눈」 이지. 난 그걸 「시간」 으로 바꿔 부르길 좋아해. 왠지 널 계속 지켜보고 있는 것 같은 걸? 그러게 누가 은하의 대영웅이 되래?</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「전지 천군(누스)」 의 연산에서 영감을 얻어 옥궐 선주는 미래를 점치는 「십방광영법계」 를 만들었어. 화려한 보석으로 엮은 촘촘한 그물이 광활한 세상의 모습을 비추고, 층층이 겹친 빛이 끝없이 뻗어나가지――그 한 번의 사고 덕에 난 여러 가지 가능성을 살필 수 있었어. 음, 「변수」 라는 건 결국 「전환점」 의 대명사가 아닐까?</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">캐릭터 최고 레벨</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">정말로 「법안으로 세상만사를 알 수 있다」 면, 너무 재미없지 않을까?</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">행적 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">이 길엔, 앞으로 얼마나 더 많은 변수가 있을까?</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">캐릭터 스토리 • 4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 80 개방 「빛나는 하늘의 위엄은 화살이 되고, 아홉 겹의 천둥은 뼈와 살을 정화한다」 온몸의 뼈를 뒤흔드는 듯한 지극히 위엄 있는 소리가 의식의 가장 깊은 곳에서 울려 퍼졌다. 「천홍봉천」 을 거친 그녀는 마지막 시련을 넘어야만 비로소 부절을 손에 취고 「장군」 의 칭호를 얻을 수 있었다. 「첫 번째 화살, 재앙을 가르고 더러움을 부수리라!」 비록 의식만 존재하는 법계 속이라 해도, 그녀는 온몸의 솜털이 곤두서는 것을 느꼈다. 전례 없...</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">전투 시작 • 위험 경보</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">기회는 위험 속에 있는 법, 과감하게 해 봐</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">턴 시작 • 2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">훼방? 본좌도 그럴 생각이야</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">턴 대기</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">오늘은 강공이 좋겠군, 날 믿어</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">약공격 피격</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">복이 될지 누가 알겠어?</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">강공격 피격</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">대흉……</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">전투 불능</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">거짓말… 운명이 이렇다니…</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">전투 스킬 • 1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">상서로운 별, 비춰라</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">전투 스킬 • 2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">재난의 구름, 흩어져라</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">환락 스킬 • 1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">대운이 찾아오고, 순조로운 출발이 되길!</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">환락 스킬 • 2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">최악의 운세를 줄 테니, 기쁘게 받아</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">필살기 • 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">하늘의 뜻은 거스르기 어렵다고 하지만……</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">필살기 • 발동</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">본좌는 이 점괘로 하늘을 관조하리</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">전투 승리</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">법안에는 무한한 가능성이 있지</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">파티 편성 • 경원</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「융도만큼 지혜롭다」 , 신책 장군, 이 말의 진위를 시험해 볼까요?</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">부현에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">사매는 말이지… 「옥궐」 에 보고하러 왔을 때 며칠만 더 머무르라 해도 거절하고 기어코 제 시간에 돌아가버려. 어릴 땐 나와 겨루기를 참 좋아했는데, 지금은 그 대상이 나부 장군으로 바뀌었지…. 먼저 인연을 맺은 건 나인데도 말이야</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">파티 편성 • 부현</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">사매, 예전처럼 잘 협조해 주면 좋겠어</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">캐릭터 스토리 • 2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 40 개방 인적이 드문 어느 정원, 그녀는 귀향한 사매와 고요한 밤중에 마주 앉아 있었다. 소박한 나무 탁자 위에는 두 잔의 맑은 차 외에 오랫동안 먼지가 쌈인 듯한 대국용 산패 한 벌이 놓여 있었다. 「경천 사부님께는 다녀왔어?」 「제사 드리고 왔어요」 「네가 옥궐을 떠날 때 사부님께선 이미 이런 날을. 예견하셨어. 그래서, 아적도 내 제안을 고려해 볼 생각은 없는 거야? 봐, 회염에겐 손녀가 있고, 경원에겐 제자가 있잖아. 만약 언젠...</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">비소에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">천격 장군은 「수렵」 의 발톱 같아. 「발톱」 없는 「눈」 은 약하고, 「눈」 없는 「발톱」 은 앞을 못 보지. 그녀는 내 생각을 듣길 좋아하고, 나도 그녀의 지휘를 믿어. 다만――공작춤을 버리고 공작형권으로 바꾸라니, 괜히 날 높이 평가하는 것 같다니까</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">파티 편성 • 비소</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">천격 장군을 못 본 새… 또 묘수가 생각났는데, 한번 들어보실래요?</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">망귀인에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">상회의 여우족은 바람을 보고 노를 젓는다고 하지, 그녀의 솜씨는 정말 안정적이야――백성을 위해 목소리를 내고 에이언즈의 불공평함을 비난하는 그 기백이란, 참 보기 드물지. 마음에 들어</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">파티 편성 • 망귀인</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">그럼 소통과 교류를 부탁하지</div></li>
-<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">개척자에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">너의 미래는 내 눈이 아니라 너의 발밑에 달려 있어. 그 작은 비밀에 관해서라면… 하늘이 알고, 땅이 알고, 넌 알지만, 난 알 수 없지</div></li>
-<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">파티 편성 • 개척자</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">예상한 대로, 너의 운명은 여전히 잘 보이지 않네</div></li>
-<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">히메코에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">재능을 숨기고 행실을 낮추는 사람이야…. 너도 그녀의 과거에 대해선 아는 게 거의 없지 않아? 하지만 사람은 언제나 출발한 지점으로 돌아가기 마련인 법. 그리고, 그곳에서 다시 여정을 시작하지</div></li>
-<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">선데이에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">선주 장군이 페나코니의 전 결정권자를 끌어들이다니, 참 불가사의한 일이지? 내가 원한 게 바로 그 「예상 불가」 한 전환점이야. 앞길에 있을 놀라움을 기대해 줘</div></li>
-<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">파티 편성 • 히메코</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">항법사님, 잘 부탁드립니다</div></li>
-<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">파티 편성 • 선데이</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">긴장할 필요 없어요. 본좌는 타인을 강요하는 법이 없으니</div></li>
-<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">스파키에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">그 꼬맹이는 폭죽처럼 팡팡 터져서 사람들을 어쩔 줄 모르게 해. 만약 나한테 같이 놀자고 한다면… 쓰읍, 분명 전에 없던 새로운 일을 할 수 있겠지?</div></li>
-<li id="ref-50" data-reference-item data-ref-number="50"><span class="ref-title">청작에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">많은 사람이 죽을 때까지 교만하며 살지만, 그 애만은 「어리석은 척하기」 의 묘미를 아는 사람이지――휴, 못 믿겠지만 이건 장군이 되기 위한 필수 덕목이란다</div></li>
-<li id="ref-51" data-reference-item data-ref-number="51"><span class="ref-title">파티 편성 • 스파키</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">꼬맹이, 이번에도 이전만큼 즐겁게 해줄 거지?</div></li>
-<li id="ref-52" data-reference-item data-ref-number="52"><span class="ref-title">파티 편성 • 청작</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">청작, 행운을 빌게~</div></li>
-<li id="ref-53" data-reference-item data-ref-number="53"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">태복사에서 수련할 때 난 잔꾀를 부려서 옥궐배 패 놀이 대회의 우승을 여러 번 차지했어. 누군가 내 점괘는 더 갈고닦아야 한다고 하면, 인정할게. 하지만 패 놀이를 못한다고 하면, 그건 인정할 수 없어――다음에 회염, 비소 장군과 만날 때 너도 와서 구경해 볼래?</div></li>
-<li id="ref-54" data-reference-item data-ref-number="54"><span class="ref-title">경류에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「번식」 의 잔해를 이용하거나 「파멸」 의 황금 피를 불태우거나, 심지어 「풍요」 본연의 힘을 빌리는 것까지도 난 개의치 않아. 그녀가 그린 그림은 아직 날 납득시키지 못했지만 말이지</div></li>
-<li id="ref-55" data-reference-item data-ref-number="55"><span class="ref-title">파티 편성 • 경류</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">당신의 검은 아직도 예전처럼 날카로운가요?</div></li>
-<li id="ref-56" data-reference-item data-ref-number="56"><span class="ref-title">토파즈의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">토파즈의 인게임 대사</span></span><div class="ref-quote">…옥궐 선주의 효광 장군도 여기 계실 줄은 몰랐네요</div></li>
-<li id="ref-57" data-reference-item data-ref-number="57"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">전 효광 장군만큼 점괘에 정통하진 않지만, 충분한 정보를 입력하면 일정 확률로 정확한 결과를 얻을 수 있어요</div></li>
-<li id="ref-58" data-reference-item data-ref-number="58"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">설명: 이건 효광 장군의 제안입니다. 광범위한 데이터 수집은 알고리즘의 자가 개선에 도움이 되죠</div></li>
-<li id="ref-59" data-reference-item data-ref-number="59"><span class="ref-title">도시로 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">한가로움은 얻기 쉬운 법…. 아쉽지만, 본좌의 시선은 현재에 머물러 있지 않아</div></li></ol></details>
+<p>효광은 선주 「옥궐」의 융도 장군이다.<sup class="cite-ref" title="공식 HoYoWiki · 효광"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 예지 능력을 지닌 점술가이자 옥궐의 군권을 쥔 장군이라는 두 얼굴을 가져, 공식 소개에서 「하늘이 선택한 선주의 예언가」 1위와 「이 장군은 좀 거친 편」 1위 칭호를 함께 받았다.<sup class="cite-ref" title="공식 HoYoWiki · 효광"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<p>그녀는 수렵의 「눈」으로 길흉을 꿰뚫어 보면서도, 예견된 운명 앞에 멈추지 않고 직접 위험 속으로 들어가 변수를 만든다.<sup class="cite-ref" title="공식 HoYoWiki · 효광"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 「장군」이라는 두 글자보다 「효 사장」이라는 호칭을 편하게 여기고, 다른 사람들처럼 그렇게 불러 달라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 호칭"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>옥궐 태복사에서 자란 효광은 수련 시절부터 규율을 벗어나는 방식으로 배움을 넓혔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 아침 수행에 빠지고 옥궐배 패 대회에 나갔으며, 한밤중에 젊은 점술가들을 불러 법진을 그리게 하고 이방의 점괘 비술을 시험해 순찰하던 장로를 혼비백산하게 만들었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 수업 시간에는 자신이 만든 점법으로 스승에게 대놓고 도전했고, 화가 난 스승은 이를 태복에게 고했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 태복이 자비를 베풀지 않았다면 아무리 천재라도 중벌을 피하지 못했을 것이라는 말이 돌 정도였다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>장군의 부절을 손에 쥐려면 「천홍봉천」을 거친 뒤 법계 속 마지막 시련을 통과해야 했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 시련에서는 온몸의 뼈를 뒤흔드는 위엄과 천뢰처럼 떨어지는 화살이 잇따랐다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 효광은 전례 없는 위험의 징조를 읽고 평생 배운 것을 동원해 방향을 추론하며 화살들을 피했고, 조금만 방심했다면 흔적 없이 사라졌을 시련을 끝내 버텨냈다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>장군이 된 뒤에도 방식은 크게 달라지지 않았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 옥조 초소형화 연구를 놓고 공조사가 절차 위반과 기존 방향 상충을 이유로 반대하자, 효광은 결재 문서에 &quot;옥조를 크게 만들어 성능을 높이는 건 어느 천재 머리에서 나온 생각인지&quot;라고 반문하며 연구를 승인했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 옥조가 선주의 명줄과 직결되더라도 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>의 효율을 감안하면 머뭇거릴 시간이 없다는 것이 그녀의 이유였다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 같은 문서에서 태복사가 기존 순항 경로를 위험도 낮고 수익이 안정적이라고 점쳤을 때도, 효광은 안전한 답만 따르는 쪽을 택하지 않았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>사매 <a class="wiki-link" href="char-804.html" title="부현">부현</a>이 옥궐에 보고하러 왔을 때, 효광은 며칠 더 머무르라는 권유를 거절하고 제시간에 돌아가는 그녀에게 장군 자리를 물려주겠다고 제안했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> &quot;회염에겐 손녀가 있고 <a class="wiki-link" href="char-26.html" title="경원">경원</a>에겐 제자가 있으니, 언젠가 내가 사부님의 길을 따라가면 네가 내 자리를 잇는 게 서로에게 좋다&quot;는 것이었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 부현은 &quot;장군의 자리를 이어받은 건 직위 변동일 뿐인데 어째서 성격까지 바뀐 거냐&quot;고 되물었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 효광은 스승 경천이 남긴 &quot;운명은 처음부터 끝까지 외길&quot;이라는 가르침을 떠올리며 이 제안을 이어 갔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p><a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a>의 인과가 궁관진에서 사라지는 이상 현상이 벌어지자, 경원은 효광에게 &quot;이 이상 현상을 어떻게 보느냐&quot;고 의견을 물었다.<sup class="cite-ref" title="게임 본편 · 경원의 언급 · 경원의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <a class="wiki-link" href="char-25.html" title="정운">정운</a>은 효광을 보조하러 왔다가 <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a> 일행과 마주쳤다고 말하며, 중요한 설명은 효광에게 직접 들어야 한다고 판단했다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <a class="wiki-link" href="char-8.html" title="단항">단항</a>은 효광과 함께 <a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>의 계획을 밝혀내겠다고 다짐했고, <a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 효광이 다시 나타나면 협력 계획을 논의해야 한다고 말했다.<sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 개척자는 어느 곳에서 효광 장군의 것으로 보이는 진료 기록을 발견하기도 했다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
+<h2 id="능력과-점술">능력과 점술</h2>
+<p>효광이 받은 위령은 수렵의 사냥꾼의 「눈」인 「시륜천치명왕」이며, 그녀는 이를 「시간」이라 바꿔 부르길 좋아한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 옥궐은 전지 천군 <a class="wiki-link" href="nous.html" title="⌈ 지식 ⌋ 누스">누스</a>의 연산에서 영감을 얻어 미래를 점치는 「십방광영법계」를 만들었고, 효광은 이 법계를 통한 사고로 여러 가능성을 살필 수 있었다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
+<p>그녀는 &quot;본 것만이 진실&quot;이라 믿지 않고, 가능성은 바꾸기 위해 존재한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 「관자재의 눈」"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 점술가들이 하늘의 뜻과 사람의 계산 중 무엇이 우위인지 따지는 동안, 효광은 일이 닥쳤을 때 직접 나서는 편이 시원하다고 답한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 관념"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> &quot;법안으로 세상만사를 다 알 수 있다면 재미없다&quot;는 말도 같은 태도에서 나온다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 캐릭터 최고 레벨"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 전투에서는 &quot;기회는 위험 속에 있는 법, 과감하게 해 봐&quot;라고 말하고, 전투 불능 상태에서는 &quot;거짓말… 운명이 이렇다니…&quot;라며 자신이 읽은 점괘를 스스로 믿지 못하는 반응을 보인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 시작 • 위험 경보"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
+<p>효광의 점술은 스타피스 컴퍼니 쪽에서도 화제가 된다. 토파즈는 옥궐 선주의 효광 장군이 그 자리에 있을 줄 몰랐다고 반응했고, 펄은 자신이 효광만큼 점괘에 정통하지 않지만 충분한 정보를 입력하면 일정 확률로 정확한 결과를 얻을 수 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 토파즈의 언급 · 토파즈의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 광범위한 데이터 수집이 알고리즘의 자가 개선에 도움이 된다는 설명은 효광의 제안에서 나왔다고 펄은 전한다.<sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>효광은 「장군」이라는 두 글자에 책임과 구속이 따른다고 여기고, 「사장」이라는 호칭이 훨씬 시원시원하고 자유롭다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 호칭"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 태복사 시절부터 패 놀이에 능해 옥궐배 대회 우승을 여러 차례 차지했고, &quot;점괘는 더 갈고닦아야 해도 패 놀이를 못한다는 말은 인정할 수 없다&quot;고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 공무가 아무리 바빠도 시간을 내 옥을 길들이는 손 전용 연고를 직접 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 손 보호"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
+<p>경원과의 관계는 표면적 화합보다 논쟁으로 유지된다. 효광은 사람들이 자신과 「신책 장군」 경원이 매번 다툰다고 보지만, 서로의 진실을 말하는 것뿐이며 겉으로만 화목한 상태는 선주의 발전에 도움이 되지 않는다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 경원과 동료로 함께할 때는 &quot;「융도만큼 지혜롭다」, 신책 장군, 이 말의 진위를 시험해 볼까요?&quot;라며 도발한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 경원"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
+<p>부현은 효광의 사매다. 효광은 부현이 어릴 때는 자신과 겨루기를 좋아했는데 지금은 그 대상이 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">나부</a> 장군으로 바뀌었다며 아쉬워하고, 동료로 함께할 때는 &quot;사매, 예전처럼 잘 협조해 주면 좋겠어&quot;라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부현에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 부현"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
+<p><a class="wiki-link" href="char-2947.html" title="비소">비소</a>와는 수렵의 「발톱」과 「눈」이라는 비유로 묶인다. 효광은 천격 장군 비소를 발톱에, 자신을 눈에 비유하며 &quot;발톱 없는 눈은 약하고 눈 없는 발톱은 앞을 못 본다&quot;고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 비소는 효광의 생각을 듣기 좋아하고 효광은 비소의 지휘를 믿지만, 비소가 공작춤을 버리고 공작형권으로 바꾸라 권하자 효광은 &quot;괜히 날 높이 평가하는 것&quot;이라며 손사래를 친다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 동료로 함께할 때는 비소에게 새 묘수를 들려주겠다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 비소"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
+<p>개척자에 대해서는 &quot;너의 미래는 내 눈이 아니라 너의 발밑에 달려 있다&quot;고 말하고, 함께 동료로 함께할 때도 &quot;예상한 대로, 너의 운명은 여전히 잘 보이지 않는다&quot;고 인정한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 개척자"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup></p>
+<p>망귀인에 대해서는 상회의 여우족으로서 백성을 위해 목소리를 내고 에이언즈의 불공평함을 비난하는 기백을 마음에 들어 하고, 동료로 함께할 때는 소통과 교류를 부탁한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 망귀인에 대해"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 망귀인"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>는 &quot;재능을 숨기고 행실을 낮추는 사람&quot;으로, 스파키는 &quot;폭죽처럼 팡팡 터져 사람들을 어쩔 줄 모르게 하는&quot; 존재로 평가한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히메코에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 스파키에 대해"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 청작에 대해서는 &quot;어리석은 척하기의 묘미&quot;를 아는 것이 장군이 되기 위한 필수 덕목이라고까지 말하고, 경류에 대해서는 번식의 잔해나 파멸의 황금 피, 풍요의 힘을 빌리는 것까지는 개의치 않지만 &quot;그녀가 그린 그림은 아직 날 납득시키지 못했다&quot;고 선을 긋는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 청작에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경류에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 선데이에 대해서는 선주 장군이 페나코니의 전 결정권자를 끌어들인 일을 불가사의하게 여기면서도, 자신이 원한 것이 바로 그런 예상 불가한 전환점이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 선데이에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-26.html">경원</a>, <a href="char-804.html">부현</a>, <a href="char-2947.html">비소</a> — 옥궐 안에서 효광과 정무·전장을 나누는 동료 장군들. 관계의 세부 내용은 성격과 인간관계 문단에 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 경원에 대해"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 부현에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비소에 대해"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></li>
+<li><a href="trailblazer.html">개척자</a> — 효광의 예지로도 잘 보이지 않는 유일한 변수로 다뤄지는 인물.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 개척자에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></li>
+<li><a href="char-8.html">단항</a>, <a href="char-3150.html">선데이</a> — <a href="amphoreus.html">앰포리어스</a> 사건 이후 효광과 <a href="stellaron-hunters.html">스텔라론 헌터</a> 대응 협력을 예고한 인물들.<sup class="cite-ref" title="게임 본편 · 단항의 언급 · 단항의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></li>
+<li><a href="char-25.html">정운</a> — 효광을 보조하다 <a href="trailblazer.html">개척자</a> 일행과 마주친 옥궐 소속 인물.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></li>
+<li><a href="topaz.html">토파즈</a> — <a href="interastral-peace-corporation.html">스타피스 컴퍼니</a> 쪽에서 효광의 점술과 데이터 판단을 비교하는 인물들. 자세한 내용은 능력과 점술 문단에 있다.<sup class="cite-ref" title="게임 본편 · 토파즈의 언급 · 토파즈의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 펄의 언급 · 펄의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">효광</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「난 효광, 선주 『옥궐』의 융도 장군이지. 다른 사람들처럼 날 『효 사장』이라고 불러. 이번 만남에서 자잘한 것들은 점괘로 내다볼 수 있지만, 난 직접 겪어보고 싶었어——역시, 의외의 즐거움이 많네」 신비롭고 대담하며, 과감하고 변화를 추구하는 행보는 눈이 휘둥그레질 정도다. 수렵의 「눈」으로 길흉을 꿰뚫어 보고, 하늘의 뜻을 거스를 수 없다는 걸 알면서도 「융도 장군」은 여전히 홀로 위험에 뛰어든다. 어떻게 이 최악의 점괘를 뒤집고 운명을 바꿀 수 있을...</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">선주 「옥궐」</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">신비롭고 대담하며, 과감하고 변화를 추구하는 행보는 눈이 휘둥그레질 정도다. 수렵의 「눈」 으로 길흉을 꿰뚫어 보고, 하늘의 뜻을 거스를 수 없다는 걸 알면서도 「융도 장군」 은 여천히 홀로 위험에 뛰어든다. 어떻게 이 최악의 점괘를 뒤집고 운명을 바꿀 수 있을까?</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">난 효광, 선주 「옥궐」 의 융도 장군이지. 다른 사람들처럼 날 「효 사장」 이라고 불러. 이번 만남에서 자잘한 것들은 점괘로 내다볼 수 있지만, 난 직접 겪어보고 싶었어――역시, 의외의 즐거움이 많네</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">자신에 대해 • 호칭</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「장군」 이라는 두 글자에는 자연스럽게 많은 책임과 구속이 따르지. 차라리 「사장」 이 더 시원시원하고 자유로워――물론, 난 그런 번잡한 예절 같은 건 신경 쓰지 않으니, 이름을 부르고 싶다면 안 될 것도 없지</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">캐릭터 스토리 • 1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 20 개방 어느 날, 옥궐 태복사의 아침 회의가 끝난 후, 장엄하고 고요한 공기 중에 잡담 소리가 맴돌았다. 「아침 수행에 빠진 건 그렇다 쳐도, 옥궐배 패 대회에 참가하러 가다니!」 「전에 한소리 했더니 『패성』 이란 칭호를 얻을 수 있는 건 모두 효상에 통달한 사람이라면서, 못 믿겠으면 자기랑 겨뤄보자고 하더라니까...」 「그래서, 진짜 겨뤄봤어? 이겼어?」 「......」 몇 겹의 가운이 불만으로 가득한듯 바람에 펄력였다. 「저번...</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">캐릭터 스토리 • 4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 80 개방 「빛나는 하늘의 위엄은 화살이 되고, 아홉 겹의 천둥은 뼈와 살을 정화한다」 온몸의 뼈를 뒤흔드는 듯한 지극히 위엄 있는 소리가 의식의 가장 깊은 곳에서 울려 퍼졌다. 「천홍봉천」 을 거친 그녀는 마지막 시련을 넘어야만 비로소 부절을 손에 취고 「장군」 의 칭호를 얻을 수 있었다. 「첫 번째 화살, 재앙을 가르고 더러움을 부수리라!」 비록 의식만 존재하는 법계 속이라 해도, 그녀는 온몸의 솜털이 곤두서는 것을 느꼈다. 전례 없...</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">캐릭터 스토리 • 3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 60 개방 권명: 옥궐 정무 칙령 기록 성력 ████년 무자 ██호 2 개요: 옥조 초소형화 기술 신청에 관하여 자문 내용: 비옥한 흙 특성 연구가 단계적·성과를 거두었으므로, 본원은 옥조의 추가적인 소형화 연구에 집중해야 한다고 판단함. 공조사 의견: 변지격물원이 소형화 옥조 연구 경비를 신청한 건에 대하여. 첫째, 해당 연구 방향은 공조사와 상충됨. 둘째, 공조사의 결재 없이 장군에게 직접 보고하는 것은 절차에 부합하지 않음. 결재권...</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">캐릭터 스토리 • 2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv. 40 개방 인적이 드문 어느 정원, 그녀는 귀향한 사매와 고요한 밤중에 마주 앉아 있었다. 소박한 나무 탁자 위에는 두 잔의 맑은 차 외에 오랫동안 먼지가 쌈인 듯한 대국용 산패 한 벌이 놓여 있었다. 「경천 사부님께는 다녀왔어?」 「제사 드리고 왔어요」 「네가 옥궐을 떠날 때 사부님께선 이미 이런 날을. 예견하셨어. 그래서, 아적도 내 제안을 고려해 볼 생각은 없는 거야? 봐, 회염에겐 손녀가 있고, 경원에겐 제자가 있잖아. 만약 언젠...</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">경원의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">경원의 인게임 대사</span></span><div class="ref-quote">앰포리어스의 인과가 궁관진에서 사라졌잖나——효광 장군은 이 이상 현상을 어떻게 보지?</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">정운의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">정운의 인게임 대사</span></span><div class="ref-quote">그런 중요한 일을 어떻게 제가 맡겠어요——이번에는 옥궐 선주의 효광 장군님을 보조하러 왔다가, 길에서 우연히 두 분을 만난 것뿐이랍니다</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">정운의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">정운의 인게임 대사</span></span><div class="ref-quote">말하자면 긴데… 아무래도 효광 장군께 직접 설명을 들어야 할 것 같아요</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">단항의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">단항의 인게임 대사</span></span><div class="ref-quote">효광 장군과 함께 스텔라론 헌터의 계획을 밝혀낼게. 이번엔 무슨 일이 있더라도 너희를 위험에 빠뜨리진 않을 거야…. 그것만큼은 내가 꼭 약속해</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">선데이의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">효광 장군이 다시 나타나면, 함께 협력 계획에 대해 이야기해 봐야겠어요. 행운을 빕니다, {NICKNAME} 씨</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">설마, 이건… 효광 장군의 진료 기록?</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">천궁이 하사한 위령의 이름은 「시륜천치명왕」 이야――그건 수렵의 사냥꾼의 「눈」 이지. 난 그걸 「시간」 으로 바꿔 부르길 좋아해. 왠지 널 계속 지켜보고 있는 것 같은 걸? 그러게 누가 은하의 대영웅이 되래?</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「전지 천군(누스)」 의 연산에서 영감을 얻어 옥궐 선주는 미래를 점치는 「십방광영법계」 를 만들었어. 화려한 보석으로 엮은 촘촘한 그물이 광활한 세상의 모습을 비추고, 층층이 겹친 빛이 끝없이 뻗어나가지――그 한 번의 사고 덕에 난 여러 가지 가능성을 살필 수 있었어. 음, 「변수」 라는 건 결국 「전환점」 의 대명사가 아닐까?</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">자신에 대해 • 「관자재의 눈」</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">두 눈으로 수만의 것을 살피는 본좌는, 거대한 파도에 언제 뒤집힐지 모르는 한 척의 배처럼 흔들리는 은하의 운명을 여러번 지켜봐왔어. 하지만 난 「본 것만이 진실」 이라 믿지 않아. 가능성이라는 건 본디 바꾸라고 존재하는 거 아닐까?</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">자신에 대해 • 관념</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">흔히 점술가들은 「사람의 계산이 하늘의 뜻을 벗어나지 못한다」 고들 하지. 실력자들은 「하늘의 뜻이 내 계산만 못 하다」 라고 늘어놓길 좋아해. 하지만 난 그렇게 이리저리 재느니 일이 닥쳤을 때 직접 나서는 게 훨씬 편하고 시원시원하더라고</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">캐릭터 최고 레벨</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">정말로 「법안으로 세상만사를 알 수 있다」 면, 너무 재미없지 않을까?</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">전투 시작 • 위험 경보</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">기회는 위험 속에 있는 법, 과감하게 해 봐</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">전투 불능</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">거짓말… 운명이 이렇다니…</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">토파즈의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">토파즈의 인게임 대사</span></span><div class="ref-quote">…옥궐 선주의 효광 장군도 여기 계실 줄은 몰랐네요</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">전 효광 장군만큼 점괘에 정통하진 않지만, 충분한 정보를 입력하면 일정 확률로 정확한 결과를 얻을 수 있어요</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">펄의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">펄의 인게임 대사</span></span><div class="ref-quote">설명: 이건 효광 장군의 제안입니다. 광범위한 데이터 수집은 알고리즘의 자가 개선에 도움이 되죠</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">태복사에서 수련할 때 난 잔꾀를 부려서 옥궐배 패 놀이 대회의 우승을 여러 번 차지했어. 누군가 내 점괘는 더 갈고닦아야 한다고 하면, 인정할게. 하지만 패 놀이를 못한다고 하면, 그건 인정할 수 없어――다음에 회염, 비소 장군과 만날 때 너도 와서 구경해 볼래?</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">잡담 • 손 보호</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">옥을 길들이는 일부터, 별자리를 다루는 일까지 모두 숙련된 손이 필요하지. 지금은 아무리 공무가 바빠도 꼭 시간을 내서 직접 손 전용 연고를 만들곤 해</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">경원에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">다른 사람은 내가 「신책 장군」 과 매번 다툰다는데, 우린 그저 서로의 진실을 말하는 것뿐이야. 겉으로 화목한 건 선주의 발전에 도움이 되지 않는다고. 평온한 물을 뒤흔들어 수백 척의 배가 물살을 다투는 상황을 일으키고 싶다면, 내가 나서서 맡아줘야 하지</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">파티 편성 • 경원</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「융도만큼 지혜롭다」 , 신책 장군, 이 말의 진위를 시험해 볼까요?</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">부현에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">사매는 말이지… 「옥궐」 에 보고하러 왔을 때 며칠만 더 머무르라 해도 거절하고 기어코 제 시간에 돌아가버려. 어릴 땐 나와 겨루기를 참 좋아했는데, 지금은 그 대상이 나부 장군으로 바뀌었지…. 먼저 인연을 맺은 건 나인데도 말이야</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">파티 편성 • 부현</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">사매, 예전처럼 잘 협조해 주면 좋겠어</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">비소에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">천격 장군은 「수렵」 의 발톱 같아. 「발톱」 없는 「눈」 은 약하고, 「눈」 없는 「발톱」 은 앞을 못 보지. 그녀는 내 생각을 듣길 좋아하고, 나도 그녀의 지휘를 믿어. 다만――공작춤을 버리고 공작형권으로 바꾸라니, 괜히 날 높이 평가하는 것 같다니까</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">파티 편성 • 비소</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">천격 장군을 못 본 새… 또 묘수가 생각났는데, 한번 들어보실래요?</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">개척자에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">너의 미래는 내 눈이 아니라 너의 발밑에 달려 있어. 그 작은 비밀에 관해서라면… 하늘이 알고, 땅이 알고, 넌 알지만, 난 알 수 없지</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">파티 편성 • 개척자</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">예상한 대로, 너의 운명은 여전히 잘 보이지 않네</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">망귀인에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">상회의 여우족은 바람을 보고 노를 젓는다고 하지, 그녀의 솜씨는 정말 안정적이야――백성을 위해 목소리를 내고 에이언즈의 불공평함을 비난하는 그 기백이란, 참 보기 드물지. 마음에 들어</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">파티 편성 • 망귀인</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">그럼 소통과 교류를 부탁하지</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">히메코에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">재능을 숨기고 행실을 낮추는 사람이야…. 너도 그녀의 과거에 대해선 아는 게 거의 없지 않아? 하지만 사람은 언제나 출발한 지점으로 돌아가기 마련인 법. 그리고, 그곳에서 다시 여정을 시작하지</div></li>
+<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">스파키에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">그 꼬맹이는 폭죽처럼 팡팡 터져서 사람들을 어쩔 줄 모르게 해. 만약 나한테 같이 놀자고 한다면… 쓰읍, 분명 전에 없던 새로운 일을 할 수 있겠지?</div></li>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">청작에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">많은 사람이 죽을 때까지 교만하며 살지만, 그 애만은 「어리석은 척하기」 의 묘미를 아는 사람이지――휴, 못 믿겠지만 이건 장군이 되기 위한 필수 덕목이란다</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">경류에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">「번식」 의 잔해를 이용하거나 「파멸」 의 황금 피를 불태우거나, 심지어 「풍요」 본연의 힘을 빌리는 것까지도 난 개의치 않아. 그녀가 그린 그림은 아직 날 납득시키지 못했지만 말이지</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">선데이에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/4736?lang=ko-kr">원문</a></span><div class="ref-quote">선주 장군이 페나코니의 전 결정권자를 끌어들이다니, 참 불가사의한 일이지? 내가 원한 게 바로 그 「예상 불가」 한 전환점이야. 앞길에 있을 놀라움을 기대해 줘</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
-  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%9A%A8%EA%B4%91&amp;page_slug=char-4736">수정 요청</a></div>
@@ -838,12 +713,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-4736">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%ED%9A%A8%EA%B4%91&amp;body=%ED%9A%A8%EA%B4%91+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-4736.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

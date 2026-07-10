@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>아르마 · hoyohoyo.wiki</title>
-  <meta name="description" content="아르마는 선주 「나부」 소속 NPC로, 유폐옥에서 활동하는 감옥 상인이다. 그는 자신을 「아르마 철창 그룹」의 최고 경영자라고 소개하며, 손님에게 “아르마 사장”이나 “아르마 씨”라고 불러 달라고 한다. 아르마의 장사는 단순한 개인 상점이 아니라, 유폐옥 안의 물건 판매, 생활 서비스, 물류, 신제품 개발을 묶어 움직이는 작은 사업체에 가깝다.">
+  <meta name="description" content="아르마는 선주 「나부」의 유폐옥에서 활동하는 감옥 상인이다. 그는 시라토리와 함께 「아르마 철창 그룹」을 세워 최고 경영자를 맡고, &quot;아르마 사장&quot;이나 &quot;아르마 씨&quot;로 불러 달라고 소개한다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="아르마 · hoyohoyo.wiki">
-  <meta property="og:description" content="아르마는 선주 「나부」 소속 NPC로, 유폐옥에서 활동하는 감옥 상인이다. 그는 자신을 「아르마 철창 그룹」의 최고 경영자라고 소개하며, 손님에게 “아르마 사장”이나 “아르마 씨”라고 불러 달라고 한다. 아르마의 장사는 단순한 개인 상점이 아니라, 유폐옥 안의 물건 판매, 생활 서비스, 물류, 신제품 개발을 묶어 움직이는 작은 사업체에 가깝다.">
+  <meta property="og:description" content="아르마는 선주 「나부」의 유폐옥에서 활동하는 감옥 상인이다. 그는 시라토리와 함께 「아르마 철창 그룹」을 세워 최고 경영자를 맡고, &quot;아르마 사장&quot;이나 &quot;아르마 씨&quot;로 불러 달라고 소개한다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/npc-3003.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/npc-3003.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,62 +620,46 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>아르마</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EB%A5%B4%EB%A7%88&amp;page_slug=npc-3003">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>아르마</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="assets/wiki-images/77/65d4443dff7ad159d239072f67d53b43_661146462083579-77db53e201b0.webp" alt="아르마 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 공식 인물 이미지</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-xianzhou.html">선주 연맹</a><span>아르마</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EB%A5%B4%EB%A7%88&amp;page_slug=npc-3003">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>아르마</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">선주 연맹</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/05/11771384/65d4443dff7ad159d239072f67d53b43_6611464620835798489.png" alt="아르마 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>아르마는 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a> 소속 NPC로, 유폐옥에서 활동하는 감옥 상인이다.<sup class="cite-ref" title="공식 HoYoWiki · 아르마"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 자신을 「아르마 철창 그룹」의 최고 경영자라고 소개하며, 손님에게 “아르마 사장”이나 “아르마 씨”라고 불러 달라고 한다. 아르마의 장사는 단순한 개인 상점이 아니라, 유폐옥 안의 물건 판매, 생활 서비스, 물류, 신제품 개발을 묶어 움직이는 작은 사업체에 가깝다.<sup class="cite-ref" title="게임 본편 · 아르마의 언급 · 아르마의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>아르마 철창 그룹은 아르마와 시라토리가 함께 세웠으며, “유한한 자원으로 무한한 서비스를 제공한다”는 말을 내세운다. 이 조직은 간식, 음료, 일용품, 미소, 약 달이기까지 손님의 필요를 목표로 삼겠다고 홍보하며, 감옥 안의 부족함을 거래 가능한 서비스로 바꾼다. 공식 관련 항목에는 「도적의 촉수」와 「철창표 바디워시」가 있고, 관련 서적으로는 「아르마 철창 그룹 채용 공고」가 연결된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 서적"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>아르마는 유폐옥 안에서 언젠가 필요해지는 상인으로 자리 잡는다. 시라토리는 죄수들이 아르마에게 물건을 사고 자신이 가져다주기를 기다린다고 말하며, 철창 그룹이 감옥 내부의 구매와 배송을 잇는 유통망처럼 움직인다는 점을 드러낸다. 이 반복 거래 구조 때문에 아르마의 가게는 단발성 상점보다 유폐옥 생활의 불편을 계속 흡수하는 내부 서비스에 가깝다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>아르마의 강점은 감옥 안의 사소한 폐자원과 생활 수요를 상품으로 바꾸는 감각이다. <a class="wiki-link" href="npc-3006.html" title="구등">구등</a>은 아르마가 감옥의 작은 쓰레기를 이용해 감옥 생활의 질을 크게 올릴 수 있는 제품을 잘 만든다고 평가한다. 동시에 구등은 그 결과물이 어디까지나 소소한 수공예 제품이라고 말하므로, 아르마의 영향력은 거대한 기술력보다 좁은 환경에 맞춘 실용성과 장사 감각에서 나온다.<sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>아르마는 다른 인물의 물건에서도 사업 기회를 빠르게 찾아낸다. 구등이 처음 치약을 만들었을 때, 아르마는 그 안에서 비즈니스 기회를 포착하고 구등을 철창 그룹에 끌어들였다. 이 사건은 아르마가 직접 물건을 만드는 장인일 뿐 아니라, 주변의 재능과 재료를 조직 안으로 흡수하는 운영자라는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>아르마의 위상은 전투력이나 공권력보다 유폐옥 내부의 생활 인프라에 가깝다.<sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 시라토리는 유폐옥에 온 지 얼마 안 된 사람은 아르마 철창 그룹을 모를 수 있지만, 유폐옥에 있으면 언젠가 그 그룹이 필요할 때가 온다고 말한다. 이 말은 아르마가 감옥 안에서 공식 제도 바깥의 편의와 욕구를 담당하는 인물이라는 점을 압축한다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>아르마 철창 그룹은 구성원별 역할도 갖춘다.<sup class="cite-ref" title="게임 본편 · 몰래 음모를 꾸미는 기계새의 언급 · 몰래 음모를 꾸미는 기계새의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 시라토리는 자신에게 아르마 철창 그룹의 수석 물류 관리자라는 신분이 있다고 말하고, 구등은 자신을 수석 기술 연구원이라고 소개한다.<sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 물류와 기술 개발이 나뉘어 있다는 점은 이 조직이 농담 같은 이름과 달리, 유폐옥 안에서 실제로 물건을 만들고 전달하는 구조를 갖췄음을 보여준다.<sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>아르마의 장사는 감옥 안의 결핍을 완화하지만, 그 결핍을 계속 수익으로 바꾸는 방식이기도 하다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> “당신의 니즈가 아르마 철창 그룹의 목표”라는 홍보 문구는 친절한 서비스처럼 들리지만, 동시에 유폐옥에서 생기는 불편과 욕구가 모두 상품이 될 수 있음을 말한다. 그래서 아르마는 유폐옥을 바깥에서 구원하는 인물이 아니라, 그 안에서 살아가는 사람들이 당장 필요한 것을 거래하게 만드는 상인이다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>시라토리는 아르마 철창 그룹의 물류를 맡으며, 죄수들이 아르마에게 산 물건을 자신이 가져다주기를 기다린다고 말한다. 이 관계에서 아르마는 판매와 조직 운영의 중심이고, 시라토리는 유폐옥 내부의 배송을 맡는 실무자에 가깝다.<sup class="cite-ref" title="게임 본편 · 몰래 음모를 꾸미는 기계새의 언급 · 몰래 음모를 꾸미는 기계새의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 아르마와 시라토리가 함께 철창 그룹을 세웠다는 점까지 고려하면, 이 조직은 한 명의 상점이 아니라 공동 창업자와 물류 담당자가 있는 감옥 내부 사업체다.<sup class="cite-ref" title="게임 본편 · 아르마의 언급 · 아르마의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>구등은 아르마 철창 그룹의 수석 기술 연구원으로, 평소 아르마를 도와 신제품을 개발하고 일부 약품을 직접 판매한다.<sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 그는 과거 「약왕의 비전」의 제자였지만, 현재는 분수에 맞는 장사를 하며 아르마와 시라토리와 함께 철창 그룹을 더 크고 강하게 만들고 싶어 한다.<sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 구등의 치약을 보고 사업 기회를 잡은 쪽이 아르마였다는 점은, 아르마가 기술자를 단순히 곁에 둔 것이 아니라 작은 발명을 상품 라인으로 바꾸는 역할을 한다는 뜻이다.<sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>가상의 대호와 가상의 서교의 언급은 아르마가 상점 운영 밖에서도 손을 뻗고 있음을 보여준다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 가상의 서교의 언급 · 가상의 서교의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 예산 삭감으로 전문 작가를 고용할 수 없던 상황에서, 가상 캐릭터의 대화 스크립트는 유폐옥의 보리인 아르마가 작은 호의로 써주었다. 가상의 서교는 가상 캐릭터 시스템에서 아르마가 스크립트를 담당하고 자신이 기능적인 부분을 맡았다고 말하므로, 아르마는 물건을 파는 상인인 동시에 유폐옥 안의 프로젝트에 말과 홍보 문구를 공급하는 인물이기도 하다.<sup class="cite-ref" title="게임 본편 · 가상의 서교의 언급 · 가상의 서교의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>이 업적은 아르마 개인보다 철창 그룹 전체를 거래 대상으로 묶어 보여주며, 작중에서 이 조직이 아르마, 시라토리, 구등 같은 구성원을 통해 플레이어와 접촉한다는 점을 확인시킨다.<sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 — 업적 · 업적 · Unknown의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<h2 id="철창-안의-사업-감각">철창 안의 사업 감각</h2>
-<p>아르마의 핵심은 감옥을 견디는 법을 상품으로 바꾸는 능력이다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그는 쓰레기, 수공예, 치약, 일용품, 약 달이기 같은 작은 요소를 모아 유폐옥 생활의 불편을 줄이는 서비스로 포장한다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 이 방식은 거창한 구원이나 반란이 아니라, 닫힌 공간 안에서 사람들이 계속 필요로 하는 것을 정확히 찾아내는 상인의 생존법이다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>아르마 철창 그룹의 반복 구호인 “최고의 서비스를 제공합니다”는 농담처럼 들리지만, 작중에서는 조직의 정체성을 만드는 문장이다.<sup class="cite-ref" title="게임 본편 · 아르마의 언급 · 아르마의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 아르마의 언급 · 아르마의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 아르마, 구등, 홍보 스크립트가 같은 방향의 말을 반복하면서, 철창 그룹은 유폐옥의 결핍을 서비스 언어로 덮고 거래 가능한 형태로 바꾼다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 그래서 아르마는 감옥의 질서를 무너뜨리는 위험한 인물이라기보다, 그 질서 안에서 가장 빠르게 수요를 읽고 조직을 굴리는 생활형 사업가로 자리 잡는다.<sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">아르마</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3003?lang=ko-kr">원문</a></span><div class="ref-quote">감옥 상인</div></li>
+<p>아르마는 선주 「나부」의 유폐옥에서 활동하는 감옥 상인이다.<sup class="cite-ref" title="공식 HoYoWiki · 아르마"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 시라토리와 함께 「아르마 철창 그룹」을 세워 최고 경영자를 맡고, &quot;아르마 사장&quot;이나 &quot;아르마 씨&quot;로 불러 달라고 소개한다.<sup class="cite-ref" title="게임 본편 · 아르마의 언급 · 아르마의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 아르마의 언급 · 아르마의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>아르마 철창 그룹은 &quot;유한한 자원으로 무한한 서비스를 제공한다&quot;를 내세우며, 간식과 음료, 일용품, 미소, 약 달이기까지 손님의 필요를 채우겠다고 홍보한다.<sup class="cite-ref" title="게임 본편 · 아르마의 언급 · 아르마의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 시라토리는 유폐옥에 온 지 얼마 안 된 사람은 이 그룹을 모를 수 있지만, 감옥에 있으면 언젠가 그룹이 필요해진다고 말한다.<sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그는 스스로 수석 물류 관리자를 자처하며, 죄수들이 아르마에게 산 물건을 자신이 가져다주기를 기다린다고 말한다.<sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p><a class="wiki-link" href="npc-3006.html" title="구등">구등</a>은 「약왕의 비전」의 제자였다가 지금은 철창 그룹의 수석 기술 연구원으로, 평소 아르마를 도와 신제품을 개발하고 일부 약품을 직접 팔기도 한다.<sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그는 자신이 처음 치약을 만들었을 때 아르마가 거기서 사업 기회를 포착해 자신을 끌어들였다고 말한다.<sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 구등은 아르마가 감옥의 작은 쓰레기로 생활의 질을 크게 높이는 제품을 잘 만든다고 평가하면서도, 그 결과물은 어디까지나 소소한 수공예 제품이라고 덧붙인다.<sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>예산 삭감으로 전문 작가를 고용할 수 없었던 &quot;가상 캐릭터&quot; 프로젝트에서는, 아르마가 유폐옥의 &quot;보리인&quot;으로서 대화 스크립트를 대신 써 주었다.<sup class="cite-ref" title="게임 본편 · 가상의 대호의 언급 · 가상의 대호의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 가상의 서교는 이 시스템에서 아르마가 스크립트를, 자신이 기능적인 부분을 담당했다고 말한다.<sup class="cite-ref" title="게임 본편 · 가상의 서교의 언급 · 가상의 서교의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li>시라토리는 아르마 철창 그룹의 수석 물류 관리자로, 아르마가 판매한 물건을 감옥 안에서 배달한다.<sup class="cite-ref" title="게임 본편 · 시라토리의 언급 · 시라토리의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 몰래 음모를 꾸미는 기계새라는 인물도 같은 &quot;수석 물류 관리자&quot; 직함을 자처하며, 자기 본체는 여전히 감옥에 갇혀 있으니 걱정 말라고 말한다.<sup class="cite-ref" title="게임 본편 · 몰래 음모를 꾸미는 기계새의 언급 · 몰래 음모를 꾸미는 기계새의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></li>
+<li><a href="npc-3006.html">구등</a> — <a href="npc-3006.html">구등</a>은 수석 기술 연구원으로, 자신이 만든 치약이 아르마 철창 그룹의 상품이 된 계기를 제공했다.<sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 구등의 언급 · 구등의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">아르마</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3003?lang=ko-kr">원문</a></span><div class="ref-quote">감옥 상인</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3003?lang=ko-kr">원문</a></span><div class="ref-quote">선주 「나부」</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">아르마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아르마의 인게임 대사</span></span><div class="ref-quote">어떠세요? 아르마 철창 그룹이 도와드릴 일이 있을까요?</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">가상의 대호의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">가상의 대호의 인게임 대사</span></span><div class="ref-quote">「아르마 철창 그룹은 당신을 위해 최고의 서비스를 제공합니다! 간식과 음료, 일용품, 미소, 약 달이기까지! 당신의 니즈가 아르마 철창 그룹의 목표입니다!」</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">시라토리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시라토리의 인게임 대사</span></span><div class="ref-quote">그리고 나한텐 아르마 철창 그룹의 수석 물류 관리자라는 다른 신분도 있다고. 죄수들은 아르마에서 물건을 사는데 이걸 내가 가져다주길 눈알 빠지게 기다리거든</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">아마 절 잘 모르실 테니 자기소개를 하겠습니다! 저는 예전에 「약왕의 비전」의 제자였습니다. 지금은 아르마 철창 그룹의 수석 기술 연구원이에요</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3003?lang=ko-kr">원문</a></span><div class="ref-quote">도적의 촉수; 철창표 바디워시</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">관련 서적</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3003?lang=ko-kr">원문</a></span><div class="ref-quote">아르마 철창 그룹 채용 공고</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">시라토리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시라토리의 인게임 대사</span></span><div class="ref-quote">아, 온 지 얼마 안 돼서 아르마 철창 그룹이 뭔지 모르겠네. 괜찮아. 앞으로 천천히 알아가면 되니까. 유폐옥에 있으면 언젠가 그룹이 필요할 때가 오거든</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">아르마는 감옥의 작은 쓰레기를 이용해 감옥 생활의 질을 크게 올릴 수 있는 제품을 잘 만들죠. 손재주가 좋아 소소한 수공예 제품을 잘 만들지만, 그래봤자 수공예 제품일 뿐이죠</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">평소에는 아르마를 도와 신제품을 개발하지만… 일부 약품의 직접 판매도 겸하고 있으니, 관심 있으시다면 제게서 구매하시면 됩니다~</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">전 처음에 치약을 만들었는데, 아르마가 거기서 비즈니스 기회를 포착하고 아예 저를 끌어들였어요</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">몰래 음모를 꾸미는 기계새의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">몰래 음모를 꾸미는 기계새의 인게임 대사</span></span><div class="ref-quote">잠깐! 뭐가 그렇게 급해. 진짜 고지식한 「준법 시민」이네! 내 말 좀 들어봐. 나는 아르마 철창 그룹의 수석 물류 관리자인데, 내 본체는 아직 감옥에 갇혀있으니 걱정 마!</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">아르마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아르마의 인게임 대사</span></span><div class="ref-quote">얼마 후, 저는 시라토리와 「아르마 철창 그룹」을 설립하고, 유한한 자원으로 무한한 서비스를 제공하는 데에 전념했습니다!</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">하지만 이제 반성했어요! 정말로요! 이제 전 분수에 맞는 장사만 하면서 아르마랑 시라토리와 함께 철창 그룹을 더 크고 강하게 만들고 싶어요!</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">가상의 대호의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">가상의 대호의 인게임 대사</span></span><div class="ref-quote">예산이 많이 삭감돼서 전문 작가를 고용할 수 없었어요. 가상 캐릭터의 대화 스크립트는 아르마라는 유폐옥의 보리인이 작은 호의로 써준 거예요</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">가상의 서교의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">가상의 서교의 인게임 대사</span></span><div class="ref-quote">이 「가상 캐릭터」 시스템은 아르마가 스크립트를, 제가 기능적인 부분을 담당하고 있죠. 그러니 당신은 지금 교감 환상극의 개발자와 대면하고 있는 셈이에요!</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">업적</span> <span class="ref-source">게임 본편 — 업적 · <span class="ref-detail">Unknown의 인게임 대사</span></span></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">아르마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아르마의 인게임 대사</span></span><div class="ref-quote">안녕히 가세요. 아르마 철창 그룹은 최고의 서비스를 제공합니다!</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">아르마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아르마의 인게임 대사</span></span><div class="ref-quote">오, 손님. 또 오셨군요! 아르마 철창 그룹은 최고의 서비스를 제공합니다!</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">헤헤~ 아르마 철창 그룹은 최고의 서비스를 제공합니다~</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">자애로운 약왕이시여~ 부자 되게 해주세요~ 또 오셨네요? 아르마 철창 그룹에서 개발한 좋은 물건을 사고 싶으신가요?</div></li></ol></details>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">아르마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아르마의 인게임 대사</span></span><div class="ref-quote">제 소개를 깜빡했군요. 저는 아르마 철창 그룹의 최고 경영자인——아르마입니다. 아르마 사장이나 아르마 씨라고 불러주십시오</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">아르마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아르마의 인게임 대사</span></span><div class="ref-quote">얼마 후, 저는 시라토리와 「아르마 철창 그룹」을 설립하고, 유한한 자원으로 무한한 서비스를 제공하는 데에 전념했습니다!</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">가상의 대호의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">가상의 대호의 인게임 대사</span></span><div class="ref-quote">「아르마 철창 그룹은 당신을 위해 최고의 서비스를 제공합니다! 간식과 음료, 일용품, 미소, 약 달이기까지! 당신의 니즈가 아르마 철창 그룹의 목표입니다!」</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">시라토리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시라토리의 인게임 대사</span></span><div class="ref-quote">아, 온 지 얼마 안 돼서 아르마 철창 그룹이 뭔지 모르겠네. 괜찮아. 앞으로 천천히 알아가면 되니까. 유폐옥에 있으면 언젠가 그룹이 필요할 때가 오거든</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">시라토리의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시라토리의 인게임 대사</span></span><div class="ref-quote">그리고 나한텐 아르마 철창 그룹의 수석 물류 관리자라는 다른 신분도 있다고. 죄수들은 아르마에서 물건을 사는데 이걸 내가 가져다주길 눈알 빠지게 기다리거든</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">아마 절 잘 모르실 테니 자기소개를 하겠습니다! 저는 예전에 「약왕의 비전」의 제자였습니다. 지금은 아르마 철창 그룹의 수석 기술 연구원이에요</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">평소에는 아르마를 도와 신제품을 개발하지만… 일부 약품의 직접 판매도 겸하고 있으니, 관심 있으시다면 제게서 구매하시면 됩니다~</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">전 처음에 치약을 만들었는데, 아르마가 거기서 비즈니스 기회를 포착하고 아예 저를 끌어들였어요</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">구등의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">구등의 인게임 대사</span></span><div class="ref-quote">아르마는 감옥의 작은 쓰레기를 이용해 감옥 생활의 질을 크게 올릴 수 있는 제품을 잘 만들죠. 손재주가 좋아 소소한 수공예 제품을 잘 만들지만, 그래봤자 수공예 제품일 뿐이죠</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">가상의 대호의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">가상의 대호의 인게임 대사</span></span><div class="ref-quote">예산이 많이 삭감돼서 전문 작가를 고용할 수 없었어요. 가상 캐릭터의 대화 스크립트는 아르마라는 유폐옥의 보리인이 작은 호의로 써준 거예요</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">가상의 서교의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">가상의 서교의 인게임 대사</span></span><div class="ref-quote">이 「가상 캐릭터」 시스템은 아르마가 스크립트를, 제가 기능적인 부분을 담당하고 있죠. 그러니 당신은 지금 교감 환상극의 개발자와 대면하고 있는 셈이에요!</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">몰래 음모를 꾸미는 기계새의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">몰래 음모를 꾸미는 기계새의 인게임 대사</span></span><div class="ref-quote">잠깐! 뭐가 그렇게 급해. 진짜 고지식한 「준법 시민」이네! 내 말 좀 들어봐. 나는 아르마 철창 그룹의 수석 물류 관리자인데, 내 본체는 아직 감옥에 갇혀있으니 걱정 마!</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 선주 연맹</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
-  <p class="subtle">주요 근거: 게임 본편, 게임 본편 - 업적, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%95%84%EB%A5%B4%EB%A7%88&amp;page_slug=npc-3003">수정 요청</a></div>
@@ -735,12 +668,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="npc-3003">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%95%84%EB%A5%B4%EB%A7%88&amp;body=%EC%95%84%EB%A5%B4%EB%A7%88+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnpc-3003.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

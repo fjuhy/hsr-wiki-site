@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>사도 · hoyohoyo.wiki</title>
-  <meta name="description" content="사도는 에이언즈의 축복을 받아 운명의 길 에너지를 흡수하고 거대한 힘을 일으킬 수 있는 존재를 가리키는 고유 명사다. 평범한 운명의 길을 걷는 자가 가진 힘은 에이언즈에 비하면 바다의 물 한 방울처럼 약하지만, 일부 존재는 에이언즈에게서 운명의 길의 힘을 하사받아 사도가 된다. 그래서 사도는 단순히 신앙이 깊거나 운명의 길을 오래 걸은 사람이 아니라, 에이언즈가 실제로 힘을 내린 예외적인 존...">
+  <meta name="description" content="사도는 에이언즈에게 축복받아 운명의 길 에너지를 직접 흡수하는 존재를 가리키는 고유 명사다. 평범한 사람의 힘은 에이언즈에 비하면 바닷물 한 방울에 지나지 않지만, 사도가 된 자는 에이언즈의 허락 아래 해안을 침식시키는 거대한 파도를 일으킬 수 있다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="사도 · hoyohoyo.wiki">
-  <meta property="og:description" content="사도는 에이언즈의 축복을 받아 운명의 길 에너지를 흡수하고 거대한 힘을 일으킬 수 있는 존재를 가리키는 고유 명사다. 평범한 운명의 길을 걷는 자가 가진 힘은 에이언즈에 비하면 바다의 물 한 방울처럼 약하지만, 일부 존재는 에이언즈에게서 운명의 길의 힘을 하사받아 사도가 된다. 그래서 사도는 단순히 신앙이 깊거나 운명의 길을 오래 걸은 사람이 아니라, 에이언즈가 실제로 힘을 내린 예외적인 존...">
+  <meta property="og:description" content="사도는 에이언즈에게 축복받아 운명의 길 에너지를 직접 흡수하는 존재를 가리키는 고유 명사다. 평범한 사람의 힘은 에이언즈에 비하면 바닷물 한 방울에 지나지 않지만, 사도가 된 자는 에이언즈의 허락 아래 해안을 침식시키는 거대한 파도를 일으킬 수 있다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/emanator.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/emanator.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,67 +620,60 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html" aria-current="page"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html" aria-current="page"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-systems.html">제도·조직 원리</a><span>사도</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%82%AC%EB%8F%84&amp;page_slug=emanator">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>사도</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">제도·조직 원리</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>사도는 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a>의 축복을 받아 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a> 에너지를 흡수하고 거대한 힘을 일으킬 수 있는 존재를 가리키는 고유 명사다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 평범한 운명의 길을 걷는 자가 가진 힘은 에이언즈에 비하면 바다의 물 한 방울처럼 약하지만, 일부 존재는 에이언즈에게서 운명의 길의 힘을 하사받아 사도가 된다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그래서 사도는 단순히 신앙이 깊거나 운명의 길을 오래 걸은 사람이 아니라, 에이언즈가 실제로 힘을 내린 예외적인 존재다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>사도는 에이언즈에게 완전히 복종하는 대리인이 아니다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그러나 세상 사람들은 사도를 에이언즈의 뜻을 대변하는 존재로 받아들이며, 이 오해와 경외가 사도의 정치적·종교적 위상을 키운다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 사도의 위험성은 힘의 크기만이 아니라, 그 힘이 특정 운명의 길과 에이언즈의 이름을 등에 업고 움직인다는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>에이언즈마다 사도를 대하는 태도는 다르다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 어떤 에이언즈는 사도를 오른팔처럼 여기며 운명의 길을 아낌없이 열어 주고, 어떤 에이언즈는 별다른 의도 없이 사도를 만들고 전쟁에 무관심하게 둔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 「환락」의 아하처럼 평범한 사람에게 무작위로 운명의 길을 부여하고 장난감처럼 대하는 에이언즈도 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이 차이 때문에 사도라는 이름은 하나의 계급처럼 보이지만, 실제로는 에이언즈의 성향과 목적에 따라 성격이 크게 갈라지는 자리다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>사도는 우주 규모의 사건을 평범한 세력 다툼에서 에이언즈의 문제로 끌어올리는 장치다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 공식 항목에서 사도는 에이언즈, 파벌, 반물질 군단, 선주 연맹, <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>와 함께 연결되며, 이는 사도가 개인의 힘만이 아니라 은하적 세력 관계와 맞물린 개념임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 사도가 등장하거나 언급되면 사건은 특정 인물의 능력 문제가 아니라 어느 운명의 길이 어떤 방식으로 세계에 개입하는가의 문제로 바뀐다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「세상의 모든 아침」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>작중 인물들은 사도를 강대한 존재로 대하면서도, 사도가 곧 에이언즈 자체는 아니라는 구분을 유지한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <a class="wiki-link" href="char-8.html" title="단항">단항</a>은 어떤 존재가 에이언즈의 눈길을 받는 것과 사도가 되는 것을 구별하며, 사도에게는 에이언즈에게서 축복받은 위력이 있어야 한다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 구분은 운명의 길을 걷는 자, 에이언즈의 눈길을 받은 자, 사도를 같은 선상에 놓지 않게 만든다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p><a class="wiki-link" href="char-9.html" title="히메코">히메코</a>는 에이언즈나 사도 정도의 허수 반응이 없었다고 말하며, 사도급 존재가 감지 가능한 위협 단위로 취급된다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 또 허수 에너지로 가득 찬 공역을 넘는 우주 여행은 허수에서 직접 에너지를 얻을 수 있는 에이언즈와 에이언즈의 축복을 받은 사도만 가능하다고 설명된다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 사도는 전투력만 높은 존재가 아니라, 우주의 물리적 장벽과 문명 간 이동 조건까지 바꾸는 예외적인 존재다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>「파멸」의 사도는 작중에서 가장 직접적인 재앙의 언어로 다뤄진다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「맴도는 그림자」"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <a class="wiki-link" href="char-26.html" title="경원">경원</a>은 「파멸」의 사도가 쉽게 파멸되지 않는다고 말하며, 사도급 존재가 단순한 강적을 넘어 제거 자체가 어려운 대상으로 인식된다는 점을 드러낸다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「불멸의 종말, 끝맺은 대겁」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 히메코는 종말 괴수만 있다면 어떻게든 상대할 수 있지만 「파멸」의 사도까지 온다면 상황이 달라진다고 판단한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 이 평가는 사도가 전장에 추가되는 순간, 방어 가능한 사건이 감당하기 어려운 재앙으로 바뀐다는 기준을 만든다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「불멸의 종말, 끝맺은 대겁」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>절멸 대군은 「파멸」 나누크의 세력과 연결되어 사도급 위협의 대표 사례로 언급된다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> Mar. 7th는 주변에 가장 위험한 절멸 대군이 없고 패잔병만 있다며 상황을 상대적으로 가볍게 본다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 히메코도 <a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>가 만든 우주정거장은 절멸 대군이 직접 손을 쓰지 않는 한 큰 문제가 없을 것이라고 판단한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 절멸 대군은 단순한 적 부대가 아니라, 등장 여부만으로 지역의 안전 평가를 바꾸는 파멸 측 사도의 기준점이다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>「풍요」의 사도는 <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 나부</a>의 역사적 상처와 연결된다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <a class="wiki-link" href="char-25.html" title="정운">정운</a>은 수백 년 전 어떤 「풍요」의 사도가 「불멸의 거목」을 빼앗기 위해 군대를 이끌고 나부 국경을 넘었고, 동천의 절반을 파괴하고 운기군을 섬멸했다고 말한다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 사건에서 사도는 혼자 강한 존재로만 남지 않고 군대를 움직여 지역 전체를 파괴하는 침공의 중심이 된다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 선주 연맹이 사도와 연결되는 이유도 이런 역사적 피해와 무관하지 않다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>「지식」의 사도는 우주관과 지식 권력의 방향에서 작동한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「나그네여, 밀랍판의 흔적을 살펴봐다오」"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 히메코는 「우주 나무」 설을 제기한 인물이 「지식」의 사도이자 <a class="wiki-link" href="genius-society.html" title="지니어스 클럽">지니어스 클럽</a> #1 회원인 잔다르라고 설명한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 잔다르는 은하가 거대한 허수 나무이고 가로막힌 은하계는 나뭇잎이라고 주장했다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 이 경우 사도의 영향력은 전장을 부수는 힘보다, 세계가 어떻게 생겼는지를 설명하는 이론을 만들고 그 이론을 따르는 사람들을 낳는 힘에 가깝다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>지니어스 클럽의 인물은 「지식」 <a class="wiki-link" href="nous.html" title="⌈ 지식 ⌋ 누스">누스</a>의 사도라는 이유로 불로장생이나 역노화 같은 비상식적인 상태도 문제될 것이 없다는 반응을 이끌어낸다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 이 반응은 사도가 일반 생물학이나 수명 감각으로 설명하기 어려운 존재로 받아들여진다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 「지식」의 사도는 전쟁의 공포보다, 지식과 육체의 한계를 넘어선 존재라는 낯선 권위를 만든다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p><a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a> 사건에서는 <a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>가 「하모니 성가대」를 탈취한 뒤 의심할 여지가 없는 사도가 되었다고 회상된다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「세상의 모든 아침」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 이 언급은 사도화가 반드시 먼 과거의 신화나 전설에만 묶이지 않고, 작중 현재의 사건 속에서도 정치적·종교적 질서의 탈취와 함께 발생할 수 있음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「세상의 모든 아침」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 선데이의 사례에서 사도는 에이언즈의 힘을 받는 개인인 동시에, 집단적 신앙과 의식을 장악한 인물이 된다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「세상의 모든 아침」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p><a class="wiki-link" href="aventurine.html" title="어벤츄린">어벤츄린</a>은 한 여성을 사도라고 부르며 죽음과 결말이 모두 그녀의 짓이라고 말한다.<sup class="cite-ref" title="게임 본편 · 어벤츄린의 언급 · 어벤츄린의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 이 대사는 사도라는 판단이 인물에게 책임을 집중시키는 방식으로 쓰인다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 어벤츄린의 언급 · 어벤츄린의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 사도는 사람들에게 설명하기 어려운 죽음과 재앙을 특정 존재의 의지로 묶어 이해하게 만드는 이름이기도 하다.<sup class="cite-ref" title="게임 본편 · 어벤츄린의 언급 · 어벤츄린의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>에이언즈와 운명의 길은 사도를 이해하는 출발점이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 에이언즈는 운명의 길을 지배하는 거대한 힘을 가진 존재이고, 사도는 그 에이언즈의 허락과 축복을 통해 운명의 길 에너지를 흡수한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 사도가 에이언즈의 명령에 완전히 복종하지 않는다는 점은 중요하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 사도는 신의 꼭두각시라기보다, 신의 힘을 받은 채 자기 행동이 세계에 신의 뜻처럼 읽히는 위험한 중간자다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>반물질 군단과 절멸 대군은 「파멸」 사도의 공포를 보여 주는 축이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 종말 괴수는 상대할 수 있는 적으로 말해지지만, 「파멸」의 사도가 더해지는 순간 상황은 다른 단계로 넘어간다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 절멸 대군은 가장 위험한 존재로 불리고, 헤르타의 우주정거장조차 그들이 직접 움직이지 않는다는 조건 아래에서만 큰 문제가 없을 것으로 판단된다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 이 묶음은 사도가 군단과 결합할 때 한 지역의 방위선이 아니라 문명의 생존 조건을 흔든다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>선주 연맹과 나부의 기억은 「풍요」 사도의 폭력을 통해 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 「풍요」의 사도는 「불멸의 거목」을 노리고 군대를 이끌어 나부 국경을 넘었으며, 동천의 절반과 운기군에 큰 피해를 남겼다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 사건은 선주가 사도를 추상적인 종교 개념이 아니라 실제 침공과 파괴의 주체로 기억하게 만든다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 사도는 이 맥락에서 장수와 풍요의 약속이 언제든 약탈과 전쟁으로 바뀔 수 있음을 보여 주는 이름이다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>지니어스 클럽과 「지식」의 사도는 사도의 또 다른 방향을 보여 준다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 잔다르는 「지식」의 사도이자 지니어스 클럽 #1 회원으로서 「우주 나무」 설을 제기했고, 그 이론은 은하와 허수 나무의 관계를 설명하는 영향력 있는 가설로 남았다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 누스의 사도로 불리는 인물에게는 불로장생이나 역노화도 납득 가능한 일처럼 여겨진다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 이 계열의 사도는 지식이 생명, 시간, 우주론의 한계를 넘어설 수 있다는 불편한 가능성을 품는다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>스타피스 컴퍼니는 사도의 관련 항목으로 묶이지만, 제공된 작중 근거 안에서는 컴퍼니 소속 사도나 구체적 사도 활동이 확인되지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 따라서 이 연결은 사도가 특정 개인의 설정을 넘어 은하적 파벌과 함께 다뤄지는 개념이라는 범위 안에서만 해석할 수 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 확인되는 근거만 놓고 보면, 컴퍼니와 사도의 관계는 파멸, 풍요, 지식, 조화의 사례처럼 구체적 사건까지 펼쳐져 있지는 않다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「세상의 모든 아침」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<h2 id="사도와-에이언즈의-거리">사도와 에이언즈의 거리</h2>
-<p>사도는 에이언즈와 인간 사이에 놓인 존재지만, 그 간격은 단순한 중간 단계가 아니다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 운명의 길을 걷는 사람은 평범한 사람보다 강하지만 에이언즈에 비하면 미약하고, 사도는 그 격차 속에서 에이언즈의 축복을 직접 받은 예외로 솟아난다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그래서 사도는 인간 사회의 제도와 군대가 감당할 수 있는 힘의 범위를 자주 넘어선다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>동시에 사도는 에이언즈 그 자체가 아니며, 에이언즈의 뜻을 완벽하게 대신한다고 단정할 수도 없다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 사도가 에이언즈의 명령에 완전히 복종하지 않는데도 사람들이 사도를 에이언즈의 뜻으로 받아들이는 모순이 사도의 긴장을 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이 때문에 사도는 신성한 대리인, 독립적인 재앙, 정치적 상징이라는 세 얼굴을 동시에 가진다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「세상의 모든 아침」"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>사도를 위험하게 만드는 것은 힘의 출처가 분명하면서도 행동의 책임이 흐려진다는 점이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 사도가 벌인 파괴는 에이언즈의 의지처럼 읽히지만, 사도가 에이언즈에게 완전히 복종하지 않는다면 그 파괴가 신의 명령인지 사도의 선택인지 단번에 가를 수 없다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그래서 사도는 세계관 안에서 가장 큰 힘과 가장 불확실한 책임이 만나는 자리다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 어벤츄린의 언급 · 어벤츄린의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/984?lang=ko-kr">원문</a></span><div class="ref-quote">사도(현상)</div></li>
+<p>사도는 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a>에게 축복받아 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a> 에너지를 직접 흡수하는 존재를 가리키는 고유 명사다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 평범한 사람의 힘은 에이언즈에 비하면 바닷물 한 방울에 지나지 않지만, 사도가 된 자는 에이언즈의 허락 아래 해안을 침식시키는 거대한 파도를 일으킬 수 있다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>사도는 에이언즈의 명령에 완전히 복종하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그런데도 세상 사람들은 사도를 에이언즈의 뜻을 대변하는 존재로 받아들인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="설정">설정</h2>
+<p>사도가 되는 사람은 매우 드물다. 운명의 길을 걷는 자는 평범한 사람보다 강하지만, 에이언즈에 비하면 여전히 미약하다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 에이언즈는 이들 중 일부에게 운명의 길의 힘을 하사해 사도로 만든다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <a class="wiki-link" href="char-8.html" title="단항">단항</a>은 에이언즈의 눈길을 받는 것과 사도가 되는 것을 구분하며, 사도에게는 에이언즈에게서 축복받은 위력이 있어야 한다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>에이언즈마다 사도를 대하는 태도는 다르다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 어떤 에이언즈는 사도를 오른팔처럼 여기며 운명의 길을 아낌없이 열어 주고, 어떤 에이언즈는 별다른 의도 없이 사도를 만들어 놓고 전쟁에는 무관심하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 「환락」의 아하는 평범한 사람에게 무작위로 운명의 길을 부여하고 장난감처럼 대한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>허수 에너지로 가득 찬 공역을 넘어 우주를 여행할 수 있는 존재는 허수에서 직접 에너지를 얻는 에이언즈와, 에이언즈의 축복을 받은 사도뿐이다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>는 근처에 &quot;에이언즈&quot;나 &quot;사도&quot; 정도의 허수 반응은 없었다며 안심시킨다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<h2 id="운명의-길별-사례">운명의 길별 사례</h2>
+<p>「파멸」의 사도는 여러 장면에서 상대하기 가장 어려운 적으로 언급된다. <a class="wiki-link" href="char-26.html" title="경원">경원</a>은 「파멸」의 사도가 쉽게 파멸되지 않는다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「불멸의 종말, 끝맺은 대겁」"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 히메코는 종말 괴수뿐이라면 상대할 수 있지만 「파멸」의 사도까지 온다면 상황이 다르다고 말한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 서연 선생이 들려주는 이야기에서는 절멸 대군을 &quot;소멸의 사도&quot;라고 부른다.<sup class="cite-ref" title="게임 본편 · 서연 선생의 언급 · 서연 선생의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> Mar. 7th는 주변에 가장 위험한 절멸 대군은 없고 나누크의 졸개인 패잔병만 있다며 안도하고,<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 히메코는 <a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>가 만든 우주정거장도 절멸 대군이 직접 손을 쓰지 않는 한 문제없을 것이라고 본다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>「풍요」의 사도는 나부에 실제 침공의 기록을 남겼다. <a class="wiki-link" href="char-25.html" title="정운">정운</a>은 수백 년 전 어떤 「풍요」의 사도가 「불멸의 거목」을 빼앗기 위해 군대를 이끌고 나부 국경을 넘어 동천의 절반을 파괴하고 운기군을 섬멸했다고 전한다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 유사는 그림자 장군의 은신처를 두고 &quot;풍요의 사도도 절멸 대군도 찾아낼 수 없을 것&quot;이라고 말한다.<sup class="cite-ref" title="게임 본편 · 유사의 언급 · 유사의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
+<p>「지식」의 사도는 우주관을 두고 영향력을 발휘한다. 히메코는 &quot;은하가 거대한 허수 나무이고 가로막힌 은하계는 나뭇잎&quot;이라는 「우주 나무」 설을 <a class="wiki-link" href="genius-society.html" title="지니어스 클럽">지니어스 클럽</a> #1 회원이자 「지식」의 사도인 잔다르가 제기했다고 설명한다.<sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 지니어스 클럽의 다른 회원은 「지식」 <a class="wiki-link" href="nous.html" title="⌈ 지식 ⌋ 누스">누스</a>의 사도라는 이유로 불로장생과 역노화도 이상하게 여겨지지 않는다.<sup class="cite-ref" title="게임 본편 · ???의 언급 · ???의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 은랑의 언급 · 은랑의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<p>「조화」의 사도로는 <a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>가 있다. <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a> 사건을 회상하는 장면에서 달리아는 선데이가 「하모니 성가대」를 탈취한 뒤 &quot;의심할 여지가 없는 사도&quot;가 되었다고 말한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「세상의 모든 아침」"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<p>사도라는 이름은 신원이 명확하지 않은 인물을 가리킬 때도 쓰인다. <a class="wiki-link" href="aventurine.html" title="어벤츄린">어벤츄린</a>은 한 여성을 사도라 부르며 죽음과 그날의 결말이 모두 그녀의 짓이라고 말한다.<sup class="cite-ref" title="게임 본편 · 어벤츄린의 언급 · 어벤츄린의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 다른 장면에서는 콜이라는 인물이 사도로 지목되고,<sup class="cite-ref" title="게임 본편 · CS_Chap03_Act220_Caption · Narration의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> &quot;파멸 사도 유망주&quot;라는 표현도 등장한다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「현실은 꿈의 메아리」"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="aeons.html">에이언즈</a>, <a href="factions.html">파벌</a>, <a href="faction-956.html">반물질 군단</a>, <a href="faction-963.html">선주 연맹</a>, <a href="interastral-peace-corporation.html">스타피스 컴퍼니</a>, <a href="destruction.html">파멸</a>, <a href="path-84.html">풍요</a>, <a href="xianzhou-luofu.html">나부</a> — 공식 자료는 사도의 관련 항목으로 <a href="aeons.html">에이언즈</a>, <a href="factions.html">파벌</a>, <a href="faction-956.html">반물질 군단</a>, <a href="faction-963.html">선주 연맹</a>, <a href="interastral-peace-corporation.html">스타피스 컴퍼니</a>를 든다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> <a href="aeons.html">에이언즈</a>는 사도에게 힘을 내리는 근원이고,<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <a href="faction-956.html">반물질 군단</a>과 절멸 대군은 「<a href="destruction.html">파멸</a>」의 사도와 함께 묶여 언급되는 위협이며,<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 히메코의 언급 · 히메코의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <a href="faction-963.html">선주 연맹</a>은 「<a href="path-84.html">풍요</a>」의 사도에게 국경을 침공당한 <a href="xianzhou-luofu.html">나부</a>를 포함한 세력이다.<sup class="cite-ref" title="게임 본편 · 정운의 언급 · 정운의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/984?lang=ko-kr">원문</a></span><div class="ref-quote">사도(현상)</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">유형</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/984?lang=ko-kr">원문</a></span><div class="ref-quote">고유 명사</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/984?lang=ko-kr">원문</a></span><div class="ref-quote">평범한 사람이 에이언즈의 감응을 받고 운명의 길의 힘을 쥐는 것은 파열된 물방울이 일어나는 것에 비한다면, 「에이언즈」가 거대한 힘으로 운명의 길을 지배하는 모습은 산봉우리를 넘나드는 해일을 일으키는 것이다. 이렇게 엄청난 차이가 존재하는데, 소수의 평범한 사람들은 에이언즈의 축복을 받는다. 이들 또한 에이언즈의 허락을 받고 운명의 길 에너지를 흡수하여 해안을 침식시키는 거대한 파도를 일으킬 수 있다. 이런 자들은 「사도」라 불린다. 이들은 에이언즈의 명령...</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">운명의 길을 걷는 자의 힘은 평범한 사람을 넘어서지만 여전히 약해. 운명의 길을 관할하는 에이언즈에 비하면 드넓은 바다의 물 한 방울 같아. 간혹 에이언즈는 운명의 길의 힘을 하사해 평범한 사람을 「사도」로 만들어</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」</span></span><div class="ref-quote">대부분 그건 자연적인 현상일 뿐이야. 일부 운명의 길을 걷는 자는 그걸 명예라고도 생각하지만, 사도는… 에이언즈로부터 축복받은 위력이 있어야 해</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">정운의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">정운의 인게임 대사</span></span><div class="ref-quote">수백 년 전, 어떤 「풍요」의 사도는 「불멸의 거목」을 빼앗고자, 군대를 이끌고 나부 국경을 넘어 동천의 절반을 파괴하고 운기군을 섬멸했었죠</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/984?lang=ko-kr">원문</a></span><div class="ref-quote">에이언즈, 파벌, 반물질 군단, 선주 연맹, 스타피스 컴퍼니</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「세상의 모든 아침」</span></span><div class="ref-quote">그 후 너희는 페나코니 극장에서 선데이와 최후의 결전을 벌였지—— 「하모니 성가대」를 탈취한 그는 이미 의심할 여지가 없는 사도였어</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」</span></span><div class="ref-quote">눈길을 받았는데 사도가 된 거야?</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">…그래, 「에이언즈」나 「사도」 정도의 허수 반응은 없었어, 걱정 마</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">그로 인해 허수에서 직접 에너지를 획득할 수 있는 에이언즈와 에이언즈의 축복을 받은 사도들만이 허수 에너지로 가득 찬 공역을 넘어 우주를 여행할 수 있는 거래. 또 그래서 문명이 탄생한 행성들이 서로 그렇게 비슷한 거고</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「맴도는 그림자」</span></span><div class="ref-quote">「파멸」의 사도요?</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">지금은 종말 괴수뿐이라 어떻게든 상대할 순 있지만, 「파멸」의 사도까지 온다면……</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">「파멸」, 나누크의 졸개야. 운이 좋네, 주변에 제일 위험한 절멸 대군은 없고 도처에서 악행을 저지르는 패잔병만 있거든</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「불멸의 종말, 끝맺은 대겁」</span></span><div class="ref-quote">안타깝게도, 「파멸」의 사도는 쉽게 파멸되지 않아. 다만……</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">이 우주정거장은 헤르타 씨가 만들었어. 절멸 대군이 손을 쓰지 않는 이상, 여긴 큰 문제 없을 거야</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">추종자가 가장 많은 건 「우주 나무」 설이야. 이 가설을 제기한 사람은 「지식」의 사도, 지니어스 클럽의 #1 회원인 잔다르지. 그는 은하가 거대한 허수 나무고, 가로막힌 은하계는 나뭇잎이라고 주장했어</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「나그네여, 밀랍판의 흔적을 살펴봐다오」</span></span><div class="ref-quote">당신은「지식」의 사도잖아요?</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">???의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">???의 인게임 대사</span></span><div class="ref-quote">「지니어스 클럽」 사람이고 「지식」 누스의 사도잖아. 불로장생에 나이를 거꾸로 먹는대도 문제될 건 없지</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">은랑의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">「지니어스 클럽」 사람이고 「지식」 누스의 사도잖아. 불로장생에 나이를 거꾸로 먹는대도 문제될 건 없지</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">어벤츄린의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">어벤츄린의 인게임 대사</span></span><div class="ref-quote">——그 여자는 사도야. 죽음도, 이런 결말도, 모두 그녀 짓이지</div></li></ol></details>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」</span></span><div class="ref-quote">눈길을 받았는데 사도가 된 거야?</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「거대 무덤이여, 윤회의 비밀을 깊이 숨겨라」</span></span><div class="ref-quote">대부분 그건 자연적인 현상일 뿐이야. 일부 운명의 길을 걷는 자는 그걸 명예라고도 생각하지만, 사도는… 에이언즈로부터 축복받은 위력이 있어야 해</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">그로 인해 허수에서 직접 에너지를 획득할 수 있는 에이언즈와 에이언즈의 축복을 받은 사도들만이 허수 에너지로 가득 찬 공역을 넘어 우주를 여행할 수 있는 거래. 또 그래서 문명이 탄생한 행성들이 서로 그렇게 비슷한 거고</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">…그래, 「에이언즈」나 「사도」 정도의 허수 반응은 없었어, 걱정 마</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「불멸의 종말, 끝맺은 대겁」</span></span><div class="ref-quote">안타깝게도, 「파멸」의 사도는 쉽게 파멸되지 않아. 다만……</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">지금은 종말 괴수뿐이라 어떻게든 상대할 순 있지만, 「파멸」의 사도까지 온다면……</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">서연 선생의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">서연 선생의 인게임 대사</span></span><div class="ref-quote">「『구전승천단』을 복용해 내공이 대폭 증가한 {NICKNAME}. 하지만 그렇다 한들, 소멸의 사도인 절멸 대군에게 평범한 사람이 대적할 수 있을까?」</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">「파멸」, 나누크의 졸개야. 운이 좋네, 주변에 제일 위험한 절멸 대군은 없고 도처에서 악행을 저지르는 패잔병만 있거든</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">이 우주정거장은 헤르타 씨가 만들었어. 절멸 대군이 손을 쓰지 않는 이상, 여긴 큰 문제 없을 거야</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">정운의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">정운의 인게임 대사</span></span><div class="ref-quote">수백 년 전, 어떤 「풍요」의 사도는 「불멸의 거목」을 빼앗고자, 군대를 이끌고 나부 국경을 넘어 동천의 절반을 파괴하고 운기군을 섬멸했었죠</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">유사의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">유사의 인게임 대사</span></span><div class="ref-quote">물론 그게 가장 안전하지. 그러면 풍요의 사도도 절멸 대군도 그림자 장군의 존재를 찾아낼 수 없을 테니까</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">히메코의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">추종자가 가장 많은 건 「우주 나무」 설이야. 이 가설을 제기한 사람은 「지식」의 사도, 지니어스 클럽의 #1 회원인 잔다르지. 그는 은하가 거대한 허수 나무고, 가로막힌 은하계는 나뭇잎이라고 주장했어</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">???의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">???의 인게임 대사</span></span><div class="ref-quote">「지니어스 클럽」 사람이고 「지식」 누스의 사도잖아. 불로장생에 나이를 거꾸로 먹는대도 문제될 건 없지</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">은랑의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">은랑의 인게임 대사</span></span><div class="ref-quote">「지니어스 클럽」 사람이고 「지식」 누스의 사도잖아. 불로장생에 나이를 거꾸로 먹는대도 문제될 건 없지</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「세상의 모든 아침」</span></span><div class="ref-quote">그 후 너희는 페나코니 극장에서 선데이와 최후의 결전을 벌였지—— 「하모니 성가대」를 탈취한 그는 이미 의심할 여지가 없는 사도였어</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">어벤츄린의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">어벤츄린의 인게임 대사</span></span><div class="ref-quote">——그 여자는 사도야. 죽음도, 이런 결말도, 모두 그녀 짓이지</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">CS_Chap03_Act220_Caption</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Narration의 인게임 대사</span></span><div class="ref-quote">「사도」——넌 분명히 콜일 거야</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「현실은 꿈의 메아리」</span></span><div class="ref-quote">파멸 사도 유망주</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/984?lang=ko-kr">원문</a></span><div class="ref-quote">에이언즈, 파벌, 반물질 군단, 선주 연맹, 스타피스 컴퍼니</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 제도·조직 원리</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>개념</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-25</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -741,12 +683,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="emanator">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%82%AC%EB%8F%84&amp;body=%EC%82%AC%EB%8F%84+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Femanator.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>요약분제 · hoyohoyo.wiki</title>
-  <meta name="description" content="요약분제 는 단정사의 처방전을 집대성한 선주 의학서다. 작중에서는 토드가 이 책을 단정사에서 가져와 달라고 요청하고, 옥란과 여러 의사들이 책의 위치나 이용 여부를 두고 반응하면서 실제로 찾고 빌리고 참조하는 자료로 다뤄진다.">
+  <meta name="description" content="요약분제 는 단정사의 처방전을 집대성한 선주 의학서다. 여기에는 환생한 비디아다라가 다섯 살이 되기 전에 복용하면 꿈에서 전생의 기억을 불러올 수 있다는 &#x27;전진회몽침&#x27; 같은 처방이 실려 있다. 토드는 이 책을 단정사에서 가져와 달라고 부탁하고, 지식학회도 따로 신청서를 낸다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="요약분제 · hoyohoyo.wiki">
-  <meta property="og:description" content="요약분제 는 단정사의 처방전을 집대성한 선주 의학서다. 작중에서는 토드가 이 책을 단정사에서 가져와 달라고 요청하고, 옥란과 여러 의사들이 책의 위치나 이용 여부를 두고 반응하면서 실제로 찾고 빌리고 참조하는 자료로 다뤄진다.">
+  <meta property="og:description" content="요약분제 는 단정사의 처방전을 집대성한 선주 의학서다. 여기에는 환생한 비디아다라가 다섯 살이 되기 전에 복용하면 꿈에서 전생의 기억을 불러올 수 있다는 &#x27;전진회몽침&#x27; 같은 처방이 실려 있다. 토드는 이 책을 단정사에서 가져와 달라고 부탁하고, 지식학회도 따로 신청서를 낸다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/entry-1386.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/entry-1386.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,52 +620,45 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html" aria-current="page"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html" aria-current="page"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-systems.html">제도·조직 원리</a><span>요약분제</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%9A%94%EC%95%BD%EB%B6%84%EC%A0%9C&amp;page_slug=entry-1386">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>요약분제</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">제도·조직 원리</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>요약분제는 단정사의 처방전을 집대성한 선주 의학서다.<sup class="cite-ref" title="공식 HoYoWiki · 요약분제"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 작중에서는 <a class="wiki-link" href="npc-1154.html" title="토드">토드</a>가 이 책을 단정사에서 가져와 달라고 요청하고, <a class="wiki-link" href="npc-1284.html" title="옥란">옥란</a>과 여러 의사들이 책의 위치나 이용 여부를 두고 반응하면서 실제로 찾고 빌리고 참조하는 자료로 다뤄진다.<sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>이 책은 단순한 배경 장서가 아니라 선주 의학 지식이 사람들 사이에서 움직이는 물건이다.<sup class="cite-ref" title="공식 HoYoWiki · 요약분제"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 누군가는 처방을 확인하기 위해 찾고, 누군가는 이미 가지고 있으며, 플레이어는 없어진 책을 찾아다니는 흐름 안에서 요약분제를 접한다.<sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>요약분제는 단정사의 의학 지식이 책의 형태로 보관되고 유통되는 통로다.<sup class="cite-ref" title="공식 HoYoWiki · 요약분제"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 토드는 요약분제를 “선주 의학서”라고 부르며 단정사에서 가져와 달라고 하고, 옥란은 <a class="wiki-link" href="intelligentsia-guild.html" title="지식학회">지식학회</a>가 요약분제를 신청했다는 말에 반응한다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 이 흐름은 요약분제가 선주 내부의 의료 자료이면서 외부 지식 집단도 접근하려는 연구 대상이라는 점을 보여준다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>게임 본편에서 요약분제는 직접 수색해야 하는 책으로도 등장한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> “여기에 없다”는 안내가 반복되고, 결국 “요약분제 중 한 권”을 찾았다는 문구가 나오므로, 작중의 요약분제는 한 장소에 고정된 장식물이 아니라 여러 권으로 나뉘어 있거나 회수가 필요한 자료처럼 취급된다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>의사들의 반응은 이 책의 실무성을 더 분명하게 만든다.<sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 피곤한 의사는 최근 요약분제에서 처방을 찾아봤다고 말하고, 재수없는 의사는 자신이 요약분제를 가지고 있었다고 말한다.<sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그래서 요약분제는 단정사에 보관된 권위 있는 문헌일 뿐 아니라, 실제 의료 현장에서 처방을 확인하는 데 쓰이는 참고서로 읽힌다.<sup class="cite-ref" title="공식 HoYoWiki · 요약분제"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>요약분제의 위상은 수록 처방의 성격에서 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이 책에는 비디아다라의 성장 지연과 환생 후 기억 회복처럼 일반적인 병증보다 훨씬 민감한 문제를 다루는 처방이 포함된다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 따라서 요약분제는 단순한 약재 목록이 아니라 선주 의학이 종족의 생장, 환생, 기억까지 치료와 시술의 대상으로 삼는 방식을 보여주는 자료다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>지황 장군 음료는 유아의 모습에 머물고 성장이 느린 비디아다라를 대상으로 하는 처방이다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이 처방에는 린연 천동, 급속 성장, 현포지황 추출물이 들어가며, 알약으로 만들어 하루 두 번 식후 복용하는 방식으로 제시된다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그러나 이 처방은 임상 실험 단계이며, <a class="wiki-link" href="char-29.html" title="백로">백로</a>가 효과를 확인하기 전에는 함부로 사용할 수 없다는 제한이 붙어 있다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>전진회몽침은 환생한 비디아다라가 전생의 기억을 꿈에서 불러오도록 하는 처방이다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 용린 산호 가루, 몽예꽃 열매 추출물, 안정초 추출물, 학발등 추출물을 탕약으로 만든 뒤 금침으로 주사하며, 임상 결과상 환생 후 5살이 되기 전에 복용해야 한다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 복약자가 얻는 기억의 크기와 명료도는 사람마다 다르기 때문에, 이 처방은 전생을 완전히 복원하는 기술이라기보다 제한된 조건에서 기억을 불러오는 위험한 시도에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<h3 id="단정사와-의사들">단정사와 의사들</h3>
-<p>단정사와 의사들은 요약분제가 의료 현장 안에서 쓰이는 책이라는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki · 요약분제"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 단정사는 요약분제의 처방전을 집대성한 기관으로 연결되고, 피곤한 의사와 재수없는 의사는 각각 처방 확인과 소지라는 방식으로 책을 다룬다.<sup class="cite-ref" title="공식 HoYoWiki · 요약분제"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 묶음은 요약분제가 보관용 고문헌이 아니라 진료와 조사 과정에서 손에 들고 쓰는 자료라는 점을 분명히 한다.<sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<h3 id="토드와-지식학회">토드와 지식학회</h3>
-<p>토드와 지식학회는 요약분제가 선주 밖의 호기심과 연구 욕망을 끌어당기는 자료임을 보여준다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 토드는 요약분제를 필요로 하며 단정사에서 가져오길 요청하고, 옥란은 지식학회가 신청했다는 말에 반응한다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 이 관계에서 요약분제는 치료 지식인 동시에 접근 권한과 소유가 문제가 되는 지식 자산으로 놓인다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<h3 id="비디아다라-처방">비디아다라 처방</h3>
-<p>비디아다라 처방은 요약분제가 가장 예민한 의학 영역을 다루는 이유를 설명한다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 지황 장군 음료는 성장의 문제를 건드리고, 전진회몽침은 환생 뒤 전생의 기억을 되살리려 한다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 두 처방은 모두 비디아다라의 몸과 정체성에 직접 닿기 때문에, 요약분제는 치료 가능성과 금기 사이에 놓인 선주 의학의 축약본처럼 기능한다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="비디아다라-처방과-통제되지-않는-효과">비디아다라 처방과 통제되지 않는 효과</h2>
-<p>요약분제의 핵심 긴장은 강력한 처방이 존재한다는 사실보다, 그 처방을 아무 때나 사용할 수 없다는 조건에 있다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 지황 장군 음료는 임상 실험 단계에 머물러 있고, 효과가 없으면 폐기될 수 있으며, 백로가 확인하기 전에는 함부로 사용할 수 없다는 주의가 붙어 있다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 책에 실렸다고 해서 곧바로 안전한 치료법이 되는 것은 아니라는 점이 여기서 드러난다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>전진회몽침도 마찬가지로 결과를 완전히 통제하지 못한다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 환생 후 5살이 되기 전에 써야 한다는 시기 제한이 있고, 복약자가 얻는 기억의 크기와 명료도는 개인차를 따른다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이는 요약분제가 기억과 환생을 다루는 고급 처방을 담고 있지만, 그 지식이 언제나 확실한 결과를 보장하지는 않는다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>그래서 요약분제는 선주 의학의 힘과 불안을 함께 담은 책이다.<sup class="cite-ref" title="공식 HoYoWiki · 요약분제"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 단정사의 처방전은 육체 성장과 전생 기억처럼 깊은 문제에 접근하지만, 임상 단계, 사용 제한, 개인차 같은 조건이 계속 따라붙는다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 작중에서 사람들이 이 책을 찾고 신청하고 소지하는 이유도 여기에 있다. 요약분제는 가치 있는 지식이지만, 그 가치가 클수록 누가 읽고 어떻게 쓰는지가 중요해지는 책이다.<sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">요약분제</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1386?lang=ko-kr">원문</a></span><div class="ref-quote">단정사 처방전을 집대성한 서적</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">토드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">토드의 인게임 대사</span></span><div class="ref-quote">그러니까 일단 ≪요약분제≫라는 선주 의학서가 필요하거든. 네가 단정사에 가서 가져다줄 수 있을까?</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">옥란의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">옥란의 인게임 대사</span></span><div class="ref-quote">아, 저번에 ≪요약분제≫를 찾으러 왔었죠? 이번엔 절 좀 도와주실 수 있을까요?</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">피곤한 의사의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">피곤한 의사의 인게임 대사</span></span><div class="ref-quote">≪요약분제≫? 엊그제 그 책에서 처방을 찾아봤는데……</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">재수없는 의사의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">재수없는 의사의 인게임 대사</span></span><div class="ref-quote">…≪요약분제≫를 찾는다고요? 이런 우연이, 제가 가지고 있었어요</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">여기에 ≪요약분제≫는 없다. 다른 곳을 돌아보자</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">여기에 ≪요약분제≫는 없다. 다른 곳을 돌아보자</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">오늘은 책에서 기쁨을 얻었다. ≪요약분제≫ 중 한 권을 찾았다</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">옥란의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">옥란의 인게임 대사</span></span><div class="ref-quote">≪요약분제≫? 지식학회에서 신청했다고요?</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">(2)</span> <span class="ref-source">공식 HoYoWiki — 더 알아보기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1386?lang=ko-kr">원문</a></span><div class="ref-quote">…… …… 지황 장군 음료 분류: ≪환생과≫ 주요 효능: 비디아다라는 유아의 모습에 멈춰있고, 성장이 느리다 처방: 린연 천동 1전, 급속 성장 6전, 현포지황 추출물 1전 복용법: 알약으로 만들어 1일 2회 식후 복용한다 역사: 이 처방전은 현재 임상 실험 단계이며, 만약 1년 후 효과가 없을 시 폐기 처리해도 된다. (주의: 급속 성장은 약초 재배시에만 사용되는 약물로, 독물 부작용이 없지만 백로 님께서 해당 처방전의 효과를 확인하기 전에는 함부로 사용...</div></li></ol></details>
+<p>**요약분제**는 단정사의 처방전을 집대성한 선주 의학서다.<sup class="cite-ref" title="공식 HoYoWiki · 요약분제"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 여기에는 환생한 비디아다라가 다섯 살이 되기 전에 복용하면 꿈에서 전생의 기억을 불러올 수 있다는 &#x27;전진회몽침&#x27; 같은 처방이 실려 있다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <a class="wiki-link" href="npc-1154.html" title="토드">토드</a>는 이 책을 단정사에서 가져와 달라고 부탁하고, <a class="wiki-link" href="intelligentsia-guild.html" title="지식학회">지식학회</a>도 따로 신청서를 낸다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<h2 id="설정">설정</h2>
+<p>요약분제는 서가에 꽂힌 장서가 아니라 실제 진료에서 쓰이는 참고서다. 피곤한 의사는 &quot;엊그제 그 책에서 처방을 찾아봤는데……&quot;라며 최근에도 이 책을 확인했다고 말하고, 재수없는 의사는 자신이 이 책을 갖고 있었다고 밝힌다.<sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p><a class="wiki-link" href="npc-1284.html" title="옥란">옥란</a>은 예전에도 누군가 이 책을 찾으러 온 적이 있다고 언급하고, 지식학회가 요약분제를 신청했다는 말에는 되묻는다.<sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 요약분제는 한 곳에만 있는 책이 아니라 여러 권으로 나뉘어 있다. 이를 찾는 이는 한 장소에서 찾지 못해 다른 곳을 뒤져야 했고, 결국 그중 한 권을 찾았다는 기록이 남아 있다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<h2 id="수록-처방">수록 처방</h2>
+<p>요약분제에는 비디아다라를 위한 처방 두 가지가 실려 있으며, 둘 다 &#x27;환생과&#x27;로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>**지황 장군 음료**는 유아의 모습에 멈춰 성장이 느린 비디아다라에게 쓰는 처방이다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 린연 천동 1전, 급속 성장 6전, 현포지황 추출물 1전을 알약으로 만들어 하루 두 번 식후에 복용한다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 재료로 쓰는 급속 성장은 본래 약초를 재배할 때만 쓰는 약물로, 독성 부작용은 없지만 이 처방 자체는 아직 임상 실험 단계다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <a class="wiki-link" href="char-29.html" title="백로">백로</a>가 구술한 처방으로 기록되어 있으며, 백로가 효과를 확인하기 전까지는 함부로 쓸 수 없고 1년 안에 효과가 없으면 폐기해도 된다는 조건이 붙는다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>**전진회몽침**은 환생한 비디아다라가 전생의 기억을 불러오도록 만든 처방이다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 용린 산호 가루, 몽예꽃 열매 추출물, 안정초 추출물, 학발등 추출물을 탕약으로 만들어 금침으로 주사하며, 임상 결과에 따르면 환생 후 다섯 살이 되기 전에 복용해야 한다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 복약자가 얻는 기억의 크기와 명료도는 사람마다 다르다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 비디아다라 전설에 따르면 이 처방전은 이루지 못한 인연을 잊지 못하는 마음에서 비롯되었다고 전해진다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li>단정사와 의사들 — 단정사는 요약분제의 처방전을 집대성한 기관이고, 피곤한 의사와 재수없는 의사는 각각 처방을 확인하거나 책을 소지하는 방식으로 이 책과 얽힌다.<sup class="cite-ref" title="공식 HoYoWiki · 요약분제"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 피곤한 의사의 언급 · 피곤한 의사의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 재수없는 의사의 언급 · 재수없는 의사의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></li>
+<li><a href="npc-1154.html">토드</a>, <a href="npc-1284.html">옥란</a>, <a href="intelligentsia-guild.html">지식학회</a> — <a href="npc-1154.html">토드</a>는 요약분제를 단정사에서 가져와 달라고 부탁하고, <a href="npc-1284.html">옥란</a>은 <a href="intelligentsia-guild.html">지식학회</a>의 신청 소식을 전한다.<sup class="cite-ref" title="게임 본편 · 토드의 언급 · 토드의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 옥란의 언급 · 옥란의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></li>
+<li><a href="char-29.html">백로</a> — 지황 장군 음료를 구술한 인물로, 이 처방의 사용 여부를 최종 확인하는 역할도 맡는다.<sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · (2)"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">요약분제</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1386?lang=ko-kr">원문</a></span><div class="ref-quote">단정사 처방전을 집대성한 서적</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">(2)</span> <span class="ref-source">공식 HoYoWiki — 더 알아보기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1386?lang=ko-kr">원문</a></span><div class="ref-quote">…… …… 지황 장군 음료 분류: ≪환생과≫ 주요 효능: 비디아다라는 유아의 모습에 멈춰있고, 성장이 느리다 처방: 린연 천동 1전, 급속 성장 6전, 현포지황 추출물 1전 복용법: 알약으로 만들어 1일 2회 식후 복용한다 역사: 이 처방전은 현재 임상 실험 단계이며, 만약 1년 후 효과가 없을 시 폐기 처리해도 된다. (주의: 급속 성장은 약초 재배시에만 사용되는 약물로, 독물 부작용이 없지만 백로 님께서 해당 처방전의 효과를 확인하기 전에는 함부로 사용...</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">토드의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">토드의 인게임 대사</span></span><div class="ref-quote">그러니까 일단 ≪요약분제≫라는 선주 의학서가 필요하거든. 네가 단정사에 가서 가져다줄 수 있을까?</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">옥란의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">옥란의 인게임 대사</span></span><div class="ref-quote">≪요약분제≫? 지식학회에서 신청했다고요?</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">피곤한 의사의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">피곤한 의사의 인게임 대사</span></span><div class="ref-quote">≪요약분제≫? 엊그제 그 책에서 처방을 찾아봤는데……</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">재수없는 의사의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">재수없는 의사의 인게임 대사</span></span><div class="ref-quote">…≪요약분제≫를 찾는다고요? 이런 우연이, 제가 가지고 있었어요</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">옥란의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">옥란의 인게임 대사</span></span><div class="ref-quote">아, 저번에 ≪요약분제≫를 찾으러 왔었죠? 이번엔 절 좀 도와주실 수 있을까요?</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">여기에 ≪요약분제≫는 없다. 다른 곳을 돌아보자</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">여기에 ≪요약분제≫는 없다. 다른 곳을 돌아보자</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">오늘은 책에서 기쁨을 얻었다. ≪요약분제≫ 중 한 권을 찾았다</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 제도·조직 원리</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>개념</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 더 알아보기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
@@ -726,12 +668,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="entry-1386">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%9A%94%EC%95%BD%EB%B6%84%EC%A0%9C&amp;body=%EC%9A%94%EC%95%BD%EB%B6%84%EC%A0%9C+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fentry-1386.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>부트힐 · hoyohoyo.wiki</title>
-  <meta name="description" content="부트힐은 은하를 떠도는 개조 인간 카우보이이자 갤럭시 레인저의 일원이다. 그는 극도로 낙관적이고 자유분방한 성격으로 움직이며, 악을 처단하기 위해서라면 과격한 방법도 마다하지 않는다. 그의 행동은 단순한 방랑이나 현상금 사냥이 아니라, 복수의 대상인 스타피스 컴퍼니의 시선을 자신에게 끌어오려는 공개적인 도발에 가깝다.">
+  <meta name="description" content="부트힐은 은하를 떠도는 개조 인간 카우보이이자 갤럭시 레인저의 일원이다. 그가 쓰는 이름은 원래 수천 년 전 서로 싸우다 죽은 총잡이들을 부르던 말이며, 그는 스타피스 컴퍼니 시장개척부 부장 오스왈도 슈나이더를 쫓기 위해 그 이름으로 은하를 떠돈다. 극도로 낙관적이고 자유분방한 성격이며, 악을 처단하기 위해서라면 과격한 방법도 마다하지 않는다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="부트힐 · hoyohoyo.wiki">
-  <meta property="og:description" content="부트힐은 은하를 떠도는 개조 인간 카우보이이자 갤럭시 레인저의 일원이다. 그는 극도로 낙관적이고 자유분방한 성격으로 움직이며, 악을 처단하기 위해서라면 과격한 방법도 마다하지 않는다. 그의 행동은 단순한 방랑이나 현상금 사냥이 아니라, 복수의 대상인 스타피스 컴퍼니의 시선을 자신에게 끌어오려는 공개적인 도발에 가깝다.">
+  <meta property="og:description" content="부트힐은 은하를 떠도는 개조 인간 카우보이이자 갤럭시 레인저의 일원이다. 그가 쓰는 이름은 원래 수천 년 전 서로 싸우다 죽은 총잡이들을 부르던 말이며, 그는 스타피스 컴퍼니 시장개척부 부장 오스왈도 슈나이더를 쫓기 위해 그 이름으로 은하를 떠돈다. 극도로 낙관적이고 자유분방한 성격이며, 악을 처단하기 위해서라면 과격한 방법도 마다하지 않는다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/char-2367.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/char-2367.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,90 +620,86 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-cosmic-factions.html">우주 유랑 세력</a><span>부트힐</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B6%80%ED%8A%B8%ED%9E%90&amp;page_slug=char-2367">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>부트힐</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주 유랑 세력</span></div><figure class="article-hero-image"><img src="assets/wiki-images/36/610e41525b45eddb8937419fe6fd4eab_916108720518137-365b96ad7c19.webp" alt="부트힐 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-cosmic-factions.html">우주 유랑 세력</a><span>부트힐</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B6%80%ED%8A%B8%ED%9E%90&amp;page_slug=char-2367">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>부트힐</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주 유랑 세력</span></div><figure class="article-hero-image"><img src="https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/16/610e41525b45eddb8937419fe6fd4eab_9161087205181370400.png" alt="부트힐 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>부트힐은 은하를 떠도는 개조 인간 카우보이이자 갤럭시 레인저의 일원이다.<sup class="cite-ref" title="공식 HoYoWiki · 부트힐"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 극도로 낙관적이고 자유분방한 성격으로 움직이며, 악을 처단하기 위해서라면 과격한 방법도 마다하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki · 부트힐"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그의 행동은 단순한 방랑이나 현상금 사냥이 아니라, 복수의 대상인 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>의 시선을 자신에게 끌어오려는 공개적인 도발에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki · 부트힐"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>이 이름은 그가 이미 한 번 삶을 잃은 사람처럼 움직이며, 자기 몸과 명성을 모두 복수의 무기로 바꾼 인물이라는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 이름"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>이 원칙은 법과 질서의 바깥에 있는 사람이면서도 아무 기준 없이 움직이는 살인자가 아니라는 긴장을 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 원칙"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>부트힐의 뿌리는 아에라간-에파르셸의 초원에 있다. 그는 그레이와 닉에게 발견되어 입양되었고, 다른 형제자매들과 함께 초원, 숲, 강, 말, 소와 양 속에서 자랐다. 이 시절의 그는 은하의 수배자가 아니라, 가족에게 사랑받고 목장에서 뛰어다니던 아이였다. 그래서 부트힐의 복수는 추상적인 반기업 감정이 아니라, 한때 집과 가족과 땅을 가졌던 사람이 그것을 잃은 뒤 벌이는 추적이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>아에라간-에파르셸의 균열은 외부에서 온 검은 옷의 인물과 컴퍼니의 장비가 초원에 들어오면서 시작된다. 그는 공감각 비콘을 통해 은하에 수많은 세계가 있다는 사실을 처음 알았지만, 그 지식은 곧 굴착기와 무장 경비병, 신앙 모독, 추방, 미미한 배상으로 이어졌다. 현지인의 반대는 무시되었고, 대지에서는 검은색 광물이 쏟아져 나왔으며, 그와 동료들은 유격 작전으로 검은 옷의 인물의 움직임을 늦추려 했다. 이 사건은 부트힐에게 은하가 넓다는 사실보다 먼저, 은하 규모의 권력이 한 지역의 삶을 얼마나 쉽게 짓밟을 수 있는지를 각인시킨다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>그가 개조 인간이 된 과정은 생존보다 복수에 가깝다. 한 의사는 그에게 이 길이 어울리지 않으니 다른 일을 찾거나 배워 보라고 말했지만, 부트힐은 총으로 위협하며 수술대에 오른다. 수술 장면에서 그의 육체는 멀어지고 생각만 남은 듯 묘사되며, 그는 인간의 몸을 버리는 방식으로 자신을 계속 싸울 수 있는 존재로 바꾼다. 이 선택 때문에 부트힐은 피해자이면서도 스스로를 무기로 만든 인물이 되고, 그의 복수는 살아남은 사람의 회복이 아니라 끝까지 쫓아가는 사냥이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 이름"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>부트힐은 여러 번 아에라간-에파르셸로 돌아가 학살을 지시한 남자를 조사했지만, 역사 기록에서 그 남자의 모습이 지워졌다는 사실을 발견한다. 그는 기억의 정원에 숨어들어 아에라간-에파르셸과 관련된 <a class="wiki-link" href="dream-bubble.html" title="꿈방울">기억 거품</a>을 읽으려 했고, 혼란 속에서 마침내 오스왈도 슈나이더라는 이름과 스타피스 컴퍼니 <a class="wiki-link" href="market-development-department.html" title="시장개척부">시장개척부</a> 부장이라는 직책을 확인한다. 이 장면은 부트힐의 싸움이 단순한 증오가 아니라 기록에서 지워진 책임자를 다시 찾아내려는 추적이라는 점을 보여준다. 동시에 그는 정식 재판이나 제도적 절차가 아니라 침입, 난동, 습격으로 진실에 접근하므로, 복수의 정당성과 방법의 위험성이 한 인물 안에서 함께 움직인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 부트힐"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>그가 피어포인트의 은하 항구에서 컴퍼니 함대를 습격했다는 소문은 그의 복수가 이미 개인의 원한을 넘어 컴퍼니 내부의 업무와 안전을 흔드는 사건이 되었음을 보여준다. 컴퍼니 직원들은 시장개척부의 사업이 엉망이 되었다고 말하면서도, 피어포인트로 돌아가야 하는 자신들이 총구 앞에 설지 모른다고 걱정한다. 부트힐은 컴퍼니에게 단순히 수배 대상이 아니라, 내부 구성원들이 자기 출근길의 위험으로 체감하는 실질적 위협이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>부트힐은 갤럭시 레인저라는 이름 안에서도 위험한 쪽에 속한다. <a class="wiki-link" href="npc-3140.html" title="카멜라">카멜라</a>는 갤럭시 레인저를 독자적으로 움직이는 수렵 신도들이라고 설명하면서, 그중에는 말이 통하는 사람도 있지만 부트힐처럼 손에 수많은 피를 묻힌 수배자도 있다고 말한다. 이 평가는 부트힐을 정의의 편으로 단순히 정리하지 않고, 정의를 말하면서도 피와 현상금과 공포를 함께 끌고 다니는 인물로 둔다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아케론에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>그의 수배자 이미지는 여러 장면에서 반복된다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈 • 1"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 경기 현장에서는 그를 스타피스 컴퍼니가 지명 수배 중인 흉악범이자 갤럭시 레인저로 소개하고, 빼미는 그를 이기면 넘기고 상금을 나누자고 말한다.<sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 부트힐 자신도 자기 목에 걸린 현상금을 언급하며, 보상을 기준으로 상황을 농담처럼 받아친다. 이 현상금은 그가 컴퍼니 질서 바깥의 인물이라는 표식이지만, <a class="wiki-link" href="char-801.html" title="루카">루카</a>는 컴퍼니 지명 수배범이라는 이유만으로 나쁜 사람이라고 판단할 수는 없다고 생각한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>전투력 면에서 부트힐은 루카와의 대결을 통해 강하게 그려진다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 카멜라는 루카의 다음 상대가 부트힐이라고 알리며 난폭하고 위험한 사람이니 각별히 조심하라고 경고한다. 루카는 예비용 글러브가 있어도 부트힐의 한 방이면 끝날 것 같다고 말하고, 나중에는 부트힐이 정말 죽이려 했다면 자신은 반격 한 번 하지 못하고 죽었을 것이라고 인정한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 이 대결은 부트힐의 힘을 단순한 허세가 아니라 상대가 실제로 생존을 돌아보게 만드는 압박으로 보여준다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>부트힐의 잔혹함은 무차별 살해와 완전히 같지 않다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 루카는 부트힐이 자신을 정말 죽이려 했다면 자신이 살아남지 못했을 것이라며, 결국 부트힐의 자비 덕분에 살아남았다고 말한다. 또 루카는 부트힐이 잘못한 것이 아니라 자신의 실력이 부족했다고 받아들이고, 부트힐이 자신이 포기하기를 원했을지도 모른다는 해석도 나온다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 부트힐은 상대를 몰아붙이는 방식으로 시험하지만, 그 압박이 언제나 살의의 완성으로 이어지는 것은 아니다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>이 구성은 부트힐이 넓은 전장을 지휘하기보다 한 목표를 끌어내 결투로 몰아넣고, 약점을 부수며 이득을 쌓는 수렵형 총잡이라는 인상을 강화한다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 성혼 · 성혼"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>스타피스 컴퍼니는 부트힐의 가장 큰 적대 축이다.<sup class="cite-ref" title="공식 HoYoWiki · 부트힐"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 부트힐은 컴퍼니를 복수의 대상으로 삼고, 컴퍼니가 출판한 여행 책자에서 재미난 곳이 전부 여행 위험으로 표시된다고 비꼬며, 자신이 여행 위험 그 자체라면 그런 곳은 자신에게 위험하지 않다고 말한다. 그는 은하 곳곳이 컴퍼니의 “게딱지들”로 가득하다고 표현하며 아직 청소가 미흡하고 자신의 사랑이 부족하다고 말한다. 이 적대감은 농담처럼 들리지만, 아에라간-에파르셸에서 벌어진 침탈과 오스왈도 슈나이더 추적 때문에 생긴 구체적인 원한에 닿아 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>오스왈도 슈나이더는 부트힐의 복수를 한 점으로 모으는 이름이다. 부트힐은 역사 기록에서 지워진 학살 지시자를 찾기 위해 기억의 정원에 침입했고, 혼란 속에서 오스왈도 슈나이더가 스타피스 컴퍼니 시장개척부 부장이라는 사실을 확인했다. 그래서 부트힐의 컴퍼니 습격은 조직 전체에 대한 분노인 동시에, 특정 책임자를 끌어내기 위한 추적전이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 부트힐"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p><a class="wiki-link" href="topaz.html" title="토파즈">토파즈</a>와 <a class="wiki-link" href="aventurine.html" title="어벤츄린">어벤츄린</a>은 부트힐이 컴퍼니 사람을 어떻게 보는지 드러내는 상대들이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어벤츄린에 대해"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 토파즈에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 그는 토파즈가 형편없는 컴퍼니 사람들 중에서는 평판이 좋은 편이라고 인정하면서도, 컴퍼니에 몸담고 있는 한 다른 이들과 다를 것이 없다고 선을 긋는다. 어벤츄린에 대해서는 자신처럼 눈이 돌면 목숨도 불사하는 유명한 녀석이라고 말하고, 그를 빨리 처리하면 자기 현상금도 두 배로 오를 것이라고 농담한다. 파티 편성 대사에서도 토파즈에게는 거물급 수배자가 눈앞에 있는데 고집을 부린다고 말하고, 어벤츄린에게는 먼저 적들을 처리한 뒤 어떻게 손볼지 이야기하자고 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 어벤츄린"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 토파즈"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 부트힐에게 컴퍼니 인물은 개인의 선악보다 먼저 소속의 책임을 묻는 대상이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 토파즈에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 토파즈"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
-<p>갤럭시 레인저와 수렵은 부트힐의 정의관을 설명하는 틀이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 카멜라는 갤럭시 레인저를 독자적으로 움직이는 수렵 신도들이라고 말하고, 부트힐은 그 안에서도 피를 많이 묻힌 수배자로 분류된다. 부트힐은 <a class="wiki-link" href="char-1919.html" title="아케론">아케론</a>이 왜 갤럭시 레인저를 사칭하는지 모르겠다고 하면서도, 자신 같은 사람도 정의를 실현할 수 있다면 정의를 실현하는 길은 하나가 아니라고 말한다. 이 말은 부트힐이 제도적 정의보다 결과와 추적을 중시하는 인물이며, 자기 방식의 폭력까지 정의의 한 갈래로 밀어붙인다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아케론에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>아케론, <a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>, <a class="wiki-link" href="char-8.html" title="단항">단항</a>, <a class="wiki-link" href="char-1535.html" title="아젠티">아젠티</a>는 부트힐의 관계망을 컴퍼니 밖으로 넓힌다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아케론에 대해"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블랙 스완에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아젠티에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup> 그는 단항을 말수가 적고 손안의 무기로 뜻을 표현하는 협객으로 보며, 좋은 “브라더”가 될 수 있다고 말한다. 블랙 스완에 대해서는 정보를 캐내는 것보다 자신을 찾아오라고 명상하는 편이 낫다고 말할 만큼, 기억하는 자의 방식과 출몰을 특이한 인연으로 받아들인다. 아젠티는 한 번 만난 적이 있는 인물이며, 부트힐은 둘 다 은빛 갑옷을 걸치고 무기를 잘 다루며 정의감이 넘친다고 말한다. 이 관계들은 부트힐이 고립된 복수자이면서도, 무기와 정의와 기묘한 신념을 공유하는 사람들과는 금세 연결되는 인물임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아젠티에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
-<p><a class="wiki-link" href="char-3057.html" title="라파">라파</a>와 Mr. 레카에 대한 언급은 부트힐이 괴짜를 단순히 우스운 존재로 보지 않는다는 점을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 라파에 대해"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · Mr. 레카에 대해"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 그는 라파가 매일 이상한 소리를 해도 모자란 아이가 아니며, 머릿속이 혼란스러워 보여도 영리하고 큰 문제가 생기면 자신의 인도를 엄격하게 지킨다고 평가한다. Mr. 레카에 대해서는 영화에 빠져 있고 눈이 돌아가면 뵈는 게 없어지는 인물이라며, 나쁜 사람으로 규정하기는 어렵지만 조심하지 않으면 언젠가 영화 소재가 될 수 있다고 경고한다. 부트힐은 이상한 말투와 기행 뒤에 있는 능력과 위험을 알아보며, 자신과 비슷하게 정상성 밖에 선 인물들을 가볍게만 다루지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 라파에 대해"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · Mr. 레카에 대해"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p>루카와의 대결은 부트힐의 위험성과 자비가 동시에 드러나는 사건이다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 루카는 부트힐과 자신이 은하 전체의 주목을 받으려 한다는 점에서 다르지 않다고 말하지만, 곧 이것이 단순한 경기 이상으로 목숨이 걸린 대결이 될 수 있음을 체감한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 카멜라는 무쇠 팔뚝이 막아주지 않았다면 루카가 정말 위험했을 것이라고 말하고, 루카는 부트힐이 정말 죽이려 했다면 자신이 반격하지 못하고 죽었을 것이라고 인정한다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 그러나 루카는 동시에 부트힐이 잘못한 것이 아니라 자기 실력이 부족했다고 받아들이며, 부트힐의 공격을 자신을 꺾는 폭력이자 포기를 요구하는 시험으로 이해한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<h2 id="개조된-총잡이의-복수">개조된 총잡이의 복수</h2>
-<p>부트힐은 잃어버린 고향을 되찾는 영웅이라기보다, 고향을 잃은 뒤 돌아갈 곳이 없는 사람이 자기 몸을 사냥 도구로 바꾼 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그는 도시로 돌아왔을 때 집이 있는 사람이 제일 부럽다고 말하며, 그 짧은 말은 그의 낙관적 태도 뒤에 남은 상실을 드러낸다. 가족과 초원과 목장의 기억이 분명히 남아 있기 때문에, 그의 방랑은 자유로운 여행만이 아니라 잃어버린 장소를 대신할 적을 계속 찾아다니는 움직임이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>그는 선의를 믿지만, 선의가 아무 이유 없이 굴러들어온다고 믿지는 않는다. 타인의 선의와 용기의 의미는 믿어도 좋지만, 그런 좋은 일은 스스로 이뤄야 한다는 그의 말은 부트힐식 정의의 핵심에 가깝다. 그래서 그는 남이 해결해 주지 않는 일을 총과 습격과 현상금의 방식으로 직접 해결하려 한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 이 태도는 피해자의 침묵을 거부한다는 점에서는 강하지만, 자기 손으로 심판하려는 폭력이 계속 커질 수 있다는 위험도 함께 가진다.<sup class="cite-ref" title="공식 HoYoWiki · 부트힐"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>부트힐의 농담은 죽음과 가까울수록 더 밝아진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 그는 다시 만난다면 그때 자신이 시체는 아니었으면 좋겠다고 말하고, 전투 불능 상태에서도 상대가 총을 좀 쏜다고 웃는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> 이런 말투는 공포를 모르는 낙관이라기보다, 이미 자신의 생존을 확신하지 않는 사람이 끝까지 웃으며 판을 흐트러뜨리는 방식이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 이름"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 부트힐은 죽음을 피하지 않고, 죽음의 언어를 먼저 꺼내 상대가 자신을 쉽게 협박하지 못하게 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기 • 발동"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup></p>
-<p>그의 한계도 이 지점에서 분명해진다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 토파즈에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 부트힐은 컴퍼니 소속이라는 이유만으로 토파즈를 다른 컴퍼니 사람들과 다를 것 없다고 보고, 은하 곳곳의 컴퍼니 구성원을 청소 대상으로 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 토파즈에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 이 판단은 아에라간-에파르셸에서 벌어진 침탈의 책임을 흐리지 않게 하지만, 개인과 조직을 구분할 여지를 좁힌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 토파즈에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 부트힐은 정의를 위해 움직이는 인물이지만, 그의 정의는 이미 수많은 피와 수배와 결투의 형식을 지나왔기 때문에 늘 위험한 방식으로 나타난다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>그럼에도 부트힐은 단순한 악인이 아니다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 루카는 컴퍼니가 지명 수배 중이라고 해서 꼭 나쁜 사람이라고 판단할 수는 없다고 생각하고, 자신이 살아남은 것도 부트힐의 자비 덕분이라고 말한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 부트힐은 상대를 죽일 수 있는 힘을 지녔지만 때로는 죽이지 않고, 상대가 자기 약함을 보게 만들며, 그 과정에서 자신이 어떤 선을 넘을 수 있는 사람인지도 계속 드러낸다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 그래서 그는 스타피스 컴퍼니가 만든 질서에서는 흉악범이고, 아에라간-에파르셸의 기억에서는 지워진 책임자를 쫓는 생존자이며, 갤럭시 레인저의 이름 아래서는 정의와 폭력이 분리되지 않는 총잡이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">부트힐</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">「이렇게 설명해 주지. 내 공감각 비콘은 개조됐어. 아무튼 너흰 내가 이 게딱지 같은 베이비들과 이렇게 대화하는 것밖에 못 들을 거야…. 베이비, 베이비, 베이비! …봤지?」 은하를 떠도는 개조 인간 카우보이. 극도로 낙관적이고 자유분방하다. 「갤럭시 레인저」 의 일원으로, 악을 처단하기 위해서라면 무슨 짓이든 할 수 있다—— 그의 대담한 행동은 복수의 대상인 「스타피스 컴퍼니」 의 이목을 끌기 위함이다.</div></li>
+<p>부트힐은 은하를 떠도는 개조 인간 카우보이이자 갤럭시 레인저의 일원이다.<sup class="cite-ref" title="공식 HoYoWiki · 부트힐"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그가 쓰는 이름은 원래 수천 년 전 서로 싸우다 죽은 총잡이들을 부르던 말이며, 그는 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a> <a class="wiki-link" href="market-development-department.html" title="시장개척부">시장개척부</a> 부장 오스왈도 슈나이더를 쫓기 위해 그 이름으로 은하를 떠돈다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해 • 이름"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 극도로 낙관적이고 자유분방한 성격이며, 악을 처단하기 위해서라면 과격한 방법도 마다하지 않는다.<sup class="cite-ref" title="공식 HoYoWiki · 부트힐"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>부트힐은 어릴 때 눈 속에서 울고 있다가 그레이와 닉에게 발견되어 입양되었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 아에라간-에파르셸 고대어로 「장전한 총」을 뜻하는 이름을 얻었고, 다른 형제자매와 함께 초원과 숲, 강 사이에서 말과 소, 양을 돌보며 자랐다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>검은 옷을 입은 인물이 무장 경호원들을 이끌고 캠프에 들어오면서 초원의 평화가 끝났다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그는 이때 공감각 비콘을 건네받아 은하에 수많은 세계가 있다는 사실을 처음 알았지만, 뒤이어 굴착기와 무장 경비병이 들이닥쳐 주민의 신앙을 모독하고 터전에서 몰아냈으며 미미한 배상만 돌아왔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그와 동료들은 유격 작전으로 맞섰지만 침탈을 막지는 못했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 2"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>한 의사는 그에게 총잡이의 길이 어울리지 않는다며 다른 일을 찾아보라고 말렸지만, 그는 총으로 위협해 수술대에 올랐다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 수술 중 그의 육체는 점점 멀어지고 생각만 제자리에 남은 것처럼 묘사된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 3"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>그는 여러 차례 아에라간-에파르셸로 돌아가 몰살을 지시한 남자를 조사했지만, 역사 기록에서는 그 남자의 모습이 지워져 있었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 기억의 정원에 숨어들어 <a class="wiki-link" href="dream-bubble.html" title="꿈방울">기억 거품</a>을 뒤졌고, 진열대가 무너지며 기억하는 자들이 몰려든 혼란 속에서 마침내 「오스왈도 슈나이더, 스타피스 컴퍼니 시장개척부 부장」이라는 이름을 확인했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 오스왈도 슈나이더는 이사회 후보 이사이자 「보존」의 광팬으로, 연맹 내부 문서에서 연맹에 대한 위험도가 &#x27;높음&#x27;으로 책정된 인물이다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>그 후 정체불명의 개조 인간이 피어포인트의 은하 항구에서 컴퍼니 함대를 습격했다는 소문이 돌았다. 컴퍼니 직원들은 시장개척부의 사업이 엉망이 되었다고 말하면서도, 자신이 총구 앞에 설지 모른다고 걱정했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리 • 4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 부트힐은 <a class="wiki-link" href="aventurine.html" title="어벤츄린">어벤츄린</a>에게 오스왈도 슈나이더라는 고위 임원에게 원한이 있다고 밝히고, 그를 찾는 일을 도와 달라고 부탁한다.<sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<h2 id="스타피스-컴퍼니와의-대립">스타피스 컴퍼니와의 대립</h2>
+<p>시장개척부는 아에라간-에파르셸과 비슷한 방식을 다른 곳에서도 반복했다. 주인 없는 행성 츠가냐에서 오스왈도 슈나이더의 주도로 &#x27;연합 수장국 수립&#x27;을 선전했지만, 실제로는 컴퍼니 사업에 반대한 현지 카티카 씨족의 반란을 진압한 사건이었다.<sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐-Ⅳ와 스타피스 헌장 · 스타피스 방송의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 오스왈도 슈나이더와 츠가냐 개척 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 츠가냐의 반란 진압 보도 · 스타피스 방송의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 — 스타피스 방송 · 카티카 씨족과 시장개척부 지역 사업 · 스타피스 방송의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p><a class="wiki-link" href="npc-3140.html" title="카멜라">카멜라</a>는 갤럭시 레인저를 독자적으로 움직이는 「수렵」 신도들이라 설명하며, 그중에서도 부트힐은 손에 수많은 피를 묻힌 수배자로 분류된다고 말한다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 경기 현장에서는 그를 스타피스 컴퍼니가 지명 수배 중인 흉악범이자 갤럭시 레인저로 소개하고, 빼미는 그를 이기면 자신에게 넘기고 상금을 나누자고 제안한다.<sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 빼미(원격 조종 인형)의 언급 · 빼미(원격 조종 인형)의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 부트힐 자신도 자기 목에 걸린 현상금을 대수롭지 않게 언급한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈 • 1"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <a class="wiki-link" href="char-801.html" title="루카">루카</a>는 컴퍼니의 지명 수배범이라는 이유만으로 나쁜 사람이라고 판단할 수는 없다고 생각한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<p>부트힐은 컴퍼니가 출판한 여행 책자에서 재미난 곳이 죄다 「여행 위험」으로 표시된다고 비꼬며, 자신이 여행 위험 그 자체이니 그런 곳은 자신에게 위험하지 않다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 여행"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 은하 곳곳이 컴퍼니의 「게딱지」로 가득하다며 아직 청소가 미흡하다고도 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
+<h2 id="루카와의-결투">루카와의 결투</h2>
+<p>카멜라는 루카의 다음 상대가 부트힐이라며 난폭하고 위험하니 조심하라고 경고하고, 루카는 예비용 글러브가 있어도 부트힐의 한 방이면 끝날 것 같다고 말한다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 루카는 부트힐에게 컴퍼니와 무슨 원한이 있는지 모르겠다면서도, 결국 둘 다 은하 전체의 주목을 받으려는 목적은 다르지 않다고 말한다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 대결이 벌어지자 루카는 이건 단순한 대결일 뿐인데 목숨까지 걸 필요가 있냐고 되묻는다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
+<p>카멜라는 무쇠 팔뚝이 막아 주지 않았다면 루카가 정말 위험했을 것이라고 말했고, 루카도 부트힐이 정말 죽이려 했다면 자신은 반격 한 번 못 하고 죽었을 것이며 결국 부트힐의 자비 덕분에 살아남았다고 인정한다.<sup class="cite-ref" title="게임 본편 · 카멜라의 언급 · 카멜라의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> 루카는 이 패배를 부트힐의 잘못이 아니라 자신의 실력 부족으로 받아들이며, 부트힐이 자신이 포기하기를 바랐을지도 모른다고 생각한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>부트힐에게는 지키는 원칙이 세 가지 있다. 빼앗은 돈으로 향락을 즐기지 않고, 신용 포인트는 돈으로 치지 않으며, 가볍게 즐기는 것은 향락으로 치지 않는다는 것이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담 • 원칙"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> 그는 오른쪽 눈과 몸을 잃은 이유를 「수렵의 빛의 화살을 똑바로 봐서」라고 말한 뒤 「물론 뻥이야!」라며 웃어넘긴다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
+<p>그는 선의와 용기 같은 것은 믿어도 좋지만, 좋은 일이 저절로 굴러들어온다고 믿어서는 안 되며 그런 일은 스스로 이뤄야 한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 도시로 돌아왔을 때는 집이 있는 사람이 제일 부럽다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 도시로 복귀"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
+<p><a class="wiki-link" href="topaz.html" title="토파즈">토파즈</a>에 대해서는 형편없는 컴퍼니 사람들 중 평판이 좋은 편이라고 인정하면서도, 컴퍼니에 몸담고 있는 한 다른 이들과 다를 것 없다고 선을 긋는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 토파즈에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 어벤츄린에 대해서는 자신처럼 눈이 돌면 목숨도 불사하는 유명한 녀석이라 평하고, 먼저 잔챙이들을 처리한 뒤 손볼지 이야기하자고 농담한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 어벤츄린에 대해"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성 • 어벤츄린"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
+<p><a class="wiki-link" href="char-8.html" title="단항">단항</a>은 말수가 적고 손안의 무기로 뜻을 표현하는 협객이라며 좋은 「브라더」가 될 수 있다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 단항에 대해"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <a class="wiki-link" href="char-1806.html" title="블랙 스완">블랙 스완</a>에 대해서는 정보를 캐내려 애쓰기보다 자신을 찾아오라고 명상하는 편이 낫다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 블랙 스완에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup> <a class="wiki-link" href="char-1535.html" title="아젠티">아젠티</a>와는 한 번 만난 적이 있으며, 둘 다 은빛 갑옷을 걸치고 무기를 잘 다루며 정의감이 넘친다고 평한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아젠티에 대해"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> <a class="wiki-link" href="char-1919.html" title="아케론">아케론</a>에 대해서는 「갤럭시 레인저」를 사칭하는 이유는 모르겠지만, 자신 같은 사람도 정의를 실현할 수 있다는 것은 정의를 실현하는 길이 하나가 아니라는 뜻이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아케론에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
+<p><a class="wiki-link" href="char-3057.html" title="라파">라파</a>에 대해서는 매일 이상한 소리를 해도 모자란 아이가 아니며, 머릿속이 혼란스러워 보여도 영리하고 큰 문제가 생기면 자신의 「인도」를 엄격히 지킨다고 평가한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 라파에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> Mr. 레카에 대해서는 영화에 빠져 있고 눈이 돌면 뵈는 게 없어진다며, 나쁜 사람으로 규정하긴 어렵지만 조심하지 않으면 영화 소재가 될 수 있다고 경고한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · Mr. 레카에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
+<h2 id="해석과-논점">해석과 논점</h2>
+<p>부트힐은 컴퍼니 소속이라는 사실만으로 개인을 판단하는 경향이 있어, 토파즈처럼 평판이 나쁘지 않은 인물까지 싸잡아 청소 대상으로 여긴다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 토파즈에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 그러나 루카와의 결투에서 보듯, 상대를 죽일 수 있는 상황에서도 자비를 남겨 둔다.<sup class="cite-ref" title="게임 본편 · 루카의 언급 · 루카의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">부트힐</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">「이렇게 설명해 주지. 내 공감각 비콘은 개조됐어. 아무튼 너흰 내가 이 게딱지 같은 베이비들과 이렇게 대화하는 것밖에 못 들을 거야…. 베이비, 베이비, 베이비! …봤지?」 은하를 떠도는 개조 인간 카우보이. 극도로 낙관적이고 자유분방하다. 「갤럭시 레인저」 의 일원으로, 악을 처단하기 위해서라면 무슨 짓이든 할 수 있다—— 그의 대담한 행동은 복수의 대상인 「스타피스 컴퍼니」 의 이목을 끌기 위함이다.</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">갤럭시 레인저</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">은하를 떠도는 개조 인간 카우보이. 극도로 낙관적이고 자유분방하다. 「갤럭시 레인저」의 일원으로, 악을 처단하기 위해서라면 무슨 짓이든 할 수 있다—— 그의 대담한 행동은 복수의 대상인 「스타피스 컴퍼니」의 이목을 끌기 위함이다</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">캐릭터 스토리 • 3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 「이 길은 당신한테 안 어울리니 얼른 떠나요. 다른 일을 찾거나… 뭔가를 찾아서 배워요」 키가 작은 의사가 반쯤 먹은 샌드위치를 내려놓고는 사이즈가 한참 큰 흰색 가운에 손을 닦았다. 남자가 아무 말 없이 옷을 벗어 온몸의 상처를 보여주는데도 의사는 잔소리를 멈추지 않았다. 「당신 같은 젊은 사람은 더 나은 미래를 누릴 자격이 있어요. 이 길은 막다른 길에 몰린 사람들, 다시 시작할 능력이 없지만 악에 죄를 물으려 하는 사람들...</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">자신에 대해 • 이름</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">수천 년 전, 사람들은 싸우다 죽은 총잡이들을 「부트힐」이라는 이름으로 불렀어. 그러니까 이건 살아있는 사람을 위한 이름이 아니야. 마침 난 살아있는 사람이라고 할 수 없기도 하고, 하하!</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">잡담 • 원칙</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">내 주머니에 든 돈은 거의 다 부정한 수단으로 얻은 거긴 하지만, 나도 나만의 원칙이 있어. 첫째, 절대 빼앗은 돈으로 향락을 즐기지 않는다. 둘째, 신용 포인트는 「돈」이라고 할 수 없다. 셋째, 가볍게 즐기는 건 「향락」이라고 치지 않는다. 난 이 세 가지를 절대 깨지 않아!</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">(부트힐… 컴퍼니가 지명 수배 중인 흉악범이라…. 아깐 카멜라 씨 앞이라 솔직하게 말하지 못했지만 「컴퍼니 지명 수배범」이라고 해서 꼭 나쁜 사람이라고 판단할 순 없어)</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">캐릭터 스토리 • 1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 「그레이, 눈속에 저거, 아이 아니야?!」 그레이와 닉은 조심스럽게 다가가 빨개진 얼굴로 계속 울고 있는 아이를 안아 들었다. 아이에게는 「아에라간-에파르셸」의 고대어로 장전한 총을 의미하는 멋진 이름이 있었다. 그는 그레이와 닉의 사랑을 받으며 다른 형제자매들과 함께 행복하게 자랐다. 그들은 각기 다른 곳에서 왔지만, 지금은 광활한 대륙 「아에라간-에파르셸」에 속해 있었다. 그레이는 그에게 식물과 새, 강에 대해 가르쳐주었고,...</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">캐릭터 스토리 • 2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 우주선이 드리운 그림자가 초원의 달빛을 가렸다. 그는 굉음을 내며 지나가는 열차에서 뛰어내렸다. 짙은 연기와 먼지가 걷혔을 때, 그는 이미 전리품을 가지고 캠프로 돌아왔다. 그는 고개를 들어 그 불청객들을 바라보았다. 검은 옷을 깔끔하게 차려입은 사람이 완전 무장을 한 경호원들의 호위를 받으며 갑판에서 내려와 카우보이 캠프로 걸어 들어왔다. 그는 검은 옷을 입은 사람이 공감각 비콘이라고 부르는 것을 건네받았다. 낯설고도 웅장한...</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">캐릭터 스토리 • 4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 그는 여러 번 「아에라간-에파르셸」로 돌아가 당시 몰살을 지시한 남자를 조사했지만, 역사 기록에서 그의 모습은 지워졌다는 것을 발견했다. 그는 기억의 정원에 숨어들어 「아에라간-에파르셸」과 관련된 기억 거품을 읽으려 했다. 진열대에 진열된 기억 거품이 굴러떨어졌다. 기억하는 자들은 벌떼처럼 몰려들어 희귀한 기억을 구해내느라 그를 막을 여력이 없었다. 기억의 정원에서 쫓겨나면서 그는 마침내 혼란한 틈에 「아에라간-에파르셸」에 관한...</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">빼미(원격 조종 인형)의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">빼미(원격 조종 인형)의 인게임 대사</span></span><div class="ref-quote">그리고 홍팀 선수는 스타피스 컴퍼니에서 지명 수배 중인 흉악범——「갤럭시 레인저」 부트힐입니다!</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">카멜라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카멜라의 인게임 대사</span></span><div class="ref-quote">갤럭시 레인저는 독자적으로 움직이는 「수렵」 신도들이에요. 그중엔 별의별 사람이 다 있죠. 상대적으로 말이 잘 통하는 사람이 있지만, 부트힐처럼 손에 수많은 피를 묻힌 수배자도 있고요</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">아케론에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">그녀의 정체가 뭔지, 왜 「갤럭시 레인저」를 사칭하는 건지 모르겠어…. 근데 상관없어. 이런 나도 정의를 실현할 수 있다는 건 정의를 실현하는 길이 하나가 아니라는 뜻이니까!</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">전리품 오픈 • 1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">흥, 내 목에 걸린 현상금에 비하면 새 발의 피잖아</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">빼미(원격 조종 인형)의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">빼미(원격 조종 인형)의 인게임 대사</span></span><div class="ref-quote">힘내세요, 루카 선수! 부트힐을 이기면 저한테 넘기고, 상금은 반반 나누자고요!</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">카멜라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카멜라의 인게임 대사</span></span><div class="ref-quote">루카 선수, 다음 경기 상대는 부트힐이에요…. 이번 대결은 각별히 조심해야 해요. 난폭하고 위험한 사람이거든요!</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">클라라가 예비용 글러브를 몇 개 준비해 주긴 했어요…. 그런데 그게 소용이 있을까요? 어차피 부트힐 씨 한 방이면 끝날 텐데…</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">부트힐 씨가 정말 죽이려고 했다면 전 반격 한 번 하지 못하고 죽었을 거예요. 결국 전 부트힐 씨의 자비 덕분에 살아남은 거죠</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">카멜라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카멜라의 인게임 대사</span></span><div class="ref-quote">부트힐 그 사람 정말 너무한 거 아니에요? 무쇠 팔뚝이 막아주지 않았다면 루카 씨는 정말로……</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">부트힐은 진심으로 네가 포기하길 원했는지도 몰라</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">내 실력이 부족한 거지. 부트힐 씨는 잘못 없어</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">으… 부트힐 씨, 이건 그냥 대결일 뿐인데 굳이 목숨까지 걸 필요는 없지 않을까요……</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">수렵</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">성혼</span> <span class="ref-source">공식 HoYoWiki — 성혼 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">어벤츄린에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">하! 아주 유명한 녀석이지. 나처럼 눈이 돌면 목숨도 불사하는 녀석이야. 아무래도 내가 좀 더 분발해서 녀석을 빨리… 하하, 그럼 내 목에 걸린 현상금도 두 배로 오르겠지!</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">토파즈에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">형편없는 컴퍼니 놈들 중에 그래도 평판이 좋은 편이지? 근데 그게 무슨 소용이야? 컴퍼니에 몸담고 있는 한, 다른 놈들이랑 다를 거 없어!</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">파티 편성 • 어벤츄린</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">일단 이 조무래기들부터 처리하고 나서 널 어떻게 손볼지 이야기해 볼까?</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">파티 편성 • 토파즈</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">이상하군, 이 거물급 수배자가 눈앞에 있는데도 고집을 부리다니?</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">단항에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">난 원래 선주 사람을 좋아해. 그 친구는 참 괜찮은 사람이야. 나처럼 말수가 적고, 손안에 든 「무기」로 자신의 뜻을 표현하는 협객이지! 하하! 우린 분명 좋은 브라더가 될 수 있을 거야!</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">블랙 스완에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">그 기억하는 자를 찾는 건, 어렵다면 어렵고 쉽다면 쉬운 일이지. 시간 들여서 정보를 캐내는 건 헛수고야. 차라리 제자리에서 「빨리 날 찾아와」라고 명상하는 게 나아. 그럼 바로 눈앞에 나타날지도 몰라</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">아젠티에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">참 재미있는 인연이야. 그와 한 번 만난 적이 있어. 우주에서 취향이 이렇게나 비슷한 사람을 만나기란 쉽지 않아…. 봐, 우리 둘 다 은빛 갑옷을 걸치고 무기를 잘 다루잖아…. 그리고 가장 중요한 건 둘 다 정의감이 넘친다는 거지</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">라파에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">라파가 매일 이상한 소리를 한다고 모자란 아이라고 생각하면 안 돼. 그 녀석의 머릿속이 혼란스러운 것 같아도 사실 매우 영리하다고! 게다가 큰 문제가 생기면 라파는 언제나 자신의 「인도(忍道)」 를 엄격하게 지키지. 그녀는 결코 어설프지 않아</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">Mr. 레카에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">그 녀석은 항상 그 혹 같은 영화에 빠져있는데 눈이 돌아가면 뵈는 게 없어지지.... 녀석을 나쁜 사람으로 규정하긴 어렵지만, 그래도 조심하는 게 좋아. 안 그러면 언젠가 그 울보 유령의 「영화 소재」 가 되어버릴지도 모른다고</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">부트힐 씨, 컴퍼니랑 무슨 원한을 맺었는지 모르겠지만… 전 저희가 다르다고 생각하지 않아요. 우린 결국 은하 전체의 주목을 받는 게 목적 아닌가요!?</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">이 은하계는 게으름뱅이 집에 있는 주방과도 같지. 찬장을 열면 구석구석에 컴퍼니의 게딱지들이 잔뜩 있거든. 아직 청소가 미흡하고, 내 사랑이 부족하다는 소리야</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">작별</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">너와 다시 만날 수 있을 거라고 확신하는 척하진 않을게…. 하지만 다시 만나게 된다면, 그때 내가 시체는 아니었으면 좋겠군</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">전투 불능</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">하하, 총 좀 쏘는군……</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">난 부트힐이라고 해. 나에 대해 들어본 사람은 모두 내가 뭘 하는지 알아. 들어본 적 없는 사람은… 명을 재촉하고 싶지 않다면 영원히 듣지 않는 게 좋을 거야</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">필살기 • 발동</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">사람은 딱 두 종류로 나뉘지. 총을 장전하거나… 제 무덤을 파거나!</div></li></ol></details>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">자신에 대해 • 이름</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">수천 년 전, 사람들은 싸우다 죽은 총잡이들을 「부트힐」이라는 이름으로 불렀어. 그러니까 이건 살아있는 사람을 위한 이름이 아니야. 마침 난 살아있는 사람이라고 할 수 없기도 하고, 하하!</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">캐릭터 스토리 • 4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 그는 여러 번 「아에라간-에파르셸」로 돌아가 당시 몰살을 지시한 남자를 조사했지만, 역사 기록에서 그의 모습은 지워졌다는 것을 발견했다. 그는 기억의 정원에 숨어들어 「아에라간-에파르셸」과 관련된 기억 거품을 읽으려 했다. 진열대에 진열된 기억 거품이 굴러떨어졌다. 기억하는 자들은 벌떼처럼 몰려들어 희귀한 기억을 구해내느라 그를 막을 여력이 없었다. 기억의 정원에서 쫓겨나면서 그는 마침내 혼란한 틈에 「아에라간-에파르셸」에 관한...</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">은하를 떠도는 개조 인간 카우보이. 극도로 낙관적이고 자유분방하다. 「갤럭시 레인저」의 일원으로, 악을 처단하기 위해서라면 무슨 짓이든 할 수 있다—— 그의 대담한 행동은 복수의 대상인 「스타피스 컴퍼니」의 이목을 끌기 위함이다</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">캐릭터 스토리 • 1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 「그레이, 눈속에 저거, 아이 아니야?!」 그레이와 닉은 조심스럽게 다가가 빨개진 얼굴로 계속 울고 있는 아이를 안아 들었다. 아이에게는 「아에라간-에파르셸」의 고대어로 장전한 총을 의미하는 멋진 이름이 있었다. 그는 그레이와 닉의 사랑을 받으며 다른 형제자매들과 함께 행복하게 자랐다. 그들은 각기 다른 곳에서 왔지만, 지금은 광활한 대륙 「아에라간-에파르셸」에 속해 있었다. 그레이는 그에게 식물과 새, 강에 대해 가르쳐주었고,...</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">캐릭터 스토리 • 2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 우주선이 드리운 그림자가 초원의 달빛을 가렸다. 그는 굉음을 내며 지나가는 열차에서 뛰어내렸다. 짙은 연기와 먼지가 걷혔을 때, 그는 이미 전리품을 가지고 캠프로 돌아왔다. 그는 고개를 들어 그 불청객들을 바라보았다. 검은 옷을 깔끔하게 차려입은 사람이 완전 무장을 한 경호원들의 호위를 받으며 갑판에서 내려와 카우보이 캠프로 걸어 들어왔다. 그는 검은 옷을 입은 사람이 공감각 비콘이라고 부르는 것을 건네받았다. 낯설고도 웅장한...</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">캐릭터 스토리 • 3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 「이 길은 당신한테 안 어울리니 얼른 떠나요. 다른 일을 찾거나… 뭔가를 찾아서 배워요」 키가 작은 의사가 반쯤 먹은 샌드위치를 내려놓고는 사이즈가 한참 큰 흰색 가운에 손을 닦았다. 남자가 아무 말 없이 옷을 벗어 온몸의 상처를 보여주는데도 의사는 잔소리를 멈추지 않았다. 「당신 같은 젊은 사람은 더 나은 미래를 누릴 자격이 있어요. 이 길은 막다른 길에 몰린 사람들, 다시 시작할 능력이 없지만 악에 죄를 물으려 하는 사람들...</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">「『시장개척부』, 부장: 오스왈도•슈나이더, 이사회 후보 이사. 아직 경력이 길지 않은 부장으로 『보존』의 광팬이다. 일을 벌이는 걸 굉장히 좋아하는 자로 연맹에 대한 위험도는 높음으로 책정된다」</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">뭐, 떳떳한 사람은 돌려 말하는 법이 없지. 난 오스왈도•슈나이더라는 고위 임원에게 원한이 있는데, 이 화려한 녀석이 그자를 찾는 걸 도와주겠다네</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">츠가냐-Ⅳ와 스타피스 헌장</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「츠가냐-Ⅳ는 시장개척부의 지도하에 《스타피스 헌장》에 따라 독립적이고 자주적인 연합 수장국을 세웠고, 스타피스 회의에서 합법적인 의석을 획득했다고 선언했습니다——」</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">오스왈도 슈나이더와 츠가냐 개척 사업</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「시장개척부의 오스왈도•슈나이더 부장은 이번 조치를 『모든 솜보르 시민의 기본적 자유를 위한 기반』이자, 컴퍼니가 주인 없는 행성 구역인 츠가냐에서 개척 사업을 펼치는 데 본보기가 될 것이라고 밝혔습니다……」</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">츠가냐의 반란 진압 보도</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「스타피스 방송 속보입니다. 컴퍼니 시장개척부 대변인은 주인 없는 행성인 츠가냐에서 소규모 반란이 일어났으며, 해당 반란은 현재 진압된 상태라고 밝혔습니다——」</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">카티카 씨족과 시장개척부 지역 사업</span> <span class="ref-source">게임 본편 — 스타피스 방송 · <span class="ref-detail">스타피스 방송의 인게임 대사</span></span><div class="ref-quote">「반란을 일으킨 집단은 현지 『카티카』 씨족으로 확인되었습니다. 이 씨족의 족장은 컴퍼니에 대해 장기간 불만을 품고 있었으며, 시장개척부의 지역 사업에 심각한 부정적 영향을 주었다고 알려졌습니다」</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">카멜라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카멜라의 인게임 대사</span></span><div class="ref-quote">갤럭시 레인저는 독자적으로 움직이는 「수렵」 신도들이에요. 그중엔 별의별 사람이 다 있죠. 상대적으로 말이 잘 통하는 사람이 있지만, 부트힐처럼 손에 수많은 피를 묻힌 수배자도 있고요</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">빼미(원격 조종 인형)의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">빼미(원격 조종 인형)의 인게임 대사</span></span><div class="ref-quote">그리고 홍팀 선수는 스타피스 컴퍼니에서 지명 수배 중인 흉악범——「갤럭시 레인저」 부트힐입니다!</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">빼미(원격 조종 인형)의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">빼미(원격 조종 인형)의 인게임 대사</span></span><div class="ref-quote">힘내세요, 루카 선수! 부트힐을 이기면 저한테 넘기고, 상금은 반반 나누자고요!</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">전리품 오픈 • 1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">흥, 내 목에 걸린 현상금에 비하면 새 발의 피잖아</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">(부트힐… 컴퍼니가 지명 수배 중인 흉악범이라…. 아깐 카멜라 씨 앞이라 솔직하게 말하지 못했지만 「컴퍼니 지명 수배범」이라고 해서 꼭 나쁜 사람이라고 판단할 순 없어)</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">잡담 • 여행</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">컴퍼니에서 출판한 여행 책자 본 적 있어? 재미난 곳은 죄다 「여행 위험」이라고 표시돼 있다니까. 그게 바로 수배자의 좋은 점이지! 내가 「여행 위험」 그 자체라면 그런 곳들은 내게 전혀 위험하지 않지</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">이 은하계는 게으름뱅이 집에 있는 주방과도 같지. 찬장을 열면 구석구석에 컴퍼니의 게딱지들이 잔뜩 있거든. 아직 청소가 미흡하고, 내 사랑이 부족하다는 소리야</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">카멜라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카멜라의 인게임 대사</span></span><div class="ref-quote">루카 선수, 다음 경기 상대는 부트힐이에요…. 이번 대결은 각별히 조심해야 해요. 난폭하고 위험한 사람이거든요!</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">클라라가 예비용 글러브를 몇 개 준비해 주긴 했어요…. 그런데 그게 소용이 있을까요? 어차피 부트힐 씨 한 방이면 끝날 텐데…</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">부트힐 씨, 컴퍼니랑 무슨 원한을 맺었는지 모르겠지만… 전 저희가 다르다고 생각하지 않아요. 우린 결국 은하 전체의 주목을 받는 게 목적 아닌가요!?</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">으… 부트힐 씨, 이건 그냥 대결일 뿐인데 굳이 목숨까지 걸 필요는 없지 않을까요……</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">카멜라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카멜라의 인게임 대사</span></span><div class="ref-quote">부트힐 그 사람 정말 너무한 거 아니에요? 무쇠 팔뚝이 막아주지 않았다면 루카 씨는 정말로……</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">부트힐 씨가 정말 죽이려고 했다면 전 반격 한 번 하지 못하고 죽었을 거예요. 결국 전 부트힐 씨의 자비 덕분에 살아남은 거죠</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">부트힐은 진심으로 네가 포기하길 원했는지도 몰라</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">루카의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">루카의 인게임 대사</span></span><div class="ref-quote">내 실력이 부족한 거지. 부트힐 씨는 잘못 없어</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">잡담 • 원칙</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">내 주머니에 든 돈은 거의 다 부정한 수단으로 얻은 거긴 하지만, 나도 나만의 원칙이 있어. 첫째, 절대 빼앗은 돈으로 향락을 즐기지 않는다. 둘째, 신용 포인트는 「돈」이라고 할 수 없다. 셋째, 가볍게 즐기는 건 「향락」이라고 치지 않는다. 난 이 세 가지를 절대 깨지 않아!</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">「수렵」의 빛의 화살을 본 적 있어? 운 좋게 보게 된다면, 절대 똑바로 쳐다보지 마…. 내 오른쪽 눈과 몸이 그렇게 없어졌거든…. 하하하하하, 물론 뻥이야!</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">사람은 살면서 믿을 것과 믿지 말아야 할 것을 분별해야 해. 타인의 선의와 용기의 의미 같은 이상한 것들은 믿어도 좋아. 하지만 이런 좋은 일들이 아무 이유 없이 굴러들어 올 거라고 믿으면 안 돼. 이런 것들은 스스로 이뤄야 하지</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">도시로 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">그거 알아? 난 집이 있는 사람이 제일 부럽더라고</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">토파즈에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">형편없는 컴퍼니 놈들 중에 그래도 평판이 좋은 편이지? 근데 그게 무슨 소용이야? 컴퍼니에 몸담고 있는 한, 다른 놈들이랑 다를 거 없어!</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">어벤츄린에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">하! 아주 유명한 녀석이지. 나처럼 눈이 돌면 목숨도 불사하는 녀석이야. 아무래도 내가 좀 더 분발해서 녀석을 빨리… 하하, 그럼 내 목에 걸린 현상금도 두 배로 오르겠지!</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">파티 편성 • 어벤츄린</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">일단 이 조무래기들부터 처리하고 나서 널 어떻게 손볼지 이야기해 볼까?</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">단항에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">난 원래 선주 사람을 좋아해. 그 친구는 참 괜찮은 사람이야. 나처럼 말수가 적고, 손안에 든 「무기」로 자신의 뜻을 표현하는 협객이지! 하하! 우린 분명 좋은 브라더가 될 수 있을 거야!</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">블랙 스완에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">그 기억하는 자를 찾는 건, 어렵다면 어렵고 쉽다면 쉬운 일이지. 시간 들여서 정보를 캐내는 건 헛수고야. 차라리 제자리에서 「빨리 날 찾아와」라고 명상하는 게 나아. 그럼 바로 눈앞에 나타날지도 몰라</div></li>
+<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">아젠티에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">참 재미있는 인연이야. 그와 한 번 만난 적이 있어. 우주에서 취향이 이렇게나 비슷한 사람을 만나기란 쉽지 않아…. 봐, 우리 둘 다 은빛 갑옷을 걸치고 무기를 잘 다루잖아…. 그리고 가장 중요한 건 둘 다 정의감이 넘친다는 거지</div></li>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">아케론에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">그녀의 정체가 뭔지, 왜 「갤럭시 레인저」를 사칭하는 건지 모르겠어…. 근데 상관없어. 이런 나도 정의를 실현할 수 있다는 건 정의를 실현하는 길이 하나가 아니라는 뜻이니까!</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">라파에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">라파가 매일 이상한 소리를 한다고 모자란 아이라고 생각하면 안 돼. 그 녀석의 머릿속이 혼란스러운 것 같아도 사실 매우 영리하다고! 게다가 큰 문제가 생기면 라파는 언제나 자신의 「인도(忍道)」 를 엄격하게 지키지. 그녀는 결코 어설프지 않아</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">Mr. 레카에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/2367?lang=ko-kr">원문</a></span><div class="ref-quote">그 녀석은 항상 그 혹 같은 영화에 빠져있는데 눈이 돌아가면 뵈는 게 없어지지.... 녀석을 나쁜 사람으로 규정하긴 어렵지만, 그래도 조심하는 게 좋아. 안 그러면 언젠가 그 울보 유령의 「영화 소재」 가 되어버릴지도 모른다고</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 우주 유랑 세력</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
-  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 성혼, 공식 HoYoWiki — 음성</p>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-03</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 게임 본편 — 스타피스 방송, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B6%80%ED%8A%B8%ED%9E%90&amp;page_slug=char-2367">수정 요청</a></div>
@@ -763,12 +708,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-2367">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EB%B6%80%ED%8A%B8%ED%9E%90&amp;body=%EB%B6%80%ED%8A%B8%ED%9E%90+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-2367.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

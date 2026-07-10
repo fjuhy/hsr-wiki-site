@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>베니 · hoyohoyo.wiki</title>
-  <meta name="description" content="베니는 페나코니 소속 NPC이며, 공식적으로는 「꿈세계 프로듀서」로 분류된다. 그는 처음부터 “그 베니”라고 자신을 소개하며, 상대가 이미 자기 이름을 알고 있을 것처럼 행동한다.">
+  <meta name="description" content="베니는 페나코니에서 꿈 건축 경계 개척 프로젝트를 이끄는 수석 엔지니어다. 대표작 《종말의 베니: 불길의 영웅》이 출시 당시 큰 사고를 겪은 뒤, 그는 미라클 벤자민 스튜디오의 이름을 걸고 새 프로젝트로 재기를 노린다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="베니 · hoyohoyo.wiki">
-  <meta property="og:description" content="베니는 페나코니 소속 NPC이며, 공식적으로는 「꿈세계 프로듀서」로 분류된다. 그는 처음부터 “그 베니”라고 자신을 소개하며, 상대가 이미 자기 이름을 알고 있을 것처럼 행동한다.">
+  <meta property="og:description" content="베니는 페나코니에서 꿈 건축 경계 개척 프로젝트를 이끄는 수석 엔지니어다. 대표작 《종말의 베니: 불길의 영웅》이 출시 당시 큰 사고를 겪은 뒤, 그는 미라클 벤자민 스튜디오의 이름을 걸고 새 프로젝트로 재기를 노린다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/npc-1992.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/npc-1992.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,80 +620,67 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>베니</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B2%A0%EB%8B%88&amp;page_slug=npc-1992">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>베니</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="assets/wiki-images/62/92a0cd019c52d444d442473d72abf21c_808738986645685-62d093f9405b.webp" alt="베니 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 공식 인물 이미지</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-penacony.html">페나코니</a><span>베니</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B2%A0%EB%8B%88&amp;page_slug=npc-1992">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>베니</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">페나코니</span></div><figure class="article-hero-image"><img src="https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/07/92a0cd019c52d444d442473d72abf21c_8087389866456852045.png" alt="베니 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>베니는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a> 소속 NPC이며, 공식적으로는 「<a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a> 프로듀서」로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki · 베니"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그는 처음부터 “그 베니”라고 자신을 소개하며, 상대가 이미 자기 이름을 알고 있을 것처럼 행동한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>베니의 이름값은 미라클 벤자민 스튜디오의 과거 작품들과 함께 움직인다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그는 《베니 캐슬》과 《종말의 베니》를 대표작처럼 내세우고, 두 IP가 우주 전체에 억대의 열혈 팬을 가진 작품이라고 주장한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>작중의 베니는 성공한 제작자의 자신감과 실패한 프로젝트 책임자의 불안을 함께 품은 인물이다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그는 밝고 적극적인 태도로 자신과 스튜디오를 포장하지만, 평가가 흔들리는 순간에는 눈빛이 어두워지고 행동에 드러나던 자신감이 사라진다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>베니는 꿈 건축 경계 개척 프로젝트의 수석 엔지니어다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 그는 자신과 팀이 전대미문의 꿈세계를 만들 수 있다고 내세우며, 새 꿈세계 설계의 책임자처럼 움직인다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>그의 현재 프로젝트는 완전한 새 출발이라기보다, 미라클 벤자민 스튜디오의 과거 명성을 다시 살리려는 재기전이다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 베니는 《베니 캐슬》이 처음 출시되었을 때 누구도 스튜디오의 실력을 의심하지 않았고, 매년 새 버전만 내도 팀을 유지할 수 있었다고 회상한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>베니가 짊어진 압박은 《종말의 베니: 불길의 영웅》의 실패에서 뚜렷해진다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그는 그 작품을 이전 세대 가상현실 시뮬레이터라고 부르며, 출시 당시 상황을 재앙에 가까운 일로 기억한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>그럼에도 베니는 실패를 멈춤의 이유로 삼지 않는다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 그는 미라클 벤자민이 반드시 평가를 뒤집을 수 있다고 믿고, 다음 프로젝트인 《베니 캐슬: 해저의 부활》에 모든 자원을 투입하겠다고 말한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<h2 id="성격과-자기연출">성격과 자기연출</h2>
-<p>베니는 처음에는 낙천적이고 적극적인 제작자처럼 보인다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 그는 자기 이름을 강조하고, 대표작들을 차례로 꺼내며, 미라클 벤자민의 작품이 모두 획기적이었다고 말한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>그 밝은 태도는 완전히 자연스러운 자신감만은 아니다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 작중 서술은 베니의 낙천적이고 적극적인 모습이 어느 정도 연기였을지도 모른다고 짚는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>베니는 압박을 받으면 즉시 흔들린다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 그의 눈빛은 어두워지고, 자신감은 사라지며, 그는 낯설 만큼 침착하고 냉정한 모습으로 생각에 잠긴다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>그렇다고 베니가 공격적인 인물로만 그려지는 것은 아니다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 그의 입꼬리가 부자연스럽게 움찔거리는 장면은 그가 평소 화를 잘 내지 않는 유순한 사람이라는 인상을 남긴다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>베니와 미라클 벤자민 스튜디오는 한때 업계의 실력자로 기억된다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> <a class="wiki-link" href="npc-2004.html" title="우마">우마</a>는 《베니 캐슬》이 세상에 나왔던 오래전 미라클 벤자민 스튜디오를 취재한 적이 있으며, 당시 그들이 업계에서 걸출한 인재였다고 말한다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>현재의 평가는 훨씬 차갑다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 우마는 베니라는 담당자가 전대미문의 꿈세계를 만들겠다고 허풍을 떨지만, 그와 그의 팀은 아직도 예전 것을 쓰는 것처럼 보인다고 평가한다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>우마의 평가는 완전한 혹평이라기보다 낮아진 기대치에 가깝다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 그는 베니의 가상현실 설계에 익숙한 관람객이라면 즐거워할지도 모른다며 7점을 매긴다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <a class="wiki-link" href="npc-1989.html" title="휘태커 경">휘태커 경</a>도 그 7점이 가족의 니즈와 현재 미라클 벤자민의 수준에 맞는 합리적인 평가라고 본다.<sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>베니의 위상은 그래서 양면적이다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 그는 “유명한 베니 씨”라는 반응을 끌어낼 만큼 알려진 인물이지만, 현재의 성과는 냉정하게 7점으로 재단된다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>그의 영향력은 꿈세계와 가상현실 설계를 맡는 제작자, 그리고 과거 IP의 이름값으로 기대와 실망을 동시에 불러오는 책임자라는 위치에서 나온다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>미라클 벤자민 스튜디오는 베니가 자신을 설명할 때 빠뜨리지 않는 배경이다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 베니는 스튜디오에 찬란한 역사가 있다고 말하고, 《베니 캐슬》과 《종말의 베니》를 그 역사의 핵심 IP로 내세운다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>《베니 캐슬》은 베니의 과거 성공을 대표한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 이 작품은 출시 당시 스튜디오의 실력을 증명한 작품으로 회상되며, 우마도 오래전 《베니 캐슬》이 세상에 나왔을 때 미라클 벤자민 스튜디오가 업계의 걸출한 인재였다고 기억한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>《종말의 베니》와 《종말의 베니: 불길의 영웅》은 베니의 영광과 추락을 함께 보여준다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 베니는 《종말의 베니》를 대표작처럼 꺼내지만, 《종말의 베니: 불길의 영웅》은 출시 때 사고와 재앙을 겪은 이전 세대 가상현실 시뮬레이터로 남아 있다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>《베니 캐슬: 해저의 부활》은 베니가 평가를 뒤집기 위해 모든 자원을 걸겠다고 밝힌 다음 프로젝트다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 이 작품은 단순한 후속작이 아니라, 실패한 스튜디오가 다시 인정받기 위해 택한 승부수다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>우마와 휘태커 경은 베니의 현재를 밖에서 재는 인물들이다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 우마는 베니의 새 프로젝트를 재탕으로 보고 7점을 매기며, 휘태커 경은 그 점수가 현재 미라클 벤자민의 수준에 맞는다고 판단한다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p><a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 베니의 외형을 비교 기준으로 삼아, 부드럽고 곱슬거리는 갈색 머리를 언급한다.<sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 이 장면에서 베니는 프로젝트 담당자일 뿐 아니라, 다른 인물이 외형을 떠올릴 수 있을 만큼 구체적인 인상을 가진 이름으로 쓰인다.<sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>작중 반응도 베니의 이름값을 보탠다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 누군가는 “무슨 베니”인지 묻고, 누군가는 “누군가 했더니, 베니”라고 알아보며, 또 다른 반응은 “유명한 베니 씨”라고 치켜세운다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<h2 id="다시-팔아야-하는-이름값">다시 팔아야 하는 이름값</h2>
-<p>베니의 핵심 긴장은 과거에 이미 성공했던 이름을 현재에도 다시 팔아야 한다는 데 있다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 그는 《베니 캐슬》과 《종말의 베니》의 팬덤을 말하며 스튜디오의 찬란한 역사를 강조하지만, 현재의 평가는 그 역사만으로 높아지지 않는다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>휘태커 경은 화제성이 어느 정도 실질보다 중요해진 시대라고 말한다.<sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> 그 말은 베니의 불안을 더 또렷하게 만든다.<sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 과거에는 매년 새 버전을 내는 것만으로도 팀을 유지할 수 있었지만, 지금은 익숙한 설계와 과거 IP만으로 “전대미문의 꿈세계”라는 약속을 설득하기 어렵다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>베니가 《베니 캐슬: 해저의 부활》에 모든 자원을 투입하겠다고 말하는 장면은 제작자의 집념이자 위험 신호다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 그는 실패를 겪고도 버텼다는 사실을 용기로 바꾸지만, 동시에 남은 선택지를 하나의 후속 프로젝트에 몰아넣는다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>베니는 페나코니의 꿈세계 제작자이면서, 자기 이름이 붙은 꿈을 다시 믿게 만들려는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki · 베니"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 그의 밝은 자기소개와 과장된 확신은 홍보 문구처럼 들리지만, 그 아래에는 낮아진 평가를 견디는 책임자의 불안이 깔려 있다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">베니</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1992?lang=ko-kr">원문</a></span><div class="ref-quote">「꿈세계 프로듀서」</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1992?lang=ko-kr">원문</a></span><div class="ref-quote">베니</div></li>
+<p>베니는 <a class="wiki-link" href="loc-1804.html" title="페나코니">페나코니</a>에서 꿈 건축 경계 개척 프로젝트를 이끄는 수석 엔지니어다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki · 베니"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 대표작 《종말의 베니: 불길의 영웅》이 출시 당시 큰 사고를 겪은 뒤, 그는 미라클 벤자민 스튜디오의 이름을 걸고 새 프로젝트로 재기를 노린다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>베니는 처음 만난 자리에서부터 &quot;난 베니야——그래, 그 베니. 네가 생각하는 게 맞아&quot;라며 상대가 이미 자신을 알고 있을 것처럼 소개한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그는 자신을 꿈 건축 경계 개척 프로젝트의 수석 엔지니어로 밝히고, 전대미문의 <a class="wiki-link" href="dreamscape.html" title="꿈세계">꿈세계</a>를 만들 수 있다고 자부한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<p>그는 《베니 캐슬》이 처음 출시되었을 때는 누구도 스튜디오의 실력을 의심하지 않았고, 매년 새 버전만 내도 팀을 유지할 수 있었다고 회상한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 그러나 다음 대형 프로젝트인 《종말의 베니: 불길의 영웅》은 발표 당시 재앙에 가까운 사고를 겪었다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 베니는 이 실패를 멈춤의 이유로 삼지 않고, 미라클 벤자민이 반드시 평가를 뒤집을 것이라며 모든 자원을 다음 프로젝트 《베니 캐슬: 해저의 부활》에 투입하겠다고 말한다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>평가를 묻는 자리에서 베니의 밝은 태도는 흔들린다. 그의 눈빛은 어두워지고 자신감은 순식간에 사라지며, 그는 낯설 만큼 침착하고 냉정한 모습으로 생각에 잠긴다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 이후 그의 눈과 자태는 다시 처음 만났을 때처럼 빛을 되찾는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<h2 id="미라클-벤자민-스튜디오">미라클 벤자민 스튜디오</h2>
+<p>베니는 자신을 소개할 때마다 미라클 벤자민 스튜디오의 이력을 빠뜨리지 않는다. 그는 스튜디오에 찬란한 역사가 있다며 《베니 캐슬》과 《종말의 베니》를 우주 전체에 억대의 팬을 가진 대표작으로 내세운다.<sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 베니의 언급 · 베니의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <a class="wiki-link" href="npc-2004.html" title="우마">우마</a> 역시 오래전 《베니 캐슬》이 나왔을 때 미라클 벤자민 스튜디오를 취재한 적이 있으며, 당시 그들이 업계에서 걸출한 인재였다고 기억한다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 팬들 사이에서는 《베니 캐슬》과 《종말의 베니》 중 무엇이 베니의 가장 위대한 프로젝트인지를 두고 의견이 갈리기도 한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<h2 id="성격">성격</h2>
+<p>베니의 낙천적이고 적극적인 태도는 전부 자연스러운 본모습만은 아니다. 흥분이 가라앉은 순간을 두고, 이전의 낙천적이고 적극적인 모습이 어느 정도 연기였을지도 모른다는 서술이 나온다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 압박을 받을 때는 입꼬리가 부자연스럽게 움찔거리기도 하는데, 이는 그가 평소 화를 잘 내지 않는 유순한 사람이라는 인상을 남긴다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> <a class="wiki-link" href="char-3150.html" title="선데이">선데이</a>는 베니를 예로 들며 그의 부드럽고 곱슬거리는 갈색 머리를 언급한다.<sup class="cite-ref" title="게임 본편 · 선데이의 언급 · 선데이의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
+<h2 id="평판과-재기전">평판과 재기전</h2>
+<p>과거와 현재의 평가는 크게 갈린다. 우마는 베니가 전대미문의 꿈세계를 만들겠다고 허풍을 떨지만 그와 팀은 아직도 예전 것을 재탕하는 것처럼 보인다고 말하며, 굳이 매기자면 7점, 그의 가상현실 설계에 익숙한 관람객이라면 즐거워할지도 모른다고 평가한다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> <a class="wiki-link" href="npc-1989.html" title="휘태커 경">휘태커 경</a>은 그 7점이 가족의 니즈와 현재 미라클 벤자민의 수준에 맞는 합리적인 평가라고 본다.<sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 휘태커 경은 또한 화제성이 실질보다 중요해진 시대라고 말한다.<sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
+<p>베니의 이름값은 여전히 유효하다. 누군가는 &quot;무슨 베니&quot;인지 되묻지만, 누군가는 &quot;누군가 했더니, 베니&quot;라며 알아보고, 다른 반응은 &quot;역시 유명한 베니 씨는 다르네요&quot;라며 그를 치켜세운다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="npc-2004.html">우마</a> — 베니의 신작을 재탕으로 평가하며 7점을 매긴 평론가다. 과거에는 미라클 벤자민 스튜디오를 취재한 적도 있다.<sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="게임 본편 · 우마의 언급 · 우마의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></li>
+<li><a href="npc-1989.html">휘태커 경</a> — <a href="npc-2004.html">우마</a>의 7점 평가가 합리적이라고 판단하며, 화제성이 실질보다 중요해진 시대라고 말한다.<sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="게임 본편 · 휘태커 경의 언급 · 휘태커 경의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">친구, 출근하러 온 거 맞아? 다시 말하지만, 난 베니야. 꿈 건축 경계 개척 프로젝트의 수석 엔지니어지!</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">베니</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1992?lang=ko-kr">원문</a></span><div class="ref-quote">「꿈세계 프로듀서」</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1992?lang=ko-kr">원문</a></span><div class="ref-quote">페나코니</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">난 베니야——그래, 그 베니. 네가 생각하는 게 맞아. 만나서 반가워!</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">≪베니 캐슬≫, ≪종말의 베니≫——미라클 벤자민의 작품은 전부 획기적이었지!</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">우리 스튜디오에는 찬란한 역사가 있어. ≪베니 캐슬≫과 ≪종말의 베니≫, 이 두 IP는 우주 전체에 억대의 열혈 팬이 있지!</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">그럼 ≪베니 캐슬≫은 들어봤겠지? ≪종말의 베니≫는?</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">예전에 ≪베니 캐슬≫이 막 출시되었을 때, 그때는 그 누구도 우리의 실력을 의심하지 못했어. 하… 그때는 매년 새로운 버전을 출시하기만 해도 팀의 생계를 유지할 수 있었는데…</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">≪종말의 베니: 불길의 영웅≫이라는 우리의 이전 세대 가상현실 시뮬레이터가 막 출시되었을 때는 그야말로 재앙이었지. 그때도 버텨냈는데, 더 무서울 게 뭐가 있겠어?</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">≪종말의 베니: 불길의 영웅≫이라는 우리의 이전 세대 가상현실 시뮬레이터가 막 출시되었을 때는 그야말로 재앙이었지. 그때도 버텨냈는데, 더 무서울 게 뭐가 있겠어?</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">미라클 벤자민은 반드시 평가를 뒤집을 수 있을 거야! 우리는 모든 자원을 다음 프로젝트인 ≪베니 캐슬: 해저의 부활≫에 투입할 거니까 우리를 무시한 사람들, 두고 보라지!</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">난 베니야——그래, 그 베니. 네가 생각하는 게 맞아. 만나서 반가워!</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">예전에 ≪베니 캐슬≫이 막 출시되었을 때, 그때는 그 누구도 우리의 실력을 의심하지 못했어. 하… 그때는 매년 새로운 버전을 출시하기만 해도 팀의 생계를 유지할 수 있었는데…</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">게다가, 음… 들어본 적이 있을지 모르겠는데, 우리의 이전 대형 프로젝트인 ≪종말의 베니: 불길의 영웅≫이 발표될 때 조그만… 사고가 있었거든</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">미라클 벤자민은 반드시 평가를 뒤집을 수 있을 거야! 우리는 모든 자원을 다음 프로젝트인 ≪베니 캐슬: 해저의 부활≫에 투입할 거니까 우리를 무시한 사람들, 두고 보라지!</div></li>
 <li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니의 눈빛이 어두워졌고, 순식간에 모든 행동에 드러나던 자신감이 흔적 없이 자취를 감추었다</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니는 이제 그다지 흥분한 것 같지 않았다. 일전의 그의 낙천적이고 적극적인 모습은 어느 정도 연기였을지도 모른다</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">친구, 출근하러 온 거 맞아? 다시 말하지만, 난 베니야. 꿈 건축 경계 개척 프로젝트의 수석 엔지니어지!</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">우마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">우마의 인게임 대사</span></span><div class="ref-quote">베니라는 담당자가 전대미문의 꿈세계를 만들겠다고 한껏 허풍을 떨던데, 제가 보기엔 그와 그의 팀은 아직도 예전 것을 쓰고 있어요. 재탕인 거죠</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">미라클 벤자민은 반드시 평가를 뒤집을 수 있을 거야! 우리는 모든 자원을 다음 프로젝트인 ≪베니 캐슬: 해저의 부활≫에 투입할 거니까 우리를 무시한 사람들, 두고 보라지!</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">게다가, 음… 들어본 적이 있을지 모르겠는데, 우리의 이전 대형 프로젝트인 ≪종말의 베니: 불길의 영웅≫이 발표될 때 조그만… 사고가 있었거든</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">미라클 벤자민은 반드시 평가를 뒤집을 수 있을 거야! 우리는 모든 자원을 다음 프로젝트인 ≪베니 캐슬: 해저의 부활≫에 투입할 거니까 우리를 무시한 사람들, 두고 보라지!</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니의 빛나는 두 눈과 자태는 그를 처음 만났을 때를 떠올리게 했다</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니는 생각에 빠져들었다. 당신은 그의 침착함과 냉정함에 적응이 되지 않았다</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니의 입꼬리가 부자연스럽게 움찔거렸다. 그는 평소 유순한 사람이라 화를 잘 내지 않는다는 걸 알 수 있었다</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">우마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">우마의 인게임 대사</span></span><div class="ref-quote">옛날 생각이 나네요——꽤 오래전에 ≪베니 캐슬≫이 세상에 나왔을 때, 전 미라클 벤자민 스튜디오를 취재한 적도 있어요. 그때 그들은 업계에서 정말 걸출한 인재였죠</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">휘태커 경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">휘태커 경의 인게임 대사</span></span><div class="ref-quote">7점 정도면 합리적인 평가라네. 가족의 니즈에 부합하고, 현재 미라클 벤자민의 수준에도 맞지. 베니는 부인할지도 모르지만… 이게 반박할 수 없는 팩트일세</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">우마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">우마의 인게임 대사</span></span><div class="ref-quote">굳이 매기자면… 7점이요. 베니의 그 가상현실 설계에 익숙한 관람객이라면 그곳에서 즐거워할지도요?</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">역시 유명한 베니 씨는 다르네요!</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">선데이의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">네 몸이 진짜란 건 인정하지. 베니처럼 부드럽고 곱슬거리는 갈색 머리, 휘태커 경의 눈빛이 떠오르는 주황빛 눈, 울시의 훈장인 이상한 흉터……</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">무슨 베니요?</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">누군가 했더니, 베니였군요</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">휘태커 경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">휘태커 경의 인게임 대사</span></span><div class="ref-quote">시대가 바뀌었어. 「화제성」은 어떤 정도에서는 이미 「실질」적인 것보다 더 중요해졌지. 그리고 베니——</div></li></ol></details>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니는 생각에 빠져들었다. 당신은 그의 침착함과 냉정함에 적응이 되지 않았다</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니의 빛나는 두 눈과 자태는 그를 처음 만났을 때를 떠올리게 했다</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">그럼 ≪베니 캐슬≫은 들어봤겠지? ≪종말의 베니≫는?</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">≪베니 캐슬≫, ≪종말의 베니≫——미라클 벤자민의 작품은 전부 획기적이었지!</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">베니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">베니의 인게임 대사</span></span><div class="ref-quote">우리 스튜디오에는 찬란한 역사가 있어. ≪베니 캐슬≫과 ≪종말의 베니≫, 이 두 IP는 우주 전체에 억대의 열혈 팬이 있지!</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">우마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">우마의 인게임 대사</span></span><div class="ref-quote">옛날 생각이 나네요——꽤 오래전에 ≪베니 캐슬≫이 세상에 나왔을 때, 전 미라클 벤자민 스튜디오를 취재한 적도 있어요. 그때 그들은 업계에서 정말 걸출한 인재였죠</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니 씨의 가장 위대한 프로젝트는…</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">≪베니 캐슬≫?</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">아니, 역시 ≪종말의 베니≫가 최고지…</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니는 이제 그다지 흥분한 것 같지 않았다. 일전의 그의 낙천적이고 적극적인 모습은 어느 정도 연기였을지도 모른다</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">베니의 입꼬리가 부자연스럽게 움찔거렸다. 그는 평소 유순한 사람이라 화를 잘 내지 않는다는 걸 알 수 있었다</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">선데이의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">선데이의 인게임 대사</span></span><div class="ref-quote">네 몸이 진짜란 건 인정하지. 베니처럼 부드럽고 곱슬거리는 갈색 머리, 휘태커 경의 눈빛이 떠오르는 주황빛 눈, 울시의 훈장인 이상한 흉터……</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">우마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">우마의 인게임 대사</span></span><div class="ref-quote">베니라는 담당자가 전대미문의 꿈세계를 만들겠다고 한껏 허풍을 떨던데, 제가 보기엔 그와 그의 팀은 아직도 예전 것을 쓰고 있어요. 재탕인 거죠</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">우마의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">우마의 인게임 대사</span></span><div class="ref-quote">굳이 매기자면… 7점이요. 베니의 그 가상현실 설계에 익숙한 관람객이라면 그곳에서 즐거워할지도요?</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">휘태커 경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">휘태커 경의 인게임 대사</span></span><div class="ref-quote">7점 정도면 합리적인 평가라네. 가족의 니즈에 부합하고, 현재 미라클 벤자민의 수준에도 맞지. 베니는 부인할지도 모르지만… 이게 반박할 수 없는 팩트일세</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">휘태커 경의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">휘태커 경의 인게임 대사</span></span><div class="ref-quote">시대가 바뀌었어. 「화제성」은 어떤 정도에서는 이미 「실질」적인 것보다 더 중요해졌지. 그리고 베니——</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">무슨 베니요?</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">누군가 했더니, 베니였군요</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">역시 유명한 베니 씨는 다르네요!</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 페나코니</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
@@ -754,12 +690,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="npc-1992">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EB%B2%A0%EB%8B%88&amp;body=%EB%B2%A0%EB%8B%88+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnpc-1992.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

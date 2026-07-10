@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>사이퍼 · hoyohoyo.wiki</title>
-  <meta name="description" content="사이퍼는 앰포리어스 소속의 양자 속성, 공허 운명의 길 캐릭터다. 공식 소개에서 그녀는 사라진 도적의 도시 도로스와 300 의적, 「계략」의 불씨, 황금의 후예라는 말로 묶이며, 바람처럼 퍼지는 거짓말을 자기 무기로 삼는 인물로 그려진다.">
+  <meta name="description" content="사이퍼는 사라진 도적의 도시 도로스 출신의 도둑이자, 300 의적을 이끄는 황금의 후예다. 어릴 때 신전에서 빵과 말린 과일, 양초를 훔친 죄로 도로스성에 수배됐고, 훗날 대사제가 죽은 뒤 사라진 「세상의 보석」 사건의 용의자로 몰려 원로원이 범인 체포에 균형의 동전 100,000닢을 걸었다. 옛 이름은 사이퍼라이지만 지금 그렇게 부르는 사람은 거의 없고, 전투 분류에서는 앰포리어스 소속의…">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="사이퍼 · hoyohoyo.wiki">
-  <meta property="og:description" content="사이퍼는 앰포리어스 소속의 양자 속성, 공허 운명의 길 캐릭터다. 공식 소개에서 그녀는 사라진 도적의 도시 도로스와 300 의적, 「계략」의 불씨, 황금의 후예라는 말로 묶이며, 바람처럼 퍼지는 거짓말을 자기 무기로 삼는 인물로 그려진다.">
+  <meta property="og:description" content="사이퍼는 사라진 도적의 도시 도로스 출신의 도둑이자, 300 의적을 이끄는 황금의 후예다. 어릴 때 신전에서 빵과 말린 과일, 양초를 훔친 죄로 도로스성에 수배됐고, 훗날 대사제가 죽은 뒤 사라진 「세상의 보석」 사건의 용의자로 몰려 원로원이 범인 체포에 균형의 동전 100,000닢을 걸었다. 옛 이름은 사이퍼라이지만 지금 그렇게 부르는 사람은 거의 없고, 전투 분류에서는 앰포리어스 소속의…">
   <meta property="og:url" content="https://hoyohoyo.wiki/char-3691.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/char-3691.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,107 +620,93 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-amphoreus.html">앰포리어스</a><span>사이퍼</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%82%AC%EC%9D%B4%ED%8D%BC&amp;page_slug=char-3691">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>사이퍼</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">앰포리어스</span></div><figure class="article-hero-image"><img src="assets/wiki-images/80/aa243fe68df74535edad448ebe95779c_248016822090648-804e121bf673.webp" alt="사이퍼 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-amphoreus.html">앰포리어스</a><span>사이퍼</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%82%AC%EC%9D%B4%ED%8D%BC&amp;page_slug=char-3691">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>사이퍼</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">앰포리어스</span></div><figure class="article-hero-image"><img src="https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/03/aa243fe68df74535edad448ebe95779c_2480168220906480242.png" alt="사이퍼 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>사이퍼는 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a> 소속의 양자 속성, 공허 운명의 길 캐릭터다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 공식 소개에서 그녀는 사라진 도적의 도시 도로스와 300 의적, 「계략」의 불씨, 황금의 후예라는 말로 묶이며, 바람처럼 퍼지는 거짓말을 자기 무기로 삼는 인물로 그려진다.<sup class="cite-ref" title="공식 HoYoWiki · 사이퍼"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>그녀의 이름은 사이퍼지만, 첫 만남에서는 “사이퍼라”라는 이름을 아는 상대에게 이제 그렇게 부르는 사람은 거의 없다며 그냥 사이퍼라고 부르라고 말한다. 이 말은 단순한 애칭 정리가 아니라, 오래된 과거와 현재의 의적 이미지를 갈라놓는 자기소개에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>사이퍼는 자신을 발 빠른 도둑 별처럼 포장하지만, 그 포장은 완전한 허세가 아니다.<sup class="cite-ref" title="공식 HoYoWiki · 사이퍼"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 그녀는 빵, 말린 과일, 양초를 훔친 죄로 도로스성의 수배령에 오르고, 회색 머리와 고양이 귀, 작은 체구, 민첩한 몸놀림과 꾀 많은 성격으로 특정된다. 도둑질은 그녀에게 장난이면서 생존술이고, 거짓말은 남을 속이는 기술이면서 자신이 통과해 온 세계를 견디는 방식이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>사이퍼의 출발점은 도로스성의 하층과 종교 권위가 겹치는 공간이다. 수배령은 사라진 물건이 많지 않다고 하면서도 이를 신성 모독과 질서 교란의 큰 죄로 규정하고, 단서를 제공한 자와 생포한 자에게 포상을 건다. 뒤이어 광장에는 감옥, 오수, 채찍질, 비명이 이어지고, 누더기 차림의 소녀는 황금빛 피를 흘리며 달아난다. 이 장면에서 사이퍼의 범죄는 단순한 절도가 아니라, 굶주린 아이가 신전과 권력의 위선을 건드린 사건으로 읽힌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>도로스의 사제는 신도들 앞에서 케팔, 정직, 성실, 관용, 사랑을 말하지만, 같은 장면에서 사냥개는 도망치는 소녀의 얼굴에 상처를 남긴다. 사이퍼가 이후 돈과 거짓말, 속임수에 냉소적인 태도를 보이는 이유는 이 출신 배경과 맞물린다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•재물"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 그녀에게 질서는 선한 약속이 아니라, 배고픈 사람을 범죄자로 만들고 권력자의 말만 진실처럼 세우는 장치다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>여명의 거룩한 도시에 도착한 뒤에도 사이퍼는 황금의 후예를 곧장 믿지 않는다. 그녀는 불을 쫓는 영웅들이 분명 말 못 할 꿍꿍이를 가졌을 것이라고 의심하고, 황금의 후예를 명예를 탐내는 사기꾼처럼 본다. 이 의심은 그녀가 영웅 서사를 좋아하지 않아서가 아니라, 어릴 때 극장에 몰래 들어가 남의 영웅 이야기를 보던 사람이기 때문에 더 날카롭다. 그녀는 영웅담을 동경하면서도, 막이 내리기 전에 퇴장하는 사람이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미•연극 관람"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>황금 방직 공방에 손을 뻗은 사건은 사이퍼가 앰포리어스의 중심 인물들과 얽히는 방식도 보여 준다. 그녀는 꿀 음료와 포도잎 쌈밥을 먹고, 수정 말을 만지작거리고, 이상한 오르간까지 건드린 뒤 숙취에서 깨어난다. 이후 손에 남은 향기 나는 비밀 편지는 “먹보 고양이”에게 말을 걸며, 방직 공방이 그녀의 놀이터처럼 어질러졌다고 적는다. 이 사건은 사이퍼가 훔치기 위해 들어갔다가 오히려 누군가에게 관찰되고 초대받는 구조로 뒤집힌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>사이퍼의 큰 작중 역할은 300 의적을 다시 움직이는 데서 분명해진다. 고양이 발자국이 그려진 예고장은 과거 계략의 신 자그레우스를 향해 보물 절도, 신 도발, 분쟁 조장의 낡은 수법을 식상하다고 조롱하고, 유령의 날에 300 의적이 앰포리어스에서 가장 훌륭한 연극을 벌이겠다고 선언한다. 이 예고장에서 사이퍼와 300 의적은 세계를 접수하고 뒤집어엎겠다는 말까지 남긴다. 그녀의 절도는 개인 생계의 문제가 아니라, 신과 도시 국가를 상대로 한 공개 공연이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>사이퍼는 앰포리어스 각지를 돌며 300 의적을 모은다. 아니오누스에서는 화강암 법전의 두 글자를 바꿔 생사를 결정짓는 심판에서 의적의 노예 계약서를 따냈고, 남쪽 해안에서는 폭풍 속 배에 잠입해 의적과 결투를 벌였으며, 마그넷으로 장검을 끌어당겨 승부를 뒤집었다. 사막에서는 물을 마시지 않고 버티는 대결을 하고, 밀림에서는 사냥꾼과 추격전을 벌여 300 의적이 제자리로 돌아갈 때까지 움직였다. 여기서 그녀의 계략은 말재주만이 아니라 법문 조작, 잠입, 도구 활용, 추격전, 지구전까지 포함하는 실전형 능력이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•도구"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>사이퍼는 “계략”을 대표하는 황금의 후예로 제시된다.<sup class="cite-ref" title="공식 HoYoWiki · 사이퍼"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그녀가 자그레우스를 “과거 계략의 신”이라고 부르며 도발하는 예고장은, 인간 의적의 속임수가 신의 낡은 계략을 넘어서려는 선언처럼 읽힌다. 사이퍼의 위험성은 한 번의 강한 공격보다, 제도와 믿음과 소문이 의존하는 허점을 찾아 그 허점을 공연처럼 확대하는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>사이퍼의 강함은 압도적인 정면 돌파보다 상황을 비틀어 승부를 가져오는 방식으로 확인된다. 그녀는 폭풍 속 결투에서 장검을 직접 힘으로 꺾기보다 특제 마그넷으로 빨아들이고, 생사를 가르는 심판에서는 법전의 글자를 바꿔 노예 계약서를 따낸다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•도구"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 수수께끼 풀이에 성공하면 도로스 사람을 뭘로 보느냐고 말하고, 다음에는 더 어렵게 해 달라고 요구한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 수수께끼 풀이 성공•1"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 수수께끼 풀이 성공•2"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 그녀의 전투력은 물리적 힘만으로 재기 어렵고, 기습, 도구, 말, 법, 관객의 믿음까지 전장으로 끌어들이는 데서 나온다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•도구"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>그렇다고 사이퍼가 무적의 책략가는 아니다.<sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · 대기 모션 1"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 「도둑 유령」 바르톨로스의 언급 · 「도둑 유령」 바르톨로스의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 대기 모션과 전투 대사는 장난스럽지만, 전투 불능 대사에서는 “이게 바로… 불을 쫓는……”이라고 말하며 쓰러지고, 적을 발견했을 때는 털이 쭈뼛 선다며 그냥 돌아가자고도 한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 적 발견"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 「도둑 유령」 바르톨로스는 사이퍼 누님이 진 데에는 이유가 있다고 말한다. 사이퍼의 한계는 겁이 없어서가 아니라, 겁을 느끼면서도 다음 속임수와 퇴로를 찾는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 적 발견"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>그녀의 시간감각도 위상을 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 원로원 공고문은 대사제가 세상을 떠난 뒤 세상의 보석 행방이 묘연해졌고, 파괴 흔적 없이 보석이 사라진 뒤 암시장에서 균형의 동전으로 교환됐다는 목격담이 있었으며, 범인 체포에 큰 포상을 걸었다고 적는다. 사이퍼는 오랜만에 돌아와 그 공고문이 아직 붙어 있음을 보고, 그날과 작별의 순간을 기억한다. 의상공은 천년의 세월 동안 자신과 선생님은 서로 보살필 수 있었지만, 사이퍼라는 너무 오래 사라져 있었기에 마음이 닳는 고통을 겪는지 확인할 필요가 있었다고 말한다. 사이퍼는 한 시대의 장난꾼이 아니라, 수백 년과 천년의 공백을 품고 돌아오는 오래된 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>도로스는 사이퍼의 출신이자, 그녀가 왜 권위와 질서를 믿지 않는지 보여 주는 장소다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 그녀는 도로스성의 냥냥교와 멍멍교 대전을 말하며 자신이 냥냥교 성녀로서 깃발을 계승했다고 농담하지만, 곧 거짓말이라고 밝히고 어릴 때 좋아하던 이야기였다고 말한다. 이 농담은 과거를 회피하는 장난처럼 보이지만, 실제 도로스의 기억이 수배, 추격, 굶주림, 폭력과 연결되어 있다는 점에서 더 씁쓸하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>오크마와 하수도는 사이퍼가 혼자 살지 않았음을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 그녀는 언젠가 돌아오지 않으면 오크마의 하수도로 가서 가장 두꺼운 파이프 끝의 작은 집에 있는 아이들에게 자신을 기다리지 말고 각자 살 길을 찾으라고 전해 달라고 말한다. <a class="wiki-link" href="char-3286.html" title="아글라이아">아글라이아</a>는 사이퍼가 오크마로 돌아왔다고 말한다. 사이퍼는 자유로운 도둑처럼 움직이지만, 그녀의 퇴로에는 여전히 누군가의 생존이 걸려 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></p>
-<p>아글라이아와 사이퍼의 관계는 감시와 간섭, 독립심의 긴장으로 보인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아글라이아에 대해"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•아글라이아"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 사이퍼는 역사라는 무대의 배우가 사랑받는 이유를 화려한 겉모습만이 아니라 관객이 추락의 순간을 기대하기 때문이라고 말한다. 파티 편성 대사에서는 아글라이아에게 해야 할 일은 자신이 알아서 할 테니 참견을 자제해 달라고 선을 긋는다. 사이퍼가 영웅과 무대를 동시에 좋아하고 의심한다는 점은 아글라이아를 향한 태도에서도 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미•연극 관람"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아글라이아에 대해"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•아글라이아"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
-<p><a class="wiki-link" href="char-3560.html" title="카스토리스">카스토리스</a>와의 관계에서는 장난 속에 걱정이 섞인다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카스토리스에 대해"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•카스토리스"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> 사이퍼는 카스토리스에게 장난치는 것이 재미있고, 방구석 공주가 화나서 자신을 긁어 주길 바랐지만 그러지 않았다며, 카스토리스가 천성이 착한 아이이기 때문에 때로 더 화가 난다고 말한다. 그녀는 카스토리스가 자신을 좀 더 신경 쓰면 좋겠다고도 말한다. 카스토리스는 사이퍼가 점장님의 초대를 거절하지 않았고, 사이퍼의 계략에 속아 여러 요리를 맛보았으며, 사이퍼가 즐겁게 지낸 것 같다고 말한다.<sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 이 관계에서 사이퍼의 장난은 상대를 해치기 위한 공격보다, 너무 착한 사람의 반응을 확인하려는 거친 관심에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카스토리스에 대해"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup></p>
-<p><a class="wiki-link" href="char-3322.html" title="트리비">트리비</a>, 트리앤, 트리논은 사이퍼에게 보호자에 가까운 따뜻한 관계로 남아 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 트리비•트리앤•트리논에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•트리비"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 사이퍼는 “언니들”이 자신에게 정말 잘해 줬고, 자신이 몰래 외출할 때마다 가방에 먹을 것을 가득 채워 벽 하나 넘기도 힘들었다고 말한다. 파티 편성에서는 트리비에게 바람도 불겠다며 같이 날자고 부른다. 트리논은 누군가의 말을 부정하며 자신들이 말하는 것은 사이퍼라고 강조한다. 사이퍼의 자유로움은 완전한 고립이 아니라, 그녀를 먹이고 불러 주는 이름들의 네트워크 안에서 유지된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 트리비•트리앤•트리논에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 트리논의 언급 · 트리논의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
-<p><a class="wiki-link" href="char-3561.html" title="아낙사">아낙사</a>, <a class="wiki-link" href="char-3769.html" title="파이논">파이논</a>, <a class="wiki-link" href="char-3324.html" title="마이데이">마이데이</a>, <a class="wiki-link" href="char-3688.html" title="히아킨">히아킨</a>에 대한 평가는 사이퍼가 타인의 능력과 약점을 빠르게 읽는 인물임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아낙사에 대해"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파이논에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 마이데이에 대해"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히아킨에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup> 아낙사가 별명을 기꺼이 받아들였다는 점에서 대단함을 보고, 파이논이 상대가 원하는 것과 제시할 가격을 이미 안다고 인정하며, 마이데이가 죽음을 거부한 것을 “불멸의 어린 왕자”라 부르며 멋지다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아낙사에 대해"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파이논에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 마이데이에 대해"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> 히아킨에게는 원래 아무도 신경 쓰지 않았을 일을 떠안는다며 책임감이 너무 강하다고 평한다. 사이퍼는 사람을 조롱하지만, 그 조롱은 관찰력 없이 나오는 말이 아니다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아낙사에 대해"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파이논에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히아킨에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
-<p><a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>에 해당하는 “회색 친구”와의 관계는 사이퍼의 거리감이 가장 낮은 축이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•{NICKNAME}"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> 사이퍼는 회색 친구에게 요즘 어디서 돈을 벌고 있느냐고 묻고, 서로 유머 감각이 비슷하며 물건을 줍는 것을 좋아해 오래전부터 알고 지낸 친구 같다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup> 파티 편성에서는 전투가 끝나면 보물을 건지러 가자고 부른다. 사이퍼가 인정하는 우정은 의리보다 공범 감각에 가깝고, 같은 판에서 같은 물건을 노리는 사람이 곧 가까운 사람이 된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•{NICKNAME}"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
-<p><a class="wiki-link" href="npc-3756.html" title="아포피스">아포피스</a>, 뽀글이, 바르톨로스가 엮인 언급은 사이퍼가 사고를 만드는 참가자이면서도 약속을 지키는 도둑으로 다뤄진다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 뽀글이의 언급 · 뽀글이의 인게임 대사"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="게임 본편 · 「도둑 유령」 바르톨로스의 언급 · 「도둑 유령」 바르톨로스의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> 아포피스는 사이퍼 선수가 얼마나 많은 계략을 쓰고 사고를 만들어낼지 걱정하며, 파구사에게 함정에서 보호해 달라고 빈다. 뽀글이는 개척자와 함께 사이퍼와 싸우게 해 달라고 하고, 바르톨로스는 사이퍼 누님이 진 데에는 이유가 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 뽀글이의 언급 · 뽀글이의 인게임 대사"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup><sup class="cite-ref" title="게임 본편 · 「도둑 유령」 바르톨로스의 언급 · 「도둑 유령」 바르톨로스의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 아포피스는 이후 트로피가 돌아왔고 사이퍼가 약속을 지켰다고 말하며, 또 다른 장면에서는 가짜 트로피를 준비해 둘 테니 이적 발표회에서 잘 부탁한다고 말한다.<sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> 사이퍼는 믿을 수 없는 사람처럼 보이지만, 바로 그 불신 위에서 거래와 약속을 굴리는 인물이다.<sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup></p>
-<p>의상공과 금실을 짜는 자는 사이퍼의 오랜 시간과 수선된 흔적을 함께 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•후드 모자"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup><sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup><sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 사이퍼는 어릴 때 망토로 쓰던 후드를 버리지 못했고, 명성이 자자한 「금실을 짜는 자」가 수선한 뒤 한 번도 찢어진 적 없이 새것 같아졌다고 말한다. 의상공은 “사이퍼라”를 불러 세우고, 그녀가 너무 오랫동안 사라져 있었기에 마음이 닳는 고통을 겪는지 확인할 필요가 있었다고 말한다.<sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup><sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> 후드는 사이퍼가 아무리 이름과 이미지를 바꿔도 버리지 못한 어린 시절의 물건이고, 수선은 그녀가 아직 누군가의 손길 안에 남아 있음을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•후드 모자"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup><sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<h2 id="거짓말-돈-의적-놀이">거짓말, 돈, 의적 놀이</h2>
-<p>사이퍼는 돈을 단순한 탐욕의 대상으로만 보지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•이상적인 삶"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•재물"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 그녀는 시간은 돈이라고 말하고, 아무도 자신을 모르는 곳을 돌아다닌 뒤 밤에 양유 허니 팬케이크를 먹으며 하루 수익을 떠올리는 삶에 만족한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•이상적인 삶"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup> 또한 돈은 절약하는 것이 아니라 버는 것이라고 하며, 원로원의 높으신 분들이 적토를 시대를 초월한 예술품으로 포장하는 모습을 계략의 신도 한 수 접어야 할 수준이라고 비꼰다. 그녀에게 돈은 생존의 계산표이자, 권력자들의 더 큰 사기를 폭로하는 언어다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•재물"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>사이퍼의 거짓말은 허무주의로만 흐르지 않는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup> 그녀는 모두가 믿으면 거짓도 진실이 되며, 사람들은 자신이 믿고 싶은 것을 믿을 뿐이라고 말한다. 그러나 대사에서는 거짓이든 참이든 진실한 마음의 무게에 비할 수 없다고 말한다. 그래서 사이퍼의 거짓말은 모든 가치를 부정하는 말이 아니라, 거짓과 진실을 구분한다고 말하는 사람들이 실제로는 무엇을 믿고 싶은지 들춰내는 장치다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup></p>
-<p>의적이라는 자기 이미지는 사이퍼가 자기 상처를 감추는 방식이면서 실제 행동 원리이기도 하다.<sup class="cite-ref" title="공식 HoYoWiki · 사이퍼"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•2"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup> 그녀는 전리품을 열며 공짜가 최고라고 말하고, 야옹이들의 저녁밥은 벌었다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•1"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•2"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup> 오크마 하수도의 아이들에게 자신을 기다리지 말고 각자 살 길을 찾으라고 전해 달라는 말은, 그녀의 이득 계산 뒤에 방치된 사람들을 향한 책임이 남아 있음을 보여 준다. 사이퍼가 훔치는 이유는 늘 숭고하지 않지만, 그녀가 훔친 뒤 어디로 돌아가는지는 그녀를 단순한 좀도둑으로만 볼 수 없게 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•이상적인 삶"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전리품 오픈•2"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup></p>
-<p>그녀의 취약점은 물과 비, 그리고 오래된 작별의 기억처럼 사소하고 구체적인 곳에 남는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 사이퍼는 물을 제일 싫어한다고 말하고, 비 오는 날은 축축하고 끈적거리며 꼬리가 무거워져 싫다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup> 세상의 보석 사건 뒤에는 방직공의 눈을 쳐다볼 엄두를 내지 못하고 황급히 오크마를 떠난 기억이 남아 있다. 바람처럼 달리는 도둑이라는 이미지는 매끄럽지만, 사이퍼의 발밑에는 늘 젖은 꼬리와 낡은 후드와 떼지 못한 공고문이 따라붙는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•후드 모자"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">전투 속성</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">양자</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">공허</div></li>
+<p>사이퍼는 사라진 도적의 도시 도로스 출신의 도둑이자, 300 의적을 이끄는 황금의 후예다.<sup class="cite-ref" title="공식 HoYoWiki · 사이퍼"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 어릴 때 신전에서 빵과 말린 과일, 양초를 훔친 죄로 도로스성에 수배됐고, 훗날 대사제가 죽은 뒤 사라진 「세상의 보석」 사건의 용의자로 몰려 원로원이 범인 체포에 균형의 동전 100,000닢을 걸었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 옛 이름은 사이퍼라이지만 지금 그렇게 부르는 사람은 거의 없고, 전투 분류에서는 <a class="wiki-link" href="amphoreus.html" title="앰포리어스">앰포리어스</a> 소속의 양자 속성, 공허 운명의 길 캐릭터로 등록되어 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 전투 속성"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>도로스성의 수배령은 신전에서 빵 몇 개와 말린 과일 한 주머니, 양초 여러 개가 사라졌다고 알리며 이를 신성 모독으로 규정했다. 단서 제공자에게는 5,000, 생포 성공자에게는 10,000을 포상으로 걸었고, 용의자는 회색 머리에 고양이 귀를 가진 몸집 작은 소녀로 지목됐다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 사냥개에게 쫓기던 그녀는 감옥과 오수가 가득한 광장을 가로질러 달아났다. 사제가 신도들 앞에서 정직과 성실, 관용을 찬미하는 연설을 하는 사이, 사냥개는 그녀를 덮쳐 얼굴에 상처를 세 개 더 냈다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>도로스를 벗어나 여명의 거룩한 도시에 다다른 그녀는 황금의 후예의 전설을 보고도 곧장 믿지 않았다. &quot;분명 말 못 할 꿍꿍이가 있을 거야&quot;라며 이들을 명예를 탐내는 사기꾼으로 의심한 그녀는 황금 방직 공방에 몰래 들어갔다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 꿀 음료를 마시고 포도잎 쌈밥을 먹은 뒤 수정 말과 낡은 오르간을 만지작거리다 숙취로 정신을 잃었고, 깨어나 보니 향기 나는 비밀 편지 한 통이 손에 쥐어져 있었다. 편지는 그녀를 &quot;먹보 고양이&quot;라 부르며, 방직 공방이 그녀의 놀이터인 것처럼 어질러졌다고 적었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>오크마에서는 대사제가 세상을 떠난 뒤 「세상의 보석」이 파괴 흔적 없이 사라지는 사건이 있었고, 도난품이 암시장에서 균형의 동전으로 교환됐다는 목격담이 돌았다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 원로원은 공고문을 붙여 단서 제공자에게 5,000닢, 범인 체포자에게 100,000닢을 걸었다. 그녀는 그날 방직공의 눈을 마주칠 엄두를 내지 못한 채 오크마를 떠났다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>수백 년이 지나 새로운 영웅들이 앰포리어스 각지에서 모여들 무렵, 그녀는 후드를 쓰고 멀리서 옛 오크마 시장을 바라봤다. 아는 얼굴은 거의 남지 않았지만, 원로원의 공고문은 여전히 붙어 있었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 의상공은 그녀를 &quot;사이퍼라&quot;라고 부르며 붙잡았다. 자신과 선생님은 천 년을 함께해 서로를 보살필 수 있었지만, 사이퍼는 너무 오랫동안 사라져 있었기에 마음이 닳는 고통을 겪지 않았는지 확인해야 했다고 말했다.<sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <a class="wiki-link" href="char-3286.html" title="아글라이아">아글라이아</a>는 그녀가 오크마로 돌아왔다고 짧게 언급했다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<p>같은 시기, 고양이 발자국이 그려진 예고장이 앰포리어스 각 도시 국가에 나붙었다. 예고장은 옛 계략의 신 자그레우스가 &quot;보물을 훔치고 신을 도발하고 분쟁을 일으키는&quot; 수법을 식상하다고 조롱하며, 다가올 유령의 날에 300 의적이 &quot;지금까지 없었던 가장 훌륭한 연극&quot;을 선보이겠다고 선언했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 300 의적을 다시 모으기 위해 그녀는 앰포리어스 각지를 돌았다. 아니오누스에서는 화강암 법전의 글자 두 개를 몰래 바꿔 생사를 가르는 심판에서 의적의 노예 계약서를 따냈고, 남쪽 해안에서는 폭풍 속 배에 잠입해 의적과 결투를 벌이다 특제 마그넷으로 상대의 장검을 빨아들여 승부를 뒤집었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 사막에서는 무법자와 물을 마시지 않고 버티는 대결을 했고, 밀림에서는 사냥꾼과 추격전을 벌였다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<h2 id="능력">능력</h2>
+<p>사이퍼의 방식은 정면 대결보다 상대의 허점을 이용하는 쪽에 무게가 실린다. 법전의 글자를 슬쩍 바꿔 재판 결과를 뒤집거나, 폭풍 속 배에 잠입해 결투를 벌이거나, 특제 마그넷으로 상대의 무기를 빨아들이는 식이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 마그넷은 도로스 특유의 발명품 문화에서 나왔다. 도로스 사람들은 반지 스프링 건이나 &quot;만능&quot; 열쇠 같은 소형 발명품을 즐겨 만들었고, 그중에서도 그녀는 원하는 물건을 전부 끌어당기는 특제 마그넷을 가장 아꼈다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•도구"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 한 장면에서는 동전 하나를 높이 던지고 사라졌다가, 떨어지는 동전을 손으로 잡으며 다른 누군가와 함께 돌아오기도 한다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
+<p>그렇다고 매번 이기는 것은 아니다. 「도둑 유령」 바르톨로스는 &quot;사이퍼 누님이 진 건 이유가 있다&quot;고 말했고, 사이퍼 본인도 적을 마주치면 털이 쭈뼛 선다며 그냥 돌아가자고 말하는 대사를 남긴다.<sup class="cite-ref" title="게임 본편 · 「도둑 유령」 바르톨로스의 언급 · 「도둑 유령」 바르톨로스의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 적 발견"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 전투에서 밀릴 때는 &quot;이게 바로… 불을 쫓는……&quot;이라는 말을 남기고 쓰러지지만, 다시 일어설 때는 &quot;내 목숨이 몇 개게?&quot;라고 받아친다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>사이퍼에게 돈은 생존의 척도다. &quot;시간은 돈&quot;이라는 말을 입버릇처럼 하고, 아무도 자신을 모르는 곳을 돌아다니다 밤에 양유 허니 팬케이크를 먹으며 하루 수익을 헤아리는 삶에 만족한다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•이상적인 삶"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 동시에 원로원이 적토를 &quot;시대를 초월한 예술품&quot;으로 포장해 파는 행태를 &quot;계략의 신도 한 수 접어야 할 수준&quot;이라고 비꼰다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•재물"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 돈이 전부는 아니어서, <a class="wiki-link" href="char-3560.html" title="카스토리스">카스토리스</a>는 요정들의 돈이 외부에서 통용되지 않는 걸 알면서도 그녀가 굳이 하나를 가져가려 하는 이유를 이해하지 못한다.<sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
+<p>거짓말에 대해서는 &quot;모두가 믿으면 거짓도 진실이 된다&quot;고 말하며, 힘을 크게 펼칠 때는 &quot;여러 사람이 말하면 없던 일도 사실이 돼. 속았지롱~&quot;이라고 외친다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•발동"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 성혼을 얻은 뒤에는 &quot;거짓이든 참이든, 진실한 마음의 무게에 비할 순 없다&quot;는 말도 남긴다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 도로스성의 냥냥교와 멍멍교가 대전을 벌였고 냥냥교가 이겨 자신이 성녀 자리를 물려받았다는 이야기를 진지하게 늘어놓다가도, 곧 거짓말이라며 어릴 때 좋아하던 이야기였을 뿐이라고 밝힌다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•신분"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
+<p>어릴 때 망토로 쓰던 후드는 너덜너덜해졌지만 버리지 못했고, 「금실을 짜는 자」가 수선해 준 뒤로는 한 번도 찢어진 적이 없다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•후드 모자"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> 비 오는 날은 축축하고 끈적거리는 데다 꼬리가 무거워져 싫다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
+<p>오크마 하수도의 가장 두꺼운 파이프 끝에는 그녀가 챙기는 아이들이 있다. 자신이 돌아오지 않으면 그 아이들에게 자신을 기다리지 말고 각자 살 길을 찾으라 전해 달라고 부탁해 둔 상태다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> <a class="wiki-link" href="char-3322.html" title="트리비">트리비</a>, 트리앤, 트리논은 그녀가 몰래 외출할 때마다 가방에 먹을 것을 가득 채워 주는 언니들이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 트리비•트리앤•트리논에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
+<p>아글라이아에게는 &quot;해야 할 일은 알아서 할 테니 참견은 자제해 달라&quot;고 선을 긋고, 무대 위의 배우는 화려한 겉모습보다 추락하는 순간 때문에 사랑받는다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아글라이아에 대해"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•아글라이아"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> 카스토리스에게는 장난을 걸면서도 &quot;천성이 착한 아이라 가끔은 더 화가 난다&quot;며 자신을 좀 더 신경 쓰라고 말한다. 카스토리스는 사이퍼의 계략에 속아 여러 요리를 허둥지둥 맛본 적이 있다고 회상하면서도, 사이퍼가 즐겁게 지낸 것 같다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카스토리스에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 카스토리스의 언급 · 카스토리스의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup> <a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 &quot;회색 친구&quot;라 부르며, 유머 감각이 비슷하고 물건 줍는 취미가 맞아 오래전부터 알고 지낸 사이 같다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 인사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
+<p><a class="wiki-link" href="char-3561.html" title="아낙사">아낙사</a>, <a class="wiki-link" href="char-3769.html" title="파이논">파이논</a>, <a class="wiki-link" href="char-3324.html" title="마이데이">마이데이</a>, <a class="wiki-link" href="char-3688.html" title="히아킨">히아킨</a>에 대한 평가에서는 상대의 특징을 짧게 짚어 낸다. 아낙사가 별명을 순순히 받아들인 것을 대단하다고 하고, 파이논은 상대가 원하는 것과 제시할 가격을 이미 안다고 인정하며, 마이데이가 죽음을 거부한 일은 &quot;불멸의 어린 왕자&quot;라 부르며 멋지다고 평한다. 히아킨에게는 원래 아무도 신경 쓰지 않았을 일까지 떠안는다며 책임감이 너무 강하다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아낙사에 대해"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파이논에 대해"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 마이데이에 대해"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 히아킨에 대해"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
+<p>뽀글이는 개척자와 함께 사이퍼와 싸우게 해 달라고 조르고, <a class="wiki-link" href="npc-3756.html" title="아포피스">아포피스</a>는 그녀가 얼마나 많은 계략과 사고를 만들어낼지 걱정하며 신에게 기도한다.<sup class="cite-ref" title="게임 본편 · 뽀글이의 언급 · 뽀글이의 인게임 대사"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup><sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> 트로피를 되찾아 오는 약속은 지켰고, 이후 아포피스는 뽀글이의 이적 발표회를 위해 가짜 트로피까지 준비해 두겠다고 그녀에게 부탁한다.<sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="게임 본편 · 아포피스의 언급 · 아포피스의 인게임 대사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup> 게임 본편에는 누군가 죽어가며 &quot;…날 죽인 범인은 사이퍼…&quot;라는 말을 남기거나 &quot;설마 공교롭게도 사이퍼는 아니겠지?&quot;라고 의심하는 대사도 등장하지만, 어떤 사건을 가리키는지는 밝혀지지 않는다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="amphoreus.html">앰포리어스</a> — 도로스와 오크마는 사이퍼의 과거가 갈라지는 두 도시다. 도로스는 굶주림과 수배령으로 얼룩진 어린 시절의 무대이고, 오크마는 「세상의 보석」 사건으로 그녀가 떠났다가 수백 년 만에 돌아와 의상공과 재회한 곳이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•5"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 의상공의 언급 · 의상공의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 300 의적은 그녀가 <a href="amphoreus.html">앰포리어스</a> 각지를 돌며 다시 모으는 도적 무리이고, 자그레우스는 유령의 날 &quot;연극&quot;을 예고하며 그녀가 도발한 옛 계략의 신이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></li>
+<li><a href="char-3286.html">아글라이아</a>, <a href="char-3560.html">카스토리스</a>, <a href="char-3322.html">트리비</a>, <a href="trailblazer.html">개척자</a> — <a href="char-3286.html">아글라이아</a>, <a href="char-3560.html">카스토리스</a>, <a href="char-3322.html">트리비</a>·트리앤·트리논, <a href="trailblazer.html">개척자</a>는 오크마를 중심으로 사이퍼와 얽히는 인물들이다. <a href="char-3286.html">아글라이아</a>는 그녀의 행동을 지켜보고, <a href="char-3560.html">카스토리스</a>는 장난과 걱정을 주고받으며, <a href="char-3322.html">트리비</a> 자매는 먹을 것을 챙겨 주고, <a href="trailblazer.html">개척자</a>는 물건을 함께 줍는 사이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 아글라이아에 대해"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 카스토리스에 대해"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 트리비•트리앤•트리논에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 음성"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">사이퍼</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사라진 도적의 도시 도로스, 300 의적이 유희를 벌이며 거침없이 날뛴다. 발 빠른 도둑 별 사이퍼라, 「계략」의 불씨를 희롱하는 황금의 후예여, 달려라. 그대의 거짓말이 바람과 함께 이 세상 곳곳에 불기를. ——「훗, 날 속이려고? 어림도 없지!」</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사라진 도적의 도시 도로스, 300 의적이 유희를 벌이며 거침없이 날뛴다. 발 빠른 도둑 별 사이퍼라, 「계략」의 불씨를 희롱하는 황금의 후예여, 달려라. 그대의 거짓말이 바람과 함께 이 세상 곳곳에 불기를. ——「훗, 날 속이려고? 어림도 없지!」</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">앰포리어스</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">사이퍼</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사라진 도적의 도시 도로스, 300 의적이 유희를 벌이며 거침없이 날뛴다. 발 빠른 도둑 별 사이퍼라, 「계략」의 불씨를 희롱하는 황금의 후예여, 달려라. 그대의 거짓말이 바람과 함께 이 세상 곳곳에 불기를. ——「훗, 날 속이려고? 어림도 없지!」</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사라진 도적의 도시 도로스, 300 의적이 유희를 벌이며 거침없이 날뛴다. 발 빠른 도둑 별 사이퍼라, 「계략」의 불씨를 희롱하는 황금의 후예여, 달려라. 그대의 거짓말이 바람과 함께 이 세상 곳곳에 불기를. ——「훗, 날 속이려고? 어림도 없지!」</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">「직조의 달 말, 신전에서 빵 몇 개, 말린 과일 한 주머니, 양초 여러 개가 사라졌다. 잃어버린 물건이 많지는 않으나, 이는 신성을 모독하고 질서를 어지럽히는 큰 죄이다. 조사 결과, 용의자는 회색 머리에 고양이 귀를 가지고 있으며, 몸이 왜소하다. 몸놀림이 민첩하고 꾀가 많으니 더욱 조심해야 한다. 단서를 제공한 자에게는 5,000을, 생포에 성공한 자에게는 10,000을 포상한다」 ——도로스성에 붙어 있는 수배령 「저 여자를 잡아라. 잡아라!」 감옥과...</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 스토리•5</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">「각국의 사제, 주제, 복사, 세상의 왕좌의 빛 아래 있는 신도, 그리고 지성이 있는 모든 생령에게 대사제께서 세상을 떠난 후, 세상의 보석의 행방이 묘연해졌다. 조사 결과, 현장에는 파괴된 흔적이 전혀 없었다. 도난당한 보석이 암시장에 유입되어 거액의 균형의 동전으로 교환되는 것을 목격했다는 자들이 여럿 있었다. 중요한 단서를 제공하는 자에게는 균형의 동전 5,000닢을, 범인을 체포하는 자에게는 균형의 동전 100,000닢을 포상한다」 ——원로원의 누렇...</div></li>
 <li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사이퍼라? 날 아나 보군…. 하지만 지금 그렇게 부르는 사람은 거의 없어. 그냥 &#x27;사이퍼&#x27;라고 불러. 바람보다도 빠르게 느껴지고, 의적 느낌이 물씬 나잖아. 안 그래?</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">캐릭터 스토리•5</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">「각국의 사제, 주제, 복사, 세상의 왕좌의 빛 아래 있는 신도, 그리고 지성이 있는 모든 생령에게 대사제께서 세상을 떠난 후, 세상의 보석의 행방이 묘연해졌다. 조사 결과, 현장에는 파괴된 흔적이 전혀 없었다. 도난당한 보석이 암시장에 유입되어 거액의 균형의 동전으로 교환되는 것을 목격했다는 자들이 여럿 있었다. 중요한 단서를 제공하는 자에게는 균형의 동전 5,000닢을, 범인을 체포하는 자에게는 균형의 동전 100,000닢을 포상한다」 ——원로원의 누렇...</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사라진 도적의 도시 도로스, 300 의적이 유희를 벌이며 거침없이 날뛴다. 발 빠른 도둑 별 사이퍼라, 「계략」의 불씨를 희롱하는 황금의 후예여, 달려라. 그대의 거짓말이 바람과 함께 이 세상 곳곳에 불기를. ——「훗, 날 속이려고? 어림도 없지!」</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">「직조의 달 말, 신전에서 빵 몇 개, 말린 과일 한 주머니, 양초 여러 개가 사라졌다. 잃어버린 물건이 많지는 않으나, 이는 신성을 모독하고 질서를 어지럽히는 큰 죄이다. 조사 결과, 용의자는 회색 머리에 고양이 귀를 가지고 있으며, 몸이 왜소하다. 몸놀림이 민첩하고 꾀가 많으니 더욱 조심해야 한다. 단서를 제공한 자에게는 5,000을, 생포에 성공한 자에게는 10,000을 포상한다」 ——도로스성에 붙어 있는 수배령 「저 여자를 잡아라. 잡아라!」 감옥과...</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">모두가 믿으면 거짓도 진실이 돼——어려워? 사람들은 자기가 믿고 싶은 걸 믿을 뿐이야. 근데 이 세상이 모두가 보고 싶어하는 그 모습이라면 나쁠 게 뭐야?</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">잡담•재물</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">돈은 절약하는 게 아니라 버는 거야. 원로원의 &quot;높.으.신.분&quot;들은 적토를 시대를 초월한 예술품으로 포장하는데——그들에 비하면 계략의 신도 한 수 접어야 할 정도지</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">취미•연극 관람</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">어렸을 때 항상 극장에 몰래 들어가 다른 사람의 영웅 이야기를 보곤 했어. 하루 종일 그곳에 틀어박혀 있었지. 지금은 원할 때 들어갈 수 있지만 항상 막이 내리기 전에 퇴장해</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">여명의 거룩한 도시까지 도망쳐온 그녀는 도시에서 황금의 후예의 전설이 격동하는 것을 보았다. 그러나 좁고 지저분한 골목을 보며 그녀는 여기도 도로스와 다를 바가 없다고 느꼈다. 「흥, 불을 쫓는다고? 영웅? 이 사이퍼라 님의 경험으로 볼 때, 분명 말 못 할 꿍꿍이가 있을 거야!」 황금의 후예를 명예를 탐내는 사기꾼으로 여긴 그녀는 황금 방직 공방을 향해 손을 뻗었다. 「꿀 음료? 말판… 그리고 이상한 모양의 오르간? 다 훔쳐 온 거겠지……」 그녀는 꿀 음...</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">「자그레우스, 과거 계략의 신이여, 보물을 훔치고, 신들을 도발하고, 분쟁을 일으키는 그대의 낡은 수법은 식상하다. 곧 다가올 유령의 날, 300 의적이 앰포리어스에서 지금까지 없었던 가장 훌륭한 연극을 선보일 것이다. 우리가 이 세계를 접수할 것이다, 비겁한 신이여—— 우리가 어떻게 세계를 뒤집어엎는지 지켜보시지!」 ——고양이 발자국이 그려진 예고장, 앰포리어스의 각 도시 국가에 흩어져 있다 「오크마에서 북상해 눈 덮인 산맥을 지나면 아니오누스가 나와」...</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">잡담•도구</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">도로스 사람들은 작은 발명품을 만드는 걸 좋아해. 반지 스프링 건이나 「만능」 열쇠 같은 거 말이야. 그 열쇠로 반지 스프링 건을 훔칠 수도 있지… 하지만 내 최애는 「특제 마그넷」이야. 원하는 게 있으면 전부 빨아들일 수 있어, 멋지지~</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">수수께끼 풀이 성공•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">이런 조그만 장치 쯤이야 식은 죽 먹기지…. 도로스 사람을 뭘로 보는 거야?</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">수수께끼 풀이 성공•2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">다음엔 좀 더 어렵게 부탁해</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">대기 모션 1</span> <span class="ref-source">공식 HoYoWiki — 갤러리 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">대기 모션 1</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">「도둑 유령」 바르톨로스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">「도둑 유령」 바르톨로스의 인게임 대사</span></span><div class="ref-quote">불공평해요 불공평해요. 사이퍼 누님이 진 건 이유가 있다고요——</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">전투 불능</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">이게 바로… 불을 쫓는……</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">적 발견</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">털이 쭈뼛 서네, 우리 그냥 돌아갈까?</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">전투 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">내 목숨이 몇 개게?</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">의상공의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">의상공의 인게임 대사</span></span><div class="ref-quote">…천년의 세월 동안 나와 선생님은 함께한 시간이 많아서 서로 보살펴줄 수 있었지. 하지만 사이퍼라 넌 너무 오랫동안 사라져 있었으니, 너도 마음이 닳는 고통을 겪고 있는 건지 확인할 필요가 있었어……</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">자신에 대해•신분</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">도로스성이라고 들어봤어? 오래전, 도로스성에서 냥냥교와 멍멍교의 대전이 있었어. 결국 냥냥교가 멍멍교를 이겼지. 냥냥교의 성녀로서, 난 교파의 깃발을 계승했어…. 거짓말 같아? 맞아. 농담 좀 해 봤어. 내가 어릴 때 정말 좋아하던 얘기야</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">언젠가 내가 돌아오지 않거든 오크마의 하수도로 가봐. 가장 두꺼운 파이프를 따라 끝까지 가면 거기 작은 집이 있어. 그곳 아이들한테 날 기다리지 말고 각자 살 길을 찾으라고 전해줘</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">아글라이아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아글라이아의 인게임 대사</span></span><div class="ref-quote">사이퍼가 오크마로 돌아왔어…</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">아글라이아에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">역사라는 무대 위의 「배우」가 사랑을 받는 건, 그들의 화려한 겉모습 때문만이 아니야…. 관객들은 그들이 무대에서 추락하는 그 순간을 더 기대하고 있지</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">파티 편성•아글라이아</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">미리 말해두겠는데, 해야 할 일은 내가 알아서 할 테니까 참견은 자제해 줘</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">카스토리스에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">카스토리스에게 장난 치는 건 정말 재밌어, 안 그래? 난 방구석 공주가 화가 나서 날 긁어주길 바랐는데… 아쉽게도 아니더라. 천성이 착한 아이야…. 그래서 가끔은 더 화가 나. 카스토리스가 자기 자신을 좀 더 신경 쓰면 좋겠어</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">파티 편성•카스토리스</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">방구석 공주, 네 커다란 낫 좀 보여주지?</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">카스토리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카스토리스의 인게임 대사</span></span><div class="ref-quote">그렇지만, 사이퍼 님도 점장님의 초대를 거절하지 않으셨잖아요</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">카스토리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카스토리스의 인게임 대사</span></span><div class="ref-quote">그날, 저도 사이퍼 님의 계략에 속아서 허둥지둥 여러 요리를 맛보았죠……</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">카스토리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카스토리스의 인게임 대사</span></span><div class="ref-quote">제가 보기엔 사이퍼 님께서 즐겁게 지내신 것 같아요</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">트리비•트리앤•트리논에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">언니들은 나한테 정말 잘해줘. 내가 몰래 외출할 때마다 가방에 먹을 걸 가득 채워주는 바람에 벽 하나 넘는 게 어찌나 힘들던지!</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">파티 편성•트리비</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">트리비 언니, 바람도 불겠다, 같이 날까?</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">트리논의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">트리논의 인게임 대사</span></span><div class="ref-quote">아냐, 네가 누굴 말하는 건지 *우린* 몰라. *우리*가 말하는 건 사이퍼야!</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">아낙사에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사람들이 그를 뭐라고 하더라? 「화려한 옷을 입은 드로마스」? 근데 그가 그걸 기꺼이 받아들였대——별명을 지은 사람은 모르지만, 그걸 받아들인 자는 분명 대단한 사람이 분명해……</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">파이논에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">구세주 소년은 별생각이 없어 보이지만, 네가 뭘 원하는지, 어떤 가격을 제시할지 다 알고 있어…. 말은 또 어찌나 진실되게 하는지, 사람들이 좋아하는 데는 다 이유가 있다니까. 휴, 인정해</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">마이데이에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사람들이 「죽음을 거부」할 수 있다고 하면, 난 그 사람들을 머리에 총 맞은 바보라고 생각하겠지. 근데 그 녀석은 해내고 말았어——내가 할 수 있는 말은 딱 하나, 너무 멋져. 「불멸의 어린 왕자」</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">히아킨에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">그 핑크 머리 소녀는 늙다리들을 신경 쓰지 않아도 되는데 말이야. 그 애가 아니었다면 원래는 아무도 신경 쓰지 않았을 걸…? 하여간 책임감이 너무 강해서 그래</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">인사</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">회색 친구, 요즘 어디서 돈을 벌고 있어?</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">음성</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">회색 친구, 눈치챘는지 모르겠지만 우린 유머 감각이 비슷하고 물건을 줍는 걸 좋아하지. 마치 오래전부터 알고 지낸 친구 같아</div></li>
-<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">파티 편성•{NICKNAME}</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">회색 친구, 전투 끝내고 보물 건지러 가자~</div></li>
-<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">뽀글이의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">뽀글이의 인게임 대사</span></span></li>
-<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">아포피스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아포피스의 인게임 대사</span></span><div class="ref-quote">사이퍼 선수가 얼마나 많은 계략을 쓰고 얼마나 많은 사고를 만들어낼지…. 파구사시여! {NICKNAME} 선수가 함정에 빠지지 않게 보호해 주시옵소서!</div></li>
-<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">아포피스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아포피스의 인게임 대사</span></span><div class="ref-quote">트로피가 돌아왔습니다! 트로피가 뽀글이 옆에 있네요, 보십시오! 사이퍼가 약속을 지켰습니다!</div></li>
-<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">아포피스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아포피스의 인게임 대사</span></span><div class="ref-quote">정말 감동적이군요! 뽀글이를 위해 성대한 이적 발표회를 열죠. 사이퍼 님, 제가 가짜 트로피를 준비해 둘 테니 그때가 되면 잘 부탁드릴게요</div></li>
-<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">잡담•후드 모자</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">이 후드는 어릴 때 망토로 사용했었어. 너덜너덜해졌지만 버릴 수가 없더라고. 근데 명성이 자자한 「금실을 짜는 자」가 수선해 줬어. 봐, 그 이후로 한 번도 찢어진 적이 없고 지금은 새것 같아. 이상하기도 하지</div></li>
-<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">의상공의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">의상공의 인게임 대사</span></span><div class="ref-quote">거기 서, 사이퍼라</div></li>
-<li id="ref-50" data-reference-item data-ref-number="50"><span class="ref-title">작별</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">시간은 돈이야. 방금 같이 보낸 시간은——내가 쏜 걸로 할게~ 나중에 봐~</div></li>
-<li id="ref-51" data-reference-item data-ref-number="51"><span class="ref-title">자신에 대해•이상적인 삶</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">아무도 나를 모르는 곳에서 종일 돌아다니고, 밤에는 양유 허니 팬케이크를 먹고, 이불 속에서 하루 수익을 떠올리는 삶——난 지금 그렇게 살고 있고, 아주 만족스러워</div></li>
-<li id="ref-52" data-reference-item data-ref-number="52"><span class="ref-title">성혼 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">거짓이든 참이든, 진실한 마음의 무게에 비할 순 없지</div></li>
-<li id="ref-53" data-reference-item data-ref-number="53"><span class="ref-title">전리품 오픈•2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">야옹이들 저녁밥은 벌었군~</div></li>
-<li id="ref-54" data-reference-item data-ref-number="54"><span class="ref-title">전리품 오픈•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">공짜가 최고야~</div></li>
-<li id="ref-55" data-reference-item data-ref-number="55"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">난 비 오는 날이 싫어. 축축하고 끈적거리고 꼬리가 무거워지니까……</div></li></ol></details>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">전투 속성</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">양자</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">공허</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">여명의 거룩한 도시까지 도망쳐온 그녀는 도시에서 황금의 후예의 전설이 격동하는 것을 보았다. 그러나 좁고 지저분한 골목을 보며 그녀는 여기도 도로스와 다를 바가 없다고 느꼈다. 「흥, 불을 쫓는다고? 영웅? 이 사이퍼라 님의 경험으로 볼 때, 분명 말 못 할 꿍꿍이가 있을 거야!」 황금의 후예를 명예를 탐내는 사기꾼으로 여긴 그녀는 황금 방직 공방을 향해 손을 뻗었다. 「꿀 음료? 말판… 그리고 이상한 모양의 오르간? 다 훔쳐 온 거겠지……」 그녀는 꿀 음...</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">의상공의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">의상공의 인게임 대사</span></span><div class="ref-quote">거기 서, 사이퍼라</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">의상공의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">의상공의 인게임 대사</span></span><div class="ref-quote">…천년의 세월 동안 나와 선생님은 함께한 시간이 많아서 서로 보살펴줄 수 있었지. 하지만 사이퍼라 넌 너무 오랫동안 사라져 있었으니, 너도 마음이 닳는 고통을 겪고 있는 건지 확인할 필요가 있었어……</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">아글라이아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아글라이아의 인게임 대사</span></span><div class="ref-quote">사이퍼가 오크마로 돌아왔어…</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">「자그레우스, 과거 계략의 신이여, 보물을 훔치고, 신들을 도발하고, 분쟁을 일으키는 그대의 낡은 수법은 식상하다. 곧 다가올 유령의 날, 300 의적이 앰포리어스에서 지금까지 없었던 가장 훌륭한 연극을 선보일 것이다. 우리가 이 세계를 접수할 것이다, 비겁한 신이여—— 우리가 어떻게 세계를 뒤집어엎는지 지켜보시지!」 ——고양이 발자국이 그려진 예고장, 앰포리어스의 각 도시 국가에 흩어져 있다 「오크마에서 북상해 눈 덮인 산맥을 지나면 아니오누스가 나와」...</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">잡담•도구</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">도로스 사람들은 작은 발명품을 만드는 걸 좋아해. 반지 스프링 건이나 「만능」 열쇠 같은 거 말이야. 그 열쇠로 반지 스프링 건을 훔칠 수도 있지… 하지만 내 최애는 「특제 마그넷」이야. 원하는 게 있으면 전부 빨아들일 수 있어, 멋지지~</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">동전 하나가 높이 던져졌고 사이퍼가 사라졌다. 잠시 후, 그녀는 떨어지는 동전을 잡고는 누군가와 함께 돌아왔다…</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">「도둑 유령」 바르톨로스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">「도둑 유령」 바르톨로스의 인게임 대사</span></span><div class="ref-quote">불공평해요 불공평해요. 사이퍼 누님이 진 건 이유가 있다고요——</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">적 발견</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">털이 쭈뼛 서네, 우리 그냥 돌아갈까?</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">전투 불능</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">이게 바로… 불을 쫓는……</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">전투 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">내 목숨이 몇 개게?</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">작별</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">시간은 돈이야. 방금 같이 보낸 시간은——내가 쏜 걸로 할게~ 나중에 봐~</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">자신에 대해•이상적인 삶</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">아무도 나를 모르는 곳에서 종일 돌아다니고, 밤에는 양유 허니 팬케이크를 먹고, 이불 속에서 하루 수익을 떠올리는 삶——난 지금 그렇게 살고 있고, 아주 만족스러워</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">잡담•재물</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">돈은 절약하는 게 아니라 버는 거야. 원로원의 &quot;높.으.신.분&quot;들은 적토를 시대를 초월한 예술품으로 포장하는데——그들에 비하면 계략의 신도 한 수 접어야 할 정도지</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">카스토리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카스토리스의 인게임 대사</span></span><div class="ref-quote">하지만 사이퍼 님, 한 가지… 이해가 안 되는 게 있어요. 분명 요정들의 돈은 외부에서 통용되지 않는다는 걸 아시면서, 왜 굳이 하나를 가져가려고 하시죠?</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">모두가 믿으면 거짓도 진실이 돼——어려워? 사람들은 자기가 믿고 싶은 걸 믿을 뿐이야. 근데 이 세상이 모두가 보고 싶어하는 그 모습이라면 나쁠 게 뭐야?</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">필살기•발동</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">여러 사람이 말하면 없던 일도 사실이 돼. 속았지롱~</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">성혼 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">거짓이든 참이든, 진실한 마음의 무게에 비할 순 없지</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">자신에 대해•신분</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">도로스성이라고 들어봤어? 오래전, 도로스성에서 냥냥교와 멍멍교의 대전이 있었어. 결국 냥냥교가 멍멍교를 이겼지. 냥냥교의 성녀로서, 난 교파의 깃발을 계승했어…. 거짓말 같아? 맞아. 농담 좀 해 봤어. 내가 어릴 때 정말 좋아하던 얘기야</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">잡담•후드 모자</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">이 후드는 어릴 때 망토로 사용했었어. 너덜너덜해졌지만 버릴 수가 없더라고. 근데 명성이 자자한 「금실을 짜는 자」가 수선해 줬어. 봐, 그 이후로 한 번도 찢어진 적이 없고 지금은 새것 같아. 이상하기도 하지</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">난 비 오는 날이 싫어. 축축하고 끈적거리고 꼬리가 무거워지니까……</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">언젠가 내가 돌아오지 않거든 오크마의 하수도로 가봐. 가장 두꺼운 파이프를 따라 끝까지 가면 거기 작은 집이 있어. 그곳 아이들한테 날 기다리지 말고 각자 살 길을 찾으라고 전해줘</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">트리비•트리앤•트리논에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">언니들은 나한테 정말 잘해줘. 내가 몰래 외출할 때마다 가방에 먹을 걸 가득 채워주는 바람에 벽 하나 넘는 게 어찌나 힘들던지!</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">아글라이아에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">역사라는 무대 위의 「배우」가 사랑을 받는 건, 그들의 화려한 겉모습 때문만이 아니야…. 관객들은 그들이 무대에서 추락하는 그 순간을 더 기대하고 있지</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">파티 편성•아글라이아</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">미리 말해두겠는데, 해야 할 일은 내가 알아서 할 테니까 참견은 자제해 줘</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">카스토리스에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">카스토리스에게 장난 치는 건 정말 재밌어, 안 그래? 난 방구석 공주가 화가 나서 날 긁어주길 바랐는데… 아쉽게도 아니더라. 천성이 착한 아이야…. 그래서 가끔은 더 화가 나. 카스토리스가 자기 자신을 좀 더 신경 쓰면 좋겠어</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">카스토리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카스토리스의 인게임 대사</span></span><div class="ref-quote">그날, 저도 사이퍼 님의 계략에 속아서 허둥지둥 여러 요리를 맛보았죠……</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">카스토리스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">카스토리스의 인게임 대사</span></span><div class="ref-quote">제가 보기엔 사이퍼 님께서 즐겁게 지내신 것 같아요</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">인사</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">회색 친구, 요즘 어디서 돈을 벌고 있어?</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">음성</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">회색 친구, 눈치챘는지 모르겠지만 우린 유머 감각이 비슷하고 물건을 줍는 걸 좋아하지. 마치 오래전부터 알고 지낸 친구 같아</div></li>
+<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">아낙사에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사람들이 그를 뭐라고 하더라? 「화려한 옷을 입은 드로마스」? 근데 그가 그걸 기꺼이 받아들였대——별명을 지은 사람은 모르지만, 그걸 받아들인 자는 분명 대단한 사람이 분명해……</div></li>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">파이논에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">구세주 소년은 별생각이 없어 보이지만, 네가 뭘 원하는지, 어떤 가격을 제시할지 다 알고 있어…. 말은 또 어찌나 진실되게 하는지, 사람들이 좋아하는 데는 다 이유가 있다니까. 휴, 인정해</div></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">마이데이에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">사람들이 「죽음을 거부」할 수 있다고 하면, 난 그 사람들을 머리에 총 맞은 바보라고 생각하겠지. 근데 그 녀석은 해내고 말았어——내가 할 수 있는 말은 딱 하나, 너무 멋져. 「불멸의 어린 왕자」</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">히아킨에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3691?lang=ko-kr">원문</a></span><div class="ref-quote">그 핑크 머리 소녀는 늙다리들을 신경 쓰지 않아도 되는데 말이야. 그 애가 아니었다면 원래는 아무도 신경 쓰지 않았을 걸…? 하여간 책임감이 너무 강해서 그래</div></li>
+<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">뽀글이의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">뽀글이의 인게임 대사</span></span></li>
+<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">아포피스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아포피스의 인게임 대사</span></span><div class="ref-quote">사이퍼 선수가 얼마나 많은 계략을 쓰고 얼마나 많은 사고를 만들어낼지…. 파구사시여! {NICKNAME} 선수가 함정에 빠지지 않게 보호해 주시옵소서!</div></li>
+<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">아포피스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아포피스의 인게임 대사</span></span><div class="ref-quote">트로피가 돌아왔습니다! 트로피가 뽀글이 옆에 있네요, 보십시오! 사이퍼가 약속을 지켰습니다!</div></li>
+<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">아포피스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아포피스의 인게임 대사</span></span><div class="ref-quote">정말 감동적이군요! 뽀글이를 위해 성대한 이적 발표회를 열죠. 사이퍼 님, 제가 가짜 트로피를 준비해 둘 테니 그때가 되면 잘 부탁드릴게요</div></li>
+<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">…날 죽인 범인은 사이퍼… 윽</div></li>
+<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">…설마 공교롭게도 사이퍼는 아니겠지?</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 앰포리어스</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
-  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 갤러리, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성</p>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%82%AC%EC%9D%B4%ED%8D%BC&amp;page_slug=char-3691">수정 요청</a></div>
@@ -780,12 +715,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-3691">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%82%AC%EC%9D%B4%ED%8D%BC&amp;body=%EC%82%AC%EC%9D%B4%ED%8D%BC+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-3691.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

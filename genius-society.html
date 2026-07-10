@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>지니어스 클럽 · hoyohoyo.wiki</title>
-  <meta name="description" content="지니어스 클럽은 지식의 에이언즈 누스가 초대한 극소수 천재들의 파벌이다. 작중에서는 헤르타와 스크루룸을 통해 누스의 총애, 시뮬레이션 우주 연구, 스크루룸별 사건, 은랑과의 해킹 비교, 지식학회와의 대비를 연결하는 핵심 지식 세력으로 기능한다.">
+  <meta name="description" content="지니어스 클럽은 「지식」의 에이언즈 누스가 부르는 극소수 천재들의 파벌이다. 누스가 태어난 뒤 그 부름을 받은 사람은 84명뿐이라고 알려졌다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="지니어스 클럽 · hoyohoyo.wiki">
-  <meta property="og:description" content="지니어스 클럽은 지식의 에이언즈 누스가 초대한 극소수 천재들의 파벌이다. 작중에서는 헤르타와 스크루룸을 통해 누스의 총애, 시뮬레이션 우주 연구, 스크루룸별 사건, 은랑과의 해킹 비교, 지식학회와의 대비를 연결하는 핵심 지식 세력으로 기능한다.">
+  <meta property="og:description" content="지니어스 클럽은 「지식」의 에이언즈 누스가 부르는 극소수 천재들의 파벌이다. 누스가 태어난 뒤 그 부름을 받은 사람은 84명뿐이라고 알려졌다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/genius-society.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/genius-society.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,56 +620,51 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-factions.html">파벌</a><a href="category-factions-knowledge.html">지식 세력</a><span>지니어스 클럽</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%A7%80%EB%8B%88%EC%96%B4%EC%8A%A4+%ED%81%B4%EB%9F%BD&amp;page_slug=genius-society">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>지니어스 클럽</h1><div class="meta-row"><span class="badge">파벌</span><span class="badge">지식 세력</span><span class="badge">세력</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>지니어스 클럽은 「지식」의 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a> <a class="wiki-link" href="nous.html" title="⌈ 지식 ⌋ 누스">누스</a>와 연결된 파벌이다. 공식 HoYoWiki는 지니어스 클럽의 이름을 지니어스 클럽, 유형을 파벌, <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>을 지식으로 정리하고 관련 항목으로 누스를 제시한다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그래서 지니어스 클럽은 단순한 천재들의 친목 모임이 아니라, 누스가 바라본 극소수 인물들이 우주의 답안을 탐사하는 장으로 읽힌다.</p>
-<p>공식 이야기는 클럽의 핵심을 “초대”로 설명한다. 누스는 우주의 방정식과 허수 법칙을 계산하다가 인간 세계에서 지식의 불꽃이 나타나면 그 기원으로 신호를 보내고, 그 천재를 우주의 답안을 찾는 행렬에 부른다. 하지만 초대받았다는 사실 자체가 끝은 아니다. 공식 설명은 누스의 인정만 자랑하며 자기 연구를 계속하는 사람과, 인간 지혜의 한계를 이해하고 속세의 지식욕에서 벗어난 진짜 멤버를 구분한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<h2 id="누스의-초대와-회원성">누스의 초대와 회원성</h2>
-<p>지니어스 클럽의 회원성은 시험이나 추천서로 설명되지 않는다. 작중에서 중요한 기준은 누스가 어떤 인간의 지식 불꽃에 반응했는가, 그리고 그 인물이 우주의 답안이 인간 지혜의 한계를 넘어선다는 결론을 받아들였는가에 있다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 때문에 지니어스 클럽은 넓은 학술 조직보다 “선택받은 개인들의 목록”에 가깝다. 회원들은 같은 이름 아래 묶이지만, 하나의 학교처럼 같은 규칙과 교과 과정을 공유한다고 보기는 어렵다.</p>
-<p>아스타의 대사는 이 폐쇄성을 숫자로 보여 준다. 그는 <a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>를 지니어스 클럽 회원이자 「지식」 에이언즈의 총애를 받는 행운아라고 설명하면서, 누스의 탄생 이후 그런 사람은 84명밖에 없었다고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 아스타가 설명하는 헤르타와 누스의 총애 · 임무 「새벽에 울리는 천 개의 방울」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 말은 헤르타가 유명해서 클럽에 들어간 것이 아니라, 클럽 회원이라는 사실 자체가 우주 전체에서 드문 사건임을 보여 준다.</p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>작중에서 지니어스 클럽은 천재성의 기준선으로 쓰인다. 헤르타는 <a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>을 지니어스 클럽 #76 회원이라고 소개하고, 뛰어난 기계 두뇌를 지닌 신사라고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타가 말하는 스크루룸 #76 · 헤르타의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 스크루룸 자신도 <a class="wiki-link" href="rupert.html" title="「제왕」루버트">루버트</a> 1세를 두고 같은 클럽 회원으로서 어떤 지니어스도 얕볼 수 없다고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 같은 클럽 회원으로서의 경계 · 스크루룸의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 이 장면들에서 클럽은 친분의 이름이 아니라, 죽은 뒤에도 위험한 지식을 남길 수 있는 인물들을 가리키는 표식이 된다.</p>
-<p>클럽 회원은 연구실 안에만 머무르지 않는다. 방송 대사는 <a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>가 지니어스 클럽의 스크루룸별을 침입해 행성의 주인 스크루룸과 충돌했다고 전한다. <sup class="cite-ref" title="게임 본편 — 대사 · 스크루룸별 침입 보도 · 남자 목소리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 또 다른 보도에서는 <a class="wiki-link" href="intelligentsia-guild.html" title="지식학회">지식학회</a> 무장 고고학파가 잠재 재난 등급 Ω의 강철 유적 발굴을 제안하고, 지니어스 클럽 멤버 스크루룸이 협력을 약속했다고 설명한다. <sup class="cite-ref" title="게임 본편 — 대사 · 강철 유적 발굴 협력 보도 · 남자 목소리의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 이런 언급은 지니어스 클럽의 영향력이 논문이나 명성에 그치지 않고, 행성의 주권, 위험 유적, 우주적 사건 대응으로 이어질 수 있음을 보여 준다.</p>
+<p>지니어스 클럽은 「지식」의 <a class="wiki-link" href="aeons.html" title="에이언즈">에이언즈</a> <a class="wiki-link" href="nous.html" title="⌈ 지식 ⌋ 누스">누스</a>가 부르는 극소수 천재들의 파벌이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 누스가 태어난 뒤 그 부름을 받은 사람은 84명뿐이라고 알려졌다. <sup class="cite-ref" title="게임 본편 — 대사 · 아스타가 설명하는 헤르타와 누스의 총애 · 임무 「새벽에 울리는 천 개의 방울」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<h2 id="누스의-초대와-회원">누스의 초대와 회원</h2>
+<p>누스는 은하 한쪽에서 억만 변수로 이루어진 우주의 방정식을 계산하고, 아직 풀리지 않은 허수 법칙을 추리한다. 인간 세계에 지식의 불꽃이 나타나면 누스는 그 기원으로 신호를 보내 「지니어스」를 우주의 답안을 탐사하는 행렬에 초대한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>초대의 의미를 오해하는 사람도 있다. 이들은 초대를 누스의 인정으로만 받아들이고 각자의 연구를 이어가며, 성실과 지혜로 남긴 업적이 언젠가 누스의 칭찬으로 돌아오리라 믿는다. 하지만 이들이 일생을 바쳐 풀려는 난제는 누스가 이미 천만 년 전에 답을 알아낸 문제다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 누스는 인간의 작은 성과를 감상할 시간이 없고, 지니어스들의 갈망에는 침묵으로만 답한다. 「그의 침묵의 소리는 무엇보다 크다」. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>소수만이 다르게 반응한다. 이들은 겸손히 질문하고 「지식」의 지도를 구하며, 계시를 받으면 세계를 뒤흔들 답안 하나만 남기고 인파 속으로 사라진다. 「우주의 답안은 인간 지혜의 한계를 넘어선다」는 결론을 받아들인 이들만이 지니어스 클럽의 진짜 멤버가 된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>임무 「새벽에 울리는 천 개의 방울」의 대사는 <a class="wiki-link" href="person-994.html" title="헤르타">헤르타</a>를 지니어스 클럽 회원이자 「지식」 에이언즈의 총애를 받는 행운아라고 설명하며, 누스의 탄생 이후 그런 사람이 84명뿐이라고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 아스타가 설명하는 헤르타와 누스의 총애 · 임무 「새벽에 울리는 천 개의 방울」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이름을 밝히지 않은 어떤 인물은 클럽 회원의 연구 성과를 조사하려고 친필 원고 《지니어스 클럽: 연구 성과 평가》를 남겼지만, 그 시도는 끝내 이루어지지 않았다. <sup class="cite-ref" title="공식 HoYoWiki · 지니어스 클럽: 연구 성과 평가"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<h2 id="주요-인물">주요 인물</h2>
+<p>헤르타는 지니어스 클럽 #76 회원 <a class="wiki-link" href="screwllum.html" title="스크루룸">스크루룸</a>을 오래 알고 지낸 사이라고 소개하며, 뛰어난 기계 두뇌를 지닌 신사라고 평한다. <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타가 말하는 스크루룸 #76 · 헤르타의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 스크루룸 자신은 같은 클럽 회원으로서 어떤 지니어스도 얕볼 수 없다고 말한다. 상대가 죽은 지 오래되었어도 마찬가지다. <sup class="cite-ref" title="게임 본편 — 대사 · 같은 클럽 회원으로서의 경계 · 스크루룸의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>스크루룸은 자신의 이름을 딴 스크루룸별의 주인이기도 하다. 방송 보도는 <a class="wiki-link" href="stellaron-hunters.html" title="스텔라론 헌터">스텔라론 헌터</a>가 이 별을 침입해 스크루룸과 충돌했다고 전한다. <sup class="cite-ref" title="게임 본편 — 대사 · 스크루룸별 침입 보도 · 남자 목소리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 다른 보도에서는 <a class="wiki-link" href="intelligentsia-guild.html" title="지식학회">지식학회</a> 무장 고고학파 수석학사가 잠재 재난 등급 Ω 강철 유적의 발굴을 제안했고, 스크루룸이 협력을 약속했다고 전한다. <sup class="cite-ref" title="게임 본편 — 대사 · 강철 유적 발굴 협력 보도 · 남자 목소리의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p><a class="wiki-link" href="silver-wolf.html" title="은랑">은랑</a>의 해킹 실력도 스크루룸을 기준으로 설명된다. 레너드는 은랑의 자료를 보고 그가 지니어스 클럽 멤버와 막상막하라고 평가하며, 우주정거장 감시 화면을 피했더라도 이상하지 않다고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 은랑과 지니어스 클럽 멤버의 비교 · 레너드의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 헤르타 역시 은랑이 스크루룸과 비등한 실력의 해커라면 우주정거장 침투쯤은 식은 죽 먹기라고 답한다. <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타가 본 은랑과 스크루룸의 실력 · 헤르타의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
 <h2 id="지식학회와의-대비">지식학회와의 대비</h2>
-<p>지니어스 클럽은 지식학회와 나란히 언급될 때 성격이 더 선명해진다. 지식학회 공식 설명은 지니어스 클럽에 진정으로 몸담을 수 있는 멤버가 소수 중의 소수라고 말한 뒤, 지식학회는 넓은 우주의 지식을 추구하는 사람들을 폭넓게 받아들이고 학식을 발휘할 조건을 약속한다고 설명한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 지식학회와 지니어스 클럽의 대비"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 즉 지식학회가 연구자와 학파를 모으는 개방형 네트워크라면, 지니어스 클럽은 누스의 시선이 닿은 예외적 개인들의 집합에 가깝다.</p>
-<p>이 차이는 두 조직의 힘이 작동하는 방식도 가른다. 지식학회는 지식을 유통시키고 조직화하며, 연구 성과를 제도와 프로젝트 안에서 굴린다. 반대로 지니어스 클럽은 대규모 조직 운영보다 한 명의 천재가 남기는 발견, 발명, 판단이 세계를 뒤흔드는 쪽에 가깝다. 그래서 두 세력은 모두 지식의 길에 속하지만, 하나는 넓은 학술 기반이고 다른 하나는 누스가 직접 불러낸 극소수의 고점이다.</p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>지니어스 클럽의 위상은 “누스에게 선택받은 천재”라는 말에 있다. 이 말은 단순한 칭찬이 아니다. 누스가 인간의 작은 성과를 감상할 시간이 없다는 공식 설명은, 뛰어난 업적만으로는 클럽의 진짜 의미에 닿기 어렵다고 말한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 클럽의 위상은 업적의 양보다 우주의 답안에 접근하는 태도와, 그 접근이 실제 세계에 남기는 충격에서 나온다.</p>
-<p>그 위상은 주변 인물들이 클럽 회원을 기준점으로 삼을 때도 드러난다. 레너드는 <a class="wiki-link" href="silver-wolf.html" title="은랑">은랑</a>을 조사하며 그가 지니어스 클럽의 멤버와 막상막하라는 자료를 언급하고, 헤르타는 은랑이 스크루룸과 비등한 실력을 갖춘 해커라면 우주정거장 침투도 이상하지 않다고 판단한다. <sup class="cite-ref" title="게임 본편 — 대사 · 은랑과 지니어스 클럽 멤버의 비교 · 레너드의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타가 본 은랑과 스크루룸의 실력 · 헤르타의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 여기서 클럽 회원은 “강한 연구자”가 아니라, 다른 천재나 해커의 수준을 재는 우주적 잣대처럼 쓰인다.</p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>누스와 지식의 운명의 길은 지니어스 클럽을 이해하는 첫 축이다. 공식 항목이 누스를 관련 항목으로 제시하고, 이야기에서 누스가 지식의 불꽃에 신호를 보낸다고 설명하기 때문이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 관계 때문에 지니어스 클럽은 회원 명단보다 먼저 “누스가 인간 지성을 어떻게 부르는가”를 보여 주는 파벌이 된다.</p>
-<p>헤르타와 스크루룸은 클럽의 작중 얼굴이다. 헤르타는 누스의 총애를 받은 84명 중 한 명으로 설명되고, 스크루룸은 #76 회원이자 스크루룸별의 주인, 은랑과 비교되는 해커 기준점, 위험 유적 발굴의 협력자로 언급된다. <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타가 말하는 스크루룸 #76 · 헤르타의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 아스타가 설명하는 헤르타와 누스의 총애 · 임무 「새벽에 울리는 천 개의 방울」"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 스크루룸별 침입 보도 · 남자 목소리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 강철 유적 발굴 협력 보도 · 남자 목소리의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 두 인물을 함께 보면 지니어스 클럽은 한 가지 성격으로 고정되지 않는다. 한쪽은 우주정거장과 시뮬레이션 우주 연구로, 다른 한쪽은 기계 지성·행성 통치·보안 경쟁으로 클럽의 영향력을 보여 준다.</p>
-<p>은랑과 스텔라론 헌터 관련 언급은 지니어스 클럽이 외부 세력과 부딪히는 방식을 보여 준다. 은랑의 해킹 실력은 스크루룸과 비교되고, 스텔라론 헌터는 스크루룸별 침입 사건으로 클럽 회원의 영역과 직접 충돌한다. <sup class="cite-ref" title="게임 본편 — 대사 · 스크루룸별 침입 보도 · 남자 목소리의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 은랑과 지니어스 클럽 멤버의 비교 · 레너드의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타가 본 은랑과 스크루룸의 실력 · 헤르타의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그래서 지니어스 클럽은 배경 설정 속의 명단이 아니라, 다른 세력이 자신의 위험도와 실력을 증명할 때 건드리게 되는 높은 기준선으로 작동한다.</p>
-<h2 id="해석과-맥락">해석과 맥락</h2>
-<p>지니어스 클럽의 흥미로운 점은 “천재”라는 말이 영광과 위험을 동시에 가진다는 데 있다. 공식 설명은 자신감과 열정, 이성이 지식과 진리의 복도를 지나 비천함과 냉담, 광기로 변한다고 말한다. <sup class="cite-ref" title="공식 HoYoWiki · 지니어스 클럽 - 지식"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 클럽은 위대한 발견의 장소이지만, 그 발견이 반드시 따뜻하거나 이해하기 쉬운 형태로 남는다는 보장은 없다.</p>
-<p>따라서 지니어스 클럽은 스타레일 세계관에서 지식의 가장 높은 고점이자 가장 불안한 고점이다. 지식학회가 많은 사람에게 지식의 길을 열고 제도화한다면, 지니어스 클럽은 누스가 직접 부른 예외들이 세계에 어떤 답을 남기는지 보여 준다. 그 답은 우주정거장, 스크루룸별, 위험 유적, 해킹 경쟁처럼 구체적인 사건을 낳는다. 그래서 이 파벌은 지식의 운명의 길을 설명할 때 빠질 수 없는 핵심 연결점이다.</p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/955?lang=ko-kr">원문</a></span><div class="ref-quote">지니어스 클럽</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">유형</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/955?lang=ko-kr">원문</a></span><div class="ref-quote">파벌</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/955?lang=ko-kr">원문</a></span><div class="ref-quote">지식</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/955?lang=ko-kr">원문</a></span><div class="ref-quote">⌈ 지식 ⌋ 누스</div></li>
+<p>지식학회의 공식 설명은 지니어스 클럽에 진정으로 몸담을 수 있는 사람이 소수 중의 소수라고 말한다. 반면 지식학회는 넓은 우주의 지식을 추구하는 사람을 폭넓게 받아들이고, 학식을 발휘할 조건을 약속한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 지식학회와 지니어스 클럽의 대비"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 지식학회는 「모든 지식은 화폐처럼 유통돼야 한다」는 원칙 아래, 학파들이 지식과 제조법을 서로 교환하도록 운영된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 지식학회와 지니어스 클럽의 대비"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>지니어스 클럽의 한 능력자는 지식학회를 개그 소재로 삼아 &quot;오합지졸&quot;이라 불렀다. 지식학회는 이 조롱에 신경 쓰지 않았고, 유무상통한 학술 네트워크만이 개인의 한계를 넘어설 방법이라는 결론을 유지했다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 지식학회와 지니어스 클럽의 대비"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="nous.html">누스</a>, <a href="path-80.html">지식</a>, <a href="aeons.html">에이언즈</a>, <a href="intelligentsia-guild.html">지식학회</a>, <a href="person-994.html">헤르타</a>, <a href="screwllum.html">스크루룸</a>, <a href="silver-wolf.html">은랑</a> — <a href="nous.html">누스</a>는 지니어스 클럽에 이름을 준 「<a href="path-80.html">지식</a>」의 <a href="aeons.html">에이언즈</a>이며, 클럽의 초대 방식과 선별 기준을 정한 존재다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <a href="intelligentsia-guild.html">지식학회</a>는 지니어스 클럽과 같은 <a href="path-80.html">지식</a>의 길에 속하지만, 소수의 부름이 아니라 다수의 참여로 운영되는 조직이다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 지식학회와 지니어스 클럽의 대비"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <a href="person-994.html">헤르타</a>와 <a href="screwllum.html">스크루룸</a>은 클럽 소속이 확인된 두 인물이고, <a href="silver-wolf.html">은랑</a>은 <a href="screwllum.html">스크루룸</a>과의 실력 비교를 통해 클럽 밖에서 클럽의 기준을 증명하는 인물로 언급된다. <sup class="cite-ref" title="게임 본편 — 대사 · 아스타가 설명하는 헤르타와 누스의 총애 · 임무 「새벽에 울리는 천 개의 방울」"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타가 말하는 스크루룸 #76 · 헤르타의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 은랑과 지니어스 클럽 멤버의 비교 · 레너드의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 헤르타가 본 은랑과 스크루룸의 실력 · 헤르타의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">유형</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/955?lang=ko-kr">원문</a></span><div class="ref-quote">파벌</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/955?lang=ko-kr">원문</a></span><div class="ref-quote">지식</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/955?lang=ko-kr">원문</a></span><div class="ref-quote">⌈ 지식 ⌋ 누스</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">아스타가 설명하는 헤르타와 누스의 총애</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">임무 「새벽에 울리는 천 개의 방울」</span></span><div class="ref-quote">헤르타 님은… 「지니어스 클럽」의 회원이시자 「지식」 에이언즈의 총애를 받는 행운아셔. 누스의 탄생 이후, 그런 사람은 84명 밖에 없었지</div></li>
 <li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/955?lang=ko-kr">원문</a></span><div class="ref-quote">누스는 드넓은 은하의 일각에 남아 억만 변수로 구축된 우주의 방정식을 계산하며, 아직 간파되지 않은 허수 법칙을 추리한다. 가끔 인간 세계에 지식의 불꽃이 나타나면, 「지식」의 신은 그 기원으로 신호를 보내 「지니어스」에게 우주의 답안을 탐사하는 행렬에 초대한다. 어떤 사람은 그 의미를 오해하고 「지니어스 클럽」의 초대는 에이언즈의 주목과 인정만 뜻한다고 생각해 자랑스러워한다. 그렇게 각자의 연구를 계속하는 그들은 일생을 바쳐 연구한 난제는 누스가 천만년...</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">아스타가 설명하는 헤르타와 누스의 총애</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">임무 「새벽에 울리는 천 개의 방울」</span></span><div class="ref-quote">헤르타 님은… 「지니어스 클럽」의 회원이시자 「지식」 에이언즈의 총애를 받는 행운아셔. 누스의 탄생 이후, 그런 사람은 84명 밖에 없었지</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">지니어스 클럽: 연구 성과 평가</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1911?lang=ko-kr">원문</a></span><div class="ref-quote">이름을 밝히길 원치 않는 사람이 남긴 친필 원고. 지니어스 클럽 회원의 성과를 탐구하는 것을 목적으로 한다(미수)</div></li>
 <li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">헤르타가 말하는 스크루룸 #76</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">헤르타의 인게임 대사</span></span><div class="ref-quote">지니어스 클럽 #76 회원, 스크루룸. 그와는 오래전부터 알고 지냈어. 정말 착한 사람이고, 뛰어난 기계 두뇌를 지닌 신사로 스크루룸과의 교류를 통해 많은 걸 배울 수 있었어……</div></li>
 <li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">같은 클럽 회원으로서의 경계</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">스크루룸의 인게임 대사</span></span><div class="ref-quote">같은 클럽 회원으로서 우리는 그 어떤 지니어스도 얕볼 수 없다는 것을 알고 있습니다——설령 상대가 죽은 지 오래되었다고 해도 말입니다</div></li>
 <li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">스크루룸별 침입 보도</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">남자 목소리의 인게임 대사</span></span><div class="ref-quote">앞서 「스텔라론 헌터」가 지니어스 클럽의 스크루룸별을 침입해 행성의 주인 스크루룸과 충돌했다고 전해드린 바 있습니다. 최근 소식에 의하면 그들이 마지막으로 선주 「나부」에 나타났다고 합니다</div></li>
 <li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">강철 유적 발굴 협력 보도</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">남자 목소리의 인게임 대사</span></span><div class="ref-quote">하지만 최근, 지식학회 무장 고고학파 수석학사 앨런•드레이크•외팔•존스가 잠재 재난 등급 Ω인 강철 유적의 신비로운 베일을 벗기기 위해 발굴을 제안했고, 이에 지니어스 클럽 멤버 스크루룸이 협력을 약속했습니다</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">지식학회와 지니어스 클럽의 대비</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/954?lang=ko-kr">원문</a></span><div class="ref-quote">지니어스 클럽에 진정으로 몸담을 수 있는 멤버는 소수 중의 소수다. 그러나 지식학회는 인재를 낭비하는 법이 없다. 그들은 넓은 우주의 지식을 추구하는 사람을 넓게 받아들이고, 학식을 발휘할 모든 조건을 약속한다. 지식학회는 「모든 지식은 화폐처럼 유통돼야 한다」 고 주장한다. 학회에는 학파가 많고 전공도 다르지만, 폐쇄된 연구에 집착하는 자는 없다. 그들은 지식으로 지혜를 거래하고, 공식으로 제조법을 교환해 두루 통달하는 것을 추구한다. 학파는 비즈니스 단...</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">은랑과 지니어스 클럽 멤버의 비교</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">레너드의 인게임 대사</span></span><div class="ref-quote">그중에 천재 해커가 하나 있는데, 자료를 보니까 지니어스 클럽의 멤버와 막상막하라더군요. 정말 대단해요…. 만약 진짜 그 사람이라면, 우주정거장의 감시 화면을 피해 가도 전혀 이상하지 않아요</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">헤르타가 본 은랑과 스크루룸의 실력</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">헤르타의 인게임 대사</span></span><div class="ref-quote">딱히 신기할 건 없어. 스크루룸과 비등한 실력을 갖춘 해커잖아, 우주정거장 정도는 식은 죽 먹기일걸?</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">지니어스 클럽 - 지식</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/955?lang=ko-kr">원문</a></span><div class="ref-quote">「자신감, 열정과 이성이 전당에 들어서고, 지식과 진리가 새겨진 복도를 지나 비천함과 냉담, 광기가 된다」 ——아드리안•스펜서-스미스, ≪별하늘 우화≫</div></li></ol></details>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">은랑과 지니어스 클럽 멤버의 비교</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">레너드의 인게임 대사</span></span><div class="ref-quote">그중에 천재 해커가 하나 있는데, 자료를 보니까 지니어스 클럽의 멤버와 막상막하라더군요. 정말 대단해요…. 만약 진짜 그 사람이라면, 우주정거장의 감시 화면을 피해 가도 전혀 이상하지 않아요</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">헤르타가 본 은랑과 스크루룸의 실력</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">헤르타의 인게임 대사</span></span><div class="ref-quote">딱히 신기할 건 없어. 스크루룸과 비등한 실력을 갖춘 해커잖아, 우주정거장 정도는 식은 죽 먹기일걸?</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">지식학회와 지니어스 클럽의 대비</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/954?lang=ko-kr">원문</a></span><div class="ref-quote">지니어스 클럽에 진정으로 몸담을 수 있는 멤버는 소수 중의 소수다. 그러나 지식학회는 인재를 낭비하는 법이 없다. 그들은 넓은 우주의 지식을 추구하는 사람을 넓게 받아들이고, 학식을 발휘할 모든 조건을 약속한다. 지식학회는 「모든 지식은 화폐처럼 유통돼야 한다」 고 주장한다. 학회에는 학파가 많고 전공도 다르지만, 폐쇄된 연구에 집착하는 자는 없다. 그들은 지식으로 지혜를 거래하고, 공식으로 제조법을 교환해 두루 통달하는 것을 추구한다. 학파는 비즈니스 단...</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>파벌 · 지식 세력</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>세력</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편 — 대사, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -730,12 +674,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="genius-society">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%A7%80%EB%8B%88%EC%96%B4%EC%8A%A4+%ED%81%B4%EB%9F%BD&amp;body=%EC%A7%80%EB%8B%88%EC%96%B4%EC%8A%A4+%ED%81%B4%EB%9F%BD+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fgenius-society.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

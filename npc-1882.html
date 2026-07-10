@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>온평 · hoyohoyo.wiki</title>
-  <meta name="description" content="온평은 완•매의 창조물이며, 우주정거장 「헤르타」 소속으로 기록된 NPC다.">
+  <meta name="description" content="온평은 완•매의 창조물이며, 우주정거장 「헤르타」 소속으로 기록되어 있다. 온평은 직접 등장하지 않고, 그를 &quot;언니&quot;라 부르는 온정과 왕짜증의 말을 통해서만 알려진다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="온평 · hoyohoyo.wiki">
-  <meta property="og:description" content="온평은 완•매의 창조물이며, 우주정거장 「헤르타」 소속으로 기록된 NPC다.">
+  <meta property="og:description" content="온평은 완•매의 창조물이며, 우주정거장 「헤르타」 소속으로 기록되어 있다. 온평은 직접 등장하지 않고, 그를 &quot;언니&quot;라 부르는 온정과 왕짜증의 말을 통해서만 알려진다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/npc-1882.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/npc-1882.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,58 +620,43 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-herta-space-station.html">우주정거장 「헤르타」</a><span>온평</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%98%A8%ED%8F%89&amp;page_slug=npc-1882">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>온평</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주정거장 「헤르타」</span></div><figure class="article-hero-image"><img src="assets/wiki-images/5e/621426e33776fd27c5529866fdb8ee60_341503438355820-5ef2e07ded41.webp" alt="온평 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 공식 인물 이미지</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-herta-space-station.html">우주정거장 「헤르타」</a><span>온평</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%98%A8%ED%8F%89&amp;page_slug=npc-1882">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>온평</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">우주정거장 「헤르타」</span></div><figure class="article-hero-image"><img src="https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/01/19/621426e33776fd27c5529866fdb8ee60_3415034383558202284.png" alt="온평 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>온평은 <a class="wiki-link" href="ruan-mei.html" title="완·매">완•매</a>의 창조물이며, 우주정거장 「<a class="wiki-link" href="loc-951.html" title="헤르타">헤르타</a>」 소속으로 기록된 NPC다. <sup class="cite-ref" title="공식 HoYoWiki · 온평"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>작중에서 온평은 주로 <a class="wiki-link" href="npc-1889.html" title="온정">온정</a>의 말 속에서 드러난다. 온정은 자신의 이름을 온평이 지어 주었다고 기억하고, 온평을 “언니”이자 가장 친한 친구로 부른다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>온평은 온정에게 이름만 붙여 준 인물이 아니라, 연구원과 우주정거장에 대한 상상을 심어 준 친구다. 온정은 우주정거장의 연구원은 모두 “온 씨”라는 온평의 말을 듣고, 온평이 두 사람의 이름을 「정식 연구원」처럼 바꾸었다고 이해한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>온평은 온정에게 자신을 소개할 이름과 되고 싶은 모습을 준다. 온정은 자기 이름을 잠시 떠올리지 못하다가, 온평이 지어 준 이름이 “온정”이라고 말하며 자신을 소개한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>그 이름은 온정에게 연구원이라는 꿈과 이어진다. 온정은 연구원들이 모두 똑똑하다는 온평의 말을 믿고 자신도 연구원처럼 똑똑해지고 싶어 했으며, 그래서 온평이 두 사람의 이름을 「정식 연구원」처럼 바꾸었다고 말한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>온평은 온정에게 우주정거장 이야기도 들려준다. 온정은 온평이 시간이 날 때마다 우주정거장에 대해 말해 준다고 하며, 머리 위에 있다는 우주정거장에 온평과 함께 가 보고 싶어 한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>온평과 온정의 동경은 아직 실제 생활이 되지 못했다. 온정은 온평이 이곳을 심심해하며 우주정거장으로 “올라가” 둘러볼 수 있을 것이라고 했지만, 아직 그 길을 찾지 못했다고 말한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>온평의 위상은 전투나 지위보다, 다른 창조물들이 자신과 세계를 이해하는 방식에 영향을 주는 데 있다. 온정은 어려운 내용을 접하면 온평이 있었다면 분명 알아들었을 것이라고 말하고, 온평처럼 똑똑해지고 싶어 한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>온정이 보는 온평은 자신보다 크고 더 많이 아는 존재다. 온정은 키가 큰 상대를 보며 똑똑할 것 같다고 느끼고, 온평도 자신보다 조금 더 크며 아는 것이 아주 많다고 말한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p><a class="wiki-link" href="npc-1858.html" title="왕짜증">왕짜증</a>의 말은 온평이 다른 창조물의 상태를 판단하는 위치에도 있음을 보여 준다. 왕짜증은 온평에게서 자신이 “태생적으로 불안정한 맛”이라는 말을 들었고, 그 말을 어떤 재료가 빠진 문제처럼 받아들이며 완•매에게 묻고 싶어 한다. <sup class="cite-ref" title="게임 본편 · 왕짜증의 언급 · 왕짜증의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<p>따라서 온평은 힘으로 누군가를 제압하는 인물이라기보다, 이름을 붙이고 정보를 전하며 다른 창조물의 상태를 말로 정리하는 인물에 가깝다. 온정에게는 연구원이라는 상상을 열어 주고, 왕짜증에게는 자기 불안정성을 해석하는 단서를 남긴다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 왕짜증의 언급 · 왕짜증의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>온정과의 관계는 온평을 이해하는 핵심이다. 온정은 온평을 가장 친한 친구라고 말하고, 두 사람이 모두 복숭아 향을 지녔으며 온평의 향이 더 진하다고 말한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>온정에게 온평은 먼저 알고 먼저 이름 붙이는 친구다. 온정은 자신의 이름, 연구원에 대한 동경, 우주정거장에 대한 상상을 모두 온평의 말과 연결해 기억한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>왕짜증과의 연결은 온평의 말이 다른 창조물에게도 남는다는 점을 보여 준다. 왕짜증은 온평의 평가를 완전히 이해하지 못하지만, 그 말 때문에 자신의 탄생과 결함을 완•매에게 확인하고 싶어 한다. <sup class="cite-ref" title="게임 본편 · 왕짜증의 언급 · 왕짜증의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<p>완•매와의 관계는 온평의 출신을 규정한다. 온평이 완•매의 창조물이라는 사실은 온정, 왕짜증 같은 존재들과의 관계를 같은 창조 배경을 공유한 존재들 사이의 관계로 읽게 한다. <sup class="cite-ref" title="공식 HoYoWiki · 온평"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 왕짜증의 언급 · 왕짜증의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<p>우주정거장 「헤르타」는 온평의 소속이자, 온정이 온평과 함께 가 보고 싶어 하는 머리 위의 장소다. 온정은 온평에게서 우주정거장 이야기를 듣고 그곳의 생활을 궁금해하지만, 아직 그곳으로 올라가는 길은 찾지 못했다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="이름과-연구원-흉내">이름과 연구원 흉내</h2>
-<p>온평의 이름 짓기는 우주정거장 바깥의 창조물들이 정거장 내부의 질서를 흉내 내는 작은 장면이다. 온정은 연구원의 성씨와 똑똑함을 하나의 의식처럼 받아들이고, 온평의 설명을 통해 자신도 그 세계에 가까워질 수 있다고 상상한다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>온평과 온정은 아직 우주정거장으로 올라가지 못했다. 그래서 온평이 만든 이름과 이야기는 실제 신분의 증명이라기보다, 머리 위 세계를 바라보는 창조물들이 자기 자리를 넓혀 보려는 소망에 가깝다. <sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">온평</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1882?lang=ko-kr">원문</a></span><div class="ref-quote">완•매의 창조물</div></li>
+<p>온평은 <a class="wiki-link" href="ruan-mei.html" title="완·매">완•매</a>의 창조물이며, 우주정거장 「<a class="wiki-link" href="loc-951.html" title="헤르타">헤르타</a>」 소속으로 기록되어 있다.<sup class="cite-ref" title="공식 HoYoWiki · 온평"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 온평은 직접 등장하지 않고, 그를 &quot;언니&quot;라 부르는 <a class="wiki-link" href="npc-1889.html" title="온정">온정</a>과 <a class="wiki-link" href="npc-1858.html" title="왕짜증">왕짜증</a>의 말을 통해서만 알려진다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 왕짜증의 언급 · 왕짜증의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>온정에 따르면, 온평은 그녀에게 이름을 지어 주었다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 온정은 &quot;온평 언니가 이름을 지어줬는데… 온정! 내 이름은 온정이야!&quot;라며 자신을 소개한다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>온평은 온정에게 우주정거장의 연구원은 모두 성씨가 &quot;온&quot;이라고 말했고, 연구원은 모두 똑똑하다고도 말했다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 온정은 이 말을 듣고 온평이 두 사람의 이름을 &quot;정식 연구원&quot;처럼 지어 준 것이라고 이해한다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>온평은 시간이 날 때마다 온정에게 우주정거장 이야기를 들려준다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 온정은 우주정거장이 머리 위에 있다는 이야기를 듣고 온평과 함께 그곳에 가 보고 싶어 하지만, 온평이 말한 &quot;올라가는&quot; 길은 아직 찾지 못했다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<p>왕짜증은 온평에게서 &quot;태생적으로 불안정한 맛&quot;이라는 말을 들었다.<sup class="cite-ref" title="게임 본편 · 왕짜증의 언급 · 왕짜증의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 왕짜증은 이 말을 재료 하나가 빠진 문제처럼 받아들이고, 언젠가 완•매에게 직접 물어보고 싶어 한다.<sup class="cite-ref" title="게임 본편 · 왕짜증의 언급 · 왕짜증의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>온정은 온평을 &quot;가장 친한 친구&quot;라고 부른다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 둘 다 복숭아 향이 나지만, 온평의 향이 더 진하다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 온정은 키가 크고 아는 것이 많은 상대를 보면 온평을 떠올리며, 자신도 온평처럼 똑똑해지고 싶어 한다.<sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup><sup class="cite-ref" title="게임 본편 · 온정의 언급 · 온정의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">온평</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1882?lang=ko-kr">원문</a></span><div class="ref-quote">완•매의 창조물</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1882?lang=ko-kr">원문</a></span><div class="ref-quote">온평</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1882?lang=ko-kr">원문</a></span><div class="ref-quote">우주정거장 「헤르타」</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">아, 안녕! 나는… 음, 온평 언니가 이름을 지어줬는데… 뭐, 뭐였더라? 아, 온정! 내 이름은 온정이야!</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">나는… 음, 온평 언니가 이름을 지어줬는데… 뭐, 뭐였더라? 아, 온정! 내 이름은 온정이야!</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">온평 언니는 나랑 가장 친한 친구야! 우리는 냄새도 아주 비슷해. 둘 다 복숭아 향이 나거든. 하지만 언니의 냄새가 나보다 더 진해</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">온평 언니가 우주정거장의 연구원은 다 온 씨라고 했어. 어쩌면 연구원이 되기 위한 일종의 의식일 수도 있지</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">그리고 온평 언니는… 연구원은 모두 똑똑하다고 했어. 나도 연구원들처럼 똑똑해지고 싶었어. 그래서 온평 언니가 우리 둘의 이름을 모두 「정식 연구원」처럼 바꾼 거야</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">온평 언니는 시간이 나면 내게 우주정거장에 대해 말해주곤 하는데, 늘 한가한 건 아니라서……</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">우주정거장은 바로 우리 머리 위에 있다고 하던데, 우주정거장에서의 생활은 어떤 모습일지 궁금해. 온평 언니랑 꼭 가보고 싶어……</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">우주정거장은 바로 우리 머리 위에 있다고 하던데, 우주정거장에서의 생활은 어떤 모습일지 궁금해. 온평 언니랑 꼭 가보고 싶어……</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">온평 언니는 이곳이 심심하다고 했어. 나도 그렇게 생각하고. 언니는 우리가 우주정거장으로 「올라가」 둘러볼 수 있을 거라고 했는데, 아직 그 길을 찾지 못했어</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">온평 언니는 나랑 가장 친한 친구야! 우리는 냄새도 아주 비슷해. 둘 다 복숭아 향이 나거든. 하지만 언니의 냄새가 나보다 더 진해</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">왕짜증의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">왕짜증의 인게임 대사</span></span><div class="ref-quote">온평 언니가 그러는데, 난 태생적으로 불안정한 맛이래. 그게 뭔지는 모르겠지만 어떤 재료가 빠진 모양이야. 인연이 닿으면 날 창조하신 완•매 님께 가서 물어볼 수 있는 날이 오겠지</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">나는… 음, 온평 언니가 이름을 지어줬는데… 뭐, 뭐였더라? 아, 온정! 내 이름은 온정이야!</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">온평 언니가 우주정거장의 연구원은 다 온 씨라고 했어. 어쩌면 연구원이 되기 위한 일종의 의식일 수도 있지</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">그리고 온평 언니는… 연구원은 모두 똑똑하다고 했어. 나도 연구원들처럼 똑똑해지고 싶었어. 그래서 온평 언니가 우리 둘의 이름을 모두 「정식 연구원」처럼 바꾼 거야</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">온평 언니는 시간이 나면 내게 우주정거장에 대해 말해주곤 하는데, 늘 한가한 건 아니라서……</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">온평 언니는 이곳이 심심하다고 했어. 나도 그렇게 생각하고. 언니는 우리가 우주정거장으로 「올라가」 둘러볼 수 있을 거라고 했는데, 아직 그 길을 찾지 못했어</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">우주정거장은 바로 우리 머리 위에 있다고 하던데, 우주정거장에서의 생활은 어떤 모습일지 궁금해. 온평 언니랑 꼭 가보고 싶어……</div></li>
 <li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">정말 대단해! 다만… 알아듣기 어려운 내용이 많네. 휴, 온평 언니가 있었다면 분명 다 알아들었을 텐데. 나도 온평 언니처럼 똑똑하면 얼마나 좋을까</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">키가 정말 크네. 아주 똑똑할 것 같아. 온평 언니는 나보다 키가 조금 더 큰데, 나보다 아는 게 아주 많거든……</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">왕짜증의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">왕짜증의 인게임 대사</span></span><div class="ref-quote">온평 언니가 그러는데, 난 태생적으로 불안정한 맛이래. 그게 뭔지는 모르겠지만 어떤 재료가 빠진 모양이야. 인연이 닿으면 날 창조하신 완•매 님께 가서 물어볼 수 있는 날이 오겠지</div></li></ol></details>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">온정의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">온정의 인게임 대사</span></span><div class="ref-quote">키가 정말 크네. 아주 똑똑할 것 같아. 온평 언니는 나보다 키가 조금 더 큰데, 나보다 아는 게 아주 많거든……</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 우주정거장 「헤르타」</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-03</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
@@ -732,12 +666,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="npc-1882">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%98%A8%ED%8F%89&amp;body=%EC%98%A8%ED%8F%89+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fnpc-1882.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

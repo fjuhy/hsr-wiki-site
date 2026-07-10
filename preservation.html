@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>보존 · hoyohoyo.wiki</title>
-  <meta name="description" content="보존은 에이언즈 클리포트가 관장하는 운명의 길이다. 이 길의 특징은 기다림, 희생, 보호의 행위로 요약되며, 단순히 무언가를 방어하는 기술이나 태도에 그치지 않고 세계와 문명을 오래 남기기 위한 우주론적 원리로 제시된다. 공식적으로 보존의 이름과 에이언즈는 클리포트로 대응되며, 보존을 따르는 대표 세력으로는 축성가와 스타피스 컴퍼니가 언급된다.">
+  <meta name="description" content="보존은 에이언즈 클리포트가 관장하는 운명의 길이다. 클리포트는 더 오래된 황혼 전쟁의 생존자로, 적의 잠식이 임박했음을 알고 광년 단위의 장벽을 세워 아직 생기가 남은 세계를 단절시켜 보호했다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="보존 · hoyohoyo.wiki">
-  <meta property="og:description" content="보존은 에이언즈 클리포트가 관장하는 운명의 길이다. 이 길의 특징은 기다림, 희생, 보호의 행위로 요약되며, 단순히 무언가를 방어하는 기술이나 태도에 그치지 않고 세계와 문명을 오래 남기기 위한 우주론적 원리로 제시된다. 공식적으로 보존의 이름과 에이언즈는 클리포트로 대응되며, 보존을 따르는 대표 세력으로는 축성가와 스타피스 컴퍼니가 언급된다.">
+  <meta property="og:description" content="보존은 에이언즈 클리포트가 관장하는 운명의 길이다. 클리포트는 더 오래된 황혼 전쟁의 생존자로, 적의 잠식이 임박했음을 알고 광년 단위의 장벽을 세워 아직 생기가 남은 세계를 단절시켜 보호했다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/preservation.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/preservation.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,60 +620,54 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-paths.html">운명의 길</a><span>보존</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%B3%B4%EC%A1%B4&amp;page_slug=preservation">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>보존</h1><div class="meta-row"><span class="badge">운명의 길</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>보존은 에이언즈 클리포트가 관장하는 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>이다. 이 길의 특징은 기다림, 희생, 보호의 행위로 요약되며, 단순히 무언가를 방어하는 기술이나 태도에 그치지 않고 세계와 문명을 오래 남기기 위한 우주론적 원리로 제시된다. 공식적으로 보존의 이름과 에이언즈는 클리포트로 대응되며, 보존을 따르는 대표 세력으로는 축성가와 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>가 언급된다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>보존의 표면적 성격은 보호 능력과 수호의 이미지로 드러난다. 공식 설명은 보존이 강력한 보호 능력을 지니며 다양한 방식으로 동료를 수호한다고 설명하지만, 설정상 보존은 전투적 방어보다 훨씬 넓은 개념으로 작동한다. 기다림은 즉각적인 승리보다 장기 생존을 택하는 태도이고, 희생은 보호받을 대상과 보호 행위 사이에 드는 비용을 인정하는 방향이며, 보호는 공동체와 세계의 지속을 목표로 삼는 행위다. <sup class="cite-ref" title="공식 HoYoWiki · 보존"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>운명의 길 체계에서 보존은 문명을 남기고 경계를 세우는 힘으로 자리 잡는다. 클리포트는 숭배자들에게 앰버 로드로 불리며, 천혜성의 벽, 아공 결정의 벽, 거대 인력체 기반의 축조자로 묘사된다. 그는 더 오래된 황혼 전쟁의 생존자로 제시되고, 적의 잠식이 코앞에 다가왔음을 알았기 때문에 광년 단위의 장벽을 구축해 아직 생기가 남은 세계를 단절시켜 보호했다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 운명의 길"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>이 장벽의 이미지는 보존을 가장 잘 드러내는 상징이다. 벽은 외부의 침식을 막는 보호물이지만, 동시에 안팎을 나누고 왕래를 제한하는 단절의 장치이기도 하다. 그러므로 보존은 무조건적인 개방이나 확장을 목표로 하지 않으며, 살아남아야 할 것을 고립시키는 선택까지 포함한다. 클리포트의 행위는 보호가 때로는 거리두기와 폐쇄를 통해 이루어진다는 점을 보여 준다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<h2 id="클리포트와-장벽의-사상">클리포트와 장벽의 사상</h2>
-<p>클리포트의 표어처럼 반복되는 명령은 “벽을 세워라”라는 명제로 집약된다. 이 문구는 보존의 사상을 추상적 선의가 아니라 실제 구조물과 축조 행위로 표현한다. 보존은 위기를 제거하기보다 위기와 생명 사이에 견고한 간격을 만들고, 그 간격을 유지하는 데 필요한 시간과 자원을 감수한다. 그 결과 보존의 숭배는 신앙, 건축, 물류, 군사적 방어, 정치적 질서가 결합된 형태로 나타난다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>클리포트가 무심한 에이언즈로 언급된다는 점도 보존의 성격을 이해하는 데 중요하다. <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>의 대사는 클리포트가 보통의 열정이나 호소에 쉽게 응답하는 존재가 아니며, 스타피스 컴퍼니처럼 남다른 열정을 유지하지 않으면 그의 힘을 나눠 받기 어렵다고 설명한다. 보존은 감정적 연민의 즉각적 보상이라기보다 오랜 헌신과 방향성이 맞물릴 때 접촉되는 길로 그려진다. <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 무심한 에이언즈 클리포트 · 히메코의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<h2 id="스타피스-컴퍼니와-보존의-긴장">스타피스 컴퍼니와 보존의 긴장</h2>
-<p>스타피스 컴퍼니는 보존을 대표하는 파벌 가운데 하나이지만, 그 존재는 보존의 선한 이미지와 곧장 일치하지 않는다. 공식 서술은 스타피스 컴퍼니가 외부 홍보상 자유 무역을 외치는 거대 기업 재단처럼 보이지만, 운영 방식은 화폐 발행과 자원 독점을 통한 비즈니스 독재에 가깝다고 설명한다. 동시에 그 창업 초심은 보존의 에이언즈를 위해 모든 것을 바치는 후방 원군이며, 기업 정신은 모든 것을 앰버 로드 클리포트에게 바친다는 명제로 표현된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>이 긴장은 보존이 단순한 도덕적 보호가 아니라 제도와 권력의 형태를 취할 수 있음을 보여 준다. 부에 대한 절대적인 통제력과 멈추지 않는 확장은 대중에게 음모를 꾸미는 독재자라는 이미지를 만들지만, 회사의 내부 논리는 그것을 앰버 로드에게 바치는 헌신으로 정당화한다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>스타피스 컴퍼니의 조직 구조 역시 보존의 실천이 경제와 행정으로 확장된 사례다. <a class="wiki-link" href="market-development-department.html" title="시장개척부">시장개척부</a>는 클리포트의 사명을 더 많은 은하계에 알리고 새로운 세계를 우주 상업 시스템에 끌어들이며, <a class="wiki-link" href="entry-1814.html" title="사업통합부">사업통합부</a>는 초장거리 배송 네트워크와 물자 관리를 담당한다. <a class="wiki-link" href="entry-1812.html" title="건축자재물류부">건축자재물류부</a>는 가장 오래된 부서로, 한때 앰버 로드 지원대였고 클리포트에게 건축 자재를 운송하는 임무를 맡는다. <a class="wiki-link" href="strategic-investment-department.html" title="전략투자부">전략투자부</a> 산하의 <a class="wiki-link" href="ten-stonehearts.html" title="10인의 스톤하트">10인의 스톤하트</a>도 보존과 관련된 세력으로 제시되어, 보존이 물류와 투자, 부채 청산, 세계 편입의 언어로도 구현됨을 드러낸다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>보존은 에이언즈 클리포트가 관장하는 <a class="wiki-link" href="path.html" title="운명의 길">운명의 길</a>이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 클리포트는 더 오래된 황혼 전쟁의 생존자로, 적의 잠식이 임박했음을 알고 광년 단위의 장벽을 세워 아직 생기가 남은 세계를 단절시켜 보호했다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="설정">설정</h2>
+<p>운명의 길 「보존」의 특징은 기다림, 희생, 보호로 요약된다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 공식 설명은 보존이 강력한 보호 능력을 지니고 다양한 방식으로 동료를 수호한다고 소개한다. <sup class="cite-ref" title="공식 HoYoWiki · 보존"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 보존의 이름은 에이언즈 클리포트로 대응되며, 추종 세력으로는 축성가와 <a class="wiki-link" href="interastral-peace-corporation.html" title="스타피스 컴퍼니">스타피스 컴퍼니</a>가 있다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 에이언즈"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<h2 id="클리포트와-장벽">클리포트와 장벽</h2>
+<p>클리포트는 천혜성의 벽, 아공 결정의 벽, 거대 인력체를 기반으로 삼는 축조자다. 숭배자는 그를 「앰버 로드」라 부른다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 아드리안 스펜서-스미스의 《별하늘 우화》에는 은하수를 보며 문명의 목표를 고민하는 이의 머릿속에 「벽을 세워라」는 목소리가 울려 퍼진다는 구절이 있다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <a class="wiki-link" href="char-9.html" title="히메코">히메코</a>는 클리포트를 무심한 에이언즈라 부르며, 스타피스 컴퍼니처럼 남다른 열정을 유지하지 않으면 그의 힘을 나눠 받기 어렵다고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 무심한 에이언즈 클리포트 · 히메코의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<h2 id="추종-세력">추종 세력</h2>
+<p>스타피스 컴퍼니는 보존을 대표하는 추종 세력이다. 외부 홍보에서는 자유 무역을 내세우는 거대 기업 재단이지만, 실제 운영 방식은 화폐를 발행해 자원을 독점하는 비즈니스 독재다. 창업 초심은 「보존」의 에이언즈를 위해 모든 것을 바치는 헌신적인 후방 원군이며, 기업 정신은 &quot;모든 것을 「앰버 로드」에게 바친다&quot;는 말로 요약된다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p><a class="wiki-link" href="market-development-department.html" title="시장개척부">시장개척부</a> 팀장 오스왈도 슈나이더(P47급)는 &quot;이 우주에 클리포트보다 더 현명한 회장이 있습니까? 그는 우리의 모든 경영책을 묵인하고, 의심하거나 질문하지 않습니다&quot;라고 말한다. <sup class="cite-ref" title="공식 HoYoWiki · 스타피스 컴퍼니 - 보존"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그는 과거 무명객이었다고 전해지며, 컴퍼니에 들어온 후에도 강한 개척 의지를 유지해 곧 이사회에 합류할 것이라는 평가를 받는다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>은하의 모든 상거래는 컴퍼니의 「신용 포인트」 시스템을 기반으로 돌아간다. &quot;거래가 존재하는 곳이면, 스타피스 컴퍼니가 존재한다&quot;는 말은 여기서 나온다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>컴퍼니는 7대 부서로 나뉜다. 시장개척부는 클리포트의 사명을 새로운 은하계에 전파하고, <a class="wiki-link" href="entry-1814.html" title="사업통합부">사업통합부</a>는 초장거리 배송망과 물자 관리를 맡아 전체 직원의 45%를 차지한다. <a class="wiki-link" href="strategic-investment-department.html" title="전략투자부">전략투자부</a> 산하 「<a class="wiki-link" href="ten-stonehearts.html" title="10인의 스톤하트">10인의 스톤하트</a>」는 부장 「다이아몬드」의 지휘 아래 은하를 누비며 악성 부채를 청산한다. <a class="wiki-link" href="entry-1812.html" title="건축자재물류부">건축자재물류부</a>는 컴퍼니에서 가장 오래된 부서로, 한때 「앰버 로드 지원대」였다가 루이스 출세 이후 개편되었다. 현 부장 타라반 킨은 컴퍼니가 검증한 몇 안 되는 「보존의 사도」이자 7인 이사회 일원으로, 클리포트에게 건축 자재를 운송하는 임무를 맡는다. <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>관련 항목에 오르는 「앰버기원」은 클리포트의 별칭 앰버 로드에서 딴 은하 역법이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 토파즈는 &quot;몇 앰버기원에 한 번 열리는 축제잖아&quot;라는 대사로 이 역법을 실제 시간 단위로 쓴다. <sup class="cite-ref" title="게임 본편 — 대사 · 토파즈: 몇 앰버기원에 한 번 열리는 축제 · 토파즈의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<p>보존을 따르는 또 다른 세력으로는 축성가가 있다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
 <h2 id="쿠쿠리아-사례">쿠쿠리아 사례</h2>
-<p>쿠쿠리아의 사례는 보존이라는 이름이 언제나 보존의 진리와 일치하지는 않는다는 점을 보여 준다. 작중 대사는 “쿠쿠리아는 보존을 포기했다”는 평가와 “이건 보존의 진리가 아니다”라는 반박을 함께 제시한다. 여기서 문제는 보존을 말하느냐의 여부가 아니라, 실제 선택이 기다림과 희생과 보호라는 길의 특징을 향하고 있는가에 있다. <sup class="cite-ref" title="게임 본편 — 대사 · 쿠쿠리아와 보존의 포기 · 임무 「복귀」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 보존의 진리가 아니라는 반박 · 임무 「복귀」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>이 장면은 보존의 위험한 변질 가능성을 드러낸다. 어떤 통치자나 세력이 보호를 명분으로 내세우더라도, 그 행위가 살아 있는 세계를 지키는 방향이 아니라 체념, 포기, 왜곡된 구원으로 기울면 보존의 이름을 잃는다. 쿠쿠리아를 둘러싼 언급은 보존이 무조건적인 현상 유지나 냉혹한 선택의 면죄부가 아니며, 보호라는 결과와 그 과정 모두를 요구하는 길임을 강조한다. <sup class="cite-ref" title="게임 본편 — 대사 · 쿠쿠리아와 보존의 포기 · 임무 「복귀」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 보존의 진리가 아니라는 반박 · 임무 「복귀」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>보존은 우주적 규모에서 생존을 가능하게 하는 길이지만, 그 방식은 필연적으로 대가를 동반한다. 클리포트가 광년 단위의 장벽으로 세계를 단절시켜 보호했다는 서술은, 보존이 연결보다 생존을 우선할 수 있음을 보여 준다. 이때 보호받는 세계는 침식에서 멀어지지만, 동시에 바깥과의 교류, 확장, 변화 가능성도 제한된다. 보존의 숭고함은 바로 그 불편한 대가를 회피하지 않는 데서 발생한다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>작중 긴장은 두 방향에서 나타난다. 하나는 외부의 적과 침식이 실제로 존재하기 때문에 보존이 필요해지는 상황 자체의 위험이고, 다른 하나는 보존의 이름으로 세워진 장벽과 제도가 삶을 지나치게 통제할 수 있다는 내부의 위험이다. 스타피스 컴퍼니가 보존을 위해 헌신하는 세력인 동시에 화폐와 자원을 독점하는 범은하 기업으로 묘사되는 점은, 보호의 체계가 거대한 권력 장치가 될 수 있음을 보여 준다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>보존의 직접 관련 항목은 클리포트, 축성가, 스타피스 컴퍼니, 10인의 스톤하트로 정리된다. 클리포트는 보존의 에이언즈이며 앰버 로드로 숭배되고, 스타피스 컴퍼니는 보존을 따르는 대표 세력으로 여러 부서를 통해 클리포트의 사명과 우주 상업 질서를 결합한다. 건축자재물류부는 앰버 로드 지원대에서 비롯된 부서로 보존의 물질적 후방 지원을 상징하고, 시장개척부와 사업통합부, 전략투자부는 보존의 사명이 은하 규모의 제도와 경제 안에서 작동하는 방식을 보여 준다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>운명의 길 전체 맥락에서는 보존이 개척이나 파멸 같은 다른 길과 구별되는 축을 이룬다. 개척이 미지의 길을 열고 이동하는 방향으로 읽힌다면, 보존은 이미 남아 있는 세계와 질서를 지키기 위해 경계를 세우는 방향에 가깝다. 파멸이 붕괴와 소멸의 힘으로 이해되는 맥락에서, 보존은 그 반대편에서 생존과 지속을 확보하려는 원리로 기능한다. 이러한 대비는 보존을 정적인 길로만 만드는 것이 아니라, 위협 앞에서 무엇을 남길 것인지 결정하는 적극적 선택으로 만든다. <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<h2 id="해석과-맥락">해석과 맥락</h2>
-<p>보존을 해석할 때 가장 주의할 점은 “보호”라는 단어를 곧바로 선의와 동일시하지 않는 것이다. 클리포트의 장벽은 세계를 살리기 위한 구조물이지만 단절을 수반하고, 스타피스 컴퍼니의 헌신은 앰버 로드를 향하지만 독점과 확장이라는 현실적 권력으로 나타난다. 보존은 희생과 기다림을 포함하는 길이므로, 그 이름 아래 이루어지는 선택은 언제나 무엇을 지키고 무엇을 포기하는지 함께 보아야 한다. <sup class="cite-ref" title="공식 HoYoWiki · ⌈ 보존 ⌋ 클리포트"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 더 알아보기 · 더 알아보기"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>또한 보존은 클리포트의 힘을 빌리는 단순한 표식이 아니라, 그 길의 원리에 맞는 태도와 지속성을 요구하는 설정으로 읽힌다. 히메코가 클리포트를 무심한 에이언즈라고 설명한 대사는 보존이 순간의 감정이나 명분만으로 닿기 어려운 길임을 말해 준다. 쿠쿠리아의 사례는 보존의 명칭이나 보호의 언어가 실제 보존의 진리를 보장하지 않는다는 경고로 작동한다. <sup class="cite-ref" title="게임 본편 — 대사 · 히메코: 무심한 에이언즈 클리포트 · 히메코의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 쿠쿠리아와 보존의 포기 · 임무 「복귀」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 보존의 진리가 아니라는 반박 · 임무 「복귀」"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/85?lang=ko-kr">원문</a></span><div class="ref-quote">보존</div></li>
+<p>임무 「복귀」에서 한 인물은 &quot;쿠쿠리아는 「보존」을 포기했어&quot;라고 말한다. <sup class="cite-ref" title="게임 본편 — 대사 · 쿠쿠리아와 보존의 포기 · 임무 「복귀」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 다른 인물은 이를 &quot;이건 「보존」의 진리가 아니야…&quot;라고 반박한다. <sup class="cite-ref" title="게임 본편 — 대사 · 보존의 진리가 아니라는 반박 · 임무 「복귀」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 두 대사는 보존이라는 이름을 쓰는 선택이 항상 보존의 실제 원리와 일치하지는 않는다는 점을 보여 준다. <sup class="cite-ref" title="게임 본편 — 대사 · 쿠쿠리아와 보존의 포기 · 임무 「복귀」"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 — 대사 · 보존의 진리가 아니라는 반박 · 임무 「복귀」"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="qlipoth.html">클리포트</a>, <a href="aeons.html">에이언즈</a>, <a href="interastral-peace-corporation.html">스타피스 컴퍼니</a>, <a href="ten-stonehearts.html">10인의 스톤하트</a>, <a href="strategic-investment-department.html">전략투자부</a>, <a href="entry-992.html">앰버기원</a> — <a href="qlipoth.html">클리포트</a>는 보존을 관장하는 <a href="aeons.html">에이언즈</a>이자 앰버 로드로 숭배받는 대상이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 축성가와 <a href="interastral-peace-corporation.html">스타피스 컴퍼니</a>는 보존의 대표적인 추종 세력이며, <a href="ten-stonehearts.html">10인의 스톤하트</a>는 <a href="interastral-peace-corporation.html">스타피스 컴퍼니</a> <a href="strategic-investment-department.html">전략투자부</a> 산하에서 악성 부채를 청산하는 조직이다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 추종 세력"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 이야기"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <a href="entry-992.html">앰버기원</a>은 컴퍼니를 비롯한 은하 사회가 실제로 쓰는 역법으로, <a href="qlipoth.html">클리포트</a>의 별칭에서 이름을 땄다. <sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/85?lang=ko-kr">원문</a></span><div class="ref-quote">보존</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">에이언즈</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/85?lang=ko-kr">원문</a></span><div class="ref-quote">⌈ 보존 ⌋ 클리포트</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">추종 세력</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/85?lang=ko-kr">원문</a></span><div class="ref-quote">축성가(築城家) - 보존; 스타피스 컴퍼니 - 보존</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">⌈ 보존 ⌋ 클리포트</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/889?lang=ko-kr">원문</a></span><div class="ref-quote">「철학적으로 고민하는 자는 은하수를 쳐다보며, 문명의 궁극적인 목표를 탐구한다——『벽을 세워라』, 웅장한 목소리가 머리에서 울려 퍼진다. 『벽을 세워라』」 ——아드리안•스펜서-스미스, ≪별하늘 우화≫ 천혜성의 벽, 아공 결정의 벽, 거대 인력체 기반의 축조자. 숭배자들은 그를 「앰버 로드」라고 부른다. 그는 더 오래된 「황혼 전쟁」의 생존자다. 적의 잠식이 코앞인 것을 아는 그는 하는 수 없이 광년의 단위로 장벽을 구축해 아직 생기가 남아 있는 세계를 단절...</div></li>
 <li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">더 알아보기</span> <span class="ref-source">공식 HoYoWiki — 더 알아보기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/85?lang=ko-kr">원문</a></span><div class="ref-quote">에이언즈 「클리포트」가 관장하는 운명의 길. 기다림, 희생, 보호의 행위는 운명의 길 「보존」의 특징이다.</div></li>
 <li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">보존</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/85?lang=ko-kr">원문</a></span><div class="ref-quote">강력한 보호 능력을 가지고 있으며, 다양한 방식으로 동료를 수호합니다</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">⌈ 보존 ⌋ 클리포트</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/889?lang=ko-kr">원문</a></span><div class="ref-quote">「철학적으로 고민하는 자는 은하수를 쳐다보며, 문명의 궁극적인 목표를 탐구한다——『벽을 세워라』, 웅장한 목소리가 머리에서 울려 퍼진다. 『벽을 세워라』」 ——아드리안•스펜서-스미스, ≪별하늘 우화≫ 천혜성의 벽, 아공 결정의 벽, 거대 인력체 기반의 축조자. 숭배자들은 그를 「앰버 로드」라고 부른다. 그는 더 오래된 「황혼 전쟁」의 생존자다. 적의 잠식이 코앞인 것을 아는 그는 하는 수 없이 광년의 단위로 장벽을 구축해 아직 생기가 남아 있는 세계를 단절...</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/889?lang=ko-kr">원문</a></span><div class="ref-quote">클리포트</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">운명의 길</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/889?lang=ko-kr">원문</a></span><div class="ref-quote">보존</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">히메코: 무심한 에이언즈 클리포트</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">「보존」 클리포트는 무심한 에이언즈야. 시종일관 「컴퍼니」처럼 남다른 열정을 유지한다면 모를까…. 그렇지 않다면 그의 힘을 나눠 받기 힘들어</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">외부 홍보만 보면 회사는 자유 무역을 외치는 거대 기업 재단이다. 운영 방식은 화폐를 발행해 자원을 독점하는 비즈니스 독재다. 창업 초심을 말하자면, 회사는 「보존」의 에이언즈를 위해 모든 것을 바치는 헌신적인 후방 원군이다. 많은 은하 시민이 컴퍼니를 이야기할 때, 종종 도처에 깔린 상품과 로고를 언급한다. 마치 「거래가 존재하는 곳이면, 스타피스 컴퍼니가 존재한다」처럼. 사실 은하의 모든 비즈니스는 컴퍼니의 「신용 포인트」 시스템을 기반으로 이루어진다....</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">에이언즈</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">⌈ 보존 ⌋ 클리포트</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">지금의 스타피스 컴퍼니는 7대 부서로 나뉜다. 어쩌면 「부서」 라는 문자적인 의미만으로 더 이상 이 범은하 기업의 놀라운 규모를 설명할 수 없을 지도 모른다. 현실의 모든 컴퍼니 부서는 수십에서 수백 개의 문명 세계를 장악하고 있으며, 그 직원은 대대로 억만 단위에 달한다. 그들의 무역 활동에 영향을 받는 사람의 수는 더 말할 것도 없다. 7대 부서는 다음과 같다: 「시장개척부」 시장개척부는 클리포트의 사명을 더 많은 은하계에 알리기 위해 힘쓰며, 새로운...</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/889?lang=ko-kr">원문</a></span><div class="ref-quote">축성가(築城家) - 보존; 스타피스 컴퍼니 - 보존; 10인의 스톤하트 - 보존</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">쿠쿠리아와 보존의 포기</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">임무 「복귀」</span></span><div class="ref-quote">쿠쿠리아는 「보존」을 포기했어</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">보존의 진리가 아니라는 반박</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">임무 「복귀」</span></span><div class="ref-quote">이건 「보존」의 진리가 아니야…</div></li></ol></details>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">추종 세력</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/85?lang=ko-kr">원문</a></span><div class="ref-quote">축성가(築城家) - 보존; 스타피스 컴퍼니 - 보존</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">히메코: 무심한 에이언즈 클리포트</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">히메코의 인게임 대사</span></span><div class="ref-quote">「보존」 클리포트는 무심한 에이언즈야. 시종일관 「컴퍼니」처럼 남다른 열정을 유지한다면 모를까…. 그렇지 않다면 그의 힘을 나눠 받기 힘들어</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">외부 홍보만 보면 회사는 자유 무역을 외치는 거대 기업 재단이다. 운영 방식은 화폐를 발행해 자원을 독점하는 비즈니스 독재다. 창업 초심을 말하자면, 회사는 「보존」의 에이언즈를 위해 모든 것을 바치는 헌신적인 후방 원군이다. 많은 은하 시민이 컴퍼니를 이야기할 때, 종종 도처에 깔린 상품과 로고를 언급한다. 마치 「거래가 존재하는 곳이면, 스타피스 컴퍼니가 존재한다」처럼. 사실 은하의 모든 비즈니스는 컴퍼니의 「신용 포인트」 시스템을 기반으로 이루어진다....</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">스타피스 컴퍼니 - 보존</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">「우선 죄송합니다. 직설적으로 말하자면, 이 우주에 클리포트보다 더 현명한 회장이 있습니까? 그는 우리의 모든 경영책을 묵인하고, 의심하거나 질문하지 않습니다. 이는 큰 영광이고 신뢰입니다!」 ——오스왈도 • 슈나이더, 스타피스 컴퍼니 • 시장개척부 팀장, P47급</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">이야기</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">지금의 스타피스 컴퍼니는 7대 부서로 나뉜다. 어쩌면 「부서」 라는 문자적인 의미만으로 더 이상 이 범은하 기업의 놀라운 규모를 설명할 수 없을 지도 모른다. 현실의 모든 컴퍼니 부서는 수십에서 수백 개의 문명 세계를 장악하고 있으며, 그 직원은 대대로 억만 단위에 달한다. 그들의 무역 활동에 영향을 받는 사람의 수는 더 말할 것도 없다. 7대 부서는 다음과 같다: 「시장개척부」 시장개척부는 클리포트의 사명을 더 많은 은하계에 알리기 위해 힘쓰며, 새로운...</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/968?lang=ko-kr">원문</a></span><div class="ref-quote">신용 포인트; 앰버기원(역법); 10인의 스톤하트 - 보존; 지식학회 - 지식; 범은하 상사; 뭇별 경기장</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">토파즈: 몇 앰버기원에 한 번 열리는 축제</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">토파즈의 인게임 대사</span></span><div class="ref-quote">몇 앰버기원에 한 번 열리는 축제잖아. 컴퍼니도 선주 연맹의 우방이니까 당연히 참가해야지</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">쿠쿠리아와 보존의 포기</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">임무 「복귀」</span></span><div class="ref-quote">쿠쿠리아는 「보존」을 포기했어</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">보존의 진리가 아니라는 반박</span> <span class="ref-source">게임 본편 — 대사 · <span class="ref-detail">임무 「복귀」</span></span><div class="ref-quote">이건 「보존」의 진리가 아니야…</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/889?lang=ko-kr">원문</a></span><div class="ref-quote">축성가(築城家) - 보존; 스타피스 컴퍼니 - 보존; 10인의 스톤하트 - 보존</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>운명의 길</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>운명의 길</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-24</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-27</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편 — 대사, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보, 공식 HoYoWiki — 더 알아보기, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-24 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>
@@ -734,12 +677,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="preservation">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EB%B3%B4%EC%A1%B4&amp;body=%EB%B3%B4%EC%A1%B4+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fpreservation.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

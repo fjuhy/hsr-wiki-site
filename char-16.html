@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>서벌 · hoyohoyo.wiki</title>
-  <meta name="description" content="서벌은 벨로보그 행정구역에서 기계공방 「영원한 겨울」을 운영하는 엔지니어이자, 로큰롤을 자신의 본업처럼 여기는 록스타다. 그는 한때 축성가 기술 부서의 연구원이었고, 실버메인 철위대와도 관련된 경력을 가진 인물로, 벨로보그의 제도 안에서 인정받은 기술자였으면서도 지금은 그 제도 바깥에서 자기 삶을 다시 꾸린다.">
+  <meta name="description" content="서벌은 벨로보그 행정구역에서 기계공방 「영원한 겨울」을 운영하는 엔지니어다. 정작 본인은 엔지니어 일을 취미로, 대한파 이전의 고대 음악인 로큰롤 공연을 본업으로 소개한다. 소개 문구에 &quot;게파드•랜도의 누나&quot;라는 말이 붙으면, 그녀는 그 대목만 지워 달라며 &quot;나 서벌•랜도는 그 누구의 부속품도 아니니까&quot;라고 말한다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="서벌 · hoyohoyo.wiki">
-  <meta property="og:description" content="서벌은 벨로보그 행정구역에서 기계공방 「영원한 겨울」을 운영하는 엔지니어이자, 로큰롤을 자신의 본업처럼 여기는 록스타다. 그는 한때 축성가 기술 부서의 연구원이었고, 실버메인 철위대와도 관련된 경력을 가진 인물로, 벨로보그의 제도 안에서 인정받은 기술자였으면서도 지금은 그 제도 바깥에서 자기 삶을 다시 꾸린다.">
+  <meta property="og:description" content="서벌은 벨로보그 행정구역에서 기계공방 「영원한 겨울」을 운영하는 엔지니어다. 정작 본인은 엔지니어 일을 취미로, 대한파 이전의 고대 음악인 로큰롤 공연을 본업으로 소개한다. 소개 문구에 &quot;게파드•랜도의 누나&quot;라는 말이 붙으면, 그녀는 그 대목만 지워 달라며 &quot;나 서벌•랜도는 그 누구의 부속품도 아니니까&quot;라고 말한다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/char-16.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/char-16.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html" aria-current="page"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,92 +620,80 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>서벌</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%84%9C%EB%B2%8C&amp;page_slug=char-16">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>서벌</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="assets/wiki-images/14/104029380412eb1a8dec009230d35002_432367768919060-14763dbc709f.webp" alt="서벌 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 일러스트</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-people.html">인물</a><a href="category-people-belobog.html">야릴로-Ⅵ·벨로보그</a><span>서벌</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%84%9C%EB%B2%8C&amp;page_slug=char-16">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>서벌</h1><div class="meta-row"><span class="badge">인물</span><span class="badge">야릴로-Ⅵ·벨로보그</span></div><figure class="article-hero-image"><img src="https://upload-static.hoyoverse.com/hoyowiki/2023/02/21/104029380412eb1a8dec009230d35002_4323677689190609250.png" alt="서벌 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>서벌은 벨로보그 행정구역에서 기계공방 「영원한 겨울」을 운영하는 엔지니어이자, 로큰롤을 자신의 본업처럼 여기는 록스타다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 한때 축성가 기술 부서의 연구원이었고, 실버메인 철위대와도 관련된 경력을 가진 인물로, 벨로보그의 제도 안에서 인정받은 기술자였으면서도 지금은 그 제도 바깥에서 자기 삶을 다시 꾸린다.<sup class="cite-ref" title="공식 HoYoWiki · 서벌"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>이 대비는 서벌의 위치를 단순한 “랜도 가문 장녀”가 아니라, 가문·군·수호자 체제와 계속 부딪힌 뒤에도 자기 리듬을 잃지 않는 벨로보그의 이단적 기술자로 만든다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•랜도"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>서벌은 스스로를 누군가의 부속품으로 정의받기를 거부한다. 그는 “벨로보그 최고의 천재 엔지니어”, “록스타”, “실버메인 철위대 방위관”, “<a class="wiki-link" href="char-17.html" title="게파드">게파드</a> 랜도의 누나” 같은 수식이 붙어도 마지막 관계 호칭만큼은 지우려 하고, 자기 이름을 자기 것으로 남기려 한다. 그래서 서벌이라는 캐릭터의 핵심은 자유분방한 말투만이 아니라, 가문과 군 경력과 천재성까지 모두 자신을 설명하는 재료로 삼되 그 어느 하나에도 갇히지 않으려는 태도에 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>서벌의 가장 눈에 띄는 거점은 행정구역의 기계공방 「영원한 겨울」이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 공방은 겉으로는 수리점이지만, 서벌에게는 돈을 버는 장소라기보다 악기를 개조하고 밴드를 굴리고 자기 감정을 소리로 바꾸는 아지트에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 그는 지오매로우 난방기부터 자동차 엔진, 철위대 제식 자동 기갑병까지 고칠 수 있다고 말하고, 제설기에 드릴을 달거나 토스터에 탄도 계산 장치를 추가하는 식의 기묘한 개조까지 공방 서비스의 일부처럼 취급한다. 이 공방은 벨로보그의 혹독한 생활 인프라와 서벌의 장난기, 그리고 기술자의 실력을 한곳에 모아 둔 공간이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 클라라의 언급 · 클라라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>그는 생계를 위해 공방을 운영하지만, 돈을 버는 일에는 큰 관심이 없다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 누군가 기계공방으로 어떻게 돈을 버냐고 묻자, 그는 취미생활이고 자신은 돈이 궁하지 않다고 답하며, 공방이 쉬면 돈을 벌지 않는다고도 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> “기계든, 과학 연구든, 음악이든” 모두 수준급이지만 잘 못하는 것은 돈 버는 일뿐이라는 자기평가는, 서벌이 능력이 부족해서 가난한 기술자가 아니라 능력을 돈의 논리로만 쓰지 않는 인물임을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>로큰롤은 서벌에게 단순한 취미가 아니다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 그는 엔지니어 일을 취미라고 말하고, 로큰롤 공연을 본업이라고 소개하며, 로큰롤이 본업이면 취미는 업무가 아니겠느냐고 농담한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 취미"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 음악은 그가 가문과 의절한 뒤 다시 시작한 길이자, 젊은이들이 열정과 불만을 쏟아내는 통로이며, 서벌 자신이 예전에 품었던 감정까지 건드리는 표현 방식이다. 그래서 그의 공연은 벨로보그의 긴 겨울 속에서 단순한 오락이 아니라, 억눌린 도시의 감정을 밖으로 꺼내는 소음에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>서벌은 「매커니컬 피버」 또는 「매커니컬 웨이브」와 함께 음악 활동을 이어 간다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•밴드"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 그는 <a class="wiki-link" href="char-19.html" title="페라">페라</a>의 드럼을 자연스럽게 부르고, 페라가 바쁜 업무와 주말 자원봉사 때문에 보통 밤에 밴드 연습을 한다고 말한다.<sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•밴드"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 밴드에서 그는 혼자 빛나는 스타가 아니라, 페라의 리듬에 맞추겠다고 말하고 멤버들과 함께 연주하는 자신도 즐거워야 한다는 기준을 세운다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•페라"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 던의 언급 · 던의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 이 점에서 서벌의 음악은 반항의 표정만 가진 독무대가 아니라, 주변 사람까지 끌어들여 각자의 속도를 맞추게 하는 관계의 장이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•페라"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 던의 언급 · 던의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>작중에서 서벌은 기술 문제를 해결하는 실무자이기도 하다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 페라는 서벌이 개조한 열에너지 전달 기능으로 직접 접촉할 수 없는 등불까지 밝힐 수 있다고 말하고, 서벌은 수수께끼를 풀었을 때 해체해서 연구해 보고 싶다고 반응한다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 수수께끼 풀이 성공•2"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 눈밭에서 고장 난 기갑병을 발견하고 바퀴가 궤도와 마찰하는 소리를 기타 연주처럼 받아들이는 장면은, 그가 기계의 고장을 고치는 데서 멈추지 않고 기계의 소리까지 음악적 재료로 바꾸는 사람임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>서벌은 벨로보그에서 “천재 엔지니어”로 널리 알려진 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 캐릭터 스토리는 한때 그가 실버메인 철위대에서 가장 총명한 머리를 가진 사람이었고, 랜도 가문의 천재 아가씨라는 소문이 그 사건 이후 퍼졌다고 전한다. <a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 쿠쿠리아가 벨로보그 사관학교를 수석으로 졸업했으며, 모두가 쿠쿠리아를 벨로보그에서 가장 명석한 두뇌라고 칭찬했고 서벌조차 따라잡을 수 없을 정도였다고 말한다. 이 비교는 서벌이 쿠쿠리아 아래에 놓인다는 뜻만이 아니라, 쿠쿠리아의 지성을 설명할 때 기준점으로 쓰일 만큼 서벌의 명석함이 도시 안에서 이미 인정받고 있었음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>그의 군 경력에는 공개되지 않은 상처가 있다. 사람들은 대수호자와 누구보다 친했던 서벌이 왜 갑자기 군을 떠났는지, 군을 증오하게 된 것인지 추측하지만, 서벌은 그 이유가 실버메인 철위대의 최고 레벨 기밀과 관련되어 말할 수 없다고 선을 긋는다. 그는 겉으로는 그 일이 여유로운 삶을 즐길 명분을 줬다고 농담하지만, 곧 “이미 종말이 확정된 거라면 진정한 즐거움 따위가 있을 리 없다”고 털어놓는다. 이 장면은 서벌의 자유로움이 단순한 낙천성만으로 만들어진 것이 아니라, 벨로보그의 미래와 쿠쿠리아의 변화에 대한 절망을 통과한 뒤 남은 생존 방식임을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></p>
-<p>서벌은 쿠쿠리아와의 관계를 통해 벨로보그 권력의 인간적 균열을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 그는 쿠쿠리아의 절친이었고, 자신이 알던 쿠쿠리아는 자신의 노래를 들으려고 지붕까지 올라가던 사람이었다고 기억한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 하지만 같은 문장에서 그는 “수호자”는 그렇지 않다고 말하며, 친구 쿠쿠리아와 대수호자 쿠쿠리아를 분리한다. 서벌에게 쿠쿠리아는 단순한 적이나 과거 인연이 아니라, 개인의 열정이 권력의 자리에서 어떻게 다른 얼굴로 굳어지는지 보여 주는 상처다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>그의 강함은 절대적인 무력 과시보다 “기술과 무대 감각을 전투 언어로 바꾸는 능력”으로 표현된다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 스킬•1"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•활성화"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 전투 중 그는 “내 리듬을 따라와”, “망가질 준비됐어? ”, “로큰롤은 멈추지 않아” 같은 말로 공격과 공연을 거의 같은 행위처럼 다룬다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 스킬•1"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 필살기•활성화"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 비술"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> 전투 불능 상태에서도 “공연이 아직”이라고 말하고, 복귀할 때는 앙코르 소리를 들었다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 불능"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 전투 복귀"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> 서벌에게 싸움은 군인의 임무라기보다 관객 앞에서 끝까지 밀어붙이는 무대이며, 이 점이 게파드식 방위관 이미지와 뚜렷하게 갈린다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•게파드"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•랜도"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>랜도 가문과의 관계는 서벌의 정체성을 가장 선명하게 갈라 놓는다.<sup class="cite-ref" title="공식 HoYoWiki · 서벌"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•랜도"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 그는 게파드의 누나이지만, 공식 설명은 두 사람이 전혀 다른 성격이라고 못박는다. 서벌은 게파드가 자기 일에 조금만 더 신경 쓰면 자신이 걱정할 필요가 없을 것이라고 말하면서도, 자신도 속을 많이 썩였으니 쌤쌤이라고 덧붙인다. 파티 편성에서는 게파드에게 공 세울 기회를 다 빼앗지 말라고 농담하고, <a class="wiki-link" href="char-1228.html" title="링스">링스</a>에게는 “Let’s rock and roll! ”을 외치며 자신을 더 닮았다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•게파드"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•링스"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 링스에 대해"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> 랜도 가문 사람들에게 공통점이 있다면 다들 나름의 고집이 있다는 그의 말은, 가족 사이의 차이를 갈등으로만 보지 않고 각자의 방식으로 버티는 성질로 묶는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•랜도"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>페라는 서벌의 음악과 일상에서 가장 가까운 동료로 그려진다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•페라"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 서벌은 페라를 드럼도 치고 꽃도 키우며 보고서도 잘 쓰는 믿음직한 사람으로 평가하고, 전투 편성에서는 공연처럼 페라의 리듬에 맞추겠다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•페라"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 페라는 서벌의 말투와 옷차림, 제스처를 읽어내며, 서벌의 농담 취향과 기계적 발상까지 주변 사람에게 설명하는 역할을 맡는다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 이 관계는 서벌의 자유분방함이 혼자 떠도는 기질이 아니라, 그 리듬을 이해하고 받아 주는 동료가 있을 때 더 강하게 작동한다는 점을 보여 준다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•페라"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 던의 언급 · 던의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>쿠쿠리아와 브로냐는 서벌의 과거와 미래 감각을 나누어 보여 주는 관계다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 서벌은 브로냐를 착한 아이라고 부르며 쿠쿠리아가 키워낸 아이답다고 말하고, 파티 편성에서는 브로냐가 자기 어머니보다 더 멀리 나아갈 수 있을 것이라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•브로냐"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup> 반면 쿠쿠리아에 대해서는 자신의 노래를 듣기 위해 지붕까지 올라가던 친구와 “수호자”를 구분한다. 서벌은 브로냐에게서 쿠쿠리아의 흔적을 보지만, 동시에 쿠쿠리아가 멈춘 곳을 넘어설 가능성도 본다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•브로냐"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
-<p><a class="wiki-link" href="char-20.html" title="클라라">클라라</a>와 <a class="wiki-link" href="char-22.html" title="후크">후크</a> 쪽 언급은 서벌이 벨로보그의 유명 인사로 소비되는 방식을 보여 준다.<sup class="cite-ref" title="게임 본편 · 애쉬베일의 언급 · 애쉬베일의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 클라라의 언급 · 클라라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 클라라는 「영원한 겨울」을 벨로보그의 유명한 기계공방으로 소개하고, 그 주인을 재능 있는 엔지니어이자 자신들의 록스타, 기타 보컬인 서벌 언니라고 부른다. 후크의 놀이 또는 도전 구조에서는 서벌이 「멜로디 데빌•서벌」이라는 과장된 이름으로 등장하고, 그를 쓰러뜨려야 후크에게 질문할 수 있다.<sup class="cite-ref" title="게임 본편 · 애쉬베일의 언급 · 애쉬베일의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 후크의 언급 · 후크의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup> 이 별칭과 소개는 서벌이 어른들의 군·공방 세계뿐 아니라 아이들의 상상 속에서도 “강하고 시끄럽고 유명한 사람”으로 자리 잡았음을 보여 준다.<sup class="cite-ref" title="게임 본편 · 애쉬베일의 언급 · 애쉬베일의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup><sup class="cite-ref" title="게임 본편 · 클라라의 언급 · 클라라의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p><a class="wiki-link" href="char-21.html" title="삼포">삼포</a>에 대한 서벌의 언급은 짧지만, 벨로보그의 질서와 장난기를 동시에 비춘다. 그는 삼포를 두고 게파드가 언제 체포할지 지켜보는 중이라고 말한다. 이 말은 서벌이 직접 법 집행자로 나서지는 않지만, 게파드의 성실함과 삼포의 문제적 위치를 모두 알고 있는 도시 내부자라는 점을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 게파드에 대해"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
-<p>브로냐, 페라, <a class="wiki-link" href="char-7.html" title="Mar. 7th">Mar. 7th</a>, <a class="wiki-link" href="npc-1616.html" title="지오반니">지오반니</a>, 던 등이 서벌을 부르는 장면들은 그가 한 장소에 고정된 공방 주인이 아니라 여러 사건에 호출되는 인물임을 보여 준다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup><sup class="cite-ref" title="게임 본편 · 지오반니의 언급 · 단항의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · 지오반니의 언급 · 지오반니의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> 지오반니는 서벌과 페라를 우승 후보로 부르고, Mar. 7th는 서벌과 페라에게 도전하자고 말하며, 던은 서벌에게 로큰롤 스피릿을 증명하겠다고 말한다.<sup class="cite-ref" title="게임 본편 · 지오반니의 언급 · 단항의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup><sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup><sup class="cite-ref" title="게임 본편 · 던의 언급 · 던의 인게임 대사"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> “서벌 씨의 전략이 이거였어요? ! ” 같은 반응은 그가 즉흥적인 말과 행동 뒤에 자기 방식의 계획을 숨길 수 있는 인물이라는 인상을 남긴다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「대체 불가 아이돌」"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<h2 id="로큰롤과-공방-사이의-서벌">로큰롤과 공방 사이의 서벌</h2>
-<p>서벌의 삶은 공방과 무대 사이에서 계속 뒤집힌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 그는 엔지니어 일을 취미라고 말하면서도, 공방에서는 실제로 기계를 고치고 새 기능을 붙이며, 전투와 탐사에서도 기계를 해체해 연구하고 싶어 하는 기술자의 본능을 보인다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 수수께끼 풀이 성공•2"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> 동시에 그는 작곡, 공연, 밴드 연습, 로큰롤 오페라 같은 상상을 일상 대사의 중심에 놓는다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 작별"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•밴드"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 서벌에게 기술과 음악은 서로 다른 직업이 아니라, 고장 난 세계를 만지고 소리를 뽑아내는 두 가지 방식이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<p>그의 반항은 무책임한 도피와 다르다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 그는 돈을 열심히 벌 생각은 없다고 말하지만, 공방을 운영할 실력과 고객을 상대할 기능을 갖추고 있고, 벨로보그의 기계와 장비를 다룰 수 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 그는 군을 떠난 이유를 말할 수 없지만, 그 침묵 뒤에는 최고 레벨 기밀과 쿠쿠리아와의 단절, 그리고 종말이 확정된 세계에서 즐거움을 말하기 어려운 절망이 있다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> 그래서 서벌의 느슨함은 현실을 모르는 낙관이 아니라, 현실을 너무 많이 본 사람이 자기 삶을 빼앗기지 않기 위해 택한 방식에 가깝다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>서벌은 자기 이름 앞에 붙는 역할들을 계속 이용하면서도, 그 역할들이 자신을 소유하게 두지 않는다. 랜도 가문의 장녀, 게파드의 누나, 쿠쿠리아의 옛 절친, 실버메인 철위대의 천재, 공방 주인, 록스타라는 이름은 모두 그를 설명하지만 어느 하나도 그를 끝까지 가두지 못한다.<sup class="cite-ref" title="공식 HoYoWiki · 서벌"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> “로큰롤을 제외하고, 온전히 나만의 것이 있을까”라는 말은 그의 밝은 농담 밑에 남은 결핍을 드러낸다. 서벌은 벨로보그의 질서가 정해 준 자리에서 밀려난 뒤에도, 그 자리를 빈칸으로 두지 않고 공방의 소음과 기타의 울림으로 다시 채우는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">자유롭고 반항적인 랜도 가문의 장녀. 쿠쿠리아의 절친이였으며 지금은 취미로 엔지니어 일을 하고 있다. 영원한 겨울의 벨로보그에서 「영원한 겨울」 기계공방을 운영하고 있으며 가끔은 가게 문을 닫고 로큰롤 야외 공연을 하기도 한다. 누군가 기계공방으로 어떻게 돈을 버냐고 묻자... 「이건 취미생활이야, 난 돈이 궁하지 않거든」이라고 대답했다.</div></li>
-<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">여어! {개척자}. 난 서벌•랜도, 벨로보그의 엔지니어야——물론 이건 취미로 하는 거고, 로큰롤 공연이 내 본업이지</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">서벌</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">벨로보그의 엔지니어. 축성가 기술 부서의 연구원을 맡기도 했다. 게파드•랜도의 누나지만 남동생과 전혀 다른 성격을 가졌다. 대한파 이전의 「로큰롤」이라는 고대 음악에 빠져있다</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 한때 서벌•랜도는 실버메인 철위대에서 가장 총명한 머리를 가지고 있는 사람이었다——랜도 가문의 천재 아가씨에 대한 소문이 돌기 시작한 건 바로 그 사건 이후부터였다 하지만 몇 년 전 어느 날, 그녀의 전설은 곧 또 다른 소문으로 대체되었다. 대수호자와 누구보다 친하게 지내던 그녀가 왜 갑자기 군을 떠난 걸까? 혹시 군을 증오하게 된 걸까? 이에 대해 사람들은 여러 가지 추측을 내놓았다 「첫 번째 질문에 대한 답은 간단해——말할...</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">자신에 대해•랜도</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">랜도 가문 사람들 사이에 공통점이 있다면, 다들 나름의 고집이 있다는 점이겠지</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 이 분은 벨로보그에서 최고의 천재 엔지니어이자 록스타이자 실버메인 철위대 방위관이며 게파드•랜도의 누나이신…… 「잠깐, 앞에 말은 남겨둬도 괜찮은데 마지막은 지워」 「그렇게 쉽게 내 신분을 단정짓지 마. 나 서벌•랜도는 그 누구의 부속품도 아니니까」 「…윽, 마지막 말은 없애라고요? 네, 그럼 제가 알아서 보충해 넣겠습니다. 망가진 물건이 있으면 언제든지 행정구역의 기계공방 『영원한 겨울』로 오도록 해」 「뭐? 록 음악을 듣고...</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">성혼 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">「로큰롤」을 제외하고, 온전히 나만의 것이 있을까……</div></li>
+<p>서벌은 벨로보그 행정구역에서 기계공방 「영원한 겨울」을 운영하는 엔지니어다.<sup class="cite-ref" title="공식 HoYoWiki · 서벌"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 정작 본인은 엔지니어 일을 취미로, 대한파 이전의 고대 음악인 로큰롤 공연을 본업으로 소개한다.<sup class="cite-ref" title="공식 HoYoWiki · 서벌"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 첫 만남"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 소개 문구에 &quot;<a class="wiki-link" href="char-17.html" title="게파드">게파드</a>•랜도의 누나&quot;라는 말이 붙으면, 그녀는 그 대목만 지워 달라며 &quot;나 서벌•랜도는 그 누구의 부속품도 아니니까&quot;라고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p>서벌은 한때 축성가 기술 부서의 연구원이었고, 실버메인 철위대에서 가장 총명한 머리를 가진 사람으로도 통했다.<sup class="cite-ref" title="공식 HoYoWiki · 서벌"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 어떤 사건을 계기로 &quot;랜도 가문의 천재 아가씨&quot;라는 소문이 벨로보그에 퍼졌다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <a class="wiki-link" href="char-14.html" title="브로냐">브로냐</a>는 어머니 쿠쿠리아가 벨로보그 사관학교를 수석으로 졸업했고, 모두가 쿠쿠리아를 도시에서 가장 명석한 두뇌로 꼽았으며 서벌조차 따라잡을 수 없었다고 회상한다.<sup class="cite-ref" title="게임 본편 · 브로냐의 언급 · 브로냐의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
+<p>몇 년 전, 대수호자와 누구보다 가까웠던 서벌이 갑자기 군을 떠났다. 왜 떠났는지, 군을 증오하게 된 것인지 사람들은 여러 추측을 내놓았지만, 서벌은 &quot;이 일은 실버메인 철위대의 최고 레벨 기밀과 연관되어 있&quot;어 말할 수 없다고 선을 긋는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 겉으로는 &quot;이렇게 여유로운 삶을 즐길 수 있는 명분을 가지게 됐다&quot;고 농담하지만, 곧 &quot;이미 종말이 확정된 거라면 진정한 즐거움 따위가 있을 리가 없잖아&quot;라고 털어놓는다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•4"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>서벌이 다시 음악을 시작한 것은 랜도 가문과 완전히 의절한 뒤였다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 벨로보그 전체에 이름을 떨친 기계공방은 그때부터 그녀가 로커의 꿈을 펼치는 아지트가 됐다. 가끔 시끄럽다는 신고가 들어갔지만, 대한파 이전에 유행한 전위적 예술에 트렌드에 민감한 젊은이들이 열광했다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 서벌은 이런 평가에 발끈하면서도, &quot;한참 열정이나 불만을 가슴속에 품고 다닐&quot; 젊은이들이 감정을 쏟아내는 방법으로 로큰롤을 사랑한다고 말하고, &quot;내가 예전에 그랬던 것처럼&quot;이라는 말을 흘리며 옛 생각에 잠긴다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•3"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<h2 id="기계공방-영원한-겨울">기계공방 「영원한 겨울」</h2>
+<p>기계공방 「영원한 겨울」은 벨로보그 행정구역 중심에 있는 서벌 소유의 부동산이다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 대외적으로는 기계 수리가 직업이지만, 실제로 서벌은 하루 중 거의 모든 시간을 악기 개조에 쓴다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 지오매로우 난방기부터 자동차 엔진, 철위대 제식 자동 기갑병까지 고칠 수 있고, 제설기에 드릴을 달거나 토스터에 탄도 계산 장치를 추가하는 개조도 공방 서비스로 취급한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 매출을 묻는 질문에는 &quot;대충 배불리 먹을 수 있고 여윳돈으로 음악을 할 수 있으면 충분하다&quot;고 답하고, 공방이 쉬면 돈을 벌지 않는다고도 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•2"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 고민"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> &quot;기계든, 과학 연구든, 음악이든&quot; 다 수준급이지만 잘 못하는 건 돈 버는 일뿐이라고도 자평한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 공유"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
+<p>공방이 첫 조수를 맞은 날에는 축하 공연을 열어 <a class="wiki-link" href="char-19.html" title="페라">페라</a>의 드럼과 함께 연주했다.<sup class="cite-ref" title="게임 본편 · 서벌의 언급 · 서벌의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> 서벌은 「매커니컬 피버」(「매커니컬 웨이브」로도 불린다) 밴드 활동을 함께 이어 간다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 스토리•1"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•밴드"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 드럼을 맡은 페라가 주말마다 자원봉사를 나가는 탓에 밴드 연습은 보통 밤에 열린다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•밴드"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 그녀가 &quot;밴드와 관련된 장소&quot;라고 알려 준 곳에 가 보면, 실제로는 색이 선명하고 각이 살아 있는 길가의 쓰레기통들만 놓여 있기도 하다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 전투 편성에서 서벌은 &quot;우리 공연처럼—네 리듬에 맞출게&quot;라며 페라의 속도를 따르겠다고 말하고,<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•페라"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 밴드 멤버들과 연주하는 자신도 즐거워야 한다는 기준을 세운다.<sup class="cite-ref" title="게임 본편 · 던의 언급 · 던의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 언젠가 브로냐가 대수호자가 되면 골든 극장 무대를 빌려 ≪수호자≫를 로큰롤 오페라로 각색해 공연하고 싶다는 구상도 갖고 있다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 견문"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
+<p>서벌이 개조한 열에너지 전달 기능은 손이 닿지 않는 등불까지 밝힐 수 있을 만큼 실용적이다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 수수께끼를 풀면 &quot;해체해서 연구해 보고 싶다&quot;고 반응하고,<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 수수께끼 풀이 성공•2"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 눈밭에서 발견한 고장 난 기갑병의 바퀴가 궤도와 마찰하는 소리를 기타 연주 소리로 즐겨 들었다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> Mar. 7th는 서벌이 자신들보다 에테르 정령을 더 잘 안다고 평가한다.<sup class="cite-ref" title="게임 본편 · Mar. 7th의 언급 · Mar. 7th의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
+<h2 id="성격과-인간관계">성격과 인간관계</h2>
+<p>서벌은 게파드•랜도의 누나이지만, 공식 소개는 둘을 전혀 다른 성격으로 구분한다.<sup class="cite-ref" title="공식 HoYoWiki · 서벌"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 그녀는 &quot;동생이 자기 일에 조금만 더 신경을 썼으면 좋겠다&quot;면서도 &quot;나도 속 많이 썩였으니까 쌤쌤&quot;이라고 덧붙이고,<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 게파드에 대해"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup> 전투 편성에서는 게파드에게 &quot;공 세울 기회를 다 빼앗지 말라&quot;고 농담한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•게파드"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <a class="wiki-link" href="char-1228.html" title="링스">링스</a>에게는 &quot;Let&#x27;s rock and roll!&quot;을 외치며 자신을 더 닮았다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•링스"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 링스에 대해"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> 랜도 가문 사람들의 공통점을 묻는 말에는 &quot;다들 나름의 고집이 있다&quot;고 답한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 자신에 대해•랜도"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
+<p>쿠쿠리아는 서벌의 절친이었다.<sup class="cite-ref" title="공식 HoYoWiki — 이야기 · 캐릭터 상세"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 서벌은 &quot;내가 아는 쿠쿠리아는 내 노랠 들으려고 지붕까지 올라가는 사람이었다&quot;고 기억하면서도, &quot;「수호자」는 안 그래&quot;라며 친구와 대수호자를 구분한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> 쿠쿠리아의 딸 브로냐에 대해서는 &quot;착한 아이&quot;이고 &quot;역시 쿠쿠리아가 키워낸 아이답다&quot;고 말하며, 전투 편성에서는 &quot;넌 네 어머니보다 더 멀리 나아갈 수 있을 거야&quot;라고 격려한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•브로냐"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
+<p>페라는 서벌을 &quot;이 세상에서 가장 믿음직한 아가씨&quot;로 꼽을 만큼 가까운 동료다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup> 페라는 서벌의 표정과 말투, 옷차림, 제스처만 보고도 그녀의 상태를 읽어 낸다.<sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> <a class="wiki-link" href="char-21.html" title="삼포">삼포</a>에 대해서는 &quot;게파드가 언제 체포할지 두고 보는 중&quot;이라고 짧게 언급한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 삼포에 대해"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
+<p>벨로보그의 아이들에게 서벌은 유명 인사다. <a class="wiki-link" href="char-20.html" title="클라라">클라라</a>는 「영원한 겨울」을 소개하며 그 주인을 &quot;재능 있는 엔지니어, 저희의 록스타이자 기타 보컬인 서벌 언니&quot;라고 부른다.<sup class="cite-ref" title="게임 본편 · 클라라의 언급 · 클라라의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> 모구라파 놀이에서는 <a class="wiki-link" href="char-22.html" title="후크">후크</a>의 오른팔 격인 &quot;멜로디 데빌•서벌&quot;로 등장해, 아이들이 후크에게 질문하려면 먼저 그녀를 꺾어야 한다. 페라조차 관람석에서 &quot;빨리 서벌 님을 꺾고 이 불쌍한 동인녀를 구해 달라&quot;고 애원한다.<sup class="cite-ref" title="게임 본편 · 애쉬베일의 언급 · 애쉬베일의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup><sup class="cite-ref" title="게임 본편 · 후크의 언급 · 후크의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup><sup class="cite-ref" title="게임 본편 · 페라의 언급 · 페라의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> 애쉬베일은 &quot;서벌&quot;이라는 이름을 두고 &quot;기와에 맺힌 이슬처럼 희망차고도 아름다운 이름&quot;이라고 평했다.<sup class="cite-ref" title="게임 본편 · 애쉬베일의 언급 · 애쉬베일의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
+<p>성혼을 활성화하면 서벌은 &quot;「로큰롤」을 제외하고, 온전히 나만의 것이 있을까……&quot;라고 되뇐다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 성혼 활성화"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-17.html">게파드</a> — 서벌의 남동생으로, 전투 편성에서 서로 농담을 주고받는 사이다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 게파드에 대해"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•게파드"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup></li>
+<li>쿠쿠리아 — 서벌의 옛 절친이자 전 대수호자로, 서벌은 친구였던 쿠쿠리아와 수호자가 된 이후의 쿠쿠리아를 구분해서 기억한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 쿠쿠리아에 대해"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup></li>
+<li><a href="char-14.html">브로냐</a> — 쿠쿠리아의 딸로, 서벌은 그녀를 착한 아이로 여기며 어머니보다 더 멀리 나아갈 수 있다고 말한다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 브로냐에 대해"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 파티 편성•브로냐"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></li>
+<li><a href="char-19.html">페라</a> — 「매커니컬 피버」의 드러머이자 서벌이 가장 믿음직하다고 평하는 동료다.<sup class="cite-ref" title="공식 HoYoWiki — 음성 · 페라에 대해"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 음성 · 잡담•밴드"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">서벌</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">벨로보그의 엔지니어. 축성가 기술 부서의 연구원을 맡기도 했다. 게파드•랜도의 누나지만 남동생과 전혀 다른 성격을 가졌다. 대한파 이전의 「로큰롤」이라는 고대 음악에 빠져있다</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">캐릭터 상세</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">자유롭고 반항적인 랜도 가문의 장녀. 쿠쿠리아의 절친이였으며 지금은 취미로 엔지니어 일을 하고 있다. 영원한 겨울의 벨로보그에서 「영원한 겨울」 기계공방을 운영하고 있으며 가끔은 가게 문을 닫고 로큰롤 야외 공연을 하기도 한다. 누군가 기계공방으로 어떻게 돈을 버냐고 묻자... 「이건 취미생활이야, 난 돈이 궁하지 않거든」이라고 대답했다.</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">첫 만남</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">여어! {개척자}. 난 서벌•랜도, 벨로보그의 엔지니어야——물론 이건 취미로 하는 거고, 로큰롤 공연이 내 본업이지</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">캐릭터 스토리•1</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.20 개방 이 분은 벨로보그에서 최고의 천재 엔지니어이자 록스타이자 실버메인 철위대 방위관이며 게파드•랜도의 누나이신…… 「잠깐, 앞에 말은 남겨둬도 괜찮은데 마지막은 지워」 「그렇게 쉽게 내 신분을 단정짓지 마. 나 서벌•랜도는 그 누구의 부속품도 아니니까」 「…윽, 마지막 말은 없애라고요? 네, 그럼 제가 알아서 보충해 넣겠습니다. 망가진 물건이 있으면 언제든지 행정구역의 기계공방 『영원한 겨울』로 오도록 해」 「뭐? 록 음악을 듣고...</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">캐릭터 스토리•4</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.80 개방 한때 서벌•랜도는 실버메인 철위대에서 가장 총명한 머리를 가지고 있는 사람이었다——랜도 가문의 천재 아가씨에 대한 소문이 돌기 시작한 건 바로 그 사건 이후부터였다 하지만 몇 년 전 어느 날, 그녀의 전설은 곧 또 다른 소문으로 대체되었다. 대수호자와 누구보다 친하게 지내던 그녀가 왜 갑자기 군을 떠난 걸까? 혹시 군을 증오하게 된 걸까? 이에 대해 사람들은 여러 가지 추측을 내놓았다 「첫 번째 질문에 대한 답은 간단해——말할...</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">벨로보그 사관학교에 입학한 어머니는 수석으로 졸업하셨어. 모두가 입을 모아 벨로보그에서 가장 명석한 두뇌라고 칭찬했지. 서벌조차 따라잡을 수 없을 정도였어</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 서벌이 다시 음악을 시작하게 된 건 랜도 가문과 완전히 의절하게 된 이후였다 벨로보그 전체에 이름을 떨친 기계공방은 그 뒤로 그녀가 마음껏 로커의 꿈을 펼칠 수 있는 아지트가 되었다——가끔씩 시끄럽다고 신고가 들어가기도 했지만 한파 전에 유행했던 전위적인 예술에 수트렌드에 민감한 많은 젊은이들이 열광했다…… 「참나… 어이가 없어서』，잡지나 신문에서 떠들어대는 『음악 평론가』들 말이야. 좀 더 공정성을 가져야 해! 『시끄럽다고 신...</div></li>
 <li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">캐릭터 스토리•2</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.40 개방 서벌•랜도는 벨로보그의 행정구역 중심이 부동산을 하나 보유하고 있었다. 그곳은 바로 기계공방 「영원한 겨울」——대외적으로 그녀는 이곳에서 기계를 고치는 것이 직업이었다 하지만 실상은 달랐다. 이 천재 엔지니어는 하루 중 거의 모든 시간을 여러 가지 악기를 개조하는 데 퍼붓곤 했다…… 「어, 잡지에서 함부로 떠드는 말들 다 믿으면 안 돼! 나도 엄연한 사업가라고……」 「작게는 지오매로우 난방기부터 크게는 자동차 엔진, 아니, 철위...</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">캐릭터 스토리•3</span> <span class="ref-source">공식 HoYoWiki — 이야기 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">캐릭터 레벨 Lv.60 개방 서벌이 다시 음악을 시작하게 된 건 랜도 가문과 완전히 의절하게 된 이후였다 벨로보그 전체에 이름을 떨친 기계공방은 그 뒤로 그녀가 마음껏 로커의 꿈을 펼칠 수 있는 아지트가 되었다——가끔씩 시끄럽다고 신고가 들어가기도 했지만 한파 전에 유행했던 전위적인 예술에 수트렌드에 민감한 많은 젊은이들이 열광했다…… 「참나… 어이가 없어서』，잡지나 신문에서 떠들어대는 『음악 평론가』들 말이야. 좀 더 공정성을 가져야 해! 『시끄럽다고 신...</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">클라라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">클라라의 인게임 대사</span></span><div class="ref-quote">제 뒤에 있는 상점이 바로 벨로보그의 유명한 기계공방 「영원한 겨울」이에요. 공방 주인은 재능 있는 엔지니어, 저희의 록스타이자 기타 보컬인——서벌 언니죠</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">가끔 사람들이 기계공방을 쉬면 어떻게 돈을 버냐고 묻더라, 그 대답은 뻔하잖아——안 버는 거지, 뭐</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">기계든, 과학 연구든, 음악이든, 다 수준급인 거 같은데? 음, 그러니까… 내가 잘 못하는 건 「돈 버는 일」밖에 없지 않을까?</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">취미</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">로큰롤이 본업이면 취미는 「업무」 아니겠어? 뭐… 문제없지 않을까?</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">잡담•밴드</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">페라는 엄청 바빠, 주말엔 가끔 자원봉사를 가거든. 그래서 「매커니컬 웨이브」는 보통 밤에 연습하는 편이야</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">서벌의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">서벌의 인게임 대사</span></span><div class="ref-quote">서벌 기계공방이 첫 조수를 맞이한 걸 축하하기 위해——여러분께 한 곡 뽑아드리겠습니다! 자, 페라, 네 드럼도 꺼내——</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">파티 편성•페라</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">평소랑 똑같아, 페라. 우리 공연처럼——네 리듬에 맞출게!</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">던의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">던의 인게임 대사</span></span><div class="ref-quote">그뿐만이 아니죠! 서벌은 밴드 멤버들과 연주하는 자신도 즐거워야 한다고 했어요!</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">보세요, 서벌 씨가 개조한 열에너지 전달 기능이 있으면 접촉할 수 없는 등불까지 밝힐 수 있어요</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">수수께끼 풀이 성공•2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">해체해서 연구해 보고 싶은걸!</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">너무 신경 쓰지 마세요. 서벌 씨가 요즘 아재 개그에 빠졌거든요. 서벌 씨가 얼마 전 눈밭에서 고장 난 기갑병을 발견했는데, 바퀴가 궤도와 마찰하면서 나는 소리가 기타 연주 소리처럼 아주 좋았대요</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">브로냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">브로냐의 인게임 대사</span></span><div class="ref-quote">벨로보그 사관학교에 입학한 어머니는 수석으로 졸업하셨어. 모두가 입을 모아 벨로보그에서 가장 명석한 두뇌라고 칭찬했지. 서벌조차 따라잡을 수 없을 정도였어</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">쿠쿠리아에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">내가 아는 쿠쿠리아는 내 노랠 들으려고 지붕까지 올라가는 사람이었어, 근데… 「수호자」는 안 그래</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">전투 스킬•1</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">내 리듬을 따라와!</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">필살기•활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">망가질 준비됐어?</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">비술</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">로큰롤은 멈추지 않아!</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">전투 불능</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">공연이…… 아직……</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">전투 복귀</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">앙코르 소리가 들렸어~</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">파티 편성•게파드</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">동생아, 공 세울 기회를 다 빼앗진 말라고!</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">파티 편성•링스</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">링스! 준비됐어? Let&#x27;s rock and roll!</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">링스에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">우리 링스는… 역시 날 더 닮았어. 어? 이건 게파드한테 말하지 마~ 이런 말 싫어하거든!</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">페라에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">드럼에, 꽃도 키울 줄 알고, 보고서도 잘 쓰지. 이 세상에서 페라보다 더 믿음직한 아가씨가 있을까?</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">서벌 씨만큼은 아니지만 저도 보이는걸요. 대화할 때의 표정, 말투, 평소의 옷차림… 그리고 이상한 제스처로 알 수 있어요</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">브로냐에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">브로냐는 착한 아이야, 역시 쿠쿠리아가 키워낸 아이답다니까. 요즘은 자주 못 만났어, 좀 보고 싶긴 하네</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">파티 편성•브로냐</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">넌 네 어머니보다 더 멀리 나아갈 수 있을 거야, 브로냐</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">애쉬베일의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">애쉬베일의 인게임 대사</span></span><div class="ref-quote">「모구라파」의 우두머리 후크에게 도전하려면 먼저 그 애의 왼팔과 오른팔——「에소•S•클라라」와 「멜로디 데빌•서벌」을 물리쳐야 해</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">후크의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">후크의 인게임 대사</span></span><div class="ref-quote">마지막 책임자 「멜로디 데빌•서벌」을 찾아가 봐. 그녀를 꺾고 나면 내게 질문하는 걸 허락할게</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">삼포에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">그 녀석? 게파드가 언제 체포할지 두고 보는 중이야</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">게파드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">동생이 자기 일에 조금만 더 신경을 썼으면 좋겠어, 그럼 내가 걱정할 필요도 없을 거고…. 됐어, 나도 속 많이 썩였으니까 쌤쌤이지</div></li>
-<li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">와, 서벌 씨랑 페라! 오랜만이에요</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">지오반니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">단항의 인게임 대사</span></span><div class="ref-quote">서벌 씨, 페라 씨, 지금 소감이 어떠세요? 「우승 후보」라는 신분에는 좀 익숙해지셨나요?</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">지오반니의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">지오반니의 인게임 대사</span></span><div class="ref-quote">그럼 다들 모였으니——서벌 씨, 페라 씨. 우승 후보 두 분께서 도전자분들에게 이곳의 규칙을 설명해 줄 수 있을까요?</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">가자, {NICKNAME}——서벌 씨와 페라에게 도전하자고!</div></li>
-<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">던의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">던의 인게임 대사</span></span><div class="ref-quote">이번에야말로 내 로큰롤 스피릿을 증명해 보겠어…. 미안, 서벌!</div></li>
-<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「대체 불가 아이돌」</span></span><div class="ref-quote">서벌 씨의 전략이 이거였어요?!</div></li>
-<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">나중에 브로냐가 수호자가 되면 내가 골든 극장의 무대에서 공연할 수 있게 도와주지 않을까? 로큰롤 버전의 ≪수호자≫… 로큰롤 오페라로 각색해 줄 텐데!</div></li>
-<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">작별</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">끝났다, 이제 작곡해야지~</div></li></ol></details>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">고민</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">가끔 사람들이 기계공방을 쉬면 어떻게 돈을 버냐고 묻더라, 그 대답은 뻔하잖아——안 버는 거지, 뭐</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">공유</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">기계든, 과학 연구든, 음악이든, 다 수준급인 거 같은데? 음, 그러니까… 내가 잘 못하는 건 「돈 버는 일」밖에 없지 않을까?</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">서벌의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">서벌의 인게임 대사</span></span><div class="ref-quote">서벌 기계공방이 첫 조수를 맞이한 걸 축하하기 위해——여러분께 한 곡 뽑아드리겠습니다! 자, 페라, 네 드럼도 꺼내——</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">잡담•밴드</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">페라는 엄청 바빠, 주말엔 가끔 자원봉사를 가거든. 그래서 「매커니컬 웨이브」는 보통 밤에 연습하는 편이야</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">서벌이 말한 장소에 와보니, 밴드와 관련된 것은 전혀 없고, 길가의 쓰레기통들이 눈에 들어온다. 색이 선명하고 각이 살아있다</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">파티 편성•페라</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">평소랑 똑같아, 페라. 우리 공연처럼——네 리듬에 맞출게!</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">던의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">던의 인게임 대사</span></span><div class="ref-quote">그뿐만이 아니죠! 서벌은 밴드 멤버들과 연주하는 자신도 즐거워야 한다고 했어요!</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">견문</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">나중에 브로냐가 수호자가 되면 내가 골든 극장의 무대에서 공연할 수 있게 도와주지 않을까? 로큰롤 버전의 ≪수호자≫… 로큰롤 오페라로 각색해 줄 텐데!</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">보세요, 서벌 씨가 개조한 열에너지 전달 기능이 있으면 접촉할 수 없는 등불까지 밝힐 수 있어요</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">수수께끼 풀이 성공•2</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">해체해서 연구해 보고 싶은걸!</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">너무 신경 쓰지 마세요. 서벌 씨가 요즘 아재 개그에 빠졌거든요. 서벌 씨가 얼마 전 눈밭에서 고장 난 기갑병을 발견했는데, 바퀴가 궤도와 마찰하면서 나는 소리가 기타 연주 소리처럼 아주 좋았대요</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">Mar. 7th의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Mar. 7th의 인게임 대사</span></span><div class="ref-quote">그러고 보니, 서벌 씨는 우리보다 에테르 정령에 대해 더 잘 알고 있는 거 같던데——이 녀석한테 무슨 문제가 있는 건지 알고 있나요?</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">게파드에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">동생이 자기 일에 조금만 더 신경을 썼으면 좋겠어, 그럼 내가 걱정할 필요도 없을 거고…. 됐어, 나도 속 많이 썩였으니까 쌤쌤이지</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">파티 편성•게파드</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">동생아, 공 세울 기회를 다 빼앗진 말라고!</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">파티 편성•링스</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">링스! 준비됐어? Let&#x27;s rock and roll!</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">링스에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">우리 링스는… 역시 날 더 닮았어. 어? 이건 게파드한테 말하지 마~ 이런 말 싫어하거든!</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">자신에 대해•랜도</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">랜도 가문 사람들 사이에 공통점이 있다면, 다들 나름의 고집이 있다는 점이겠지</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">쿠쿠리아에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">내가 아는 쿠쿠리아는 내 노랠 들으려고 지붕까지 올라가는 사람이었어, 근데… 「수호자」는 안 그래</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">브로냐에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">브로냐는 착한 아이야, 역시 쿠쿠리아가 키워낸 아이답다니까. 요즘은 자주 못 만났어, 좀 보고 싶긴 하네</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">파티 편성•브로냐</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">넌 네 어머니보다 더 멀리 나아갈 수 있을 거야, 브로냐</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">페라에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">드럼에, 꽃도 키울 줄 알고, 보고서도 잘 쓰지. 이 세상에서 페라보다 더 믿음직한 아가씨가 있을까?</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">서벌 씨만큼은 아니지만 저도 보이는걸요. 대화할 때의 표정, 말투, 평소의 옷차림… 그리고 이상한 제스처로 알 수 있어요</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">삼포에 대해</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">그 녀석? 게파드가 언제 체포할지 두고 보는 중이야</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">클라라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">클라라의 인게임 대사</span></span><div class="ref-quote">제 뒤에 있는 상점이 바로 벨로보그의 유명한 기계공방 「영원한 겨울」이에요. 공방 주인은 재능 있는 엔지니어, 저희의 록스타이자 기타 보컬인——서벌 언니죠</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">애쉬베일의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">애쉬베일의 인게임 대사</span></span><div class="ref-quote">「모구라파」의 우두머리 후크에게 도전하려면 먼저 그 애의 왼팔과 오른팔——「에소•S•클라라」와 「멜로디 데빌•서벌」을 물리쳐야 해</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">후크의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">후크의 인게임 대사</span></span><div class="ref-quote">마지막 책임자 「멜로디 데빌•서벌」을 찾아가 봐. 그녀를 꺾고 나면 내게 질문하는 걸 허락할게</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">페라의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">페라의 인게임 대사</span></span><div class="ref-quote">——제발 부탁드려요, 빨리 서벌 님을 꺾고 이 불쌍한 동인녀를 구해주세요!</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">애쉬베일의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">애쉬베일의 인게임 대사</span></span><div class="ref-quote">「서벌」이라… 기와에 맺힌 이슬처럼 희망차고도 아름다운 이름이네!</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">성혼 활성화</span> <span class="ref-source">공식 HoYoWiki — 음성 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/16?lang=ko-kr">원문</a></span><div class="ref-quote">「로큰롤」을 제외하고, 온전히 나만의 것이 있을까……</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>인물 · 야릴로-Ⅵ·벨로보그</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>인물</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 음성, 공식 HoYoWiki — 이야기</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
@@ -766,12 +703,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="char-16">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%84%9C%EB%B2%8C&amp;body=%EC%84%9C%EB%B2%8C+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fchar-16.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>시릴 · hoyohoyo.wiki</title>
-  <meta name="description" content="시릴은 열계에서 만나는 신비한 소녀이자 벨로보그의 제8대 수호자 시릴 랜드다. 그녀의 비극은 언니 시릴라의 부재, 스테판의 약속과 고립, 「우인」으로 남은 수호자의 죽음이 겹치며 형성된다.">
+  <meta name="description" content="시릴은 열계에서 우연히 만나는 신비한 소녀이며, 이야기가 진행되며 벨로보그 제8대 수호자 시릴·랜드와 같은 인물임이 드러난다. 기록에 따르면 그녀는 정밀하게 설계된 사기극 아래 자신의 백성들에게 목숨을 빼앗겼고, 「우인」이라는 이름으로 벨로보그 역사에 남았다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="시릴 · hoyohoyo.wiki">
-  <meta property="og:description" content="시릴은 열계에서 만나는 신비한 소녀이자 벨로보그의 제8대 수호자 시릴 랜드다. 그녀의 비극은 언니 시릴라의 부재, 스테판의 약속과 고립, 「우인」으로 남은 수호자의 죽음이 겹치며 형성된다.">
+  <meta property="og:description" content="시릴은 열계에서 우연히 만나는 신비한 소녀이며, 이야기가 진행되며 벨로보그 제8대 수호자 시릴·랜드와 같은 인물임이 드러난다. 기록에 따르면 그녀는 정밀하게 설계된 사기극 아래 자신의 백성들에게 목숨을 빼앗겼고, 「우인」이라는 이름으로 벨로보그 역사에 남았다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/entry-493.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/entry-493.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,156 +620,123 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html" aria-current="page"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html" aria-current="page"><span>제도·조직 원리</span></a>
-<a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html" aria-current="page"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
+<a class="category-nav-child" href="category-concepts-technology.html" aria-current="page"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-systems.html">제도·조직 원리</a><span>시릴</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%8B%9C%EB%A6%B4&amp;page_slug=entry-493">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>시릴</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">제도·조직 원리</span></div></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-technology.html">기술·현상</a><span>시릴</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%8B%9C%EB%A6%B4&amp;page_slug=entry-493">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>시릴</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">기술·현상</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>시릴은 <a class="wiki-link" href="fragmentum.html" title="열계">열계</a>에서 우연히 만나는 신비한 소녀이며, 처음에는 갇힌 아이처럼 보이지만 뒤로 갈수록 벨로보그의 제8대 수호자 시릴 랜드와 같은 인물임이 드러난다. <sup class="cite-ref" title="공식 HoYoWiki · 시릴"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>그녀의 이야기는 “나갈 수 없는 곳”에 붙잡힌 소녀의 구출담으로 시작해, 「우인」이라는 이름으로 남은 수호자의 비극을 다시 확인하는 과정으로 이어진다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>시릴의 핵심 축은 언니 시릴라의 부재와 스테판의 영향이다. 시릴은 어린 시절부터 언니와 비교되었고, 스테판은 그 결핍을 파고들어 그녀에게 특별한 미래와 완벽한 삶을 약속했다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>처음 만나는 시릴은 자신을 예의 바르게 소개하지만, 자기 상황을 또렷하게 설명하기보다는 “언니”와 “그”에게 기대어 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<p>시릴은 언니가 똑똑해서 더 잘 설명해 줄 것이라고 말하고, 언니가 자신을 지켜줄 것이라고 믿는다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
-<p>동시에 시릴은 모두가 언니만 좋아한다고 느끼며, 오직 “그”만이 자신과 놀아주고 자신을 특별하게 여긴다고 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>이 말들은 시릴이 단순히 겁먹은 아이가 아니라, 인정받지 못한다는 감각과 누군가에게 선택받고 싶다는 욕망 사이에 놓여 있음을 보여 준다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>시릴에게 “그”는 아주 중요한 사람이며, 시릴은 그가 자신이 원하는 삶을 살게 해주겠다고 약속했다고 믿는다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>그래서 시릴의 탈출 욕망은 단순히 장소를 벗어나는 문제가 아니라, 자신을 특별하다고 말해 준 사람에게 돌아가고 싶은 마음과 붙어 있다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
-<p>시릴은 왜 자신이 나갈 수 없는지 알지 못하고, 자신을 옥죄는 무언가가 계속 나타난다고 느낀다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>시릴은 자신이 무엇을 잘못했는지 묻고, 잘못을 했다면 사과해야 한다고 배웠지만 누구에게 사과해야 하는지도 알지 못한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p>이 장면에서 시릴의 비극은 죄책감이 아니라 죄의 내용을 모르는 상태에서 시작된다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
-<p><a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 시릴을 데리고 그곳을 떠나야 한다고 판단하고 손을 뻗지만, 어떤 힘이 시릴을 데려가는 일을 막는다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>그 힘은 “시도를 멈추라”는 경고처럼 나타나며, 시릴을 붙잡은 열계의 현상이 단순한 환영보다 더 강한 저항을 가진 사건임을 드러낸다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>시릴은 한 번만 더 반복하면 이곳에서 나갈 수 있을지도 모른다고 말하고, 나중에는 정말 자신을 데리고 나갈 수 있느냐고 묻는다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
-<p>반복과 구출의 말이 함께 놓이면서, 시릴은 자기 힘으로 빠져나오지 못하는 존재이자 외부의 개입을 기다리는 존재로 그려진다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>시릴은 끝내 자신이라는 이름을 기억에서 지워 달라고 부탁하고, 자신과 만난 적이 없다고 생각해 달라고 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup></p>
-<p>개척자는 시릴이 모든 것을 잊고 자신이 피해받는 것을 원하지 않는다고 받아들이며, 시릴의 마지막 태도는 탈출을 바라는 마음과 타인을 끌어들이지 않으려는 마음이 함께 있었음을 보여 준다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
+<p>시릴은 <a class="wiki-link" href="fragmentum.html" title="열계">열계</a>에서 우연히 만나는 신비한 소녀이며, 이야기가 진행되며 벨로보그 제8대 수호자 시릴·랜드와 같은 인물임이 드러난다. <sup class="cite-ref" title="공식 HoYoWiki · 시릴"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 기록에 따르면 그녀는 정밀하게 설계된 사기극 아래 자신의 백성들에게 목숨을 빼앗겼고, 「우인」이라는 이름으로 벨로보그 역사에 남았다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>그녀의 이야기는 나갈 수 없는 곳에 갇힌 소녀를 구하려는 시도로 시작해, 벨로보그의 공식 기록 속 수호자의 죽음을 다시 확인하는 과정으로 이어진다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<h2 id="작중-행적">작중 행적</h2>
+<p><a class="wiki-link" href="trailblazer.html" title="개척자">개척자</a>는 열계에서 시릴을 처음 만난다. 시릴은 예의 바르게 자기소개를 하지만, 자신의 상황을 설명할 때는 줄곧 &quot;언니&quot;와 &quot;그&quot;에게 기대어 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
+<p>그녀는 &quot;다들 언니만 좋아해요…. 오직 그만 시릴이랑 놀아줘요&quot;라고 말한다. 언니가 자신을 지켜줄 것이라 믿으면서도, 자신을 특별하게 여기는 사람은 &quot;그&quot;뿐이라고 느낀다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>시릴은 왜 자신이 나갈 수 없는지 알지 못한 채, 자신을 옥죄는 무언가가 계속 나타난다고 말한다. 무엇을 잘못했는지 묻지만, 사과해야 할 대상조차 알지 못한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>개척자가 시릴의 손을 잡아 그곳을 떠나려 하자, 어떤 힘이 이를 막아선다. 그 힘은 &quot;시도를 멈추어라, 그렇지 않으면 더 큰 고난이 기다리고 있을 것&quot;이라는 경고와 함께 나타난다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
+<p>시릴은 한 번만 더 반복하면 나갈 수 있을지도 모른다고 말하고, 이어 정말로 자신을 데리고 나갈 수 있느냐고 묻는다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<p>시릴은 끝내 자신의 이름을 기억에서 지워 달라고 부탁하며, 서로 만난 적이 없다고 생각해 달라고 말한다. 개척자는 시릴이 그로 인해 피해받는 것을 원하지 않는다고 받아들이고 이를 따른다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
+<p><a class="wiki-link" href="char-21.html" title="삼포">삼포</a>는 변방 통로에서 시릴을 만난 이야기를 전해 듣고, 그 존재가 열계가 만들어 낸 환상일 수 있다고 본다. 개척자는 그러나 시릴의 말투가 너무 생생해 단순한 착시로 받아들이지 못한다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup></p>
+<p>이야기가 던에게도 전해지자, 던은 철위대의 현역·퇴직자 명단 어디에서도 스테판의 이름을 찾지 못한다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-24" data-cite-popover data-ref-target="ref-24" aria-label="각주 24 내용 보기" aria-expanded="false">24</a></sup> <sup class="cite-ref" title="게임 본편 · 던의 언급 · 던의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup></p>
+<p>그때 &quot;수호자의 그림자&quot;가 나타나 &quot;스테판 씨가 떠났어요… 모두가 떠나버렸어요&quot;라고 말한다. 던이 &quot;시릴, 너야?&quot;라고 묻자, 그림자는 &quot;저는 시릴, 벨로보그의 수호자입니다&quot;라고 답한다. <sup class="cite-ref" title="게임 본편 · 수호자의 그림자의 언급 · 수호자의 그림자의 인게임 대사"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<p>시릴은 &quot;이렇게 높은 곳에 어울리지 않는다는 걸 알아요. 언니가 이유도 없이 떠나지만 않았더라면 이 길을 걷지도 못했겠죠&quot;라고 말하고, 스테판을 &quot;제 선생님이자 절친&quot;이라 부르며 그에게서 수많은 조언과 고난을 이겨낼 도움을 받았다고 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
+<p>그녀는 마지막으로 &quot;죄송해요, 스테판 씨… 저는… 당신이 찾는 사람이…&quot;라는 말을 남기고, 잔향은 칼바람의 포효에 섞여 사라진다. <sup class="cite-ref" title="게임 본편 · 시릴의 잔향의 언급 · 시릴의 잔향의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
+<p>개척자는 시릴의 유품을 줍고도 그녀가 정말 수호자였다는 사실을 믿기 어려워하며, 상층 구역으로 돌아가 시릴이 수호자였던 시절을 아는 사람을 찾는다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
+<p><a class="wiki-link" href="npc-835.html" title="마냐">마냐</a>는 &quot;「우인」 시릴&quot;을 알아보고, 벨로보그 역사 자료와 재무부의 홍보 책자에서 관련 기록을 찾을 수 있다고 알려 준다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> <sup class="cite-ref" title="게임 본편 · 마냐의 언급 · 마냐의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <sup class="cite-ref" title="게임 본편 · 마냐의 언급 · 마냐의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
+<p>훗날 개척자는 「우인 시릴」 초상화의 설명이 사실과 다르다는 것을 <a class="wiki-link" href="npc-1009.html" title="울단">울단</a>에게 전한다. 울단은 개척자가 이미 시릴에 대해 들어 본 적이 있음을 알아챈다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> <sup class="cite-ref" title="게임 본편 · 울단의 언급 · 울단의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup> <sup class="cite-ref" title="게임 본편 · 울단의 언급 · 울단의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup></p>
 <h2 id="시릴라와-스테판">시릴라와 스테판</h2>
-<p>시릴이 반복해서 말하는 “언니”는 시릴라다. 오래된 편지는 시릴라를 시릴의 언니라고 부르며, 그녀의 행방을 10년 넘게 찾지 못했다고 적는다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>시릴에게 시릴라는 보호자이자 비교 대상이었다. 시릴은 언니가 자신을 지켜줄 것이라고 믿고, 모두가 예쁘고 똑똑한 언니만 좋아한다고 느낀다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>오래된 일기는 시릴이 언니가 먼 곳으로 끌려가 더는 보지 못할지도 모른다는 소식을 듣고 두려워했음을 보여 준다. 이때 스테판은 시릴에게 언니에게 뒤처지지 않으며 가장 완벽한 삶을 누릴 수 있다고 말한다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
-<p>스테판은 처음에는 언니를 만나기 위해 집에 온 사람처럼 보였지만, 다른 어른들과 달리 시릴을 공기처럼 대하지 않고 웃어 주고 사탕을 주며 칭찬했다. 그는 시릴에게 일기를 쓰게 하고, 외로우면 그 일기를 자신에게 들려달라고 했다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-26" data-cite-popover data-ref-target="ref-26" aria-label="각주 26 내용 보기" aria-expanded="false">26</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-27" data-cite-popover data-ref-target="ref-27" aria-label="각주 27 내용 보기" aria-expanded="false">27</a></sup></p>
-<p>이 관계는 애정처럼 보이지만, 실제로는 시릴의 판단을 스테판에게 묶어 두는 방식으로 작동한다. 스테판은 시릴에게 푸른색 돌멩이를 약속의 증표로 주고, 그녀를 더 넓고 편한 곳으로 데려가 자유롭게 살게 해주겠다고 약속한다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-28" data-cite-popover data-ref-target="ref-28" aria-label="각주 28 내용 보기" aria-expanded="false">28</a></sup></p>
-<p>성인이 된 시릴의 잔향도 그 영향에서 벗어나지 못한다. 그녀는 어려운 결정을 혼자 할 필요가 없고 중요한 자리에는 스테판이 있을 것이라 믿으며, 기다리기만 하면 된다고 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-29" data-cite-popover data-ref-target="ref-29" aria-label="각주 29 내용 보기" aria-expanded="false">29</a></sup></p>
-<p>시릴이 기억을 되찾는 장면에서 사람들은 그녀에게 불평과 욕설을 퍼붓고, 그 옆에는 스테판이 있다. 언니는 오지 않았고, 스테판은 시릴의 손을 잡고 모든 게 괜찮아질 것이라고 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-30" data-cite-popover data-ref-target="ref-30" aria-label="각주 30 내용 보기" aria-expanded="false">30</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-31" data-cite-popover data-ref-target="ref-31" aria-label="각주 31 내용 보기" aria-expanded="false">31</a></sup></p>
-<p>오래된 편지에서 스테판은 반대와 비난을 “잡음”으로 치부하고, 자신만 믿으면 된다고 말한다. 또한 시릴에게 시릴라 같은 천재도 갖지 못한 특별한 자질이 있다고 하며, 거짓을 일삼는 기회주의자들이 그녀를 제어하려 할 것이라고 경고한다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p>던이 철위대와 퇴직자 명단에서 스테판의 이름을 찾지 못했다는 점은, 스테판이 시릴의 공적 권력 구조 안에서 확인되는 보호자가 아니라 시릴의 기억과 편지 속에서 더 강하게 남은 조종자였음을 보여 준다. <sup class="cite-ref" title="게임 본편 · 던의 언급 · 던의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>시릴의 정체는 길 잃은 소녀에 머물지 않는다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>그녀는 스스로 “벨로보그의 수호자”라고 말하며, 기록에서는 제8대 수호자 시릴 랜드의 초상화와 「우인」 시릴이라는 이름으로 남아 있다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>초상화의 캡션에 따르면 시릴은 평범한 유년기를 보냈고, 계속된 우연으로 선택받아 수호자 후보가 되었다. 시릴 자신도 언니가 이유 없이 떠나지 않았다면 자신은 그 길을 걷지 못했을 것이라고 말한다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
-<p>이 기록은 시릴의 권력이 준비된 능력이나 확고한 지지보다 “우연”과 언니의 부재 위에 놓였다는 인상을 남기며, 뒤이은 몰락의 불안한 바탕이 된다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-35" data-cite-popover data-ref-target="ref-35" aria-label="각주 35 내용 보기" aria-expanded="false">35</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup></p>
-<p>시릴의 최후는 백성들이 우발적으로 분노한 사건만으로 정리되지 않는다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
-<p>기록은 오랫동안 쌓인 불씨가 눈보라 속에서 폭발했고, 정밀하게 설계된 사기극 아래 시릴이 자신의 백성들에게 목숨을 빼앗겼다고 남긴다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup></p>
-<p>따라서 「우인」이라는 이름은 단순히 무능한 통치자를 가리키는 별명으로만 읽히지 않고, 스테판의 조언과 고립 속에서 백성의 손에 죽도록 몰린 수호자의 낙인으로도 작동한다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-32" data-cite-popover data-ref-target="ref-32" aria-label="각주 32 내용 보기" aria-expanded="false">32</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p>시릴의 죽음 이후에도 사건은 끝나지 않는다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>훗날 별하늘에서 온 여행자가 단서를 찾았고, 시릴의 메아리는 산산조각 난 열계 공간에 흩어지지 않은 채 계속 떠돌고 있었다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>방황하던 영혼은 그 여행자가 안식처를 찾아준 뒤에야 마침내 쓸쓸한 인생에 종지부를 찍는다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>시릴의 작중 위상은 전투력보다 역사와 기억에 놓여 있으며, 확인되는 중심은 강한 적과의 승패가 아니라 수호자의 자리, 조작된 죽음, 열계에 남은 잔향이다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></p>
-<p>개척자는 자신이 알던 그 시릴이 맞는지 의심하고, 그녀가 수호자였다는 사실을 믿기 어렵다고 느낀다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-39" data-cite-popover data-ref-target="ref-39" aria-label="각주 39 내용 보기" aria-expanded="false">39</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
-<p>이 반응은 플레이어가 처음 만난 아이의 인상과 역사 속 수호자의 이름 사이에 큰 간극이 있음을 보여 준다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>시릴라와 스테판은 시릴의 자기 인식을 나누어 보여 주는 관계다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>시릴라는 시릴이 닿지 못한다고 느끼는 똑똑함과 사랑받는 자리를 상징하고, 스테판은 시릴을 특별하다고 말하며 원하는 삶을 약속한 사람으로 남는다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>이 두 관계가 함께 놓이면서 시릴은 보호받는 아이이면서도 인정에 굶주린 인물로 보인다. 동시에 스테판의 조언은 그녀가 다른 사람의 비판과 접근을 믿지 못하게 만드는 장치로도 작동한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-33" data-cite-popover data-ref-target="ref-33" aria-label="각주 33 내용 보기" aria-expanded="false">33</a></sup></p>
-<p><a class="wiki-link" href="char-21.html" title="삼포">삼포</a>는 변방 통로에서 시릴을 만난 일을 들은 뒤, 그 존재가 열계에서 만들어진 환상일 수 있다고 본다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
-<p>개척자는 시릴의 말투가 너무 생생하다고 느끼며, 이 만남을 단순한 착시로만 받아들이지 못한다. <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
-<p>던에게도 시릴의 이야기가 전해지고, “시릴, 너야? ”라는 반응이 이어진다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
-<p>삼포와 던을 거치는 흐름은 시릴의 존재가 열계의 현상, 개인의 기억, 벨로보그의 역사 사이를 오가는 사건임을 보여 준다. 특히 던이 스테판의 이름을 철위대 명단에서 찾지 못하는 대목은 시릴의 기억 속 스테판이 공적 기록으로 쉽게 확인되는 인물이 아님을 남긴다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-41" data-cite-popover data-ref-target="ref-41" aria-label="각주 41 내용 보기" aria-expanded="false">41</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup> <sup class="cite-ref" title="게임 본편 · 던의 언급 · 던의 인게임 대사"><a href="#ref-34" data-cite-popover data-ref-target="ref-34" aria-label="각주 34 내용 보기" aria-expanded="false">34</a></sup></p>
-<p><a class="wiki-link" href="npc-1009.html" title="울단">울단</a>은 「우인 시릴」 초상화의 설명이 사실과 다르다는 말을 듣고, 개척자가 시릴에 대해 확실히 들어본 적이 있음을 짚는다. <sup class="cite-ref" title="게임 본편 · 울단의 언급 · 울단의 인게임 대사"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> <sup class="cite-ref" title="게임 본편 · 울단의 언급 · 울단의 인게임 대사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup></p>
-<p>초상화는 시릴을 공식 역사 속 인물로 고정하지만, 개척자가 열계에서 만난 시릴은 그 설명만으로 닫히지 않는 목소리를 남긴다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup> <sup class="cite-ref" title="게임 본편 · 울단의 언급 · 울단의 인게임 대사"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> <sup class="cite-ref" title="게임 본편 · 울단의 언급 · 울단의 인게임 대사"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p><a class="wiki-link" href="npc-835.html" title="마냐">마냐</a>는 시릴을 「우인」 시릴로 알아보고, 벨로보그 역사 자료와 재무부의 홍보 책자를 통해 관련 기록을 찾을 수 있다고 말한다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup> <sup class="cite-ref" title="게임 본편 · 마냐의 언급 · 마냐의 인게임 대사"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup> <sup class="cite-ref" title="게임 본편 · 마냐의 언급 · 마냐의 인게임 대사"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup></p>
-<p>개척자는 시릴의 유품을 줍고, 상층 구역으로 돌아가 시릴이 수호자였던 시절을 아는 사람을 찾으려 한다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup></p>
-<p>유품과 홍보 책자는 시릴의 이야기를 개인적인 조우에서 벨로보그의 공적 기억으로 옮기지만, 그 공적 기억은 「우인」이라는 이름으로 이미 한 번 단순화되어 있다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup> <sup class="cite-ref" title="게임 본편 · 마냐의 언급 · 마냐의 인게임 대사"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup></p>
-<h2 id="갇힌-소녀와-우인-의-이름">갇힌 소녀와 「우인」의 이름</h2>
-<p>시릴의 핵심은 권력을 가진 수호자였다는 사실과, 자기 처지를 이해하지 못한 채 갇혀 있던 소녀의 모습이 같은 인물 안에 겹친다는 점이다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>그녀는 벨로보그의 수호자였지만, 열계에서 만나는 시릴은 왜 나갈 수 없는지 모르고 누구에게 사과해야 하는지도 모른다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
-<p>이 대비 때문에 시릴의 비극은 “어리석은 통치자”라는 평가보다 더 복잡해진다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>기록은 그녀가 정밀하게 설계된 사기극 아래 백성들에게 살해되었다고 남기고, 열계의 시릴은 자신을 옥죄는 힘과 탈출할 수 없는 상황만을 체감한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-37" data-cite-popover data-ref-target="ref-37" aria-label="각주 37 내용 보기" aria-expanded="false">37</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></p>
-<p>그 사기극의 구체적인 감정 구조는 시릴라와 스테판을 통해 보인다. 시릴라는 사라진 보호자이자 비교 대상이고, 스테판은 그 빈자리에 들어와 시릴에게 완벽한 삶과 특별한 자질을 말해 준 사람이다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
-<p>수호자의 그림자로 남은 시릴은 스테판과 모두가 떠났다고 말하고, 마지막 잔향에서는 스테판이 찾던 사람이 자신이 아니었다는 말끝을 남긴다. <sup class="cite-ref" title="게임 본편 · 수호자의 그림자의 언급 · 수호자의 그림자의 인게임 대사"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 잔향의 언급 · 시릴의 잔향의 인게임 대사"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup></p>
-<p>시릴을 둘러싼 이야기는 벨로보그가 한 수호자를 어떻게 기억하는지, 그리고 그 기억 밖에 남은 목소리가 어떻게 다시 돌아오는지를 보여 준다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>별하늘에서 온 여행자가 시릴의 메아리에 안식처를 찾아주는 결말은 한 소녀를 데리고 나가는 데서 끝나지 않고, 「우인」이라는 이름 아래 방황하던 수호자의 생애를 마침내 닫는 사건이 된다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">시릴</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/493?lang=ko-kr">원문</a></span><div class="ref-quote">열계에서 시릴이라는 신비한 소녀와 우연히 만난다. 그녀의 이야기가 곧 밝혀지는데…</div></li>
+<p>시릴이 거듭 언급하는 &quot;언니&quot;는 시릴라다. 오래된 편지는 시릴라를 시릴의 언니라 부르며, 10년 넘게 그녀의 행방을 찾지 못했다고 적는다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></p>
+<p>시릴에게 시릴라는 보호자이자 비교 대상이었다. 그녀는 언니가 자신을 지켜줄 것이라 믿으면서도, 모두가 예쁘고 똑똑한 언니만 좋아한다고 느꼈다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
+<p>스테판은 반년 전 처음 시릴의 집을 찾아왔다. 시릴은 처음에는 그가 언니를 만나러 온 사람이라 생각했지만, 다른 어른들과 달리 그는 그녀를 공기처럼 대하지 않고 웃어 주며 사탕을 주고 칭찬했다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-43" data-cite-popover data-ref-target="ref-43" aria-label="각주 43 내용 보기" aria-expanded="false">43</a></sup></p>
+<p>그는 시릴에게 일기를 쓰게 하고, 외로울 때는 그 일기를 자신에게 들려달라고 했다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-44" data-cite-popover data-ref-target="ref-44" aria-label="각주 44 내용 보기" aria-expanded="false">44</a></sup></p>
+<p>언니가 먼 곳으로 끌려가 다시는 보지 못할 수도 있다는 이야기를 듣고 시릴이 두려워하자, 스테판은 그런 일은 없을 것이며 그녀도 언니에게 뒤처지지 않고 가장 완벽한 삶을 누릴 수 있다고 말했다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-45" data-cite-popover data-ref-target="ref-45" aria-label="각주 45 내용 보기" aria-expanded="false">45</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-46" data-cite-popover data-ref-target="ref-46" aria-label="각주 46 내용 보기" aria-expanded="false">46</a></sup></p>
+<p>그는 떠나기 전 푸른색 돌멩이를 약속의 증표로 건넸다. 시릴은 일기에 그 돌을 &quot;내가 본 것 중 가장 아름다웠다&quot;고 적었고, 스테판은 그녀를 더 넓고 편한 곳으로 데려가 자유롭게 살게 해주겠다고 약속했다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-47" data-cite-popover data-ref-target="ref-47" aria-label="각주 47 내용 보기" aria-expanded="false">47</a></sup></p>
+<p>오래된 편지에서 스테판은 반대와 비난을 &quot;잡음&quot;으로 치부하며 자신만 믿으면 된다고 말하고, 시릴라 같은 천재도 갖지 못한 특별한 자질이 그녀에게 있다고 말한다. 그는 자신이 없는 틈에 접근해 그녀를 통제하려는 &quot;기회주의자들&quot;을 조심하라고도 경고한다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-48" data-cite-popover data-ref-target="ref-48" aria-label="각주 48 내용 보기" aria-expanded="false">48</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-49" data-cite-popover data-ref-target="ref-49" aria-label="각주 49 내용 보기" aria-expanded="false">49</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-50" data-cite-popover data-ref-target="ref-50" aria-label="각주 50 내용 보기" aria-expanded="false">50</a></sup></p>
+<p>성인이 된 시릴의 잔향도 같은 믿음을 되풀이한다. 그녀는 어려운 결정을 혼자 할 필요가 없으며, 중요한 자리에는 늘 스테판이 있을 것이니 기다리기만 하면 된다고 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-51" data-cite-popover data-ref-target="ref-51" aria-label="각주 51 내용 보기" aria-expanded="false">51</a></sup></p>
+<p>시릴이 백성들에게 불평과 욕설을 듣는 순간에도 언니는 오지 않았고, 스테판이 곁에서 손을 잡고 모든 게 괜찮아질 것이라고 말한다. <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-52" data-cite-popover data-ref-target="ref-52" aria-label="각주 52 내용 보기" aria-expanded="false">52</a></sup> <sup class="cite-ref" title="게임 본편 · 시릴의 언급 · 시릴의 인게임 대사"><a href="#ref-53" data-cite-popover data-ref-target="ref-53" aria-label="각주 53 내용 보기" aria-expanded="false">53</a></sup></p>
+<h2 id="우인-의-기록">「우인」의 기록</h2>
+<p>제8대 수호자 시릴·랜드의 초상화 캡션은 그녀가 평범한 유년기를 보냈고, 거듭된 우연으로 선택받아 수호자 후보가 되었다고 적는다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-54" data-cite-popover data-ref-target="ref-54" aria-label="각주 54 내용 보기" aria-expanded="false">54</a></sup></p>
+<p>캡션은 이어 오랫동안 쌓인 불씨가 어느 눈보라 치는 밤 폭발했고, 정밀하게 설계된 사기극 아래 시릴이 자신의 백성들에게 목숨을 빼앗겼다고 전한다. 이후 그녀는 「우인」 시릴·랜드라는 이름으로 남았다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>캡션은 훗날 별하늘에서 온 여행자가 단서를 찾아, 산산조각 난 열계 공간에 흩어지지 않고 떠돌던 시릴의 메아리를 발견했다고 덧붙인다. 그 여행자가 안식처를 찾아준 뒤에야 방황하던 영혼은 쓸쓸한 생에 마침내 종지부를 찍었다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
+<p>수호자 「우인」 시릴에 관한 사료 원본은 이 초상화 캡션과 별도로 남아 있다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-55" data-cite-popover data-ref-target="ref-55" aria-label="각주 55 내용 보기" aria-expanded="false">55</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li>시릴라와 스테판은 시릴의 편지와 일기 속에 되풀이해 등장하는 두 인물이다. 시릴라의 행방은 스테판이 편지를 쓸 때까지도 확인되지 않았다. <sup class="cite-ref" title="게임 본편 · 작중 언급"><a href="#ref-42" data-cite-popover data-ref-target="ref-42" aria-label="각주 42 내용 보기" aria-expanded="false">42</a></sup></li>
+<li><a href="char-21.html">삼포</a>, <a href="npc-1009.html">울단</a>, <a href="npc-835.html">마냐</a>, <a href="fragmentum.html">열계</a> — <a href="char-21.html">삼포</a>, 던, <a href="npc-1009.html">울단</a>, <a href="npc-835.html">마냐</a>는 <a href="fragmentum.html">열계</a>에서 만난 시릴의 이야기가 벨로보그의 공식 기록과 이어지는 과정에 등장한다. <a href="char-21.html">삼포</a>는 시릴의 존재를 <a href="fragmentum.html">열계</a>의 환상으로 의심했고, 던은 스테판의 신원을 확인하려 했으며, <a href="npc-1009.html">울단</a>과 <a href="npc-835.html">마냐</a>는 「우인」 시릴에 관한 기록을 짚어 준다. <sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-22" data-cite-popover data-ref-target="ref-22" aria-label="각주 22 내용 보기" aria-expanded="false">22</a></sup> <sup class="cite-ref" title="게임 본편 · 작중 언급 · {NICKNAME}의 인게임 대사"><a href="#ref-23" data-cite-popover data-ref-target="ref-23" aria-label="각주 23 내용 보기" aria-expanded="false">23</a></sup> <sup class="cite-ref" title="게임 본편 · 던의 언급 · 던의 인게임 대사"><a href="#ref-25" data-cite-popover data-ref-target="ref-25" aria-label="각주 25 내용 보기" aria-expanded="false">25</a></sup> <sup class="cite-ref" title="게임 본편 · 울단의 언급 · 울단의 인게임 대사"><a href="#ref-40" data-cite-popover data-ref-target="ref-40" aria-label="각주 40 내용 보기" aria-expanded="false">40</a></sup> <sup class="cite-ref" title="게임 본편 · 마냐의 언급 · 마냐의 인게임 대사"><a href="#ref-36" data-cite-popover data-ref-target="ref-36" aria-label="각주 36 내용 보기" aria-expanded="false">36</a></sup> <sup class="cite-ref" title="게임 본편 · 마냐의 언급 · 마냐의 인게임 대사"><a href="#ref-38" data-cite-popover data-ref-target="ref-38" aria-label="각주 38 내용 보기" aria-expanded="false">38</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">시릴</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/493?lang=ko-kr">원문</a></span><div class="ref-quote">열계에서 시릴이라는 신비한 소녀와 우연히 만난다. 그녀의 이야기가 곧 밝혀지는데…</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">——저는 시릴, 벨로보그의 수호자입니다</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">제8대 수호자 시릴•랜드의 초상화이다. 작품 캡션에 이렇게 적혀 있다——</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">하지만… 왜? 왜 시릴은 나갈 수 없는 거죠…</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「그동안 쌓여온 불씨는 결국 적막이 감도는 어느 날 밤의 눈보라 속에서 폭발하고 말았다. 정밀하게 설계된 사기극 아래, 시릴은 자신의 백성들에게 목숨을 빼앗기게 된다」</div></li>
 <li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「——『우인』 시릴•랜드」</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「훗날 별하늘에서 온 여행자가 단서를 찾았다——시릴의 메아리는 산산조각 난 열계 공간에 흩어지지 않고 계속 떠돌고 있었던 것이다」</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「방황하는 영혼에게 안식처를 찾아준 {F#그녀}{M#그} 덕분에 시릴의 쓸쓸한 인생도 마침내 종지부를 찍게 되었다」</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">그 어른들이 언니를 엄청 먼 곳으로 데려가서 앞으로 언니를 못 볼 수도 있다고 했다. 난 겁이 났다. 언니는 항상 내 곁에서 날 보살펴주고 지켜줬는데, 언니가 옆에 없으면 난 다치고 지금보다 더 외로워질 것 같다.</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">스테판 씨가 절대 그런 일이 일어나게 두지 않겠다고 말했다. 「시릴은 언니한테 뒤쳐지지 않아요」, 「시릴도 가장 완벽한 삶을 누릴 수 있어요」라고 말해줬다.</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">하지만 전 당신에게서 특별한 점을 발견했어요——시릴라 같은 천재도 가지고 있지 않은 특별한 자질이었죠. 당신의 이런 유일무이한 재능을 발견했기 때문에 전 결심했습니다. 당신이 마땅히 누려야 할 아름다운 미래를 건설할 수 있도록 옆에서 돕겠다고요.</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">당신의 언니인 시릴라는——아쉽게도 그녀의 행방에 대한 단서는 전혀 찾지 못했어요. 당신이 그녀를 얼마나 중요하게 생각하는지 알고 있기에 최선을 다해 찾아봤지만, 10년이 넘도록 진전이 없었습니다.</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">참… 그는 예의 바른 아이라면 자기소개를 잊지 않는댔어요. 저는 시릴이라고 하고, 만나서 정말 기쁘고… 영광이에요</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">죄송해요. 시릴은 언니가 아니라서… 언니는 똑똑하니까 잘 설명해 줄 거예요</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">걱정 마요. 그가 없어도 언니가 있거든요. 언니도 시릴을 지켜줄 거예요</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">그… 그는 시릴에게 아주 중요한 사람이에요</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">다들 언니만 좋아해요…. 그럴 만하지, 언니는 예쁘고 똑똑하니까. 오직 그만 시릴이랑 놀아줘요…. 그는 시릴이 특별하다고 생각하거든요</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">없애버리고 싶고, 여길 떠나고 싶어요…. 그를 보러 가고 싶어요. 그는 시릴이 원하는 삶을 살게 해주겠다고 약속했어요</div></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">날 옥죄고 있는 게 자꾸 나타나요…. 그들은 내가 벗어나는 걸 원하지 않기 때문이죠. 제가 무슨 잘못을 한 걸까요? 그는 잘못을 했다면 사과해야 한다고 했어요…. 하지만 시릴은 누구에게 사과해야 할까요?</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">난 널 데리고 여길 떠나야 해, 시릴</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">(시릴의 손을 잡기 위해 손을 뻗는다)</div></li>
-<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">어떠한 힘이 시릴을 데려가는 것을 막고 있다…. 이 모든 현상은 한 가지를 말하고 있다. 시도를 멈추어라, 그렇지 않으면 더 큰 고난이 기다리고 있을 것이다</div></li>
-<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">고마워요, {F#언니}{M#오빠}. 한 번만 더 반복하면… 시릴은 이곳에서 나갈 수 있을지도 몰라요</div></li>
-<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">…정말요? 시릴을 데리고 나갈 수 있어요?</div></li>
-<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">죄송해요, 전… 괜찮다면 시릴이라는 이름을 기억에서 지워주실 수 있을까요? 그냥… 저희가 만난 적이 없다고 생각해주세요</div></li>
-<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(시릴이 모든 걸 잊고, 내가 피해받는 걸 원하지 않는다고 하니…)</div></li>
-<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">스테판 씨가 처음 우리 집에 왔을 때는 반년 전이었다. 난 처음에는 그가 자칭 「축성가」라고 하는 사람들처럼 이곳에 온 이유는 언니를 만나기 위해서일뿐이라 생각했다. 하지만 그는 다른 어른들과는 달리 날 공기처럼 취급하지 않았고, 항상 날 보며 웃어주고 사탕도 많이 주었다.</div></li>
-<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">내가 일기를 쓴 것도 스테판 씨 때문이다. 그는 일기를 쓰는 건 숙녀라면 지켜야 할 좋은 습관이라고 했다. 그는 일기 쓰기는 외로운 일이라며, 외로운 게 무서우면 일기를 그에게 들려달라고 했다.</div></li>
-<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">스테판 씨는 떠나기 전 나에게 푸른색 돌멩이를 건네줬다. 그 돌멩이는 아주 작았지만 예쁘고 매끄러웠고 내가 본 것 중 가장 아름다웠다. 스테판 씨는 이 선물이 우리 둘 사이의 약속의 증표라고 했다. 그는 날 이곳에서 데리고 나가 더 넓고 편한 곳에서 자유롭게 살 수 있게 해준다고 약속했다.</div></li>
-<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">스테판 씨가 말했어요, 저 혼자 어려운 결정을 할 필요가 없다고요. 아주 중요한 자리에는… 그가 꼭 있을 거라고 말했어요. 그래서… 저는 기다리기만 하면 돼요</div></li>
-<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">스테판 씨가 있어요, 바로 제 옆에요. 언니는 오지 않았어요…. 언니가 있었으면 좋겠어요</div></li>
-<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">하지만 스테판 씨가 제 손을 잡아줬어요. 그는 웃고 있어요, 늘 제게 미소를 지으시죠…. 모든 게 괜찮아질 테니 걱정 말라고 하셨어요</div></li>
-<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">긴장되는 거 잘 알아요. 시릴. 하지만 제가 옛날에 해준 조언을 잊지 않았으면 해요. 「실체 없는 위협에 겁먹지 말 것」. 확고한 의지로 제 의견에 따라준다면 모든 반대와 비난은 일시적인 잡음에 불과할 거예요——우리의 계획이 막바지에 달하면 이런 잡음들도 결국 당신과 제가 써 내려갈 역사 속으로 사라질 거예요.</div></li>
-<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">당신 곁에서 거짓을 일삼는 기회주의자들을 절대 믿지 마세요. 제가 없는 틈을 타서 분명 수단과 방법을 가리지 않고 당신에게 접근해 당신을 제어하려고 할 거예요. 견고한 방어막을 구축하고 모든 나쁜 의도가 섞인 잡음은 거르세요. 이것만 기억해요, 시릴——저만 믿으면 돼요, 전 절대 당신에게 거짓말을 하지 않아요.</div></li>
-<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">던의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">던의 인게임 대사</span></span><div class="ref-quote">아, 참——「스테판」이라는 이름도 찾아봤지만, 부대 명단에는 기록이 없어요. 현재 퇴직한 철위 명단도 마찬가지고요</div></li>
-<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「평범하기 그지없는 유년기를 보낸 시릴은 계속된 우연으로 인하여 선택을 받고 수호자의 후보가 되었다」</div></li>
-<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">이렇게 높은 곳에 어울리지 않는다는 걸 알아요. 언니가 이유도 없이 떠나지만 않았더라면… 이 길을 걷지도 못했겠죠</div></li>
-<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「그동안 쌓여온 불씨는 결국 적막이 감도는 어느 날 밤의 눈보라 속에서 폭발하고 말았다. 정밀하게 설계된 사기극 아래, 시릴은 자신의 백성들에게 목숨을 빼앗기게 된다」</div></li>
-<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴의 잔향이 칼바람의 포효에 섞여 사라진다</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">하지만… 왜? 왜 시릴은 나갈 수 없는 거죠…</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「훗날 별하늘에서 온 여행자가 단서를 찾았다——시릴의 메아리는 산산조각 난 열계 공간에 흩어지지 않고 계속 떠돌고 있었던 것이다」</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「방황하는 영혼에게 안식처를 찾아준 {F#그녀}{M#그} 덕분에 시릴의 쓸쓸한 인생도 마침내 종지부를 찍게 되었다」</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">참… 그는 예의 바른 아이라면 자기소개를 잊지 않는댔어요. 저는 시릴이라고 하고, 만나서 정말 기쁘고… 영광이에요</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">죄송해요. 시릴은 언니가 아니라서… 언니는 똑똑하니까 잘 설명해 줄 거예요</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">걱정 마요. 그가 없어도 언니가 있거든요. 언니도 시릴을 지켜줄 거예요</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">그… 그는 시릴에게 아주 중요한 사람이에요</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">다들 언니만 좋아해요…. 그럴 만하지, 언니는 예쁘고 똑똑하니까. 오직 그만 시릴이랑 놀아줘요…. 그는 시릴이 특별하다고 생각하거든요</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">날 옥죄고 있는 게 자꾸 나타나요…. 그들은 내가 벗어나는 걸 원하지 않기 때문이죠. 제가 무슨 잘못을 한 걸까요? 그는 잘못을 했다면 사과해야 한다고 했어요…. 하지만 시릴은 누구에게 사과해야 할까요?</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">난 널 데리고 여길 떠나야 해, 시릴</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">(시릴의 손을 잡기 위해 손을 뻗는다)</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">어떠한 힘이 시릴을 데려가는 것을 막고 있다…. 이 모든 현상은 한 가지를 말하고 있다. 시도를 멈추어라, 그렇지 않으면 더 큰 고난이 기다리고 있을 것이다</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">고마워요, {F#언니}{M#오빠}. 한 번만 더 반복하면… 시릴은 이곳에서 나갈 수 있을지도 몰라요</div></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">…정말요? 시릴을 데리고 나갈 수 있어요?</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">죄송해요, 전… 괜찮다면 시릴이라는 이름을 기억에서 지워주실 수 있을까요? 그냥… 저희가 만난 적이 없다고 생각해주세요</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(시릴이 모든 걸 잊고, 내가 피해받는 걸 원하지 않는다고 하니…)</div></li>
+<li id="ref-22" data-reference-item data-ref-number="22"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">변방 통로에서 시릴을 만난 일을 삼포에게 알려준다……</div></li>
+<li id="ref-23" data-reference-item data-ref-number="23"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(삼포는 이게 열계에서 만들어진 환상일 수 있다고 했지만… 시릴의 말투가 너무 생생해)</div></li>
+<li id="ref-24" data-reference-item data-ref-number="24"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴의 이야기를 던에게 전한다…</div></li>
+<li id="ref-25" data-reference-item data-ref-number="25"><span class="ref-title">던의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">던의 인게임 대사</span></span><div class="ref-quote">아, 참——「스테판」이라는 이름도 찾아봤지만, 부대 명단에는 기록이 없어요. 현재 퇴직한 철위 명단도 마찬가지고요</div></li>
+<li id="ref-26" data-reference-item data-ref-number="26"><span class="ref-title">수호자의 그림자의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">수호자의 그림자의 인게임 대사</span></span><div class="ref-quote">스테판 씨가 떠났어요… 그들도 떠났어요. 모두가 떠나버렸어요</div></li>
+<li id="ref-27" data-reference-item data-ref-number="27"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴, 너야?</div></li>
+<li id="ref-28" data-reference-item data-ref-number="28"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">이렇게 높은 곳에 어울리지 않는다는 걸 알아요. 언니가 이유도 없이 떠나지만 않았더라면… 이 길을 걷지도 못했겠죠</div></li>
+<li id="ref-29" data-reference-item data-ref-number="29"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">스테판 씨가 있어서 다행이에요——그는 제 선생님이자 절친이죠. 제게 수많은 조언을 해주었고… 고난을 이겨내도록 도와주었어요</div></li>
+<li id="ref-30" data-reference-item data-ref-number="30"><span class="ref-title">시릴의 잔향의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 잔향의 인게임 대사</span></span><div class="ref-quote">죄송해요, 스테판 씨… 저는… 당신이 찾는 사람이…</div></li>
+<li id="ref-31" data-reference-item data-ref-number="31"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴의 잔향이 칼바람의 포효에 섞여 사라진다</div></li>
+<li id="ref-32" data-reference-item data-ref-number="32"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴의 유품을 줍는다</div></li>
+<li id="ref-33" data-reference-item data-ref-number="33"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(그 시릴이라는 아이, 수호자였다니… 믿을 수 없어)</div></li>
+<li id="ref-34" data-reference-item data-ref-number="34"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(그녀의 유품을 갖고 상층 구역으로 돌아가자. 시릴이 수호자였던 시절에 대해 아는 사람이 분명 있을거야)</div></li>
+<li id="ref-35" data-reference-item data-ref-number="35"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴이라는 수호자를 아시나요?</div></li>
+<li id="ref-36" data-reference-item data-ref-number="36"><span class="ref-title">마냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">마냐의 인게임 대사</span></span><div class="ref-quote">…음, 그 「우인」 시릴 말씀이신가요?</div></li>
+<li id="ref-37" data-reference-item data-ref-number="37"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴에게서 이런 걸 받았어요</div></li>
+<li id="ref-38" data-reference-item data-ref-number="38"><span class="ref-title">마냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">마냐의 인게임 대사</span></span><div class="ref-quote">아, 참, 벨로보그의 역사에 대해 모르는 게 많죠? 「우인」 시릴에 관한 역사 자료는 이 홍보 책자에서 찾을 수 있을 거예요. 재무부에서 주는 기념품이라고 치고 가져가세요</div></li>
 <li id="ref-39" data-reference-item data-ref-number="39"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(이게 진짜 내가 알던 그 시릴인가? 가서 울단 관장님에게 어떻게 된 일인지 물어봐야겠어……)</div></li>
-<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(그 시릴이라는 아이, 수호자였다니… 믿을 수 없어)</div></li>
-<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">변방 통로에서 시릴을 만난 일을 삼포에게 알려준다……</div></li>
-<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(삼포는 이게 열계에서 만들어진 환상일 수 있다고 했지만… 시릴의 말투가 너무 생생해)</div></li>
-<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴의 이야기를 던에게 전한다…</div></li>
-<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴, 너야?</div></li>
-<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">울단의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">울단의 인게임 대사</span></span></li>
-<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">울단의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">울단의 인게임 대사</span></span><div class="ref-quote">근데 말투를 보니 시릴에 대해 확실히 들어본 적이 있나 보군……</div></li>
-<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「우인」 시릴의 초상화에 대해…</div></li>
-<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴이라는 수호자를 아시나요?</div></li>
-<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">마냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">마냐의 인게임 대사</span></span><div class="ref-quote">…음, 그 「우인」 시릴 말씀이신가요?</div></li>
-<li id="ref-50" data-reference-item data-ref-number="50"><span class="ref-title">마냐의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">마냐의 인게임 대사</span></span><div class="ref-quote">아, 참, 벨로보그의 역사에 대해 모르는 게 많죠? 「우인」 시릴에 관한 역사 자료는 이 홍보 책자에서 찾을 수 있을 거예요. 재무부에서 주는 기념품이라고 치고 가져가세요</div></li>
-<li id="ref-51" data-reference-item data-ref-number="51"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">시릴의 유품을 줍는다</div></li>
-<li id="ref-52" data-reference-item data-ref-number="52"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">{NICKNAME}의 인게임 대사</span></span><div class="ref-quote">(그녀의 유품을 갖고 상층 구역으로 돌아가자. 시릴이 수호자였던 시절에 대해 아는 사람이 분명 있을거야)</div></li>
-<li id="ref-53" data-reference-item data-ref-number="53"><span class="ref-title">수호자의 그림자의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">수호자의 그림자의 인게임 대사</span></span><div class="ref-quote">스테판 씨가 떠났어요… 그들도 떠났어요. 모두가 떠나버렸어요</div></li>
-<li id="ref-54" data-reference-item data-ref-number="54"><span class="ref-title">시릴의 잔향의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 잔향의 인게임 대사</span></span><div class="ref-quote">죄송해요, 스테판 씨… 저는… 당신이 찾는 사람이…</div></li></ol></details>
+<li id="ref-40" data-reference-item data-ref-number="40"><span class="ref-title">울단의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">울단의 인게임 대사</span></span></li>
+<li id="ref-41" data-reference-item data-ref-number="41"><span class="ref-title">울단의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">울단의 인게임 대사</span></span><div class="ref-quote">근데 말투를 보니 시릴에 대해 확실히 들어본 적이 있나 보군……</div></li>
+<li id="ref-42" data-reference-item data-ref-number="42"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">당신의 언니인 시릴라는——아쉽게도 그녀의 행방에 대한 단서는 전혀 찾지 못했어요. 당신이 그녀를 얼마나 중요하게 생각하는지 알고 있기에 최선을 다해 찾아봤지만, 10년이 넘도록 진전이 없었습니다.</div></li>
+<li id="ref-43" data-reference-item data-ref-number="43"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">스테판 씨가 처음 우리 집에 왔을 때는 반년 전이었다. 난 처음에는 그가 자칭 「축성가」라고 하는 사람들처럼 이곳에 온 이유는 언니를 만나기 위해서일뿐이라 생각했다. 하지만 그는 다른 어른들과는 달리 날 공기처럼 취급하지 않았고, 항상 날 보며 웃어주고 사탕도 많이 주었다.</div></li>
+<li id="ref-44" data-reference-item data-ref-number="44"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">내가 일기를 쓴 것도 스테판 씨 때문이다. 그는 일기를 쓰는 건 숙녀라면 지켜야 할 좋은 습관이라고 했다. 그는 일기 쓰기는 외로운 일이라며, 외로운 게 무서우면 일기를 그에게 들려달라고 했다.</div></li>
+<li id="ref-45" data-reference-item data-ref-number="45"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">그 어른들이 언니를 엄청 먼 곳으로 데려가서 앞으로 언니를 못 볼 수도 있다고 했다. 난 겁이 났다. 언니는 항상 내 곁에서 날 보살펴주고 지켜줬는데, 언니가 옆에 없으면 난 다치고 지금보다 더 외로워질 것 같다.</div></li>
+<li id="ref-46" data-reference-item data-ref-number="46"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">스테판 씨가 절대 그런 일이 일어나게 두지 않겠다고 말했다. 「시릴은 언니한테 뒤쳐지지 않아요」, 「시릴도 가장 완벽한 삶을 누릴 수 있어요」라고 말해줬다.</div></li>
+<li id="ref-47" data-reference-item data-ref-number="47"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">스테판 씨는 떠나기 전 나에게 푸른색 돌멩이를 건네줬다. 그 돌멩이는 아주 작았지만 예쁘고 매끄러웠고 내가 본 것 중 가장 아름다웠다. 스테판 씨는 이 선물이 우리 둘 사이의 약속의 증표라고 했다. 그는 날 이곳에서 데리고 나가 더 넓고 편한 곳에서 자유롭게 살 수 있게 해준다고 약속했다.</div></li>
+<li id="ref-48" data-reference-item data-ref-number="48"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">긴장되는 거 잘 알아요. 시릴. 하지만 제가 옛날에 해준 조언을 잊지 않았으면 해요. 「실체 없는 위협에 겁먹지 말 것」. 확고한 의지로 제 의견에 따라준다면 모든 반대와 비난은 일시적인 잡음에 불과할 거예요——우리의 계획이 막바지에 달하면 이런 잡음들도 결국 당신과 제가 써 내려갈 역사 속으로 사라질 거예요.</div></li>
+<li id="ref-49" data-reference-item data-ref-number="49"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">하지만 전 당신에게서 특별한 점을 발견했어요——시릴라 같은 천재도 가지고 있지 않은 특별한 자질이었죠. 당신의 이런 유일무이한 재능을 발견했기 때문에 전 결심했습니다. 당신이 마땅히 누려야 할 아름다운 미래를 건설할 수 있도록 옆에서 돕겠다고요.</div></li>
+<li id="ref-50" data-reference-item data-ref-number="50"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편</span><div class="ref-quote">당신 곁에서 거짓을 일삼는 기회주의자들을 절대 믿지 마세요. 제가 없는 틈을 타서 분명 수단과 방법을 가리지 않고 당신에게 접근해 당신을 제어하려고 할 거예요. 견고한 방어막을 구축하고 모든 나쁜 의도가 섞인 잡음은 거르세요. 이것만 기억해요, 시릴——저만 믿으면 돼요, 전 절대 당신에게 거짓말을 하지 않아요.</div></li>
+<li id="ref-51" data-reference-item data-ref-number="51"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">스테판 씨가 말했어요, 저 혼자 어려운 결정을 할 필요가 없다고요. 아주 중요한 자리에는… 그가 꼭 있을 거라고 말했어요. 그래서… 저는 기다리기만 하면 돼요</div></li>
+<li id="ref-52" data-reference-item data-ref-number="52"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">스테판 씨가 있어요, 바로 제 옆에요. 언니는 오지 않았어요…. 언니가 있었으면 좋겠어요</div></li>
+<li id="ref-53" data-reference-item data-ref-number="53"><span class="ref-title">시릴의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">시릴의 인게임 대사</span></span><div class="ref-quote">하지만 스테판 씨가 제 손을 잡아줬어요. 그는 웃고 있어요, 늘 제게 미소를 지으시죠…. 모든 게 괜찮아질 테니 걱정 말라고 하셨어요</div></li>
+<li id="ref-54" data-reference-item data-ref-number="54"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">「평범하기 그지없는 유년기를 보낸 시릴은 계속된 우연으로 인하여 선택을 받고 수호자의 후보가 되었다」</div></li>
+<li id="ref-55" data-reference-item data-ref-number="55"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">수호자 「우인」 시릴에 관한 사료 원본들이다</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
-  <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 제도·조직 원리</span></div>
+  <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 기술·현상</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>개념</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li>
-<li>2026-06-29 · update</li></ol>
+<li>2026-07-04 · update</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EC%8B%9C%EB%A6%B4&amp;page_slug=entry-493">수정 요청</a></div>
 </details>
 
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="entry-493">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EC%8B%9C%EB%A6%B4&amp;body=%EC%8B%9C%EB%A6%B4+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fentry-493.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

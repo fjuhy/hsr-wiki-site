@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>누리망, 멈춰 줘서 고마워 · hoyohoyo.wiki</title>
-  <meta name="description" content="누리망, 멈춰 줘서 고마워 는 전서의 석판에 적혀 있던 메시지이자, 서적으로 분류되는 항목이다. 공식 명칭은 “누리망, 멈춰 줘서 고마워”이며, 해당 메시지는 동기가 불순해 보인다는 설명과 함께 작성자가 이미 삭제된 상태로 남아 있다.">
+  <meta name="description" content="누리망, 멈춰 줘서 고마워 는 오크마의 전서 석판에 남아 있던 메시지이며, 서적으로 분류된다. 메시지에는 동기가 불순해 보인다는 설명이 붙어 있고, 작성자는 이를 이미 삭제했다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="누리망, 멈춰 줘서 고마워 · hoyohoyo.wiki">
-  <meta property="og:description" content="누리망, 멈춰 줘서 고마워 는 전서의 석판에 적혀 있던 메시지이자, 서적으로 분류되는 항목이다. 공식 명칭은 “누리망, 멈춰 줘서 고마워”이며, 해당 메시지는 동기가 불순해 보인다는 설명과 함께 작성자가 이미 삭제된 상태로 남아 있다.">
+  <meta property="og:description" content="누리망, 멈춰 줘서 고마워 는 오크마의 전서 석판에 남아 있던 메시지이며, 서적으로 분류된다. 메시지에는 동기가 불순해 보인다는 설명이 붙어 있고, 작성자는 이를 이미 삭제했다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/entry-3874.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/entry-3874.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,67 +620,61 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html" aria-current="page"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html" aria-current="page"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-cosmology.html">우주론·법칙</a><span>누리망, 멈춰 줘서 고마워</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EB%88%84%EB%A6%AC%EB%A7%9D%2C+%EB%A9%88%EC%B6%B0+%EC%A4%98%EC%84%9C+%EA%B3%A0%EB%A7%88%EC%9B%8C&amp;page_slug=entry-3874">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>누리망, 멈춰 줘서 고마워</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">우주론·법칙</span></div></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>누리망, 멈춰 줘서 고마워는 전서의 석판에 적혀 있던 메시지이자, 서적으로 분류되는 항목이다.<sup class="cite-ref" title="공식 HoYoWiki · 누리망, 멈춰 줘서 고마워"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 공식 명칭은 “누리망, 멈춰 줘서 고마워”이며, 해당 메시지는 동기가 불순해 보인다는 설명과 함께 작성자가 이미 삭제된 상태로 남아 있다.<sup class="cite-ref" title="공식 HoYoWiki · 누리망, 멈춰 줘서 고마워"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 이름"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>누리망, 멈춰 줘서 고마워의 중심에는 오크마에서 쓰이는 지역 통신망인 누리망이 있다.<sup class="cite-ref" title="게임 본편 · 입담 좋은 시민의 언급 · 블레이드의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 오크마 시민은 석판을 통해 누리망 접속 방법을 안내받을 수 있고, 메시지 전송 실패 알림은 누리망이 오크마 구역 안에서만 작동한다는 한계를 드러낸다.<sup class="cite-ref" title="게임 본편 · 입담 좋은 시민의 언급 · 블레이드의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<p>제목은 농담처럼 보이지만, 작중 누리망은 멈추거나 느려졌을 때 도시의 판단, 연락, 전선 운영까지 흔드는 기반 시설이다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 누리망은 경기 중계, 구독, 인기, 지식 탐색, 정보 전달을 한데 묶으며, 오크마 사람들이 서로를 보고 듣고 평가하는 일상의 무대가 된다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>**누리망, 멈춰 줘서 고마워**는 오크마의 전서 석판에 남아 있던 메시지이며, 서적으로 분류된다.<sup class="cite-ref" title="공식 HoYoWiki · 누리망, 멈춰 줘서 고마워"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 유형"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 메시지에는 동기가 불순해 보인다는 설명이 붙어 있고, 작성자는 이를 이미 삭제했다.<sup class="cite-ref" title="공식 HoYoWiki · 누리망, 멈춰 줘서 고마워"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
+<p>제목은 누리망을 멈추고 싶어 하는 농담처럼 보이지만, 정작 작중에서 누리망이 느려지거나 멈추면 오크마의 통신과 방송, 전선의 정보 전달까지 함께 흔들린다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
 <h2 id="작중-역할">작중 역할</h2>
-<p>누리망은 오크마의 방송망으로 작동한다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 티모스는 자신의 라이브 방송에 시청자를 맞이하며, 이번 경기가 누리망에서 라이브로 진행된다고 알린다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup> 이 장면에서 누리망은 사적인 연락 수단을 넘어 공개 경기와 관객을 이어 주는 매체로 자리 잡는다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup></p>
-<p>누리망은 유명세와 구독 문화도 만든다.<sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> <a class="wiki-link" href="char-3688.html" title="히아킨">히아킨</a>은 회색둥이가 누리망에서 인기가 많다고 말하며 자신도 구독해 달라고 요청하고, <a class="wiki-link" href="char-3322.html" title="트리비">트리비</a>는 카이가 누리망에서 사실 엄청난 인기를 얻고 있다고 귀띔한다.<sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 누리망 안에서 인물의 평판은 소문으로 끝나지 않고, 구독과 팬 반응처럼 반복되는 공개 관심으로 굳어진다.<sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>누리망은 오크마 시민의 유행을 빠르게 퍼뜨린다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 드로마스의 발굽 관리 영상은 누리망에서 인기를 끌어 거의 모든 오크마 시민이 본 것으로 보이며, 이후 오크마에서는 “누리망에서는 아무도 당신이 드로마스라는 걸 모른다”라는 제목의 문집이 출판된다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 영상 유행이 출판물의 제목으로 이어진다는 점에서, 누리망은 일시적인 오락을 도시의 문화적 농담과 기록으로 바꾸는 통로다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>누리망은 배우고 싶은 것을 찾는 지식 탐색의 창구이기도 하다.<sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 빕사니아는 누군가 배우고 싶은 것이 있다면 누리망에서 쓸만한 “씨앗”이 있는지 확인해 보겠다고 말하고, 아는 것이 힘이며 자신에게 가장 직접적인 힘의 원천이 있다고 덧붙인다.<sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 여기서 누리망은 단순한 자료 저장소가 아니라, 지식과 힘을 연결하는 장치로 쓰인다.<sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>동시에 누리망은 사람들의 욕망을 모을 수 있는 관측 수단으로도 쓰인다.<sup class="cite-ref" title="게임 본편 · 트리논의 언급 · 트리논의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 트리논은 “라이아의 누리망”으로 사람들이 원하는 것을 수집할 수 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 트리논의 언급 · 트리논의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 이 발언은 누리망이 정보를 주고받는 공간인 동시에, 이용자가 무엇을 원하고 찾는지 드러내는 공간이라는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 트리논의 언급 · 트리논의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup></p>
+<p>누리망은 오크마 시민이 석판으로 접속하는 지역 통신망이다.<sup class="cite-ref" title="게임 본편 · 입담 좋은 시민의 언급 · 블레이드의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 방송에도 쓰인다. 티모스는 라이브 방송에서 &quot;이번 경기는 누리망에서 라이브로 진행됩니다&quot;라고 안내한다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>누리망은 인기와 구독 문화가 오가는 곳이기도 하다. <a class="wiki-link" href="char-3688.html" title="히아킨">히아킨</a>은 회색둥이에게 &quot;누리망에서 인기가 엄청 많다고 들었어요, 저도 꼭 구독해 주세요&quot;라고 말하고, <a class="wiki-link" href="char-3322.html" title="트리비">트리비</a>는 카이가 누리망에서 엄청난 인기를 얻고 있다고 귀띔한다.<sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup></p>
+<p>유행도 누리망을 타고 퍼진다. 드로마스의 발굽 관리 영상은 누리망에서 인기를 끌어 거의 모든 오크마 시민이 시청했고, 이후 오크마에서는 &quot;누리망에서는 아무도 당신이 드로마스라는 걸 모른다&quot;라는 제목의 문집이 출판됐다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup></p>
+<p>빕사니아는 배우고 싶은 것이 있으면 누리망에서 &quot;씨앗&quot;을 찾아 주겠다고 말하고, 트리논은 &quot;라이아의 누리망&quot;으로 사람들이 원하는 것을 수집할 수 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup><sup class="cite-ref" title="게임 본편 · 트리논의 언급 · 트리논의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup> 천사 물범은 누리망을 지나치게 오래 본 증상을 전형적인 문제로 짚는다.<sup class="cite-ref" title="게임 본편 · 천사 물범의 언급 · 천사 물범의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup> 시민들 사이에서는 &quot;헐, 너도 누리망 서핑해?&quot;라는 인사말도 오간다.<sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
 <h2 id="설치와-유지">설치와 유지</h2>
-<p>누리망은 미궁에 설치된 금실과 연결되어 있다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> <a class="wiki-link" href="char-3286.html" title="아글라이아">아글라이아</a>는 카이사르의 부탁으로 미궁에 금실을 설치했으며, 그 덕분에 앞으로 누리망을 자유롭게 쓸 수 있을 것이라고 말한다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup> 이 말은 누리망이 자연스럽게 열려 있는 추상적 공간이 아니라, 누군가의 요청과 설치 작업을 거쳐 사용 가능해지는 시설임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup></p>
-<p>누리망은 설치 뒤에도 보수가 필요하다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 아글라이아는 누리망을 계속 보수해야 하니, 문제가 생기면 자신을 찾아오라고 말한다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 이 대목은 누리망의 안정성이 특정 인물의 유지보수와 금실 기술에 기대고 있음을 드러낸다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>누리망의 범위는 오크마 구역으로 제한된다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 메시지 전송 실패 알림은 누리망이 오크마 구역 한정이라는 사실을 직접 보여 주고, <a class="wiki-link" href="char-3885.html" title="히실렌스">히실렌스</a>는 카이사르에게 연락하려 하며 그녀가 아직 누리망 범위 안에 있어야 한다고 걱정한다.<sup class="cite-ref" title="게임 본편 · 히실렌스의 언급 · 히실렌스의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 누리망은 오크마 안에서는 강력한 연결망이지만, 경계를 벗어나면 연락 수단으로서 힘을 잃는다.<sup class="cite-ref" title="게임 본편 · 히실렌스의 언급 · 히실렌스의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>누리망은 오크마의 일상과 군사 운영을 동시에 받치는 정보 기반 시설이다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 라테나는 오크마의 누리망이 느려져 진실을 분별하기 어려워졌고, 곳곳이 싸움처럼 혼란스러우며 절벽 위에는 이상한 허영이 나타난다고 말한다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 누리망 장애는 단순한 통신 지연이 아니라, 시민이 무엇을 사실로 받아들일지 판단하는 능력까지 흔든다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p>
-<p>전선에서도 누리망의 붕괴는 큰 손실로 이어진다.<sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 크라테로스는 “금실을 짜는 자”가 세상을 떠나고 누리망이 붕괴하면서 전선 간 정보 전달이 상당히 지체되고, 그것이 전투에 큰 문제를 일으키고 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 누리망은 전투력 자체를 뜻하지는 않지만, 전투 현장이 서로의 상황을 늦게 알게 만들 만큼 중요한 군사적 연결망이다.<sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>누리망의 성능 저하는 특정 직책의 상실과도 연결된다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> <a class="wiki-link" href="char-3691.html" title="사이퍼">사이퍼</a>는 재봉녀의 신의 직책이 사라진 뒤 누리망 속도가 5S에서 2S로 떨어졌다고 말한다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup> 이 언급은 누리망의 품질이 신의 직책이나 금실을 다루는 존재와 무관하지 않으며, 오크마의 통신망이 종교적·기술적 질서의 변동에 영향을 받는다는 점을 보여 준다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>카이사르와 아글라이아는 누리망의 설치와 유지 쪽에서 연결된다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 카이사르의 부탁은 미궁에 금실을 설치하는 계기가 되고, 아글라이아는 이후 누리망을 계속 보수해야 한다고 말한다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 이 관계는 누리망이 도시 전체가 쓰는 공공망처럼 보이면서도, 실제 작동에는 구체적인 부탁과 기술자의 손길이 필요하다는 점을 드러낸다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup></p>
-<p>재봉녀의 신의 직책과 “금실을 짜는 자”는 누리망의 안정성을 흔드는 핵심 축이다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 재봉녀의 신의 직책이 사라진 뒤 속도 저하가 일어나고, 금실을 짜는 자의 죽음 뒤에는 누리망 붕괴와 전선 정보 지체가 따라온다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 누리망은 편리한 통신 서비스처럼 쓰이지만, 그 바닥에는 금실을 짜고 유지하는 존재들의 부재가 곧장 드러나는 취약한 구조가 있다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
-<p>히아킨, 트리비, 티모스는 누리망의 공개성과 인기 문화를 보여 준다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 티모스의 라이브 경기, 히아킨의 구독 요청, 트리비가 말하는 카이의 인기는 누리망이 사람을 관객 앞에 세우고 평가받게 만드는 공간임을 보여 준다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup> 오크마에서 누군가가 유명하다는 말은 누리망 위에서 시청되고 구독되고 이야기된다는 뜻에 가깝다.<sup class="cite-ref" title="게임 본편 · 히아킨의 언급 · 히아킨의 인게임 대사"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 트리비의 언급 · 트리비의 인게임 대사"><a href="#ref-12" data-cite-popover data-ref-target="ref-12" aria-label="각주 12 내용 보기" aria-expanded="false">12</a></sup></p>
-<p>빕사니아와 천사 물범은 누리망의 지식성과 과몰입을 나란히 보여 준다.<sup class="cite-ref" title="게임 본편 · 천사 물범의 언급 · 천사 물범의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 빕사니아는 누리망에서 배움의 씨앗을 찾을 수 있다고 말하지만, 천사 물범은 누리망을 너무 많이 본 증상을 전형적인 문제로 짚는다.<sup class="cite-ref" title="게임 본편 · 천사 물범의 언급 · 천사 물범의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 누리망은 지식을 찾게 해 주는 곳이지만, 이용자를 계속 붙잡아 두는 매체로도 그려진다.<sup class="cite-ref" title="게임 본편 · 천사 물범의 언급 · 천사 물범의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup></p>
-<p>“인터넷”이라는 말과 누리망의 관계도 작중에서 직접 확인된다.<sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 빕사니아는 “인터넷”이라는 말을 듣고 누리망을 말하는 것이냐고 되묻는다.<sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup> 이 대사는 누리망이 현실의 인터넷과 대응되는 개념임을 암시하지만, 작중 누리망은 오크마 구역 한정, 금실 설치, 보수 필요성이라는 고유한 조건을 가진다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-15" data-cite-popover data-ref-target="ref-15" aria-label="각주 15 내용 보기" aria-expanded="false">15</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup></p>
-<h2 id="오크마를-묶고-흔드는-금실의-망">오크마를 묶고 흔드는 금실의 망</h2>
-<p>“누리망, 멈춰 줘서 고마워”라는 제목은 누리망을 멈추고 싶어 하는 사적인 농담처럼 보이지만, 작중에서 누리망이 멈추거나 느려질 때 가장 먼저 흔들리는 것은 오크마의 공적 질서다.<sup class="cite-ref" title="공식 HoYoWiki · 누리망, 멈춰 줘서 고마워"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 누리망은 경기 중계와 구독 문화, 유행 영상과 문집, 지식 탐색과 정보 수집, 전선 연락을 모두 이어 주는 장치다.<sup class="cite-ref" title="게임 본편 · 티모스의 언급 · Unknown의 인게임 대사"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup><sup class="cite-ref" title="게임 본편 · 트리논의 언급 · 트리논의 인게임 대사"><a href="#ref-14" data-cite-popover data-ref-target="ref-14" aria-label="각주 14 내용 보기" aria-expanded="false">14</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-11" data-cite-popover data-ref-target="ref-11" aria-label="각주 11 내용 보기" aria-expanded="false">11</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · Unknown의 인게임 대사"><a href="#ref-13" data-cite-popover data-ref-target="ref-13" aria-label="각주 13 내용 보기" aria-expanded="false">13</a></sup></p>
-<p>그래서 누리망의 중요성은 편리함보다 의존성에서 더 선명해진다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 오크마 시민은 누리망으로 보고 배우고 떠들지만, 누리망이 느려지면 진실을 가리기 어려워지고, 누리망이 붕괴하면 전선의 정보 전달도 지체된다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 누리망, 멈춰 줘서 고마워은 오크마의 네트워크가 사람들을 연결하는 만큼, 그 연결이 끊어졌을 때 도시 전체가 얼마나 쉽게 흔들리는지를 보여 주는 설정이다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">누리망, 멈춰 줘서 고마워</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3874?lang=ko-kr">원문</a></span><div class="ref-quote">전서의 석판에 적혀 있던 동기가 불순해 보이는 메시지. 작성자가 이미 삭제했다</div></li>
+<p>누리망은 미궁에 설치된 금실로 연결된다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> <a class="wiki-link" href="char-3286.html" title="아글라이아">아글라이아</a>는 카이사르의 부탁으로 미궁에 금실을 설치했으며, &quot;앞으로는 누리망을 자유롭게 쓰실 수 있을 거예요&quot;라고 말한다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup> 설치 뒤에도 보수가 필요해서, 아글라이아는 &quot;누리망을 계속 보수해야 하니, 무슨 일이 생기면 여기로 와서 절 찾아주세요&quot;라고 당부한다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup></p>
+<p>누리망은 오크마 구역 밖에서는 쓸 수 없다.<sup class="cite-ref" title="게임 본편 · 게임 본편 언급 · Unknown의 인게임 대사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> <a class="wiki-link" href="char-3885.html" title="히실렌스">히실렌스</a>는 카이사르에게 연락하려 하며, 그녀가 아직 누리망 범위 안에 있어야 한다고 걱정한다.<sup class="cite-ref" title="게임 본편 · 히실렌스의 언급 · 히실렌스의 인게임 대사"><a href="#ref-18" data-cite-popover data-ref-target="ref-18" aria-label="각주 18 내용 보기" aria-expanded="false">18</a></sup></p>
+<h2 id="통신-장애와-붕괴">통신 장애와 붕괴</h2>
+<p>라테나는 오크마의 누리망이 느려져 진실을 분별하기 어렵고, 곳곳이 싸움처럼 혼란스러우며 절벽 위에는 이상한 허영이 나타난다고 말한다.<sup class="cite-ref" title="게임 본편 · 라테나의 언급 · 라테나의 인게임 대사"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>크라테로스는 &quot;금실을 짜는 자&quot;가 세상을 떠나고 누리망이 붕괴하면서 전선 간 정보 전달이 상당히 지체되어 전투에 문제를 일으키고 있다고 말한다.<sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p><a class="wiki-link" href="char-3691.html" title="사이퍼">사이퍼</a>는 재봉녀의 신 직책이 사라진 뒤 누리망 속도가 5S에서 2S로 떨어졌다고 말한다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="char-3286.html">아글라이아</a> — 카이사르의 부탁으로 미궁에 금실이 설치됐고, 이후 보수는 <a href="char-3286.html">아글라이아</a>가 맡는다.<sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-16" data-cite-popover data-ref-target="ref-16" aria-label="각주 16 내용 보기" aria-expanded="false">16</a></sup><sup class="cite-ref" title="게임 본편 · 아글라이아의 언급 · 아글라이아의 인게임 대사"><a href="#ref-17" data-cite-popover data-ref-target="ref-17" aria-label="각주 17 내용 보기" aria-expanded="false">17</a></sup> 재봉녀의 신 직책과 &quot;금실을 짜는 자&quot;는 각각 속도 저하와 붕괴 사태의 배경에 등장하는 이름이다.<sup class="cite-ref" title="게임 본편 · 사이퍼의 언급 · 사이퍼의 인게임 대사"><a href="#ref-19" data-cite-popover data-ref-target="ref-19" aria-label="각주 19 내용 보기" aria-expanded="false">19</a></sup><sup class="cite-ref" title="게임 본편 · 크라테로스의 언급 · 크라테로스의 인게임 대사"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></li>
+<li><a href="char-3322.html">트리비</a> — 빕사니아는 &quot;인터넷&quot;이라는 말을 듣고 누리망을 말하는 것이냐고 되묻고, <a href="char-3322.html">트리비</a>는 누리망 소식이 빠르게 퍼지는 것을 두고 &quot;누리망까지 알다니, 소식이 정말 빠르네&quot;라고 말한다.<sup class="cite-ref" title="게임 본편 · 빕사니아의 언급 · 빕사니아의 인게임 대사"><a href="#ref-20" data-cite-popover data-ref-target="ref-20" aria-label="각주 20 내용 보기" aria-expanded="false">20</a></sup><sup class="cite-ref" title="게임 본편 · 작중 언급 · 임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」"><a href="#ref-21" data-cite-popover data-ref-target="ref-21" aria-label="각주 21 내용 보기" aria-expanded="false">21</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">누리망, 멈춰 줘서 고마워</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3874?lang=ko-kr">원문</a></span><div class="ref-quote">전서의 석판에 적혀 있던 동기가 불순해 보이는 메시지. 작성자가 이미 삭제했다</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">유형</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3874?lang=ko-kr">원문</a></span><div class="ref-quote">서적</div></li>
-<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">이름</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/3874?lang=ko-kr">원문</a></span><div class="ref-quote">누리망, 멈춰 줘서 고마워</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">입담 좋은 시민의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">블레이드의 인게임 대사</span></span><div class="ref-quote">석판을 꺼내보세요. 오크마 누리망에 접속하는 방법을 알려드릴게요</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">뚜뚜. 메시지 전송 실패 알림에 약간 우울해진다. 아쉽게도 누리망은 오크마 구역 한정이다</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">라테나의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">라테나의 인게임 대사</span></span><div class="ref-quote">저희의 천부이신 케팔께 진심으로 여쭤볼게요. 지금 오크마는 누리망이 느려져서 진실을 분별하기 어려워요. 싸움이 벌어지는 것처럼 곳곳이 혼란스럽고, 절벽 위에선 이상한 허영이 나타나기도 해요……</div></li>
-<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">크라테로스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">크라테로스의 인게임 대사</span></span><div class="ref-quote">게다가 「금실을 짜는 자」가 세상을 떠나고 누리망이 붕괴하면서, 전선 간의 정보 전달이 상당히 지체되고 있어. 전투에 큰 문제를 일으키고 있지</div></li>
-<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">티모스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">티모스의 라이브 방송에 오신 것을 환영합니다. 이번 경기는 누리망에서 라이브로 진행됩니다.</div></li>
-<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">히아킨의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히아킨의 인게임 대사</span></span><div class="ref-quote">아, 회색둥이 씨! 오랜만이에요! 누리망에서 인기가 엄청 많다고 들었어요. 저도 꼭 구독해 주세요</div></li>
-<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">빕사니아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">빕사니아의 인게임 대사</span></span><div class="ref-quote">참, 만약 배우고 싶은 게 있다면 언제든 날 찾아와. 누리망에서 쓸만한 「씨앗」이 있는지 확인해 볼게. 어쨌든 아는 게 힘이잖아. 그리고 나한텐 가장 직접적인 힘의 원천이 있다고!</div></li>
-<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">최근 드로마스의 발굽 관리 영상이 누리망에서 인기를 끌었다. 거의 모든 오크마 시민들이 시청한 것 같다</div></li>
-<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">트리비의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">트리비의 인게임 대사</span></span><div class="ref-quote">살짝 알려주자면 카이는 누리망에서 사실 엄청 인기가 많아. 그 이유는… 헤헤, 말 안 할래!</div></li>
-<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">얼마 후, 오크마에서 「누리망에서는 아무도 당신이 드로마스라는 걸 모른다」라는 제목의 문집이 출판되었다</div></li>
-<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">트리논의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">트리논의 인게임 대사</span></span><div class="ref-quote">*우리*는 라이아의 누리망으로 사람들이 원하는 걸 수집할 수 있어</div></li>
-<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">아글라이아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아글라이아의 인게임 대사</span></span><div class="ref-quote">카이사르의 부탁으로 미궁에 금실을 설치했어요. 앞으로는 누리망을 자유롭게 쓰실 수 있을 거예요</div></li>
-<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">아글라이아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아글라이아의 인게임 대사</span></span><div class="ref-quote">누리망을 계속 보수해야 하니, 무슨 일이 생기면 여기로 와서 절 찾아주세요</div></li>
-<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">히실렌스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히실렌스의 인게임 대사</span></span></li>
-<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">사이퍼의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">사이퍼의 인게임 대사</span></span><div class="ref-quote">아차차… 재봉녀의 신의 직책이 사라진 후 「누리망」 속도가 5S에서 2S로 떨어졌지……</div></li>
-<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">천사 물범의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">천사 물범의 인게임 대사</span></span><div class="ref-quote">o((=&#x27;ω´= )っ「이건 엄청 전형적인 증상인데… 『누리망』을 너무 많이 봤구나, 옹」)∋</div></li>
-<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">빕사니아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">빕사니아의 인게임 대사</span></span><div class="ref-quote">이? 인터넷, 뭐? 누리망 말하는 거야?</div></li></ol></details>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">라테나의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">라테나의 인게임 대사</span></span><div class="ref-quote">저희의 천부이신 케팔께 진심으로 여쭤볼게요. 지금 오크마는 누리망이 느려져서 진실을 분별하기 어려워요. 싸움이 벌어지는 것처럼 곳곳이 혼란스럽고, 절벽 위에선 이상한 허영이 나타나기도 해요……</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">크라테로스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">크라테로스의 인게임 대사</span></span><div class="ref-quote">게다가 「금실을 짜는 자」가 세상을 떠나고 누리망이 붕괴하면서, 전선 간의 정보 전달이 상당히 지체되고 있어. 전투에 큰 문제를 일으키고 있지</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">입담 좋은 시민의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">블레이드의 인게임 대사</span></span><div class="ref-quote">석판을 꺼내보세요. 오크마 누리망에 접속하는 방법을 알려드릴게요</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">게임 본편 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">뚜뚜. 메시지 전송 실패 알림에 약간 우울해진다. 아쉽게도 누리망은 오크마 구역 한정이다</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">티모스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">티모스의 라이브 방송에 오신 것을 환영합니다. 이번 경기는 누리망에서 라이브로 진행됩니다.</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">히아킨의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히아킨의 인게임 대사</span></span><div class="ref-quote">아, 회색둥이 씨! 오랜만이에요! 누리망에서 인기가 엄청 많다고 들었어요. 저도 꼭 구독해 주세요</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">트리비의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">트리비의 인게임 대사</span></span><div class="ref-quote">살짝 알려주자면 카이는 누리망에서 사실 엄청 인기가 많아. 그 이유는… 헤헤, 말 안 할래!</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">최근 드로마스의 발굽 관리 영상이 누리망에서 인기를 끌었다. 거의 모든 오크마 시민들이 시청한 것 같다</div></li>
+<li id="ref-11" data-reference-item data-ref-number="11"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">얼마 후, 오크마에서 「누리망에서는 아무도 당신이 드로마스라는 걸 모른다」라는 제목의 문집이 출판되었다</div></li>
+<li id="ref-12" data-reference-item data-ref-number="12"><span class="ref-title">빕사니아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">빕사니아의 인게임 대사</span></span><div class="ref-quote">참, 만약 배우고 싶은 게 있다면 언제든 날 찾아와. 누리망에서 쓸만한 「씨앗」이 있는지 확인해 볼게. 어쨌든 아는 게 힘이잖아. 그리고 나한텐 가장 직접적인 힘의 원천이 있다고!</div></li>
+<li id="ref-13" data-reference-item data-ref-number="13"><span class="ref-title">트리논의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">트리논의 인게임 대사</span></span><div class="ref-quote">*우리*는 라이아의 누리망으로 사람들이 원하는 걸 수집할 수 있어</div></li>
+<li id="ref-14" data-reference-item data-ref-number="14"><span class="ref-title">천사 물범의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">천사 물범의 인게임 대사</span></span><div class="ref-quote">o((=&#x27;ω´= )っ「이건 엄청 전형적인 증상인데… 『누리망』을 너무 많이 봤구나, 옹」)∋</div></li>
+<li id="ref-15" data-reference-item data-ref-number="15"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">Unknown의 인게임 대사</span></span><div class="ref-quote">헐, 너도 누리망 서핑해?</div></li>
+<li id="ref-16" data-reference-item data-ref-number="16"><span class="ref-title">아글라이아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아글라이아의 인게임 대사</span></span><div class="ref-quote">카이사르의 부탁으로 미궁에 금실을 설치했어요. 앞으로는 누리망을 자유롭게 쓰실 수 있을 거예요</div></li>
+<li id="ref-17" data-reference-item data-ref-number="17"><span class="ref-title">아글라이아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">아글라이아의 인게임 대사</span></span><div class="ref-quote">누리망을 계속 보수해야 하니, 무슨 일이 생기면 여기로 와서 절 찾아주세요</div></li>
+<li id="ref-18" data-reference-item data-ref-number="18"><span class="ref-title">히실렌스의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">히실렌스의 인게임 대사</span></span></li>
+<li id="ref-19" data-reference-item data-ref-number="19"><span class="ref-title">사이퍼의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">사이퍼의 인게임 대사</span></span><div class="ref-quote">아차차… 재봉녀의 신의 직책이 사라진 후 「누리망」 속도가 5S에서 2S로 떨어졌지……</div></li>
+<li id="ref-20" data-reference-item data-ref-number="20"><span class="ref-title">빕사니아의 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">빕사니아의 인게임 대사</span></span><div class="ref-quote">이? 인터넷, 뭐? 누리망 말하는 거야?</div></li>
+<li id="ref-21" data-reference-item data-ref-number="21"><span class="ref-title">작중 언급</span> <span class="ref-source">게임 본편 · <span class="ref-detail">임무 「멀리서 온 손님이여, 이 세상의 기도에 귀를 기울여라」</span></span><div class="ref-quote">누리망까지 알다니, 소식이 정말 빠르네! 역시 젊은이들은 활력이 넘친다니까! 근데 *우리*는 오늘 너무 바빠서 그럴 시간이 없었어</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 우주론·법칙</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>개념</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-27</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-28</span></div></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
   <p class="subtle">주요 근거: 게임 본편, 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-27 · 문서 초판을 공개했습니다.</li></ol>
@@ -741,12 +684,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="entry-3874">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EB%88%84%EB%A6%AC%EB%A7%9D%2C+%EB%A9%88%EC%B6%B0+%EC%A4%98%EC%84%9C+%EA%B3%A0%EB%A7%88%EC%9B%8C&amp;body=%EB%88%84%EB%A6%AC%EB%A7%9D%2C+%EB%A9%88%EC%B6%B0+%EC%A4%98%EC%84%9C+%EA%B3%A0%EB%A7%88%EC%9B%8C+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fentry-3874.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

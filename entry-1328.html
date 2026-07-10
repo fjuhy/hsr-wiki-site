@@ -4,19 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>구름 위 5전사 · hoyohoyo.wiki</title>
-  <meta name="description" content="구름 위 5전사는 선주 연맹 역사에서 짧은 시간 함께했던 전설적인 다섯 영웅의 집단이다. 이들은 혁혁한 전공을 세웠지만, 목숨을 바친 전우에 대한 그리움 때문에 끝내 사분오열됐다. 따라서 이 이름은 선주 연맹의 승리담만이 아니라, 전공을 세운 영웅들이 상실을 견디지 못하고 갈라진 비극까지 함께 가리킨다.">
+  <meta name="description" content="구름 위 5전사는 선주 연맹 역사에서 아주 짧은 시간 함께했던 전설적인 다섯 영웅의 이름이다. 이들은 혁혁한 전공을 세웠지만, 리더 경류가 훗날 동료들을 학살하고 기록에서 이름이 지워지면서 다섯 중 넷이 삭제·처벌·죽음·개명으로 흩어졌다.">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="hoyohoyo.wiki">
   <meta property="og:title" content="구름 위 5전사 · hoyohoyo.wiki">
-  <meta property="og:description" content="구름 위 5전사는 선주 연맹 역사에서 짧은 시간 함께했던 전설적인 다섯 영웅의 집단이다. 이들은 혁혁한 전공을 세웠지만, 목숨을 바친 전우에 대한 그리움 때문에 끝내 사분오열됐다. 따라서 이 이름은 선주 연맹의 승리담만이 아니라, 전공을 세운 영웅들이 상실을 견디지 못하고 갈라진 비극까지 함께 가리킨다.">
+  <meta property="og:description" content="구름 위 5전사는 선주 연맹 역사에서 아주 짧은 시간 함께했던 전설적인 다섯 영웅의 이름이다. 이들은 혁혁한 전공을 세웠지만, 리더 경류가 훗날 동료들을 학살하고 기록에서 이름이 지워지면서 다섯 중 넷이 삭제·처벌·죽음·개명으로 흩어졌다.">
   <meta property="og:url" content="https://hoyohoyo.wiki/entry-1328.html">
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="https://hoyohoyo.wiki/entry-1328.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,45 +620,40 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html" aria-current="page"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html" aria-current="page"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
-    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-other.html">기타 개념</a><span>구름 위 5전사</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B5%AC%EB%A6%84+%EC%9C%84+5%EC%A0%84%EC%82%AC&amp;page_slug=entry-1328">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>구름 위 5전사</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">기타 개념</span></div><figure class="article-hero-image"><img src="assets/wiki-images/52/f12699426f37417731616495a567153b_482554786598647-5288b59a2747.webp" alt="구름 위 5전사 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"><figcaption class="article-hero-caption">이미지 출처: 공식 HoYoWiki — 갤러리 · 구름 위 5전사</figcaption></figure></header>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-other.html">기타 개념</a><span>구름 위 5전사</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B5%AC%EB%A6%84+%EC%9C%84+5%EC%A0%84%EC%82%AC&amp;page_slug=entry-1328">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>구름 위 5전사</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">기타 개념</span></div><figure class="article-hero-image"><img src="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/11/06/30113987/f12699426f37417731616495a567153b_4825547865986475983.jpg" alt="구름 위 5전사 공식 이미지" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure></header>
     <div class="article-body"><h2 id="개요">개요</h2>
-<p>구름 위 5전사는 선주 연맹 역사에서 짧은 시간 함께했던 전설적인 다섯 영웅의 집단이다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 이들은 혁혁한 전공을 세웠지만, 목숨을 바친 전우에 대한 그리움 때문에 끝내 사분오열됐다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 따라서 이 이름은 선주 연맹의 승리담만이 아니라, 전공을 세운 영웅들이 상실을 견디지 못하고 갈라진 비극까지 함께 가리킨다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup></p>
-<p>구성원은 <a class="wiki-link" href="char-1387.html" title="경류">경류</a>, <a class="wiki-link" href="char-26.html" title="경원">경원</a>, <a class="wiki-link" href="blade.html" title="블레이드">응성</a>, 단풍, 백주다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 다섯 사람은 선주 출신, 단명종, 비디아다라족, 여우족처럼 서로 다른 배경을 지녔고, 선주 「창성」, 선주 「주명」, 선주 나부, 선주 「요청」과 연결된다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이 조합은 구름 위 5전사가 한 선박의 단일 조직이라기보다, 선주 연맹 안의 여러 출신과 재능이 한때 모였던 전설적 집단임을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<h2 id="작중-역할">작중 역할</h2>
-<p>구름 위 5전사는 선주 연맹, 수렵, <a class="wiki-link" href="xianzhou-luofu.html" title="선주 「나부」">선주 「나부」</a>, ⌈수렵⌋ 란과 함께 연결되는 항목이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 연결은 구름 위 5전사를 개인 친분의 모임으로만 읽기보다, 선주 연맹의 역사와 전쟁, 수렵의 질서 안에서 읽게 만든다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>다섯 구성원의 현재와 과거는 선주 서사의 여러 갈래로 흩어져 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 경류는 나부의 전 검술의 일인자이자 구름 위 5전사의 리더였고, 경원은 경류의 제자이며 현재 선주의 천궁의 장군이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 응성은 선주 「주명」 출신 단명종이자 주명 공조사의 전 구성원으로, 현재는 “블레이드”로 알려져 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 단풍은 선주 나부 출신 비디아다라족의 전 음월이며, 악룡을 탄생시켜 처벌받았고 현재 정체는 <a class="wiki-link" href="char-8.html" title="단항">단항</a>이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 백주는 선주 「요청」 출신의 전 여우족 조종사로, 전투 중 사망했다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>이 집단의 작중 기능은 과거의 영웅담을 현재 인물들의 상처와 신분 변화로 이어 붙이는 데 있다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 경원은 장군으로 남았고, 응성은 블레이드라는 이름으로 알려졌으며, 단풍의 현재 정체는 단항으로 이어진다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 구름 위 5전사는 사라진 과거가 아니라, 현재의 선주 인물 관계와 정체성에 계속 흔적을 남기는 이름이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<h2 id="작중-위상">작중 위상</h2>
-<p>구름 위 5전사의 위상은 “전설적인 다섯 영웅”과 “혁혁한 전공”이라는 평가에서 먼저 드러난다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 경류가 나부의 전 검술의 일인자이자 리더였다는 점은 이 집단이 뛰어난 무력과 명성을 지닌 인물들을 포함했음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>이들의 명성은 선주가 기념하는 영광만으로 남지 않는다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 경류는 마각에 의해 모든 기록에서 이름이 삭제됐고, 동료들을 학살한 뒤 기록에서 지워졌다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 응성도 현재 마각에 의해 기록에서 삭제됐으며, “블레이드”로 알려진다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 단풍은 악룡을 탄생시켜 처벌받았고, 백주는 전투 중 사망했다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이 때문에 구름 위 5전사의 위상은 찬란한 전공과 지워진 이름, 처벌, 죽음이 한 항목 안에 함께 묶인다는 점에서 독특하다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<h2 id="관련-항목과-작중-언급">관련 항목과 작중 언급</h2>
-<p>선주 연맹과 선주 「나부」는 구름 위 5전사의 활동 배경을 잡아 주는 항목이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 경류는 나부의 전 검술의 일인자였고, 단풍은 선주 나부 출신의 전 음월이며, 경원은 현재 선주의 천궁의 장군이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이 연결은 구름 위 5전사의 과거가 나부와 선주 권력의 현재까지 이어진다는 점을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
-<p>경류와 경원은 스승과 제자 관계로 묶인다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 경류가 리더이자 나부의 전 검술의 일인자였고, 경원이 현재 천궁의 장군이라는 사실은 구름 위 5전사의 유산이 완전히 사라지지 않고 선주의 현재 군사 질서 안에도 남아 있음을 보여준다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>응성, 블레이드, 단풍, 음월, 단항•음월은 이름과 정체성의 변화로 이어지는 축이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 응성은 기록에서 삭제된 뒤 블레이드로 알려졌고, 단풍은 전 음월이자 현재 단항으로 이어지는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 이 축은 구름 위 5전사의 몰락이 단순한 해산이 아니라, 이름의 삭제와 새 이름, 처벌과 다른 정체성으로 이어진 사건임을 드러낸다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>백주는 구름 위 5전사의 붕괴를 감정적으로 묶는 인물이다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그는 전투 중 사망한 전 여우족 조종사이며, 구름 위 5전사는 목숨을 바친 전우에 대한 그리움 때문에 사분오열됐다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 백주의 죽음은 이 집단의 전공을 비극으로 뒤집는 핵심 상실로 남는다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<h2 id="전설이-흩어진-방식">전설이 흩어진 방식</h2>
-<p>구름 위 5전사는 짧은 시간 동안 함께하며 전공을 세운 영웅 집단이었지만, 그 결속은 전우의 죽음 이후 유지되지 못했다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup> 경원처럼 현재 선주의 장군으로 남은 인물이 있는 한편, 경류와 응성처럼 기록에서 삭제된 인물도 있고, 단풍처럼 처벌과 다른 정체성으로 이어진 인물도 있으며, 백주처럼 전투 중 사망한 인물도 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그래서 구름 위 5전사는 선주 연맹의 전설인 동시에, 영웅들의 전공이 상실과 처벌, 망각으로 흩어진 사례로 읽힌다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
-<p>공식 갤러리에는 구름 위 5전사를 가리키는 이미지 항목이 별도로 등록되어 있다.<sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · 구름 위 5전사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · 구름 위 5전사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 이 시각 자료의 존재는 구름 위 5전사가 단순한 배경 문구가 아니라, 선주 서사에서 한 묶음으로 기억되는 집단임을 보강한다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · 구름 위 5전사"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 갤러리 · 구름 위 5전사"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup></p><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">구름 위 5전사</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1328?lang=ko-kr">원문</a></span><div class="ref-quote">선주 연맹 역사에서 아주 짧은 시간 함께한 전설적인 다섯 영웅 혁혁한 전공을 세웠지만, 목숨을 바친 전우에 대한 그리움으로 사분오열됐다</div></li>
+<p>구름 위 5전사는 선주 연맹 역사에서 아주 짧은 시간 함께했던 전설적인 다섯 영웅의 이름이다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 이들은 혁혁한 전공을 세웠지만, 리더 <a class="wiki-link" href="char-1387.html" title="경류">경류</a>가 훗날 동료들을 학살하고 기록에서 이름이 지워지면서 다섯 중 넷이 삭제·처벌·죽음·개명으로 흩어졌다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="구성원">구성원</h2>
+<p>구름 위 5전사는 경류, <a class="wiki-link" href="char-26.html" title="경원">경원</a>, <a class="wiki-link" href="blade.html" title="블레이드">응성</a>, 단풍, 백주 다섯 명으로 이루어졌다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>경류는 나부의 전 검술의 일인자이자 이 무리의 리더였다. 훗날 동료들을 학살했고, 마각에 의해 모든 기록에서 이름이 삭제됐다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>경원은 경류의 제자이며, 현재 선주의 천궁의 장군이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>응성은 선주 「주명」 출신 단명종으로, 주명 공조사의 전 구성원이었다. 현재도 마각에 의해 기록에서 삭제된 상태이며, “블레이드”로 알려져 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>단풍은 선주 나부 출신 비디아다라족의 전 음월이었다. 악룡을 탄생시켜 처벌받았고, 현재 정체는 <a class="wiki-link" href="char-8.html" title="단항">단항</a>이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<p>백주는 선주 「요청」 출신의 전 여우족 조종사로, 전투 중 사망했다.<sup class="cite-ref" title="공식 HoYoWiki · 구름 위 5전사"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></p>
+<h2 id="관련-문서">관련 문서</h2>
+<ul>
+<li><a href="faction-963.html">선주 연맹</a> — 구름 위 5전사가 소속된 조직이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 소속"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></li>
+<li><a href="xianzhou-luofu.html">선주 「나부」</a> — <a href="char-1387.html">경류</a>와 단풍의 출신 선박이며, 관련 항목으로 함께 묶여 있다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></li>
+<li><a href="char-26.html">경원</a>, <a href="blade.html">블레이드</a>, <a href="char-8.html">단항</a> — 구름 위 5전사가 사분오열된 뒤에도 다른 이름이나 직함으로 남은 세 사람이다.<sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 구성원"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="공식 HoYoWiki — 기본 정보 · 관련 항목"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">구름 위 5전사</span> <span class="ref-source">공식 HoYoWiki · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1328?lang=ko-kr">원문</a></span><div class="ref-quote">선주 연맹 역사에서 아주 짧은 시간 함께한 전설적인 다섯 영웅 혁혁한 전공을 세웠지만, 목숨을 바친 전우에 대한 그리움으로 사분오열됐다</div></li>
 <li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">소속</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1328?lang=ko-kr">원문</a></span><div class="ref-quote">선주 연맹</div></li>
 <li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">구성원</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1328?lang=ko-kr">원문</a></span><div class="ref-quote">경류 - 선주 출신, 선주 「창성」 소속: 나부의 전 검술의 일인자이자 리더. 현재 마각에 의해 모든 기록에서 이름이 삭제됨. 동료들을 학살한 후 기록에서 지워짐. 경원 - 선주 출신, 원래 소속 선박은 불명. 경류의 제자이며, 현재 선주의 천궁의 장군. 응성 - 단명종, 선주 「주명」 출신: 주명 공조사 전 구성원. 현재 마각에 의해 기록에서 삭제되었으며, “블레이드”로 알려짐. 단풍 - 비디아다라족, 선주 나부 출신: 전 음월. 악룡을 탄생시켜 처벌받았...</div></li>
-<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1328?lang=ko-kr">원문</a></span><div class="ref-quote">선주 연맹 - 수렵; 선주 「나부」(지명); ⌈ 수렵 ⌋ 란; 경류; 경원; 블레이드; 음월; 단항•음월 ; 백주 • 구름 위 5전사</div></li>
-<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">구름 위 5전사</span> <span class="ref-source">공식 HoYoWiki — 갤러리 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1328?lang=ko-kr">원문</a></span><div class="ref-quote">구름 위 5전사</div></li>
-<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">구름 위 5전사</span> <span class="ref-source">공식 HoYoWiki — 갤러리 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1328?lang=ko-kr">원문</a></span><div class="ref-quote">구름 위 5전사</div></li></ol></details>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">관련 항목</span> <span class="ref-source">공식 HoYoWiki — 기본 정보 · <a href="https://wiki.hoyolab.com/pc/hsr/entry/1328?lang=ko-kr">원문</a></span><div class="ref-quote">선주 연맹 - 수렵; 선주 「나부」(지명); ⌈ 수렵 ⌋ 란; 경류; 경원; 블레이드; 음월; 단항•음월 ; 백주 • 구름 위 5전사</div></li></ol></details>
 <details class="article-tools" data-page-dates data-public-launch-surface>
   <summary>문서 정보와 변경 로그</summary>
   <h2>문서 정보</h2>
   <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 기타 개념</span></div>
 <div class="info-item"><strong>문서 유형</strong><span>개념</span></div>
 <div class="info-item"><strong>작성 일자</strong><span>2026-06-25</span></div>
-<div class="info-item"><strong>최종 수정 일자</strong><span>2026-06-29</span></div></div>
-  <p class="subtle">주요 근거: 공식 HoYoWiki, 공식 HoYoWiki — 갤러리, 공식 HoYoWiki — 기본 정보</p>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-04</span></div></div>
+  <p class="subtle">주요 근거: 공식 HoYoWiki, 공식 HoYoWiki — 기본 정보</p>
   <h3>최근 변경</h3>
   <ol class="log-list" data-update-history><li>2026-06-25 · 문서 초판을 공개했습니다.</li></ol>
   <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%EA%B5%AC%EB%A6%84+%EC%9C%84+5%EC%A0%84%EC%82%AC&amp;page_slug=entry-1328">수정 요청</a></div>
@@ -718,12 +662,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="entry-1328">
   <h2>댓글</h2>
   <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
-  <p class="subtle comments-giscus-loading" data-giscus-loading>댓글창을 불러오는 중입니다.</p>
-  
-  <div class="comments-giscus-fallback" data-giscus-fallback>
-    <p class="subtle">내장 댓글창을 불러오지 못했습니다. GitHub Discussions에서 새 창으로 의견을 남겨 주세요.</p>
-    <a class="button-link" href="https://github.com/fjuhy/hsr-wiki-issues/discussions/new?category=general&amp;title=%5B%EB%8C%93%EA%B8%80%5D+%EA%B5%AC%EB%A6%84+%EC%9C%84+5%EC%A0%84%EC%82%AC&amp;body=%EA%B5%AC%EB%A6%84+%EC%9C%84+5%EC%A0%84%EC%82%AC+%EB%AC%B8%EC%84%9C%EC%97%90+%EB%8C%80%ED%95%9C+%EC%9D%98%EA%B2%AC%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%0A%EB%AC%B8%EC%84%9C%3A+https%3A%2F%2Fhoyohoyo.wiki%2Fentry-1328.html%0A" target="_blank" rel="noopener noreferrer">GitHub Discussions에서 댓글 쓰기</a>
-  </div>
   <div class="giscus" data-giscus-container></div>
   <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
   <script src="https://giscus.app/client.js"

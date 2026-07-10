@@ -14,9 +14,16 @@
 
   <link rel="canonical" href="https://hoyohoyo.wiki/category-factions-path.html">
   <link rel="icon" href="data:,">
-  <style>:root {
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
   color-scheme: light;
-  --brand-font: "Avenir Next", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #f7f7f3;
   --paper: #ffffff;
   --surface: #f0f4f2;
@@ -79,7 +86,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.78 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -106,30 +113,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: space-between;
   gap: 14px;
 }
-.brand {
-  color: var(--ink);
-  font-family: var(--brand-font);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
 .brand:hover { background: transparent; color: var(--accent-ink); }
 .brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
-.top-links { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-left: auto; white-space: nowrap; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-links a, .theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  padding: 0;
+  padding: 7px 10px;
   font: inherit;
   font-size: 13px;
   line-height: 1.2;
@@ -137,42 +130,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .theme-toggle { cursor: pointer; min-width: 38px; }
 .top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.top-links a::after, .theme-toggle::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  z-index: 30;
-  transform: translateY(-4px);
-  pointer-events: none;
-  opacity: 0;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  padding: 5px 8px;
-  font-size: 12px;
-  font-weight: 760;
-  line-height: 1.25;
-  white-space: nowrap;
-  transition: opacity .12s ease, transform .12s ease;
-}
-.top-links a:hover::after, .top-links a:focus-visible::after,
-.theme-toggle:hover::after, .theme-toggle:focus-visible::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.top-link-icon {
-  width: 19px;
-  height: 19px;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .layout {
   max-width: 1220px;
@@ -240,13 +197,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-}
-.article-hero-caption {
-  border-top: 1px solid var(--line);
-  padding: 7px 10px 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
 }
 .article-mini-actions {
   display: flex;
@@ -470,27 +420,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .comment-card p { margin: 5px 0 0; }
 .comment-card.is-held { border-style: dashed; }
 .comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
-.comments-giscus-loading { margin: 8px 0 0; }
-.comments-giscus-fallback {
-  display: none;
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 12px;
-}
-.comments-giscus-fallback p { margin: 0 0 10px; }
-.comments-section-giscus:not(.is-giscus-ready) .giscus {
-  max-height: 1px;
-  min-height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.comments-section-giscus.is-giscus-ready .comments-giscus-loading,
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-loading { display: none; }
-.comments-section-giscus.is-giscus-unavailable .giscus { display: none; }
-.comments-section-giscus.is-giscus-unavailable .comments-giscus-fallback { display: block; }
 .ad-slot { color: var(--muted); font-size: 12px; }
 .stub { padding: 38px 42px; max-width: 900px; }
 .stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
@@ -509,8 +438,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(8, 12, 16, .12) 0%, rgba(8, 12, 16, .72) 72%, rgba(8, 12, 16, .88) 100%),
-    linear-gradient(90deg, rgba(8, 12, 16, .76) 0%, rgba(8, 12, 16, .28) 54%, rgba(8, 12, 16, .42) 100%);
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
 }
 .home-hero-image {
   position: absolute;
@@ -519,17 +448,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
+.home-hero-image-dark { display: none; }
 .home-hero-copy {
   width: min(760px, 100%);
   padding: clamp(34px, 6vw, 72px) 42px 38px;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .38);
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
 }
 .home-hero-kicker {
   font-family: var(--brand-font);
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, .76);
+  color: rgba(59,72,92,.74);
   font-size: 13px;
   font-weight: 760;
   letter-spacing: 0;
@@ -546,10 +477,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-hero-subtitle {
   margin: 0;
   max-width: 560px;
-  color: rgba(255, 255, 255, .88);
+  color: rgba(24,34,55,.84);
   font-size: 21px;
   line-height: 1.55;
   font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
 }
 .home-grid {
   display: grid;
@@ -560,8 +515,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
 .home-section h2 { margin: 0 0 12px; font-size: 21px; }
 .recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.recent-list li { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
 .recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
 .report-panel form { display: grid; gap: 10px; }
 .report-panel label { display: grid; gap: 4px; font-weight: 760; }
 .report-panel input, .report-panel textarea, .report-panel select {
@@ -575,14 +534,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .report-panel textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 900px) {
-  .site-header-inner { align-items: center; flex-wrap: wrap; }
-  .brand { order: 1; }
-  .top-links {
-    order: 2;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-  }
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
 }
 @media (max-width: 820px) {
   body { font-size: 16px; line-height: 1.74; }
@@ -591,40 +544,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar { order: 2; position: static; }
   .queue-list { max-height: 34vh; }
   .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
-  .home-hero h1 { font-size: 38px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
   .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
   .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
 }
 @media (max-width: 520px) {
-  .site-header-inner { padding: 9px 12px; gap: 8px; }
-  .brand { font-size: 16px; }
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
   .brand small { display: none; }
-  .top-links { gap: 4px; }
-  .top-links a, .theme-toggle {
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-  }
-  .top-link-icon { width: 17px; height: 17px; }
+  .top-links a { padding: 7px 8px; }
   .home-hero h1 { font-size: 33px; }
   .article-body { padding-bottom: 32px; }
-}
-@media (max-width: 360px) {
-  .brand { font-size: 15px; }
-  .top-links { gap: 3px; }
-  .top-links a, .theme-toggle {
-    width: 29px;
-    height: 29px;
-    min-width: 29px;
-  }
-  .top-link-icon { width: 16px; height: 16px; }
 }</style>
-  <link rel="stylesheet" href="assets/wiki-search.css?v=163206b81bc8">
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
   <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
   <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
-  <script type="module" src="assets/wiki-search.js?v=53e143cb43ac"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
   <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
-  <script type="module" src="assets/wiki-comments.js?v=eae2c848ab3b"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
   <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
 </head>
 <body>
@@ -648,7 +597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       </section>
     </div>
   </div>
-</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html" aria-label="카테고리" title="카테고리" data-tooltip="카테고리"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg><span class="sr-only">카테고리</span></a><a href="document-status.html" aria-label="문서 현황" title="문서 현황" data-tooltip="문서 현황"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6h12"></path><path d="M9 12h12"></path><path d="M9 18h12"></path><path d="m3.5 6 1 1 2-2"></path><path d="m3.5 12 1 1 2-2"></path><path d="m3.5 18 1 1 2-2"></path></svg><span class="sr-only">문서 현황</span></a><a href="document-request.html" aria-label="문서 요청" title="문서 요청" data-tooltip="문서 요청"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M12 8v6"></path><path d="M9 11h6"></path></svg><span class="sr-only">문서 요청</span></a><a href="usage.html" aria-label="이용 안내" title="이용 안내" data-tooltip="이용 안내"><svg class="top-link-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9a3 3 0 1 1 4.6 2.5c-1 .6-1.8 1.3-1.8 2.5"></path><path d="M12 17h.01"></path></svg><span class="sr-only">이용 안내</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환" data-tooltip="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
 <main class="layout">
   <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
@@ -671,37 +620,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
 <a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a></div>
 <div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
 <a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
 <a class="category-nav-child" href="category-concepts-cosmology.html"><span>우주론·법칙</span></a>
 <a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
-<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
-<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
   <article class="article-shell" data-pagefind-body>
     <header class="article-top"><h1>운명의 길 파벌</h1><div class="meta-row"><span class="badge">운명의 길 파벌</span></div></header>
-    <div class="article-body"><nav class="breadcrumbs" aria-label="문서 위치"><a href="categories.html">카테고리</a><a href="category-factions.html">파벌</a><span>운명의 길 파벌</span></nav><section class="stub"><h2>운명의 길 파벌</h2><p class="subtle">23개 문서</p><ul><li><a href="stellaron-hunters.html">스텔라론 헌터</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">스텔라론 헌터는 스텔라론을 탈취하는 소수 정예 수배 집단이지만, 본편 후반부의 대사는 스텔라론 수집이 겉면일 뿐이고 엘리오의 각본, 「종말」 운명의 길, 개척자와 우주가 종말의 운명을 피하게 만드는 더 큰 목표가 얽혀 있음을 드러낸다.</p></li>
-<li><a href="faction-970.html">가면의 우인 - 환락</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">가면의 우인은 운명의 길 「환락」을 따르는 파벌이다. 이들은 「환락」 아하와 연결되며, 자신들이 추종하는 에이언즈를 장난스러운 어조로도 진지하게 찬양한다.</p></li>
-<li><a href="faction-978.html">갤럭시 레인저 - 수렵</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">갤럭시 레인저는 「수렵」의 운명을 걷는 파벌이다. 이들은 란을 숭상하고, 폭력으로 폭력을 제압하는 란의 살벌한 결단력을 높이 평가한다. 다만 「수렵」에 나서는 모든 이가 「풍요」와 척을 지려는 것은 아니며, 갤럭시 레인저의 정체성도 단순한 반풍요 세력보다 개인의 행동으로 정의를 퍼뜨리는 의협 집단에 가깝다.</p></li>
-<li><a href="faction-976.html">거울의 주인 - 미</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">거울의 주인은 운명의 길 「미(美)」에 속하는 파벌이며, 관련 항목으로 「미(美)」의 이드릴라가 함께 놓인다.</p></li>
-<li><a href="faction-969.html">곤충 떼 - 번식</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">곤충 떼는 운명의 길 「번식」에 속한 파벌이며, 「충황」 타이츠론스와 이어진 집단이다. 이들에게 생명은 먼저 번식하려는 본능에서 나오고, 감각과 정신은 그 본능을 수행하는 과정에서 생긴 부산물에 가깝다.</p></li>
-<li><a href="faction-973.html">기억의 정원 - 기억</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">기억의 정원은 운명의 길 「기억」과 연결된 파벌이다. 이들은 물질보다 기억을 더 오래 남는 존재의 증거로 보고, 기억의 보존과 공유를 핵심 활동으로 삼는다.</p></li>
-<li><a href="faction-980.html">리들러 - 신비</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">리들러는 운명의 길 「신비」를 따르는 파벌이며, 「신비」 미토스와 관련된 집단으로 묶인다. 이들은 「신비」의 추종자 중에서도 특출난 집단으로, 말과 문자가 뜻을 또렷하게 전달한다는 전제를 흔드는 쪽에 서 있다.</p></li>
-<li><a href="faction-962.html">무명객 - 개척</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">무명객은 「개척」의 운명의 길에 속한 파벌이다. 이들은 한 세계에 정착한 조직이라기보다, 여러 세계에 발을 들였다가 다시 떠나는 신비한 여행자들로 기억된다.</p></li>
-<li><a href="faction-956.html">반물질 군단 - 파멸</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">반물질 군단은 「파멸」의 운명의 길과 연결된 파벌이며, 「파멸」의 에이언즈 나누크를 중심에 둔다. 나누크의 신도들은 「파멸」의 운명의 길에 오르겠다고 맹세하고, 문명과 생명의 절대적 대립에 서서 우주를 위협하는 반물질 군단을 세웠다.</p></li>
-<li><a href="faction-971.html">비애의 연극인 - 환락</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">비애의 연극인은 환락 의 운명의 길에 속한 파벌이지만, 스스로는 환락을 거스르는 반환락주의자다. 이들은 생명이 파란만장하며, 고통이 사람을 성장시키고, 순간적인 기쁨과 값싼 오락은 인간이 자아를 잃게 하는 마취제라고 본다. 그래서 사람은 환락을 버리고 슬픔을 견디며 정신을 단련해야 한다고 주장한다.</p></li>
-<li><a href="faction-972.html">소각공 - 기억</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">소각공은 「기억」의 운명의 길에 속하는 파벌이다. 이들은 우주의 기억을 수집하고 저장하는 「기억의 정원」 안에 숨어 있는 극단적인 기억하는 자 무리이며, 모든 존재의 흔적을 보존해야 한다는 동료들의 태도와 달리 기억에 우열이 있다고 믿는다.</p></li>
-<li><a href="faction-977.html">소멸파 - 파멸</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">소멸파는 「파멸」의 운명의 길과 연결된 파벌이며, 관련 항목으로 「파멸」의 나누크가 함께 묶인다.</p></li>
-<li><a href="faction-960.html">약을 구하는 자 - 풍요</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">약을 구하는 자는 운명의 길 「풍요」와 연결된 파벌이며, 저명한 「약사」에게 영생의 양약을 구하려는 이들을 가리킨다.</p></li>
-<li><a href="faction-965.html">은하열차 - 개척</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">은하열차는 「개척」의 운명의 길에 속한 파벌이자 아키비리가 탑승했던 우주 항행 열차다. 아키비리 사후 무명객에게 이어진 개척 의지, 히메코의 수리, 스텔라론으로 막힌 은하 궤도, 열차 연료와 새 궤도 문제를 통해 과거의 유산이자 현재진행형 개척 거점으로 기능한다.</p></li>
-<li><a href="faction-2428.html">자멸자 - 공허</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">자멸자는 「공허」의 운명의 길에 속한 파벌이다. 그러나 보통의 조직처럼 구성원이 모여 명령과 질서를 공유하는 세력이라기보다, 「공허」 IX의 그림자에 잘못 발을 들인 사람들이 존재의 의미를 잃어 가는 현상에 가깝다.</p></li>
-<li><a href="faction-1209.html">장례식 안내원 - 종말</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">장례식 안내원은 「종말」의 운명의 길에 속한 파벌이며, 기본 명칭은 “장례식장 안내원”이다. 이들은 우주 곳곳에 흩어져 있는 테르미누스의 신도들로, 많은 이들이 외면하는 우주의 종결을 삶의 전제로 받아들인다.</p></li>
-<li><a href="faction-958.html">제Ⅸ 기관 - 공허</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">제Ⅸ 기관은 「공허」의 운명의 길과 연결된 파벌이다. 관련 항목도 「공허」 Ⅸ로 묶이며, 이 조직은 물질세계가 감지하기 힘든 공허의 그림자 속에 숨어 있다고 전해진다.</p></li>
-<li><a href="faction-979.html">중재관 - 균형</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">중재관은 「균형」의 운명의 길에 속한 파벌이며, 관련 항목으로 「균형」의 에이언즈인 「후」가 연결된다.</p></li>
-<li><a href="faction-1232.html">천외 합창단 - 질서</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">천외 합창단은 「질서」의 운명의 길과 연결된 파벌이다.</p></li>
-<li><a href="faction-953.html">축성가(築城家) - 보존</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">축성가(築城家)는 운명의 길 「보존」에 속한 파벌이며, 그 중심에는 「보존」의 클리포트가 있다. 이들은 멸망의 이유를 논쟁하기보다, 멸망이 닥치기 전에 벽을 세우는 쪽을 택한 집단이다.</p></li>
-<li><a href="faction-959.html">풍요의 백성 - 풍요</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">풍요의 백성은 운명의 길 「풍요」에 속한 파벌이며, 기본 명칭은 「풍요의 주민」이다. 이들은 「풍요」의 에이언즈 약사를 존경하는 신으로 삼고, 예술과 시를 통해 은하수에서 약사의 박애와 자상함을 찬양한다.</p></li>
-<li><a href="faction-974.html">허구 역사학자 - 신비</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">허구 역사학자는 「신비」의 운명의 길에 속하는 파벌이며, 관련 항목으로는 「신비」 미토스가 연결된다.</p></li>
-<li><a href="faction-964.html">혼돈의 의사 - 공허</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">혼돈의 의사는 공허의 운명의 길에 속한 파벌이다. 이들은 육신을 치료하거나 영혼을 해방하는 일을 자신들의 본질로 삼지 않고, 삶에 집착하거나 죽음을 피하려 하지도 않으며, 『존재』 자체를 존경한다고 말한다.</p></li></ul></section></div>
+    <div class="article-body"><nav class="breadcrumbs" aria-label="문서 위치"><a href="categories.html">카테고리</a><a href="category-factions.html">파벌</a><span>운명의 길 파벌</span></nav><section class="stub"><h2>운명의 길 파벌</h2><p class="subtle">22개 문서</p><ul><li><a href="faction-970.html">가면의 우인 - 환락</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">가면의 우인은 운명의 길 「환락」을 따르는 파벌이다. 이들은 쾌락을 위해 어떤 대가도 마다하지 않으며, 가는 곳마다 모두 엉망으로 만든다.</p></li>
+<li><a href="faction-976.html">거울의 주인 - 미</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">거울의 주인은 운명의 길 「미(美)」에 속한 파벌이다. 이들은 자신들이 지닌 「초월의 거울」을 미의 신 이드릴라의 신체 파편으로 여기며, 거울은 소유자가 인정하는 아름다움을 비추어 현실에 투영한다.</p></li>
+<li><a href="faction-969.html">곤충 떼 - 번식</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">곤충 떼는 운명의 길 「번식」에 속한 파벌이며, 「충황」 타이츠론스와 이어진 집단이다. 원시적 본능에 굴복한 벌레와 짐승은 번식의 거친 물결에 이끌려 식량으로 전락한 뒤 곤충 떼의 완전한 일원이 된다.</p></li>
+<li><a href="faction-973.html">기억의 정원 - 기억</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">기억의 정원은 운명의 길 「기억」을 따르는 파벌이다. 구성원인 기억하는 자는 주인 후리에게 교화되어 육신을 벗고 밈의 형식으로 살아가며, 그 덕분에 물질의 한계 없이 별바다의 여러 세계를 자유롭게 오간다.</p></li>
+<li><a href="faction-3149.html">단륜사- 균형</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">단륜사는 「균형」의 운명의 길과 연결된 보리인 중심의 수행 공동체다.</p></li>
+<li><a href="faction-980.html">리들러 - 신비</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">리들러는 운명의 길 「신비」를 따르는 파벌이다. 지금의 은하계에서 순수하고 정확한 언어가 거의 남아 있지 않은 이유는, 리들러가 남긴 또 다른 수수께끼로 전해진다.</p></li>
+<li><a href="faction-962.html">무명객 - 개척</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">무명객은 「개척」의 운명의 길에 속한 파벌이다. 천 년 전 에이언즈 아키비리가 별바다에 은빛 궤도를 놓아 세계들을 연결했고, 그 발자취를 따라나선 여행자들이 스스로를 무명객이라 불렀다. ≪별하늘 우화≫는 이들을 &quot;신비한 낯선 이가 각계에 발을 들였다가 다시 떠나갔다&quot;고 적었다.</p></li>
+<li><a href="faction-975.html">미의 기사단 - 미</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">미의 기사단은 운명의 길 「미(美)」에 속한 파벌이다. 이드릴라의 추종자 가운데 고전미를 가장 숭상하는 이들이 결성했으며, 카프카가 이드릴라를 이미 사라진 에이언즈 중 하나로 꼽는 지금도 이들은 그 추락을 믿지 않고 우주를 누빈다.</p></li>
+<li><a href="faction-956.html">반물질 군단 - 파멸</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">반물질 군단은 「파멸」의 운명의 길을 따르는 파벌로, 에이언즈 나누크가 이끈다. 이들은 세계를 정복해 다스리는 대신 문명이 무너지며 흘러나오는 혼돈 에너지를 먹이로 삼고, 마지막 불꽃이 꺼진 뒤에야 다음 학살 목표를 찾아 떠난다.</p></li>
+<li><a href="faction-971.html">비애의 연극인 - 환락</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">비애의 연극인은 환락 의 운명의 길에 속하지만, 스스로는 환락에 맞서는 반환락주의자를 자처하는 파벌이다. 정작 환락의 에이언즈 아하는 이 저항을 흥미로워하며, 고행자들에게 에이언즈의 힘을 직접 내려 여러 은하계를 넘나들게 했다. 비애의 연극인은 생명이 파란만장하고 고통이 사람을 성장시키며, 순간의 기쁨과 값싼 오락은 자아</p></li>
+<li><a href="faction-972.html">소각공 - 기억</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">소각공은 「기억」의 운명의 길에 속한 파벌이다. 우주의 기억을 모아 보관하는 「기억의 정원」 안에 숨어서, 다른 기억하는 자가 수집한 기억을 훔쳐 등급을 매기고 쓸모없다고 판단한 기억은 흔적조차 없이 소각한다.</p></li>
+<li><a href="faction-977.html">소멸파 - 파멸</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">소멸파는 「파멸」의 운명의 길을 자처하는 파벌이다.</p></li>
+<li><a href="faction-960.html">약을 구하는 자 - 풍요</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">약을 구하는 자는 운명의 길 「풍요」와 연결된 파벌로, 저명한 「약사」에게서 영생의 양약을 구하려는 이들을 가리킨다. 함대를 이끄는 왕족부터 홀로 길에 오른 낭인까지 신분은 제각각이지만, 「불로장생」에 사로잡힌 집착만은 이들 모두의 공통점이다.</p></li>
+<li><a href="faction-965.html">은하열차 - 개척</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">은하열차는 「개척」의 운명의 길에 속한 파벌이자, 에이언즈 아키비리가 탑승했던 우주 항행 열차다. 아키비리가 죽은 뒤 「만계의 암」이 퍼지며 은하 궤도가 막혀 열차는 멈췄고, 오랜 세월이 지나 붉은 머리 소녀 히메코가 황폐해진 열차를 수리해 다시 우주 탐사 여정을 시작했다.</p></li>
+<li><a href="faction-2428.html">자멸자 - 공허</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">자멸자는 「공허」의 운명의 길에 속한 파벌이다. 실제로는 조직이 아니라, 실수로 「공허」 IX의 그림자에 발을 들여 존재의 의미를 잃어 가는 사람들을 가리키는 이름이다. 공식 이야기조차 이들을 「파벌」이라 부르기엔 구성원 사이 사회적 관계가 너무 부족하다고 인정한다.</p></li>
+<li><a href="faction-1209.html">장례식 안내원 - 종말</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">장례식 안내원(기본 명칭 &quot;장례식장 안내원&quot;)은 「종말」의 운명의 길에 속한 파벌이다. 우주 곳곳에 흩어진 테르미누스의 신도들로, 사람들이 눈을 감고 입에 담지 않는 종말의 날을 향해 오히려 거꾸로 걸어간다.</p></li>
+<li><a href="faction-958.html">제Ⅸ 기관 - 공허</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">제Ⅸ 기관은 「공허」의 운명의 길에 속한 파벌이다. 술에 취한 어느 갤럭시 레인저는 &quot;제Ⅸ 기관은 존재한다! 잘 찾아봐! 원시 박사의 모든 비밀이 거기 있으니까!&quot;라고 외쳤지만, 그 발언 말고는 조직의 실재를 확인할 방법이 없다.</p></li>
+<li><a href="faction-979.html">중재관 - 균형</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">중재관은 「균형」의 운명의 길에 속한 파벌로, 에이언즈 「후」의 이념을 따른다. 이들은 아름다움과 추악함, 기쁨과 슬픔, 선과 악, 사랑과 증오처럼 극단으로 갈라진 존재들을 세상에서 제거해 온 집단이다.</p></li>
+<li><a href="faction-1232.html">천외 합창단 - 질서</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">천외 합창단은 「질서」의 운명의 길과 연결된 파벌이다. 이 파벌이 부르는 환송가는 원래 「질서」 에나 자신의 목소리였다.</p></li>
+<li><a href="faction-953.html">축성가(築城家) - 보존</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">축성가(築城家)는 운명의 길 「보존」에 속한 파벌이다. 전설에 따르면 이들이 따르는 클리포트는 가장 오래된 에이언즈로, 과묵하고 진중한 성격으로 광년 단위로 은하수를 둘러싼 장벽을 구축하며 은하의 소란스러운 투쟁에 개입하지 않고 다른 에이언즈의 조롱과 부름도 무시한다.</p></li>
+<li><a href="faction-959.html">풍요의 백성 - 풍요</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">풍요의 백성은 운명의 길 「풍요」를 따르는 신앙 파벌이며, 기본 명칭은 「풍요의 주민」이다. 이들이 공유하는 이야기에 따르면 전쟁과 역병으로 무너진 세계에 에이언즈 약사가 강림해 따뜻한 씨앗을 뿌리자, 갈라진 땅이 붙고 오염된 물이 다시 깨끗해졌다. 풍요의 백성은 이 구원의 기억을 예술과 시로 남겨 은하수 곳곳에서 약사의</p></li>
+<li><a href="faction-964.html">혼돈의 의사 - 공허</a> <span class="ref-source">세력 · 운명의 길 파벌</span><p class="subtle">혼돈의 의사는 공허의 운명의 길에 속한 파벌이다. &quot;존재는 공허다&quot;라는 잠언을 무의식중에 받아들이고 에이언즈 Ⅸ의 시선을 받은 존재는 대개 퇴폐해 자멸자가 되지만, 그 시선에 반항심을 품고 살아남은 이들이 혼돈의 의사가 된다.</p></li></ul></section></div>
   </article>
 </main>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;:&quot;f803b654b24e4e57a86718dbfcdc82e2&quot;}"></script>
