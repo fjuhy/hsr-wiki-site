@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>환월 게임 · hoyohoyo.wiki</title>
+  <meta name="description" content="환월 게임은 이상 낙원의 환월이 찰 때 열리는 「환락」의 의식이다. 여덟 명의 알현자가 환락의 가면을 쓰고 주민들의 관심과 원력을 모아 기적을 겨룬다. 가장 두각을 나타낸 승자는 아하의 응답을 받고, 그의 권능을 1분 동안 나눠 받아 소원을 빌 수 있다.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="hoyohoyo.wiki">
+  <meta property="og:title" content="환월 게임 · hoyohoyo.wiki">
+  <meta property="og:description" content="환월 게임은 이상 낙원의 환월이 찰 때 열리는 「환락」의 의식이다. 여덟 명의 알현자가 환락의 가면을 쓰고 주민들의 관심과 원력을 모아 기적을 겨룬다. 가장 두각을 나타낸 승자는 아하의 응답을 받고, 그의 권능을 1분 동안 나눠 받아 소원을 빌 수 있다.">
+  <meta property="og:url" content="https://hoyohoyo.wiki/phantom-moon-game.html">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="canonical" href="https://hoyohoyo.wiki/phantom-moon-game.html">
+  <link rel="icon" href="data:,">
+  <style>@font-face {
+  font-family: "HoyoKR";
+  src: url("assets/fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+3400-4DBF, U+4E00-9FFF, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+F900-FAFF, U+FF00-FFEF;
+}
+:root {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #111418;
+    --paper: #191e22;
+    --surface: #20272a;
+    --ink: #edf2f0;
+    --muted: #aab6b2;
+    --line: #34403d;
+    --accent: #7fc9bd;
+    --accent-ink: #dff8f3;
+    --accent-soft: #213c3a;
+    --warn: #e1ad7d;
+    --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f7f3;
+  --paper: #ffffff;
+  --surface: #f0f4f2;
+  --ink: #1f2428;
+  --muted: #626c73;
+  --line: #d7dedc;
+  --accent: #19676a;
+  --accent-ink: #0f4143;
+  --accent-soft: #e3f3ef;
+  --warn: #8a4b2a;
+  --shadow: 0 16px 42px rgba(31, 36, 40, .08);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111418;
+  --paper: #191e22;
+  --surface: #20272a;
+  --ink: #edf2f0;
+  --muted: #aab6b2;
+  --line: #34403d;
+  --accent: #7fc9bd;
+  --accent-ink: #dff8f3;
+  --accent-soft: #213c3a;
+  --warn: #e1ad7d;
+  --shadow: 0 16px 42px rgba(0, 0, 0, .28);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.78 "HoyoKR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { background: var(--accent-soft); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 2px;
+}
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.site-header-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.brand { color: var(--ink); font-weight: 850; text-decoration: none; white-space: nowrap; }
+.brand:hover { background: transparent; color: var(--accent-ink); }
+.brand small { color: var(--muted); font-weight: 650; margin-left: 8px; }
+.top-links { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.top-links a, .theme-toggle {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.theme-toggle { cursor: pointer; min-width: 38px; }
+.top-links a:hover, .theme-toggle:hover { background: var(--accent-soft); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.layout {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 24px;
+}
+.sidebar {
+  align-self: start;
+  position: sticky;
+  top: 74px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  padding: 12px;
+}
+.sidebar h2 { font-size: 12px; margin: 0 0 10px; color: var(--muted); letter-spacing: .04em; }
+.queue-list { display: grid; gap: 3px; max-height: 74vh; overflow: auto; }
+.category-nav-group { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
+.category-nav-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-special + .category-nav-group { border-top: 0; padding-top: 0; margin-top: 0; }
+.category-nav-parent { font-weight: 850; }
+.category-nav-child { padding-left: 18px !important; font-size: 13px; color: var(--muted) !important; }
+.category-nav-special { font-weight: 850; border-bottom: 1px solid var(--line); padding-bottom: 8px; margin-bottom: 8px; }
+.queue-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 7px;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.queue-list a:hover, .queue-list a[aria-current="page"] { background: var(--accent-soft); }
+.article-shell {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.article-top {
+  padding: 28px 42px 18px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; color: var(--muted); font-size: 13px; }
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs span::before { content: "/"; margin-right: 6px; color: var(--muted); }
+.article-top h1 { font-size: clamp(32px, 4.4vw, 54px); line-height: 1.12; margin: 0 0 12px; letter-spacing: 0; }
+.article-summary { max-width: 840px; margin: 0 0 14px; color: var(--muted); font-size: 15px; line-height: 1.62; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-hero-image {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 86%, var(--surface));
+  overflow: hidden;
+  max-width: min(420px, 100%);
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+.article-mini-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.article-mini-actions a { color: var(--muted); text-decoration: none; }
+.article-mini-actions a:hover { color: var(--accent-ink); background: transparent; text-decoration: underline; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: color-mix(in srgb, var(--paper) 72%, var(--accent-soft));
+  color: var(--accent-ink);
+  font-size: 12px;
+  font-weight: 760;
+}
+.article-body { padding: 26px 42px 44px; max-width: 900px; }
+.article-body h2 {
+  margin: 34px 0 12px;
+  padding-top: 12px;
+  font-size: 24px;
+  line-height: 1.32;
+  border-top: 1px solid var(--line);
+}
+.article-body h2:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.article-body h3 { margin: 22px 0 8px; font-size: 18px; line-height: 1.35; }
+.article-body p { margin: 0 0 16px; }
+.article-body ul { margin: 0 0 18px; padding-left: 20px; }
+.article-body li { margin: 6px 0; }
+.wiki-link { font-weight: 730; text-decoration-style: solid; }
+.cite-ref { font-size: .72em; vertical-align: super; margin-left: 2px; }
+.cite-ref a {
+  border-radius: 999px;
+  padding: 1px 4px;
+  background: var(--accent-soft);
+  text-decoration: none;
+  font-weight: 800;
+}
+.references, .article-tools, .comments-section, .ad-slot, .report-panel {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.references { font-size: 12px; line-height: 1.5; }
+.references summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.references summary:hover { color: var(--accent-ink); }
+.references h2, .article-tools h2, .comments-section h2, .report-panel h2 { border-top: 0; margin: 0 0 12px; padding-top: 0; font-size: 17px; }
+.references ol { padding-left: 18px; }
+.references li { margin: 6px 0 10px; }
+.ref-title { font-weight: 800; }
+.ref-source, .subtle { color: var(--muted); font-size: 12px; }
+.ref-quote { color: var(--muted); margin-top: 3px; font-size: 11px; }
+.article-tools {
+  margin-top: 28px;
+  font-size: 13px;
+}
+.article-tools summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 800;
+  width: fit-content;
+}
+.article-tools summary:hover { color: var(--accent-ink); }
+.info-grid, .category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.info-item, .category-card, .home-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 11px 12px;
+}
+.category-card, .home-card {
+  color: var(--ink);
+  text-decoration: none;
+}
+.category-card:hover, .home-card:hover { background: var(--accent-soft); }
+.category-section { margin-bottom: 18px; }
+.category-subsection { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 12px; }
+.category-subsection h3 { margin-bottom: 4px; }
+.info-item strong, .category-card strong, .home-card strong { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.document-tree { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.document-tree ul { list-style: none; margin: 8px 0 0; padding-left: 18px; border-left: 1px solid var(--line); display: grid; gap: 6px; }
+.document-tree li { margin: 0; }
+.document-tree a { font-weight: 780; text-decoration: none; }
+.document-tree-category > div, .document-tree-subcategory > div, .document-tree-page { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.document-tree-category > div > a { color: var(--ink); font-size: 18px; }
+.document-tree-subcategory > div > a { color: var(--accent); }
+.status-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+.status-filter input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.status-group { margin-top: 22px; }
+.status-group h3 { margin-bottom: 4px; }
+.status-list { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.status-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 9px;
+}
+.status-row a { font-weight: 800; text-decoration: none; }
+.status-row p { grid-column: 1 / -1; margin: 0; }
+.status-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  background: var(--surface);
+  color: var(--ink);
+}
+.status-pill.is-documented { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); color: var(--accent-ink); }
+.status-pill.is-thin, .status-pill.is-out_of_scope { border-color: color-mix(in srgb, var(--warn) 46%, var(--line)); color: var(--warn); }
+.history-list { margin: 12px 0 0; padding-left: 18px; }
+.history-list li { margin: 7px 0; }
+.log-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+.log-list li {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+}
+.action-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+.button-link:hover { background: var(--accent-soft); }
+.comments-section input, .comments-section textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.comments-section textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+.comments-section button {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 760;
+}
+.comments-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0 0; }
+.comments-toolbar button, .comment-card button, .report-panel button {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+}
+.comments-section button[type="submit"], .report-panel button[type="submit"] {
+  background: var(--accent);
+  color: var(--paper);
+}
+.comments-list { display: grid; gap: 10px; margin-top: 14px; }
+.comment-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 10px 12px;
+}
+.comment-card p { margin: 5px 0 0; }
+.comment-card.is-held { border-style: dashed; }
+.comment-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+.ad-slot { color: var(--muted); font-size: 12px; }
+.stub { padding: 38px 42px; max-width: 900px; }
+.stub h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 12px; line-height: 1.12; }
+.stub p { max-width: 760px; }
+.home-hero {
+  position: relative;
+  min-height: clamp(320px, 40vw, 520px);
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+  overflow: hidden;
+}
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 58%, rgba(255,255,255,.28) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.50) 38%, rgba(255,255,255,.12) 76%, rgba(255,255,255,.02) 100%);
+}
+.home-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.home-hero-image-dark { display: none; }
+.home-hero-copy {
+  width: min(760px, 100%);
+  padding: clamp(34px, 6vw, 72px) 42px 38px;
+  color: #182237;
+  text-shadow: 0 2px 18px rgba(255,255,255,.52);
+}
+.home-hero-kicker {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  color: rgba(59,72,92,.74);
+  font-size: 13px;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+.home-hero h1 {
+  font-family: var(--brand-font);
+  margin: 0 0 10px;
+  font-size: 64px;
+  font-weight: 820;
+  letter-spacing: 0;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+.home-hero-subtitle {
+  margin: 0;
+  max-width: 560px;
+  color: rgba(24,34,55,.84);
+  font-size: 21px;
+  line-height: 1.55;
+  font-weight: 650;
+}
+:root[data-theme="dark"] .home-hero-image-light { display: none; }
+:root[data-theme="dark"] .home-hero-image-dark { display: block; }
+:root[data-theme="dark"] .home-hero::after {
+  background:
+    linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+    linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+}
+:root[data-theme="dark"] .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+:root[data-theme="dark"] .home-hero-kicker { color: rgba(255,255,255,.76); }
+:root[data-theme="dark"] .home-hero-subtitle { color: rgba(255,255,255,.90); }
+:root[data-theme="light"] .home-hero-image-light { display: block; }
+:root[data-theme="light"] .home-hero-image-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-hero-image-light { display: none; }
+  :root:not([data-theme="light"]) .home-hero-image-dark { display: block; }
+  :root:not([data-theme="light"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.18) 60%, rgba(2,5,8,.56) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.72) 0%, rgba(2,5,8,.28) 48%, rgba(2,5,8,.10) 100%);
+  }
+  :root:not([data-theme="light"]) .home-hero-copy { color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.50); }
+  :root:not([data-theme="light"]) .home-hero-kicker { color: rgba(255,255,255,.76); }
+  :root:not([data-theme="light"]) .home-hero-subtitle { color: rgba(255,255,255,.90); }
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+}
+.home-section { padding: 22px 42px; border-top: 1px solid var(--line); }
+.home-section h2 { margin: 0 0 12px; font-size: 21px; }
+.recent-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.recent-list li { display: grid; gap: 3px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.recent-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.recent-list a { font-weight: 800; text-decoration: none; }
+.recent-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 7px; font-size: 11px; font-weight: 850; line-height: 1.55; background: var(--accent-soft); color: var(--accent); }
+.recent-badge.update { background: rgba(106, 84, 54, .10); color: var(--muted); }
+.recent-summary { color: var(--ink); font-size: 13px; line-height: 1.45; }
+.report-panel form { display: grid; gap: 10px; }
+.report-panel label { display: grid; gap: 4px; font-weight: 760; }
+.report-panel input, .report-panel textarea, .report-panel select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 9px 10px;
+  font: inherit;
+}
+.report-panel textarea { min-height: 130px; resize: vertical; }
+@media (max-width: 900px) {
+  .site-header-inner { align-items: stretch; flex-wrap: wrap; }
+  .top-links { margin-left: auto; }
+}
+@media (max-width: 820px) {
+  body { font-size: 16px; line-height: 1.74; }
+  .layout { grid-template-columns: 1fr; padding: 14px; }
+  .article-shell { order: 1; }
+  .sidebar { order: 2; position: static; }
+  .queue-list { max-height: 34vh; }
+  .article-top, .article-body, .stub, .home-section, .home-hero-copy { padding-left: 20px; padding-right: 20px; }
+  .home-hero { min-height: 360px; }
+  .home-hero h1 { font-size: clamp(34px, 11.2vw, 48px); white-space: normal; }
+  .home-hero-subtitle { font-size: 18px; }
+  .home-hero-image { object-position: 86% center; }
+  :root[data-theme="light"] .home-hero::after,
+  :root:not([data-theme="dark"]) .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.10) 48%, rgba(255,255,255,.42) 100%),
+      linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.58) 49%, rgba(255,255,255,.10) 100%);
+  }
+  :root[data-theme="dark"] .home-hero::after {
+    background:
+      linear-gradient(180deg, rgba(2,5,8,.00) 0%, rgba(2,5,8,.22) 54%, rgba(2,5,8,.64) 100%),
+      linear-gradient(90deg, rgba(2,5,8,.74) 0%, rgba(2,5,8,.34) 50%, rgba(2,5,8,.10) 100%);
+  }
+  .article-top h1 { font-size: clamp(30px, 10vw, 42px); }
+}
+@media (max-width: 520px) {
+  .site-header-inner { padding: 10px 12px; gap: 10px; }
+  .brand small { display: none; }
+  .top-links a { padding: 7px 8px; }
+  .home-hero h1 { font-size: 33px; }
+  .article-body { padding-bottom: 32px; }
+}</style>
+  <link rel="stylesheet" href="assets/wiki-search.css?v=16649df20bef">
+  <link rel="stylesheet" href="assets/wiki-citations.css?v=d3c232d1e1b1">
+  <script type="module" src="assets/wiki-theme.js?v=3ca6c46f61ce"></script>
+  <script type="module" src="assets/wiki-search.js?v=f7b7997f1583"></script>
+  <script type="module" src="assets/wiki-citations.js?v=0001fdac8e9e"></script>
+  <script type="module" src="assets/wiki-comments.js?v=f2b7f11c3a03"></script>
+  <script type="module" src="assets/wiki-reports.js?v=51218d04badf"></script>
+</head>
+<body>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="index.html">hoyohoyo.wiki</a><search class="search-shell" data-wiki-search data-pagefind-ignore>
+  <form class="search-form" data-search-form role="search">
+    <label class="search-input-wrap">
+      <span class="sr-only">위키 검색</span>
+      <input class="search-input" data-search-input type="search" placeholder="문서·고유명사 검색 /" autocomplete="off" spellcheck="false">
+      <span class="search-kbd">/</span>
+    </label>
+  </form>
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-panel-inner">
+      <section class="search-column">
+        <h2 class="search-heading">자동완성</h2>
+        <div data-search-suggestions></div>
+      </section>
+      <section class="search-column">
+        <h2 class="search-heading">문서 검색</h2>
+        <div data-search-results><p class="search-empty">검색어를 입력하면 관련 문서가 바로 표시됩니다.</p></div>
+      </section>
+    </div>
+  </div>
+</search><nav class="top-links" aria-label="상단 링크"><a href="categories.html">카테고리</a><a href="document-status.html">문서 현황</a><a href="document-request.html">문서 요청</a><a href="usage.html">이용 안내</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" aria-pressed="false">◐</button></nav></div></header>
+<main class="layout">
+  <aside class="sidebar"><h2>카테고리</h2><nav class="queue-list"><div class="category-nav-special"><a href="all-documents.html"><span>전체 문서 목록</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-people.html"><span>인물</span></a><a class="category-nav-child" href="category-people-astral-express.html"><span>은하열차·무명객</span></a>
+<a class="category-nav-child" href="category-people-stellaron-hunters.html"><span>스텔라론 헌터</span></a>
+<a class="category-nav-child" href="category-people-herta-space-station.html"><span>우주정거장 「헤르타」</span></a>
+<a class="category-nav-child" href="category-people-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-people-ipc.html"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-people-belobog.html"><span>야릴로-Ⅵ·벨로보그</span></a>
+<a class="category-nav-child" href="category-people-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-people-penacony.html"><span>페나코니</span></a>
+<a class="category-nav-child" href="category-people-amphoreus.html"><span>앰포리어스</span></a>
+<a class="category-nav-child" href="category-people-cosmic-factions.html"><span>우주 유랑 세력</span></a>
+<a class="category-nav-child" href="category-people-other.html"><span>기타 인물</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-factions.html"><span>파벌</span></a><a class="category-nav-child" href="category-factions-path.html"><span>운명의 길 파벌</span></a>
+<a class="category-nav-child" href="category-factions-ipc.html"><span>스타피스 컴퍼니</span></a>
+<a class="category-nav-child" href="category-factions-xianzhou.html"><span>선주 연맹</span></a>
+<a class="category-nav-child" href="category-factions-knowledge.html"><span>지식 세력</span></a>
+<a class="category-nav-child" href="category-factions-penacony.html"><span>페나코니 세력</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-paths.html"><span>운명의 길</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-aeons.html"><span>에이언즈</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-places.html"><span>장소</span></a><a class="category-nav-child" href="category-places-worlds.html"><span>행성·세계</span></a>
+<a class="category-nav-child" href="category-places-ships-stations.html"><span>선주·정거장·거점</span></a>
+<a class="category-nav-child" href="category-places-districts.html"><span>지역·도시</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-incidents.html"><span>사건</span></a><a class="category-nav-child" href="category-incidents-history.html"><span>역사적 사건</span></a>
+<a class="category-nav-child" href="category-incidents-story.html"><span>작중 사건</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-concepts.html" aria-current="page"><span>개념</span></a><a class="category-nav-child" href="category-concepts-systems.html"><span>제도·조직 원리</span></a>
+<a class="category-nav-child" href="category-concepts-technology.html"><span>기술·현상</span></a>
+<a class="category-nav-child" href="category-concepts-cosmology.html" aria-current="page"><span>우주론·법칙</span></a>
+<a class="category-nav-child" href="category-concepts-other.html"><span>기타 개념</span></a></div>
+<div class="category-nav-group"><a class="category-nav-parent" href="category-terms.html"><span>아이템/용어</span></a><a class="category-nav-child" href="category-terms-records.html"><span>기록·문헌</span></a>
+<a class="category-nav-child" href="category-terms-other.html"><span>기타 용어</span></a></div></nav></aside>
+  <article class="article-shell" data-pagefind-body>
+    <header class="article-top"><nav class="breadcrumbs" aria-label="문서 위치"><a href="index.html">홈</a><a href="category-concepts.html">개념</a><a href="category-concepts-cosmology.html">우주론·법칙</a><span>환월 게임</span></nav><div class="article-mini-actions"><a data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%99%98%EC%9B%94+%EA%B2%8C%EC%9E%84&amp;page_slug=phantom-moon-game">수정 요청</a><a href="categories.html">카테고리 보기</a></div><h1>환월 게임</h1><div class="meta-row"><span class="badge">개념</span><span class="badge">우주론·법칙</span></div></header>
+    <div class="article-body"><h2 id="개요">개요</h2>
+<p>환월 게임은 이상 낙원의 환월이 찰 때 열리는 「환락」의 의식이다.<sup class="cite-ref" title="게임 본편 · 환월마다 열리는 의식"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 아하가 시작한 게임"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup> 여덟 명의 알현자가 환락의 가면을 쓰고 주민들의 관심과 원력을 모아 기적을 겨룬다. 가장 두각을 나타낸 승자는 아하의 응답을 받고, 그의 권능을 1분 동안 나눠 받아 소원을 빌 수 있다.<sup class="cite-ref" title="게임 본편 · 승자에게 주어지는 1분"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 여덟 알현자와 가면"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 관심과 원력을 겨루는 방식"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>이 이름의 “게임”은 가벼운 오락을 뜻하지 않는다. 새로운 환조종이 태어나거나 현실의 법칙이 바뀔 만큼 큰 기적이 일어나며, 관심을 얻기 위해 공포와 살인이 이용되기도 한다.<sup class="cite-ref" title="게임 본편 · 게임 뒤에 남는 기적"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 피로 칠한 게임"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<h2 id="비애의-연극인에게서-시작된-의식">비애의 연극인에게서 시작된 의식</h2>
+<p>환월 게임의 기원은 달에게 사람의 마음을 울리는 이야기를 바친 비애의 연극인들과 연결된다.<sup class="cite-ref" title="게임 본편 · 비애의 연극인과 기원"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 달에 바친 이야기"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup> 전설 속 연극인들은 이야기로 아하를 감동시키고 그를 알현하려 했다. 그들이 쓴 여덟 가면은 훗날 알현자들이 게임에 들어가는 표가 됐다.<sup class="cite-ref" title="게임 본편 · 여덟 알현자와 가면"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></p>
+<p>히메코는 환월 게임을 에이언즈를 만나 응답까지 받을 수 있다고 명확히 기록된 드문 방법으로 설명한다.<sup class="cite-ref" title="게임 본편 · 아하의 응답을 받는 방법"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup> 아하가 직접 의식을 시작했다는 점은 전해지지만, 그가 왜 이런 형식을 만들었는지는 여러 설만 남아 있다.<sup class="cite-ref" title="게임 본편 · 아하가 시작한 게임"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup></p>
+<h2 id="게임의-진행-구조">게임의 진행 구조</h2>
+<p>게임의 시작 조건은 하늘의 환월이 가득 차는 순간이다. 다만 그 달 자체가 자연 천체가 아니라 이상 낙원에 걸린 그림이라는 설명이 먼저 제시된다.<sup class="cite-ref" title="게임 본편 · 환월마다 열리는 의식"><a href="#ref-1" data-cite-popover data-ref-target="ref-1" aria-label="각주 1 내용 보기" aria-expanded="false">1</a></sup><sup class="cite-ref" title="게임 본편 · 여덟 알현자와 가면"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup> 이 때문에 환월의 주기는 단순한 달력 표시가 아니라, 그림과 원력이 지배하는 세계가 알현의 무대를 여는 신호다.</p>
+<p>참가자는 여덟 가면 가운데 하나를 골라 알현자가 되고 나머지 일곱 명과 경쟁한다. 승부의 기준은 상대를 제거한 수가 아니라 낙원 주민의 관심을 얼마나 모아 감동적인 기적을 만들었는가에 있다.<sup class="cite-ref" title="게임 본편 · 승자에게 주어지는 1분"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 여덟 알현자와 가면"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 관심과 원력을 겨루는 방식"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 따라서 가면은 신분표이자, 각 참가자가 어떤 이야기로 관객과 아하를 움직일지 선언하는 무대 장치에 가깝다.</p>
+<p>게임의 끝에는 승자 개인의 소원만 남지 않는다. 기록은 아하가 권능을 나누는 시간이 1분이라고 밝히고, 세계에는 새 환조종의 탄생이나 불가사의한 이상 현상처럼 오래 지속되는 기적이 생긴다고 전한다.<sup class="cite-ref" title="게임 본편 · 승자에게 주어지는 1분"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 게임 뒤에 남는 기적"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup> 그 결과 짧은 알현은 행성 전체의 현실을 바꾸는 흔적으로 이어진다. 무엇이 생길지는 참가자의 이야기와 주민의 관심에 달려 있어 매번 같은 결말을 반복하지도 않는다.</p>
+<h2 id="알현자와-원력">알현자와 원력</h2>
+<p>알현자는 가득 찬 환월 아래에서 가면 하나를 골라 게임에 들어간다. 여덟 명은 다른 참가자를 반드시 죽여야 하는 것이 아니라, 낙원 주민의 시선을 끌 만한 위업과 이야기를 만들어 신을 뵐 자격을 겨룬다.<sup class="cite-ref" title="게임 본편 · 여덟 알현자와 가면"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup><sup class="cite-ref" title="게임 본편 · 관심과 원력을 겨루는 방식"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup></p>
+<p>이때 관객의 관심은 단순한 인기 점수가 아니다. 관심이 원력으로 모여 알현자의 기적을 실제로 만들어낸다.<sup class="cite-ref" title="게임 본편 · 관심과 원력을 겨루는 방식"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 아하는 가장 마음을 움직이는 기적에 상을 내리고, 승자의 소원을 들은 뒤 권능을 1분 동안 나눠준다.<sup class="cite-ref" title="게임 본편 · 승자에게 주어지는 1분"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup> 그래서 환월 게임에서는 이야기의 설득력과 현실을 바꾸는 힘이 분리되지 않는다.</p>
+<p>다만 기록이 보장하는 것은 알현과 응답의 가능성이지, 참가자의 선의나 주민의 안전이 아니다. 알현자는 관심을 모으는 방법을 스스로 고르고, 아하가 의식을 만든 목적도 하나로 확정되지 않았다.<sup class="cite-ref" title="게임 본편 · 아하의 응답을 받는 방법"><a href="#ref-10" data-cite-popover data-ref-target="ref-10" aria-label="각주 10 내용 보기" aria-expanded="false">10</a></sup><sup class="cite-ref" title="게임 본편 · 아하가 시작한 게임"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 관심과 원력을 겨루는 방식"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup> 이 때문에 같은 규칙 아래에서 희망을 만드는 기적과 공포를 이용하는 참극이 모두 벌어질 수 있다.<sup class="cite-ref" title="게임 본편 · 게임 뒤에 남는 기적"><a href="#ref-6" data-cite-popover data-ref-target="ref-6" aria-label="각주 6 내용 보기" aria-expanded="false">6</a></sup><sup class="cite-ref" title="게임 본편 · 피로 칠한 게임"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>주민은 단순한 구경꾼이 아니라 그 결과를 현실로 만드는 힘의 일부이며, 동시에 실패한 선택의 피해를 떠안는 당사자다.<sup class="cite-ref" title="게임 본편 · 관심과 원력을 겨루는 방식"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 피로 칠한 게임"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<h2 id="피로-칠한-게임">피로 칠한 게임</h2>
+<p>낙원력 1984년의 환월 게임에는 마커스 안티아리가 악의를 품은 알현자로 참가했다. 그는 그래피아 아카데미와 도브브룩에서 대규모 살인을 저질렀고, 그해의 의식은 「피로 칠한 게임」으로 불리게 됐다.<sup class="cite-ref" title="게임 본편 · 피로 칠한 게임"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<p>이 사건은 환월 게임의 위험이 규칙 바깥에서 생기는 것이 아님을 드러낸다. 사람을 감동시키는 기적과 사람을 공포에 빠뜨리는 참극 모두 대중의 시선을 모을 수 있다.<sup class="cite-ref" title="게임 본편 · 피로 칠한 게임"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup> 환월 게임은 어느 쪽을 선택할지 참가자에게 맡기며, 그 선택의 피해는 이상 낙원 주민들이 감당한다.</p>
+<h2 id="관련-문서">관련 문서</h2>
+<p>이 관계를 함께 보면 환월 게임은 아하의 권능만으로 굴러가지 않는다. 비애의 연극인이 남긴 이야기 형식, 알현자가 고른 가면, 주민들이 보내는 관심이 차례로 맞물려야 기적이 현실이 된다. 반대로 그 관심이 공포에 쏠리면 같은 구조가 참극에도 힘을 보탠다.<sup class="cite-ref" title="게임 본편 · 비애의 연극인과 기원"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 승자에게 주어지는 1분"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup><sup class="cite-ref" title="게임 본편 · 관심과 원력을 겨루는 방식"><a href="#ref-5" data-cite-popover data-ref-target="ref-5" aria-label="각주 5 내용 보기" aria-expanded="false">5</a></sup><sup class="cite-ref" title="게임 본편 · 피로 칠한 게임"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></p>
+<ul>
+<li><a href="aeon-883.html">아하</a>, <a href="path.html">운명의 길</a> — 아하는 게임을 시작하고 승자에게 「환락」의 권능을 1분 동안 나눠준다.<sup class="cite-ref" title="게임 본편 · 아하가 시작한 게임"><a href="#ref-2" data-cite-popover data-ref-target="ref-2" aria-label="각주 2 내용 보기" aria-expanded="false">2</a></sup><sup class="cite-ref" title="게임 본편 · 승자에게 주어지는 1분"><a href="#ref-3" data-cite-popover data-ref-target="ref-3" aria-label="각주 3 내용 보기" aria-expanded="false">3</a></sup></li>
+<li><a href="faction-971.html">비애의 연극인</a> — 달에 이야기를 바친 여덟 연극인의 전설이 가면과 알현 경쟁의 기원이 됐다.<sup class="cite-ref" title="게임 본편 · 비애의 연극인과 기원"><a href="#ref-8" data-cite-popover data-ref-target="ref-8" aria-label="각주 8 내용 보기" aria-expanded="false">8</a></sup><sup class="cite-ref" title="게임 본편 · 달에 바친 이야기"><a href="#ref-9" data-cite-popover data-ref-target="ref-9" aria-label="각주 9 내용 보기" aria-expanded="false">9</a></sup><sup class="cite-ref" title="게임 본편 · 여덟 알현자와 가면"><a href="#ref-4" data-cite-popover data-ref-target="ref-4" aria-label="각주 4 내용 보기" aria-expanded="false">4</a></sup></li>
+<li><a href="death-messenger.html">죽음의 전령</a> — 15년 전 의식을 「피로 칠한 게임」으로 바꾼 참극이다.<sup class="cite-ref" title="게임 본편 · 피로 칠한 게임"><a href="#ref-7" data-cite-popover data-ref-target="ref-7" aria-label="각주 7 내용 보기" aria-expanded="false">7</a></sup></li>
+</ul><details class="references"><summary>문서 출처</summary><ol><li id="ref-1" data-reference-item data-ref-number="1"><span class="ref-title">환월마다 열리는 의식</span> <span class="ref-source">게임 본편</span><div class="ref-quote">저건 「그림」이야. 이곳에서는 환월이 차오를 때마다 「환월 게임」이라는 신이 내린 의식이 펼쳐져</div></li>
+<li id="ref-2" data-reference-item data-ref-number="2"><span class="ref-title">아하가 시작한 게임</span> <span class="ref-source">게임 본편</span><div class="ref-quote">「환락」의 아하야. 「환월 게임」은 그가 직접 시작했는데, 그 목적에 대해서는 여러 가지 설이 있어</div></li>
+<li id="ref-3" data-reference-item data-ref-number="3"><span class="ref-title">승자에게 주어지는 1분</span> <span class="ref-source">게임 본편</span><div class="ref-quote">기록에 따르면, 알현자들 중에서 두각을 나타내면 「환락」이 강림해 승자의 소원을 듣고 그의 권능을… 1분 동안 나눠준다고 해</div></li>
+<li id="ref-4" data-reference-item data-ref-number="4"><span class="ref-title">여덟 알현자와 가면</span> <span class="ref-source">게임 본편</span><div class="ref-quote">가득 찬 환월 아래, 가면 하나를 선택하고 「알현자」가 되면 다른 일곱 명과 함께 신을 뵐 자격을 두고 경쟁할 수 있어</div></li>
+<li id="ref-5" data-reference-item data-ref-number="5"><span class="ref-title">관심과 원력을 겨루는 방식</span> <span class="ref-source">게임 본편</span><div class="ref-quote">지금도 알현자들은 온 힘을 다해 낙원 사람들의 관심을 끌어 「원력」을 모아야 해. 웃음 신은 가장 감동적인 기적에만 상을 내리거든</div></li>
+<li id="ref-6" data-reference-item data-ref-number="6"><span class="ref-title">게임 뒤에 남는 기적</span> <span class="ref-source">게임 본편</span><div class="ref-quote">「환월 게임」은 환락의 주인이 정한 의식이야. 게임이 끝날 때마다 이 세계에는 엄청난 기적이 일어나지. 새로운 환조종의 탄생, 불가사의한 이상 현상, 희망으로 가득 찬 미래</div></li>
+<li id="ref-7" data-reference-item data-ref-number="7"><span class="ref-title">피로 칠한 게임</span> <span class="ref-source">게임 본편</span><div class="ref-quote">이건 잊을 수 없는 비극이라네. 15년 전 「환월 게임」은 그 일로 「피로 칠한 게임」이라 불리게 됐지……</div></li>
+<li id="ref-8" data-reference-item data-ref-number="8"><span class="ref-title">비애의 연극인과 기원</span> <span class="ref-source">게임 본편</span><div class="ref-quote">역사적으로 「환월 게임」의 기원은 어떤 비애의 연극인들과 관련이 있어</div></li>
+<li id="ref-9" data-reference-item data-ref-number="9"><span class="ref-title">달에 바친 이야기</span> <span class="ref-source">게임 본편</span><div class="ref-quote">그들은 달을 향해 사람들의 마음을 울리는 이야기를 바치며, 에이언즈를 알현할 기회를 얻고자 했지</div></li>
+<li id="ref-10" data-reference-item data-ref-number="10"><span class="ref-title">아하의 응답을 받는 방법</span> <span class="ref-source">게임 본편</span><div class="ref-quote">하지만 「환월 게임」은 달라. 에이언즈를 만나고 응답도 받을 수 있다는 게 명확히 기록된 몇 안 되는 방법이거든</div></li></ol></details>
+<details class="article-tools" data-page-dates data-public-launch-surface>
+  <summary>문서 정보와 변경 로그</summary>
+  <h2>문서 정보</h2>
+  <div class="info-grid"><div class="info-item"><strong>카테고리</strong><span>개념 · 우주론·법칙</span></div>
+<div class="info-item"><strong>문서 유형</strong><span>개념</span></div>
+<div class="info-item"><strong>작성 일자</strong><span>2026-07-16</span></div>
+<div class="info-item"><strong>최종 수정 일자</strong><span>2026-07-16</span></div></div>
+  <p class="subtle">주요 근거: 게임 본편</p>
+  <h3>최근 변경</h3>
+  <ol class="log-list" data-update-history><li>2026-07-16 · 문서 근거와 공개 정보를 정리했습니다.</li></ol>
+  <div class="action-links"><a class="button-link" data-correction-report-link href="https://github.com/fjuhy/hsr-wiki-issues/issues/new?template=content-error.yml&amp;title=%5B%EB%AC%B8%EC%84%9C+%EC%A0%9C%EB%B3%B4%5D+%ED%99%98%EC%9B%94+%EA%B2%8C%EC%9E%84&amp;page_slug=phantom-moon-game">수정 요청</a></div>
+</details>
+
+<section class="comments-section comments-section-giscus" data-comments-root data-comments-mode="giscus" data-page-slug="phantom-moon-game">
+  <h2>댓글</h2>
+  <p class="subtle comments-giscus-note">GitHub 계정으로 로그인해 이 문서에 대한 의견을 남길 수 있습니다. 수정 요청은 위의 <strong>수정 요청</strong> 링크를 사용해 주세요.</p>
+  <div class="giscus" data-giscus-container></div>
+  <noscript><p class="subtle">댓글을 보려면 JavaScript를 활성화해야 합니다.</p></noscript>
+  <script src="https://giscus.app/client.js"
+    data-repo="fjuhy/hsr-wiki-issues"
+    data-repo-id="R_kgDOTGod_A"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOTGod_M4C__rq"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="0"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="ko"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+</section>
+</div>
+  </article>
+</main>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;:&quot;f803b654b24e4e57a86718dbfcdc82e2&quot;}"></script>
+</body>
+</html>
