@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: HSR 위키 문서 제보·요청
+    url: https://github.com/fjuhy/hsr-wiki-issues/issues/new/choose
+    about: 공개 사이트의 문서 제보와 기능 요청은 전용 intake 저장소를 이용합니다.
