@@ -1,12 +1,12 @@
 {
   "schema": "hsr-wiki-static-site-manifest-v1",
-  "generated_at": "2026-10-07T10:00:33+09:00",
+  "generated_at": "2026-10-08T11:01:20+09:00",
   "site_base_url_configured": true,
-  "page_count": 511,
-  "registered_term_count": 639,
-  "html_count": 595,
-  "file_count": 742,
-  "total_bytes": 34163577,
+  "page_count": 512,
+  "registered_term_count": 640,
+  "html_count": 596,
+  "file_count": 743,
+  "total_bytes": 34327943,
   "critical_assets": {
     "assets/wiki-search.js": {
       "exists": true,
