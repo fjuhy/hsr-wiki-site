@@ -1,13 +1,13 @@
 {
   "schema": "hsr-wiki-search-index-report-v1",
-  "generated_at": "2026-10-10T14:24:37+09:00",
+  "generated_at": "2026-10-12T15:53:47+09:00",
   "page_count": 513,
   "registered_term_count": 641,
   "suggestion_count": 903,
-  "term_count": 88917,
+  "term_count": 89770,
   "shard_count": 128,
-  "largest_shard_bytes": 40662,
-  "total_index_bytes": 4680360,
+  "largest_shard_bytes": 40978,
+  "total_index_bytes": 4730981,
   "notes": [
     "Autocomplete covers registered titles and aliases; non-public terms link to document-status.html anchors.",
     "search_terms stay in full-text ranking and do not enter autocomplete.",
